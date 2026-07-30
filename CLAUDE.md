@@ -12,6 +12,15 @@ Indicators*, preserved in the [January 19, 2025 snapshot](https://19january2025s
 The site is built with **Quarto** and deployed to **GitHub Pages** (the
 `gh-pages` branch) via GitHub Actions.
 
+**Current status: scaffold.** The page structure, theme, and deploy pipeline
+are all working, but every page is placeholder content — a shared "coming soon"
+callout. There is one indicator (Heat-Related Deaths) and it has no data,
+methodology, or charts yet. Expect to be filling pages in, not restructuring.
+
+There is also no favicon or social-card image yet. `_quarto.yml` omits
+`favicon:` and `image:` on purpose rather than pointing at files that do not
+exist — add the assets to `images/` before adding the keys.
+
 ## Common Commands
 
 - `quarto render` — render the entire website to `_site/`
@@ -22,13 +31,14 @@ The site is built with **Quarto** and deployed to **GitHub Pages** (the
 ### File Structure
 
 - **_quarto.yml** — main Quarto config: website structure, navbar, sidebar, theme, render options
-- **index.qmd** — home page (hero + navigation pills)
-- **about.qmd** — project background, data sources, authors, license, citation
+- **index.qmd** — home page (hero + navigation pills, defined as raw HTML in a `{=html}` block)
+- **about.qmd** — about the project (placeholder)
 - **indicators.qmd** — grid listing of every page in `indicators/`
 - **indicators/*.qmd** — one page per indicator
+- **404.qmd** — not-found page
 - **chunks/** — reusable content snippets pulled in via `{{< include >}}`; excluded from rendering by the `"!chunks/"` entry in `project: render:`. `description.qmd` is the shared project blurb; `coming-soon.qmd` is the placeholder callout used on every unfinished page. Note that include paths are relative to the including file, so pages under `indicators/` use `../chunks/`.
-- **css/theme.scss** — custom theme layered on flatly (light) / darkly (dark)
-- **images/** — static assets
+- **css/theme.scss** — the entire custom theme, layered on Bootswatch `cosmo`
+- **images/** — static assets (currently just `icon-quarto.svg` for the footer)
 - **_common.R** — shared R helper functions
 - **DESCRIPTION** — R dependencies, used by the GitHub Action's `remotes::install_deps()`
 - **_site/** — generated output (git-ignored)
@@ -57,9 +67,21 @@ The site is built with **Quarto** and deployed to **GitHub Pages** (the
 - The Bootstrap navbar brand is hidden above 992px because the site title is
   repeated as the first navbar item; it reappears in the collapsed mobile bar.
 
+Two navbar details that are easy to break:
+
+- **Height** is controlled solely by `$navbar-padding-y`. The bar carries
+  `min-height: 0`, so that padding is the only lever — change the variable, not
+  the rule.
+- **The active-section rule** under the current nav item is an absolutely
+  positioned `::after` bar, deliberately *not* a `border-bottom` or an inset
+  `box-shadow`. Both of those inherit the link's 6px `border-radius` and make
+  the rule visibly bow upward at its ends. It is inset by the link's horizontal
+  padding so it tracks the label rather than the wider hover block.
+
 ### Navigation
 
-- Navbar: Home, About, Indicators (left); GitHub (right)
+- Navbar left: the site title (`climateindicators.us`, linking home), About,
+  Indicators. Right: GitHub and search.
 - One docked sidebar, titled "Indicators", that appears on `indicators.qmd` and
   all pages under `indicators/`. Indicators are grouped into sections by theme
   (e.g. "Health").
@@ -73,6 +95,15 @@ The site is built with **Quarto** and deployed to **GitHub Pages** (the
    `description` and `categories` feed the listing grid on `indicators.qmd`, so
    they are not optional
 3. Add a sidebar entry under the appropriate section in `_quarto.yml`
+4. While the page is a stub, include `{{< include ../chunks/coming-soon.qmd >}}`
+   rather than writing a one-off placeholder
+
+### Placeholder Content
+
+`chunks/coming-soon.qmd` is the single source for the "coming soon" callout and
+is currently included on **every** page (index, about, indicators, and the one
+indicator page). Edit that file to change the wording everywhere. As real
+content lands, drop the include from that page rather than editing the chunk.
 
 ### R Code Integration
 
@@ -88,16 +119,21 @@ The site is built with **Quarto** and deployed to **GitHub Pages** (the
 up R, installs `DESCRIPTION` dependencies, renders the site, and publishes
 `_site/` to the `gh-pages` branch (publish step is skipped for PRs).
 
-One-time repo setup:
+**This is already set up and working.** The `gh-pages` branch exists, GitHub
+Pages is serving from it at `/ (root)`, and pushes to `main` deploy end to end.
+Nothing needs re-initializing.
 
-1. Create an empty `gh-pages` branch:
-   ```sh
-   git checkout --orphan gh-pages
-   git rm -rf .
-   git commit --allow-empty -m "Initial gh-pages commit"
-   git push origin gh-pages
-   git checkout main
-   ```
-2. In repo Settings → Pages, set the source to the `gh-pages` branch, `/ (root)`
-3. Add the custom domain `climateindicators.us` (this writes a `CNAME` file to
-   `gh-pages`, which the Quarto publish action preserves)
+Two things to be aware of:
+
+- **The custom domain is not attached yet.** Pages currently serves at
+  <https://climateindicators.github.io/climateindicators.us/>, but `site-url` in
+  `_quarto.yml` claims `https://climateindicators.us`. Relative links are fine
+  either way, but `sitemap.xml` and the OpenGraph tags carry the wrong absolute
+  host until DNS is pointed at GitHub and the domain is set (which writes a
+  `CNAME` file to `gh-pages`; the Quarto publish action preserves it).
+- **The weekly `schedule:` trigger** rebuilds and redeploys every Sunday. That
+  matters once indicators pull live data; right now it just redeploys static
+  content. Remove the `schedule:` block if the noise is unwanted.
+
+The `origin` remote uses SSH (`git@github.com:...`) because the local `gh` auth
+is configured for the SSH protocol; HTTPS pushes fail with no credentials.
