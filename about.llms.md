@@ -8,8 +8,6 @@ The project began as a replication of the EPA’s *Climate Change Indicators*, p
 
 > **NOTE:**
 >
-> Full details about the project’s motivation, methodology, and data sources are on the way.
-
-*Coming soon.*
+> This site is under construction. Content is being added indicator by indicator — check back soon.
 
 Back to top

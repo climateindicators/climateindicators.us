@@ -4,7 +4,7 @@ Each indicator below tracks one measurable signal of a changing climate in the U
 
 > **NOTE:**
 >
-> More indicators are on the way.
+> This site is under construction. Content is being added indicator by indicator — check back soon.
 
 \
 
