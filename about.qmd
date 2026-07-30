@@ -10,11 +10,4 @@ execute:
 
 {{< include chunks/description.qmd >}}
 
-::: {.callout-note appearance="simple" icon=false}
-## 🚧 Coming soon
-
-Full details about the project's motivation, methodology, and data sources are
-on the way.
-:::
-
-*Coming soon.*
+{{< include chunks/coming-soon.qmd >}}

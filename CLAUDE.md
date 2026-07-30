@@ -26,7 +26,7 @@ The site is built with **Quarto** and deployed to **GitHub Pages** (the
 - **about.qmd** — project background, data sources, authors, license, citation
 - **indicators.qmd** — grid listing of every page in `indicators/`
 - **indicators/*.qmd** — one page per indicator
-- **chunks/** — reusable content snippets pulled in via `{{< include >}}`; excluded from rendering by the `"!chunks/"` entry in `project: render:`
+- **chunks/** — reusable content snippets pulled in via `{{< include >}}`; excluded from rendering by the `"!chunks/"` entry in `project: render:`. `description.qmd` is the shared project blurb; `coming-soon.qmd` is the placeholder callout used on every unfinished page. Note that include paths are relative to the including file, so pages under `indicators/` use `../chunks/`.
 - **css/theme.scss** — custom theme layered on flatly (light) / darkly (dark)
 - **images/** — static assets
 - **_common.R** — shared R helper functions
@@ -35,13 +35,24 @@ The site is built with **Quarto** and deployed to **GitHub Pages** (the
 
 ### Styling System
 
-- Quarto's Bootstrap 5 theme system, light/dark via `flatly`/`darkly`
+- Quarto's Bootstrap 5 theme system, light/dark via `cosmo`/`darkly`
 - All custom styling lives in `css/theme.scss`
-- **The palette is driven by a single `$accent` SCSS variable** (plus
-  `$accent-dark` for pressed states). Re-theming the site means changing those
-  two values, not hunting for hard-coded hex codes. Keep it that way.
-- Body background is cream in light mode, navy in dark mode; the docked sidebar
-  keeps its own `background: light` panel so it stays visually distinct.
+- **The palette is defined once in a variable block at the top of the
+  `scss:defaults` section** (`$accent`, `$ink`, `$panel`, `$rule`, the `$dark-*`
+  surfaces, …), lifted from [climate.us](https://www.climate.us/). Every tinted
+  rule derives from those variables — re-theming means editing that block, not
+  hunting for hard-coded hex codes. Keep it that way.
+- Setting `$primary: $accent` is what recolors links, focus rings, and active
+  states across *both* themes — Bootstrap derives `$link-color` from `$primary`.
+  Because one SCSS file is shared by the light and dark themes, per-theme
+  colors must go in `scss:rules` under `body` / `body.quarto-dark` selectors,
+  never in `scss:defaults`.
+- Key aesthetic notes: near-black (`$ink`) navbar and footer, white page
+  background with warm off-white (`$panel`) cards and sidebar, `#2882e6` blue
+  accent, Source Sans 3 throughout, squared-off 4px card corners, and
+  underlined in-content links (explicitly flattened inside listing cards).
+- The Bootstrap navbar brand is hidden above 992px because the site title is
+  repeated as the first navbar item; it reappears in the collapsed mobile bar.
 
 ### Navigation
 

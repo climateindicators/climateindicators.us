@@ -1,103 +1,105 @@
-@import "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900";
-@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,600;0,800;0,900&display=swap&text=0123456789";
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap";
 
 /*-- scss:defaults --*/
 
-// Font families
-$navbar-font-family: "Raleway";
-$headings-font-family: "Raleway";
-$font-family-base: "Raleway";
+// ---------------------------------------------------------------------------
+// Palette, lifted from climate.us. Every tinted rule below derives from these,
+// so re-theming the site means editing this block and nothing else.
+// ---------------------------------------------------------------------------
+$accent:       #2882e6;  // link / brand blue
+$accent-light: #5aa3f0;  // lightened for legibility on dark backgrounds
+$accent-dark:  #1b66bd;  // pressed states
+$ink:          #1e1e1e;  // near-black — navbar, dark surfaces
+$ink-soft:     #333333;  // header bar on climate.us proper
+$body-text:    #464646;
+$panel:        #f9f6f4;  // warm off-white for cards, sidebar, callouts
+$rule:         #dcdcd7;  // warm border
+$muted:        #757575;
+
+// Dark-mode surfaces
+$dark-bg:      #161616;
+$dark-panel:   #232323;
+$dark-rule:    #3a3a3a;
+$dark-text:    #d8d8d8;
+
+// Bootstrap picks up $link-color from $primary, so setting this alone recolors
+// links, active states, and focus rings in BOTH the light and dark themes.
+$primary: $accent;
+
+// Font families — climate.us sets Source Serif 4 on headings, then overrides
+// h1–h3 back to Source Sans 3, so the whole site is effectively one sans face.
+$font-family-sans-serif: "Source Sans 3", "Source Sans Pro", Helvetica, Arial, sans-serif;
+$font-family-base:       $font-family-sans-serif;
+$headings-font-family:   $font-family-sans-serif;
+$navbar-font-family:     $font-family-sans-serif;
+$headings-font-weight:   700;
 
 // Page layout
 $grid-sidebar-width: 300px !default;
 $grid-margin-width: 300px !default;
 
-// Site accent color. Everything tinted below derives from this one value, so
-// re-theming the site is a single-line change.
-$accent: #0E7C86;
-$accent-dark: #0A616A;
-
 /*-- scss:rules --*/
 
 /* Typography */
-/* Raleway numbers aren't aligned, so use Roboto for numbers only: */
-/* https://stackoverflow.com/a/68779757/1456821 */
 body {
-  font-family: "Roboto", $font-family-base, sans-serif;
+  font-family: $font-family-base;
+  background-color: #fff;
+  color: $body-text;
 }
 
-/* Page background — cream in light, navy in dark. Only the body is recolored;
-   the docked sidebar keeps its own `background: light` panel so it stays
-   visually distinct from the content area. */
-body { background-color: #F8F7F0; }
-body.quarto-dark { background-color: #1a1f2e; }
-
-div.quarto-post .metadata {
-  font-family: "Roboto", $font-family-base, sans-serif;
-}
-
-h1, .h1, h2, .h2, h3, .h3 {
-  font-family: "Roboto", $font-family-base, sans-serif;
-  font-weight: 800;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: $headings-font-family;
+  font-weight: 700;
+  color: $ink;
 }
 
 p {
   margin-bottom: 8px;
 }
 
-/* Sidebar */
-.sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
-  font-weight: bold;
-}
-
-.sidebar-item-container .active {
-  font-weight: bold !important;
-}
-
-/* Footer */
-.nav-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 2rem;
-  min-height: unset !important;
-  padding: 0 !important;
-  flex-wrap: nowrap !important;
-  align-items: center !important;
-  z-index: 1000;
-}
-
-footer.footer .nav-footer {
-  padding: 0 !important;
-}
-
-.nav-footer-left,
-.nav-footer-center,
-.nav-footer-right {
-  flex: 1 1 0px !important;
-  min-height: unset !important;
-  margin: 0 !important;
-  order: unset !important;
-  white-space: nowrap;
-}
-
-.nav-footer-center a {
-  color: #fff;
+// climate.us underlines in-content links. Scoped to prose only so the navbar,
+// sidebar, TOC, listing cards, and anchor glyphs keep their own treatment.
+main.content a:not(.anchorjs-link):not(.quarto-title-meta-heading):not(.btn) {
   text-decoration: underline;
-  &:hover { color: var(--bs-link-color); }
 }
 
-/* Navbar */
+// ...but listing cards are whole-tile links, not prose — the underline reads as
+// broken text there. Re-flatten everything inside a listing.
+.quarto-listing a,
+.quarto-listing a *,
+a.quarto-grid-link,
+a.quarto-grid-link * {
+  text-decoration: none !important;
+}
+
+/* Dark theme base */
+body.quarto-dark {
+  background-color: $dark-bg;
+  color: $dark-text;
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4 { color: #f0f0f0; }
+
+  // $accent on near-black sits right at the edge of comfortable contrast;
+  // the lighter tint keeps body links readable.
+  main.content a { color: $accent-light; }
+}
+
+/* Navbar — the black header bar. `background: dark` in _quarto.yml gets Quarto
+   to emit the light-on-dark variant; this pins the exact shade. */
+.navbar {
+  background-color: $ink !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 nav.navbar {
   padding-top: 0.6rem !important;
   padding-bottom: 0.6rem !important;
   min-height: 0;
 }
 
-// Shared hover/active "block" effect for left-side nav items and right-side tools.
-// Quarto renders `tools:` entries as `.quarto-navbar-tools > a` (or
-// `.quarto-navbar-tool`), which bypasses the `.nav-link` selectors — so they
-// must be listed explicitly here.
+// Shared hover/active "block" effect for left-side nav items and right-side
+// tools. Quarto renders `tools:` entries as `.quarto-navbar-tools > a`, which
+// bypasses the `.nav-link` selectors — so they must be listed explicitly.
 .navbar-nav .nav-link,
 .quarto-navbar-tools > a,
 .quarto-navbar-tools > .quarto-navbar-tool {
@@ -106,19 +108,30 @@ nav.navbar {
   transition: background-color 0.15s ease, color 0.15s ease;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.14);
+    background-color: $ink-soft;
     color: #ffffff;
     text-decoration: none;
   }
 
+  // climate.us marks the current section with a dark wash plus a blue rule,
+  // not a solid blue fill — the fill is reserved for submenu links.
   &.active {
-    background-color: rgba(255, 255, 255, 0.22);
+    background-color: $ink-soft;
     color: #ffffff;
+    box-shadow: inset 0 -2px 0 0 $accent;
   }
 
   &:active {
-    background-color: rgba(255, 255, 255, 0.30);
+    background-color: $accent-dark;
   }
+}
+
+// The site title is repeated as the first navbar item, so the Bootstrap brand
+// is redundant on desktop. Keep it for the collapsed mobile navbar, where the
+// nav items are hidden behind the toggle.
+@media (min-width: 992px) {
+  .navbar-brand-container,
+  .navbar .navbar-brand { display: none !important; }
 }
 
 .navbar-nav .nav-link {
@@ -161,12 +174,68 @@ nav.navbar {
           transform: translateY(-50%);
           width: 1px;
           height: 1rem;
-          background-color: rgba(255, 255, 255, 0.35);
+          background-color: rgba(255, 255, 255, 0.28);
           pointer-events: none;
         }
       }
     }
   }
+}
+
+/* Sidebar */
+.sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
+  font-weight: 700;
+}
+
+.sidebar-item-container .active {
+  font-weight: 700 !important;
+  color: $accent !important;
+}
+
+// Warm off-white panel, matching climate.us's .usa-sidenav-list. Needs the id
+// to outrank Quarto's own `#quarto-sidebar` background rule.
+#quarto-sidebar.sidebar-navigation {
+  background-color: $panel;
+  border-right: 1px solid $rule;
+}
+
+body.quarto-dark #quarto-sidebar.sidebar-navigation {
+  background-color: $dark-panel;
+  border-right-color: $dark-rule;
+}
+
+/* Footer */
+.nav-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  min-height: unset !important;
+  padding: 0 !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  z-index: 1000;
+  background-color: $ink !important;
+}
+
+footer.footer .nav-footer {
+  padding: 0 !important;
+}
+
+.nav-footer-left,
+.nav-footer-center,
+.nav-footer-right {
+  flex: 1 1 0px !important;
+  min-height: unset !important;
+  margin: 0 !important;
+  order: unset !important;
+  white-space: nowrap;
+}
+
+.nav-footer-center a {
+  color: #fff;
+  text-decoration: underline;
+  &:hover { color: $accent-light; }
 }
 
 /* Layout */
@@ -178,8 +247,8 @@ main.content {
   padding-bottom: 3em;
 }
 
-/* Home page navigation pills — the whole tile is one link to its page. Same
-   accent glow (hover) + press (active) language as the listing cards.
+/* Home page navigation pills — the whole tile is one link to its page. Warm
+   panel surface with the accent blue on hover, mirroring the listing cards.
    A CSS grid makes pills in the same row stretch to equal height. */
 .home-pills {
   display: grid;
@@ -206,32 +275,27 @@ main.content {
   display: flex;
   flex-direction: column;
   padding: 1.15rem 1.35rem;
-  border: 1.5px solid rgba($accent, 0.30);
-  border-radius: 14px;
-  // Warm near-white, not stark #fff, plus a soft resting lift so the pill
-  // separates smoothly from the cream body instead of a hard white edge.
-  background: #FDFCF8;
-  box-shadow: 0 2px 10px rgba(60, 50, 20, 0.05);
+  border: 1px solid $rule;
+  border-radius: 4px;
+  background: $panel;
   text-decoration: none !important;
   color: inherit;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.12s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.12s ease;
 
   &:hover {
     border-color: $accent;
     color: inherit;
-    box-shadow: 0 0 16px 1px rgba($accent, 0.22),
-                0 6px 16px rgba($accent, 0.16);
+    box-shadow: 0 0 0 1px $accent, 0 4px 14px rgba(40, 130, 230, 0.16);
   }
   &:active {
     border-color: $accent-dark;
-    box-shadow: 0 0 9px 0 rgba($accent, 0.18),
-                0 3px 8px rgba($accent, 0.16);
-    transform: scale(0.992);
+    box-shadow: 0 0 0 1px $accent-dark;
+    transform: scale(0.995);
   }
 }
 
 .home-pill-label {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.2rem;
   color: $accent;
   margin-bottom: 0.35rem;
@@ -240,44 +304,50 @@ main.content {
 }
 
 .home-pill-desc {
-  color: #4a4a4a;
+  color: $body-text;
   line-height: 1.5;
 }
 
-// Dark theme: dark card surface, lighter description text.
-body.quarto-dark .home-pill {
-  background: #1e2433;
-  border-color: rgba($accent, 0.35);
+body.quarto-dark {
+  .home-pill {
+    background: $dark-panel;
+    border-color: $dark-rule;
+  }
+  .home-pill-label { color: $accent-light; }
+  .home-pill-desc { color: $dark-text; }
 }
-body.quarto-dark .home-pill-desc { color: #cfd2cf; }
 
 /* ---- Listing cards: Indicators grid (.quarto-grid-item) + any post list
-   (.quarto-post). Resting borders use a translucent accent so they read on both
-   the light (flatly) and dark (darkly) themes without per-theme overrides.
-   Hover = accent glow (no lift); active = dimmer glow + a faint inward press. */
+   (.quarto-post). Squared-off borders and a flat accent outline on hover,
+   matching climate.us's card treatment rather than a soft glow. */
 .quarto-grid-item.card,
 .quarto-post {
-  border: 1.5px solid rgba($accent, 0.30);
-  border-radius: 14px;
-  transition: border-color 0.25s ease,
-              box-shadow 0.25s ease,
-              transform 0.12s ease;
+  border: 1px solid $rule;
+  border-radius: 4px;
+  background: $panel;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.12s ease;
 
   &:hover {
     border-color: $accent !important;
-    box-shadow: 0 0 16px 1px rgba($accent, 0.22),
-                0 6px 16px rgba($accent, 0.16);
+    box-shadow: 0 0 0 1px $accent, 0 4px 14px rgba(40, 130, 230, 0.16);
   }
   &:active {
     border-color: $accent-dark !important;
-    box-shadow: 0 0 9px 0 rgba($accent, 0.18),
-                0 3px 8px rgba($accent, 0.16);
-    transform: scale(0.992);
+    box-shadow: 0 0 0 1px $accent-dark;
+    transform: scale(0.995);
+  }
+}
+
+body.quarto-dark {
+  .quarto-grid-item.card,
+  .quarto-post {
+    background: $dark-panel;
+    border-color: $dark-rule;
   }
 }
 
 // Clip grid card images to the rounded corners (box-shadow is painted outside
-// the border box, so overflow:hidden does not clip the hover glow).
+// the border box, so overflow:hidden does not clip the hover outline).
 .quarto-grid-item.card { overflow: hidden; }
 
 // List items: turn the default flex row into a padded card and make the whole
@@ -304,13 +374,14 @@ body.quarto-dark .home-pill-desc { color: #cfd2cf; }
   }
 
   .thumbnail { align-self: center; }
-  .thumbnail img { border-radius: 10px; overflow: hidden; }
+  .thumbnail img { border-radius: 3px; overflow: hidden; }
 }
 
 // Category badges: accent fill on hover (listings + title-block tags).
 .quarto-category,
 .listing-category {
   cursor: pointer;
+  border-radius: 3px;
   transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 
   &:hover {
@@ -320,9 +391,18 @@ body.quarto-dark .home-pill-desc { color: #cfd2cf; }
   }
 }
 
+/* Tables — climate.us uses the warm grey for header rows. */
+table thead th {
+  background: $rule;
+}
+
+body.quarto-dark table thead th {
+  background: $dark-panel;
+}
+
 /* Images */
 .image-with-border {
-  border: 2px solid #ddd;
+  border: 1px solid $rule;
   width: 100%;
   display: block;
   margin-top: 1em;

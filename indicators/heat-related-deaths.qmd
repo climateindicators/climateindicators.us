@@ -4,5 +4,5 @@ description: "Deaths in the United States attributed to extreme heat."
 categories: [Health]
 ---
 
-*Coming soon.*
+{{< include ../chunks/coming-soon.qmd >}}
 
