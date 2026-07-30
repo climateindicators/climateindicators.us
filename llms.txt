@@ -1,0 +1,8 @@
+# climateindicators.us
+
+## Pages
+
+- [Heat-Related Deaths](https://climateindicators.us/indicators/heat-related-deaths.llms.md)
+- [index](https://climateindicators.us/index.llms.md)
+- [About](https://climateindicators.us/about.llms.md)
+- [Indicators](https://climateindicators.us/indicators.llms.md)
