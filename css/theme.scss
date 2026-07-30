@@ -34,6 +34,10 @@ $headings-font-weight:   700;
 $grid-sidebar-width: 300px !default;
 $grid-margin-width: 300px !default;
 
+// Navbar height is driven entirely by this vertical padding (the bar has
+// min-height: 0), so it is the single knob for how tall the header sits.
+$navbar-padding-y: 1.15rem;
+
 /*-- scss:rules --*/
 
 /* Typography */
@@ -74,8 +78,8 @@ a.quarto-grid-link * {
 }
 
 nav.navbar {
-  padding-top: 0.6rem !important;
-  padding-bottom: 0.6rem !important;
+  padding-top: $navbar-padding-y !important;
+  padding-bottom: $navbar-padding-y !important;
   min-height: 0;
 }
 
