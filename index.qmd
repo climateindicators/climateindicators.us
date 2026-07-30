@@ -1,0 +1,38 @@
+---
+title: ""
+pagetitle: "Climate Indicators"
+description: "Tracking the indicators that show how a changing climate is affecting people and places across the United States."
+execute:
+  echo: false
+  message: false
+  warning: false
+page-layout: full
+toc: false
+back-to-top-navigation: false
+
+format:
+  html:
+    link-external-newwindow: false
+---
+
+# Welcome to climateindicators.us!
+
+{{< include chunks/description.qmd >}}
+
+<br>
+
+::: {.callout-note appearance="simple" icon=false}
+## 🚧 Coming soon
+
+This site is under construction. Content is being added indicator by indicator ---
+check back soon.
+:::
+
+<br>
+
+```{=html}
+<div class="home-pills">
+  <a class="home-pill" href="about.html"><span class="home-pill-label"><i class="bi bi-info-circle"></i>About</span><span class="home-pill-desc">About the project, the data sources, and the people behind it.</span></a>
+  <a class="home-pill" href="indicators.html"><span class="home-pill-label"><i class="bi bi-graph-up"></i>Indicators</span><span class="home-pill-desc">Browse the full set of climate indicators we track.</span></a>
+</div>
+```

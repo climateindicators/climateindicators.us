@@ -1,0 +1,9 @@
+**climateindicators.us** is an open, reproducible collection of climate
+indicators for the United States --- the measurable signals that show how a
+changing climate is affecting people, health, infrastructure, and the
+environment. Every indicator is built from public data, with the code and
+sources published alongside it.
+
+The project began as a replication of the EPA's *Climate Change Indicators*,
+preserved in the [January 19, 2025 snapshot](https://19january2025snapshot.epa.gov/climate-indicators/view-indicators/index.html)
+of the agency's website.

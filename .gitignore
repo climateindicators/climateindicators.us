@@ -1,0 +1,9 @@
+.DS_Store
+.Rproj.user
+_site
+.Rhistory
+site_libs
+/.quarto/
+**/*.quarto_ipynb
+.github/depends.Rds
+.github/R-version

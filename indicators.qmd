@@ -1,0 +1,25 @@
+---
+title: "Indicators"
+listing:
+  contents: indicators
+  sort: "title"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [title, description, categories]
+  image-height: auto
+page-layout: full
+---
+
+Each indicator below tracks one measurable signal of a changing climate in the
+United States, built from public data with the code and sources published
+alongside it.
+
+::: {.callout-note appearance="simple" icon=false}
+## 🚧 Coming soon
+
+More indicators are on the way.
+:::
+
+<br>

@@ -1,0 +1,20 @@
+---
+title: "About"
+execute:
+  eval: true
+  echo: false
+  message: false
+---
+
+## Overview
+
+{{< include chunks/description.qmd >}}
+
+::: {.callout-note appearance="simple" icon=false}
+## 🚧 Coming soon
+
+Full details about the project's motivation, methodology, and data sources are
+on the way.
+:::
+
+*Coming soon.*

@@ -1,0 +1,19 @@
+---
+title: "404"
+execute:
+  echo: false
+  message: false
+  warning: false
+toc: false
+---
+
+<br>
+<center>
+
+# Whoops!
+
+### The requested page does not exist 😔
+
+### [Return to home](https://climateindicators.us)
+
+</center>
