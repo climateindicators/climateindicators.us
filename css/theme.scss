@@ -7,24 +7,20 @@
 // so re-theming the site means editing this block and nothing else.
 // ---------------------------------------------------------------------------
 $accent:       #2882e6;  // link / brand blue
-$accent-light: #5aa3f0;  // lightened for legibility on dark backgrounds
+$accent-light: #5aa3f0;  // lightened for legibility on the dark footer bar
 $accent-dark:  #1b66bd;  // pressed states
-$ink:          #1e1e1e;  // near-black — navbar, dark surfaces
+$ink:          #1e1e1e;  // near-black — navbar and footer
 $ink-soft:     #333333;  // header bar on climate.us proper
 $body-text:    #464646;
 $panel:        #f9f6f4;  // warm off-white for cards, sidebar, callouts
 $rule:         #dcdcd7;  // warm border
 $muted:        #757575;
 
-// Dark-mode surfaces
-$dark-bg:      #161616;
-$dark-panel:   #232323;
-$dark-rule:    #3a3a3a;
-$dark-text:    #d8d8d8;
-
 // Bootstrap picks up $link-color from $primary, so setting this alone recolors
-// links, active states, and focus rings in BOTH the light and dark themes.
-$primary: $accent;
+// links, active states, and focus rings site-wide.
+$primary:    $accent;
+$body-bg:    #fff;
+$body-color: $body-text;
 
 // Font families — climate.us sets Source Serif 4 on headings, then overrides
 // h1–h3 back to Source Sans 3, so the whole site is effectively one sans face.
@@ -43,8 +39,6 @@ $grid-margin-width: 300px !default;
 /* Typography */
 body {
   font-family: $font-family-base;
-  background-color: #fff;
-  color: $body-text;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
@@ -70,18 +64,6 @@ main.content a:not(.anchorjs-link):not(.quarto-title-meta-heading):not(.btn) {
 a.quarto-grid-link,
 a.quarto-grid-link * {
   text-decoration: none !important;
-}
-
-/* Dark theme base */
-body.quarto-dark {
-  background-color: $dark-bg;
-  color: $dark-text;
-
-  h1, .h1, h2, .h2, h3, .h3, h4, .h4 { color: #f0f0f0; }
-
-  // $accent on near-black sits right at the edge of comfortable contrast;
-  // the lighter tint keeps body links readable.
-  main.content a { color: $accent-light; }
 }
 
 /* Navbar — the black header bar. `background: dark` in _quarto.yml gets Quarto
@@ -113,16 +95,36 @@ nav.navbar {
     text-decoration: none;
   }
 
-  // climate.us marks the current section with a dark wash plus a blue rule,
-  // not a solid blue fill — the fill is reserved for submenu links.
-  &.active {
-    background-color: $ink-soft;
-    color: #ffffff;
-    box-shadow: inset 0 -2px 0 0 $accent;
-  }
-
   &:active {
     background-color: $accent-dark;
+  }
+}
+
+// Current section: a thin, square-ended blue rule under the label, with no
+// background fill. Drawn as a pseudo-element rather than an inset box-shadow
+// or border-bottom — both of those inherit the link's 6px border-radius and
+// bow upward at the ends.
+.navbar-nav .nav-link {
+  position: relative;
+
+  &.active {
+    background-color: transparent;
+    color: #ffffff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.55rem;   // matches the link's horizontal padding so the rule
+      right: 0.55rem;  // tracks the label, not the wider hover block
+      bottom: 0;
+      height: 2px;
+      background-color: $accent;
+    }
+  }
+
+  // Keep the hover wash on the current item, but let the rule sit on top.
+  &.active:hover {
+    background-color: $ink-soft;
   }
 }
 
@@ -197,11 +199,6 @@ nav.navbar {
 #quarto-sidebar.sidebar-navigation {
   background-color: $panel;
   border-right: 1px solid $rule;
-}
-
-body.quarto-dark #quarto-sidebar.sidebar-navigation {
-  background-color: $dark-panel;
-  border-right-color: $dark-rule;
 }
 
 /* Footer */
@@ -308,15 +305,6 @@ main.content {
   line-height: 1.5;
 }
 
-body.quarto-dark {
-  .home-pill {
-    background: $dark-panel;
-    border-color: $dark-rule;
-  }
-  .home-pill-label { color: $accent-light; }
-  .home-pill-desc { color: $dark-text; }
-}
-
 /* ---- Listing cards: Indicators grid (.quarto-grid-item) + any post list
    (.quarto-post). Squared-off borders and a flat accent outline on hover,
    matching climate.us's card treatment rather than a soft glow. */
@@ -335,14 +323,6 @@ body.quarto-dark {
     border-color: $accent-dark !important;
     box-shadow: 0 0 0 1px $accent-dark;
     transform: scale(0.995);
-  }
-}
-
-body.quarto-dark {
-  .quarto-grid-item.card,
-  .quarto-post {
-    background: $dark-panel;
-    border-color: $dark-rule;
   }
 }
 
@@ -394,10 +374,6 @@ body.quarto-dark {
 /* Tables — climate.us uses the warm grey for header rows. */
 table thead th {
   background: $rule;
-}
-
-body.quarto-dark table thead th {
-  background: $dark-panel;
 }
 
 /* Images */

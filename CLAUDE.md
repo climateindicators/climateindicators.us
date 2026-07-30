@@ -35,18 +35,21 @@ The site is built with **Quarto** and deployed to **GitHub Pages** (the
 
 ### Styling System
 
-- Quarto's Bootstrap 5 theme system, light/dark via `cosmo`/`darkly`
-- All custom styling lives in `css/theme.scss`
+- Quarto's Bootstrap 5 theme system, `cosmo` plus `css/theme.scss`
+- **Light theme only — there is deliberately no dark variant.** `theme:` in
+  `_quarto.yml` is a single list, not a `light:`/`dark:` map, so Quarto emits
+  one CSS bundle and no color-scheme toggle. Do not add `body.quarto-dark`
+  rules; they are dead code unless a dark theme is reintroduced.
 - **The palette is defined once in a variable block at the top of the
-  `scss:defaults` section** (`$accent`, `$ink`, `$panel`, `$rule`, the `$dark-*`
-  surfaces, …), lifted from [climate.us](https://www.climate.us/). Every tinted
-  rule derives from those variables — re-theming means editing that block, not
-  hunting for hard-coded hex codes. Keep it that way.
-- Setting `$primary: $accent` is what recolors links, focus rings, and active
-  states across *both* themes — Bootstrap derives `$link-color` from `$primary`.
-  Because one SCSS file is shared by the light and dark themes, per-theme
-  colors must go in `scss:rules` under `body` / `body.quarto-dark` selectors,
-  never in `scss:defaults`.
+  `scss:defaults` section** (`$accent`, `$ink`, `$panel`, `$rule`, …), lifted
+  from [climate.us](https://www.climate.us/). Every tinted rule derives from
+  those variables — re-theming means editing that block, not hunting for
+  hard-coded hex codes. Keep it that way.
+- Because there is only one theme, page-level colors belong in `scss:defaults`
+  as Bootstrap variables (`$primary`, `$body-bg`, `$body-color`) rather than as
+  `body {}` overrides in `scss:rules`. Setting `$primary: $accent` recolors
+  links, focus rings, and active states site-wide — Bootstrap derives
+  `$link-color` from `$primary`.
 - Key aesthetic notes: near-black (`$ink`) navbar and footer, white page
   background with warm off-white (`$panel`) cards and sidebar, `#2882e6` blue
   accent, Source Sans 3 throughout, squared-off 4px card corners, and
