@@ -1,0 +1,9 @@
+---
+title: "Lyme Disease"
+description: "Something"
+categories: [Health, Temperature]
+---
+
+{{< include ../chunks/coming-soon.qmd >}}
+
+Some text down here
