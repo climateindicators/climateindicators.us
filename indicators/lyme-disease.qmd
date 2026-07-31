@@ -1,0 +1,9 @@
+---
+title: "Lyme Disease"
+description: "This indicator tracks the rate of reported Lyme disease cases across the United States."
+categories: [Health, Disease]
+---
+
+{{< include ../chunks/coming-soon.qmd >}}
+
+Some text down here
