@@ -3,7 +3,8 @@
     "listing": "/indicators.html",
     "items": [
       "/indicators/cold-related-deaths.html",
-      "/indicators/heat-related-deaths.html"
+      "/indicators/heat-related-deaths.html",
+      "/indicators/lyme-disease.html"
     ]
   }
 ]

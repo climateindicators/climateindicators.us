@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://climateindicators.us/indicators/heat-related-deaths.html</loc>
-    <lastmod>2026-07-31T15:53:48.034Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/indicators.html</loc>
-    <lastmod>2026-07-31T15:53:48.034Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/about.html</loc>
-    <lastmod>2026-07-31T15:53:48.033Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/index.html</loc>
-    <lastmod>2026-07-31T15:53:48.034Z</lastmod>
+    <loc>https://climateindicators.us/indicators/lyme-disease.html</loc>
+    <lastmod>2026-07-31T16:08:44.520Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators/cold-related-deaths.html</loc>
-    <lastmod>2026-07-31T15:53:48.034Z</lastmod>
+    <lastmod>2026-07-31T16:08:44.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/index.html</loc>
+    <lastmod>2026-07-31T16:08:44.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/about.html</loc>
+    <lastmod>2026-07-31T16:08:44.519Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators.html</loc>
+    <lastmod>2026-07-31T16:08:44.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators/heat-related-deaths.html</loc>
+    <lastmod>2026-07-31T16:08:44.520Z</lastmod>
   </url>
 </urlset>

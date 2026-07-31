@@ -1,26 +1,34 @@
 [
   {
-    "objectID": "indicators/heat-related-deaths.html",
-    "href": "indicators/heat-related-deaths.html",
-    "title": "Heat-Related Deaths",
+    "objectID": "indicators/lyme-disease.html",
+    "href": "indicators/lyme-disease.html",
+    "title": "Lyme Disease",
     "section": "",
     "text": "Note🚧 Coming soon\n\n\n\nThis site is under construction. Content is being added indicator by indicator — check back soon.\n\n\nSome text down here\n\n\n\n Back to top",
     "crumbs": [
       "Indicators",
       "Health",
-      "Heat-Related Deaths"
+      "Lyme Disease"
     ]
   },
   {
-    "objectID": "indicators.html",
-    "href": "indicators.html",
-    "title": "Indicators",
+    "objectID": "indicators/cold-related-deaths.html",
+    "href": "indicators/cold-related-deaths.html",
+    "title": "Cold-Related Deaths",
     "section": "",
-    "text": "Each indicator below tracks one measurable signal of a changing climate in the United States, built from public data with the code and sources published alongside it.\n\n\n\n\n\n\nNote🚧 Coming soon\n\n\n\nThis site is under construction. Content is being added indicator by indicator — check back soon.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCold-Related Deaths\n\n\n\nHealth\n\nTemperature\n\n\n\nDeaths in the United States attributed to extreme cold.\n\n\n\n\n\n\n\n\n\nHeat-Related Deaths\n\n\n\nHealth\n\nTemperature\n\n\n\nDeaths in the United States attributed to extreme heat.\n\n\n\n\n\nNo matching items\n Back to top",
+    "text": "Note🚧 Coming soon\n\n\n\nThis site is under construction. Content is being added indicator by indicator — check back soon.\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Indicators",
-      "All Indicators"
+      "Health",
+      "Cold-Related Deaths"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to climateindicators.us!",
+    "section": "",
+    "text": "Welcome to climateindicators.us!\nclimateindicators.us is an open, reproducible collection of climate indicators for the United States — the measurable signals that show how a changing climate is affecting people, health, infrastructure, and the environment. Every indicator is built from public data, with the code and sources published alongside it.\nThe project began as a replication of the EPA’s Climate Change Indicators, preserved in the January 19, 2025 snapshot of the agency’s website.\n\n\n\n\n\n\n\nNote🚧 Coming soon\n\n\n\nThis site is under construction. Content is being added indicator by indicator — check back soon.\n\n\n\n\n  AboutAbout the project, the data sources, and the people behind it.\n  IndicatorsBrowse the full set of climate indicators we track."
   },
   {
     "objectID": "about.html",
@@ -37,22 +45,26 @@
     "text": "climateindicators.us is an open, reproducible collection of climate indicators for the United States — the measurable signals that show how a changing climate is affecting people, health, infrastructure, and the environment. Every indicator is built from public data, with the code and sources published alongside it.\nThe project began as a replication of the EPA’s Climate Change Indicators, preserved in the January 19, 2025 snapshot of the agency’s website.\n\n\n\n\n\n\nNote🚧 Coming soon\n\n\n\nThis site is under construction. Content is being added indicator by indicator — check back soon."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to climateindicators.us!",
+    "objectID": "indicators.html",
+    "href": "indicators.html",
+    "title": "Indicators",
     "section": "",
-    "text": "Welcome to climateindicators.us!\nclimateindicators.us is an open, reproducible collection of climate indicators for the United States — the measurable signals that show how a changing climate is affecting people, health, infrastructure, and the environment. Every indicator is built from public data, with the code and sources published alongside it.\nThe project began as a replication of the EPA’s Climate Change Indicators, preserved in the January 19, 2025 snapshot of the agency’s website.\n\n\n\n\n\n\n\nNote🚧 Coming soon\n\n\n\nThis site is under construction. Content is being added indicator by indicator — check back soon.\n\n\n\n\n  AboutAbout the project, the data sources, and the people behind it.\n  IndicatorsBrowse the full set of climate indicators we track."
+    "text": "Each indicator below tracks one measurable signal of a changing climate in the United States, built from public data with the code and sources published alongside it.\n\n\n\n\n\n\nNote🚧 Coming soon\n\n\n\nThis site is under construction. Content is being added indicator by indicator — check back soon.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCold-Related Deaths\n\n\n\nHealth\n\nTemperature\n\n\n\nDeaths in the United States attributed to extreme cold.\n\n\n\n\n\n\n\n\n\nHeat-Related Deaths\n\n\n\nHealth\n\nTemperature\n\n\n\nDeaths in the United States attributed to extreme heat.\n\n\n\n\n\n\n\n\n\nLyme Disease\n\n\n\nHealth\n\nDisease\n\n\n\nThis indicator tracks the rate of reported Lyme disease cases across the United States.\n\n\n\n\n\nNo matching items\n Back to top",
+    "crumbs": [
+      "Indicators",
+      "All Indicators"
+    ]
   },
   {
-    "objectID": "indicators/cold-related-deaths.html",
-    "href": "indicators/cold-related-deaths.html",
-    "title": "Cold-Related Deaths",
+    "objectID": "indicators/heat-related-deaths.html",
+    "href": "indicators/heat-related-deaths.html",
+    "title": "Heat-Related Deaths",
     "section": "",
-    "text": "Note🚧 Coming soon\n\n\n\nThis site is under construction. Content is being added indicator by indicator — check back soon.\n\n\n\n\n\n Back to top",
+    "text": "Note🚧 Coming soon\n\n\n\nThis site is under construction. Content is being added indicator by indicator — check back soon.\n\n\nSome text down here\n\n\n\n Back to top",
     "crumbs": [
       "Indicators",
       "Health",
-      "Cold-Related Deaths"
+      "Heat-Related Deaths"
     ]
   }
 ]
