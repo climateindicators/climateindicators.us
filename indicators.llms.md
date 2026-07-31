@@ -8,6 +8,10 @@ Each indicator below tracks one measurable signal of a changing climate in the U
 
 \
 
+##### Cold-Related Deaths
+
+Deaths in the United States attributed to extreme cold.
+
 ##### Heat-Related Deaths
 
 Deaths in the United States attributed to extreme heat.
