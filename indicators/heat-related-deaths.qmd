@@ -1,8 +1,53 @@
 ---
 title: "Heat-Related Deaths"
 description: "Deaths in the United States attributed to extreme heat."
-categories: [Health]
+categories: [Health, Temperature]
 ---
 
 {{< include ../chunks/coming-soon.qmd >}}
 
+```{r}
+#| eval: true
+#| echo: false
+#| label: fig-demo
+#| fig-cap: "Placeholder chart — random data, not heat-related deaths."
+
+library(tidyverse)
+library(cowplot)
+
+font <- 'Roboto Condensed'
+
+set.seed(42)
+demoData <- tibble(
+  year = 2000:2024,
+  deaths = round(500 + cumsum(rnorm(25, mean = 15, sd = 40)))
+)
+
+demoData |>
+  ggplot() +
+  geom_col(
+    aes(x = year, y = deaths),
+    fill = "#980000FF",
+    width = 0.8
+  ) +
+  scale_x_continuous(breaks = seq(2000, 2024, 2)) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
+  labs(
+    x = NULL,
+    y = 'Deaths',
+    title = 'Demo chart',
+    subtitle = 'Simulated data, here only to test that plots render',
+    caption = 'Data source: none — randomly generated'
+  ) +
+  theme_minimal_hgrid(font_family = font) +
+  theme(
+    plot.title.position = "plot",
+    plot.caption.position = "plot",
+    plot.caption = element_text(hjust = 0, face = "italic"),
+    legend.position = 'none',
+    panel.background = element_rect(fill = 'white', color = NA),
+    plot.background = element_rect(fill = 'white', color = NA)
+  )
+```
+
+Some text down here

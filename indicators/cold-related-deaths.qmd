@@ -1,0 +1,8 @@
+---
+title: "Cold-Related Deaths"
+description: "Deaths in the United States attributed to extreme cold."
+categories: [Health, Temperature]
+---
+
+{{< include ../chunks/coming-soon.qmd >}}
+

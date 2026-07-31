@@ -53,10 +53,14 @@ website:
           contents:
             - text: "Heat-Related Deaths"
               href: indicators/heat-related-deaths.qmd
+            - text: "Cold-Related Deaths"
+              href: indicators/cold-related-deaths.qmd
 
 format:
   html:
     theme: [cosmo, css/theme.scss]
+    code-fold: true
+    code-summary: "Show code"
     anchor-sections: true
     smooth-scroll: true
     link-external-newwindow: true
