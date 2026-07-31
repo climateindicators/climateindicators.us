@@ -1,6 +1,6 @@
 # climateindicators.us
 
-Source files for the main climateindicators.us website, built using
+ Source files for the main climateindicators.us website, built using
 [Quarto](https://quarto.org/) and deployed to GitHub Pages via GitHub Actions.
 
 Early replication of the snapshot at:
