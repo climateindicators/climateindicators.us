@@ -9,6 +9,8 @@ project:
     - "**/*.qmd"
   resources:
     - images/
+    - data/
+    - data-raw/
 
 website:
   title: climateindicators.us

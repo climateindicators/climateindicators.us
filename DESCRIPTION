@@ -5,8 +5,11 @@ License: CC-BY-SA
 Encoding: UTF-8
 Imports:
     dplyr,
+    ggiraph,
     ggplot2,
     here,
     knitr,
     readr,
-    rmarkdown
+    rmarkdown,
+    tidyr,
+    yaml
