@@ -6,6 +6,7 @@ project:
     browser: true
   render:
     - "!chunks/"
+    - "!indicators-src/"
     - "**/*.qmd"
   resources:
     - images/
