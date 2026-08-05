@@ -3,8 +3,9 @@
 ## Pages
 
 - [Lyme Disease](https://climateindicators.us/indicators/lyme-disease.llms.md)
-- [Cold-Related Deaths](https://climateindicators.us/indicators/cold-related-deaths.llms.md)
-- [index](https://climateindicators.us/index.llms.md)
-- [About](https://climateindicators.us/about.llms.md)
-- [Indicators](https://climateindicators.us/indicators.llms.md)
 - [Heat-Related Deaths](https://climateindicators.us/indicators/heat-related-deaths.llms.md)
+- [Indicators](https://climateindicators.us/indicators.llms.md)
+- [About](https://climateindicators.us/about.llms.md)
+- [index](https://climateindicators.us/index.llms.md)
+- [Cold-Related Deaths](https://climateindicators.us/indicators/cold-related-deaths.llms.md)
+- [A Closer Look: Heat-Related Workplace Deaths](https://climateindicators.us/indicators/heat-related-workplace-deaths.llms.md)

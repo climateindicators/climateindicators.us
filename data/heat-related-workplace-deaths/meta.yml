@@ -1,0 +1,79 @@
+indicator:
+  name: Heat-Related Workplace Deaths
+  slug: heat-related-workplace-deaths
+  publisher: U.S. Environmental Protection Agency
+  source_page: https://19january2025snapshot.epa.gov/climate-indicators/closer-look-heat-related-workplace-deaths/index.html
+  technical_documentation: https://19january2025snapshot.epa.gov/system/files/documents/2024-06/heat-related-workplace-deaths_documentation.pdf
+  rights: Public domain, work of the U.S. Government (17 U.S.C. 105)
+datasets:
+- file: workplace_heat_deaths_annual.csv
+  figure: Figure 1
+  figure_title: Figure 1. Heat-Related Workplace Deaths in the United States, 1992–2022
+  source_file: heat-related workplace deaths figure 1 04-30-24.xlsx
+  source_sha256: d31cb08b075960d5161e036bbda1fae652da66258e5d839d87ac9e34543d13cc
+  data_source: BLS, 2024
+  web_update: June 2024
+  unit: Number of deaths
+  rows: 93
+  columns:
+  - name: year
+    type: integer
+    description: Calendar year, 1992-2022
+  - name: series_key
+    type: string
+    description: all_industries | construction | other_sectors. other_sectors = all_industries
+      - construction, EPA's own calculated column, used as-is.
+  - name: series_label
+    type: string
+    description: Display label, as used in EPA's published chart legend
+  - name: measure
+    type: string
+    description: What is measured
+  - name: unit
+    type: string
+    description: Unit of `value`
+  - name: value
+    type: number
+    description: Death count, verbatim from the source workbook. Empty when `flag`
+      is set.
+  - name: flag
+    type: string
+    description: Empty for an ordinary observation. `not_available` means BLS did
+      not publish a value for that year/series; see `note`.
+  - name: note
+    type: string
+    description: Why a flagged cell is not available, from EPA's own published figure
+      caption. Empty for ordinary observations.
+  note: '2019: BLS combined construction into a single all-industry total (construction/other_sectors
+    not available that year, all_industries is). 2020: BLS''s data collection fell
+    below reporting thresholds entirely (no series available). Both are EPA''s own
+    stated reasons, not this build''s inference.'
+- file: workplace_heat_deaths_outdoor_workers_county.csv
+  figure: Example 1
+  figure_title: Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022
+  source_file: heat-related workplace deaths example 1 04-30-24.xlsx
+  source_sha256: 1dfe3c5ebaddd3f2a9574f2a454ad566bf0a9384a7535321a590697e5747b501
+  data_source: BLS, 2024
+  web_update: June 2024
+  unit: Percent of county workforce
+  rows: 3274
+  columns:
+  - name: fips
+    type: string
+    description: 5-digit county FIPS code, zero-padded
+  - name: total_workers
+    type: integer
+    description: Total workers across all industries in the county (BLS QCEW, 2018-2022
+      sum)
+  - name: outdoor_workers
+    type: integer
+    description: Workers in occupations classified as predominantly outdoor (delivery,
+      law enforcement/emergency services, utilities, mining/quarrying/oil and gas
+      extraction, agriculture, fishing, forestry, construction)
+  - name: percentage
+    type: number
+    description: outdoor_workers / total_workers, a five-year average (2018-2022)
+      as published by EPA
+  note: Filtered from the source's 4430 rows (which also include state totals, a US
+    national total, and metro/CSA aggregates) down to genuine 5-digit county FIPS
+    codes only, per the filter documented in R/build_data.R.

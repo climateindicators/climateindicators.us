@@ -8,6 +8,10 @@ Each indicator below tracks one measurable signal of a changing climate in the U
 
 \
 
+##### A Closer Look: Heat-Related Workplace Deaths
+
+Deaths of U.S. workers attributed to heat exposure on the job.
+
 ##### Cold-Related Deaths
 
 Deaths in the United States attributed to extreme cold.
