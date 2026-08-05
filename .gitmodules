@@ -1,0 +1,3 @@
+[submodule "indicators-src/cold-related-deaths"]
+	path = indicators-src/cold-related-deaths
+	url = https://github.com/climateindicators/cold-related-deaths.git
