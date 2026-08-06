@@ -77,17 +77,24 @@ Download:
 ld_caption("lyme_incidence_by_jurisdiction.csv")
 ```
 
-![Figure 2. Reported Lyme Disease Cases by State, 2022](../images/lyme-disease/figure-2.png){fig-alt="Map of the northeastern quarter of the United States shading each state by reported Lyme disease incidence in 2022, from under 20 cases per 100,000 people in the palest states to over 200 in Vermont and Rhode Island. Shading is concentrated in New England, the mid-Atlantic and the upper Midwest." fig-align="center"}
+```{r}
+#| label: fig-2
+#| echo: false
+ld_fig_2()
+```
 
-This map shows reported Lyme disease by jurisdiction in 2022 for the portion
-of the country where Lyme disease is common, based on the number of total
-cases per 100,000 people. All states not shown had rates below 10 cases per
-100,000 people.
+This chart shows reported Lyme disease incidence by jurisdiction in 2022,
+based on the number of total cases per 100,000 people, ranked from highest to
+lowest. The dotted rule marks 10 cases per 100,000 people: the jurisdictions
+above it are the 15 states and the District of Columbia that CDC designates
+"high-incidence."
 
-This is EPA's own published map image. The table below carries all 51
-jurisdictions rather than only the ones the map draws, including the two the
-map's shading cannot distinguish: Oklahoma reported a genuine zero, while
-Hawaii filed no report at all.
+EPA presents this figure as a map, shading only the part of the country where
+Lyme disease is common — every state below 10 cases per 100,000 people is left
+uncoloured, and the shaded ones are read off an 11-step colour scale. All 51
+jurisdictions are charted here instead, with their actual values, which also
+keeps apart two things the map cannot: Oklahoma reported a genuine zero, while
+Hawaii filed no report at all. EPA's own map is available as a download below.
 
 Data source: CDC, 2024^[8](#ref-8)^
 
@@ -96,11 +103,11 @@ Data source: CDC, 2024^[8](#ref-8)^
 ```{r}
 #| label: fig-2-table
 #| echo: false
-knitr::kable(ld_jurisdiction_table(), row.names = FALSE)
+knitr::kable(ld_fig_2_table(), row.names = FALSE)
 ```
 
 Download:
-<i class="bi bi-filetype-png"></i> <a href="../images/lyme-disease/figure-2.png" download>figure image</a> ·
+<i class="bi bi-filetype-png"></i> <a href="../images/lyme-disease/figure-2.png" download>EPA's published map</a> ·
 <i class="bi bi-filetype-csv"></i> <a href="../data/lyme-disease/lyme_incidence_by_jurisdiction.csv" download>figure data</a> ·
 <i class="bi bi-filetype-csv"></i> <a href="../data-raw/lyme-disease/lyme_fig-2.csv" download>EPA's published source file</a>
 

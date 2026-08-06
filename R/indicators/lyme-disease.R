@@ -92,40 +92,19 @@ ld_meta_for    <- function(file, meta = ld_meta()) LYME_ENV$meta_for(file, meta)
 ld_fig_1       <- function() LYME_ENV$fig_1()
 ld_fig_1_plot  <- function() LYME_ENV$fig_1_plot()
 ld_fig_1_table <- function() LYME_ENV$fig_1_table()
+ld_fig_2       <- function() LYME_ENV$fig_2()
+ld_fig_2_plot  <- function() LYME_ENV$fig_2_plot()
+ld_fig_2_table <- function() LYME_ENV$fig_2_table()
 
-# Figures 2 and 3 deliberately get no wrappers, because upstream they have no
-# chart functions to wrap.
+# Figure 3 (the 1996-vs-2022 dot maps) gets no wrapper: EPA published the
+# images and no data at all, so there is nothing upstream to chart and nothing
+# to download but the image itself. It is the only figure on this page that
+# falls back to a static image, and the only kind of figure that should.
 #
-# Figure 2 is a single year of incidence keyed by jurisdiction: named as a
-# series that is 51 of them, past the submodule's CHART_MAX_SERIES limit of 8;
-# named as the x axis it is one point per state with no time axis at all. It is
-# a choropleth, and it renders here as EPA's own published map image, with the
-# tidy CSV alongside it as a download. Note that CSV covers all 51
-# jurisdictions while EPA's map draws only those at or above 10 cases per
-# 100,000 people.
+# Note Figure 2 IS charted even though EPA draws it as a choropleth -- see the
+# submodule's R/figures.R header for why a ranked bar chart of all 51
+# jurisdictions carries more than EPA's map does. EPA's map is still linked
+# from the page as a PNG download.
 #
-# Figure 3 (the 1996-vs-2022 dot maps) has no published data file at all, so
-# there is nothing to chart and nothing to download but the image.
-#
-# Adding chart code for either here would mean figure code living outside the
-# submodule, which is exactly what this integration pattern avoids. If one of
-# them ever gets a chart, it gets written upstream and picked up by a resync.
-#
-# ld_jurisdiction_table() is the one exception: it is not chart code, just the
-# same tidy CSV the page already links, rendered inline so the map's numbers
-# are readable on the page rather than download-only. 51 rows fits.
-ld_jurisdiction_table <- function() {
-  d <- LYME_ENV$read_indicator("lyme_incidence_by_jurisdiction.csv")
-  # Sorted by rate rather than alphabetically: the map's whole point is which
-  # jurisdictions are high, and a sorted list says that without a legend.
-  # Hawaii filed no report, so it has no rate to sort by and lands last with
-  # the reason spelled out -- never as a zero, which is what Oklahoma is.
-  d <- d[order(d$value, decreasing = TRUE, na.last = TRUE), ]
-  data.frame(
-    Jurisdiction = d$jurisdiction,
-    `Cases per 100,000 people` = ifelse(
-      nzchar(d$flag), "not reported", sprintf("%.1f", d$value)
-    ),
-    check.names = FALSE, stringsAsFactors = FALSE
-  )
-}
+# If Figure 3 ever gets a chart it gets written upstream and picked up by a
+# resync; chart code must not appear in this file.
