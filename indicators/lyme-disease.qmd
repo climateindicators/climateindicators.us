@@ -2,8 +2,271 @@
 title: "Lyme Disease"
 description: "This indicator tracks the rate of reported Lyme disease cases across the United States."
 categories: [Health, Disease]
+execute:
+  eval: true
 ---
 
-{{< include ../chunks/coming-soon.qmd >}}
+This indicator tracks the rate of reported Lyme disease cases across the United States.
 
-Some text down here
+```{r}
+#| label: setup
+#| include: false
+source(here::here("R/indicators/lyme-disease.R"))
+ld_meta_all <- ld_meta()
+ld_caption <- function(file) {
+  m <- ld_meta_for(file, ld_meta_all)
+  knitr::asis_output(sprintf(
+    "**%s**\n\nData source: %s <br> Web update: %s\n",
+    m$figure_title, m$data_source, m$web_update
+  ))
+}
+```
+
+## Figure 1
+
+```{r}
+#| label: fig-1-caption
+#| echo: false
+#| output: asis
+ld_caption("lyme_incidence_national.csv")
+```
+
+```{r}
+#| label: fig-1
+#| echo: false
+ld_fig_1()
+```
+
+This graph shows the annual incidence of Lyme disease, which is calculated as
+the number of cases per 100,000 people. The graph is based on cases that local
+and state health departments report to CDC's national disease tracking
+system. Due to the COVID-19 pandemic, 2019 and 2020 data from some
+jurisdictions are incomplete.
+
+The line breaks at each of the three points where the surveillance case
+definition changed, in 1996, 2008 and 2022, dividing the record into four
+segments. Values are not comparable across a break: the apparent jump in 2022
+is largely the result of the new definition letting high-incidence
+jurisdictions report on laboratory evidence alone, rather than a change in
+disease risk. Hover any point for that year's value and for the caveat CDC or
+EPA attaches to it.
+
+Data source: CDC, 2024^[8](#ref-8)^
+
+<details><summary>Show the data behind this figure</summary>
+
+```{r}
+#| label: fig-1-table
+#| echo: false
+knitr::kable(ld_fig_1_table(), digits = 3)
+```
+
+Download:
+<i class="bi bi-filetype-png"></i> <a href="../images/lyme-disease/figure-1.png" download>figure image</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="../data/lyme-disease/lyme_incidence_national.csv" download>figure data</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="../data-raw/lyme-disease/lyme_fig-1.csv" download>EPA's published source file</a>
+
+</details>
+
+## Figure 2
+
+```{r}
+#| label: fig-2-caption
+#| echo: false
+#| output: asis
+ld_caption("lyme_incidence_by_jurisdiction.csv")
+```
+
+![Figure 2. Reported Lyme Disease Cases by State, 2022](../images/lyme-disease/figure-2.png){fig-alt="Map of the northeastern quarter of the United States shading each state by reported Lyme disease incidence in 2022, from under 20 cases per 100,000 people in the palest states to over 200 in Vermont and Rhode Island. Shading is concentrated in New England, the mid-Atlantic and the upper Midwest." fig-align="center"}
+
+This map shows reported Lyme disease by jurisdiction in 2022 for the portion
+of the country where Lyme disease is common, based on the number of total
+cases per 100,000 people. All states not shown had rates below 10 cases per
+100,000 people.
+
+This is EPA's own published map image. The table below carries all 51
+jurisdictions rather than only the ones the map draws, including the two the
+map's shading cannot distinguish: Oklahoma reported a genuine zero, while
+Hawaii filed no report at all.
+
+Data source: CDC, 2024^[8](#ref-8)^
+
+<details><summary>Show the data behind this figure</summary>
+
+```{r}
+#| label: fig-2-table
+#| echo: false
+knitr::kable(ld_jurisdiction_table(), row.names = FALSE)
+```
+
+Download:
+<i class="bi bi-filetype-png"></i> <a href="../images/lyme-disease/figure-2.png" download>figure image</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="../data/lyme-disease/lyme_incidence_by_jurisdiction.csv" download>figure data</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="../data-raw/lyme-disease/lyme_fig-2.csv" download>EPA's published source file</a>
+
+</details>
+
+## Figure 3
+
+**Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022**
+
+Data source: CDC, 2024^[9](#ref-9)^
+
+![Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022](../images/lyme-disease/figure-3.png){fig-alt="Two dot maps of the 50 states and the District of Columbia, one for 1996 and one for 2022, with each dot representing one reported Lyme disease case. Dots in 1996 cluster tightly in the Northeast and around Wisconsin and Minnesota; in 2022 they fill those areas far more densely and spread outward through the mid-Atlantic, New England and the upper Midwest." fig-align="center"}
+
+These maps show the distribution of Lyme disease cases reported to CDC in 1996
+and 2022 across the 50 states and the District of Columbia. Each dot
+represents an individual case. Dots are placed randomly within each patient's
+county of residence, which might differ from the county where they were
+exposed. The year 1996 was chosen as the first year after a major case
+definition update that incorporated standardized testing approaches.
+
+EPA publishes these maps as images only, with no underlying data file, so
+there is no table or data download for this figure.
+
+<details><summary>Show what is available for this figure</summary>
+
+Download:
+<i class="bi bi-filetype-png"></i> <a href="../images/lyme-disease/figure-3.png" download>figure image</a>
+
+</details>
+
+## Key Points
+
+- Between 1992 and 2022, the incidence of Lyme disease in the United States
+  has ranged from a minimum of 3.2 reported cases per 100,000 people in 1993
+  to a maximum of 18.8 per 100,000 people in 2022 (Figure 1). Changes in the
+  way Lyme disease cases have been defined and reported over time make it
+  challenging to identify long-term trends.
+- Lyme disease is much more common in the Northeast, mid-Atlantic, and upper
+  Midwest than in other regions (Figure 2). The CDC has identified 15 states
+  and the District of Columbia as "high-incidence jurisdictions" where Lyme
+  disease cases consistently occur at a high rate. These states plus D.C.
+  accounted for about 95 percent of the nation's reported Lyme disease cases
+  in 2022.
+- Driven by multiple factors, the distribution of reported cases of Lyme
+  disease has expanded over time (Figure 3).
+
+## Background
+
+Lyme disease is a bacterial illness that can cause fever, fatigue, joint pain,
+and skin rash, as well as more serious joint and nervous system complications.
+Lyme disease is the most common vector-borne disease (that is, a disease
+transmitted by mosquitoes, ticks, or fleas) in the United
+States.^[1](#ref-1),[2](#ref-2)^ Lyme disease is transmitted through the bite
+of certain species of infected ticks (referred to commonly as deer ticks) that
+carry the bacteria that cause Lyme disease. These ticks live not only on deer,
+but also on rodents, birds, and other host animals. Deer do not harbor the
+bacteria that cause Lyme disease, but certain other hosts such as white-footed
+mice do, and ticks pick up the bacteria by feeding on these infected hosts.
+
+Studies provide evidence that climate change has contributed to the expanded
+range of ticks,^[3](#ref-3)^ increasing the potential risk of Lyme disease,
+such as in areas of Canada where the ticks were previously unable to survive.
+The life cycle and prevalence of deer ticks are strongly influenced by
+temperature.^[3](#ref-3),[4](#ref-4)^ For example, deer ticks are mostly
+active when temperatures are above 45˚F, and they thrive in areas with at
+least 85-percent humidity. Thus, warming temperatures associated with climate
+change are projected to increase the range of suitable tick habitat and are,
+therefore, one of multiple factors driving the observed spread of Lyme
+disease.^[3](#ref-3)^ Because tick activity depends on temperatures being
+above a certain minimum, shorter winters could also extend the period when
+ticks are active each year, increasing the time that humans could be exposed
+to Lyme disease. Unlike some other vector-borne diseases, tick-borne disease
+patterns are generally less influenced by short-term changes in weather (weeks
+to months) than by longer-term climate change.
+
+Climate is just one of many important factors that influence the transmission,
+distribution, and incidence of Lyme disease. Other factors that affect the
+number of Lyme disease cases include changes in the populations of host
+species (particularly deer), which affect tick population size. The percentage
+of ticks that are infected depends on the prevalence and infection rates of
+white-footed mice and certain other hosts. Host species populations and
+habitats can be affected by climate change and other ecosystem disturbances.
+Human exposure to infected ticks is also influenced by factors such as changes
+in the proximity of human populations to ticks and other hosts, increased
+awareness of Lyme disease, and modified behaviors, such as spending less time
+outdoors, taking precautions against being bitten, and checking more carefully
+for ticks. Occupation influences exposure, as people who work outdoors, like
+farmers and landscapers, may be especially at risk.^[5](#ref-5)^ Lyme disease
+is one of many [diseases transmitted to humans by ticks or mosquitoes that CDC
+tracks](https://www.cdc.gov/climate-health/php/effects/vectors.html).^[1](#ref-1)^
+
+## About the Indicator
+
+This indicator looks at the incidence of Lyme disease, which reflects the rate
+of new cases reported in a given geographic area and time period. Incidence is
+typically calculated as the number of cases per 100,000 people per year.
+Annual Lyme disease totals and rates reported for each state were provided by
+CDC. The original data were collected by state and local health departments,
+which track cases of Lyme disease and report these cases to the National
+Notifiable Diseases Surveillance System. Nationwide reporting of Lyme disease
+began in 1991, and 1992 was the first year with complete national data.
+However, the actual number of illnesses is likely greater than what is
+reported to health officials.^[6](#ref-6),[7](#ref-7)^
+
+Figure 1 shows the reported national incidence of Lyme disease since 1992, and
+Figure 2 shows incidence by state for the most recent year with data (2022).
+To illustrate changes in the distribution of reported cases over time, Figure
+3 presents side-by-side maps that compare 2022 with 1996, which was the first
+year with readily available case numbers by county.
+
+## Indicator Notes
+
+Changes in diagnosing practices and awareness of the disease over time can
+affect Lyme disease trends. Cases are reported based on the patient's county
+of residence, which is not necessarily the place where they were infected.
+Risk of infection is focused in certain regions of the country, and confirmed
+reports from areas with low incidence are often the result of travel to an
+area of higher incidence. Evidence suggests that expanding ranges of ticks in
+certain northern states may be more related to a warming climate than
+expanding ranges in southern states.^[10](#ref-10),[11](#ref-11)^ Because of
+the many factors affecting tick populations and reporting of Lyme disease,
+though, this indicator does not provide sufficient information to determine
+what proportion of the observed changes in Lyme disease incidence is directly
+driven by climate change. Further study is critical to improving the
+usefulness of this indicator and informing decisions affecting public health.
+For information on prevention, symptoms, and treatment of Lyme disease, see:
+[www.cdc.gov/lyme](http://www.cdc.gov/lyme/).
+
+## Data Sources
+
+All three figures are based on publicly available Lyme disease data compiled
+by CDC at:
+[www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html](http://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html).
+Incidence was calculated using mid-year population estimates from the U.S.
+Census Bureau.^[12](#ref-12)^
+
+## Technical Documentation
+
+```{r}
+#| label: td-link
+#| echo: false
+#| output: asis
+cat(sprintf("- [Download related technical information (PDF)](%s)\n", ld_meta_all$indicator$technical_documentation))
+```
+
+## References
+
+<ol class="references">
+  <li id="ref-1">Rosenberg, R., Lindsey, N., Fischer, M., Gregory, C., Hinckley, A., Mead, P., Paz-Bailey, G., Waterman, S., Drexler, N., Kersh, G., Hooks, H., Partridge, S., Visser, S., Beard, C., & Petersen, L. (2018). Vital signs: Trends in reported vectorborne disease cases—United States and territories, 2004–2016. _Morbidity and Mortality Weekly Report_, _67_(17), 496–501. https://doi.org/10.15585/mmwr.mm6717e1</li>
+  <li id="ref-2">Schwartz, A. M., Hinckley, A. F., Mead, P. S., Hook, S. A., & Kugeler, K. J. (2017). Surveillance for Lyme disease—United States, 2008–2015. _MMWR. Surveillance Summaries_, _66_(22), 1–12. https://doi.org/10.15585/mmwr.ss6622a1</li>
+  <li id="ref-3">Beard, C. B., Eisen, R. J., Barker, C. M., Garofalo, J. F., Hahn, M., Hayden, M., Monaghan, A. J., Ogden, N. H., & Schramm, P. J. (2016). Chapter 5: Vectorborne diseases. In USGCRP (U.S. Global Change Research Program), _The impacts of climate change on human health in the United States: A scientific assessment_. https://health2016.globalchange.gov/vectorborne-diseases</li>
+  <li id="ref-4">Leighton, P. A., Koffi, J. K., Pelcat, Y., Lindsay, L. R., & Ogden, N. H. (2012). Predicting the speed of tick invasion: An empirical model of range expansion for the Lyme disease vector _Ixodes scapularis_ in Canada. _Journal of Applied Ecology_, _49_(2), 457–464. https://doi.org/10.1111/j.1365-2664.2012.02112.x</li>
+  <li id="ref-5">Gamble, J. L., Balbus, J., Berger, M., Bouye, K., Campbell, V., Chief, K., Conlon, K., Crimmins, A., Flanagan, B., Gonzalez-Maddux, C., Hallisey, E., Hutchins, S., Jantarasami, L., Khoury, S., Kiefer, M., Kolling, J., Lynn, K., Manangan, A., McDonald, M., … Wolkin, A. F. (2016). Chapter 9: Populations of concern. In USGCRP (U.S. Global Change Research Program), _The impacts of climate change on human health in the United States: A scientific assessment_ (pp. 247–286). https://doi.org/10.7930/J0Q81B0T</li>
+  <li id="ref-6">CDC (U.S. Centers for Disease Control and Prevention). (2013). _CDC provides estimate of Americans diagnosed with Lyme disease each year_ [Press release]. https://archive.cdc.gov/#/details?url=https://www.cdc.gov/media/releases/2013/p0819-lyme-disease.html</li>
+  <li id="ref-7">CDC (U.S. Centers for Disease Control and Prevention). (2024). _Lyme disease surveillance and data_. Retrieved July 31, 2024, from www.cdc.gov/lyme/data-research/facts-stats/index.html</li>
+  <li id="ref-8">CDC (U.S. Centers for Disease Control and Prevention). (2024). _Lyme disease surveillance data_. Retrieved July 31, 2024, from www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html</li>
+  <li id="ref-9">CDC (U.S. Centers for Disease Control and Prevention). (2024). _Lyme disease case map_. Retrieved July 31, 2024, from www.cdc.gov/lyme/data-research/facts-stats/lyme-disease-case-map.html</li>
+  <li id="ref-10">Diuk-Wasser, M. A., Hoen, A. G., Cislo, P., Brinkerhoff, R., Hamer, S. A., Rowland, M., Cortinas, R., Vourc'h, G., Melton, F., Hickling, G. J., Tsao, J. I., Bunikis, J., Barbour, A. G., Kitron, U., Piesman, J., & Fish, D. (2012). Human risk of infection with _Borrelia burgdorferi_, the Lyme disease agent, in eastern United States. _The American Journal of Tropical Medicine and Hygiene_, _86_(2), 320–327. https://doi.org/10.4269/ajtmh.2012.11-0395</li>
+  <li id="ref-11">Stromdahl, E. Y., & Hickling, G. J. (2012). Beyond Lyme: Aetiology of tick-borne human diseases with emphasis on the south-eastern United States. _Zoonoses and Public Health_, _59_(Supplement 2), 48–64. https://doi.org/10.1111/j.1863-2378.2012.01475.x</li>
+  <li id="ref-12">U.S. Census Bureau. (2024). _Population and housing unit estimates tables_. Retrieved July 1, 2024, from www.census.gov/programs-surveys/popest/data/tables.All.html</li>
+</ol>
+
+::: {.callout-note appearance="simple" icon=false}
+Text on this page is EPA's own published wording (a U.S. Government work, not
+subject to copyright), extracted from EPA's source document. Data, chart code,
+and the full extraction pipeline are maintained in the
+[lyme-disease](https://github.com/climateindicators/lyme-disease) repository,
+embedded here as a git submodule at `indicators-src/lyme-disease`.
+:::

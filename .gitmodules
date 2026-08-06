@@ -4,3 +4,6 @@
 [submodule "indicators-src/heat-related-workplace-deaths"]
 	path = indicators-src/heat-related-workplace-deaths
 	url = https://github.com/climateindicators/heat-related-workplace-deaths.git
+[submodule "indicators-src/lyme-disease"]
+	path = indicators-src/lyme-disease
+	url = https://github.com/climateindicators/lyme-disease.git
