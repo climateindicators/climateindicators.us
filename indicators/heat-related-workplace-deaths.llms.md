@@ -8,6 +8,8 @@ Deaths of U.S. workers attributed to heat exposure on the job.
 
 This feature presents data on worker deaths classified as “heat-related” in the United States and explores factors that influence exposure and vulnerability to heat.
 
+## Figures
+
 ## Figure 1
 
 **Figure 1. Heat-Related Workplace Deaths in the United States, 1992–2022**
@@ -57,7 +59,28 @@ Show the data behind this figure
 
 Figure 2
 
-Download: [figure image](../images/heat-related-workplace-deaths/figure-1.png) · [figure data](../data/heat-related-workplace-deaths/workplace_heat_deaths_annual.csv) · [original source workbook](../data-raw/heat-related-workplace-deaths/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx)
+Download: [figure data](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_annual.csv) · [original source workbook](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx)
+
+## Example 1
+
+**Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022**
+
+Data source: BLS, 2024\
+Web update: June 2024
+
+![County-level map of the United States showing the percentage of each county's workforce in predominantly-outdoor occupations, ranging from under 4 percent (pale yellow) to over 40 percent (dark red), concentrated in parts of the West, the northern and southern Great Plains, and Alaska.](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png)
+
+Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022
+
+This map shows the percentage of each county’s workforce engaged in occupations that typically involve a substantial amount of time outdoors. Job categories included in this analysis include delivery services, law enforcement and emergency services, utilities, mining/quarrying/oil and gas extraction, agriculture, fishing, forestry, and construction. The map shows a five-year average.
+
+This is EPA’s own published map image. The county-level data behind it—one row per county, five-year average percentage—is maintained in the [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths) repository and downloadable below; an interactive version built from that data is not part of this indicator yet.
+
+Show the data behind this figure
+
+This figure’s table is 3,274 rows (one per county), so it is offered as a download rather than rendered inline.
+
+Download: [figure image](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png) · [figure data](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_outdoor_workers_county.csv) · [original source workbook](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx)
 
 ## Key Points
 
@@ -80,26 +103,7 @@ This feature focuses on cases whose “source of injury” was coded as “Heat�
 
 ## Exploring Worker Exposure and Vulnerability to Heat
 
-Highlighting the intersections of climate hazards, such as extreme heat, and social vulnerability can help identify people and places most at risk. Outdoor workers, particularly those engaging in strenuous physical activity, disproportionately face heat-related health threats. Between 5 million and 10 million American workers are exposed to outdoor heat beyond safe levels every year.^([8](#ref-8)) Outdoor occupations are distributed throughout the United States, and they make up an especially large percentage of the workforce in certain regions (Example 1), including parts of the West, northern and southern Great Plains, and Alaska. Outdoor workers in cities may also be exposed to elevated temperatures due to the heat island effect, which can increase temperatures by 18 to 27°F during the day and 9 to 18°F at night in urban areas compared with outlying areas.^([9](#ref-9))
-
-**Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022**
-
-Data source: BLS, 2024\
-Web update: June 2024
-
-![County-level map of the United States showing the percentage of each county's workforce in predominantly-outdoor occupations, ranging from under 4 percent (pale yellow) to over 40 percent (dark red), concentrated in parts of the West, the northern and southern Great Plains, and Alaska.](../images/heat-related-workplace-deaths/epa-example-1-outdoor-workers-map.png)
-
-Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022
-
-This map shows the percentage of each county’s workforce engaged in occupations that typically involve a substantial amount of time outdoors. Job categories included in this analysis include delivery services, law enforcement and emergency services, utilities, mining/quarrying/oil and gas extraction, agriculture, fishing, forestry, and construction. The map shows a five-year average.
-
-This is EPA’s own published map image. The county-level data behind it—one row per county, five-year average percentage—is maintained in the [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths) repository and downloadable below; an interactive version built from that data is not part of this indicator yet.
-
-Show the data behind this figure
-
-This figure’s table is 3,274 rows (one per county), so it is offered as a download rather than rendered inline.
-
-Download: [figure image](../images/heat-related-workplace-deaths/epa-example-1-outdoor-workers-map.png) · [figure data](../data/heat-related-workplace-deaths/workplace_heat_deaths_outdoor_workers_county.csv) · [original source workbook](../data-raw/heat-related-workplace-deaths/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx)
+Highlighting the intersections of climate hazards, such as extreme heat, and social vulnerability can help identify people and places most at risk. Outdoor workers, particularly those engaging in strenuous physical activity, disproportionately face heat-related health threats. Between 5 million and 10 million American workers are exposed to outdoor heat beyond safe levels every year.^([8](#ref-8)) Outdoor occupations are distributed throughout the United States, and they make up an especially large percentage of the workforce in certain regions (see Example 1 above), including parts of the West, northern and southern Great Plains, and Alaska. Outdoor workers in cities may also be exposed to elevated temperatures due to the heat island effect, which can increase temperatures by 18 to 27°F during the day and 9 to 18°F at night in urban areas compared with outlying areas.^([9](#ref-9))
 
 ## Notes
 
@@ -136,6 +140,6 @@ Data for this feature were provided by BLS. The data in Figure 1 are publicly av
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths) repository, embedded here as a git submodule at `indicators-src/heat-related-workplace-deaths`.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths) repository, which this page reads its data from directly.
 
 Back to top

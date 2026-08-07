@@ -8,6 +8,8 @@ Deaths in the United States attributed to extreme heat.
 
 This indicator presents data on deaths classified as “heat-related” in the United States.
 
+## Figures
+
 ## Figure 1
 
 **Figure 1. Deaths Classified as “Heat-Related” in the United States, 1979-2022**
@@ -68,7 +70,7 @@ Show the data behind this figure
 
 Figure 2
 
-Download: [tidy CSV](../data/heat-related-deaths/heat_deaths_annual.csv) · [original EPA file](../data-raw/heat-related-deaths/heat-deaths_fig-1.csv)
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_annual.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-1.csv)
 
 ## Figure 2
 
@@ -110,7 +112,7 @@ Show the data behind this figure
 
 Figure 4
 
-Download: [tidy CSV](../data/heat-related-deaths/heat_deaths_summer_cvd.csv) · [original EPA file](../data-raw/heat-related-deaths/heat-deaths_fig-2.csv)
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_summer_cvd.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-2.csv)
 
 ## Example: The 1995 Chicago Heat Wave
 
@@ -138,7 +140,7 @@ Show the data behind this figure
 
 Figure 6: First 10 of 92 days.
 
-Download: [tidy CSV](../data/heat-related-deaths/chicago_1995_heat_wave.csv) · [original EPA file](../data-raw/heat-related-deaths/heat-deaths_example.csv)
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/chicago_1995_heat_wave.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_example.csv)
 
 ## Key Points
 
@@ -216,6 +218,6 @@ Data for this indicator were provided by the U.S. Centers for Disease Control an
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. One correction was applied: two CDC URLs in Data Sources had changed on the live page since the archived source document was finalized. Data, chart code, and the full extraction pipeline are maintained in the [heat-related-deaths](https://github.com/climateindicators/heat-related-deaths) repository.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. One correction was applied: two CDC URLs in Data Sources had changed on the live page since the archived source document was finalized. Data, chart code, and the full extraction pipeline are maintained in the [heat-related-deaths](https://github.com/climateindicators/heat-related-deaths) repository, which this page reads its data from directly.
 
 Back to top

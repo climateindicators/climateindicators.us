@@ -8,6 +8,8 @@ This indicator tracks the rate of reported Lyme disease cases across the United 
 
 This indicator tracks the rate of reported Lyme disease cases across the United States.
 
+## Figures
+
 ## Figure 1
 
 **Figure 1. Reported Cases of Lyme Disease in the United States, 1992–2022**
@@ -61,7 +63,7 @@ Show the data behind this figure
 
 Figure 2
 
-Download: [figure image](../images/lyme-disease/figure-1.png) · [figure data](../data/lyme-disease/lyme_incidence_national.csv) · [EPA’s published source file](../data-raw/lyme-disease/lyme_fig-1.csv)
+Download: [figure image](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-1.png) · [figure data](https://github.com/climateindicators/lyme-disease/blob/main/data/lyme_incidence_national.csv) · [EPA’s published source file](https://github.com/climateindicators/lyme-disease/blob/main/data-raw/lyme_fig-1.csv)
 
 ## Figure 2
 
@@ -136,7 +138,7 @@ Show the data behind this figure
 
 Figure 4
 
-Download: [EPA’s published map](../images/lyme-disease/figure-2.png) · [figure data](../data/lyme-disease/lyme_incidence_by_jurisdiction.csv) · [EPA’s published source file](../data-raw/lyme-disease/lyme_fig-2.csv)
+Download: [EPA’s published map](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-2.png) · [figure data](https://github.com/climateindicators/lyme-disease/blob/main/data/lyme_incidence_by_jurisdiction.csv) · [EPA’s published source file](https://github.com/climateindicators/lyme-disease/blob/main/data-raw/lyme_fig-2.csv)
 
 ## Figure 3
 
@@ -144,7 +146,7 @@ Download: [EPA’s published map](../images/lyme-disease/figure-2.png) · [figur
 
 Data source: CDC, 2024^([9](#ref-9))
 
-![Two dot maps of the 50 states and the District of Columbia, one for 1996 and one for 2022, with each dot representing one reported Lyme disease case. Dots in 1996 cluster tightly in the Northeast and around Wisconsin and Minnesota; in 2022 they fill those areas far more densely and spread outward through the mid-Atlantic, New England and the upper Midwest.](../images/lyme-disease/figure-3.png)
+![Two dot maps of the 50 states and the District of Columbia, one for 1996 and one for 2022, with each dot representing one reported Lyme disease case. Dots in 1996 cluster tightly in the Northeast and around Wisconsin and Minnesota; in 2022 they fill those areas far more densely and spread outward through the mid-Atlantic, New England and the upper Midwest.](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-3.png)
 
 Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022
 
@@ -154,7 +156,7 @@ EPA publishes these maps as images only, with no underlying data file, so there 
 
 Show what is available for this figure
 
-Download: [figure image](../images/lyme-disease/figure-3.png)
+Download: [figure image](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-3.png)
 
 ## Key Points
 
@@ -205,6 +207,6 @@ All three figures are based on publicly available Lyme disease data compiled by 
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to copyright), extracted from EPA’s source document. Data, chart code, and the full extraction pipeline are maintained in the [lyme-disease](https://github.com/climateindicators/lyme-disease) repository, embedded here as a git submodule at `indicators-src/lyme-disease`.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to copyright), extracted from EPA’s source document. Data, chart code, and the full extraction pipeline are maintained in the [lyme-disease](https://github.com/climateindicators/lyme-disease) repository, which this page reads its data from directly.
 
 Back to top

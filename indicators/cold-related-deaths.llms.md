@@ -8,6 +8,8 @@ Deaths in the United States attributed to extreme cold.
 
 This indicator presents data on deaths classified as “cold-related” in the United States.
 
+## Figures
+
 ## Figure 1
 
 **Figure 1. Deaths Classified as “Cold-Related” in the United States, 1979–2016**
@@ -66,7 +68,7 @@ Show the data behind this figure
 
 Figure 2
 
-Download: [tidy CSV](../data/cold-related-deaths/cold_deaths_annual.csv) · [original workbook](../data-raw/cold-related-deaths/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
+Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_annual.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 ## Figure TD-1
 
@@ -102,7 +104,7 @@ Show the data behind this figure
 
 Figure 4
 
-Download: [tidy CSV](../data/cold-related-deaths/cold_deaths_monthly.csv) · [original workbook](../data-raw/cold-related-deaths/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
+Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_monthly.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 ## Key Points
 
@@ -161,6 +163,6 @@ Data for this indicator were provided by the U.S. Centers for Disease Control an
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the [cold-related-deaths](https://github.com/climateindicators/cold-related-deaths) repository, embedded here as a git submodule at `indicators-src/cold-related-deaths`.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the [cold-related-deaths](https://github.com/climateindicators/cold-related-deaths) repository, which this page reads its data from directly.
 
 Back to top
