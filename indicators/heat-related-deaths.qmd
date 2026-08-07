@@ -13,6 +13,11 @@ This indicator presents data on deaths classified as "heat-related" in the Unite
 #| include: false
 source(here::here("R", "common.R"))
 source(here::here("R", "heat-related-deaths.R"))
+
+meta    <- read_meta(REPO)
+annual  <- read_indicator(REPO, "heat_deaths_annual.csv")
+cvd     <- read_indicator(REPO, "heat_deaths_summer_cvd.csv")
+chicago <- read_indicator(REPO, "chicago_1995_heat_wave.csv")
 ```
 
 ## Figures
@@ -25,13 +30,13 @@ source(here::here("R", "heat-related-deaths.R"))
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-figure_caption(REPO, "heat_deaths_annual.csv")
+figure_caption(meta, "heat_deaths_annual.csv")
 ```
 
 ```{r}
 #| label: fig-1
 #| echo: false
-fig_1()
+fig_1(annual)
 ```
 
 <details><summary>Show the data behind this figure</summary>
@@ -39,7 +44,7 @@ fig_1()
 ```{r}
 #| label: fig-1-table
 #| echo: false
-knitr::kable(fig_1_table(), digits = 3)
+knitr::kable(fig_1_table(annual), digits = 3)
 ```
 
 Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_annual.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-1.csv)
@@ -52,13 +57,13 @@ Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/bl
 #| label: fig-2-caption
 #| echo: false
 #| output: asis
-figure_caption(REPO, "heat_deaths_summer_cvd.csv")
+figure_caption(meta, "heat_deaths_summer_cvd.csv")
 ```
 
 ```{r}
 #| label: fig-2
 #| echo: false
-fig_2()
+fig_2(cvd)
 ```
 
 <details><summary>Show the data behind this figure</summary>
@@ -66,7 +71,7 @@ fig_2()
 ```{r}
 #| label: fig-2-table
 #| echo: false
-knitr::kable(fig_2_table(), digits = 3)
+knitr::kable(fig_2_table(cvd), digits = 3)
 ```
 
 Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_summer_cvd.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-2.csv)
@@ -79,13 +84,13 @@ Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/bl
 #| label: fig-example-caption
 #| echo: false
 #| output: asis
-figure_caption(REPO, "chicago_1995_heat_wave.csv")
+figure_caption(meta, "chicago_1995_heat_wave.csv")
 ```
 
 ```{r}
 #| label: fig-example
 #| echo: false
-fig_example()
+fig_example(chicago)
 ```
 
 <details><summary>Show the data behind this figure</summary>
@@ -93,7 +98,7 @@ fig_example()
 ```{r}
 #| label: fig-example-table
 #| echo: false
-knitr::kable(utils::head(fig_example_table(), 10), digits = 1,
+knitr::kable(utils::head(fig_example_table(chicago), 10), digits = 1,
             caption = "First 10 of 92 days.")
 ```
 
@@ -157,7 +162,7 @@ Data for this indicator were provided by the U.S. Centers for Disease Control an
 #| label: td-link
 #| echo: false
 #| output: asis
-technical_documentation_link(REPO)
+technical_documentation_link(meta)
 ```
 
 ## References

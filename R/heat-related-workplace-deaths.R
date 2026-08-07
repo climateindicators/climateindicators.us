@@ -16,8 +16,6 @@ INDICATOR_COLOURS <- c(
 
 # ---- Figure 1: annual heat-related workplace deaths, by sector ---------------
 
-FIG1_FILE <- "workplace_heat_deaths_annual.csv"
-
 FIG1_LABELS <- c(
   construction   = "Construction",
   other_sectors  = "All other industry sectors",
@@ -33,9 +31,7 @@ FIG1_LABELS <- c(
 #     there is a real total (43) but no honest way to split it.
 #   - 2020 draws NOTHING: BLS's own data collection fell below its reporting
 #     threshold that year and published no total at all.
-fig_1_plot <- function() {
-  d <- read_indicator(REPO, FIG1_FILE)
-
+fig_1_plot <- function(d) {
   wide <- tidyr::pivot_wider(d, id_cols = year, names_from = series_key, values_from = value)
 
   split_d <- wide |>
@@ -72,10 +68,9 @@ fig_1_plot <- function() {
     legend_top()
 }
 
-fig_1 <- function() girafe_indicator(fig_1_plot())
+fig_1 <- function(d) girafe_indicator(fig_1_plot(d))
 
-fig_1_table <- function() {
-  d <- read_indicator(REPO, FIG1_FILE)
+fig_1_table <- function(d) {
   labels <- c(
     all_industries = "All industries",
     construction   = "Construction",

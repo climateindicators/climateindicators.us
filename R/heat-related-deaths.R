@@ -25,13 +25,10 @@ INDICATOR_COLOURS <- c(
 
 # ---- Figure 1: annual heat-related death rates -------------------------------
 
-FIG1_FILE <- "heat_deaths_annual.csv"
-
 # *_plot() builds the plain ggplot object; fig_*() wraps it for the page. The
 # split exists so a plot can be ggsave()'d for a static check without pulling
 # in the htmlwidget machinery.
-fig_1_plot <- function() {
-  d <- read_indicator(REPO, FIG1_FILE)
+fig_1_plot <- function(d) {
   # icd_revision splits the line at the classification change; series_key
   # alone would draw straight through 1998/1999.
   d$seg <- paste(d$series_key, d$icd_revision, sep = "/")
@@ -61,19 +58,15 @@ fig_1_plot <- function() {
     legend_top()
 }
 
-fig_1 <- function() girafe_indicator(fig_1_plot())
+fig_1 <- function(d) girafe_indicator(fig_1_plot(d))
 
-fig_1_table <- function() {
-  d <- read_indicator(REPO, FIG1_FILE)
+fig_1_table <- function(d) {
   tidyr::pivot_wider(d, id_cols = year, names_from = series_label, values_from = value)
 }
 
 # ---- Figure 2: summer heat + cardiovascular disease death rates --------------
 
-FIG2_FILE <- "heat_deaths_summer_cvd.csv"
-
-fig_2_plot <- function() {
-  d <- read_indicator(REPO, FIG2_FILE)
+fig_2_plot <- function(d) {
   order <- c("general", "age_65_plus", "nh_black")
   d$population_key <- factor(d$population_key, levels = order)
 
@@ -101,24 +94,20 @@ fig_2_plot <- function() {
     legend_top()
 }
 
-fig_2 <- function() girafe_indicator(fig_2_plot())
+fig_2 <- function(d) girafe_indicator(fig_2_plot(d))
 
-fig_2_table <- function() {
-  d <- read_indicator(REPO, FIG2_FILE)
+fig_2_table <- function(d) {
   tidyr::pivot_wider(d, id_cols = year, names_from = population_label, values_from = value)
 }
 
 # ---- Example figure: 1995 Chicago heat wave ----------------------------------
-
-EXAMPLE_FILE <- "chicago_1995_heat_wave.csv"
 
 EXAMPLE_PANEL_LABELS <- c(
   "deaths"             = "Number of daily deaths",
   "degrees Fahrenheit" = paste0("Daily high temperature (", intToUtf8(0x00B0), "F)")
 )
 
-fig_example_plot <- function() {
-  d <- read_indicator(REPO, EXAMPLE_FILE)
+fig_example_plot <- function(d) {
   d$panel <- factor(EXAMPLE_PANEL_LABELS[d$unit], levels = unname(EXAMPLE_PANEL_LABELS))
   order <- c("deaths_avg_1990_2000", "deaths_1995", "high_temp_f")
   d$measure_key <- factor(d$measure_key, levels = order)
@@ -163,9 +152,8 @@ fig_example_plot <- function() {
     theme(panel.spacing = unit(1, "lines"))
 }
 
-fig_example <- function() girafe_indicator(fig_example_plot(), height = 5.2)
+fig_example <- function(d) girafe_indicator(fig_example_plot(d), height = 5.2)
 
-fig_example_table <- function() {
-  d <- read_indicator(REPO, EXAMPLE_FILE)
+fig_example_table <- function(d) {
   tidyr::pivot_wider(d, id_cols = date, names_from = measure_label, values_from = value)
 }

@@ -13,13 +13,10 @@ INDICATOR_COLOURS <- palette_for(c(
 
 # ---- Figure 1: annual cold-related death rates -------------------------------
 
-FIG1_FILE <- "cold_deaths_annual.csv"
-
 # *_plot() builds the plain ggplot object; fig_*() wraps it for the page. The
 # split exists so a plot can be ggsave()'d for a static check without pulling
 # in the htmlwidget machinery.
-fig_1_plot <- function() {
-  d <- read_indicator(REPO, FIG1_FILE)
+fig_1_plot <- function(d) {
   # icd_revision splits the underlying-cause line at the classification
   # change; series_key alone would draw straight through 1998/1999.
   d$seg <- paste(d$series_key, d$icd_revision, sep = "/")
@@ -49,24 +46,20 @@ fig_1_plot <- function() {
     legend_top()
 }
 
-fig_1 <- function() girafe_indicator(fig_1_plot())
+fig_1 <- function(d) girafe_indicator(fig_1_plot(d))
 
-fig_1_table <- function() {
-  d <- read_indicator(REPO, FIG1_FILE)
+fig_1_table <- function(d) {
   tidyr::pivot_wider(d, id_cols = year, names_from = series_label, values_from = value)
 }
 
 # ---- Figure TD-1: cold-related deaths by month, 1999-2015 --------------------
-
-FIGTD1_FILE <- "cold_deaths_monthly.csv"
 
 MONTH_LEVELS <- c(
   "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 )
 
-fig_td1_plot <- function() {
-  d <- read_indicator(REPO, FIGTD1_FILE)
+fig_td1_plot <- function(d) {
   # Fixed calendar order, not the alphabetical order a bare factor on month
   # names would give.
   d$month <- factor(d$month, levels = MONTH_LEVELS)
@@ -86,10 +79,9 @@ fig_td1_plot <- function() {
     theme_indicator()
 }
 
-fig_td1 <- function() girafe_indicator(fig_td1_plot())
+fig_td1 <- function(d) girafe_indicator(fig_td1_plot(d))
 
-fig_td1_table <- function() {
-  d <- read_indicator(REPO, FIGTD1_FILE)
+fig_td1_table <- function(d) {
   d$month <- factor(d$month, levels = MONTH_LEVELS)
   d <- d[order(d$month), ]
   data.frame(Month = as.character(d$month), `Total deaths` = d$value, check.names = FALSE)

@@ -8,35 +8,13 @@ suppressPackageStartupMessages({
 
 # ---- Reading data from the indicator repositories ----------------------------
 
-INDICATOR_ORG <- "climateindicators"
-
-#' Build a raw.githubusercontent.com URL for a file in an indicator repository.
-indicator_url <- function(repo, path) {
+#' Build the raw.githubusercontent.com URL for a file in an indicator
+#' repository's data/ directory.
+indicator_url <- function(repo, file) {
   sprintf(
-    "https://raw.githubusercontent.com/%s/%s/main/%s",
-    INDICATOR_ORG, repo, path
+    "https://raw.githubusercontent.com/climateindicators/%s/main/data/%s",
+    repo, file
   )
-}
-
-#' Build a github.com URL for a file in an indicator repository, for links a
-#' reader clicks (the raw host serves binaries as octet-stream).
-indicator_file_url <- function(repo, path) {
-  sprintf(
-    "https://github.com/%s/%s/blob/main/%s",
-    INDICATOR_ORG, repo, utils::URLencode(path)
-  )
-}
-
-# One fetch per URL per render. read_indicator() is called once for a figure
-# and again for the table under it, and every page reads meta.yml several times
-# for its captions. A plain named list in the global environment, keyed by URL.
-.indicator_cache <- list()
-
-.fetch <- function(url, read) {
-  if (!is.null(.indicator_cache[[url]])) return(.indicator_cache[[url]])
-  value <- read(url)
-  .indicator_cache[[url]] <<- value
-  value
 }
 
 #' Read one of an indicator repository's generated datasets.
@@ -46,34 +24,32 @@ indicator_file_url <- function(repo, path) {
 #' carrying a suppression flag get NA, which is what makes a chart draw a gap
 #' instead of a zero.
 read_indicator <- function(repo, file) {
-  .fetch(indicator_url(repo, file.path("data", file)), function(url) {
-    d <- readr::read_csv(
-      url,
-      col_types = readr::cols(.default = readr::col_character()),
-      na = character(), progress = FALSE
-    )
-    d$value <- suppressWarnings(as.numeric(d$value))
-    if ("year" %in% names(d)) d$year <- as.integer(d$year)
-    if ("date" %in% names(d)) d$date <- as.Date(d$date)
-    d
-  })
+  d <- readr::read_csv(
+    indicator_url(repo, file),
+    col_types = readr::cols(.default = readr::col_character()),
+    na = character(), progress = FALSE
+  )
+  d$value <- suppressWarnings(as.numeric(d$value))
+  if ("year" %in% names(d)) d$year <- as.integer(d$year)
+  if ("date" %in% names(d)) d$date <- as.Date(d$date)
+  d
 }
 
 #' Read an indicator repository's data dictionary.
 read_meta <- function(repo) {
-  .fetch(indicator_url(repo, "data/meta.yml"), yaml::read_yaml)
+  yaml::read_yaml(indicator_url(repo, "meta.yml"))
 }
 
-#' Pull one dataset's entry out of meta.yml by filename.
-meta_for <- function(repo, file) {
-  hit <- Filter(function(d) identical(d$file, file), read_meta(repo)$datasets)
+#' Pull one dataset's entry out of an already-read meta.yml, by filename.
+meta_for <- function(meta, file) {
+  hit <- Filter(function(d) identical(d$file, file), meta$datasets)
   if (length(hit) != 1L) stop("No meta.yml entry for ", file, call. = FALSE)
   hit[[1]]
 }
 
 #' The bold title and source line printed above a figure, from meta.yml.
-figure_caption <- function(repo, file) {
-  m <- meta_for(repo, file)
+figure_caption <- function(meta, file) {
+  m <- meta_for(meta, file)
   knitr::asis_output(sprintf(
     "**%s**\n\nData source: %s <br> Web update: %s\n",
     m$figure_title, m$data_source, m$web_update
@@ -81,10 +57,10 @@ figure_caption <- function(repo, file) {
 }
 
 #' The link to an indicator's technical documentation PDF, from meta.yml.
-technical_documentation_link <- function(repo) {
+technical_documentation_link <- function(meta) {
   knitr::asis_output(sprintf(
     "- [Download related technical information (PDF)](%s)\n",
-    read_meta(repo)$indicator$technical_documentation
+    meta$indicator$technical_documentation
   ))
 }
 

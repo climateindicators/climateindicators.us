@@ -26,13 +26,11 @@ INDICATOR_COLOURS <- palette_for(c(
 
 # ---- Figure 1: national Lyme disease incidence, 1992-2022 --------------------
 
-FIG1_FILE <- "lyme_incidence_national.csv"
-
 # Legend text: "<definition> (<first>-<last>)", with the coverage span read from
 # the upstream meta.yml, which that repo derives from the data itself. Typing
 # the years here instead would be a second copy able to drift from the first.
-fig_1_era_labels <- function() {
-  s <- meta_for(REPO, FIG1_FILE)$series
+fig_1_era_labels <- function(meta) {
+  s <- meta_for(meta, "lyme_incidence_national.csv")$series
   stats::setNames(
     vapply(s, function(x) sprintf("%s (%s)", x$label, x$coverage), character(1)),
     vapply(s, function(x) x$key, character(1))
@@ -42,11 +40,9 @@ fig_1_era_labels <- function() {
 # *_plot() builds the plain ggplot object; fig_*() wraps it for the page. The
 # split exists so a plot can be ggsave()'d for a static check without pulling
 # in the htmlwidget machinery.
-fig_1_plot <- function() {
-  d <- read_indicator(REPO, FIG1_FILE)
-
+fig_1_plot <- function(d, meta) {
   eras <- unique(d$definition_key[order(d$year)])
-  labels <- fig_1_era_labels()
+  labels <- fig_1_era_labels(meta)
   stopifnot(
     "figure 1: meta.yml does not describe every case definition in the data" =
       all(eras %in% names(labels))
@@ -97,10 +93,9 @@ fig_1_plot <- function() {
     legend_top()
 }
 
-fig_1 <- function() girafe_indicator(fig_1_plot(), height = 4.6)
+fig_1 <- function(d, meta) girafe_indicator(fig_1_plot(d, meta), height = 4.6)
 
-fig_1_table <- function() {
-  d <- read_indicator(REPO, FIG1_FILE)
+fig_1_table <- function(d) {
   out <- d[, c("year", "definition_label", "value", "note")]
   names(out) <- c("Year", "Case definition",
                   "Cases per 100,000 people", "Note (EPA / CDC)")
@@ -108,8 +103,6 @@ fig_1_table <- function() {
 }
 
 # ---- Figure 2: incidence by jurisdiction, 2022 -------------------------------
-
-FIG2_FILE <- "lyme_incidence_by_jurisdiction.csv"
 
 # CDC designates a jurisdiction "high-incidence" once it has averaged at least
 # this many confirmed cases per 100,000 people over three consecutive years,
@@ -121,13 +114,12 @@ FIG2_HIGH_INCIDENCE <- 10
 # Sorted ascending so the highest rate lands at the top of a horizontal bar
 # chart, with the jurisdiction that filed no report at the very bottom -- it
 # has no rate to rank and must not be sorted as if it were a zero.
-fig_2_sorted <- function() {
-  d <- read_indicator(REPO, FIG2_FILE)
+fig_2_sorted <- function(d) {
   d[order(d$value, decreasing = FALSE, na.last = FALSE), ]
 }
 
-fig_2_plot <- function() {
-  d <- fig_2_sorted()
+fig_2_plot <- function(d) {
+  d <- fig_2_sorted(d)
 
   d$jurisdiction <- factor(d$jurisdiction, levels = d$jurisdiction)
   reported <- !is.na(d$value)
@@ -186,10 +178,10 @@ fig_2_plot <- function() {
     )
 }
 
-fig_2 <- function() girafe_indicator(fig_2_plot(), height = 9.5)
+fig_2 <- function(d) girafe_indicator(fig_2_plot(d), height = 9.5)
 
-fig_2_table <- function() {
-  d <- fig_2_sorted()
+fig_2_table <- function(d) {
+  d <- fig_2_sorted(d)
   d <- d[rev(seq_len(nrow(d))), ]  # highest first, to match the chart
   data.frame(
     Jurisdiction = d$jurisdiction,

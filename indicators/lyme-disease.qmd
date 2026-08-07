@@ -13,6 +13,10 @@ This indicator tracks the rate of reported Lyme disease cases across the United 
 #| include: false
 source(here::here("R", "common.R"))
 source(here::here("R", "lyme-disease.R"))
+
+meta         <- read_meta(REPO)
+national     <- read_indicator(REPO, "lyme_incidence_national.csv")
+jurisdiction <- read_indicator(REPO, "lyme_incidence_by_jurisdiction.csv")
 ```
 
 ## Figures
@@ -25,13 +29,13 @@ source(here::here("R", "lyme-disease.R"))
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-figure_caption(REPO, "lyme_incidence_national.csv")
+figure_caption(meta, "lyme_incidence_national.csv")
 ```
 
 ```{r}
 #| label: fig-1
 #| echo: false
-fig_1()
+fig_1(national, meta)
 ```
 
 This graph shows the annual incidence of Lyme disease, which is calculated as
@@ -55,7 +59,7 @@ Data source: CDC, 2024^[8](#ref-8)^
 ```{r}
 #| label: fig-1-table
 #| echo: false
-knitr::kable(fig_1_table(), digits = 3)
+knitr::kable(fig_1_table(national), digits = 3)
 ```
 
 Download:
@@ -71,13 +75,13 @@ Download:
 #| label: fig-2-caption
 #| echo: false
 #| output: asis
-figure_caption(REPO, "lyme_incidence_by_jurisdiction.csv")
+figure_caption(meta, "lyme_incidence_by_jurisdiction.csv")
 ```
 
 ```{r}
 #| label: fig-2
 #| echo: false
-fig_2()
+fig_2(jurisdiction)
 ```
 
 This chart shows reported Lyme disease incidence by jurisdiction in 2022,
@@ -100,7 +104,7 @@ Data source: CDC, 2024^[8](#ref-8)^
 ```{r}
 #| label: fig-2-table
 #| echo: false
-knitr::kable(fig_2_table(), row.names = FALSE)
+knitr::kable(fig_2_table(jurisdiction), row.names = FALSE)
 ```
 
 Download:
@@ -249,7 +253,7 @@ Census Bureau.^[12](#ref-12)^
 #| label: td-link
 #| echo: false
 #| output: asis
-technical_documentation_link(REPO)
+technical_documentation_link(meta)
 ```
 
 ## References

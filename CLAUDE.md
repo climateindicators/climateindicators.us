@@ -87,28 +87,40 @@ in the indicator's own repository.
 
 `R/common.R` holds what more than one page needs:
 
-- `indicator_url()` / `indicator_file_url()` — build raw and github.com URLs
+- `indicator_url(repo, file)` — the raw.githubusercontent.com URL for a file in
+  an indicator repository's `data/`
 - `read_indicator(repo, file)` — fetch and type one clean CSV
-- `read_meta(repo)`, `meta_for(repo, file)` — the upstream `meta.yml`
-- `figure_caption(repo, file)`, `technical_documentation_link(repo)` — the
-  caption block above a figure and the TD link, both read from `meta.yml`
+- `read_meta(repo)` — fetch the upstream `meta.yml`
+- `meta_for(meta, file)` — one dataset's entry from an already-read `meta.yml`
+- `figure_caption(meta, file)`, `technical_documentation_link(meta)` — the
+  caption block above a figure and the TD link, both from an already-read
+  `meta.yml`
 - `theme_indicator()`, `INDICATOR_PALETTE`, `palette_for()`, `label_colours()`,
   `label_order()`, `legend_top()` — chart styling
 - `girafe_indicator()` — wrap a ggplot as a ggiraph htmlwidget
 
-Every fetch is cached for the life of the render, so a figure and the table
-beneath it cost one request between them.
+**`read_indicator()` and `read_meta()` are the only functions that touch the
+network, and only the page's setup chunk calls them.** Everything downstream
+takes an already-read data frame or meta list as an argument. That is what
+keeps a page to one fetch per file: a chart and the table beneath it are handed
+the same object rather than each fetching it again.
 
 `R/<slug>.R` holds only what that one page needs, and every file follows the
 same shape:
 
 - `REPO` — the indicator repository name
 - `INDICATOR_COLOURS` — that page's series keys mapped to palette slots
-- `fig_*_plot()` — builds the plain ggplot object
-- `fig_*()` — wraps `fig_*_plot()` via `girafe_indicator()`
-- `fig_*_table()` — the data frame shown under the figure
+- `fig_*_plot(d)` — builds the plain ggplot object from a data frame
+- `fig_*(d)` — wraps `fig_*_plot(d)` via `girafe_indicator()`
+- `fig_*_table(d)` — the data frame shown under the figure
 
 Rules for these files:
+
+- **Figure functions take their data as an argument. They never read it.** No
+  `read_indicator()`, no `read_meta()`, no file or repository name inside a
+  `fig_*` function. A function that needs `meta.yml` — Lyme's `fig_1()` builds
+  its legend from the coverage spans recorded there — takes `meta` as a second
+  argument.
 
 - **One R environment, always the global one.** Do not call `new.env()`,
   `local()`, or `sys.source()`, do not source anything into a separate
@@ -139,7 +151,16 @@ Each `indicators/<slug>.qmd` sets `execute: eval: true` in its front matter
 #| include: false
 source(here::here("R", "common.R"))
 source(here::here("R", "<slug>.R"))
+
+meta   <- read_meta(REPO)
+annual <- read_indicator(REPO, "<dataset>.csv")
 ```
+
+**All of a page's data is read here, once, and held in named objects.** Every
+later chunk passes those objects in — `fig_1(annual)`, `fig_1_table(annual)`,
+`figure_caption(meta, "<dataset>.csv")` — so nothing is fetched twice. Read
+only the datasets the page actually charts; a dataset that exists solely as a
+download link needs its `meta.yml` entry for the caption, not the CSV itself.
 
 **Every figure on a page lives in one `## Figures` tabset**, using Quarto's
 native `.panel-tabset`, with one tab per figure:

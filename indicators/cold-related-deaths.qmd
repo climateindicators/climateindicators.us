@@ -13,6 +13,10 @@ This indicator presents data on deaths classified as "cold-related" in the Unite
 #| include: false
 source(here::here("R", "common.R"))
 source(here::here("R", "cold-related-deaths.R"))
+
+meta    <- read_meta(REPO)
+annual  <- read_indicator(REPO, "cold_deaths_annual.csv")
+monthly <- read_indicator(REPO, "cold_deaths_monthly.csv")
 ```
 
 ## Figures
@@ -25,13 +29,13 @@ source(here::here("R", "cold-related-deaths.R"))
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-figure_caption(REPO, "cold_deaths_annual.csv")
+figure_caption(meta, "cold_deaths_annual.csv")
 ```
 
 ```{r}
 #| label: fig-1
 #| echo: false
-fig_1()
+fig_1(annual)
 ```
 
 This figure shows the annual rates for deaths classified as "cold-related" by
@@ -50,7 +54,7 @@ earlier than 1999 cannot easily be compared with data from 1999 and later.
 ```{r}
 #| label: fig-1-table
 #| echo: false
-knitr::kable(fig_1_table(), digits = 3)
+knitr::kable(fig_1_table(annual), digits = 3)
 ```
 
 Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_annual.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
@@ -73,13 +77,13 @@ repository's `data-raw/PROVENANCE.md` for details.
 #| label: fig-td1-caption
 #| echo: false
 #| output: asis
-figure_caption(REPO, "cold_deaths_monthly.csv")
+figure_caption(meta, "cold_deaths_monthly.csv")
 ```
 
 ```{r}
 #| label: fig-td1
 #| echo: false
-fig_td1()
+fig_td1(monthly)
 ```
 
 This graph shows all deaths for which cold was recorded as either the
@@ -92,7 +96,7 @@ entire period of record.
 ```{r}
 #| label: fig-td1-table
 #| echo: false
-knitr::kable(fig_td1_table())
+knitr::kable(fig_td1_table(monthly))
 ```
 
 Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_monthly.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
@@ -235,7 +239,7 @@ CDC's Environmental Public Health Tracking Program.
 #| label: td-link
 #| echo: false
 #| output: asis
-technical_documentation_link(REPO)
+technical_documentation_link(meta)
 ```
 
 ## References
