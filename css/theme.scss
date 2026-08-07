@@ -12,8 +12,8 @@ $accent-dark:  #1b66bd;  // pressed states
 $ink:          #1e1e1e;  // near-black — navbar and footer
 $ink-soft:     #333333;  // header bar on climate.us proper
 $body-text:    #464646;
-$panel:        #f9f6f4;  // warm off-white for cards, sidebar, callouts
-$rule:         #dcdcd7;  // warm border
+$panel:        #f4f4f5;  // light grey for cards, sidebar, callouts
+$rule:         #dcdcdc;  // neutral border, one step darker than $panel
 $muted:        #757575;
 
 // Bootstrap picks up $link-color from $primary, so setting this alone recolors
@@ -198,8 +198,8 @@ nav.navbar {
   color: $accent !important;
 }
 
-// Warm off-white panel, matching climate.us's .usa-sidenav-list. Needs the id
-// to outrank Quarto's own `#quarto-sidebar` background rule.
+// Tinted panel in the shape of climate.us's .usa-sidenav-list. Needs the id to
+// outrank Quarto's own `#quarto-sidebar` background rule.
 #quarto-sidebar.sidebar-navigation {
   background-color: $panel;
   border-right: 1px solid $rule;

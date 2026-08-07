@@ -238,7 +238,7 @@ come out zero-width in a hidden tab — keep that sizing option.
   links, focus rings, and active states site-wide — Bootstrap derives
   `$link-color` from `$primary`.
 - Key aesthetic notes: near-black (`$ink`) navbar and footer, white page
-  background with warm off-white (`$panel`) cards and sidebar, `#2882e6` blue
+  background with light grey (`$panel`) cards and sidebar, `#2882e6` blue
   accent, Source Sans 3 throughout, squared-off 4px card corners, and
   underlined in-content links (explicitly flattened inside listing cards).
 - The Bootstrap navbar brand is hidden above 992px because the site title is
