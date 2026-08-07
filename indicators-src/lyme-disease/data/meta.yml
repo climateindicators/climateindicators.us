@@ -1,0 +1,127 @@
+indicator:
+  name: Lyme Disease
+  slug: lyme-disease
+  publisher: U.S. Environmental Protection Agency
+  source_page: https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-lyme-disease
+  technical_documentation: https://19january2025snapshot.epa.gov/system/files/documents/2024-12/lyme_td.pdf
+  rights: Public domain, work of the U.S. Government (17 U.S.C. 105)
+  data_source_agency: CDC (Centers for Disease Control and Prevention)
+datasets:
+- file: lyme_incidence_national.csv
+  figure: Figure 1
+  figure_title: Figure 1. Reported Cases of Lyme Disease in the United States, 1992–2022
+  source_file: lyme_fig-1.csv
+  source_sha256: f8f50029b8168514c3e11e098d9ae8626b44049bcb7b95dc4ce7f3d7e101a541
+  source_encoding: windows-1252
+  data_source: Centers for Disease Control and Prevention, 2024
+  web_update: December 2024
+  unit: cases per 100,000 people
+  rows: 31
+  columns:
+  - name: year
+    type: integer
+    description: Calendar year
+  - name: definition_key
+    type: string
+    description: Machine-readable identifier for the surveillance case definition
+      in force that year
+  - name: definition_label
+    type: string
+    description: Display label, as used in EPA's published chart legend
+  - name: measure
+    type: string
+    description: What is measured
+  - name: unit
+    type: string
+    description: Unit of `value`
+  - name: value
+    type: number
+    description: Reported incidence, verbatim from the source file. Empty when `flag`
+      is set.
+  - name: flag
+    type: string
+    description: Empty for an ordinary observation. `not_reported` means the jurisdiction
+      filed no report for the period, which is not a rate of zero and not missing
+      at random; such a row carries an empty `value` and is drawn as a gap rather
+      than plotted. See EPA_VALUE_FLAGS in R/utils/epa_csv.R for the full set of markers
+      this build recognises.
+  - name: note
+    type: string
+    description: Empty for a year the publisher does not qualify. Otherwise the publisher's
+      own caveat about that year's reported total, in the publisher's own words. A
+      note does NOT mean the value is missing or unreliable enough to hide -- the
+      number is real and is plotted normally. Added by this build from EPA's figure
+      caption and technical documentation; not a column in EPA's file.
+  series:
+  - key: def_1990
+    label: 1990 case definition
+    source_header: 1990 case definition
+    coverage: 1992–1995
+  - key: def_1996
+    label: 1996 case definition
+    source_header: 1996 case definition
+    coverage: 1996–2007
+  - key: def_2008
+    label: 2008 case definition
+    source_header: 2008 case definition
+    coverage: 2008–2021
+  - key: def_2022
+    label: 2022 case definition
+    source_header: 2022 case definition
+    coverage: '2022'
+  note: 'The four columns of the source file are four consecutive, non-overlapping
+    eras of one national incidence series, not four concurrent series: exactly one
+    case definition is in force in any given year. EPA''s technical documentation
+    describes Figure 1 as having three breakpoints dividing the series into four segments,
+    and states that the definition changes prevent detailed comparison with historical
+    data and accurate analysis of trends over time. The apparent jump in 2022 is,
+    per CDC, likely the result of the 2022 case definition allowing high-incidence
+    jurisdictions to report on laboratory evidence alone, rather than a change in
+    disease risk.'
+- file: lyme_incidence_by_jurisdiction.csv
+  figure: Figure 2
+  figure_title: Figure 2. Reported Annual Lyme Disease Incidence in the United States,
+    2022
+  source_file: lyme_fig-2.csv
+  source_sha256: 3b769a32c041ba8107389077881930de7d5ea43c243c2a2fa5be2568bdfe84a3
+  source_encoding: windows-1252
+  data_source: Centers for Disease Control and Prevention, 2024
+  web_update: December 2024
+  unit: cases per 100,000 people
+  rows: 51
+  columns:
+  - name: jurisdiction
+    type: string
+    description: U.S. state or the District of Columbia, as named in the source file
+  - name: year
+    type: integer
+    description: Calendar year; 2022 throughout. Added by this build so the file is
+      self-describing -- the source file states the year only in its title.
+  - name: measure
+    type: string
+    description: What is measured
+  - name: unit
+    type: string
+    description: Unit of `value`
+  - name: value
+    type: number
+    description: 'Reported incidence, verbatim from the source file. Empty when `flag`
+      is set. A zero is a genuine zero: the jurisdiction reported no cases.'
+  - name: flag
+    type: string
+    description: Empty for an ordinary observation. `not_reported` means the jurisdiction
+      filed no report for the period, which is not a rate of zero and not missing
+      at random; such a row carries an empty `value` and is drawn as a gap rather
+      than plotted. See EPA_VALUE_FLAGS in R/utils/epa_csv.R for the full set of markers
+      this build recognises.
+  note: 'A single-year snapshot, not a trend: EPA converted this figure from a trend
+    map to one year because the 2022 case definition change means jurisdiction-level
+    values are no longer comparable over time. CDC designates a jurisdiction ''high-incidence''
+    once it has averaged at least 10 confirmed cases per 100,000 people over three
+    consecutive years, and high-incidence jurisdictions may report on laboratory evidence
+    alone. As of 2022 the high-incidence jurisdictions are Connecticut, Delaware,
+    the District of Columbia, Maine, Maryland, Massachusetts, Minnesota, New Hampshire,
+    New Jersey, New York, Pennsylvania, Rhode Island, Vermont, Virginia, West Virginia
+    and Wisconsin, which together accounted for about 95 percent of reported cases
+    in 2022. Cases are counted by the patient''s county of residence, which is not
+    necessarily where the infection happened.'

@@ -6,7 +6,7 @@ Each indicator below tracks one measurable signal of a changing climate in the U
 >
 > This site is under construction. Content is being added indicator by indicator — check back soon.
 
-\
+  
 
 ##### A Closer Look: Heat-Related Workplace Deaths
 
