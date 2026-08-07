@@ -30,18 +30,7 @@ exist — add the assets to `images/` before adding the keys.
 
 ### File Structure
 
-- **_quarto.yml** — main Quarto config: website structure, navbar, sidebar, theme, render options
-- **index.qmd** — home page (hero + navigation pills, defined as raw HTML in a `{=html}` block)
-- **about.qmd** — about the project (placeholder)
-- **indicators.qmd** — grid listing of every page in `indicators/`
-- **indicators/*.qmd** — one page per indicator
-- **404.qmd** — not-found page
-- **chunks/** — reusable content snippets pulled in via `{{< include >}}`; excluded from rendering by the `"!chunks/"` entry in `project: render:`. `description.qmd` is the shared project blurb; `coming-soon.qmd` is the placeholder callout used on every unfinished page. Note that include paths are relative to the including file, so pages under `indicators/` use `../chunks/`.
-- **css/theme.scss** — the entire custom theme, layered on Bootswatch `cosmo`
-- **images/** — static assets (currently just `icon-quarto.svg` for the footer)
-- **_common.R** — shared R helper functions
-- **DESCRIPTION** — R dependencies, used by the GitHub Action's `remotes::install_deps()`
-- **_site/** — generated output (git-ignored)
+
 
 ### Styling System
 
