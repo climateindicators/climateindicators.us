@@ -11,30 +11,27 @@ This indicator tracks the rate of reported Lyme disease cases across the United 
 ```{r}
 #| label: setup
 #| include: false
-source(here::here("R/indicators/lyme-disease.R"))
-ld_meta_all <- ld_meta()
-ld_caption <- function(file) {
-  m <- ld_meta_for(file, ld_meta_all)
-  knitr::asis_output(sprintf(
-    "**%s**\n\nData source: %s <br> Web update: %s\n",
-    m$figure_title, m$data_source, m$web_update
-  ))
-}
+source(here::here("R", "common.R"))
+source(here::here("R", "lyme-disease.R"))
 ```
 
-## Figure 1
+## Figures
+
+::::: {.panel-tabset}
+
+### Figure 1
 
 ```{r}
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-ld_caption("lyme_incidence_national.csv")
+figure_caption(REPO, "lyme_incidence_national.csv")
 ```
 
 ```{r}
 #| label: fig-1
 #| echo: false
-ld_fig_1()
+fig_1()
 ```
 
 This graph shows the annual incidence of Lyme disease, which is calculated as
@@ -58,29 +55,29 @@ Data source: CDC, 2024^[8](#ref-8)^
 ```{r}
 #| label: fig-1-table
 #| echo: false
-knitr::kable(ld_fig_1_table(), digits = 3)
+knitr::kable(fig_1_table(), digits = 3)
 ```
 
 Download:
-<i class="bi bi-filetype-png"></i> <a href="../images/lyme-disease/figure-1.png" download>figure image</a> ·
-<i class="bi bi-filetype-csv"></i> <a href="../data/lyme-disease/lyme_incidence_national.csv" download>figure data</a> ·
-<i class="bi bi-filetype-csv"></i> <a href="../data-raw/lyme-disease/lyme_fig-1.csv" download>EPA's published source file</a>
+<i class="bi bi-filetype-png"></i> <a href="https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-1.png" download>figure image</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/lyme-disease/blob/main/data/lyme_incidence_national.csv" download>figure data</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/lyme-disease/blob/main/data-raw/lyme_fig-1.csv" download>EPA's published source file</a>
 
 </details>
 
-## Figure 2
+### Figure 2
 
 ```{r}
 #| label: fig-2-caption
 #| echo: false
 #| output: asis
-ld_caption("lyme_incidence_by_jurisdiction.csv")
+figure_caption(REPO, "lyme_incidence_by_jurisdiction.csv")
 ```
 
 ```{r}
 #| label: fig-2
 #| echo: false
-ld_fig_2()
+fig_2()
 ```
 
 This chart shows reported Lyme disease incidence by jurisdiction in 2022,
@@ -103,23 +100,23 @@ Data source: CDC, 2024^[8](#ref-8)^
 ```{r}
 #| label: fig-2-table
 #| echo: false
-knitr::kable(ld_fig_2_table(), row.names = FALSE)
+knitr::kable(fig_2_table(), row.names = FALSE)
 ```
 
 Download:
-<i class="bi bi-filetype-png"></i> <a href="../images/lyme-disease/figure-2.png" download>EPA's published map</a> ·
-<i class="bi bi-filetype-csv"></i> <a href="../data/lyme-disease/lyme_incidence_by_jurisdiction.csv" download>figure data</a> ·
-<i class="bi bi-filetype-csv"></i> <a href="../data-raw/lyme-disease/lyme_fig-2.csv" download>EPA's published source file</a>
+<i class="bi bi-filetype-png"></i> <a href="https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-2.png" download>EPA's published map</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/lyme-disease/blob/main/data/lyme_incidence_by_jurisdiction.csv" download>figure data</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/lyme-disease/blob/main/data-raw/lyme_fig-2.csv" download>EPA's published source file</a>
 
 </details>
 
-## Figure 3
+### Figure 3
 
 **Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022**
 
 Data source: CDC, 2024^[9](#ref-9)^
 
-![Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022](../images/lyme-disease/figure-3.png){fig-alt="Two dot maps of the 50 states and the District of Columbia, one for 1996 and one for 2022, with each dot representing one reported Lyme disease case. Dots in 1996 cluster tightly in the Northeast and around Wisconsin and Minnesota; in 2022 they fill those areas far more densely and spread outward through the mid-Atlantic, New England and the upper Midwest." fig-align="center"}
+![Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-3.png){fig-alt="Two dot maps of the 50 states and the District of Columbia, one for 1996 and one for 2022, with each dot representing one reported Lyme disease case. Dots in 1996 cluster tightly in the Northeast and around Wisconsin and Minnesota; in 2022 they fill those areas far more densely and spread outward through the mid-Atlantic, New England and the upper Midwest." fig-align="center"}
 
 These maps show the distribution of Lyme disease cases reported to CDC in 1996
 and 2022 across the 50 states and the District of Columbia. Each dot
@@ -134,9 +131,11 @@ there is no table or data download for this figure.
 <details><summary>Show what is available for this figure</summary>
 
 Download:
-<i class="bi bi-filetype-png"></i> <a href="../images/lyme-disease/figure-3.png" download>figure image</a>
+<i class="bi bi-filetype-png"></i> <a href="https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-3.png" download>figure image</a>
 
 </details>
+
+:::::
 
 ## Key Points
 
@@ -250,7 +249,7 @@ Census Bureau.^[12](#ref-12)^
 #| label: td-link
 #| echo: false
 #| output: asis
-cat(sprintf("- [Download related technical information (PDF)](%s)\n", ld_meta_all$indicator$technical_documentation))
+technical_documentation_link(REPO)
 ```
 
 ## References
@@ -275,5 +274,5 @@ Text on this page is EPA's own published wording (a U.S. Government work, not
 subject to copyright), extracted from EPA's source document. Data, chart code,
 and the full extraction pipeline are maintained in the
 [lyme-disease](https://github.com/climateindicators/lyme-disease) repository,
-embedded here as a git submodule at `indicators-src/lyme-disease`.
+which this page reads its data from directly.
 :::

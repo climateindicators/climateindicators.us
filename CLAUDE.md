@@ -2,6 +2,13 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**This file is the only place project rules live.** Do not write rules,
+conventions, "hard rules", or general-pattern explanations into comments in
+`R/*.R` or into `.qmd` files. Code comments explain the specific line or block
+they sit above — why *this* chart splits *this* series, why *this* column is a
+factor — and nothing broader. If you find yourself writing a comment that
+would apply to more than one file, it belongs here instead.
+
 ## Project Overview
 
 This is the source code for the [climateindicators.us](https://climateindicators.us/)
@@ -12,14 +19,40 @@ Indicators*, preserved in the [January 19, 2025 snapshot](https://19january2025s
 The site is built with **Quarto** and deployed to **GitHub Pages** (the
 `gh-pages` branch) via GitHub Actions.
 
-**Current status: scaffold.** The page structure, theme, and deploy pipeline
-are all working, but every page is placeholder content — a shared "coming soon"
-callout. There is one indicator (Heat-Related Deaths) and it has no data,
-methodology, or charts yet. Expect to be filling pages in, not restructuring.
+**This repository is the website and nothing else.** It holds pages, styling,
+and the R code that draws the figures. It holds no data.
 
-There is also no favicon or social-card image yet. `_quarto.yml` omits
-`favicon:` and `image:` on purpose rather than pointing at files that do not
-exist — add the assets to `images/` before adding the keys.
+There is no favicon or social-card image yet. `_quarto.yml` omits `favicon:`
+and `image:` on purpose rather than pointing at files that do not exist — add
+the assets to `images/` before adding the keys.
+
+## Data Lives in the Indicator Repositories
+
+Every indicator has its own repository under the
+[climateindicators](https://github.com/climateindicators) org, which holds the
+raw source files (`data-raw/`), the extraction pipeline, the published figure
+images, and the clean data (`data/`) — a set of tidy CSVs plus a `meta.yml`
+data dictionary. For example:
+<https://github.com/climateindicators/cold-related-deaths/tree/main/data>.
+
+**Never copy that data into this repository.** There is no `data/`,
+`data-raw/`, or `indicators-src/` directory here, no git submodules, and no
+sync step. Pages read the clean data straight off `raw.githubusercontent.com`
+at render time, through the helpers in `R/common.R`. Adding a local copy would
+create a second version of a number that can drift from the first.
+
+Current indicator repositories:
+
+| Indicator | Repository |
+| --- | --- |
+| Heat-Related Deaths | `heat-related-deaths` |
+| Cold-Related Deaths | `cold-related-deaths` |
+| Heat-Related Workplace Deaths | `heat-related-workplace-deaths` |
+| Lyme Disease | `lyme-disease` |
+
+Because the data is fetched over the network, rendering requires an internet
+connection, and `curl` must stay in `DESCRIPTION` — readr only *suggests* it,
+so remote reads fail without it.
 
 ## Common Commands
 
@@ -30,7 +63,123 @@ exist — add the assets to `images/` before adding the keys.
 
 ### File Structure
 
+```
+_quarto.yml              site config: navbar, sidebar, theme, execute defaults
+index.qmd                home page
+about.qmd                about page
+indicators.qmd           listing grid, fed by each indicator's front matter
+404.qmd
+chunks/                  reusable includes (coming-soon, description)
+css/theme.scss           the single theme: scss:defaults palette + scss:rules
+images/                  site-level images only (no per-indicator images)
+indicators/<slug>.qmd    one page per indicator
+R/common.R               helpers every page uses
+R/<slug>.R               figures for indicators/<slug>.qmd, one file per page
+DESCRIPTION              package dependencies the GitHub Action installs
+```
 
+`R/` contains exactly two kinds of file: `common.R`, and one file per page
+named for that page's slug. Nothing else — no `figures.R`, no `utils/`, no
+build or extraction scripts. Extraction and validation code belongs upstream
+in the indicator's own repository.
+
+### R Code Organization
+
+`R/common.R` holds what more than one page needs:
+
+- `indicator_url()` / `indicator_file_url()` — build raw and github.com URLs
+- `read_indicator(repo, file)` — fetch and type one clean CSV
+- `read_meta(repo)`, `meta_for(repo, file)` — the upstream `meta.yml`
+- `figure_caption(repo, file)`, `technical_documentation_link(repo)` — the
+  caption block above a figure and the TD link, both read from `meta.yml`
+- `theme_indicator()`, `INDICATOR_PALETTE`, `palette_for()`, `label_colours()`,
+  `label_order()`, `legend_top()` — chart styling
+- `girafe_indicator()` — wrap a ggplot as a ggiraph htmlwidget
+
+Every fetch is cached for the life of the render, so a figure and the table
+beneath it cost one request between them.
+
+`R/<slug>.R` holds only what that one page needs, and every file follows the
+same shape:
+
+- `REPO` — the indicator repository name
+- `INDICATOR_COLOURS` — that page's series keys mapped to palette slots
+- `fig_*_plot()` — builds the plain ggplot object
+- `fig_*()` — wraps `fig_*_plot()` via `girafe_indicator()`
+- `fig_*_table()` — the data frame shown under the figure
+
+Rules for these files:
+
+- **One R environment, always the global one.** Do not call `new.env()`,
+  `local()`, or `sys.source()`, do not source anything into a separate
+  environment, and do not expose figures as members of an environment — not for
+  scoping, and not for caches or lookup tables either (use a named list). A
+  page sources `R/common.R` and then its own file; both land in the global
+  environment, and that is all the separation needed, because each page sources
+  its own file before calling anything from it.
+- **Do not prefix names.** `fig_1()`, not `hrd_fig_1()`. Each page loads
+  exactly one indicator file, so there is nothing to disambiguate.
+- **Colours are keyed by the machine-readable series key from the data, never
+  by position.** An index-based lookup can swap two series and still look
+  plausible. `INDICATOR_PALETTE` has four validated slots, in role order: blue
+  is the baseline series, orange the series most worth the reader's attention,
+  aqua a comparison series, magenta a category that is not a peer of the
+  others.
+- **Never re-derive a published number.** If a page needs a value the upstream
+  `data/` does not carry, the fix goes in that indicator's repository, where it
+  is tested and reproducible — not inline here, where nothing checks it.
+
+### Page Structure
+
+Each `indicators/<slug>.qmd` sets `execute: eval: true` in its front matter
+(the site default is `eval: false`) and opens with:
+
+```r
+#| label: setup
+#| include: false
+source(here::here("R", "common.R"))
+source(here::here("R", "<slug>.R"))
+```
+
+**Every figure on a page lives in one `## Figures` tabset**, using Quarto's
+native `.panel-tabset`, with one tab per figure:
+
+```markdown
+## Figures
+
+::::: {.panel-tabset}
+
+### Figure 1
+
+<caption chunk> <figure chunk> <prose> <details: table + downloads>
+
+### Figure 2
+
+...
+
+:::::
+```
+
+Two things about that block:
+
+- **The tabset fence is five colons, not three.** Some tabs nest a `:::`
+  callout, and Pandoc requires the outer fence to be longer than any fence
+  inside it. Five colons everywhere keeps this from breaking the next time a
+  callout is added.
+- **Tabs are `###`, one level below the `## Figures` heading.** Quarto turns
+  them into tab labels and keeps them out of the TOC, which shows a single
+  "Figures" entry.
+
+Inside a tab, a figure is a caption chunk, a figure chunk, prose, and a
+`<details>` block holding the data table and download links. Download links
+point at the indicator repository on github.com — `data/` for the clean CSV,
+`data-raw/` for EPA's original file — and figure images that a page displays
+inline use `raw.githubusercontent.com`.
+
+Charts render correctly in tabs that start hidden because `girafe_indicator()`
+sets `opts_sizing(rescale = TRUE, width = 1)`, which emits a `viewBox`-only SVG
+scaled by CSS. A widget that measured its container in JavaScript at init would
+come out zero-width in a hidden tab — keep that sizing option.
 
 ### Styling System
 
@@ -79,28 +228,35 @@ Two navbar details that are easy to break:
 
 ### Adding an Indicator
 
-1. Create `indicators/<slug>.qmd`
-2. Add front matter with `title`, `description`, and `categories` — the
-   `description` and `categories` feed the listing grid on `indicators.qmd`, so
-   they are not optional
-3. Add a sidebar entry under the appropriate section in `_quarto.yml`
-4. While the page is a stub, include `{{< include ../chunks/coming-soon.qmd >}}`
+1. Confirm the indicator's own repository exists under the `climateindicators`
+   org and publishes `data/*.csv` plus `data/meta.yml` on `main`
+2. Create `R/<slug>.R` following the shape described above
+3. Create `indicators/<slug>.qmd` with front matter carrying `title`,
+   `description`, `categories`, and `execute: eval: true` — the `description`
+   and `categories` feed the listing grid on `indicators.qmd`, so they are not
+   optional
+4. Add a sidebar entry under the appropriate section in `_quarto.yml`
+5. Add any new package dependency to `DESCRIPTION`, or the GitHub Action will
+   not install it
+6. While the page is a stub, include `{{< include ../chunks/coming-soon.qmd >}}`
    rather than writing a one-off placeholder
 
 ### Placeholder Content
 
-`chunks/coming-soon.qmd` is the single source for the "coming soon" callout and
-is currently included on **every** page (index, about, indicators, and the one
-indicator page). Edit that file to change the wording everywhere. As real
-content lands, drop the include from that page rather than editing the chunk.
+`chunks/coming-soon.qmd` is the single source for the "coming soon" callout. It
+is still included on `index.qmd`, `about.qmd`, and `indicators.qmd`; the four
+indicator pages have real content and no longer include it. Edit that file to
+change the wording everywhere. As real content lands on a page, drop the
+include from that page rather than editing the chunk.
+
+`chunks/description.qmd` is the shared project blurb, included on `index.qmd`
+and `about.qmd`.
 
 ### R Code Integration
 
-- R chunks are `eval: false` by default (see `execute:` in `_quarto.yml`); set
-  `#| eval: true` on blocks that should run
-- Shared helpers go in `_common.R`
-- New package dependencies must be added to `DESCRIPTION`, or the GitHub Action
-  will not install them
+- R chunks are `eval: false` by default (see `execute:` in `_quarto.yml`);
+  indicator pages set `eval: true` in their front matter, and any other page
+  that needs to run code sets `#| eval: true` on the block
 
 ## Deployment
 
@@ -120,9 +276,10 @@ Two things to be aware of:
   either way, but `sitemap.xml` and the OpenGraph tags carry the wrong absolute
   host until DNS is pointed at GitHub and the domain is set (which writes a
   `CNAME` file to `gh-pages`; the Quarto publish action preserves it).
-- **The weekly `schedule:` trigger** rebuilds and redeploys every Sunday. That
-  matters once indicators pull live data; right now it just redeploys static
-  content. Remove the `schedule:` block if the noise is unwanted.
+- **The weekly `schedule:` trigger** rebuilds and redeploys every Sunday. Now
+  that pages fetch their data from the indicator repositories at render time,
+  this is what picks up an upstream data update without anyone touching this
+  repository.
 
 The `origin` remote uses SSH (`git@github.com:...`) because the local `gh` auth
 is configured for the SSH protocol; HTTPS pushes fail with no credentials.

@@ -4,6 +4,7 @@ Depends: R (>= 4.1.0)
 License: CC-BY-SA
 Encoding: UTF-8
 Imports:
+    curl,
     dplyr,
     ggiraph,
     ggplot2,

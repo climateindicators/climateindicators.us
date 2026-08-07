@@ -11,30 +11,27 @@ This indicator presents data on deaths classified as "heat-related" in the Unite
 ```{r}
 #| label: setup
 #| include: false
-source(here::here("R/indicators/heat-related-deaths.R"))
-hrd_meta_all <- hrd_meta()
-hrd_caption <- function(file) {
-  m <- hrd_meta_for(file, hrd_meta_all)
-  knitr::asis_output(sprintf(
-    "**%s**\n\nData source: %s <br> Web update: %s\n",
-    m$figure_title, m$data_source, m$web_update
-  ))
-}
+source(here::here("R", "common.R"))
+source(here::here("R", "heat-related-deaths.R"))
 ```
 
-## Figure 1
+## Figures
+
+::::: {.panel-tabset}
+
+### Figure 1
 
 ```{r}
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-hrd_caption("heat_deaths_annual.csv")
+figure_caption(REPO, "heat_deaths_annual.csv")
 ```
 
 ```{r}
 #| label: fig-1
 #| echo: false
-hrd_fig_1()
+fig_1()
 ```
 
 <details><summary>Show the data behind this figure</summary>
@@ -42,26 +39,26 @@ hrd_fig_1()
 ```{r}
 #| label: fig-1-table
 #| echo: false
-knitr::kable(hrd_fig_1_table(), digits = 3)
+knitr::kable(fig_1_table(), digits = 3)
 ```
 
-Download: [tidy CSV](../data/heat-related-deaths/heat_deaths_annual.csv) · [original EPA file](../data-raw/heat-related-deaths/heat-deaths_fig-1.csv)
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_annual.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-1.csv)
 
 </details>
 
-## Figure 2
+### Figure 2
 
 ```{r}
 #| label: fig-2-caption
 #| echo: false
 #| output: asis
-hrd_caption("heat_deaths_summer_cvd.csv")
+figure_caption(REPO, "heat_deaths_summer_cvd.csv")
 ```
 
 ```{r}
 #| label: fig-2
 #| echo: false
-hrd_fig_2()
+fig_2()
 ```
 
 <details><summary>Show the data behind this figure</summary>
@@ -69,26 +66,26 @@ hrd_fig_2()
 ```{r}
 #| label: fig-2-table
 #| echo: false
-knitr::kable(hrd_fig_2_table(), digits = 3)
+knitr::kable(fig_2_table(), digits = 3)
 ```
 
-Download: [tidy CSV](../data/heat-related-deaths/heat_deaths_summer_cvd.csv) · [original EPA file](../data-raw/heat-related-deaths/heat-deaths_fig-2.csv)
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_summer_cvd.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-2.csv)
 
 </details>
 
-## Example: The 1995 Chicago Heat Wave
+### Example: The 1995 Chicago Heat Wave
 
 ```{r}
 #| label: fig-example-caption
 #| echo: false
 #| output: asis
-hrd_caption("chicago_1995_heat_wave.csv")
+figure_caption(REPO, "chicago_1995_heat_wave.csv")
 ```
 
 ```{r}
 #| label: fig-example
 #| echo: false
-hrd_fig_example()
+fig_example()
 ```
 
 <details><summary>Show the data behind this figure</summary>
@@ -96,13 +93,15 @@ hrd_fig_example()
 ```{r}
 #| label: fig-example-table
 #| echo: false
-knitr::kable(utils::head(hrd_fig_example_table(), 10), digits = 1,
+knitr::kable(utils::head(fig_example_table(), 10), digits = 1,
             caption = "First 10 of 92 days.")
 ```
 
-Download: [tidy CSV](../data/heat-related-deaths/chicago_1995_heat_wave.csv) · [original EPA file](../data-raw/heat-related-deaths/heat-deaths_example.csv)
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/chicago_1995_heat_wave.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_example.csv)
 
 </details>
+
+:::::
 
 ## Key Points
 
@@ -158,7 +157,7 @@ Data for this indicator were provided by the U.S. Centers for Disease Control an
 #| label: td-link
 #| echo: false
 #| output: asis
-cat(sprintf("- [Download related technical information (PDF)](%s)\n", hrd_meta_all$indicator$technical_documentation))
+technical_documentation_link(REPO)
 ```
 
 ## References
@@ -193,5 +192,5 @@ applied: two CDC URLs in Data Sources had changed on the live page since the
 archived source document was finalized. Data, chart code, and the full
 extraction pipeline are maintained in the
 [heat-related-deaths](https://github.com/climateindicators/heat-related-deaths)
-repository.
+repository, which this page reads its data from directly.
 :::

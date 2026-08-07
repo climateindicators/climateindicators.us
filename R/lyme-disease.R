@@ -1,110 +1,204 @@
-# Data access and figures for indicators/lyme-disease.qmd.
-#
-# HARD RULE (matches _common.R's scope for the site generally): this file
-# reads data/lyme-disease/ and nothing else. It never opens
-# data-raw/lyme-disease/ and never reaches the network.
-#
-# Canonical source: the git submodule at indicators-src/lyme-disease
-# (github.com/climateindicators/lyme-disease). That repo holds EPA's published
-# per-figure CSVs, the extraction pipeline (R/build_data.R), the page generator
-# (R/gen_page.R, which reads the archived docx), and the chart code
-# (R/figures.R + _common.R) referenced below. Following the
-# cold-related-deaths / heat-related-workplace-deaths pattern rather than
-# heat-related-deaths' copy-and-rename one: _common.R and R/figures.R are
-# source()'d verbatim from the submodule into an isolated environment
-# (LYME_ENV), so this file carries zero duplicated plotting logic. Resyncing
-# after an upstream chart change is `git submodule update --remote` plus
-# re-copying the data, with no R code here to touch.
-#
-# Two things are overridden after sourcing, both because the submodule's own
-# files resolve paths via here::here(), which inside this multi-indicator
-# project means "the hub's root", not the submodule's:
-#   1. read_indicator()/read_meta(), so data resolves to data/lyme-disease/
-#      rather than the hub's top-level data/.
-#   2. source() during the load itself -- R/figures.R sources its sibling
-#      R/utils/pick_chart.R by here::here() path (fig_1_plot() asserts the
-#      chart selector's verdict before drawing), which would look for a
-#      pick_chart.R at the hub root that does not (and should not) exist.
-#      See the shim below. Same case as heat-related-workplace-deaths;
-#      cold-related-deaths did not need it, its figures.R has no source() call.
-#
-# Sourcing into an isolated environment rather than the global one means this
-# indicator's unprefixed names (fig_1, read_indicator, ...) can never collide
-# with another indicator's, regardless of how Quarto schedules R sessions
-# across pages.
-#
-# TO RESYNC after that repo's data or charts change:
-#   git submodule update --remote indicators-src/lyme-disease
-#   (then re-copy data/*.csv, meta.yml, and the source CSVs below)
+# Figures for indicators/lyme-disease.qmd.
 
-suppressPackageStartupMessages({
-  library(ggplot2)
-  library(ggiraph)
-})
+REPO <- "lyme-disease"
 
-LYME_SRC_DIR  <- here::here("indicators-src", "lyme-disease")
-LYME_DATA_DIR <- here::here("data", "lyme-disease")
+# Series colours, keyed by the machine-readable series key from the data. This
+# indicator's keys are the four CSTE/CDC surveillance case definitions in
+# `definition_key`. They are not four concurrent series: they are four
+# consecutive eras of one national incidence series, so the slot order below is
+# deliberately not chronological.
+INDICATOR_COLOURS <- palette_for(c(
+  # 1 blue    the reference stretch: 14 years, the longest era and the one the
+  #           modern record is read against.
+  "def_2008",
+  # 2 orange  the attention colour, because 2022 is the point most likely to be
+  #           misread. Its apparent jump is largely an artefact of the new
+  #           definition letting high-incidence jurisdictions report on
+  #           laboratory evidence alone, not a jump in disease risk.
+  "def_2022",
+  # 3 aqua    a comparison era: the twelve years between the first and second
+  #           breakpoints.
+  "def_1996",
+  # 4 magenta the earliest and shortest era, four years under the original
+  #           reporting definition; least comparable to anything after it.
+  "def_1990"
+))
 
-LYME_ENV <- new.env(parent = globalenv())
+# ---- Figure 1: national Lyme disease incidence, 1992-2022 --------------------
 
-# Load-time shim, defined before the sourcing below so that a source() call
-# inside a submodule file resolves to this one rather than base::source().
-# It re-roots any path that the submodule expressed relative to a project
-# root back into the submodule, then loads it into the same isolated
-# environment. Removed again once loading is done, so nothing at render time
-# sees a redefined source().
-LYME_ENV$source <- function(file, ...) {
-  root <- paste0(here::here(), "/")
-  rel  <- sub(root, "", gsub("\\\\", "/", file), fixed = TRUE)
-  base::source(file.path(LYME_SRC_DIR, rel), local = LYME_ENV)
-}
+FIG1_FILE <- "lyme_incidence_national.csv"
 
-source(file.path(LYME_SRC_DIR, "_common.R"), local = LYME_ENV)
-source(file.path(LYME_SRC_DIR, "R", "figures.R"), local = LYME_ENV)
-
-rm("source", envir = LYME_ENV)
-
-# Overrides, applied after sourcing so they win: figures.R's fig_1_plot() and
-# fig_1_table() call read_indicator() unqualified, which R resolves inside
-# LYME_ENV (the environment those functions were defined in) at call time, not
-# at source time -- so redefining it here is enough, no submodule file edit
-# needed.
-LYME_ENV$read_indicator <- function(file) {
-  d <- readr::read_csv(
-    file.path(LYME_DATA_DIR, file),
-    col_types = readr::cols(.default = readr::col_character()),
-    na = character(), progress = FALSE
+# Legend text: "<definition> (<first>-<last>)", with the coverage span read from
+# the upstream meta.yml, which that repo derives from the data itself. Typing
+# the years here instead would be a second copy able to drift from the first.
+fig_1_era_labels <- function() {
+  s <- meta_for(REPO, FIG1_FILE)$series
+  stats::setNames(
+    vapply(s, function(x) sprintf("%s (%s)", x$label, x$coverage), character(1)),
+    vapply(s, function(x) x$key, character(1))
   )
-  d$value <- suppressWarnings(as.numeric(d$value))
-  if ("year" %in% names(d)) d$year <- as.integer(d$year)
-  if ("date" %in% names(d)) d$date <- as.Date(d$date)
-  d
 }
-LYME_ENV$read_meta <- function() yaml::read_yaml(file.path(LYME_DATA_DIR, "meta.yml"))
 
-# Thin wrappers, ld_-prefixed to match this site's indicator-page convention
-# (hrd_ for heat-related-deaths, crd_ for cold-related-deaths, hrwd_ for
-# heat-related-workplace-deaths): the qmd page calls these, not LYME_ENV
-# directly, so the submodule's own unprefixed names never leak into the page's
-# own R chunks.
-ld_meta        <- function() LYME_ENV$read_meta()
-ld_meta_for    <- function(file, meta = ld_meta()) LYME_ENV$meta_for(file, meta)
-ld_fig_1       <- function() LYME_ENV$fig_1()
-ld_fig_1_plot  <- function() LYME_ENV$fig_1_plot()
-ld_fig_1_table <- function() LYME_ENV$fig_1_table()
-ld_fig_2       <- function() LYME_ENV$fig_2()
-ld_fig_2_plot  <- function() LYME_ENV$fig_2_plot()
-ld_fig_2_table <- function() LYME_ENV$fig_2_table()
+# *_plot() builds the plain ggplot object; fig_*() wraps it for the page. The
+# split exists so a plot can be ggsave()'d for a static check without pulling
+# in the htmlwidget machinery.
+fig_1_plot <- function() {
+  d <- read_indicator(REPO, FIG1_FILE)
 
-# Figure 3 (the 1996-vs-2022 dot maps) gets no wrapper: EPA published the
-# images and no data at all, so there is nothing upstream to chart and nothing
-# to download but the image itself. It is the only figure on this page that
-# falls back to a static image, and the only kind of figure that should.
-#
-# Note Figure 2 IS charted even though EPA draws it as a choropleth -- see the
-# submodule's R/figures.R header for why a ranked bar chart of all 51
-# jurisdictions carries more than EPA's map does. EPA's map is still linked
-# from the page as a PNG download.
-#
-# If Figure 3 ever gets a chart it gets written upstream and picked up by a
-# resync; chart code must not appear in this file.
+  eras <- unique(d$definition_key[order(d$year)])
+  labels <- fig_1_era_labels()
+  stopifnot(
+    "figure 1: meta.yml does not describe every case definition in the data" =
+      all(eras %in% names(labels))
+  )
+  d$era <- unname(labels[d$definition_key])
+
+  # Breakpoints, derived: the boundary between one era's last year and the
+  # next era's first. Drawn between the two rather than on either.
+  era_last <- vapply(eras, function(k) max(d$year[d$definition_key == k]), numeric(1))
+  breakpoints <- utils::head(era_last, -1L) + 0.5
+
+  ggplot(d, aes(x = year, y = value, colour = era, group = definition_key)) +
+    geom_vline(
+      xintercept = breakpoints,
+      colour = "#9a9a94", linetype = "22", linewidth = 0.4
+    ) +
+    geom_line_interactive(linewidth = 0.9) +
+    # Markers are filled with the era colour and ringed in the surface colour,
+    # so a point stays legible where the line doubles back over itself. The
+    # ring is why fill, not colour, carries the marker: colour is already the
+    # line's aesthetic.
+    geom_point_interactive(
+      aes(
+        fill = era, data_id = definition_key,
+        tooltip = ifelse(
+          nzchar(note),
+          sprintf("%d - %s\n%.1f cases per 100,000 people\n\n%s",
+                  year, definition_label, value, note),
+          sprintf("%d - %s\n%.1f cases per 100,000 people",
+                  year, definition_label, value)
+        )
+      ),
+      shape = 21, colour = "white", size = 2.4, stroke = 0.8
+    ) +
+    scale_colour_manual(
+      values = label_colours(d, "definition_key", "era", eras),
+      breaks = label_order(d, "definition_key", "era", eras)
+    ) +
+    scale_fill_manual(
+      values = label_colours(d, "definition_key", "era", eras),
+      guide = "none"
+    ) +
+    guides(colour = guide_legend(nrow = 2, byrow = TRUE)) +
+    scale_x_continuous(breaks = c(seq(1992, 2017, 5), 2022)) +
+    scale_y_continuous(limits = c(0, NA), expand = expansion(mult = c(0, 0.08))) +
+    labs(x = NULL, y = "Reported cases per 100,000 people") +
+    theme_indicator() +
+    legend_top()
+}
+
+fig_1 <- function() girafe_indicator(fig_1_plot(), height = 4.6)
+
+fig_1_table <- function() {
+  d <- read_indicator(REPO, FIG1_FILE)
+  out <- d[, c("year", "definition_label", "value", "note")]
+  names(out) <- c("Year", "Case definition",
+                  "Cases per 100,000 people", "Note (EPA / CDC)")
+  out
+}
+
+# ---- Figure 2: incidence by jurisdiction, 2022 -------------------------------
+
+FIG2_FILE <- "lyme_incidence_by_jurisdiction.csv"
+
+# CDC designates a jurisdiction "high-incidence" once it has averaged at least
+# this many confirmed cases per 100,000 people over three consecutive years,
+# and it is the same number EPA's own Figure 2 caption uses as the cutoff for
+# what its map draws at all. It is a published definition, not a threshold
+# chosen here to make the chart look tidy.
+FIG2_HIGH_INCIDENCE <- 10
+
+# Sorted ascending so the highest rate lands at the top of a horizontal bar
+# chart, with the jurisdiction that filed no report at the very bottom -- it
+# has no rate to rank and must not be sorted as if it were a zero.
+fig_2_sorted <- function() {
+  d <- read_indicator(REPO, FIG2_FILE)
+  d[order(d$value, decreasing = FALSE, na.last = FALSE), ]
+}
+
+fig_2_plot <- function() {
+  d <- fig_2_sorted()
+
+  d$jurisdiction <- factor(d$jurisdiction, levels = d$jurisdiction)
+  reported <- !is.na(d$value)
+
+  ggplot(d, aes(y = jurisdiction, x = value)) +
+    geom_vline(
+      xintercept = FIG2_HIGH_INCIDENCE,
+      colour = "#9a9a94", linetype = "22", linewidth = 0.4
+    ) +
+    geom_col_interactive(
+      data = d[reported, ],
+      aes(
+        data_id = jurisdiction,
+        tooltip = sprintf("%s\n%.1f cases per 100,000 people",
+                          jurisdiction, value)
+      ),
+      fill = INDICATOR_PALETTE[[1]], width = 0.72
+    ) +
+    # The non-reporting jurisdiction keeps its row and says why, in place of a
+    # bar. Sized and coloured to read as an annotation, not as data.
+    geom_text_interactive(
+      data = d[!reported, ],
+      aes(
+        x = 0, label = "no report filed for 2022",
+        data_id = jurisdiction,
+        tooltip = sprintf("%s\nFiled no report for 2022. Not a rate of zero.",
+                          jurisdiction)
+      ),
+      hjust = 0, nudge_x = 1.5, size = 2.9, colour = "#6b6b66", fontface = "italic"
+    ) +
+    annotate(
+      "text", x = FIG2_HIGH_INCIDENCE, y = 2.2, hjust = -0.08,
+      label = paste0("CDC high-incidence threshold: ",
+                     FIG2_HIGH_INCIDENCE, " per 100,000"),
+      size = 2.9, colour = "#6b6b66"
+    ) +
+    # Pinned rather than left to the discrete scale, which builds its level set
+    # layer by layer: the bar layer excludes the non-reporting jurisdiction, so
+    # that one arrived with the text layer and got appended to the end of the
+    # axis -- landing at the top of the chart, above the highest rate.
+    scale_y_discrete(limits = levels(d$jurisdiction)) +
+    scale_x_continuous(
+      limits = c(0, NA), expand = expansion(mult = c(0, 0.04)),
+      position = "top"
+    ) +
+    labs(x = "Reported cases per 100,000 people (2022)", y = NULL) +
+    theme_indicator() +
+    theme(
+      # theme_indicator() is built for a vertical chart: gridlines running
+      # across the categories and a baseline under them. Both flip here.
+      panel.grid.major.x = element_line(colour = "#dcdcd7", linewidth = 0.4),
+      panel.grid.major.y = element_blank(),
+      axis.line.x        = element_blank(),
+      axis.text.y        = element_text(size = rel(0.72)),
+      axis.ticks.length  = unit(0, "pt")
+    )
+}
+
+fig_2 <- function() girafe_indicator(fig_2_plot(), height = 9.5)
+
+fig_2_table <- function() {
+  d <- fig_2_sorted()
+  d <- d[rev(seq_len(nrow(d))), ]  # highest first, to match the chart
+  data.frame(
+    Jurisdiction = d$jurisdiction,
+    `Cases per 100,000 people` = ifelse(
+      nzchar(d$flag), "not reported", sprintf("%.1f", d$value)
+    ),
+    check.names = FALSE, stringsAsFactors = FALSE
+  )
+}
+
+# Figure 3 (the 1996-vs-2022 dot maps) has no figure function: EPA published
+# the images and no data at all, so there is nothing to chart.

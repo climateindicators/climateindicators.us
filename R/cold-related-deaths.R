@@ -1,72 +1,96 @@
-# Data access and figures for indicators/cold-related-deaths.qmd.
-#
-# HARD RULE (matches _common.R's scope for the site generally): this file
-# reads data/cold-related-deaths/ and nothing else. It never opens
-# data-raw/cold-related-deaths/ and never reaches the network.
-#
-# Canonical source: the git submodule at indicators-src/cold-related-deaths
-# (github.com/climateindicators/cold-related-deaths). That repo holds the raw
-# source workbook, the extraction pipeline (R/build_data.R), the docx
-# narrative extraction (R/gen_narrative.R), and the chart code
-# (R/figures.R + _common.R) referenced below. Unlike heat-related-deaths'
-# integration, that chart code is NOT copied or renamed here: _common.R and
-# R/figures.R are source()'d verbatim from the submodule into an isolated
-# environment (CRD_ENV), so this file carries zero duplicated plotting logic.
-# The only thing overridden is where the data lives, because both files
-# resolve their CSVs via here::here("data", file), which inside this
-# multi-indicator project means "this repo's top-level data/", not the
-# submodule's own data/. read_indicator() and read_meta() are redefined
-# inside CRD_ENV, after sourcing, to point at data/cold-related-deaths/
-# instead; every other function (fig_1(), fig_td1(), theme_indicator(),
-# INDICATOR_COLOURS, ...) is exactly the submodule's own code.
-#
-# Sourcing into an isolated environment rather than the global one (as
-# heat-related-deaths.R's hrd_-prefixed copy effectively does by renaming)
-# means this indicator's unprefixed names (fig_1, read_indicator, ...) can
-# never collide with another indicator's, regardless of how Quarto schedules
-# R sessions across pages.
-#
-# TO RESYNC after that repo's data or charts change:
-#   git submodule update --remote indicators-src/cold-related-deaths
-#   (then re-copy data/*.csv, meta.yml, and the source workbook below)
+# Figures for indicators/cold-related-deaths.qmd.
 
-suppressPackageStartupMessages({
-  library(ggplot2)
-  library(ggiraph)
-})
+REPO <- "cold-related-deaths"
 
-CRD_SRC_DIR  <- here::here("indicators-src", "cold-related-deaths")
-CRD_DATA_DIR <- here::here("data", "cold-related-deaths")
+# Series colours, keyed by the machine-readable series key from the data.
+INDICATOR_COLOURS <- palette_for(c(
+  # 1 blue    underlying-cause-only: the narrower, longer-running baseline.
+  "underlying",
+  # 2 orange  underlying-or-contributing: the broader, higher picture, and the
+  #           series the page's text draws the reader to.
+  "underlying_or_contributing"
+))
 
-CRD_ENV <- new.env(parent = globalenv())
-source(file.path(CRD_SRC_DIR, "_common.R"), local = CRD_ENV)
-source(file.path(CRD_SRC_DIR, "R", "figures.R"), local = CRD_ENV)
+# ---- Figure 1: annual cold-related death rates -------------------------------
 
-# Overrides, applied after sourcing so they win: figures.R's fig_1_plot() and
-# fig_td1_plot() call read_indicator() unqualified, which R resolves inside
-# CRD_ENV (the environment those functions were defined in) at call time, not
-# at source time -- so redefining it here is enough, no submodule file edit
-# needed.
-CRD_ENV$read_indicator <- function(file) {
-  d <- readr::read_csv(
-    file.path(CRD_DATA_DIR, file),
-    col_types = readr::cols(.default = readr::col_character()),
-    na = character(), progress = FALSE
-  )
-  d$value <- suppressWarnings(as.numeric(d$value))
-  if ("year" %in% names(d)) d$year <- as.integer(d$year)
-  if ("date" %in% names(d)) d$date <- as.Date(d$date)
-  d
+FIG1_FILE <- "cold_deaths_annual.csv"
+
+# *_plot() builds the plain ggplot object; fig_*() wraps it for the page. The
+# split exists so a plot can be ggsave()'d for a static check without pulling
+# in the htmlwidget machinery.
+fig_1_plot <- function() {
+  d <- read_indicator(REPO, FIG1_FILE)
+  # icd_revision splits the underlying-cause line at the classification
+  # change; series_key alone would draw straight through 1998/1999.
+  d$seg <- paste(d$series_key, d$icd_revision, sep = "/")
+  order <- c("underlying", "underlying_or_contributing")
+
+  ggplot(d, aes(x = year, y = value, colour = series_label, group = seg)) +
+    geom_line_interactive(linewidth = 0.9) +
+    geom_point_interactive(
+      aes(
+        data_id = series_key,
+        tooltip = sprintf(
+          "%d — %s\n%.2f deaths per million (%s)",
+          year, series_label, value, icd_revision
+        )
+      ),
+      size = 2.2
+    ) +
+    scale_colour_manual(
+      values = label_colours(d, "series_key", "series_label", order),
+      breaks = label_order(d, "series_key", "series_label", order)
+    ) +
+    guides(colour = guide_legend(nrow = 2, byrow = TRUE)) +
+    scale_x_continuous(breaks = seq(1980, 2015, 5)) +
+    scale_y_continuous(limits = c(0, NA), expand = expansion(mult = c(0, 0.06))) +
+    labs(x = NULL, y = "Death rate (per million people)") +
+    theme_indicator() +
+    legend_top()
 }
-CRD_ENV$read_meta <- function() yaml::read_yaml(file.path(CRD_DATA_DIR, "meta.yml"))
 
-# Thin wrappers, crd_-prefixed to match this site's indicator-page convention
-# (hrd_ for heat-related-deaths): the qmd page calls these, not CRD_ENV
-# directly, so the submodule's own unprefixed names never leak into the
-# page's own R chunks.
-crd_meta         <- function() CRD_ENV$read_meta()
-crd_meta_for     <- function(file, meta = crd_meta()) CRD_ENV$meta_for(file, meta)
-crd_fig_1        <- function() CRD_ENV$fig_1()
-crd_fig_1_table  <- function() CRD_ENV$fig_1_table()
-crd_fig_td1      <- function() CRD_ENV$fig_td1()
-crd_fig_td1_table <- function() CRD_ENV$fig_td1_table()
+fig_1 <- function() girafe_indicator(fig_1_plot())
+
+fig_1_table <- function() {
+  d <- read_indicator(REPO, FIG1_FILE)
+  tidyr::pivot_wider(d, id_cols = year, names_from = series_label, values_from = value)
+}
+
+# ---- Figure TD-1: cold-related deaths by month, 1999-2015 --------------------
+
+FIGTD1_FILE <- "cold_deaths_monthly.csv"
+
+MONTH_LEVELS <- c(
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+)
+
+fig_td1_plot <- function() {
+  d <- read_indicator(REPO, FIGTD1_FILE)
+  # Fixed calendar order, not the alphabetical order a bare factor on month
+  # names would give.
+  d$month <- factor(d$month, levels = MONTH_LEVELS)
+
+  ggplot(d, aes(x = month, y = value)) +
+    geom_col_interactive(
+      aes(
+        data_id = month,
+        tooltip = sprintf("%s\n%d deaths (1999–2015 total)", month, value)
+      ),
+      fill = unname(INDICATOR_COLOURS["underlying_or_contributing"]),
+      width = 0.7
+    ) +
+    scale_x_discrete(labels = substr(MONTH_LEVELS, 1, 3)) +
+    scale_y_continuous(limits = c(0, NA), expand = expansion(mult = c(0, 0.06))) +
+    labs(x = NULL, y = "Total deaths, 1999–2015") +
+    theme_indicator()
+}
+
+fig_td1 <- function() girafe_indicator(fig_td1_plot())
+
+fig_td1_table <- function() {
+  d <- read_indicator(REPO, FIGTD1_FILE)
+  d$month <- factor(d$month, levels = MONTH_LEVELS)
+  d <- d[order(d$month), ]
+  data.frame(Month = as.character(d$month), `Total deaths` = d$value, check.names = FALSE)
+}

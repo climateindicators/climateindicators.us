@@ -11,30 +11,27 @@ This feature presents data on worker deaths classified as "heat-related" in the 
 ```{r}
 #| label: setup
 #| include: false
-source(here::here("R/indicators/heat-related-workplace-deaths.R"))
-hrwd_meta_all <- hrwd_meta()
-hrwd_caption <- function(file) {
-  m <- hrwd_meta_for(file, hrwd_meta_all)
-  knitr::asis_output(sprintf(
-    "**%s**\n\nData source: %s <br> Web update: %s\n",
-    m$figure_title, m$data_source, m$web_update
-  ))
-}
+source(here::here("R", "common.R"))
+source(here::here("R", "heat-related-workplace-deaths.R"))
 ```
 
-## Figure 1
+## Figures
+
+::::: {.panel-tabset}
+
+### Figure 1
 
 ```{r}
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-hrwd_caption("workplace_heat_deaths_annual.csv")
+figure_caption(REPO, "workplace_heat_deaths_annual.csv")
 ```
 
 ```{r}
 #| label: fig-1
 #| echo: false
-hrwd_fig_1()
+fig_1()
 ```
 
 This graph shows the number of reported occupational heat-related deaths in
@@ -51,15 +48,53 @@ collection for 2020 fell below reporting thresholds (no bar that year).
 ```{r}
 #| label: fig-1-table
 #| echo: false
-knitr::kable(hrwd_fig_1_table(), digits = 0)
+knitr::kable(fig_1_table(), digits = 0)
 ```
 
 Download:
-<i class="bi bi-filetype-png"></i> <a href="../images/heat-related-workplace-deaths/figure-1.png" download>figure image</a> ·
-<i class="bi bi-filetype-csv"></i> <a href="../data/heat-related-workplace-deaths/workplace_heat_deaths_annual.csv" download>figure data</a> ·
-<i class="bi bi-file-earmark-excel"></i> <a href="../data-raw/heat-related-workplace-deaths/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx" download>original source workbook</a>
+<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_annual.csv" download>figure data</a> ·
+<i class="bi bi-file-earmark-excel"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx" download>original source workbook</a>
 
 </details>
+
+### Example 1
+
+```{r}
+#| label: example-1-caption
+#| echo: false
+#| output: asis
+figure_caption(REPO, "workplace_heat_deaths_outdoor_workers_county.csv")
+```
+
+![Example 1. Prevalence of Outdoor Workers in the United States,
+2018–2022](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png){fig-alt="County-level map of the United States showing the percentage of each county's workforce in predominantly-outdoor occupations, ranging from under 4 percent (pale yellow) to over 40 percent (dark red), concentrated in parts of the West, the northern and southern Great Plains, and Alaska." fig-align="center"}
+
+This map shows the percentage of each county's workforce engaged in
+occupations that typically involve a substantial amount of time outdoors.
+Job categories included in this analysis include delivery services, law
+enforcement and emergency services, utilities, mining/quarrying/oil and gas
+extraction, agriculture, fishing, forestry, and construction. The map shows
+a five-year average.
+
+This is EPA's own published map image. The county-level data behind it—one
+row per county, five-year average percentage—is maintained in the
+[heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths)
+repository and downloadable below; an interactive version built from that
+data is not part of this indicator yet.
+
+<details><summary>Show the data behind this figure</summary>
+
+This figure's table is 3,274 rows (one per county), so it is offered as a
+download rather than rendered inline.
+
+Download:
+<i class="bi bi-filetype-png"></i> <a href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png" download>figure image</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_outdoor_workers_county.csv" download>figure data</a> ·
+<i class="bi bi-file-earmark-excel"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx" download>original source workbook</a>
+
+</details>
+
+:::::
 
 ## Key Points
 
@@ -145,47 +180,13 @@ activity, disproportionately face heat-related health threats. Between 5
 million and 10 million American workers are exposed to outdoor heat beyond
 safe levels every year.^[8](#ref-8)^ Outdoor occupations are distributed
 throughout the United States, and they make up an especially large
-percentage of the workforce in certain regions (Example 1), including parts
+percentage of the workforce in certain regions (see Example 1 above),
+including parts
 of the West, northern and southern Great Plains, and Alaska. Outdoor
 workers in cities may also be exposed to elevated temperatures due to the
 heat island effect, which can increase temperatures by 18 to 27°F during
 the day and 9 to 18°F at night in urban areas compared with outlying
 areas.^[9](#ref-9)^
-
-```{r}
-#| label: example-1-caption
-#| echo: false
-#| output: asis
-hrwd_caption("workplace_heat_deaths_outdoor_workers_county.csv")
-```
-
-![Example 1. Prevalence of Outdoor Workers in the United States,
-2018–2022](../images/heat-related-workplace-deaths/epa-example-1-outdoor-workers-map.png){fig-alt="County-level map of the United States showing the percentage of each county's workforce in predominantly-outdoor occupations, ranging from under 4 percent (pale yellow) to over 40 percent (dark red), concentrated in parts of the West, the northern and southern Great Plains, and Alaska." fig-align="center"}
-
-This map shows the percentage of each county's workforce engaged in
-occupations that typically involve a substantial amount of time outdoors.
-Job categories included in this analysis include delivery services, law
-enforcement and emergency services, utilities, mining/quarrying/oil and gas
-extraction, agriculture, fishing, forestry, and construction. The map shows
-a five-year average.
-
-This is EPA's own published map image. The county-level data behind it—one
-row per county, five-year average percentage—is maintained in the
-[heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths)
-repository and downloadable below; an interactive version built from that
-data is not part of this indicator yet.
-
-<details><summary>Show the data behind this figure</summary>
-
-This figure's table is 3,274 rows (one per county), so it is offered as a
-download rather than rendered inline.
-
-Download:
-<i class="bi bi-filetype-png"></i> <a href="../images/heat-related-workplace-deaths/epa-example-1-outdoor-workers-map.png" download>figure image</a> ·
-<i class="bi bi-filetype-csv"></i> <a href="../data/heat-related-workplace-deaths/workplace_heat_deaths_outdoor_workers_county.csv" download>figure data</a> ·
-<i class="bi bi-file-earmark-excel"></i> <a href="../data-raw/heat-related-workplace-deaths/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx" download>original source workbook</a>
-
-</details>
 
 ## Notes
 
@@ -231,7 +232,7 @@ Employment and Wages:
 #| label: td-link
 #| echo: false
 #| output: asis
-cat(sprintf("- [Download related technical information (PDF)](%s)\n", hrwd_meta_all$indicator$technical_documentation))
+technical_documentation_link(REPO)
 ```
 
 ## References
@@ -259,6 +260,5 @@ subject to domestic copyright), extracted from EPA's source document and
 verified paragraph by paragraph against the published page. Data, chart code,
 and the full extraction pipeline are maintained in the
 [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths)
-repository, embedded here as a git submodule at
-`indicators-src/heat-related-workplace-deaths`.
+repository, which this page reads its data from directly.
 :::

@@ -11,30 +11,27 @@ This indicator presents data on deaths classified as "cold-related" in the Unite
 ```{r}
 #| label: setup
 #| include: false
-source(here::here("R/indicators/cold-related-deaths.R"))
-crd_meta_all <- crd_meta()
-crd_caption <- function(file) {
-  m <- crd_meta_for(file, crd_meta_all)
-  knitr::asis_output(sprintf(
-    "**%s**\n\nData source: %s <br> Web update: %s\n",
-    m$figure_title, m$data_source, m$web_update
-  ))
-}
+source(here::here("R", "common.R"))
+source(here::here("R", "cold-related-deaths.R"))
 ```
 
-## Figure 1
+## Figures
+
+::::: {.panel-tabset}
+
+### Figure 1
 
 ```{r}
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-crd_caption("cold_deaths_annual.csv")
+figure_caption(REPO, "cold_deaths_annual.csv")
 ```
 
 ```{r}
 #| label: fig-1
 #| echo: false
-crd_fig_1()
+fig_1()
 ```
 
 This figure shows the annual rates for deaths classified as "cold-related" by
@@ -53,14 +50,14 @@ earlier than 1999 cannot easily be compared with data from 1999 and later.
 ```{r}
 #| label: fig-1-table
 #| echo: false
-knitr::kable(crd_fig_1_table(), digits = 3)
+knitr::kable(fig_1_table(), digits = 3)
 ```
 
-Download: [tidy CSV](../data/cold-related-deaths/cold_deaths_annual.csv) · [original workbook](../data-raw/cold-related-deaths/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
+Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_annual.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 </details>
 
-## Figure TD-1
+### Figure TD-1
 
 ::: {.callout-note appearance="simple" icon=false}
 This figure is not part of EPA's published indicator page. It is EPA's own
@@ -76,13 +73,13 @@ repository's `data-raw/PROVENANCE.md` for details.
 #| label: fig-td1-caption
 #| echo: false
 #| output: asis
-crd_caption("cold_deaths_monthly.csv")
+figure_caption(REPO, "cold_deaths_monthly.csv")
 ```
 
 ```{r}
 #| label: fig-td1
 #| echo: false
-crd_fig_td1()
+fig_td1()
 ```
 
 This graph shows all deaths for which cold was recorded as either the
@@ -95,12 +92,14 @@ entire period of record.
 ```{r}
 #| label: fig-td1-table
 #| echo: false
-knitr::kable(crd_fig_td1_table())
+knitr::kable(fig_td1_table())
 ```
 
-Download: [tidy CSV](../data/cold-related-deaths/cold_deaths_monthly.csv) · [original workbook](../data-raw/cold-related-deaths/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
+Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_monthly.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 </details>
+
+:::::
 
 ## Key Points
 
@@ -236,7 +235,7 @@ CDC's Environmental Public Health Tracking Program.
 #| label: td-link
 #| echo: false
 #| output: asis
-cat(sprintf("- [Download related technical information (PDF)](%s)\n", crd_meta_all$indicator$technical_documentation))
+technical_documentation_link(REPO)
 ```
 
 ## References
@@ -264,6 +263,5 @@ subject to domestic copyright), extracted from EPA's source document and
 verified paragraph by paragraph against the published page. Data, chart code,
 and the full extraction pipeline are maintained in the
 [cold-related-deaths](https://github.com/climateindicators/cold-related-deaths)
-repository, embedded here as a git submodule at
-`indicators-src/cold-related-deaths`.
+repository, which this page reads its data from directly.
 :::

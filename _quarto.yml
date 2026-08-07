@@ -6,12 +6,9 @@ project:
     browser: true
   render:
     - "!chunks/"
-    - "!indicators-src/"
     - "**/*.qmd"
   resources:
     - images/
-    - data/
-    - data-raw/
 
 website:
   title: climateindicators.us
