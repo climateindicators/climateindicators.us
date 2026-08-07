@@ -10,6 +10,7 @@ Imports:
     ggplot2,
     here,
     knitr,
+    ltc,
     readr,
     rmarkdown,
     tidyr,

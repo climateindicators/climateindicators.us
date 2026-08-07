@@ -64,6 +64,73 @@ technical_documentation_link <- function(meta) {
   ))
 }
 
+# ---- Chart colours -----------------------------------------------------------
+
+# The categorical palette: ltc's `expevo`, lifted out of its published order
+# into the role order named below. Of the 31 palettes ltc ships, expevo is the
+# one that carries a blue, an orange, a teal and a plum at once with no
+# near-white slot, so it is the only one that fills all four roles a chart here
+# needs. The two spare slots are what a fifth or sixth series would draw in.
+INDICATOR_PALETTE <- stats::setNames(
+  ltc::ltc("expevo")[c(5, 1, 3, 4, 2, 6)],
+  c(
+    "base",     # the series everything else is read against
+    "focus",    # the series most worth the reader's attention
+    "compare",  # a peer series read alongside the baseline
+    "other",    # a category that is not a peer of the others
+    "extra",    # a fifth series, when a chart has one
+    "neutral"   # a series deliberately pushed into the background
+  )
+)
+
+# A palette that lost slots would index to NA and draw in ggplot's
+# missing-value grey without complaint.
+stopifnot(
+  "ltc's expevo palette no longer has six slots" =
+    length(INDICATOR_PALETTE) == 6L && !anyNA(INDICATOR_PALETTE)
+)
+
+# Everything that is not a data series: gridlines, axis furniture, annotations.
+CHART_GREY <- c(
+  ink        = "#1e1e1e",  # facet strip text, tooltip background
+  text       = "#464646",  # axis titles, tick labels, the x axis line
+  annotation = "#6b6b66",  # in-panel notes
+  rule       = "#9a9a94",  # reference and breakpoint lines
+  grid       = "#dcdcd7",  # major gridlines
+  surface    = "#ffffff"   # marker rings, drawn over the page background
+)
+
+#' Assign a figure's series keys to palette slots, in the order given.
+#'
+#' Errors on more keys than slots rather than recycling: an unmapped series
+#' would otherwise draw in ggplot's missing-value grey with no warning.
+series_colours <- function(keys) {
+  if (length(keys) > length(INDICATOR_PALETTE)) {
+    stop(
+      "INDICATOR_PALETTE has ", length(INDICATOR_PALETTE), " slots but ",
+      length(keys), " series keys were given.",
+      call. = FALSE
+    )
+  }
+  stats::setNames(unname(INDICATOR_PALETTE[seq_along(keys)]), keys)
+}
+
+#' The same mapping, re-keyed to the label column a legend displays.
+#'
+#' `keys` fixes which slot each series draws in; `label_order()` fixes the order
+#' the legend reads in. They are the same vector on every page but Lyme, whose
+#' four case-definition eras are deliberately not coloured chronologically.
+label_colours <- function(d, key_col, label_col, keys) {
+  stats::setNames(
+    unname(series_colours(keys)),
+    d[[label_col]][match(keys, d[[key_col]])]
+  )
+}
+
+label_order <- function(d, key_col, label_col, order) {
+  d[[label_col]][match(order, d[[key_col]])]
+}
+
 # ---- Chart styling -----------------------------------------------------------
 
 # Font family is left as the theme default: SVG text metrics are resolved at
@@ -74,54 +141,16 @@ theme_indicator <- function(base_size = 13) {
     theme(
       panel.grid.minor   = element_blank(),
       panel.grid.major.x = element_blank(),
-      panel.grid.major.y = element_line(colour = "#dcdcd7", linewidth = 0.4),
-      axis.title         = element_text(colour = "#464646", size = rel(0.9)),
-      axis.text          = element_text(colour = "#464646"),
-      axis.line.x        = element_line(colour = "#464646", linewidth = 0.4),
+      panel.grid.major.y = element_line(colour = CHART_GREY[["grid"]], linewidth = 0.4),
+      axis.title         = element_text(colour = CHART_GREY[["text"]], size = rel(0.9)),
+      axis.text          = element_text(colour = CHART_GREY[["text"]]),
+      axis.line.x        = element_line(colour = CHART_GREY[["text"]], linewidth = 0.4),
       plot.title         = element_blank(),   # the caption block carries the title
       plot.margin        = margin(4, 4, 4, 4),
-      strip.text         = element_text(colour = "#1e1e1e", face = "bold",
+      strip.text         = element_text(colour = CHART_GREY[["ink"]], face = "bold",
                                         hjust = 0, size = rel(0.95)),
       legend.position    = "none"             # each figure sets its own legend
     )
-}
-
-# The categorical palette, in slot order: blue, orange, aqua, magenta.
-INDICATOR_PALETTE <- c("#2a78d6", "#eb6834", "#1baf7a", "#d14fa8")
-
-#' Assign a page's series keys to palette slots, in order.
-#'
-#' Errors on more keys than slots rather than recycling: an unmapped series
-#' would otherwise draw in ggplot's missing-value grey with no warning.
-palette_for <- function(keys) {
-  if (length(keys) > length(INDICATOR_PALETTE)) {
-    stop(
-      "INDICATOR_PALETTE has ", length(INDICATOR_PALETTE), " slots but ",
-      length(keys), " series keys were given.",
-      call. = FALSE
-    )
-  }
-  stats::setNames(INDICATOR_PALETTE[seq_along(keys)], keys)
-}
-
-#' Map a data frame's label column to a page's INDICATOR_COLOURS, and to a
-#' legend order, both driven by an explicit key order rather than alphabetising
-#' the label text (ggplot's default for a character aesthetic).
-label_colours <- function(d, key_col, label_col, order, colours = INDICATOR_COLOURS) {
-  missing <- setdiff(order, names(colours))
-  if (length(missing)) {
-    stop(
-      "No INDICATOR_COLOURS entry for series key(s): ",
-      paste(sQuote(missing), collapse = ", "),
-      call. = FALSE
-    )
-  }
-  lab <- d[[label_col]][match(order, d[[key_col]])]
-  stats::setNames(unname(colours[order]), lab)
-}
-
-label_order <- function(d, key_col, label_col, order) {
-  d[[label_col]][match(order, d[[key_col]])]
 }
 
 legend_top <- function() {
@@ -140,9 +169,9 @@ legend_top <- function() {
 GIRAFE_OPTS <- list(
   opts_hover(css = "stroke-width:3.5;"),
   opts_hover_inv(css = "opacity:0.3;"),
-  opts_tooltip(css = paste(
-    "background:#1e1e1e;color:#fff;padding:6px 10px;border-radius:4px;",
-    "font-family:sans-serif;font-size:12px;max-width:320px;"
+  opts_tooltip(css = paste0(
+    "background:", CHART_GREY[["ink"]], ";color:#fff;padding:6px 10px;",
+    "border-radius:4px;font-family:sans-serif;font-size:12px;max-width:320px;"
   )),
   opts_toolbar(saveaspng = FALSE),
   opts_sizing(rescale = TRUE, width = 1)

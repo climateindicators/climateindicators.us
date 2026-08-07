@@ -95,8 +95,9 @@ in the indicator's own repository.
 - `figure_caption(meta, file)`, `technical_documentation_link(meta)` — the
   caption block above a figure and the TD link, both from an already-read
   `meta.yml`
-- `theme_indicator()`, `INDICATOR_PALETTE`, `palette_for()`, `label_colours()`,
-  `label_order()`, `legend_top()` — chart styling
+- `INDICATOR_PALETTE`, `CHART_GREY`, `series_colours()`, `label_colours()`,
+  `label_order()` — chart colour
+- `theme_indicator()`, `legend_top()` — chart styling
 - `girafe_indicator()` — wrap a ggplot as a ggiraph htmlwidget
 
 **`read_indicator()` and `read_meta()` are the only functions that touch the
@@ -109,7 +110,6 @@ the same object rather than each fetching it again.
 same shape:
 
 - `REPO` — the indicator repository name
-- `INDICATOR_COLOURS` — that page's series keys mapped to palette slots
 - `fig_*_plot(d)` — builds the plain ggplot object from a data frame
 - `fig_*(d)` — wraps `fig_*_plot(d)` via `girafe_indicator()`
 - `fig_*_table(d)` — the data frame shown under the figure
@@ -131,12 +131,30 @@ Rules for these files:
   its own file before calling anything from it.
 - **Do not prefix names.** `fig_1()`, not `hrd_fig_1()`. Each page loads
   exactly one indicator file, so there is nothing to disambiguate.
-- **Colours are keyed by the machine-readable series key from the data, never
-  by position.** An index-based lookup can swap two series and still look
-  plausible. `INDICATOR_PALETTE` has four validated slots, in role order: blue
-  is the baseline series, orange the series most worth the reader's attention,
-  aqua a comparison series, magenta a category that is not a peer of the
-  others.
+- **Every colour comes from `common.R`. No file under `R/` outside it may
+  contain a hex code.** `INDICATOR_PALETTE` holds the data-series colours,
+  `CHART_GREY` everything that is not a series — gridlines, axis furniture,
+  reference lines, annotation text, marker rings. Both are named, so a figure
+  reads `INDICATOR_PALETTE[["focus"]]`, never a slot number and never a literal.
+
+- **`INDICATOR_PALETTE` is ltc's `expevo`, reordered into named roles**: `base`
+  is the series everything else is read against, `focus` the series most worth
+  the reader's attention, `compare` a peer series, `other` a category that is
+  not a peer of the others, then `extra` and `neutral`. Re-theming the charts
+  means changing the palette name in that one call. Of the palettes ltc ships,
+  expevo is the only one carrying a blue, an orange, a teal and a plum at once
+  with no near-white slot; anything replacing it has to fill the same four
+  roles.
+
+- **A figure declares its series keys in role order and lets
+  `series_colours()`/`label_colours()` do the mapping.** Pass the key vector,
+  not colours — an unmapped series draws in ggplot's missing-value grey without
+  complaining, and an index-based lookup can swap two series and still look
+  plausible. Where a figure's role order differs from its draw order, the two
+  are separate vectors: workplace deaths stacks construction on top but colours
+  it `focus` over an `other_sectors` baseline, and Lyme colours its four eras
+  non-chronologically while the legend still reads oldest to newest
+  (`label_colours(…, FIG1_COLOUR_KEYS)` against `label_order(…, eras)`).
 - **Never re-derive a published number.** If a page needs a value the upstream
   `data/` does not carry, the fix goes in that indicator's repository, where it
   is tested and reproducible — not inline here, where nothing checks it.

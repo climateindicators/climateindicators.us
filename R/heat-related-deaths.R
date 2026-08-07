@@ -2,27 +2,6 @@
 
 REPO <- "heat-related-deaths"
 
-# Series colours, keyed by the machine-readable series key from the data.
-# Never by position: Figure 2's caption names its colours in a different order
-# than the source file lists its columns, so an index-based lookup would swap
-# two series and still look plausible.
-INDICATOR_COLOURS <- c(
-  # Figure 1: underlying-cause-only is the narrower baseline; the broader
-  # underlying-or-contributing series gets the attention colour.
-  underlying_all_year                = INDICATOR_PALETTE[[1]],
-  underlying_or_contributing_may_sep = INDICATOR_PALETTE[[2]],
-  # Figure 2: the general population is the baseline the two higher-risk
-  # groups are read against.
-  general                            = INDICATOR_PALETTE[[1]],
-  age_65_plus                        = INDICATOR_PALETTE[[2]],
-  nh_black                           = INDICATOR_PALETTE[[3]],
-  # Example figure: the 1990-2000 average is the baseline 1995 departs from;
-  # temperature is a different measure, not a peer series.
-  deaths_avg_1990_2000               = INDICATOR_PALETTE[[1]],
-  deaths_1995                        = INDICATOR_PALETTE[[2]],
-  high_temp_f                        = INDICATOR_PALETTE[[3]]
-)
-
 # ---- Figure 1: annual heat-related death rates -------------------------------
 
 # *_plot() builds the plain ggplot object; fig_*() wraps it for the page. The
@@ -32,6 +11,8 @@ fig_1_plot <- function(d) {
   # icd_revision splits the line at the classification change; series_key
   # alone would draw straight through 1998/1999.
   d$seg <- paste(d$series_key, d$icd_revision, sep = "/")
+  # Underlying-cause-only is the narrower baseline; the broader
+  # underlying-or-contributing series gets the attention colour.
   order <- c("underlying_all_year", "underlying_or_contributing_may_sep")
 
   ggplot(d, aes(x = year, y = value, colour = series_label, group = seg)) +
@@ -67,6 +48,9 @@ fig_1_table <- function(d) {
 # ---- Figure 2: summer heat + cardiovascular disease death rates --------------
 
 fig_2_plot <- function(d) {
+  # The general population is the baseline the two higher-risk groups are read
+  # against. EPA's caption names these in a different order than the source
+  # file lists its columns, so the order is written out rather than inferred.
   order <- c("general", "age_65_plus", "nh_black")
   d$population_key <- factor(d$population_key, levels = order)
 
@@ -109,6 +93,8 @@ EXAMPLE_PANEL_LABELS <- c(
 
 fig_example_plot <- function(d) {
   d$panel <- factor(EXAMPLE_PANEL_LABELS[d$unit], levels = unname(EXAMPLE_PANEL_LABELS))
+  # The 1990-2000 average is the baseline 1995 departs from; temperature is a
+  # different measure, not a peer series.
   order <- c("deaths_avg_1990_2000", "deaths_1995", "high_temp_f")
   d$measure_key <- factor(d$measure_key, levels = order)
 
@@ -127,7 +113,7 @@ fig_example_plot <- function(d) {
     geom_rect(
       data = highlight, inherit.aes = FALSE,
       aes(xmin = xmin, xmax = xmax, ymin = -Inf, ymax = Inf),
-      fill = "#2882e6", alpha = 0.08
+      fill = INDICATOR_PALETTE[["base"]], alpha = 0.08
     ) +
     geom_line_interactive(
       aes(

@@ -2,18 +2,6 @@
 
 REPO <- "heat-related-workplace-deaths"
 
-# Series colours, keyed by the machine-readable series key from the data.
-INDICATOR_COLOURS <- c(
-  # Construction is what the Key Points single out (34% of all deaths from 6%
-  # of the workforce), so it gets the attention colour; every other sector
-  # combined is the baseline. `all_industries` only ever renders for a year
-  # where the sector split itself is unavailable (2019), so aqua marks it as a
-  # different kind of bar rather than a third peer series.
-  construction   = INDICATOR_PALETTE[[2]],
-  other_sectors  = INDICATOR_PALETTE[[1]],
-  all_industries = INDICATOR_PALETTE[[3]]
-)
-
 # ---- Figure 1: annual heat-related workplace deaths, by sector ---------------
 
 FIG1_LABELS <- c(
@@ -43,8 +31,17 @@ fig_1_plot <- function(d) {
     dplyr::transmute(year, series_key = "all_industries", value = all_industries)
   bar_d <- dplyr::bind_rows(split_d, merged_d)
 
+  # Stack order, top segment first. It is not the colour order below: every
+  # other sector combined is the baseline, but construction is what the Key
+  # Points single out (34% of all deaths from 6% of the workforce), so it takes
+  # the attention colour while sitting on top of the bar.
   order <- c("construction", "other_sectors", "all_industries")
   bar_d$series_key <- factor(bar_d$series_key, levels = order)
+
+  # `all_industries` only ever renders for a year where the sector split itself
+  # is unavailable (2019), so the third slot marks it as a different kind of
+  # bar rather than a third peer series.
+  colour_keys <- c("other_sectors", "construction", "all_industries")
 
   ggplot(bar_d, aes(x = year, y = value, fill = series_key)) +
     geom_col_interactive(
@@ -58,7 +55,8 @@ fig_1_plot <- function(d) {
       position = "stack", width = 0.75
     ) +
     scale_fill_manual(
-      values = INDICATOR_COLOURS[order], breaks = order, labels = FIG1_LABELS[order]
+      values = series_colours(colour_keys),
+      breaks = order, labels = FIG1_LABELS[order]
     ) +
     guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
     scale_x_continuous(breaks = seq(1992, 2022, 5)) +

@@ -2,27 +2,26 @@
 
 REPO <- "lyme-disease"
 
-# Series colours, keyed by the machine-readable series key from the data. This
-# indicator's keys are the four CSTE/CDC surveillance case definitions in
-# `definition_key`. They are not four concurrent series: they are four
-# consecutive eras of one national incidence series, so the slot order below is
-# deliberately not chronological.
-INDICATOR_COLOURS <- palette_for(c(
-  # 1 blue    the reference stretch: 14 years, the longest era and the one the
-  #           modern record is read against.
+# This indicator's series keys are the four CSTE/CDC surveillance case
+# definitions in `definition_key`. They are not four concurrent series: they
+# are four consecutive eras of one national incidence series, and the era that
+# most deserves a reader's attention is not the first or the last, so the slot
+# order here is deliberately not chronological.
+FIG1_COLOUR_KEYS <- c(
+  # base     the reference stretch: 14 years, the longest era and the one the
+  #          modern record is read against.
   "def_2008",
-  # 2 orange  the attention colour, because 2022 is the point most likely to be
-  #           misread. Its apparent jump is largely an artefact of the new
-  #           definition letting high-incidence jurisdictions report on
-  #           laboratory evidence alone, not a jump in disease risk.
+  # focus    2022 is the point most likely to be misread. Its apparent jump is
+  #          largely an artefact of the new definition letting high-incidence
+  #          jurisdictions report on laboratory evidence alone, not a jump in
+  #          disease risk.
   "def_2022",
-  # 3 aqua    a comparison era: the twelve years between the first and second
-  #           breakpoints.
+  # compare  the twelve years between the first and second breakpoints.
   "def_1996",
-  # 4 magenta the earliest and shortest era, four years under the original
-  #           reporting definition; least comparable to anything after it.
+  # other    the earliest and shortest era, four years under the original
+  #          reporting definition; least comparable to anything after it.
   "def_1990"
-))
+)
 
 # ---- Figure 1: national Lyme disease incidence, 1992-2022 --------------------
 
@@ -45,7 +44,9 @@ fig_1_plot <- function(d, meta) {
   labels <- fig_1_era_labels(meta)
   stopifnot(
     "figure 1: meta.yml does not describe every case definition in the data" =
-      all(eras %in% names(labels))
+      all(eras %in% names(labels)),
+    "figure 1: FIG1_COLOUR_KEYS does not cover every case definition in the data" =
+      setequal(eras, FIG1_COLOUR_KEYS)
   )
   d$era <- unname(labels[d$definition_key])
 
@@ -57,7 +58,7 @@ fig_1_plot <- function(d, meta) {
   ggplot(d, aes(x = year, y = value, colour = era, group = definition_key)) +
     geom_vline(
       xintercept = breakpoints,
-      colour = "#9a9a94", linetype = "22", linewidth = 0.4
+      colour = CHART_GREY[["rule"]], linetype = "22", linewidth = 0.4
     ) +
     geom_line_interactive(linewidth = 0.9) +
     # Markers are filled with the era colour and ringed in the surface colour,
@@ -75,14 +76,14 @@ fig_1_plot <- function(d, meta) {
                   year, definition_label, value)
         )
       ),
-      shape = 21, colour = "white", size = 2.4, stroke = 0.8
+      shape = 21, colour = CHART_GREY[["surface"]], size = 2.4, stroke = 0.8
     ) +
     scale_colour_manual(
-      values = label_colours(d, "definition_key", "era", eras),
+      values = label_colours(d, "definition_key", "era", FIG1_COLOUR_KEYS),
       breaks = label_order(d, "definition_key", "era", eras)
     ) +
     scale_fill_manual(
-      values = label_colours(d, "definition_key", "era", eras),
+      values = label_colours(d, "definition_key", "era", FIG1_COLOUR_KEYS),
       guide = "none"
     ) +
     guides(colour = guide_legend(nrow = 2, byrow = TRUE)) +
@@ -127,7 +128,7 @@ fig_2_plot <- function(d) {
   ggplot(d, aes(y = jurisdiction, x = value)) +
     geom_vline(
       xintercept = FIG2_HIGH_INCIDENCE,
-      colour = "#9a9a94", linetype = "22", linewidth = 0.4
+      colour = CHART_GREY[["rule"]], linetype = "22", linewidth = 0.4
     ) +
     geom_col_interactive(
       data = d[reported, ],
@@ -136,7 +137,7 @@ fig_2_plot <- function(d) {
         tooltip = sprintf("%s\n%.1f cases per 100,000 people",
                           jurisdiction, value)
       ),
-      fill = INDICATOR_PALETTE[[1]], width = 0.72
+      fill = INDICATOR_PALETTE[["base"]], width = 0.72
     ) +
     # The non-reporting jurisdiction keeps its row and says why, in place of a
     # bar. Sized and coloured to read as an annotation, not as data.
@@ -148,13 +149,14 @@ fig_2_plot <- function(d) {
         tooltip = sprintf("%s\nFiled no report for 2022. Not a rate of zero.",
                           jurisdiction)
       ),
-      hjust = 0, nudge_x = 1.5, size = 2.9, colour = "#6b6b66", fontface = "italic"
+      hjust = 0, nudge_x = 1.5, size = 2.9,
+      colour = CHART_GREY[["annotation"]], fontface = "italic"
     ) +
     annotate(
       "text", x = FIG2_HIGH_INCIDENCE, y = 2.2, hjust = -0.08,
       label = paste0("CDC high-incidence threshold: ",
                      FIG2_HIGH_INCIDENCE, " per 100,000"),
-      size = 2.9, colour = "#6b6b66"
+      size = 2.9, colour = CHART_GREY[["annotation"]]
     ) +
     # Pinned rather than left to the discrete scale, which builds its level set
     # layer by layer: the bar layer excludes the non-reporting jurisdiction, so
@@ -170,7 +172,7 @@ fig_2_plot <- function(d) {
     theme(
       # theme_indicator() is built for a vertical chart: gridlines running
       # across the categories and a baseline under them. Both flip here.
-      panel.grid.major.x = element_line(colour = "#dcdcd7", linewidth = 0.4),
+      panel.grid.major.x = element_line(colour = CHART_GREY[["grid"]], linewidth = 0.4),
       panel.grid.major.y = element_blank(),
       axis.line.x        = element_blank(),
       axis.text.y        = element_text(size = rel(0.72)),

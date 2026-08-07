@@ -2,15 +2,6 @@
 
 REPO <- "cold-related-deaths"
 
-# Series colours, keyed by the machine-readable series key from the data.
-INDICATOR_COLOURS <- palette_for(c(
-  # 1 blue    underlying-cause-only: the narrower, longer-running baseline.
-  "underlying",
-  # 2 orange  underlying-or-contributing: the broader, higher picture, and the
-  #           series the page's text draws the reader to.
-  "underlying_or_contributing"
-))
-
 # ---- Figure 1: annual cold-related death rates -------------------------------
 
 # *_plot() builds the plain ggplot object; fig_*() wraps it for the page. The
@@ -20,6 +11,8 @@ fig_1_plot <- function(d) {
   # icd_revision splits the underlying-cause line at the classification
   # change; series_key alone would draw straight through 1998/1999.
   d$seg <- paste(d$series_key, d$icd_revision, sep = "/")
+  # underlying-cause-only is the narrower, longer-running baseline; the broader
+  # underlying-or-contributing series is the one the page's text draws to.
   order <- c("underlying", "underlying_or_contributing")
 
   ggplot(d, aes(x = year, y = value, colour = series_label, group = seg)) +
@@ -70,7 +63,7 @@ fig_td1_plot <- function(d) {
         data_id = month,
         tooltip = sprintf("%s\n%d deaths (1999–2015 total)", month, value)
       ),
-      fill = unname(INDICATOR_COLOURS["underlying_or_contributing"]),
+      fill = INDICATOR_PALETTE[["focus"]],
       width = 0.7
     ) +
     scale_x_discrete(labels = substr(MONTH_LEVELS, 1, 3)) +
