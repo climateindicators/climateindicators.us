@@ -12,7 +12,7 @@ This indicator presents data on deaths classified as “heat-related” in the U
 
 **Figure 1. Deaths Classified as “Heat-Related” in the United States, 1979-2022**
 
-Data source: CDC, 2024  
+Data source: CDC, 2024\
 Web update: June 2024
 
 Figure 1
@@ -74,7 +74,7 @@ Download: [tidy CSV](../data/heat-related-deaths/heat_deaths_annual.csv) · [ori
 
 **Figure 2. Summer Deaths Due to Heat and Cardiovascular Disease in the United States, 1999–2022**
 
-Data source: CDC, 2024  
+Data source: CDC, 2024\
 Web update: June 2024
 
 Figure 3
@@ -116,7 +116,7 @@ Download: [tidy CSV](../data/heat-related-deaths/heat_deaths_summer_cvd.csv) · 
 
 **Example: Examining Heat-Related Deaths During the 1995 Chicago Heat Wave**
 
-Data source: CDC, 2012; NOAA, 2012  
+Data source: CDC, 2012; NOAA, 2012\
 Web update: May 2014
 
 Figure 5

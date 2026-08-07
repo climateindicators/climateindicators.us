@@ -12,7 +12,7 @@ This indicator tracks the rate of reported Lyme disease cases across the United 
 
 **Figure 1. Reported Cases of Lyme Disease in the United States, 1992–2022**
 
-Data source: Centers for Disease Control and Prevention, 2024  
+Data source: Centers for Disease Control and Prevention, 2024\
 Web update: December 2024
 
 Figure 1
@@ -67,7 +67,7 @@ Download: [figure image](../images/lyme-disease/figure-1.png) · [figure data](.
 
 **Figure 2. Reported Annual Lyme Disease Incidence in the United States, 2022**
 
-Data source: Centers for Disease Control and Prevention, 2024  
+Data source: Centers for Disease Control and Prevention, 2024\
 Web update: December 2024
 
 Figure 3

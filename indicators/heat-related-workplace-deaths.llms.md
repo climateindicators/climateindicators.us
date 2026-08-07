@@ -12,7 +12,7 @@ This feature presents data on worker deaths classified as “heat-related” in 
 
 **Figure 1. Heat-Related Workplace Deaths in the United States, 1992–2022**
 
-Data source: BLS, 2024  
+Data source: BLS, 2024\
 Web update: June 2024
 
 Figure 1
@@ -84,7 +84,7 @@ Highlighting the intersections of climate hazards, such as extreme heat, and soc
 
 **Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022**
 
-Data source: BLS, 2024  
+Data source: BLS, 2024\
 Web update: June 2024
 
 ![County-level map of the United States showing the percentage of each county's workforce in predominantly-outdoor occupations, ranging from under 4 percent (pale yellow) to over 40 percent (dark red), concentrated in parts of the West, the northern and southern Great Plains, and Alaska.](../images/heat-related-workplace-deaths/epa-example-1-outdoor-workers-map.png)

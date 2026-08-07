@@ -12,7 +12,7 @@ This indicator presents data on deaths classified as “cold-related” in the U
 
 **Figure 1. Deaths Classified as “Cold-Related” in the United States, 1979–2016**
 
-Data source: CDC, 2018  
+Data source: CDC, 2018\
 Web update: April 2021
 
 Figure 1
@@ -76,7 +76,7 @@ Download: [tidy CSV](../data/cold-related-deaths/cold_deaths_annual.csv) · [ori
 
 **Figure TD-1. Deaths Classified as “Cold-Related” in the United States by Month, 1999–2015**
 
-Data source: CDC, 2018b  
+Data source: CDC, 2018b\
 Web update: March 2018
 
 Figure 3
