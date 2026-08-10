@@ -19,6 +19,8 @@ Web update: April 2021
 
 Figure 1
 
+Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_annual.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
+
 This figure shows the annual rates for deaths classified as “cold-related” by medical professionals in the 50 states and the District of Columbia. The blue line shows deaths for which cold was listed as the main (underlying) cause. The orange line shows deaths for which cold was listed as either the underlying or contributing cause of death, based on a broader set of data that became available in 1999.
 
 Between 1998 and 1999, the World Health Organization revised the international codes used to classify causes of death. As a result, data from earlier than 1999 cannot easily be compared with data from 1999 and later.
@@ -68,8 +70,6 @@ Show the data behind this figure
 
 Figure 2
 
-Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_annual.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
-
 ## Figure TD-1
 
 > **NOTE:**
@@ -82,6 +82,8 @@ Data source: CDC, 2018b\
 Web update: March 2018
 
 Figure 3
+
+Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_monthly.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 This graph shows all deaths for which cold was recorded as either the underlying cause or a contributing cause of death, which corresponds with the orange line in Figure 1 above. Deaths have been aggregated by month over the entire period of record.
 
@@ -103,8 +105,6 @@ Show the data behind this figure
 | December  |         4554 |
 
 Figure 4
-
-Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_monthly.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 ## Key Points
 

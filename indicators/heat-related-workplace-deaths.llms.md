@@ -19,6 +19,8 @@ Web update: June 2024
 
 Figure 1
 
+Download: [figure data](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_annual.csv) · [original source workbook](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx)
+
 This graph shows the number of reported occupational heat-related deaths in the United States each year. The orange portions of the bars show deaths in the construction sector and the blue portions show deaths in all other sectors of the economy. Total construction sector deaths in 2019 fell below the Bureau of Labor Statistics’ reporting threshold; for that year, BLS combined construction into a single “all-industry” total rather than reporting a sector total (shown in green above). BLS has indicated that data collection for 2020 fell below reporting thresholds (no bar that year).
 
 Show the data behind this figure
@@ -59,8 +61,6 @@ Show the data behind this figure
 
 Figure 2
 
-Download: [figure data](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_annual.csv) · [original source workbook](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx)
-
 ## Example 1
 
 **Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022**
@@ -72,15 +72,11 @@ Web update: June 2024
 
 Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022
 
+Download: [figure image](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png) · [figure data](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_outdoor_workers_county.csv) · [original source workbook](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx)
+
 This map shows the percentage of each county’s workforce engaged in occupations that typically involve a substantial amount of time outdoors. Job categories included in this analysis include delivery services, law enforcement and emergency services, utilities, mining/quarrying/oil and gas extraction, agriculture, fishing, forestry, and construction. The map shows a five-year average.
 
-This is EPA’s own published map image. The county-level data behind it—one row per county, five-year average percentage—is maintained in the [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths) repository and downloadable below; an interactive version built from that data is not part of this indicator yet.
-
-Show the data behind this figure
-
-This figure’s table is 3,274 rows (one per county), so it is offered as a download rather than rendered inline.
-
-Download: [figure image](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png) · [figure data](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_outdoor_workers_county.csv) · [original source workbook](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx)
+This is EPA’s own published map image. The county-level data behind it—one row per county, five-year average percentage—is maintained in the [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths) repository and available for download above; an interactive version built from that data is not part of this indicator yet. This figure’s table is 3,274 rows (one per county), so it is offered as a download rather than rendered inline.
 
 ## Key Points
 

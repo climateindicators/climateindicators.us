@@ -19,6 +19,8 @@ Web update: June 2024
 
 Figure 1
 
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_annual.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-1.csv)
+
 Show the data behind this figure
 
 | year | Underlying cause of death (all year) | Underlying and contributing causes of death (May-Sept) |
@@ -70,8 +72,6 @@ Show the data behind this figure
 
 Figure 2
 
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_annual.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-1.csv)
-
 ## Figure 2
 
 **Figure 2. Summer Deaths Due to Heat and Cardiovascular Disease in the United States, 1999–2022**
@@ -80,6 +80,8 @@ Data source: CDC, 2024\
 Web update: June 2024
 
 Figure 3
+
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_summer_cvd.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-2.csv)
 
 Show the data behind this figure
 
@@ -112,8 +114,6 @@ Show the data behind this figure
 
 Figure 4
 
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_summer_cvd.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-2.csv)
-
 ## Example: The 1995 Chicago Heat Wave
 
 **Example: Examining Heat-Related Deaths During the 1995 Chicago Heat Wave**
@@ -122,6 +122,8 @@ Data source: CDC, 2012; NOAA, 2012\
 Web update: May 2014
 
 Figure 5
+
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/chicago_1995_heat_wave.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_example.csv)
 
 Show the data behind this figure
 
@@ -139,8 +141,6 @@ Show the data behind this figure
 | 1995-06-10 | 157 | 163.7 | 82.9 |
 
 Figure 6: First 10 of 92 days.
-
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/chicago_1995_heat_wave.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_example.csv)
 
 ## Key Points
 

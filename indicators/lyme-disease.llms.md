@@ -19,6 +19,8 @@ Web update: December 2024
 
 Figure 1
 
+Download: [figure image](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-1.png) · [figure data](https://github.com/climateindicators/lyme-disease/blob/main/data/lyme_incidence_national.csv) · [EPA’s published source file](https://github.com/climateindicators/lyme-disease/blob/main/data-raw/lyme_fig-1.csv)
+
 This graph shows the annual incidence of Lyme disease, which is calculated as the number of cases per 100,000 people. The graph is based on cases that local and state health departments report to CDC’s national disease tracking system. Due to the COVID-19 pandemic, 2019 and 2020 data from some jurisdictions are incomplete.
 
 The line breaks at each of the three points where the surveillance case definition changed, in 1996, 2008 and 2022, dividing the record into four segments. Values are not comparable across a break: the apparent jump in 2022 is largely the result of the new definition letting high-incidence jurisdictions report on laboratory evidence alone, rather than a change in disease risk. Hover any point for that year’s value and for the caveat CDC or EPA attaches to it.
@@ -63,8 +65,6 @@ Show the data behind this figure
 
 Figure 2
 
-Download: [figure image](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-1.png) · [figure data](https://github.com/climateindicators/lyme-disease/blob/main/data/lyme_incidence_national.csv) · [EPA’s published source file](https://github.com/climateindicators/lyme-disease/blob/main/data-raw/lyme_fig-1.csv)
-
 ## Figure 2
 
 **Figure 2. Reported Annual Lyme Disease Incidence in the United States, 2022**
@@ -74,9 +74,11 @@ Web update: December 2024
 
 Figure 3
 
+Download: [EPA’s published map](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-2.png) · [figure data](https://github.com/climateindicators/lyme-disease/blob/main/data/lyme_incidence_by_jurisdiction.csv) · [EPA’s published source file](https://github.com/climateindicators/lyme-disease/blob/main/data-raw/lyme_fig-2.csv)
+
 This chart shows reported Lyme disease incidence by jurisdiction in 2022, based on the number of total cases per 100,000 people, ranked from highest to lowest. The dotted rule marks 10 cases per 100,000 people: the jurisdictions above it are the 15 states and the District of Columbia that CDC designates “high-incidence.”
 
-EPA presents this figure as a map, shading only the part of the country where Lyme disease is common — every state below 10 cases per 100,000 people is left uncoloured, and the shaded ones are read off an 11-step colour scale. All 51 jurisdictions are charted here instead, with their actual values, which also keeps apart two things the map cannot: Oklahoma reported a genuine zero, while Hawaii filed no report at all. EPA’s own map is available as a download below.
+EPA presents this figure as a map, shading only the part of the country where Lyme disease is common — every state below 10 cases per 100,000 people is left uncoloured, and the shaded ones are read off an 11-step colour scale. All 51 jurisdictions are charted here instead, with their actual values, which also keeps apart two things the map cannot: Oklahoma reported a genuine zero, while Hawaii filed no report at all. EPA’s own map is available as a download above.
 
 Data source: CDC, 2024^([8](#ref-8))
 
@@ -138,8 +140,6 @@ Show the data behind this figure
 
 Figure 4
 
-Download: [EPA’s published map](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-2.png) · [figure data](https://github.com/climateindicators/lyme-disease/blob/main/data/lyme_incidence_by_jurisdiction.csv) · [EPA’s published source file](https://github.com/climateindicators/lyme-disease/blob/main/data-raw/lyme_fig-2.csv)
-
 ## Figure 3
 
 **Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022**
@@ -150,13 +150,11 @@ Data source: CDC, 2024^([9](#ref-9))
 
 Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022
 
+Download: [figure image](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-3.png)
+
 These maps show the distribution of Lyme disease cases reported to CDC in 1996 and 2022 across the 50 states and the District of Columbia. Each dot represents an individual case. Dots are placed randomly within each patient’s county of residence, which might differ from the county where they were exposed. The year 1996 was chosen as the first year after a major case definition update that incorporated standardized testing approaches.
 
-EPA publishes these maps as images only, with no underlying data file, so there is no table or data download for this figure.
-
-Show what is available for this figure
-
-Download: [figure image](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-3.png)
+EPA publishes these maps as images only, with no underlying data file, so there is no data table for this figure.
 
 ## Key Points
 
