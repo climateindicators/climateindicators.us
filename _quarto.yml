@@ -59,7 +59,9 @@ website:
               href: indicators/heat-related-workplace-deaths.qmd
             - text: "Lyme Disease"
               href: indicators/lyme-disease.qmd
-            
+            - text: "Heat-Related Illnesses"
+              href: indicators/heat-related-illnesses.qmd
+
 
 format:
   html:
