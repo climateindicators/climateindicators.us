@@ -37,6 +37,10 @@ figure_caption(meta, "workplace_heat_deaths_annual.csv")
 fig_1(annual)
 ```
 
+Download:
+<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_annual.csv" download>figure data</a> ·
+<i class="bi bi-file-earmark-excel"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx" download>original source workbook</a>
+
 This graph shows the number of reported occupational heat-related deaths in
 the United States each year. The orange portions of the bars show deaths in
 the construction sector and the blue portions show deaths in all other
@@ -54,10 +58,6 @@ collection for 2020 fell below reporting thresholds (no bar that year).
 knitr::kable(fig_1_table(annual), digits = 0)
 ```
 
-Download:
-<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_annual.csv" download>figure data</a> ·
-<i class="bi bi-file-earmark-excel"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx" download>original source workbook</a>
-
 </details>
 
 ### Example 1
@@ -72,6 +72,11 @@ figure_caption(meta, "workplace_heat_deaths_outdoor_workers_county.csv")
 ![Example 1. Prevalence of Outdoor Workers in the United States,
 2018–2022](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png){fig-alt="County-level map of the United States showing the percentage of each county's workforce in predominantly-outdoor occupations, ranging from under 4 percent (pale yellow) to over 40 percent (dark red), concentrated in parts of the West, the northern and southern Great Plains, and Alaska." fig-align="center"}
 
+Download:
+<i class="bi bi-filetype-png"></i> <a href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png" download>figure image</a> ·
+<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_outdoor_workers_county.csv" download>figure data</a> ·
+<i class="bi bi-file-earmark-excel"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx" download>original source workbook</a>
+
 This map shows the percentage of each county's workforce engaged in
 occupations that typically involve a substantial amount of time outdoors.
 Job categories included in this analysis include delivery services, law
@@ -82,20 +87,10 @@ a five-year average.
 This is EPA's own published map image. The county-level data behind it—one
 row per county, five-year average percentage—is maintained in the
 [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths)
-repository and downloadable below; an interactive version built from that
-data is not part of this indicator yet.
-
-<details><summary>Show the data behind this figure</summary>
-
-This figure's table is 3,274 rows (one per county), so it is offered as a
-download rather than rendered inline.
-
-Download:
-<i class="bi bi-filetype-png"></i> <a href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png" download>figure image</a> ·
-<i class="bi bi-filetype-csv"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_outdoor_workers_county.csv" download>figure data</a> ·
-<i class="bi bi-file-earmark-excel"></i> <a href="https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx" download>original source workbook</a>
-
-</details>
+repository and available for download above; an interactive version built
+from that data is not part of this indicator yet. This figure's table is
+3,274 rows (one per county), so it is offered as a download rather than
+rendered inline.
 
 :::::
 

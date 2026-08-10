@@ -38,6 +38,8 @@ figure_caption(meta, "cold_deaths_annual.csv")
 fig_1(annual)
 ```
 
+Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_annual.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
+
 This figure shows the annual rates for deaths classified as "cold-related" by
 medical professionals in the 50 states and the District of Columbia. The blue
 line shows deaths for which cold was listed as the main (underlying) cause.
@@ -56,8 +58,6 @@ earlier than 1999 cannot easily be compared with data from 1999 and later.
 #| echo: false
 knitr::kable(fig_1_table(annual), digits = 3)
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_annual.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 </details>
 
@@ -86,6 +86,8 @@ figure_caption(meta, "cold_deaths_monthly.csv")
 fig_td1(monthly)
 ```
 
+Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_monthly.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
+
 This graph shows all deaths for which cold was recorded as either the
 underlying cause or a contributing cause of death, which corresponds with the
 orange line in Figure 1 above. Deaths have been aggregated by month over the
@@ -98,8 +100,6 @@ entire period of record.
 #| echo: false
 knitr::kable(fig_td1_table(monthly))
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_monthly.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 </details>
 

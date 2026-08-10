@@ -39,6 +39,8 @@ figure_caption(meta, "heat_deaths_annual.csv")
 fig_1(annual)
 ```
 
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_annual.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-1.csv)
+
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
@@ -46,8 +48,6 @@ fig_1(annual)
 #| echo: false
 knitr::kable(fig_1_table(annual), digits = 3)
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_annual.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-1.csv)
 
 </details>
 
@@ -66,6 +66,8 @@ figure_caption(meta, "heat_deaths_summer_cvd.csv")
 fig_2(cvd)
 ```
 
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_summer_cvd.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-2.csv)
+
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
@@ -73,8 +75,6 @@ fig_2(cvd)
 #| echo: false
 knitr::kable(fig_2_table(cvd), digits = 3)
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_summer_cvd.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-2.csv)
 
 </details>
 
@@ -93,6 +93,8 @@ figure_caption(meta, "chicago_1995_heat_wave.csv")
 fig_example(chicago)
 ```
 
+Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/chicago_1995_heat_wave.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_example.csv)
+
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
@@ -101,8 +103,6 @@ fig_example(chicago)
 knitr::kable(utils::head(fig_example_table(chicago), 10), digits = 1,
             caption = "First 10 of 92 days.")
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/chicago_1995_heat_wave.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_example.csv)
 
 </details>
 
