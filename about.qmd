@@ -10,4 +10,3 @@ execute:
 
 {{< include chunks/description.qmd >}}
 
-{{< include chunks/coming-soon.qmd >}}
