@@ -65,6 +65,8 @@ website:
               href: indicators/heating-and-cooling-degree-days.qmd
             - text: "Residential Energy Use"
               href: indicators/residential-energy-use.qmd
+            - text: "West Nile Virus"
+              href: indicators/west-nile-virus.qmd
 
 
 format:
