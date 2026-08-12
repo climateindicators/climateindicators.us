@@ -49,6 +49,10 @@ Current indicator repositories:
 | Cold-Related Deaths | `cold-related-deaths` |
 | Heat-Related Workplace Deaths | `heat-related-workplace-deaths` |
 | Lyme Disease | `lyme-disease` |
+| Heat-Related Illnesses | `heat-related-illnesses` |
+| Heating and Cooling Degree Days | `heating-and-cooling-degree-days` |
+| Residential Energy Use | `residential-energy-use` |
+| West Nile Virus | `west-nile-virus` |
 
 Because the data is fetched over the network, rendering requires an internet
 connection, and `curl` must stay in `DESCRIPTION` — readr only *suggests* it,
