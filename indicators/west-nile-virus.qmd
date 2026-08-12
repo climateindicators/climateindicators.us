@@ -107,13 +107,13 @@ Climate is just one of many important factors that influence the transmission, d
 
 ## About the Indicator
 
-This indicator looks at the incidence of human cases of West Nile virus disease, which reflects the rate of new cases contracted in a given geographic area and time period. Incidence is typically calculated as the number of cases per 100,000 people per year. This indicator focuses on neuroinvasive cases, as the symptoms are noticeable and typically require medical care. The indicator summarizes surveillance data reported to the CDC. West Nile is a nationally notifiable disease, which means health care providers are required to report confirmed cases to their local or state health departments. CDC compiles these reported data and calculates national totals and rates. Figure 1 shows national incidence by year since 2002, when West Nile virus first became notifiable. Figure 2 shows the incidence for each state, averaged over the period from 2002 to 2023.
+This indicator looks at the incidence of human cases of West Nile virus neuroinvasive disease, which reflects the rate of new cases contracted in a given geographic area and time period. Incidence is typically calculated as the number of cases per 100,000 people per year. This indicator focuses on neuroinvasive cases because the symptoms are noticeable and typically require medical care. The indicator summarizes surveillance data reported to the CDC. West Nile is a nationally notifiable disease, which means health care providers are required to report confirmed cases to their local or state health departments. CDC compiles these reported data and calculates national totals and rates. Figure 1 shows national incidence by year since 2002, when West Nile virus first became notifiable. Figure 2 shows the incidence for each state, averaged over the period from 2002 to 2023.
 
 ## About the Data
 
 ### Indicator Notes
 
-This indicator depends on clinicians making the correct diagnosis and reporting laboratory-confirmed cases to public health authorities. Changes in diagnosing practices, awareness of the virus, and mosquito control efforts over time can affect trends. Cases are reported based on the patient's state of residence, which is not necessarily the place where they were infected. Non-neuroinvasive cases of West Nile virus disease have been tracked since 2005, but because the symptoms may be mild or undetected, they are significantly underreported.^[6](#ref-6)^ Thus, this indicator only focuses on neuroinvasive cases.
+This indicator depends on clinicians making the correct diagnosis and reporting laboratory-confirmed cases to public health authorities. Changes in diagnosing practices, awareness of the virus, and mosquito control efforts over time can affect trends. Cases are reported based on the patient's state of residence, which is not necessarily the place where they were infected. Non-neuroinvasive cases of West Nile virus disease have been tracked since 2005, but because the symptoms may be mild or undetected they are significantly underreported.^[6](#ref-6)^ Thus, this indicator only focuses on neuroinvasive cases.
 
 Because of the many factors affecting mosquito populations and reporting of West Nile virus disease and the fact that data have only been collected for a little more than a decade, this indicator does not provide sufficient information to determine what proportion of the observed changes in incidence is directly driven by climate change. Further study is critical to improving the usefulness of this indicator and informing decisions affecting public health. For information on prevention, symptoms, and treatment of West Nile virus disease, see: [www.cdc.gov/west-nile-virus](https://www.cdc.gov/west-nile-virus/).
 
@@ -143,11 +143,16 @@ technical_documentation_link(meta)
 
 ::: {.callout-note appearance="simple" icon=false}
 Text on this page is EPA's own published wording (a U.S. Government work, not
-subject to domestic copyright), extracted from EPA's source Word document by
-the pipeline in the
+subject to domestic copyright), extracted from EPA's source Word document and
+verified paragraph by paragraph against the published page, using its raw HTML
+rather than a summarized read. EPA's page carries two small wording revisions
+its December 2024 source document does not, and this page follows the published
+page on both: "West Nile virus neuroinvasive disease" where the document says
+"West Nile virus disease", and "focuses on neuroinvasive cases because" where
+the document says "cases, as". Two bare URLs in EPA's text are rendered here as
+links to the pages they name. EPA presents Figure 2 as a map; this page draws
+the same state-level values as a sorted bar chart. Data, chart code, and the
+full extraction pipeline are maintained in the
 [west-nile-virus](https://github.com/climateindicators/west-nile-virus)
-repository, which this page also reads its data from directly. Two bare URLs in
-EPA's text are rendered here as links to the pages they name. EPA presents
-Figure 2 as a map; this page draws the same state-level values as a sorted bar
-chart.
+repository, which this page reads its data from directly.
 :::
