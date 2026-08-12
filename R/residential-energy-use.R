@@ -25,9 +25,16 @@ fig_1_plot <- function(d) {
   fill <- c(electricity_use_per_capita = INDICATOR_PALETTE[["focus"]], cdd = INDICATOR_PALETTE[["base"]])
 
   ggplot(d, aes(x = year, y = value, colour = measure_key, group = measure_key)) +
-    geom_line_interactive(
+    # geom_line_interactive() draws ONE svg path per group, so a tooltip
+    # aesthetic on it takes only the first row's value for the whole line --
+    # every point on the "electricity" line showed 1973's number no matter
+    # which year was actually hovered. The line below carries data_id only
+    # (for the whole-series hover highlight); geom_point_interactive() is
+    # what gives each year its own accurate tooltip.
+    geom_line_interactive(aes(data_id = measure_key), linewidth = 0.9) +
+    geom_point_interactive(
       aes(data_id = measure_key, tooltip = sprintf("%d\n%s: %.1f %s", year, measure_label, value, unit)),
-      linewidth = 0.9
+      size = 1.6
     ) +
     facet_wrap(~panel, ncol = 1, scales = "free_y") +
     scale_colour_manual(values = fill, guide = "none") +
@@ -55,9 +62,13 @@ fig_2_plot <- function(d) {
   fill <- c(natural_gas_use_per_capita = INDICATOR_PALETTE[["focus"]], hdd = INDICATOR_PALETTE[["base"]])
 
   ggplot(d, aes(x = year, y = value, colour = measure_key, group = measure_key)) +
-    geom_line_interactive(
+    # Same fix as fig_1_plot(): a tooltip aesthetic on geom_line_interactive()
+    # applies to the whole path (the first row's value only), so accurate
+    # per-year tooltips come from the points, not the line.
+    geom_line_interactive(aes(data_id = measure_key), linewidth = 0.9) +
+    geom_point_interactive(
       aes(data_id = measure_key, tooltip = sprintf("%d\n%s: %.1f %s", year, measure_label, value, unit)),
-      linewidth = 0.9
+      size = 1.6
     ) +
     facet_wrap(~panel, ncol = 1, scales = "free_y") +
     scale_colour_manual(values = fill, guide = "none") +
