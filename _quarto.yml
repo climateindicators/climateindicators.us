@@ -63,6 +63,8 @@ website:
               href: indicators/heat-related-illnesses.qmd
             - text: "Heating and Cooling Degree Days"
               href: indicators/heating-and-cooling-degree-days.qmd
+            - text: "Residential Energy Use"
+              href: indicators/residential-energy-use.qmd
 
 
 format:
