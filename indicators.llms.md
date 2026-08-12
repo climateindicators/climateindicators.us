@@ -24,8 +24,16 @@ Deaths in the United States attributed to extreme heat.
 
 Hospitalizations in the United States attributed to extreme heat.
 
+##### Heating and Cooling Degree Days
+
+Trends in the energy demand implied by outdoor temperatures, nationally and by state.
+
 ##### Lyme Disease
 
 This indicator tracks the rate of reported Lyme disease cases across the United States.
+
+##### Residential Energy Use
+
+How much electricity and natural gas U.S. homes use for summer cooling and winter heating, alongside cooling and heating degree days.
 
 Back to top

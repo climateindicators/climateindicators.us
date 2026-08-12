@@ -6,7 +6,9 @@
       "/indicators/cold-related-deaths.html",
       "/indicators/heat-related-deaths.html",
       "/indicators/heat-related-illnesses.html",
-      "/indicators/lyme-disease.html"
+      "/indicators/heating-and-cooling-degree-days.html",
+      "/indicators/lyme-disease.html",
+      "/indicators/residential-energy-use.html"
     ]
   }
 ]

@@ -2,7 +2,8 @@
 
 ## Pages
 
-- [Lyme Disease](https://climateindicators.us/indicators/lyme-disease.llms.md)
+- [Residential Energy Use](https://climateindicators.us/indicators/residential-energy-use.llms.md)
+- [Heating and Cooling Degree Days](https://climateindicators.us/indicators/heating-and-cooling-degree-days.llms.md)
 - [Heat-Related Illnesses](https://climateindicators.us/indicators/heat-related-illnesses.llms.md)
 - [Cold-Related Deaths](https://climateindicators.us/indicators/cold-related-deaths.llms.md)
 - [index](https://climateindicators.us/index.llms.md)
@@ -10,3 +11,4 @@
 - [Indicators](https://climateindicators.us/indicators.llms.md)
 - [Heat-Related Deaths](https://climateindicators.us/indicators/heat-related-deaths.llms.md)
 - [A Closer Look: Heat-Related Workplace Deaths](https://climateindicators.us/indicators/heat-related-workplace-deaths.llms.md)
+- [Lyme Disease](https://climateindicators.us/indicators/lyme-disease.llms.md)
