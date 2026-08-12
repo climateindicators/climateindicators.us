@@ -145,11 +145,12 @@ technical_documentation_link(meta)
 Text on this page is EPA's own published wording (a U.S. Government work, not
 subject to domestic copyright), extracted from EPA's source Word document and
 verified paragraph by paragraph against the published page, using its raw HTML
-rather than a summarized read. EPA's page carries two small wording revisions
-its December 2024 source document does not, and this page follows the published
-page on both: "West Nile virus neuroinvasive disease" where the document says
-"West Nile virus disease", and "focuses on neuroinvasive cases because" where
-the document says "cases, as". Two bare URLs in EPA's text are rendered here as
+rather than a summarized read. EPA's page differs from its December 2024 source
+document in three small ways, and this page follows the published page on all
+three: "West Nile virus neuroinvasive disease" where the document says "West
+Nile virus disease", "focuses on neuroinvasive cases because" where the document
+says "cases, as", and no comma after "mild or undetected". Two bare URLs in
+EPA's text are rendered here as
 links to the pages they name. EPA presents Figure 2 as a map; this page draws
 the same state-level values as a sorted bar chart. Data, chart code, and the
 full extraction pipeline are maintained in the
