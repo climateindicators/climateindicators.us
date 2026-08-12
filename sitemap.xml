@@ -1,43 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://climateindicators.us/indicators/residential-energy-use.html</loc>
-    <lastmod>2026-08-12T19:08:44.247Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/indicators/heating-and-cooling-degree-days.html</loc>
-    <lastmod>2026-08-12T19:08:44.247Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/indicators/heat-related-illnesses.html</loc>
-    <lastmod>2026-08-12T19:08:44.247Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/indicators/cold-related-deaths.html</loc>
-    <lastmod>2026-08-12T19:08:44.247Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/index.html</loc>
-    <lastmod>2026-08-12T19:08:44.247Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/about.html</loc>
-    <lastmod>2026-08-12T19:08:44.246Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/indicators.html</loc>
-    <lastmod>2026-08-12T19:08:44.247Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/indicators/heat-related-deaths.html</loc>
-    <lastmod>2026-08-12T19:08:44.247Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/indicators/heat-related-workplace-deaths.html</loc>
-    <lastmod>2026-08-12T19:08:44.247Z</lastmod>
+    <loc>https://climateindicators.us/indicators/west-nile-virus.html</loc>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators/lyme-disease.html</loc>
-    <lastmod>2026-08-12T19:08:44.247Z</lastmod>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators/heat-related-workplace-deaths.html</loc>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators/heat-related-deaths.html</loc>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators.html</loc>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/about.html</loc>
+    <lastmod>2026-08-12T20:11:05.577Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/index.html</loc>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators/cold-related-deaths.html</loc>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators/heat-related-illnesses.html</loc>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators/heating-and-cooling-degree-days.html</loc>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators/residential-energy-use.html</loc>
+    <lastmod>2026-08-12T20:11:05.578Z</lastmod>
   </url>
 </urlset>

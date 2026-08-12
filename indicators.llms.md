@@ -36,4 +36,8 @@ This indicator tracks the rate of reported Lyme disease cases across the United 
 
 How much electricity and natural gas U.S. homes use for summer cooling and winter heating, alongside cooling and heating degree days.
 
+##### West Nile Virus
+
+This indicator tracks the rate of reported West Nile neuroinvasive disease cases across the United States.
+
 Back to top
