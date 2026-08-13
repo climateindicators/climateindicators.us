@@ -28,6 +28,10 @@ Hospitalizations in the United States attributed to extreme heat.
 
 Trends in the energy demand implied by outdoor temperatures, nationally and by state.
 
+##### Length of Growing Season
+
+How the frost-free season in the contiguous 48 states has lengthened since 1895, nationally, by region, and by state.
+
 ##### Lyme Disease
 
 This indicator tracks the rate of reported Lyme disease cases across the United States.
