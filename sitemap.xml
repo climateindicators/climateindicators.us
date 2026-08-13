@@ -2,50 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://climateindicators.us/indicators/west-nile-virus.html</loc>
-    <lastmod>2026-08-13T19:02:39.015Z</lastmod>
+    <lastmod>2026-08-13T19:35:09.055Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators/lyme-disease.html</loc>
-    <lastmod>2026-08-13T19:02:39.015Z</lastmod>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators/heating-and-cooling-degree-days.html</loc>
-    <lastmod>2026-08-13T19:02:39.015Z</lastmod>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators/heat-related-illnesses.html</loc>
-    <lastmod>2026-08-13T19:02:39.015Z</lastmod>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
   </url>
   <url>
-    <loc>https://climateindicators.us/indicators/cold-related-deaths.html</loc>
-    <lastmod>2026-08-13T19:02:39.014Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/index.html</loc>
-    <lastmod>2026-08-13T19:02:39.014Z</lastmod>
-  </url>
-  <url>
-    <loc>https://climateindicators.us/about.html</loc>
-    <lastmod>2026-08-13T19:02:39.014Z</lastmod>
+    <loc>https://climateindicators.us/indicators/growing-degree-days.html</loc>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators.html</loc>
-    <lastmod>2026-08-13T19:02:39.014Z</lastmod>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/about.html</loc>
+    <lastmod>2026-08-13T19:35:09.053Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/index.html</loc>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
+  </url>
+  <url>
+    <loc>https://climateindicators.us/indicators/cold-related-deaths.html</loc>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators/heat-related-deaths.html</loc>
-    <lastmod>2026-08-13T19:02:39.015Z</lastmod>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators/heat-related-workplace-deaths.html</loc>
-    <lastmod>2026-08-13T19:02:39.015Z</lastmod>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators/length-of-growing-season.html</loc>
-    <lastmod>2026-08-13T19:02:39.015Z</lastmod>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
   </url>
   <url>
     <loc>https://climateindicators.us/indicators/residential-energy-use.html</loc>
-    <lastmod>2026-08-13T19:02:39.015Z</lastmod>
+    <lastmod>2026-08-13T19:35:09.054Z</lastmod>
   </url>
 </urlset>

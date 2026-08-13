@@ -16,6 +16,10 @@ Deaths of U.S. workers attributed to heat exposure on the job.
 
 Deaths in the United States attributed to extreme cold.
 
+##### Growing Degree Days
+
+How the number of growing degree days has changed at 280 long-term weather stations across the contiguous 48 states since 1948, and what that suggests about pollen seasons.
+
 ##### Heat-Related Deaths
 
 Deaths in the United States attributed to extreme heat.

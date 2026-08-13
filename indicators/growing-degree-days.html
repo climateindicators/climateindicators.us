@@ -1,0 +1,2520 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="How the number of growing degree days has changed at 280 long-term weather stations across the contiguous 48 states since 1948, and what that suggests about pollen seasons.">
+
+<title>Growing Degree Days – climateindicators.us</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a64748322b5514175d7e623a86c63ab1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<meta property="og:title" content="Growing Degree Days – climateindicators.us">
+<meta property="og:description" content="How the number of growing degree days has changed at 280 long-term weather stations across the contiguous 48 states since 1948, and what that suggests about pollen seasons.">
+<meta property="og:site_name" content="climateindicators.us">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">climateindicators.us</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> <i class="bi bi-house-door" role="img">
+</i> 
+<span class="menu-text">climateindicators.us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> <i class="bi bi-info-circle" role="img">
+</i> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../indicators.html" aria-current="page"> <i class="bi bi-graph-up" role="img">
+</i> 
+<span class="menu-text">Indicators</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/climateindicators/climateindicators.us"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../indicators/heat-related-deaths.html">Health and Society</a></li><li class="breadcrumb-item"><a href="../indicators/growing-degree-days.html">Growing Degree Days</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">All Indicators</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Health and Society</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/heat-related-deaths.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Heat-Related Deaths</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/cold-related-deaths.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cold-Related Deaths</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/heat-related-workplace-deaths.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Heat-Related Workplace Deaths</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/lyme-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lyme Disease</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/heat-related-illnesses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Heat-Related Illnesses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/heating-and-cooling-degree-days.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Heating and Cooling Degree Days</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/residential-energy-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Residential Energy Use</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/west-nile-virus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">West Nile Virus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/length-of-growing-season.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Length of Growing Season</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../indicators/growing-degree-days.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Growing Degree Days</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#figures" id="toc-figures" class="nav-link active" data-scroll-target="#figures">Figures</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key Points</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#about-the-indicator" id="toc-about-the-indicator" class="nav-link" data-scroll-target="#about-the-indicator">About the Indicator</a></li>
+  <li><a href="#about-the-data" id="toc-about-the-data" class="nav-link" data-scroll-target="#about-the-data">About the Data</a>
+  <ul class="collapse">
+  <li><a href="#indicator-notes" id="toc-indicator-notes" class="nav-link" data-scroll-target="#indicator-notes">Indicator Notes</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
+  </ul></li>
+  <li><a href="#technical-documentation" id="toc-technical-documentation" class="nav-link" data-scroll-target="#technical-documentation">Technical Documentation</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../indicators/heat-related-deaths.html">Health and Society</a></li><li class="breadcrumb-item"><a href="../indicators/growing-degree-days.html">Growing Degree Days</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Growing Degree Days</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Health</div>
+    <div class="quarto-category">Temperature</div>
+    <div class="quarto-category">Ecosystems</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    How the number of growing degree days has changed at 280 long-term weather stations across the contiguous 48 states since 1948, and what that suggests about pollen seasons.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This indicator shows changes in growing degree days, which can signal changes in the timing and length of pollen seasons in the United States.</p>
+<section id="figures" class="level2">
+<h2 class="anchored" data-anchor-id="figures">Figures</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Figure 1</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><strong>Figure 1. Change in Growing Degree Days in the Contiguous 48 States, 1948–2023</strong></p>
+<p>Data source: NOAA, 2024 <br> Web update: June 2024</p>
+<div class="d-flex flex-wrap gap-2 mb-3">
+<p><a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/data/growing_degree_days_change_by_station.csv" download=""><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a> <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/data-raw/growing-degree-fig-1.csv" download=""><i class="bi bi-filetype-csv"></i> EPA source data (CSV)</a> <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/images/fig-1.png" download=""><i class="bi bi-filetype-png"></i> Figure image (PNG)</a></p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/images/fig-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Map of the contiguous 48 states with a symbol at each of 280 weather stations, sized and coloured by percent change in growing degree days between 1948 and 2023. Large red symbols, marking increases of more than 20 percent, dominate the West and the Northeast; smaller blue symbols, marking decreases, cluster through the central states from the Dakotas down to Texas and across the Ohio Valley."></p>
+</figure>
+</div>
+<p>This map shows trends in the total number of growing degree days per year at 280 weather stations. The color and size of the symbols represent percent change between 1948 and 2023, based on the long-term average rate of change.</p>
+<p>This is EPA’s own published map image. The 280 station records behind it, each carrying a latitude, a longitude, and a percent change, are maintained in the <a href="https://github.com/climateindicators/growing-degree-days">growing-degree-days</a> repository and are available for download above and in the table below.</p>
+<details>
+<summary>
+Show the data behind this figure
+</summary>
+<div class="cell">
+<div id="fig-1-table" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-1-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Latitude</th>
+<th style="text-align: left;">Longitude</th>
+<th style="text-align: left;">Percent change</th>
+<th style="text-align: left;">EPA legend class</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">37.7494°N</td>
+<td style="text-align: left;">107.0950°W</td>
+<td style="text-align: left;">+116.81</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.5078°N</td>
+<td style="text-align: left;">119.7683°W</td>
+<td style="text-align: left;">+108.01</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">39.6244°N</td>
+<td style="text-align: left;">106.0336°W</td>
+<td style="text-align: left;">+68.99</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.1678°N</td>
+<td style="text-align: left;">120.1428°W</td>
+<td style="text-align: left;">+57.17</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">44.0569°N</td>
+<td style="text-align: left;">121.2850°W</td>
+<td style="text-align: left;">+55.64</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">47.9753°N</td>
+<td style="text-align: left;">122.1950°W</td>
+<td style="text-align: left;">+55.09</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">46.6044°N</td>
+<td style="text-align: left;">111.9892°W</td>
+<td style="text-align: left;">+47.91</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">48.9672°N</td>
+<td style="text-align: left;">122.3292°W</td>
+<td style="text-align: left;">+47.04</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.5147°N</td>
+<td style="text-align: left;">111.1594°W</td>
+<td style="text-align: left;">+44.34</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">47.9558°N</td>
+<td style="text-align: left;">124.3539°W</td>
+<td style="text-align: left;">+42.82</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.6133°N</td>
+<td style="text-align: left;">109.4847°W</td>
+<td style="text-align: left;">+40.26</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">36.9878°N</td>
+<td style="text-align: left;">121.9994°W</td>
+<td style="text-align: left;">+38.63</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.8097°N</td>
+<td style="text-align: left;">124.1603°W</td>
+<td style="text-align: left;">+38.50</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">44.4683°N</td>
+<td style="text-align: left;">73.1500°W</td>
+<td style="text-align: left;">+38.06</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.9508°N</td>
+<td style="text-align: left;">123.3572°W</td>
+<td style="text-align: left;">+38.02</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">34.1483°N</td>
+<td style="text-align: left;">118.1447°W</td>
+<td style="text-align: left;">+37.15</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">45.0900°N</td>
+<td style="text-align: left;">71.2906°W</td>
+<td style="text-align: left;">+36.19</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.4903°N</td>
+<td style="text-align: left;">71.5431°W</td>
+<td style="text-align: left;">+35.28</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.8239°N</td>
+<td style="text-align: left;">115.7864°W</td>
+<td style="text-align: left;">+33.87</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.6425°N</td>
+<td style="text-align: left;">70.3045°W</td>
+<td style="text-align: left;">+31.74</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.7331°N</td>
+<td style="text-align: left;">122.5164°W</td>
+<td style="text-align: left;">+31.06</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.5764°N</td>
+<td style="text-align: left;">105.0858°W</td>
+<td style="text-align: left;">+30.06</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">36.7800°N</td>
+<td style="text-align: left;">119.7203°W</td>
+<td style="text-align: left;">+29.48</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">45.1219°N</td>
+<td style="text-align: left;">95.9269°W</td>
+<td style="text-align: left;">+29.04</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.0803°N</td>
+<td style="text-align: left;">80.1822°W</td>
+<td style="text-align: left;">+29.01</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">44.6342°N</td>
+<td style="text-align: left;">123.1900°W</td>
+<td style="text-align: left;">+29.00</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">47.1356°N</td>
+<td style="text-align: left;">122.2561°W</td>
+<td style="text-align: left;">+28.59</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.0297°N</td>
+<td style="text-align: left;">78.1683°W</td>
+<td style="text-align: left;">+27.27</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.7719°N</td>
+<td style="text-align: left;">74.1536°W</td>
+<td style="text-align: left;">+26.71</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.8253°N</td>
+<td style="text-align: left;">111.3206°W</td>
+<td style="text-align: left;">+26.67</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">46.3744°N</td>
+<td style="text-align: left;">117.0153°W</td>
+<td style="text-align: left;">+26.14</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.2875°N</td>
+<td style="text-align: left;">112.6514°W</td>
+<td style="text-align: left;">+25.60</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">48.3511°N</td>
+<td style="text-align: left;">116.8353°W</td>
+<td style="text-align: left;">+24.88</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.5353°N</td>
+<td style="text-align: left;">112.3217°W</td>
+<td style="text-align: left;">+24.49</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">39.0303°N</td>
+<td style="text-align: left;">76.9314°W</td>
+<td style="text-align: left;">+24.40</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.7225°N</td>
+<td style="text-align: left;">71.4325°W</td>
+<td style="text-align: left;">+24.03</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">47.6217°N</td>
+<td style="text-align: left;">117.5281°W</td>
+<td style="text-align: left;">+23.76</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">45.4486°N</td>
+<td style="text-align: left;">122.1547°W</td>
+<td style="text-align: left;">+23.02</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.8978°N</td>
+<td style="text-align: left;">122.1339°W</td>
+<td style="text-align: left;">+22.84</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.4500°N</td>
+<td style="text-align: left;">76.5369°W</td>
+<td style="text-align: left;">+22.83</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">47.4289°N</td>
+<td style="text-align: left;">120.3100°W</td>
+<td style="text-align: left;">+22.63</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.1519°N</td>
+<td style="text-align: left;">104.8061°W</td>
+<td style="text-align: left;">+22.09</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.9017°N</td>
+<td style="text-align: left;">117.8081°W</td>
+<td style="text-align: left;">+21.92</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">48.6036°N</td>
+<td style="text-align: left;">112.3767°W</td>
+<td style="text-align: left;">+21.78</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">36.4483°N</td>
+<td style="text-align: left;">103.1536°W</td>
+<td style="text-align: left;">+21.55</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">45.7858°N</td>
+<td style="text-align: left;">88.0842°W</td>
+<td style="text-align: left;">+21.18</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">46.7053°N</td>
+<td style="text-align: left;">92.5239°W</td>
+<td style="text-align: left;">+20.90</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.2122°N</td>
+<td style="text-align: left;">71.1136°W</td>
+<td style="text-align: left;">+20.64</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.5350°N</td>
+<td style="text-align: left;">121.7761°W</td>
+<td style="text-align: left;">+20.13</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">44.8853°N</td>
+<td style="text-align: left;">93.2314°W</td>
+<td style="text-align: left;">+20.08</td>
+<td style="text-align: left;">&gt;20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">47.2436°N</td>
+<td style="text-align: left;">93.4975°W</td>
+<td style="text-align: left;">+19.89</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.7472°N</td>
+<td style="text-align: left;">73.7992°W</td>
+<td style="text-align: left;">+19.74</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">31.8122°N</td>
+<td style="text-align: left;">106.3775°W</td>
+<td style="text-align: left;">+19.67</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.5947°N</td>
+<td style="text-align: left;">109.0528°W</td>
+<td style="text-align: left;">+19.65</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.0461°N</td>
+<td style="text-align: left;">83.6622°W</td>
+<td style="text-align: left;">+19.53</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">44.6411°N</td>
+<td style="text-align: left;">90.1333°W</td>
+<td style="text-align: left;">+18.98</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">45.6622°N</td>
+<td style="text-align: left;">111.0464°W</td>
+<td style="text-align: left;">+18.54</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">37.2825°N</td>
+<td style="text-align: left;">109.5575°W</td>
+<td style="text-align: left;">+18.38</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">39.3778°N</td>
+<td style="text-align: left;">74.4236°W</td>
+<td style="text-align: left;">+18.33</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.7639°N</td>
+<td style="text-align: left;">94.1661°W</td>
+<td style="text-align: left;">+18.00</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.7678°N</td>
+<td style="text-align: left;">114.6183°W</td>
+<td style="text-align: left;">+17.98</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.6469°N</td>
+<td style="text-align: left;">95.1933°W</td>
+<td style="text-align: left;">+17.82</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.1419°N</td>
+<td style="text-align: left;">70.9500°W</td>
+<td style="text-align: left;">+17.79</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.3164°N</td>
+<td style="text-align: left;">105.6728°W</td>
+<td style="text-align: left;">+17.63</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.2431°N</td>
+<td style="text-align: left;">76.9217°W</td>
+<td style="text-align: left;">+17.54</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.2203°N</td>
+<td style="text-align: left;">105.2783°W</td>
+<td style="text-align: left;">+17.26</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">36.9036°N</td>
+<td style="text-align: left;">76.1928°W</td>
+<td style="text-align: left;">+17.07</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.7458°N</td>
+<td style="text-align: left;">122.1997°W</td>
+<td style="text-align: left;">+16.56</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">48.3042°N</td>
+<td style="text-align: left;">114.2642°W</td>
+<td style="text-align: left;">+16.34</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">48.9158°N</td>
+<td style="text-align: left;">103.2981°W</td>
+<td style="text-align: left;">+16.31</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.4858°N</td>
+<td style="text-align: left;">107.8792°W</td>
+<td style="text-align: left;">+16.28</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.1111°N</td>
+<td style="text-align: left;">76.1039°W</td>
+<td style="text-align: left;">+16.21</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">45.4875°N</td>
+<td style="text-align: left;">111.6336°W</td>
+<td style="text-align: left;">+16.05</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">45.5247°N</td>
+<td style="text-align: left;">123.1025°W</td>
+<td style="text-align: left;">+15.85</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.4133°N</td>
+<td style="text-align: left;">124.2436°W</td>
+<td style="text-align: left;">+15.59</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.2131°N</td>
+<td style="text-align: left;">122.7147°W</td>
+<td style="text-align: left;">+14.95</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">39.7739°N</td>
+<td style="text-align: left;">75.5414°W</td>
+<td style="text-align: left;">+14.91</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">48.8217°N</td>
+<td style="text-align: left;">100.4528°W</td>
+<td style="text-align: left;">+14.63</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.9489°N</td>
+<td style="text-align: left;">78.7367°W</td>
+<td style="text-align: left;">+14.50</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">46.8217°N</td>
+<td style="text-align: left;">108.3725°W</td>
+<td style="text-align: left;">+14.39</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">35.3297°N</td>
+<td style="text-align: left;">82.4492°W</td>
+<td style="text-align: left;">+14.29</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">44.8431°N</td>
+<td style="text-align: left;">117.8100°W</td>
+<td style="text-align: left;">+14.28</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.2633°N</td>
+<td style="text-align: left;">82.6147°W</td>
+<td style="text-align: left;">+14.27</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">45.2089°N</td>
+<td style="text-align: left;">112.6389°W</td>
+<td style="text-align: left;">+13.89</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.6497°N</td>
+<td style="text-align: left;">75.4478°W</td>
+<td style="text-align: left;">+13.64</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.0800°N</td>
+<td style="text-align: left;">111.6047°W</td>
+<td style="text-align: left;">+13.43</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">39.9961°N</td>
+<td style="text-align: left;">86.3542°W</td>
+<td style="text-align: left;">+13.24</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">44.9044°N</td>
+<td style="text-align: left;">97.1494°W</td>
+<td style="text-align: left;">+13.24</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.0286°N</td>
+<td style="text-align: left;">112.5361°W</td>
+<td style="text-align: left;">+13.12</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">44.3797°N</td>
+<td style="text-align: left;">108.0350°W</td>
+<td style="text-align: left;">+13.04</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">26.5850°N</td>
+<td style="text-align: left;">81.8614°W</td>
+<td style="text-align: left;">+12.94</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">44.0139°N</td>
+<td style="text-align: left;">96.3258°W</td>
+<td style="text-align: left;">+12.83</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">45.8236°N</td>
+<td style="text-align: left;">91.8761°W</td>
+<td style="text-align: left;">+12.60</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">34.1892°N</td>
+<td style="text-align: left;">101.7022°W</td>
+<td style="text-align: left;">+12.58</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.1997°N</td>
+<td style="text-align: left;">75.9847°W</td>
+<td style="text-align: left;">+12.48</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.2583°N</td>
+<td style="text-align: left;">111.6308°W</td>
+<td style="text-align: left;">+12.32</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">35.2006°N</td>
+<td style="text-align: left;">103.6867°W</td>
+<td style="text-align: left;">+12.25</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">36.9647°N</td>
+<td style="text-align: left;">86.4239°W</td>
+<td style="text-align: left;">+12.19</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.2783°N</td>
+<td style="text-align: left;">84.3847°W</td>
+<td style="text-align: left;">+12.09</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">46.8997°N</td>
+<td style="text-align: left;">95.0669°W</td>
+<td style="text-align: left;">+12.00</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">29.5442°N</td>
+<td style="text-align: left;">98.4839°W</td>
+<td style="text-align: left;">+11.94</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.9519°N</td>
+<td style="text-align: left;">72.2978°W</td>
+<td style="text-align: left;">+11.76</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">48.2064°N</td>
+<td style="text-align: left;">106.6247°W</td>
+<td style="text-align: left;">+11.64</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.0147°N</td>
+<td style="text-align: left;">99.8722°W</td>
+<td style="text-align: left;">+11.45</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.1172°N</td>
+<td style="text-align: left;">77.6753°W</td>
+<td style="text-align: left;">+11.41</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.7933°N</td>
+<td style="text-align: left;">77.8672°W</td>
+<td style="text-align: left;">+11.39</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28.1522°N</td>
+<td style="text-align: left;">82.7539°W</td>
+<td style="text-align: left;">+11.19</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">32.1314°N</td>
+<td style="text-align: left;">81.2022°W</td>
+<td style="text-align: left;">+11.16</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.8125°N</td>
+<td style="text-align: left;">82.9697°W</td>
+<td style="text-align: left;">+11.09</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.4197°N</td>
+<td style="text-align: left;">78.7492°W</td>
+<td style="text-align: left;">+10.95</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.7439°N</td>
+<td style="text-align: left;">87.5997°W</td>
+<td style="text-align: left;">+10.83</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.9025°N</td>
+<td style="text-align: left;">99.8581°W</td>
+<td style="text-align: left;">+10.72</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">30.1986°N</td>
+<td style="text-align: left;">91.9894°W</td>
+<td style="text-align: left;">+10.62</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">46.4178°N</td>
+<td style="text-align: left;">104.5164°W</td>
+<td style="text-align: left;">+10.31</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">39.4039°N</td>
+<td style="text-align: left;">77.9750°W</td>
+<td style="text-align: left;">+10.31</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">45.4558°N</td>
+<td style="text-align: left;">98.4133°W</td>
+<td style="text-align: left;">+10.25</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.6911°N</td>
+<td style="text-align: left;">106.3078°W</td>
+<td style="text-align: left;">+10.20</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">38.7153°N</td>
+<td style="text-align: left;">76.1908°W</td>
+<td style="text-align: left;">+10.04</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">32.7750°N</td>
+<td style="text-align: left;">79.9239°W</td>
+<td style="text-align: left;">+10.03</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.5575°N</td>
+<td style="text-align: left;">85.8825°W</td>
+<td style="text-align: left;">+10.02</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.2358°N</td>
+<td style="text-align: left;">97.5714°W</td>
+<td style="text-align: left;">+10.00</td>
+<td style="text-align: left;">10 to 20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">35.6722°N</td>
+<td style="text-align: left;">85.7811°W</td>
+<td style="text-align: left;">+9.87</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.9411°N</td>
+<td style="text-align: left;">101.2492°W</td>
+<td style="text-align: left;">+9.76</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">35.4661°N</td>
+<td style="text-align: left;">114.9217°W</td>
+<td style="text-align: left;">+9.71</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.8586°N</td>
+<td style="text-align: left;">99.3358°W</td>
+<td style="text-align: left;">+9.70</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">45.1308°N</td>
+<td style="text-align: left;">90.3439°W</td>
+<td style="text-align: left;">+9.58</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">30.3975°N</td>
+<td style="text-align: left;">84.3289°W</td>
+<td style="text-align: left;">+9.51</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.1661°N</td>
+<td style="text-align: left;">85.9228°W</td>
+<td style="text-align: left;">+9.39</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.1231°N</td>
+<td style="text-align: left;">111.3133°W</td>
+<td style="text-align: left;">+9.36</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">33.6608°N</td>
+<td style="text-align: left;">101.2778°W</td>
+<td style="text-align: left;">+9.30</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.9378°N</td>
+<td style="text-align: left;">81.0375°W</td>
+<td style="text-align: left;">+9.10</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.9536°N</td>
+<td style="text-align: left;">112.8253°W</td>
+<td style="text-align: left;">+9.02</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">30.4761°N</td>
+<td style="text-align: left;">87.1858°W</td>
+<td style="text-align: left;">+8.95</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">29.7986°N</td>
+<td style="text-align: left;">98.7353°W</td>
+<td style="text-align: left;">+8.73</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.9892°N</td>
+<td style="text-align: left;">99.0528°W</td>
+<td style="text-align: left;">+8.67</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">37.2733°N</td>
+<td style="text-align: left;">99.3289°W</td>
+<td style="text-align: left;">+8.57</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">35.6214°N</td>
+<td style="text-align: left;">88.8456°W</td>
+<td style="text-align: left;">+8.54</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">48.6061°N</td>
+<td style="text-align: left;">100.2911°W</td>
+<td style="text-align: left;">+8.54</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">39.4761°N</td>
+<td style="text-align: left;">88.1653°W</td>
+<td style="text-align: left;">+8.39</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">31.7414°N</td>
+<td style="text-align: left;">99.9764°W</td>
+<td style="text-align: left;">+8.15</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">27.4419°N</td>
+<td style="text-align: left;">80.3508°W</td>
+<td style="text-align: left;">+8.08</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.7789°N</td>
+<td style="text-align: left;">73.9692°W</td>
+<td style="text-align: left;">+8.07</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.0664°N</td>
+<td style="text-align: left;">86.2097°W</td>
+<td style="text-align: left;">+8.04</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.2664°N</td>
+<td style="text-align: left;">74.5642°W</td>
+<td style="text-align: left;">+8.03</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.5183°N</td>
+<td style="text-align: left;">84.1453°W</td>
+<td style="text-align: left;">+8.02</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">34.3725°N</td>
+<td style="text-align: left;">89.5308°W</td>
+<td style="text-align: left;">+8.00</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.5800°N</td>
+<td style="text-align: left;">85.6586°W</td>
+<td style="text-align: left;">+7.89</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">26.1019°N</td>
+<td style="text-align: left;">80.2011°W</td>
+<td style="text-align: left;">+7.82</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.5300°N</td>
+<td style="text-align: left;">120.1792°W</td>
+<td style="text-align: left;">+7.79</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">27.7839°N</td>
+<td style="text-align: left;">97.5114°W</td>
+<td style="text-align: left;">+7.77</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">44.0683°N</td>
+<td style="text-align: left;">98.0833°W</td>
+<td style="text-align: left;">+7.61</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">30.5378°N</td>
+<td style="text-align: left;">91.1469°W</td>
+<td style="text-align: left;">+7.48</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">44.6894°N</td>
+<td style="text-align: left;">70.1564°W</td>
+<td style="text-align: left;">+7.44</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">45.5900°N</td>
+<td style="text-align: left;">95.8744°W</td>
+<td style="text-align: left;">+7.39</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.6603°N</td>
+<td style="text-align: left;">82.8233°W</td>
+<td style="text-align: left;">+7.33</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">38.9803°N</td>
+<td style="text-align: left;">80.2200°W</td>
+<td style="text-align: left;">+7.17</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">47.2256°N</td>
+<td style="text-align: left;">95.1919°W</td>
+<td style="text-align: left;">+7.01</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">37.2092°N</td>
+<td style="text-align: left;">112.9814°W</td>
+<td style="text-align: left;">+6.86</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.0383°N</td>
+<td style="text-align: left;">103.6947°W</td>
+<td style="text-align: left;">+6.75</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.3861°N</td>
+<td style="text-align: left;">72.5375°W</td>
+<td style="text-align: left;">+6.38</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.5983°N</td>
+<td style="text-align: left;">94.2842°W</td>
+<td style="text-align: left;">+6.35</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">34.5786°N</td>
+<td style="text-align: left;">83.3319°W</td>
+<td style="text-align: left;">+6.26</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">47.5333°N</td>
+<td style="text-align: left;">116.1333°W</td>
+<td style="text-align: left;">+5.91</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">38.9339°N</td>
+<td style="text-align: left;">80.8317°W</td>
+<td style="text-align: left;">+5.83</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.5686°N</td>
+<td style="text-align: left;">85.6064°W</td>
+<td style="text-align: left;">+5.62</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">46.4264°N</td>
+<td style="text-align: left;">105.8833°W</td>
+<td style="text-align: left;">+5.46</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.2253°N</td>
+<td style="text-align: left;">78.1189°W</td>
+<td style="text-align: left;">+5.44</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.6042°N</td>
+<td style="text-align: left;">85.4533°W</td>
+<td style="text-align: left;">+5.26</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.6350°N</td>
+<td style="text-align: left;">81.5206°W</td>
+<td style="text-align: left;">+5.25</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">47.1175°N</td>
+<td style="text-align: left;">118.3714°W</td>
+<td style="text-align: left;">+5.19</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">28.4575°N</td>
+<td style="text-align: left;">97.7061°W</td>
+<td style="text-align: left;">+5.11</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">34.5283°N</td>
+<td style="text-align: left;">82.6608°W</td>
+<td style="text-align: left;">+5.08</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.5528°N</td>
+<td style="text-align: left;">86.7944°W</td>
+<td style="text-align: left;">+5.03</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">34.0906°N</td>
+<td style="text-align: left;">82.5883°W</td>
+<td style="text-align: left;">+4.98</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">45.7656°N</td>
+<td style="text-align: left;">99.6222°W</td>
+<td style="text-align: left;">+4.88</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.8878°N</td>
+<td style="text-align: left;">100.7075°W</td>
+<td style="text-align: left;">+4.81</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">31.3206°N</td>
+<td style="text-align: left;">92.4611°W</td>
+<td style="text-align: left;">+4.72</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.5647°N</td>
+<td style="text-align: left;">77.7175°W</td>
+<td style="text-align: left;">+4.68</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">46.7281°N</td>
+<td style="text-align: left;">116.9558°W</td>
+<td style="text-align: left;">+4.63</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">37.1942°N</td>
+<td style="text-align: left;">99.7633°W</td>
+<td style="text-align: left;">+4.59</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.9797°N</td>
+<td style="text-align: left;">80.5233°W</td>
+<td style="text-align: left;">+4.59</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">35.9147°N</td>
+<td style="text-align: left;">81.5375°W</td>
+<td style="text-align: left;">+4.55</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">35.9833°N</td>
+<td style="text-align: left;">83.2008°W</td>
+<td style="text-align: left;">+4.52</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.8467°N</td>
+<td style="text-align: left;">79.1494°W</td>
+<td style="text-align: left;">+4.36</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.4664°N</td>
+<td style="text-align: left;">87.6850°W</td>
+<td style="text-align: left;">+4.32</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">29.6756°N</td>
+<td style="text-align: left;">97.6578°W</td>
+<td style="text-align: left;">+4.02</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.6858°N</td>
+<td style="text-align: left;">103.8842°W</td>
+<td style="text-align: left;">+3.97</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.7928°N</td>
+<td style="text-align: left;">75.4828°W</td>
+<td style="text-align: left;">+3.81</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.4378°N</td>
+<td style="text-align: left;">103.4739°W</td>
+<td style="text-align: left;">+3.71</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">46.8844°N</td>
+<td style="text-align: left;">98.6850°W</td>
+<td style="text-align: left;">+3.66</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.4514°N</td>
+<td style="text-align: left;">97.7644°W</td>
+<td style="text-align: left;">+3.60</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.6064°N</td>
+<td style="text-align: left;">93.3019°W</td>
+<td style="text-align: left;">+3.21</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.1228°N</td>
+<td style="text-align: left;">83.5328°W</td>
+<td style="text-align: left;">+3.06</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">44.3819°N</td>
+<td style="text-align: left;">100.2864°W</td>
+<td style="text-align: left;">+2.99</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.0267°N</td>
+<td style="text-align: left;">86.5867°W</td>
+<td style="text-align: left;">+2.76</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">35.4867°N</td>
+<td style="text-align: left;">82.9681°W</td>
+<td style="text-align: left;">+2.66</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">44.1186°N</td>
+<td style="text-align: left;">89.5358°W</td>
+<td style="text-align: left;">+2.39</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.6678°N</td>
+<td style="text-align: left;">95.5200°W</td>
+<td style="text-align: left;">+2.31</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.7336°N</td>
+<td style="text-align: left;">76.7358°W</td>
+<td style="text-align: left;">+1.98</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">36.4161°N</td>
+<td style="text-align: left;">82.9839°W</td>
+<td style="text-align: left;">+1.95</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.0936°N</td>
+<td style="text-align: left;">102.6306°W</td>
+<td style="text-align: left;">+1.88</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">30.1592°N</td>
+<td style="text-align: left;">96.3972°W</td>
+<td style="text-align: left;">+1.69</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.6092°N</td>
+<td style="text-align: left;">96.8719°W</td>
+<td style="text-align: left;">+1.65</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">45.0325°N</td>
+<td style="text-align: left;">99.1225°W</td>
+<td style="text-align: left;">+1.64</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.1392°N</td>
+<td style="text-align: left;">87.6478°W</td>
+<td style="text-align: left;">+1.62</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">47.3331°N</td>
+<td style="text-align: left;">118.6961°W</td>
+<td style="text-align: left;">+1.53</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.3706°N</td>
+<td style="text-align: left;">95.7469°W</td>
+<td style="text-align: left;">+1.52</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">34.7544°N</td>
+<td style="text-align: left;">83.0750°W</td>
+<td style="text-align: left;">+1.50</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.0842°N</td>
+<td style="text-align: left;">88.2403°W</td>
+<td style="text-align: left;">+1.34</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.5306°N</td>
+<td style="text-align: left;">89.4369°W</td>
+<td style="text-align: left;">+1.19</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.2861°N</td>
+<td style="text-align: left;">78.4053°W</td>
+<td style="text-align: left;">+1.16</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.0739°N</td>
+<td style="text-align: left;">97.1669°W</td>
+<td style="text-align: left;">+1.14</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.0211°N</td>
+<td style="text-align: left;">91.9553°W</td>
+<td style="text-align: left;">+1.13</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">36.4003°N</td>
+<td style="text-align: left;">81.3053°W</td>
+<td style="text-align: left;">+1.01</td>
+<td style="text-align: left;">1 to 10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">44.5378°N</td>
+<td style="text-align: left;">90.5350°W</td>
+<td style="text-align: left;">+0.97</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">37.1322°N</td>
+<td style="text-align: left;">96.1800°W</td>
+<td style="text-align: left;">+0.64</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.3544°N</td>
+<td style="text-align: left;">96.1939°W</td>
+<td style="text-align: left;">+0.52</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">35.4139°N</td>
+<td style="text-align: left;">86.8086°W</td>
+<td style="text-align: left;">+0.28</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.2364°N</td>
+<td style="text-align: left;">95.7003°W</td>
+<td style="text-align: left;">+0.22</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.9442°N</td>
+<td style="text-align: left;">90.6381°W</td>
+<td style="text-align: left;">+0.15</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.4747°N</td>
+<td style="text-align: left;">100.9175°W</td>
+<td style="text-align: left;">+0.14</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">32.7483°N</td>
+<td style="text-align: left;">97.7700°W</td>
+<td style="text-align: left;">-0.01</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.6514°N</td>
+<td style="text-align: left;">97.7981°W</td>
+<td style="text-align: left;">-0.07</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">37.0908°N</td>
+<td style="text-align: left;">81.3364°W</td>
+<td style="text-align: left;">-0.09</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.7047°N</td>
+<td style="text-align: left;">92.5644°W</td>
+<td style="text-align: left;">-0.52</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">47.8206°N</td>
+<td style="text-align: left;">112.1922°W</td>
+<td style="text-align: left;">-0.54</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.8825°N</td>
+<td style="text-align: left;">91.8303°W</td>
+<td style="text-align: left;">-0.60</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">36.8650°N</td>
+<td style="text-align: left;">94.3603°W</td>
+<td style="text-align: left;">-0.63</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.0603°N</td>
+<td style="text-align: left;">92.6717°W</td>
+<td style="text-align: left;">-0.68</td>
+<td style="text-align: left;">-1 to 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.7858°N</td>
+<td style="text-align: left;">85.7611°W</td>
+<td style="text-align: left;">-1.31</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.7953°N</td>
+<td style="text-align: left;">88.4533°W</td>
+<td style="text-align: left;">-1.54</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.0356°N</td>
+<td style="text-align: left;">92.5806°W</td>
+<td style="text-align: left;">-1.62</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.9394°N</td>
+<td style="text-align: left;">100.1514°W</td>
+<td style="text-align: left;">-1.66</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">46.1583°N</td>
+<td style="text-align: left;">98.3989°W</td>
+<td style="text-align: left;">-1.83</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.7817°N</td>
+<td style="text-align: left;">96.1458°W</td>
+<td style="text-align: left;">-1.84</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">35.7297°N</td>
+<td style="text-align: left;">81.6728°W</td>
+<td style="text-align: left;">-1.87</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.9664°N</td>
+<td style="text-align: left;">93.4194°W</td>
+<td style="text-align: left;">-2.03</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">30.2003°N</td>
+<td style="text-align: left;">92.6642°W</td>
+<td style="text-align: left;">-2.04</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.8814°N</td>
+<td style="text-align: left;">92.2764°W</td>
+<td style="text-align: left;">-2.38</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">38.3772°N</td>
+<td style="text-align: left;">97.6097°W</td>
+<td style="text-align: left;">-2.44</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.5092°N</td>
+<td style="text-align: left;">101.6514°W</td>
+<td style="text-align: left;">-2.66</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">30.0719°N</td>
+<td style="text-align: left;">91.0278°W</td>
+<td style="text-align: left;">-2.73</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">36.7664°N</td>
+<td style="text-align: left;">96.0131°W</td>
+<td style="text-align: left;">-3.07</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.1306°N</td>
+<td style="text-align: left;">99.8278°W</td>
+<td style="text-align: left;">-3.07</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.7767°N</td>
+<td style="text-align: left;">79.4386°W</td>
+<td style="text-align: left;">-3.24</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.2394°N</td>
+<td style="text-align: left;">94.6833°W</td>
+<td style="text-align: left;">-3.50</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.0978°N</td>
+<td style="text-align: left;">98.5197°W</td>
+<td style="text-align: left;">-3.85</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">29.0567°N</td>
+<td style="text-align: left;">96.2319°W</td>
+<td style="text-align: left;">-4.23</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.7569°N</td>
+<td style="text-align: left;">82.8872°W</td>
+<td style="text-align: left;">-4.77</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.3969°N</td>
+<td style="text-align: left;">94.6292°W</td>
+<td style="text-align: left;">-5.03</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.6133°N</td>
+<td style="text-align: left;">95.2808°W</td>
+<td style="text-align: left;">-5.21</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.1742°N</td>
+<td style="text-align: left;">88.7364°W</td>
+<td style="text-align: left;">-5.53</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">38.1894°N</td>
+<td style="text-align: left;">94.0244°W</td>
+<td style="text-align: left;">-5.67</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">43.4894°N</td>
+<td style="text-align: left;">99.0628°W</td>
+<td style="text-align: left;">-6.07</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">39.6186°N</td>
+<td style="text-align: left;">87.6672°W</td>
+<td style="text-align: left;">-6.14</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.7347°N</td>
+<td style="text-align: left;">90.1978°W</td>
+<td style="text-align: left;">-6.22</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">35.9203°N</td>
+<td style="text-align: left;">86.3728°W</td>
+<td style="text-align: left;">-6.23</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">47.4733°N</td>
+<td style="text-align: left;">111.3828°W</td>
+<td style="text-align: left;">-6.59</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">35.8100°N</td>
+<td style="text-align: left;">80.8808°W</td>
+<td style="text-align: left;">-6.68</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">42.0644°N</td>
+<td style="text-align: left;">97.9667°W</td>
+<td style="text-align: left;">-6.69</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">34.1994°N</td>
+<td style="text-align: left;">81.4144°W</td>
+<td style="text-align: left;">-6.71</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">35.5175°N</td>
+<td style="text-align: left;">78.3444°W</td>
+<td style="text-align: left;">-6.75</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.5156°N</td>
+<td style="text-align: left;">98.9514°W</td>
+<td style="text-align: left;">-6.76</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">38.8878°N</td>
+<td style="text-align: left;">86.5519°W</td>
+<td style="text-align: left;">-6.80</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">45.8864°N</td>
+<td style="text-align: left;">89.7322°W</td>
+<td style="text-align: left;">-6.95</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">37.3908°N</td>
+<td style="text-align: left;">93.9492°W</td>
+<td style="text-align: left;">-6.99</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.5836°N</td>
+<td style="text-align: left;">94.2006°W</td>
+<td style="text-align: left;">-7.10</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.1978°N</td>
+<td style="text-align: left;">90.7447°W</td>
+<td style="text-align: left;">-7.20</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">40.7244°N</td>
+<td style="text-align: left;">95.0192°W</td>
+<td style="text-align: left;">-7.28</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">35.3028°N</td>
+<td style="text-align: left;">93.6369°W</td>
+<td style="text-align: left;">-7.30</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">42.8278°N</td>
+<td style="text-align: left;">90.7889°W</td>
+<td style="text-align: left;">-7.46</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">37.1542°N</td>
+<td style="text-align: left;">92.2619°W</td>
+<td style="text-align: left;">-7.62</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">43.0514°N</td>
+<td style="text-align: left;">91.1350°W</td>
+<td style="text-align: left;">-7.87</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">41.3281°N</td>
+<td style="text-align: left;">88.9097°W</td>
+<td style="text-align: left;">-8.03</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.2019°N</td>
+<td style="text-align: left;">80.8106°W</td>
+<td style="text-align: left;">-8.05</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">46.4656°N</td>
+<td style="text-align: left;">90.1892°W</td>
+<td style="text-align: left;">-8.07</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">37.0308°N</td>
+<td style="text-align: left;">100.9069°W</td>
+<td style="text-align: left;">-8.28</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">39.4408°N</td>
+<td style="text-align: left;">90.3789°W</td>
+<td style="text-align: left;">-8.32</td>
+<td style="text-align: left;">-1 to -10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">41.2825°N</td>
+<td style="text-align: left;">91.7078°W</td>
+<td style="text-align: left;">-10.20</td>
+<td style="text-align: left;">-10 to -20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40.4517°N</td>
+<td style="text-align: left;">99.3803°W</td>
+<td style="text-align: left;">-10.91</td>
+<td style="text-align: left;">-10 to -20</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-1-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<section id="key-points" class="level2">
+<h2 class="anchored" data-anchor-id="key-points">Key Points</h2>
+<ul>
+<li><p>Between 1948 and 2023, the number of growing degree days increased at 221 of the 280 long-term stations measured (79 percent) across the contiguous 48 states (see Figure 1). The average change across all stations represents an increase of about 10 percent.</p></li>
+<li><p>The largest increases in growing degree days from 1948 to 2023 occurred in the West and the Northeast (see Figure 1). Fifty stations, mostly in the West, have experienced an increase of 20 percent or more.</p></li>
+<li><p>Because growing degree days are correlated with a longer grass pollen season and an earlier start date for oak and birch pollen seasons,<sup><a href="#ref-7">7</a></sup> the increased number of growing degree days suggests that the length of grass, oak, and birch pollen season grew between 1948 and 2023 in many parts of the contiguous United States.</p></li>
+</ul>
+</section>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Increasing concentrations of atmospheric carbon dioxide and changes in climate—such as increasing temperatures and altered precipitation patterns—are expected to contribute to increases in levels and distribution of plant pollen.<sup><a href="#ref-1">1</a></sup> Pollen from trees and grasses is a common allergen that can trigger health effects such as allergic rhinitis (“hay fever”) and asthma. In the United States in 2021, 26 percent of adults reported having at least one seasonal allergy.<sup><a href="#ref-2">2</a></sup> About 8 percent of adults and 6.5 percent of children also reported suffering from asthma, and this population of asthmatics accounts for about 1 million emergency department visits yearly.<sup><a href="#ref-3">3</a></sup> These health effects lead to economic costs from medical expenses and missed work and school days. Asthma caused an estimated $50 billion in medical expenses and $3 billion in the value of lost work and school days in 2013.<sup><a href="#ref-4">4</a></sup> Direct medical spending to treat hay fever was estimated at $3.4 billion in 2011.<sup><a href="#ref-5">5</a></sup> Non-Hispanic Black and Non-Hispanic American Indian/Alaska Native populations are particularly sensitive to longer pollen seasons because they have the highest rates of asthma in the United States, and urban Black and Hispanic children tend to experience more symptoms of hay fever.<sup><a href="#ref-6">6</a></sup></p>
+<p>The timing of pollen seasons is linked to climate trends and variations, including changes in growing degree days—a widely used measure for tracking plant growth and development. As with the Length of Growing Season indicator, growing degree days are based on temperature, because plants typically only grow when the temperature is above a certain minimum. Studies have shown that as growing degree days increase, grass pollen season grows longer and oak and birch pollen seasons begin earlier.<sup><a href="#ref-7">7</a></sup> Earlier pollen season start dates are associated with a longer pollen season overall.<sup><a href="#ref-8">8</a></sup> More broadly, growing degree days also affect plant growth, agricultural production, and the spread and impact of plant diseases and pests.</p>
+</section>
+<section id="about-the-indicator" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-indicator">About the Indicator</h2>
+<p>Growing degree days are calculated using daily temperature data from weather stations. As with the Heating and Cooling Degree Days indicator, growing degree days are based on the number of degrees above a certain minimum temperature. Different plants have different temperature requirements, so EPA chose a baseline temperature of 50°F, which is commonly used for analysis when there are multiple plant species of interest. Using this baseline, a day with an average temperature of 70°F represents 20 growing degree days.</p>
+<p>This indicator examines changes in the number of growing degree days from 1948 to 2023 at locations across the United States. This indicator includes 280 weather stations operated by the National Oceanic and Atmospheric Administration because they had sufficient data completeness during the entire period of record. For each station, daily growing degrees were calculated by taking the average of the daily maximum and minimum temperatures, then subtracting 50°F. Daily results were added together to calculate total annual growing degree days for each year from 1948 to 2023. Figure 1 shows how the total number of growing degree days per year has changed over time at each location.</p>
+</section>
+<section id="about-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-data">About the Data</h2>
+<section id="indicator-notes" class="level3">
+<h3 class="anchored" data-anchor-id="indicator-notes">Indicator Notes</h3>
+<p>Growing degree days reflect cumulative conditions that support plant development, but they do not capture potentially important factors related to the sequence of weather conditions, which can also have considerable effects on plant development. Factors other than growing degree days also affect pollen season duration and start date. Some of those factors relate to plant growth patterns, and some—such as local plant composition, geographic location (latitude), and proximity to urban areas—are not directly related to climate. As a result, the exact link between growing degree days and pollen season timing is not precise and may vary over time and at different locations. Also, a change in total growing degree days does not necessarily change the intensity of the pollen season. Nonetheless, because allergies are a major public health concern, observed changes in growing degree days, which serve as a proxy for changes in pollen season length and start date, provide insight into ways in which climate change may affect human well-being.</p>
+</section>
+<section id="data-sources" class="level3">
+<h3 class="anchored" data-anchor-id="data-sources">Data Sources</h3>
+<p>Temperature data for this indicator come from the Global Historical Climatology Network, maintained by the National Oceanic and Atmospheric Administration. The analysis draws on prior research by Zhang et al.&nbsp;(2015) on the relationship between growing degree days and pollen.<sup><a href="#ref-7">7</a></sup></p>
+</section>
+</section>
+<section id="technical-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="technical-documentation">Technical Documentation</h2>
+<ul>
+<li><a href="https://19january2025snapshot.epa.gov/system/files/documents/2024-06/growing-degree-days_documentation.pdf">Download related technical information (PDF)</a></li>
+</ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ol class="references">
+<li id="ref-1">
+Fann, N., Brennan, T., Dolwick, P., Gamble, J. L., Ilacqua, V., Kolb, L., Nolte, C. G., Spero, T. L., &amp; Ziska, L. (2016). Chapter 3: Air quality impacts. In USGCRP (U.S. Global Change Research Program), <em>The impacts of climate change on human health in the United States: A scientific assessment</em> (pp.&nbsp;69–98). <a href="https://doi.org/10.7930/J0GQ6Vp6">doi.org/10.7930/J0GQ6Vp6</a>
+</li>
+<li id="ref-2">
+Ng, A. E., &amp; Boersma, P. (2023). <em>Diagnosed allergic conditions in adults: United States, 2021</em> (NCHS Data Brief No.&nbsp;460). CDC (U.S. Centers for Disease Control and Prevention). <a href="https://www.cdc.gov/nchs/products/databriefs/db460.htm">www.cdc.gov/nchs/products/databriefs/db460.htm</a>
+</li>
+<li id="ref-3">
+CDC (U.S. Centers for Disease Control and Prevention). (2023). <em>Most recent national asthma data</em>. Retrieved May 11, 2024, from <a href="https://www.cdc.gov/asthma/most_recent_national_asthma_data.htm">www.cdc.gov/asthma/most_recent_national_asthma_data.htm</a>
+</li>
+<li id="ref-4">
+Nurmagambetov, T., Kuwahara, R., &amp; Garbe, P. (2018). The economic burden of asthma in the United States, 2008–2013. <em>Annals of the American Thoracic Society</em>, <em>15</em>(3), 348–356. <a href="https://doi.org/10.1513/AnnalsATS.201703-259OC">doi.org/10.1513/AnnalsATS.201703-259OC</a>
+</li>
+<li id="ref-5">
+Meltzer, E. O., &amp; Bukstein, D. A. (2011). The economic impact of allergic rhinitis and current guidelines for treatment. <em>Annals of Allergy, Asthma &amp; Immunology</em>, <em>106</em>(2), S12–S16. <a href="https://doi.org/10.1016/j.anai.2010.10.014">doi.org/10.1016/j.anai.2010.10.014</a>
+</li>
+<li id="ref-6">
+Burbank, A. J., Hernandez, M. L., Jefferson, A., Perry, T. T., Phipatanakul, W., Poole, J., &amp; Matsui, E. C. (2023). Environmental justice and allergic disease: A work group report of the AAAAI Environmental Exposure and Respiratory Health Committee and the Diversity, Equity and Inclusion Committee. <em>Journal of Allergy and Clinical Immunology</em>, <em>151</em>(3), 656–670. <a href="https://doi.org/10.1016/j.jaci.2022.11.025">doi.org/10.1016/j.jaci.2022.11.025</a>
+</li>
+<li id="ref-7">
+Zhang, Y., Bielory, L., Cai, T., Mi, Z., &amp; Georgopoulos, P. (2015). Predicting onset and duration of airborne allergenic pollen season in the United States. <em>Atmospheric Environment</em>, <em>103</em>, 297–306. <a href="https://doi.org/10.1016/j.atmosenv.2014.12.019">doi.org/10.1016/j.atmosenv.2014.12.019</a>
+</li>
+<li id="ref-8">
+Lo, F., Bitz, C. M., Battisti, D. S., &amp; Hess, J. J. (2019). Pollen calendars and maps of allergenic pollen in North America. <em>Aerobiologia</em>, <em>35</em>(4), 613–633. <a href="https://doi.org/10.1007/s10453-019-09601-2">doi.org/10.1007/s10453-019-09601-2</a>
+</li>
+<li id="ref-9">
+NOAA (National Oceanic and Atmospheric Administration). (2024). <em>Global Historical Climatology Network daily (GHCNd)</em>. Retrieved April 1, 2024, from <a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily">www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily</a>
+</li>
+</ol>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the <a href="https://github.com/climateindicators/growing-degree-days">growing-degree-days</a> repository, which this page reads its data from directly.</p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("^(?:http:|https:)\/\/(?:www\.)?climateindicators\.us");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Site made with <i class="bi bi-heart-fill"></i>, <i class="bi bi-git"></i>, and <img src="../images/icon-quarto.svg" width="13" style="vertical-align:-1px;margin-right:0.25em"><a href="https://quarto.org/" target="_blank">Quarto</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
