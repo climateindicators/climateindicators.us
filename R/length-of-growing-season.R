@@ -129,19 +129,27 @@ fig_state_sorted <- function(d, descending) {
   d[order(d$value, decreasing = descending), ]
 }
 
-fig_state_plot <- function(d, fill, x_label, descending) {
+# Bars are coloured by which side of the baseline they fall on, the same pair of
+# colours in all three figures, so the direction of a state's change reads
+# before the axis is. A value of exactly 0 draws no bar at all, so the side it
+# is filed under is not visible either way.
+SIGN_KEYS <- c("negative", "positive")
+
+fig_state_plot <- function(d, x_label, descending) {
   d <- fig_state_sorted(d, descending)
   d$state <- factor(d$state, levels = d$state)
+  d$sign_key <- ifelse(d$value < BASELINE, "negative", "positive")
 
-  ggplot(d, aes(y = state, x = value)) +
+  ggplot(d, aes(y = state, x = value, fill = sign_key)) +
     geom_vline(xintercept = BASELINE, colour = CHART_GREY[["rule"]], linewidth = 0.4) +
     geom_col_interactive(
       aes(
         data_id = state,
         tooltip = sprintf("%s\n%+.2f days", state, value)
       ),
-      fill = fill, width = 0.72
+      width = 0.72
     ) +
+    scale_fill_manual(values = series_colours(SIGN_KEYS)) +
     scale_x_continuous(expand = expansion(mult = 0.06), position = "top") +
     labs(x = x_label, y = NULL) +
     theme_indicator() +
@@ -170,7 +178,7 @@ fig_state_table <- function(d, value_label, descending) {
 
 fig_3_plot <- function(d) {
   fig_state_plot(
-    d, fill = INDICATOR_PALETTE[["base"]],
+    d,
     x_label = "Change in length of growing season, 1895 to 2023 (days)",
     descending = FALSE
   )
@@ -180,7 +188,7 @@ fig_3_table <- function(d) fig_state_table(d, "Change in growing season (days)",
 
 fig_5_plot <- function(d) {
   fig_state_plot(
-    d, fill = INDICATOR_PALETTE[["focus"]],
+    d,
     x_label = "Change in timing of last spring frost, 1895 to 2023 (days)",
     descending = TRUE
   )
@@ -190,7 +198,7 @@ fig_5_table <- function(d) fig_state_table(d, "Change in last spring frost (days
 
 fig_6_plot <- function(d) {
   fig_state_plot(
-    d, fill = INDICATOR_PALETTE[["compare"]],
+    d,
     x_label = "Change in timing of first fall frost, 1895 to 2023 (days)",
     descending = FALSE
   )
