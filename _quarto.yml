@@ -69,6 +69,8 @@ website:
               href: indicators/west-nile-virus.qmd
             - text: "Length of Growing Season"
               href: indicators/length-of-growing-season.qmd
+            - text: "Growing Degree Days"
+              href: indicators/growing-degree-days.qmd
 
 
 format:
