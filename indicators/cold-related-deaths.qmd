@@ -2,7 +2,6 @@
 title: "Cold-Related Deaths"
 description: "Deaths in the United States attributed to extreme cold."
 categories: [Health, Temperature]
-image: images/cold-related-deaths.png
 execute:
   eval: true
 ---
@@ -33,13 +32,16 @@ monthly <- read_indicator(REPO, "cold_deaths_monthly.csv")
 figure_caption(meta, "cold_deaths_annual.csv")
 ```
 
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/cold-related-deaths/main/data/cold_deaths_annual.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/cold-related-deaths/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx" download><i class="bi bi-file-earmark-excel"></i> EPA source workbook (XLSX)</a>
+</div>
+
 ```{r}
 #| label: fig-1
 #| echo: false
 fig_1(annual)
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_annual.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 This figure shows the annual rates for deaths classified as "cold-related" by
 medical professionals in the 50 states and the District of Columbia. The blue
@@ -81,13 +83,16 @@ repository's `data-raw/PROVENANCE.md` for details.
 figure_caption(meta, "cold_deaths_monthly.csv")
 ```
 
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/cold-related-deaths/main/data/cold_deaths_monthly.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/cold-related-deaths/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx" download><i class="bi bi-file-earmark-excel"></i> EPA source workbook (XLSX)</a>
+</div>
+
 ```{r}
 #| label: fig-td1
 #| echo: false
 fig_td1(monthly)
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/cold-related-deaths/blob/main/data/cold_deaths_monthly.csv) · [original workbook](https://github.com/climateindicators/cold-related-deaths/blob/main/data-raw/cold-deaths_figure-1-and-TD1_04-08-19.xlsx)
 
 This graph shows all deaths for which cold was recorded as either the
 underlying cause or a contributing cause of death, which corresponds with the

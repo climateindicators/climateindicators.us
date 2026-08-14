@@ -15,6 +15,7 @@ $body-text:    #464646;
 $panel:        #f4f4f5;  // light grey for cards, sidebar, callouts
 $rule:         #dcdcdc;  // neutral border, one step darker than $panel
 $muted:        #757575;
+$btn-hover:    #708C69;  // download button hover fill
 
 // Bootstrap picks up $link-color from $primary, so setting this alone recolors
 // links, active states, and focus rings site-wide.
@@ -56,8 +57,9 @@ p {
 }
 
 // climate.us underlines in-content links. Scoped to prose only so the navbar,
-// sidebar, TOC, listing cards, and anchor glyphs keep their own treatment.
-main.content a:not(.anchorjs-link):not(.quarto-title-meta-heading):not(.btn) {
+// sidebar, TOC, listing cards, anchor glyphs, and figure tabs keep their own
+// treatment.
+main.content a:not(.anchorjs-link):not(.quarto-title-meta-heading):not(.btn):not(.nav-link) {
   text-decoration: underline;
 }
 
@@ -372,6 +374,73 @@ main.content {
     background-color: $accent !important;
     color: #fff !important;
     border-color: $accent !important;
+  }
+}
+
+/* Download buttons on indicator pages. */
+.btn {
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $btn-hover;
+    border-color: $btn-hover;
+    color: #fff;
+  }
+}
+
+/* Figure tabs (.panel-tabset). Gray strip, boxless inactive tabs; the active
+   tab pops white with rounded top corners and carries a thin accent
+   underline that echoes the navbar's active-section indicator below — drawn
+   as an ::after pseudo-element rather than a border-bottom so it doesn't
+   inherit the tab's border-radius and bow at the ends (same reasoning as the
+   navbar rule above). */
+.panel-tabset {
+  .nav-tabs {
+    border-bottom: none;
+    background-color: $panel;
+    border-radius: 6px 6px 0 0;
+    padding: 0.35rem 0.35rem 0;
+    gap: 0.25rem;
+  }
+
+  .nav-tabs .nav-link {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    background-color: transparent;
+    color: $muted;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover:not(.active) {
+      background-color: rgba($ink, 0.05);
+      color: $body-text;
+    }
+
+    &.active {
+      background-color: $body-bg;
+      color: $ink;
+      font-weight: 700;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        bottom: 0;
+        height: 2px;
+        background-color: $accent;
+      }
+    }
+  }
+
+  .tab-content {
+    background-color: $body-bg;
+    border: 1px solid $rule;
+    border-top: none;
+    border-radius: 0 4px 4px 4px;
+    padding: 1.25rem;
   }
 }
 
