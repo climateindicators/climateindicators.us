@@ -33,13 +33,16 @@ chicago <- read_indicator(REPO, "chicago_1995_heat_wave.csv")
 figure_caption(meta, "heat_deaths_annual.csv")
 ```
 
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/heat_deaths_annual.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_fig-1.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
+</div>
+
 ```{r}
 #| label: fig-1
 #| echo: false
 fig_1(annual)
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_annual.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-1.csv)
 
 <details><summary>Show the data behind this figure</summary>
 
@@ -60,13 +63,16 @@ knitr::kable(fig_1_table(annual), digits = 3)
 figure_caption(meta, "heat_deaths_summer_cvd.csv")
 ```
 
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/heat_deaths_summer_cvd.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_fig-2.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
+</div>
+
 ```{r}
 #| label: fig-2
 #| echo: false
 fig_2(cvd)
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_summer_cvd.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-2.csv)
 
 <details><summary>Show the data behind this figure</summary>
 
@@ -87,13 +93,16 @@ knitr::kable(fig_2_table(cvd), digits = 3)
 figure_caption(meta, "chicago_1995_heat_wave.csv")
 ```
 
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/chicago_1995_heat_wave.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_example.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
+</div>
+
 ```{r}
 #| label: fig-example
 #| echo: false
 fig_example(chicago)
 ```
-
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/chicago_1995_heat_wave.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_example.csv)
 
 <details><summary>Show the data behind this figure</summary>
 

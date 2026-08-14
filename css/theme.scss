@@ -375,6 +375,11 @@ main.content {
   }
 }
 
+/* Download buttons on indicator pages. */
+.btn {
+  border-radius: 4px;
+}
+
 /* Tables — climate.us uses the warm grey for header rows. */
 table thead th {
   background: $rule;
