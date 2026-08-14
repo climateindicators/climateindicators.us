@@ -2,6 +2,7 @@
 title: "Cold-Related Deaths"
 description: "Deaths in the United States attributed to extreme cold."
 categories: [Health, Temperature]
+image: images/cold-related-deaths.png
 execute:
   eval: true
 ---
@@ -14,8 +15,8 @@ This indicator presents data on deaths classified as "cold-related" in the Unite
 source(here::here("R", "common.R"))
 source(here::here("R", "cold-related-deaths.R"))
 
-meta    <- read_meta(REPO)
-annual  <- read_indicator(REPO, "cold_deaths_annual.csv")
+meta <- read_meta(REPO)
+annual <- read_indicator(REPO, "cold_deaths_annual.csv")
 monthly <- read_indicator(REPO, "cold_deaths_monthly.csv")
 ```
 

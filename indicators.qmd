@@ -7,7 +7,7 @@ listing:
   categories: true
   sort-ui: false
   filter-ui: false
-  fields: [title, description, categories]
+  fields: [image, title, description, categories]
   image-height: auto
 page-layout: full
 ---
@@ -19,3 +19,4 @@ alongside it.
 {{< include chunks/coming-soon.qmd >}}
 
 <br>
+
