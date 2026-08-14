@@ -12,8 +12,6 @@ Each indicator below tracks one measurable signal of a changing climate in the U
 
 Deaths of U.S. workers attributed to heat exposure on the job.
 
-![](./indicators/images/cold-related-deaths.png)
-
 ##### Cold-Related Deaths
 
 Deaths in the United States attributed to extreme cold.

@@ -17,9 +17,9 @@ This indicator presents data on deaths classified as “heat-related” in the U
 Data source: CDC, 2024\
 Web update: June 2024
 
-Figure 1
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/heat_deaths_annual.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_fig-1.csv)
 
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_annual.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-1.csv)
+Figure 1
 
 Show the data behind this figure
 
@@ -79,9 +79,9 @@ Figure 2
 Data source: CDC, 2024\
 Web update: June 2024
 
-Figure 3
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/heat_deaths_summer_cvd.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_fig-2.csv)
 
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/heat_deaths_summer_cvd.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_fig-2.csv)
+Figure 3
 
 Show the data behind this figure
 
@@ -121,9 +121,9 @@ Figure 4
 Data source: CDC, 2012; NOAA, 2012\
 Web update: May 2014
 
-Figure 5
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/chicago_1995_heat_wave.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_example.csv)
 
-Download: [tidy CSV](https://github.com/climateindicators/heat-related-deaths/blob/main/data/chicago_1995_heat_wave.csv) · [original EPA file](https://github.com/climateindicators/heat-related-deaths/blob/main/data-raw/heat-deaths_example.csv)
+Figure 5
 
 Show the data behind this figure
 

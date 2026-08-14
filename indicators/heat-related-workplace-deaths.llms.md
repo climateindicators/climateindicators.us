@@ -17,9 +17,9 @@ This feature presents data on worker deaths classified as “heat-related” in 
 Data source: BLS, 2024\
 Web update: June 2024
 
-Figure 1
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/workplace_heat_deaths_annual.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx)
 
-Download: [figure data](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_annual.csv) · [original source workbook](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx)
+Figure 1
 
 This graph shows the number of reported occupational heat-related deaths in the United States each year. The orange portions of the bars show deaths in the construction sector and the blue portions show deaths in all other sectors of the economy. Total construction sector deaths in 2019 fell below the Bureau of Labor Statistics’ reporting threshold; for that year, BLS combined construction into a single “all-industry” total rather than reporting a sector total (shown in green above). BLS has indicated that data collection for 2020 fell below reporting thresholds (no bar that year).
 
@@ -68,11 +68,11 @@ Figure 2
 Data source: BLS, 2024\
 Web update: June 2024
 
+[ Figure image (PNG)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png) [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/workplace_heat_deaths_outdoor_workers_county.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx)
+
 ![County-level map of the United States showing the percentage of each county's workforce in predominantly-outdoor occupations, ranging from under 4 percent (pale yellow) to over 40 percent (dark red), concentrated in parts of the West, the northern and southern Great Plains, and Alaska.](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png)
 
 Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022
-
-Download: [figure image](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png) · [figure data](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data/workplace_heat_deaths_outdoor_workers_county.csv) · [original source workbook](https://github.com/climateindicators/heat-related-workplace-deaths/blob/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx)
 
 This map shows the percentage of each county’s workforce engaged in occupations that typically involve a substantial amount of time outdoors. Job categories included in this analysis include delivery services, law enforcement and emergency services, utilities, mining/quarrying/oil and gas extraction, agriculture, fishing, forestry, and construction. The map shows a five-year average.
 
