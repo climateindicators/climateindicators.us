@@ -44,6 +44,10 @@ How the frost-free season in the contiguous 48 states has lengthened since 1895,
 
 This indicator tracks the rate of reported Lyme disease cases across the United States.
 
+##### Ragweed Pollen Season
+
+Changes in the length of ragweed pollen season in the United States and Canada.
+
 ##### Residential Energy Use
 
 How much electricity and natural gas U.S. homes use for summer cooling and winter heating, alongside cooling and heating degree days.
