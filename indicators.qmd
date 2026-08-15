@@ -16,7 +16,7 @@ Each indicator below tracks one measurable signal of a changing climate in the
 United States, built from public data with the code and sources published
 alongside it.
 
-{{< include chunks/coming-soon.qmd >}}
+{{< include /chunks/coming-soon.qmd >}}
 
 <br>
 

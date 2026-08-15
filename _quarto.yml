@@ -71,10 +71,10 @@ website:
               href: indicators/length-of-growing-season.qmd
             - text: "Growing Degree Days"
               href: indicators/growing-degree-days.qmd
-        - section: "Global Greenhouse Gas Emissions"
-          contents: 
-          - text: "Global Greenhouse Gas Emissions"
-          - href: indicators/global-greenhouse-gas-emissions.qmd
+        - section: "Greenhouse Gasses"
+          contents:
+            - text: "Global Greenhouse Gas Emissions"
+              href: indicators/global-greenhouse-gas-emissions.qmd
 
 
 format:

@@ -6,4 +6,4 @@ execute:
   eval: true
 ---
 
-{{< include chunks/coming-soon.qmd >}}
+{{< include /chunks/coming-soon.qmd >}}
