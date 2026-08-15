@@ -16,6 +16,10 @@ Deaths of U.S. workers attributed to heat exposure on the job.
 
 Deaths in the United States attributed to extreme cold.
 
+##### Global Greenhouse Gas Emissions
+
+This indicator describes emissions of greenhouse gases worldwide.
+
 ##### Growing Degree Days
 
 How the number of growing degree days has changed at 280 long-term weather stations across the contiguous 48 states since 1948, and what that suggests about pollen seasons.
