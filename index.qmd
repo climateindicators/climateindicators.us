@@ -21,7 +21,7 @@ format:
 
 <br>
 
-{{< include chunks/coming-soon.qmd >}}
+{{< include /chunks/coming-soon.qmd >}}
 
 <br>
 

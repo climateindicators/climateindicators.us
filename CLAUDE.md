@@ -283,7 +283,7 @@ Two navbar details that are easy to break:
 4. Add a sidebar entry under the appropriate section in `_quarto.yml`
 5. Add any new package dependency to `DESCRIPTION`, or the GitHub Action will
    not install it
-6. While the page is a stub, include `{{< include ../chunks/coming-soon.qmd >}}`
+6. While the page is a stub, include `{{< include /chunks/coming-soon.qmd >}}`
    rather than writing a one-off placeholder
 
 ### Placeholder Content
