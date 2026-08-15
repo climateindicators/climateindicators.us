@@ -19,13 +19,13 @@ This indicator shows changes in growing degree days, which can signal changes in
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/data/growing_degree_days_change_by_station.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/data-raw/growing-degree-fig-1.csv) [ Figure image (PNG)](https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/images/fig-1.png)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/data/growing_degree_days_change_by_station.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/data-raw/growing-degree-fig-1.csv)
 
-![Map of the contiguous 48 states with a symbol at each of 280 weather stations, sized and coloured by percent change in growing degree days between 1948 and 2023. Large red symbols, marking increases of more than 20 percent, dominate the West and the Northeast; smaller blue symbols, marking decreases, cluster through the central states from the Dakotas down to Texas and across the Ohio Valley.](https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/images/fig-1.png)
+Figure 1
 
-This map shows trends in the total number of growing degree days per year at 280 weather stations. The color and size of the symbols represent percent change between 1948 and 2023, based on the long-term average rate of change.
+This map shows trends in the total number of growing degree days per year at 280 weather stations. The color and size of the symbols represent percent change between 1948 and 2023, based on the long-term average rate of change. Hover any station for its exact value.
 
-This is EPA’s own published map image. The 280 station records behind it, each carrying a latitude, a longitude, and a percent change, are maintained in the [growing-degree-days](https://github.com/climateindicators/growing-degree-days) repository and are available for download above and in the table below.
+This map is rendered here from the 280 station records behind EPA’s Figure 1, each carrying a latitude, a longitude, and a percent change, using EPA’s own seven-class legend. Those records are maintained in the [growing-degree-days](https://github.com/climateindicators/growing-degree-days) repository and are available for download above and in the table below.
 
 Show the data behind this figure
 
@@ -312,7 +312,7 @@ Show the data behind this figure
 | 41.2825°N | 91.7078°W  | -10.20         | -10 to -20       |
 | 40.4517°N | 99.3803°W  | -10.91         | -10 to -20       |
 
-Figure 1
+Figure 2
 
 ## Key Points
 
