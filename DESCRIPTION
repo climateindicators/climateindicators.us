@@ -11,7 +11,9 @@ Imports:
     here,
     knitr,
     ltc,
+    maps,
     readr,
     rmarkdown,
+    sf,
     tidyr,
     yaml

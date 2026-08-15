@@ -336,6 +336,13 @@ main.content {
 // the border box, so overflow:hidden does not clip the hover outline).
 .quarto-grid-item.card { overflow: hidden; }
 
+// Card titles are an <h5>, outside the h1-h4 heading rule above, and sit
+// inside the card's whole-tile <a> — so without this they inherit the link's
+// accent blue instead of reading as a heading.
+.card-title {
+  color: $ink;
+}
+
 // List items: turn the default flex row into a padded card and make the whole
 // card follow the item's title link.
 .quarto-post {
