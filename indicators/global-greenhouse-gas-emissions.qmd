@@ -172,8 +172,7 @@ knitr::kable(fig_3_table(region), digits = 2)
 
 Increasing emissions of greenhouse gases due to human activities worldwide,
 especially burning of fossil fuels, have led to a substantial increase in
-atmospheric concentrations of long-lived and other greenhouse gases (see the
-Atmospheric Concentrations of Greenhouse Gases indicator). Every country
+atmospheric concentrations of long-lived and other greenhouse gases. Every country
 around the world emits greenhouse gases into the atmosphere, meaning the root
 cause of climate change is truly global in scope. Some countries produce far
 more greenhouse gases than others, and several factors—such as economic
@@ -215,7 +214,7 @@ methane has a global warming potential of 25, which means a ton of methane
 emissions contributes 25 times as much warming as a ton of carbon dioxide
 emissions over 100 years, and that ton of methane emissions is therefore
 equal to 25 tons of carbon dioxide equivalents. See [the
-table](https://www.epa.gov/climate-indicators/greenhouse-gases) for global
+table](https://doi.org/10.1017/9781009157926) for global
 warming potentials from IPCC's Sixth Assessment Report.
 
 ## About the Data
