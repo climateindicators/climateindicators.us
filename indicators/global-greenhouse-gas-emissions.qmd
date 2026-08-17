@@ -82,17 +82,10 @@ figure_caption(meta, "ghg_by_sector.csv")
 fig_2(sector)
 ```
 
-This figure shows worldwide greenhouse gas emissions by sector from 1990 to
-2015. For consistency, emissions are expressed in million metric tons of
-carbon dioxide equivalents. These totals include emissions and sinks due to
-land-use change and forestry.
+This figure shows worldwide greenhouse gas emissions by sector from 1990 to 2015. For consistency, emissions are expressed in million metric tons of carbon dioxide equivalents. These totals include emissions and sinks due to land-use change and forestry.
 
-Note that the sectors shown here are different from the economic sectors used
-in U.S. emissions accounting (see the U.S. Greenhouse Gas Emissions
-indicator). Emissions from international transport (aviation and marine) are
-separate from the energy sector because they are not part of individual
-countries' emissions inventories. The energy sector includes all other
-transportation activities.
+Note that the sectors shown here are different from the economic sectors used in U.S. emissions accounting (see the U.S. Greenhouse Gas Emissions
+indicator). Emissions from international transport (aviation and marine) are separate from the energy sector because they are not part of individual countries' emissions inventories. The energy sector includes all other transportation activities.
 
 <details><summary>Show the data behind this figure</summary>
 
