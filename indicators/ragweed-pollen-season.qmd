@@ -1,12 +1,11 @@
 ---
 title: "Ragweed Pollen Season"
-description: "Changes in the length of ragweed pollen season in the United States and Canada."
+description: "This indicator presents data on changes in the length of ragweed pollen season in the United States and Canada."
 categories: [Health, Temperature, Ecosystems]
 execute:
   eval: true
 ---
 
-This indicator presents data on changes in the length of ragweed pollen season in the United States and Canada.
 
 ```{r}
 #| label: setup
