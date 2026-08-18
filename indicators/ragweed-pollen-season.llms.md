@@ -6,8 +6,6 @@ Temperature
 
 Ecosystems
 
-Changes in the length of ragweed pollen season in the United States and Canada.
-
 This indicator presents data on changes in the length of ragweed pollen season in the United States and Canada.
 
 ## Figures

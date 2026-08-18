@@ -6,8 +6,6 @@ Temperature
 
 Deaths of U.S. workers attributed to heat exposure on the job.
 
-This feature presents data on worker deaths classified as “heat-related” in the United States and explores factors that influence exposure and vulnerability to heat.
-
 ## Figures
 
 ## Figure 1

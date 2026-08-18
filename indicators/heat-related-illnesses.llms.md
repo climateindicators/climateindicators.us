@@ -6,8 +6,6 @@ Temperature
 
 Hospitalizations in the United States attributed to extreme heat.
 
-This indicator presents data on hospitalizations classified as “heat-related” in the United States.
-
 ## Figures
 
 ## Figure 1

@@ -6,8 +6,6 @@ Temperature
 
 Deaths in the United States attributed to extreme heat.
 
-This indicator presents data on deaths classified as “heat-related” in the United States.
-
 ## Figures
 
 ## Figure 1

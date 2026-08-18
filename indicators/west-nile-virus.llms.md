@@ -6,8 +6,6 @@ Disease
 
 This indicator tracks the rate of reported West Nile neuroinvasive disease cases across the United States.
 
-This indicator tracks the rate of reported West Nile neuroinvasive disease cases across the United States.
-
 ## Figures
 
 ## Figure 1

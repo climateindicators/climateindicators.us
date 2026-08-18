@@ -6,8 +6,6 @@ Temperature
 
 Deaths in the United States attributed to extreme cold.
 
-This indicator presents data on deaths classified as “cold-related” in the United States.
-
 ## Figures
 
 ## Figure 1

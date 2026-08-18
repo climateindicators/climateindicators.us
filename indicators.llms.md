@@ -46,11 +46,15 @@ This indicator tracks the rate of reported Lyme disease cases across the United 
 
 ##### Ragweed Pollen Season
 
-Changes in the length of ragweed pollen season in the United States and Canada.
+This indicator presents data on changes in the length of ragweed pollen season in the United States and Canada.
 
 ##### Residential Energy Use
 
 How much electricity and natural gas U.S. homes use for summer cooling and winter heating, alongside cooling and heating degree days.
+
+##### U.S. and Global Temperature
+
+How average air temperature has changed across the contiguous United States and worldwide since 1901, and how those changes vary by climate division.
 
 ##### West Nile Virus
 

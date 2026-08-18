@@ -6,8 +6,6 @@ Emissions
 
 This indicator describes emissions of greenhouse gases worldwide.
 
-This indicator describes emissions of greenhouse gases worldwide.
-
 ## Figures
 
 ## Figure 1
