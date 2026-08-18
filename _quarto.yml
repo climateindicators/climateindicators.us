@@ -77,6 +77,10 @@ website:
           contents:
             - text: "Global Greenhouse Gas Emissions"
               href: indicators/global-greenhouse-gas-emissions.qmd
+        - section: "Weather and Climate"
+          contents:
+            - text: "U.S. and Global Temperature"
+              href: indicators/us-and-global-temperature.qmd
 
 
 format:

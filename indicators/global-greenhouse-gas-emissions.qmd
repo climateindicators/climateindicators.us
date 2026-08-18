@@ -6,8 +6,6 @@ execute:
   eval: true
 ---
 
-This indicator describes emissions of greenhouse gases worldwide.
-
 ```{r}
 #| label: setup
 #| include: false

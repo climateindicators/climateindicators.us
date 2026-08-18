@@ -6,7 +6,6 @@ execute:
   eval: true
 ---
 
-This indicator presents data on hospitalizations classified as "heat-related" in the United States.
 
 ```{r}
 #| label: setup
