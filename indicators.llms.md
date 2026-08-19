@@ -52,6 +52,10 @@ This indicator presents data on changes in the length of ragweed pollen season i
 
 How much electricity and natural gas U.S. homes use for summer cooling and winter heating, alongside cooling and heating degree days.
 
+##### Seasonal Temperature
+
+Trends in average seasonal air temperature across the contiguous United States since 1896, and how the change varies by season and by state.
+
 ##### U.S. and Global Temperature
 
 How average air temperature has changed across the contiguous United States and worldwide since 1901, and how those changes vary by climate division.
