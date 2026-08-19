@@ -47,11 +47,13 @@ This figure shows the average temperature for each season across the contiguous 
 
 <details><summary>Show the data behind this figure</summary>
 
+::: {.table-scroll}
 ```{r}
 #| label: fig-1-table
 #| echo: false
 knitr::kable(fig_1_table(annual), digits = 2)
 ```
+:::
 
 </details>
 
