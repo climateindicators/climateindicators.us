@@ -43,15 +43,17 @@ figure_caption(meta, "seasonal_temp_annual.csv")
 fig_1(annual)
 ```
 
-This figure shows the average temperature for each season across the contiguous 48 states, as an anomaly from the 1901–2000 average. Winter (orange) swings the widest from year to year and has warmed the most since 1896; spring, summer, and fall have warmed more steadily.
+This figure shows the average temperature for each season across the contiguous 48 states, as an anomaly from the 1901–2000 average. Winter (orange) swings the widest from year to year and has warmed the most since 1896; spring, summer, and fall have warmed more steadily (see "Show the data behind this figure" for a clearer view of the data).
 
 <details><summary>Show the data behind this figure</summary>
 
+::: {.table-scroll}
 ```{r}
 #| label: fig-1-table
 #| echo: false
 knitr::kable(fig_1_table(annual), digits = 2)
 ```
+:::
 
 </details>
 

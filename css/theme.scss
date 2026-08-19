@@ -456,6 +456,25 @@ table thead th {
   background: $rule;
 }
 
+// A long per-year table (e.g. seasonal-temperature Figure 1) gets capped at a
+// fixed height with its own scrollbar instead of sprawling the full row count
+// down the page. The sticky header keeps the column names visible while
+// scrolling.
+.table-scroll {
+  max-height: 420px;
+  overflow-y: auto;
+  border: 1px solid $rule;
+  border-radius: 4px;
+
+  table { margin-bottom: 0; }
+
+  thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}
+
 /* Images */
 .image-with-border {
   border: 1px solid $rule;
