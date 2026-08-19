@@ -19,7 +19,7 @@ Web update: June 2024
 
 Figure 1
 
-This figure shows the average temperature for each season across the contiguous 48 states, as an anomaly from the 1901–2000 average. Winter (orange) swings the widest from year to year and has warmed the most since 1896; spring, summer, and fall have warmed more steadily.
+This figure shows the average temperature for each season across the contiguous 48 states, as an anomaly from the 1901–2000 average. Winter (orange) swings the widest from year to year and has warmed the most since 1896; spring, summer, and fall have warmed more steadily (see “Show the data behind this figure” for a clearer view of the data).
 
 Show the data behind this figure
 
