@@ -50,15 +50,27 @@ area_plot <- function(d, colours, breaks, y_title, tip_what) {
     legend_top()
 }
 
-# Role order: highs are the baseline the reader reads lows against, and EPA's
-# own Key Points single out the lows as having risen faster, so lows take the
-# focus slot.
+# EPA's own caption names colours directly: "Red lines represent daily highs,
+# while orange lines represent daily lows." series_colours()'s default role
+# order would put the first key on `base`, the palette's blue, which flatly
+# contradicts "red" for highs. `focus` (#FC4E07, a saturated red-orange) is the
+# only slot in INDICATOR_PALETTE that reads as red, so it goes to highs; `extra`
+# (#E7B800, gold) is the closest remaining warm slot and goes to lows, reading
+# close enough to "orange" against the caption. Verified against the rendered
+# chart, not assumed: this is the trap CLAUDE.md calls out by name.
 FIG1_KEYS <- c("hot_highs", "hot_lows")
+
+fig_1_colours <- function(d) {
+  stats::setNames(
+    unname(INDICATOR_PALETTE[c("focus", "extra")]),
+    d$series_label[match(FIG1_KEYS, d$series_key)]
+  )
+}
 
 fig_1_plot <- function(d) {
   area_plot(
     d,
-    colours  = label_colours(d, "series_key", "series_label", FIG1_KEYS),
+    colours  = fig_1_colours(d),
     breaks   = label_order(d, "series_key", "series_label", FIG1_KEYS),
     y_title  = "Land area with unusually hot summer temperatures",
     tip_what = "unusually hot"
@@ -67,12 +79,11 @@ fig_1_plot <- function(d) {
 
 fig_1 <- function(d) girafe_indicator(fig_1_plot(d))
 
-# Figure 2 does not use series_colours(): the default role order would put the
-# focus slot's orange on "unusually cold daily lows", drawing the coldest series
-# on the page in the warmest colour the palette has. The two cold series take
-# the blue and plum slots instead, which keeps this figure reading cold against
-# Figure 1's warm one in the adjacent tab, and happens to be the pairing EPA
-# used. Both colours still come from INDICATOR_PALETTE by name.
+# Same trap as Figure 1, but EPA's own colour choice for this figure happens to
+# be exactly the default: "Blue lines represent daily highs, while purple lines
+# represent daily lows." `base` is the palette's blue and `other` its plum,
+# which reads as purple, so this one needs no override. Verified against the
+# rendered chart, not assumed.
 fig_2_colours <- function(d) {
   keys <- c("cold_highs", "cold_lows")
   stats::setNames(
