@@ -83,6 +83,8 @@ website:
               href: indicators/us-and-global-temperature.qmd
             - text: "Seasonal Temperature"
               href: indicators/seasonal-temperature.qmd
+            - text: "High and Low Temperatures"
+              href: indicators/high-and-low-temperatures.qmd
 
 
 format:
