@@ -24,6 +24,10 @@ This indicator describes emissions of greenhouse gases worldwide.
 
 How the number of growing degree days has changed at 280 long-term weather stations across the contiguous 48 states since 1948, and what that suggests about pollen seasons.
 
+##### Heat Waves
+
+How the frequency, duration, season length, and intensity of heat waves have changed in 50 large U.S. cities since 1961, and how the U.S. Annual Heat Wave Index has varied…
+
 ##### Heat-Related Deaths
 
 Deaths in the United States attributed to extreme heat.
@@ -35,6 +39,10 @@ Hospitalizations in the United States attributed to extreme heat.
 ##### Heating and Cooling Degree Days
 
 Trends in the energy demand implied by outdoor temperatures, nationally and by state.
+
+##### High and Low Temperatures
+
+Trends in unusually hot and cold temperatures across the United States.
 
 ##### Length of Growing Season
 
