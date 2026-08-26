@@ -6,7 +6,6 @@ execute:
   eval: true
 ---
 
-This indicator describes trends in multi-day extreme heat events across the United States.
 
 ```{r}
 #| label: setup
