@@ -116,7 +116,7 @@ knitr::kable(fig_2_table(annual_high), digits = 3)
   precipitation totals increased between 1895 and 2023. There has been much
   year-to-year variability, however. In some years there were no abnormally
   wet areas, while a few others had abnormally high precipitation totals
-  over 10 percent or more of the contiguous 48 states' land area (see
+  over 10 percent or more of the contiguous 48 states’ land area (see
   Figure 2). For example, 1941 was extremely wet in the West, while 1983
   was very wet nationwide.^[3](#ref-3)^
 
@@ -128,7 +128,7 @@ knitr::kable(fig_2_table(annual_high), digits = 3)
 
 ## Background
 
-"Heavy precipitation" refers to instances during which the amount of rain
+“Heavy precipitation” refers to instances during which the amount of rain
 or snow experienced in a location substantially exceeds what is normal.
 What constitutes a period of heavy precipitation varies according to
 location and season.
@@ -161,7 +161,7 @@ precipitation in a certain period (for example, inches of rain falling in
 a 24-hour period).
 
 One way to track heavy precipitation is by calculating what percentage of
-a particular location's total precipitation in a given year has come in
+a particular location’s total precipitation in a given year has come in
 the form of extreme one-day events—or, in other words, what percentage of
 precipitation is arriving in more concentrated periods of time. Figure 1
 of this indicator looks at the prevalence of extreme single-day
@@ -194,8 +194,8 @@ conditions accurately.
 
 The data used for this indicator come from a large national network of
 weather stations and were provided by the National Oceanic and Atmospheric
-Administration's (NOAA's) National Centers for Environmental Information.
-Figure 1 is based on Step #4 of NOAA's U.S. Climate Extremes Index; for
+Administration’s (NOAA’s) National Centers for Environmental Information.
+Figure 1 is based on Step #4 of NOAA’s U.S. Climate Extremes Index; for
 data and a description of the index, see:
 [www.ncei.noaa.gov/access/monitoring/cei](https://www.ncei.noaa.gov/access/monitoring/cei).
 Figure 2 is based on the U.S. SPI, which is shown in a variety of maps
