@@ -6,8 +6,6 @@ Temperature
 
 How the frequency, duration, season length, and intensity of heat waves have changed in 50 large U.S. cities since 1961, and how the U.S. Annual Heat Wave Index has varied since 1895.
 
-This indicator describes trends in multi-day extreme heat events across the United States.
-
 ## Figures
 
 ## Figure 1

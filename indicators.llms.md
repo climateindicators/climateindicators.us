@@ -40,6 +40,10 @@ Hospitalizations in the United States attributed to extreme heat.
 
 Trends in the energy demand implied by outdoor temperatures, nationally and by state.
 
+##### Heavy Precipitation
+
+This indicator tracks how the frequency and intensity of heavy precipitation events have changed across the United States.
+
 ##### High and Low Temperatures
 
 Trends in unusually hot and cold temperatures across the United States.
