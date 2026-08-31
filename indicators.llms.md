@@ -64,6 +64,10 @@ This indicator presents data on changes in the length of ragweed pollen season i
 
 How much electricity and natural gas U.S. homes use for summer cooling and winter heating, alongside cooling and heating degree days.
 
+##### River Flooding
+
+How the magnitude and frequency of river flooding have changed at stream gauge stations across the United States since 1965.
+
 ##### Seasonal Temperature
 
 Trends in average seasonal air temperature across the contiguous United States since 1896, and how the change varies by season and by state.
