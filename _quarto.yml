@@ -89,6 +89,8 @@ website:
               href: indicators/heat-waves.qmd
             - text: "Heavy Precipitation"
               href: indicators/heavy-precipitation.qmd
+            - text: "Tropical Cyclone Activity"
+              href: indicators/tropical-cyclone-activity.qmd
 
 
 format:
