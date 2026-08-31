@@ -1,0 +1,191 @@
+---
+title: "Tropical Cyclone Activity"
+description: "Frequency and intensity of hurricanes and other tropical storms in the North Atlantic."
+categories: [Weather and Climate, Storms]
+execute:
+  eval: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+source(here::here("R", "common.R"))
+source(here::here("R", "tropical-cyclone-activity.R"))
+
+meta      <- read_meta(REPO)
+hurricanes <- read_indicator(REPO, "cyclones_hurricane_counts.csv")
+ace       <- read_indicator(REPO, "cyclones_ace_index.csv")
+pdi_sst   <- read_indicator(REPO, "cyclones_pdi_sst.csv")
+```
+
+## Figures
+
+::::: {.panel-tabset}
+
+### Figure 1
+
+```{r}
+#| label: fig-1-caption
+#| echo: false
+#| output: asis
+figure_caption(meta, "cyclones_hurricane_counts.csv")
+```
+
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data/cyclones_hurricane_counts.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data-raw/cyclones_fig-1.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
+</div>
+
+```{r}
+#| label: fig-1
+#| echo: false
+fig_1(hurricanes)
+```
+
+This figure shows the number of hurricanes that formed in the North Atlantic Ocean each year, along with the number that made landfall in the United States. The total count can be adjusted to attempt to account for the lack of aircraft and satellite observations in early years. All three curves have been smoothed using a five-year average, plotted at the middle year.
+
+<details><summary>Show the data behind this figure</summary>
+
+```{r}
+#| label: fig-1-table
+#| echo: false
+knitr::kable(fig_1_table(hurricanes), digits = 2)
+```
+
+</details>
+
+### Figure 2
+
+```{r}
+#| label: fig-2-caption
+#| echo: false
+#| output: asis
+figure_caption(meta, "cyclones_ace_index.csv")
+```
+
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data/cyclones_ace_index.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data-raw/cyclones_fig-2.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
+</div>
+
+```{r}
+#| label: fig-2
+#| echo: false
+fig_2(ace)
+```
+
+This figure shows total annual Accumulated Cyclone Energy (ACE) Index values, which account for cyclone strength, duration, and frequency. The index is expressed as a percentage of its 1951-2020 median (the dashed line at 100%).
+
+<details><summary>Show the data behind this figure</summary>
+
+```{r}
+#| label: fig-2-table
+#| echo: false
+knitr::kable(fig_2_table(ace), digits = 1)
+```
+
+</details>
+
+### Figure 3
+
+```{r}
+#| label: fig-3-caption
+#| echo: false
+#| output: asis
+figure_caption(meta, "cyclones_pdi_sst.csv")
+```
+
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data/cyclones_pdi_sst.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data-raw/cyclones_fig-3.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
+</div>
+
+```{r}
+#| label: fig-3
+#| echo: false
+fig_3(pdi_sst)
+```
+
+This figure presents annual values of the Power Dissipation Index (PDI), which accounts for cyclone strength, duration, and frequency, alongside tropical North Atlantic sea surface temperature for reference. Sea surface temperature is measured in different units, so the two series are shown in separate panels rather than on one shared axis. Both have been smoothed using a five-year weighted average, plotted at the middle year.
+
+<details><summary>Show the data behind this figure</summary>
+
+```{r}
+#| label: fig-3-table
+#| echo: false
+knitr::kable(fig_3_table(pdi_sst), digits = 2)
+```
+
+</details>
+
+:::::
+
+## Key Points
+
+- Since 1878, about six to seven hurricanes have formed in the North Atlantic every year. Roughly two per year make landfall in the United States. The total number of hurricanes (particularly after being adjusted for improvements in observation methods) and the number reaching the United States do not indicate a clear overall trend since 1878 (see Figure 1).
+
+- According to the total annual ACE Index, cyclone intensity has risen noticeably over the past 30 years, and eight of the 10 most active years since 1950 have occurred since the mid-1990s (see Figure 2). Relatively high levels of cyclone activity were also seen during the 1950s and 1960s.
+
+- The PDI (see Figure 3) shows fluctuating cyclone intensity for most of the mid- to late 20th century, followed by a noticeable increase since 1995 (similar to the ACE Index). These trends are shown with associated variations in sea surface temperature in the tropical North Atlantic for comparison (see Figure 3).
+
+- The results described above generally align with global trends reported in the most recent assessment by the Intergovernmental Panel on Climate Change. Studies generally agree that tropical cyclone intensity has increased around the world over approximately the past 40 years, but changes in observation methods over time make it difficult to know whether intensity or frequency have increased over the full period with available data.^[1](#ref-1)^
+
+## Background
+
+Hurricanes, tropical storms, and other intense rotating storms fall into a general category called cyclones. There are two main types of cyclones: tropical and extratropical (those that form outside the tropics). Tropical cyclones get their energy from warm tropical oceans. Extratropical cyclones get their energy from the jet stream and from temperature differences between cold, dry air masses from higher latitudes and warm, moist air masses from lower latitudes.
+
+This indicator focuses on tropical cyclones in the Atlantic Ocean, Caribbean, and Gulf of Mexico. Tropical cyclones are most common during the "hurricane season," which runs from June through November. The effects of tropical cyclones are numerous and well known. At sea, storms disrupt and endanger shipping traffic. When cyclones encounter land, their intense rains and high winds can cause severe property and infrastructure damage, loss of life, soil erosion, and flooding. The associated storm surge, the large volume of ocean water pushed toward shore by the cyclone's strong winds, can cause severe flooding, erosion, and destruction.
+
+Climate change is expected to affect tropical cyclones by increasing sea surface temperatures, a key factor that influences cyclone formation and behavior. The U.S. Global Change Research Program and the Intergovernmental Panel on Climate Change project that tropical cyclones will become more intense over the 21st century, with higher wind speeds and heavier rains.^[1](#ref-1),[2](#ref-2)^
+
+## About the Indicator
+
+Records of tropical cyclones in the Atlantic Ocean have been collected since the 1800s. The most reliable long-term records focus on hurricanes, which are the strongest category of tropical cyclones in the Atlantic, with wind speeds of at least 74 miles per hour. This indicator uses historical data from the National Oceanic and Atmospheric Administration to track the number of hurricanes per year in the North Atlantic (north of the equator) and the number reaching the United States since 1878. Some hurricanes over the ocean might have been missed before the start of aircraft and satellite observation, so scientists have used other evidence, such as ship traffic records, to estimate the actual number of hurricanes that might have formed in earlier years.
+
+This indicator also looks at the Accumulated Cyclone Energy (ACE) Index and the Power Dissipation Index (PDI), which are two ways of monitoring the frequency, strength, and duration of tropical cyclones based on wind speed measurements.
+
+Every cyclone has an ACE Index value, which is a number based on the maximum wind speed measured at six-hour intervals over the entire time that the cyclone is classified as at least a tropical storm (wind speed of at least 39 miles per hour). Therefore, a storm's ACE Index value accounts for both strength and duration. The National Oceanic and Atmospheric Administration calculates the total ACE Index value for an entire hurricane season by adding the values for all named storms, including subtropical storms, tropical storms, and hurricanes. The resulting annual total accounts for cyclone strength, duration, and frequency. For this indicator, the index has been converted to a scale where 100 equals the median value (the midpoint) over a base period from 1951 to 2020. The thresholds in Figure 2 define whether the ACE Index for a given year is close to normal, significantly above normal, or significantly below normal.
+
+Like the ACE Index, the PDI is based on measurements of wind speed, but it uses a different calculation method that places more emphasis on storm intensity. This indicator shows the annual PDI value, which represents the sum of PDI values for all named storms during the year.
+
+## About the Data
+
+### Indicator Notes
+
+Over time, data collection methods have changed as technology has improved. For example, wind speed collection methods have evolved substantially over the past 60 years, while aircraft reconnaissance began in 1944 and satellite tracking around 1966. Figure 1 shows how older hurricane counts have been adjusted to attempt to account for the lack of aircraft and satellite observations. Changes in data gathering technologies could substantially influence the overall patterns in Figures 2 and 3. The effects of these changes on data consistency over the life of the indicator would benefit from additional research.
+
+While Figures 2 and 3 cover several different aspects of tropical cyclones, there are other important factors not covered here, including the size of each storm, the amount of rain, and the height of the storm surge. The reason for the recent divergence between cyclone activity and sea surface temperature in Figure 3 has not been identified conclusively, but it may relate to other factors that influence the formation of storms, such as the difference in wind speeds at different levels in the atmosphere (called vertical wind shear) and the concentration of particles called aerosols in the atmosphere.^[1](#ref-1),[6](#ref-6)^
+
+### Data Sources
+
+Hurricane counts were compiled using methods described in Knutson et al. (2010).^[7](#ref-7)^ Data for Figures 1 and 2 came from the National Oceanic and Atmospheric Administration's Hurricane Research Division, and are available online at: [www.aoml.noaa.gov/hrd/hurdat/comparison_table.html](https://www.aoml.noaa.gov/hrd/hurdat/comparison_table.html). Values for Figure 3 have been calculated by Kerry Emanuel at the Massachusetts Institute of Technology. Both the ACE Index and the PDI are based on wind speed measurements compiled by the National Oceanic and Atmospheric Administration.
+
+## Technical Documentation
+
+```{r}
+#| label: td-link
+#| echo: false
+#| output: asis
+technical_documentation_link(meta)
+```
+
+## References
+
+<ol class="references">
+  <li id="ref-1">IPCC (Intergovernmental Panel on Climate Change). (2021). _Climate change 2021—The physical science basis: Working Group I contribution to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change_ (V. Masson-Delmotte, P. Zhai, A. Pirani, S. L. Connors, C. Péan, S. Berger, N. Caud, Y. Chen, L. Goldfarb, M. I. Gomis, M. Huang, K. Leitzell, E. Lonnoy, J. B. R. Matthews, T. K. Maycock, T. Waterfield, O. Yelekçi, R. Yu, & B. Zhou, Eds.). Cambridge University Press. https://doi.org/10.1017/9781009157896</li>
+  <li id="ref-2">USGCRP (U.S. Global Change Research Program). (2023). _Fifth National Climate Assessment_ (A. R. Crimmins, C. W. Avery, D. R. Easterling, K. E. Kunkel, B. C. Stewart, & T. K. Maycock, Eds.). https://doi.org/10.7930/NCA5.2023</li>
+  <li id="ref-3">NOAA (National Oceanic and Atmospheric Administration). (2023). _North Atlantic hurricane basin (1851–2022): Comparison of original and revised HURDAT_. www.aoml.noaa.gov/hrd/hurdat/comparison_table.html</li>
+  <li id="ref-4">Vecchi, G. A., & Knutson, T. R. (2011). Estimating annual numbers of Atlantic hurricanes missing from the HURDAT database (1878–1965) using ship track density. _Journal of Climate_, _24_(6), 1736–1746. https://doi.org/10.1175/2010JCLI3810.1</li>
+  <li id="ref-5">Emanuel, K. A. (2023). Update to data originally published in Emanuel, K. (2007). Environmental factors affecting tropical cyclone power dissipation. _Journal of Climate_, _20_(22), 5497–5509. https://doi.org/10.1175/2007JCLI1571.1</li>
+  <li id="ref-6">Intergovernmental Panel on Climate Change. (2012). _Managing the risks of extreme events and disasters to advance climate change adaptation: Special report of the Intergovernmental Panel on Climate Change_. Cambridge University Press. www.ipcc.ch/pdf/special-reports/srex/SREX_Full_Report.pdf</li>
+  <li id="ref-7">Knutson, T. R., McBride, J. L., Chan, J., Emanuel, K., Holland, G., Landsea, C., Held, I., Kossin, J. P., Srivastava, A. K., & Sugi, M. (2010). Tropical cyclones and climate change. _Nature Geoscience_, _3_(3), 157–163. https://doi.org/10.1038/ngeo779</li>
+</ol>
+
+::: {.callout-note appearance="simple" icon=false}
+Text on this page is EPA's own published wording (a U.S. Government work, not
+subject to domestic copyright), extracted from EPA's source document and
+verified paragraph by paragraph against the published page. Data, chart code,
+and the full extraction pipeline are maintained in the
+[tropical-cyclone-activity](https://github.com/climateindicators/tropical-cyclone-activity)
+repository, which this page reads its data from directly.
+:::
