@@ -6,7 +6,6 @@ execute:
   eval: true
 ---
 
-This indicator tracks the rate of reported Lyme disease cases across the United States.
 
 ```{r}
 #| label: setup
