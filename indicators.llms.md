@@ -16,6 +16,10 @@ Deaths of U.S. workers attributed to heat exposure on the job.
 
 Deaths in the United States attributed to extreme cold.
 
+##### Drought
+
+Tracks drought conditions across the United States using the Palmer Index, the SPEI, and the U.S. Drought Monitor.
+
 ##### Global Greenhouse Gas Emissions
 
 This indicator describes emissions of greenhouse gases worldwide.
