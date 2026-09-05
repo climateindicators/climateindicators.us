@@ -91,6 +91,8 @@ website:
               href: indicators/heavy-precipitation.qmd
             - text: "Drought"
               href: indicators/drought.qmd
+            - text: "Drought (new workflow)"
+              href: indicators/drought-new.qmd
             - text: "River Flooding"
               href: indicators/river-flooding.qmd
             - text: "River Flooding (new workflow)"
