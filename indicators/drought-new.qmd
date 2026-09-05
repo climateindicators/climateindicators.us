@@ -1,6 +1,5 @@
 ---
 title: "Drought (new workflow)"
-subtitle: "This indicator measures drought conditions of U.S. lands."
 description: "Palmer Index, SPEI, and U.S. Drought Monitor measures of how dry the United States has been since 1895."
 categories: [Weather and Climate, Drought]
 execute:
@@ -19,6 +18,8 @@ spei    <- read_indicator(REPO, "drought_spei_national.csv")
 change  <- read_indicator(REPO, "drought_spei_change.csv")
 monitor <- read_indicator(REPO, "drought_monitor_area.csv")
 ```
+
+This indicator measures drought conditions of U.S. lands.
 
 ## Figures
 
