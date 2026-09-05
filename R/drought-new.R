@@ -97,8 +97,9 @@ fig_3_plot <- function(d) {
   d$direction <- ifelse(d$value >= 0, "wetter", "drier")
   d$state     <- state.name[match(d$state, state.abb)]
 
-  # States read top to bottom from driest to wettest, so the western block EPA's
-  # Key Points describe gathers at one end instead of scattering alphabetically.
+  # States read wettest at the top down to driest at the bottom, so the western
+  # block EPA's Key Points describe gathers at one end of the axis instead of
+  # scattering through an alphabetical list.
   d$state <- factor(d$state, levels = names(sort(tapply(d$value, d$state, stats::median))))
 
   d$tooltip <- sprintf("%s, %s\n%s change in five-year SPEI",
@@ -167,9 +168,12 @@ fig_4_plot <- function(d) {
       position = position_stack(reverse = TRUE), linewidth = 0
     ) +
     scale_fill_manual(values = fig_4_colours(), labels = labels) +
-    scale_x_date(date_breaks = "4 years", date_labels = "%Y", expand = expansion(mult = 0.01)) +
+    scale_x_date(breaks = seq(as.Date("2000-01-01"), max(d$date), by = "4 years"),
+                 date_labels = "%Y", expand = expansion(mult = 0.01)) +
     scale_y_continuous(labels = scales::label_percent(scale = 1),
                        expand = expansion(mult = c(0, 0.05))) +
+    # Five class names do not fit on one row at the width the page renders at.
+    guides(fill = guide_legend(nrow = 2)) +
     labs(x = NULL, y = "Percent of U.S. land area") +
     theme_indicator() +
     legend_top()
