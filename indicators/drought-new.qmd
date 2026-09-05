@@ -19,8 +19,6 @@ change  <- read_indicator(REPO, "drought_spei_change.csv")
 monitor <- read_indicator(REPO, "drought_monitor_area.csv")
 ```
 
-This indicator measures drought conditions of U.S. lands.
-
 ## Figures
 
 ::::: {.panel-tabset}
