@@ -26,13 +26,13 @@ monitor <- read_indicator(REPO, "drought_monitor_area.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 figure_caption(meta, "drought_palmer_index.csv")
 ```
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 fig_1(palmer)
 ```
 
@@ -42,7 +42,7 @@ This chart shows annual values of the Palmer Drought Severity Index, averaged ov
 <summary>Data</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(palmer))
 ```
@@ -55,13 +55,13 @@ knitr::kable(fig_1_table(palmer))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 figure_caption(meta, "drought_spei_national.csv")
 ```
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 fig_2(spei)
 ```
 
@@ -71,7 +71,7 @@ This graph shows annual values of the SPEI, averaged over the entire area of the
 <summary>Data</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(spei))
 ```
@@ -84,13 +84,13 @@ knitr::kable(fig_2_table(spei))
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 figure_caption(meta, "drought_spei_change.csv")
 ```
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 fig_3(change)
 ```
 
@@ -104,7 +104,7 @@ EPA draws this figure as a map of the 344 NOAA climate divisions. Climate-divisi
 <summary>Data</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(change))
 ```
@@ -117,13 +117,13 @@ knitr::kable(fig_3_table(change))
 ### Figure 4
 
 ```{r}
-#| label: fig-4-caption
+#| label: caption-4
 #| echo: false
 figure_caption(meta, "drought_monitor_area.csv")
 ```
 
 ```{r}
-#| label: fig-4
+#| label: chart-4
 fig_4(monitor)
 ```
 
@@ -147,7 +147,7 @@ Experts update the U.S. Drought Monitor weekly and produce maps that illustrate 
 <summary>Data</summary>
 
 ```{r}
-#| label: fig-4-table
+#| label: table-4
 #| echo: false
 knitr::kable(fig_4_table(monitor))
 ```
