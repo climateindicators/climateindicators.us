@@ -1,6 +1,6 @@
 ---
 title: "Drought (new workflow)"
-description: "Palmer Index, SPEI, and U.S. Drought Monitor measures of how dry the United States has been since 1895."
+description: "This indicator measures drought conditions of U.S. lands."
 categories: [Weather and Climate, Drought]
 execute:
   eval: true
