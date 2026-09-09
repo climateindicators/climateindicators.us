@@ -45,7 +45,7 @@ Current indicator repositories:
 
 | Indicator | Repository |
 | --- | --- |
-| Heat-Related Deaths | `heat-related-deaths` |
+| Heat-Related Deaths | `heat-related-deaths-new` |
 | Cold-Related Deaths | `cold-related-deaths` |
 | Heat-Related Workplace Deaths | `heat-related-workplace-deaths` |
 | Lyme Disease | `lyme-disease` |

@@ -33,8 +33,8 @@ figure_caption(meta, "heat_deaths_annual.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/heat_deaths_annual.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_fig-1.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data/heat_deaths_annual.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data-raw/heat-deaths_fig-1.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
 </div>
 
 ```{r}
@@ -63,8 +63,8 @@ figure_caption(meta, "heat_deaths_summer_cvd.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/heat_deaths_summer_cvd.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_fig-2.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data/heat_deaths_summer_cvd.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data-raw/heat-deaths_fig-2.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
 </div>
 
 ```{r}
@@ -93,8 +93,8 @@ figure_caption(meta, "chicago_1995_heat_wave.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/chicago_1995_heat_wave.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_example.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data/chicago_1995_heat_wave.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data-raw/heat-deaths_example.csv" download><i class="bi bi-filetype-csv"></i> EPA source file (CSV)</a>
 </div>
 
 ```{r}
@@ -199,11 +199,9 @@ technical_documentation_link(meta)
 
 ::: {.callout-note appearance="simple" icon=false}
 Text on this page is EPA's own published wording (a U.S. Government work, not
-subject to domestic copyright), extracted from EPA's source document and
-verified paragraph by paragraph against the published page. One correction was
-applied: two CDC URLs in Data Sources had changed on the live page since the
-archived source document was finalized. Data, chart code, and the full
-extraction pipeline are maintained in the
-[heat-related-deaths](https://github.com/climateindicators/heat-related-deaths)
+subject to domestic copyright), extracted from EPA's published indicator page
+and verified paragraph by paragraph against the archived HTML. Data, chart
+code, and the full extraction pipeline are maintained in the
+[heat-related-deaths-new](https://github.com/climateindicators/heat-related-deaths-new)
 repository, which this page reads its data from directly.
 :::
