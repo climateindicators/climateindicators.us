@@ -79,6 +79,6 @@ fig_1_table <- function(d) {
 }
 
 # Example 1 (the county-level outdoor-workers map) has no figure function.
-# Upstream it is EPA's own published map image, and its county-level CSV is a
-# download rather than a rendered table: 3,274 rows, one per county, with no
-# `value` column for read_indicator() to coerce.
+# Upstream it is EPA's own published map image, and its area-level CSV is a
+# download rather than a rendered table: 4,426 rows, too many to render
+# inline as a table.
