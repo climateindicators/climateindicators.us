@@ -11,30 +11,26 @@ station_points <- function(d) {
   d
 }
 
-# EPA reports these trend statistics to a handful of decimal places in its own
-# prose (e.g. "0.325"); the full, unrounded value stays in the tooltip's
-# underlying data and in the table.
 fmt <- function(x) sprintf("%.3f", x)
 
 COVERAGE <- "1965-2015"
 
-# CONUS state polygons for the basemap. Not indicator data, but bundled
-# geometry shipped with the maps package and not fetched over the network, so
-# it is built here rather than threaded in from the page's setup chunk.
+# CONUS state polygons for the basemap. Not indicator data, but bundled geometry
+# shipped with the maps package and not fetched over the network, so it is built
+# here rather than threaded in from the page's setup chunk.
 us_states <- function() {
   sf::st_as_sf(maps::map("state", plot = FALSE, fill = TRUE))
 }
 
 # NAD83 / Conus Albers (EPSG:5070): the standard equal-area projection for
-# CONUS-wide maps, so state shapes and station spacing read correctly instead
-# of the straight-line distortion of unprojected lon/lat.
+# CONUS-wide maps, so state shapes and station spacing read correctly instead of
+# the straight-line distortion of unprojected lon/lat.
 MAP_CRS <- 5070
 
-# Unlike most mapped indicators on this site, this one's reference-gauge
-# network reaches well outside the Conus Albers projection's area: Alaska,
-# Hawaii, and Puerto Rico all have stations. There is no station name or state
-# code upstream, only coordinates, so membership is decided by a coordinate
-# box rather than by a lookup column.
+# This indicator's reference-gauge network reaches outside the Conus Albers
+# panel: Alaska, Hawaii, and Puerto Rico all have stations. There is no station
+# name or state code upstream, only coordinates, so membership is decided by a
+# coordinate box rather than by a lookup column.
 is_offmap <- function(d) {
   (d$latitude > 50 & d$longitude < -125) |                        # Alaska
     (d$longitude < -152 & d$longitude > -161 & d$latitude < 23) | # Hawaii
@@ -51,22 +47,23 @@ offmap_region <- function(d) {
 conus  <- function(d) d[!is_offmap(d), , drop = FALSE]
 offmap <- function(d) d[is_offmap(d), , drop = FALSE]
 
-# Direction reads through colour and shape, mirroring EPA's own up/down
-# triangle symbols in Figures 1 and 2: a triangle pointing up where the trend
-# increased, down where it decreased. EPA's figure additionally distinguishes
-# statistically significant stations with a larger, solid symbol; that
-# classification is not in the published data file (see data/meta.yml's note
-# on both datasets), so it cannot be reproduced here. Magnitude instead reads
-# through size, scaled within each figure so it uses its full size range; the
-# real value is in the tooltip and in the table, both unrounded upstream.
+# Direction reads through colour and shape. The shapes mirror EPA's own up/down
+# triangles, and the two palette roles are picked for hue rather than for their
+# usual focus/base meaning: EPA's caption, reproduced verbatim on this page,
+# tells the reader that blue marks locations where floods grew and a warm colour
+# marks where they shrank. `base` is the palette's blue and `focus` its warmest
+# slot, so this mapping keeps the caption and the map saying the same thing.
 direction_colours <- function() {
   stats::setNames(
-    c(INDICATOR_PALETTE[["focus"]], INDICATOR_PALETTE[["base"]]),
+    c(INDICATOR_PALETTE[["base"]], INDICATOR_PALETTE[["focus"]]),
     c("increase", "decrease")
   )
 }
 DIRECTION_SHAPES <- c(increase = 24L, decrease = 25L) # filled triangle up / down
-DIRECTION_LABELS <- c(increase = "Increase", decrease = "Decrease")
+DIRECTION_LABELS <- c(increase = "Floods grew", decrease = "Floods shrank")
+
+# Labels for Figure 2, where the same two directions mean frequency, not size.
+FREQUENCY_LABELS <- c(increase = "More frequent", decrease = "Less frequent")
 
 prep <- function(d) {
   d <- station_points(d)
@@ -77,16 +74,16 @@ prep <- function(d) {
   d
 }
 
-station_tooltip <- function(d, unit_label) {
+station_tooltip <- function(d, unit_label, labels) {
   sprintf(
     "%.4f°N, %.4f°W\n%s, %s\n%s %s",
     d$latitude, abs(d$longitude),
-    ifelse(d$value >= 0, "Increase", "Decrease"), COVERAGE,
+    unname(labels[as.character(d$direction)]), COVERAGE,
     fmt(d$value), unit_label
   )
 }
 
-station_map_plot <- function(d, unit_label) {
+station_map_plot <- function(d, unit_label, labels) {
   d <- conus(prep(d))
 
   ggplot(d) +
@@ -99,12 +96,12 @@ station_map_plot <- function(d, unit_label) {
         x = longitude, y = latitude, fill = direction, shape = direction,
         size = sqrt(rel_mag),
         data_id = paste(round(longitude, 4), round(latitude, 4), sep = "/"),
-        tooltip = station_tooltip(d, unit_label)
+        tooltip = station_tooltip(d, unit_label, labels)
       ),
       colour = CHART_GREY[["surface"]], stroke = 0.4, alpha = 0.9
     ) +
-    scale_fill_manual(values = direction_colours(), labels = DIRECTION_LABELS) +
-    scale_shape_manual(values = DIRECTION_SHAPES, labels = DIRECTION_LABELS) +
+    scale_fill_manual(values = direction_colours(), labels = labels) +
+    scale_shape_manual(values = DIRECTION_SHAPES, labels = labels) +
     scale_size(range = c(1.0, 4.6), guide = "none") +
     # default_crs tells coord_sf() that geom_point's raw longitude/latitude
     # columns are unprojected WGS84, so both the sf basemap and the station
@@ -120,11 +117,9 @@ station_map_plot <- function(d, unit_label) {
 
 # The stations the Albers panel cannot hold, plotted by trend value along one
 # axis and grouped by region along the other, on the same colour, shape, and
-# size scale as the map above. Not a second map: at this size an Alaska,
-# Hawaii, or Puerto Rico coastline would be a few unreadable pixels, and the
-# point of this strip is that these stations are in the indicator and where
-# their trend falls, not their precise geography.
-station_offmap_plot <- function(d, unit_label) {
+# size scale as the map above. Not a second map: at this size an Alaska, Hawaii,
+# or Puerto Rico coastline would be a few unreadable pixels.
+station_offmap_plot <- function(d, unit_label, labels) {
   d <- offmap(prep(d))
   d$region <- factor(offmap_region(d), levels = c("Alaska", "Hawaii", "Puerto Rico"))
 
@@ -134,7 +129,7 @@ station_offmap_plot <- function(d, unit_label) {
       aes(
         fill = direction, shape = direction, size = sqrt(rel_mag),
         data_id = paste(round(longitude, 4), round(latitude, 4), sep = "/"),
-        tooltip = station_tooltip(d, unit_label)
+        tooltip = station_tooltip(d, unit_label, labels)
       ),
       colour = CHART_GREY[["surface"]], stroke = 0.4, alpha = 0.9,
       position = position_jitter(height = 0.15, width = 0, seed = 1)
@@ -147,8 +142,7 @@ station_offmap_plot <- function(d, unit_label) {
     theme(panel.grid.major.y = element_line(colour = CHART_GREY[["grid"]], linewidth = 0.4))
 }
 
-# Sorted by value ascending, which is also the order EPA's own source file
-# uses.
+# Sorted by value ascending, which is also the order EPA's own source file uses.
 station_map_table <- function(d, unit_label) {
   d <- station_points(d)
   d <- d[order(d$value), ]
@@ -161,18 +155,40 @@ station_map_table <- function(d, unit_label) {
   )
 }
 
-# ---- Figure 1: magnitude trend (Mann-Kendall tau per station) ---------------
+# How many stations fall outside the CONUS panel, phrased for the sentence that
+# introduces the off-map strip. Counted rather than written into the prose, so
+# the page cannot go stale against a data update.
+offmap_summary <- function(d) {
+  r <- offmap_region(offmap(station_points(d)))
+  n <- table(factor(r, levels = c("Alaska", "Hawaii", "Puerto Rico")))
+  n <- n[n > 0]                       # a region with no stations is not named
+  parts <- sprintf("%d %s", as.integer(n), names(n))
+  if (length(parts) == 1L) return(parts)
+  paste0(paste(parts[-length(parts)], collapse = ", "), ", and ", parts[length(parts)])
+}
 
-fig_1_plot        <- function(d) station_map_plot(d, "tau value")
-fig_1              <- function(d) girafe_indicator(fig_1_plot(d), height = 5.0)
-fig_1_offmap_plot  <- function(d) station_offmap_plot(d, "tau value")
-fig_1_offmap       <- function(d) girafe_indicator(fig_1_offmap_plot(d), height = 2.1)
-fig_1_table        <- function(d) station_map_table(d, "tau value")
+# The caveat EPA's caption raises but the published data cannot support. Taken
+# from the upstream meta.yml `note` field rather than written here, so it stays
+# tied to the dataset it describes.
+significance_note <- function(meta, file) {
+  knitr::asis_output(sprintf(
+    "::: {.callout-note appearance=\"simple\"}\n%s\n:::\n",
+    meta_for(meta, file)$note
+  ))
+}
 
-# ---- Figure 2: frequency trend (Poisson regression slope per station) -------
+# ---- Figure 1: magnitude trend (Mann-Kendall tau per station) ----------------
 
-fig_2_plot        <- function(d) station_map_plot(d, "slope value")
-fig_2              <- function(d) girafe_indicator(fig_2_plot(d), height = 5.0)
-fig_2_offmap_plot  <- function(d) station_offmap_plot(d, "slope value")
-fig_2_offmap       <- function(d) girafe_indicator(fig_2_offmap_plot(d), height = 2.1)
-fig_2_table        <- function(d) station_map_table(d, "slope value")
+fig_1_plot        <- function(d) station_map_plot(d, "tau value", DIRECTION_LABELS)
+fig_1             <- function(d) girafe_indicator(fig_1_plot(d), height = 5.0)
+fig_1_offmap_plot <- function(d) station_offmap_plot(d, "tau value", DIRECTION_LABELS)
+fig_1_offmap      <- function(d) girafe_indicator(fig_1_offmap_plot(d), height = 2.1)
+fig_1_table       <- function(d) station_map_table(d, "tau value")
+
+# ---- Figure 2: frequency trend (Poisson regression slope per station) --------
+
+fig_2_plot        <- function(d) station_map_plot(d, "slope value", FREQUENCY_LABELS)
+fig_2             <- function(d) girafe_indicator(fig_2_plot(d), height = 5.0)
+fig_2_offmap_plot <- function(d) station_offmap_plot(d, "slope value", FREQUENCY_LABELS)
+fig_2_offmap      <- function(d) girafe_indicator(fig_2_offmap_plot(d), height = 2.1)
+fig_2_table       <- function(d) station_map_table(d, "slope value")

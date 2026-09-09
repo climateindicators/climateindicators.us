@@ -52,7 +52,7 @@ Current indicator repositories:
 | Heat-Related Illnesses | `heat-related-illnesses` |
 | Heating and Cooling Degree Days | `heating-and-cooling-degree-days` |
 | Residential Energy Use | `residential-energy-use` |
-| West Nile Virus | `west-nile-virus` |
+| West Nile Virus | `west-nile-virus-new` |
 | Length of Growing Season | `length-of-growing-season` |
 | Growing Degree Days | `growing-degree-days` |
 
