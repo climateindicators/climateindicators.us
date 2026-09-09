@@ -1,6 +1,6 @@
 # Figures for indicators/west-nile-virus.qmd.
 
-REPO <- "west-nile-virus"
+REPO <- "west-nile-virus-new"
 
 # ---- Figure 1: national annual incidence, 2002-2023 ---------------------------
 
@@ -17,9 +17,9 @@ fig_1_plot <- function(d) {
       ),
       colour = INDICATOR_PALETTE[["base"]], size = 2.4
     ) +
-    # Every third year, anchored so the range's first and last years both carry
-    # a label; all 22 would collide at this width.
-    scale_x_continuous(breaks = seq(min(d$year), max(d$year), by = 3)) +
+    # 2002 to 2023 spans 21 years, divisible by 3, so a 3-year step lands
+    # exactly on both endpoints without a partial interval at either end.
+    scale_x_continuous(breaks = seq(2002, 2023, by = 3)) +
     scale_y_continuous(limits = c(0, NA), expand = expansion(mult = c(0, 0.08))) +
     labs(x = NULL, y = "Reported cases per 100,000 people") +
     theme_indicator()
@@ -38,7 +38,7 @@ fig_1_table <- function(d) {
 # ---- Figure 2: average annual incidence by state, 2002-2023 -------------------
 
 # Sorted ascending so the highest rate lands at the top of a horizontal bar
-# chart, matching Lyme's and Heat-Related Illnesses' Figure 2.
+# chart, matching the site's convention for other 50-state figures.
 fig_2_sorted <- function(d) {
   d[order(d$value, decreasing = FALSE), ]
 }
@@ -52,7 +52,7 @@ fig_2_plot <- function(d) {
       aes(
         data_id = state,
         tooltip = sprintf(
-          "%s\n%.2f cases per 100,000 people, averaged annually",
+          "%s\n%.2f cases per 100,000 people, averaged annually (2002-2023)",
           state, value
         )
       ),
@@ -62,9 +62,7 @@ fig_2_plot <- function(d) {
       limits = c(0, NA), expand = expansion(mult = c(0, 0.04)),
       position = "top"
     ) +
-    # The period the average covers is not repeated here: the caption block
-    # above the figure carries EPA's own title, which names it.
-    labs(x = "Average annual cases per 100,000 people", y = NULL) +
+    labs(x = "Average annual cases per 100,000 people, 2002-2023", y = NULL) +
     theme_indicator() +
     theme(
       # theme_indicator() is built for a vertical chart: gridlines running

@@ -1,6 +1,6 @@
 # Figures for indicators/heat-related-deaths.qmd.
 
-REPO <- "heat-related-deaths"
+REPO <- "heat-related-deaths-new"
 
 # ---- Figure 1: annual heat-related death rates -------------------------------
 

@@ -13,7 +13,7 @@ source(here::here("R", "common.R"))
 source(here::here("R", "heat-related-workplace-deaths.R"))
 
 meta   <- read_meta(REPO)
-annual <- read_indicator(REPO, "workplace_heat_deaths_annual.csv")
+annual <- read_indicator(REPO, "heat_related_workplace_deaths.csv")
 ```
 
 ## Figures
@@ -26,11 +26,11 @@ annual <- read_indicator(REPO, "workplace_heat_deaths_annual.csv")
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "workplace_heat_deaths_annual.csv")
+figure_caption(meta, "heat_related_workplace_deaths.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/workplace_heat_deaths_annual.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/heat_related_workplace_deaths.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
 <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx" download><i class="bi bi-file-earmark-excel"></i> EPA source workbook (XLSX)</a>
 </div>
 
@@ -65,12 +65,12 @@ knitr::kable(fig_1_table(annual), digits = 0)
 #| label: example-1-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "workplace_heat_deaths_outdoor_workers_county.csv")
+figure_caption(meta, "outdoor_workers_prevalence.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
 <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png" download><i class="bi bi-filetype-png"></i> Figure image (PNG)</a>
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/workplace_heat_deaths_outdoor_workers_county.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/outdoor_workers_prevalence.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
 <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx" download><i class="bi bi-file-earmark-excel"></i> EPA source workbook (XLSX)</a>
 </div>
 
@@ -85,12 +85,13 @@ extraction, agriculture, fishing, forestry, and construction. The map shows
 a five-year average.
 
 This is EPA's own published map image. The county-level data behind it—one
-row per county, five-year average percentage—is maintained in the
+row per BLS reporting area, five-year average percentage—is maintained in the
 [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths)
 repository and available for download above; an interactive version built
 from that data is not part of this indicator yet. This figure's table is
-3,274 rows (one per county), so it is offered as a download rather than
-rendered inline.
+4,426 rows (nearly all counties, plus a handful of state-level and other BLS
+aggregate area codes), so it is offered as a download rather than rendered
+inline.
 
 :::::
 
