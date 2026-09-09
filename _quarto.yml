@@ -97,6 +97,8 @@ website:
               href: indicators/drought.qmd
             - text: "River Flooding"
               href: indicators/river-flooding.qmd
+            - text: "Streamflow"
+              href: indicators/streamflow.qmd
             - text: "Tropical Cyclone Activity"
               href: indicators/tropical-cyclone-activity.qmd
 

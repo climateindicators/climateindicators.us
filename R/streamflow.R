@@ -151,6 +151,7 @@ offmap_summary <- function(d) {
   r <- offmap_region(offmap(station_points(d)))
   n <- table(factor(r, levels = c("Alaska", "Hawaii")))
   n <- n[n > 0]                       # a region with no stations is not named
+  if (length(n) == 0L) return("No")   # Figure 4's subnetwork has no such gauge
   parts <- sprintf("%d %s", as.integer(n), names(n))
   if (length(parts) == 1L) return(parts)
   paste0(paste(parts[-length(parts)], collapse = ", "), ", and ", parts[length(parts)])
