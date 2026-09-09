@@ -19,15 +19,15 @@ Web update: August 2016
 
 Figure 1
 
-This map shows how the size of the largest flood of each year changed between 1965 and 2015 at 526 stream gauge stations, based on a statistical test (the Mann-Kendall test) applied to each station’s annual peak discharge. An upward triangle marks a station where floods have generally grown larger; a downward triangle marks one where they have generally grown smaller. Triangle size shows how large the change was relative to other stations in this figure; hover a station for its exact value.
+This figure shows changes in the size of flooding events in rivers and streams in the United States between 1965 and 2015. Blue upward-pointing symbols show locations where floods have become larger; brown downward-pointing symbols show locations where floods have become smaller. The larger, solid-color symbols represent stations where the change was statistically significant.
 
-Eight Alaska, fifteen Hawaii, and one Puerto Rico station fall outside the map above and are shown here on the same scale, by trend value:
+8 Alaska, 15 Hawaii, and 1 Puerto Rico stations fall outside the map above and are shown here on the same scale, by trend value:
 
 Figure 2
 
 > **NOTE:**
 >
-> EPA’s own published version of this figure additionally distinguishes stations where the trend was statistically significant, drawn as larger, solid symbols. The published data file behind it carries only the trend value for each station, with no significance measure, so this rendering does not make that distinction. EPA’s technical documentation reports significance results for a larger pool of 2,997 candidate sites (19 percent significant, 202 increases and 367 decreases), which it does not explicitly reconcile with the 526 reference-gauge stations plotted here, so that figure is not repeated as if it described this exact set of stations.
+> EPA’s published figure distinguishes statistically significant stations (larger, solid-color symbols) from non-significant ones (smaller, outlined symbols). That classification is not present in this source file, only the trend value itself, so it cannot be reconstructed here without re-running EPA’s own significance test.
 
 Show the data behind this figure
 
@@ -573,15 +573,15 @@ Web update: August 2016
 
 Figure 4
 
-This map shows how often large flood events occurred between 1965 and 2015 at 481 stream gauge stations, based on a peaks-over-threshold analysis of each station’s daily discharge (roughly its 100 largest days over the 50-year period) and a Poisson regression on how those events are distributed over time. An upward triangle marks a station where large floods have generally become more frequent; a downward triangle marks one where they have generally become less frequent. Triangle size shows how large the change was relative to other stations in this figure; hover a station for its exact value.
+This figure shows changes in the frequency of flooding events in rivers and streams in the United States between 1965 and 2015. Blue upward-pointing symbols show locations where floods have become more frequent; brown downward-pointing symbols show locations where floods have become less frequent. The larger, solid-color symbols represent stations where the change was statistically significant.
 
-Seven Alaska, eleven Hawaii, and one Puerto Rico station fall outside the map above and are shown here on the same scale, by trend value:
+7 Alaska, 11 Hawaii, and 1 Puerto Rico stations fall outside the map above and are shown here on the same scale, by trend value:
 
 Figure 5
 
 > **NOTE:**
 >
-> EPA’s own published version of this figure additionally distinguishes stations where the trend was statistically significant, drawn as larger, solid symbols. The published data file behind it carries only the trend value for each station, with no significance measure, so this rendering does not make that distinction. EPA’s technical documentation reports significance results for a larger pool of 2,337 candidate sites (24 percent significant, 237 increases and 316 decreases), which it does not explicitly reconcile with the 481 reference-gauge stations plotted here, so that figure is not repeated as if it described this exact set of stations.
+> EPA’s published figure distinguishes statistically significant stations (larger, solid-color symbols) from non-significant ones (smaller, outlined symbols). That classification is not present in this source file, only the trend value itself, so it cannot be reconstructed here without re-running EPA’s own significance test.
 
 Show the data behind this figure
 
@@ -1074,10 +1074,8 @@ Figure 6
 ## Key Points
 
 - Floods have generally become larger in rivers and streams across large parts of the Northeast and Midwest. Flood magnitude has generally decreased in the West, southern Appalachia, and northern Michigan (see Figure 1).
-
 - Large floods have become more frequent across the Northeast, Pacific Northwest, and northern Great Plains. Flood frequency has decreased in some other parts of the country, especially the Southwest and the Rockies (see Figure 2).
-
-- Increases and decreases in frequency and magnitude of river flood events generally coincide with increases and decreases in the frequency of heavy rainfall events.^([2](#ref-2),[3](#ref-3))
+- Increases and decreases in frequency and magnitude of river flood events generally coincide with increases and decreases in the frequency of heavy rainfall events.^(2,3)
 
 ## Background
 
@@ -1085,7 +1083,7 @@ Rivers and streams experience flooding as a natural result of large rain storms 
 
 Large flood events can damage homes, roads, bridges, and other infrastructure; wipe out farmers’ crops; and harm or displace people. Although regular flooding helps to maintain the nutrient balance of soils in the flood plain, larger or more frequent floods could disrupt ecosystems by displacing aquatic life, impairing water quality, and increasing soil erosion. By inundating water treatment systems with sediment and contaminants, and promoting the growth of harmful microbes, floods can directly affect the water supplies that communities depend on.
 
-Climate change may cause river floods to become larger or more frequent than they used to be in some places, yet become smaller and less frequent in other places. As warmer temperatures cause more water to evaporate from the land and oceans, changes in the size and frequency of heavy precipitation events may in turn affect the size and frequency of river flooding (see the Heavy Precipitation indicator).^([1](#ref-1)) Changes in streamflow, the timing of snowmelt (see the Streamflow indicator), and the amount of snowpack that accumulates in the winter (see the Snowpack indicator) can also affect flood patterns.
+Climate change may cause river floods to become larger or more frequent than they used to be in some places, yet become smaller and less frequent in other places. As warmer temperatures cause more water to evaporate from the land and oceans, changes in the size and frequency of heavy precipitation events may in turn affect the size and frequency of river flooding (see the [Heavy Precipitation](../indicators/heavy-precipitation.llms.md) indicator).¹ Changes in streamflow, the timing of snowmelt (see the Streamflow indicator), and the amount of snowpack that accumulates in the winter (see the Snowpack indicator) can also affect flood patterns.
 
 ## About the Indicator
 
@@ -1095,15 +1093,13 @@ One way to determine whether the magnitude of flooding has changed is by studyin
 
 This indicator starts in 1965 because flood data have been available for a large number of sites to support a national-level analysis since then.
 
-## About the Data
-
-### Indicator Notes
+## Indicator Notes
 
 This indicator is based on U.S. stream gauges that have recorded data consistently since 1965. Besides climate change, many other types of human influences could affect the frequency and magnitude of floods—for example, dams, floodwater management activities, agricultural practices, and changes in land use. To remove these influences, this indicator focuses on a set of sites that are not heavily influenced by human activities, in watersheds that do not have a large proportion of impervious surfaces such as concrete and asphalt. Increased flooding does not necessarily result in an increased risk to people or property if an area has protective infrastructure, such as levees or floodwalls.
 
-### Data Sources
+## Data Sources
 
-Daily stream gauge data were collected by the U.S. Geological Survey. These data came from a set of gauges in watersheds with minimal human impacts, which have been classified as reference gauges.^([6](#ref-6)) Daily discharge data are stored in the National Water Information System and are publicly available at: <http://waterdata.usgs.gov/nwis>.
+Daily stream gauge data were collected by the U.S. Geological Survey. These data came from a set of gauges in watersheds with minimal human impacts, which have been classified as reference gauges.⁶ Daily discharge data are stored in the National Water Information System and are publicly available at: <http://waterdata.usgs.gov/nwis>.
 
 ## Technical Documentation
 
@@ -1111,15 +1107,15 @@ Daily stream gauge data were collected by the U.S. Geological Survey. These data
 
 ## References
 
-1.  Mallakpour, I., G. Villarini. 2015. The changing nature of flooding across the central United States. *Nature Climate Change* 5:250–254.
-2.  Mallakpour, I., G. Villarini. 2015. The changing nature of flooding across the central United States. *Nature Climate Change* 5:250–254.
-3.  USGCRP (U.S. Global Change Research Program). 2017. Climate science special report: Fourth National Climate Assessment, volume I. Wuebbles, D.J., D.W. Fahey, K.A. Hibbard, D.J. Dokken, B.C. Stewart, and T.K. Maycock, eds. <https://science2017.globalchange.gov>. doi:10.7930/J0J964J6
-4.  Slater, L., and G. Villarini. 2016 update and expansion to data originally published in: Mallakpour, I., G. Villarini. 2015. The changing nature of flooding across the central United States. *Nature Climate Change* 5:250–254.
-5.  Slater, L., and G. Villarini. 2016 update and expansion to data originally published in: Mallakpour, I., G. Villarini. 2015. The changing nature of flooding across the central United States. *Nature Climate Change* 5:250–254.
+1.  Mallakpour, I., G. Villarini. 2015. The changing nature of flooding across the central United States. Nature Climate Change 5:250–254.
+2.  Mallakpour, I., G. Villarini. 2015. The changing nature of flooding across the central United States. Nature Climate Change 5:250–254.
+3.  USGCRP (U.S. Global Change Research Program). 2017. Climate science special report: Fourth National Climate Assessment, volume I. Wuebbles, D.J., D.W. Fahey, K.A. Hibbard, D.J. Dokken, B.C. Stewart, and T.K. Maycock, eds. <https://science2017.globalchange.gov>. doi:10.7930/J0J964J6.
+4.  Slater, L., and G. Villarini. 2016 update and expansion to data originally published in: Mallakpour, I., G. Villarini. 2015. The changing nature of flooding across the central United States. Nature Climate Change 5:250–254.
+5.  Slater, L., and G. Villarini. 2016 update and expansion to data originally published in: Mallakpour, I., G. Villarini. 2015. The changing nature of flooding across the central United States. Nature Climate Change 5:250–254.
 6.  Lins, H.F. 2012. USGS Hydro-Climatic Data Network 2009 (HCDN-2009). U.S. Geological Survey Fact Sheet 2012-3047.
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the [river-flooding](https://github.com/climateindicators/river-flooding) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from [EPA’s published indicator page](https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-river-flooding/index.html) by the `build-indicator` skill. Data, chart code, and the full extraction pipeline are maintained in the [river-flooding](https://github.com/climateindicators/river-flooding) repository, which this page reads its data from directly.
 
 Back to top

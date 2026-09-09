@@ -18,7 +18,7 @@ Deaths in the United States attributed to extreme cold.
 
 ##### Drought
 
-Tracks drought conditions across the United States using the Palmer Index, the SPEI, and the U.S. Drought Monitor.
+This indicator measures drought conditions of U.S. lands.
 
 ##### Global Greenhouse Gas Emissions
 
@@ -76,6 +76,10 @@ How the magnitude and frequency of river flooding have changed at stream gauge s
 
 Trends in average seasonal air temperature across the contiguous United States since 1896, and how the change varies by season and by state.
 
+##### Streamflow
+
+How the amount and timing of streamflow in rivers and streams across the United States have changed since 1940.
+
 ##### Tropical Cyclone Activity
 
 Frequency and intensity of hurricanes and other tropical storms in the North Atlantic.
@@ -87,5 +91,9 @@ How average air temperature has changed across the contiguous United States and 
 ##### West Nile Virus
 
 This indicator tracks the rate of reported West Nile neuroinvasive disease cases across the United States.
+
+##### Wildfires
+
+This indicator tracks the frequency, extent, and severity of wildfires in the United States.
 
 Back to top

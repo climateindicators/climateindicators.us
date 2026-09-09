@@ -10,12 +10,12 @@ Deaths of U.S. workers attributed to heat exposure on the job.
 
 ## Figure 1
 
-**Figure 1. Heat-Related Workplace Deaths in the United States, 1992–2022**
+**Figure 1. Occupational Heat Deaths, 1992–2022**
 
-Data source: BLS, 2024\
+Data source: Bureau of Labor Statistics, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/workplace_heat_deaths_annual.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/heat_related_workplace_deaths.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx)
 
 Figure 1
 
@@ -23,50 +23,49 @@ This graph shows the number of reported occupational heat-related deaths in the 
 
 Show the data behind this figure
 
-| year | All industries | Construction | All other industry sectors |
-|-----:|---------------:|-------------:|---------------------------:|
-| 1992 |             11 |            7 |                          4 |
-| 1993 |             23 |           12 |                         11 |
-| 1994 |             28 |           10 |                         18 |
-| 1995 |             35 |            9 |                         26 |
-| 1996 |             18 |            9 |                          9 |
-| 1997 |             22 |            6 |                         16 |
-| 1998 |             34 |            9 |                         25 |
-| 1999 |             36 |            9 |                         27 |
-| 2000 |             21 |            5 |                         16 |
-| 2001 |             24 |           11 |                         13 |
-| 2002 |             40 |           16 |                         24 |
-| 2003 |             27 |            8 |                         19 |
-| 2004 |             18 |            8 |                         10 |
-| 2005 |             47 |           12 |                         35 |
-| 2006 |             44 |           16 |                         28 |
-| 2007 |             32 |           16 |                         16 |
-| 2008 |             27 |            9 |                         18 |
-| 2009 |             35 |           11 |                         24 |
-| 2010 |             40 |           18 |                         22 |
-| 2011 |             61 |           18 |                         43 |
-| 2012 |             31 |           14 |                         17 |
-| 2013 |             35 |           12 |                         23 |
-| 2014 |             18 |            9 |                          9 |
-| 2015 |             37 |           17 |                         20 |
-| 2016 |             39 |           11 |                         28 |
-| 2017 |             32 |           12 |                         20 |
-| 2018 |             49 |           11 |                         38 |
-| 2019 |             43 |           NA |                         NA |
-| 2020 |             NA |           NA |                         NA |
-| 2021 |             36 |           12 |                         24 |
-| 2022 |             43 |           17 |                         26 |
+| year | Construction | All other industry sectors | All industries |
+|-----:|-------------:|---------------------------:|---------------:|
+| 1992 |            7 |                          4 |             NA |
+| 1993 |           12 |                         11 |             NA |
+| 1994 |           10 |                         18 |             NA |
+| 1995 |            9 |                         26 |             NA |
+| 1996 |            9 |                          9 |             NA |
+| 1997 |            6 |                         16 |             NA |
+| 1998 |            9 |                         25 |             NA |
+| 1999 |            9 |                         27 |             NA |
+| 2000 |            5 |                         16 |             NA |
+| 2001 |           11 |                         13 |             NA |
+| 2002 |           16 |                         24 |             NA |
+| 2003 |            8 |                         19 |             NA |
+| 2004 |            8 |                         10 |             NA |
+| 2005 |           12 |                         35 |             NA |
+| 2006 |           16 |                         28 |             NA |
+| 2007 |           16 |                         16 |             NA |
+| 2008 |            9 |                         18 |             NA |
+| 2009 |           11 |                         24 |             NA |
+| 2010 |           18 |                         22 |             NA |
+| 2011 |           18 |                         43 |             NA |
+| 2012 |           14 |                         17 |             NA |
+| 2013 |           12 |                         23 |             NA |
+| 2014 |            9 |                          9 |             NA |
+| 2015 |           17 |                         20 |             NA |
+| 2016 |           11 |                         28 |             NA |
+| 2017 |           12 |                         20 |             NA |
+| 2018 |           11 |                         38 |             NA |
+| 2019 |           NA |                         NA |             43 |
+| 2021 |           12 |                         24 |             NA |
+| 2022 |           17 |                         26 |             NA |
 
 Figure 2
 
 ## Example 1
 
-**Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022**
+**Example 1. Prevalence of Outdoor Workers in the United States, 2018-2022**
 
 Data source: BLS, 2024\
 Web update: June 2024
 
-[ Figure image (PNG)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png) [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/workplace_heat_deaths_outdoor_workers_county.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx)
+[ Figure image (PNG)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png) [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/outdoor_workers_prevalence.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data-raw/heat-related%20workplace%20deaths%20example%201%2004-30-24.xlsx)
 
 ![County-level map of the United States showing the percentage of each county's workforce in predominantly-outdoor occupations, ranging from under 4 percent (pale yellow) to over 40 percent (dark red), concentrated in parts of the West, the northern and southern Great Plains, and Alaska.](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/images/epa-example-1-outdoor-workers-map.png)
 
@@ -74,7 +73,7 @@ Example 1. Prevalence of Outdoor Workers in the United States, 2018–2022
 
 This map shows the percentage of each county’s workforce engaged in occupations that typically involve a substantial amount of time outdoors. Job categories included in this analysis include delivery services, law enforcement and emergency services, utilities, mining/quarrying/oil and gas extraction, agriculture, fishing, forestry, and construction. The map shows a five-year average.
 
-This is EPA’s own published map image. The county-level data behind it—one row per county, five-year average percentage—is maintained in the [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths) repository and available for download above; an interactive version built from that data is not part of this indicator yet. This figure’s table is 3,274 rows (one per county), so it is offered as a download rather than rendered inline.
+This is EPA’s own published map image. The county-level data behind it—one row per BLS reporting area, five-year average percentage—is maintained in the [heat-related-workplace-deaths](https://github.com/climateindicators/heat-related-workplace-deaths) repository and available for download above; an interactive version built from that data is not part of this indicator yet. This figure’s table is 4,426 rows (nearly all counties, plus a handful of state-level and other BLS aggregate area codes), so it is offered as a download rather than rendered inline.
 
 ## Key Points
 

@@ -15,7 +15,7 @@ This indicator tracks the rate of reported West Nile neuroinvasive disease cases
 Data source: Centers for Disease Control and Prevention, 2024\
 Web update: December 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus/main/data/west_nile_incidence_national.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus/main/data-raw/west-nile_fig-1.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus-new/main/data/west_nile_virus_incidence_by_year.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus-new/main/data-raw/west-nile_fig-1.csv)
 
 Figure 1
 
@@ -57,11 +57,11 @@ Figure 2
 Data source: Centers for Disease Control and Prevention, 2024\
 Web update: December 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus/main/data/west_nile_incidence_by_state.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus/main/data-raw/west-nile_fig-2.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus-new/main/data/west_nile_virus_incidence_by_state.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus-new/main/data-raw/west-nile_fig-2.csv)
 
 Figure 3
 
-This map shows the average annual incidence of West Nile neuroinvasive disease in each state, which is calculated as the average number of new cases per 100,000 people per year from 2002 to 2023. The map is based on cases that local and state health departments report to CDC’s national disease tracking system. Neuroinvasive cases, which account for less than 1 percent of people infected with West Nile virus, are those that affect the brain or cause neurologic dysfunction. EPA published this figure as a map; this page draws it as a sorted bar chart of the same state-level values instead, and keeps EPA’s own spelling of each state name.
+This map shows the average annual incidence of West Nile neuroinvasive disease in each state, which is calculated as the average number of new cases per 100,000 people per year from 2002 to 2023. The map is based on cases that local and state health departments report to CDC’s national disease tracking system. Neuroinvasive cases, which account for less than 1 percent of people infected with West Nile virus, are those that affect the brain or cause neurologic dysfunction. EPA published this figure as a map; this page draws it as a sorted bar chart of the same state-level values instead.
 
 Show the data behind this figure
 
@@ -159,15 +159,15 @@ This indicator is based on publicly available West Nile virus disease data compi
 
 ## References
 
-1.  Beard, C. B., Eisen, R. J., Barker, C. M., Garofalo, J. F., Hahn, M., Hayden, M., Monaghan, A. J., Ogden, N. H., & Schramm, P. J. (2016). Chapter 5: Vectorborne diseases. In *The impacts of climate change on human health in the United States: A scientific assessment*. U.S. Global Change Research Program. https://health2016.globalchange.gov/vectorborne-diseases
-2.  CDC (U.S. Centers for Disease Control and Prevention). (2024). *West Nile: Symptoms, diagnosis, & treatment*. Retrieved December 12, 2024, from www.cdc.gov/west-nile-virus/symptoms-diagnosis-treatment/
-3.  CDC (U.S. Centers for Disease Control and Prevention). (2024). *West Nile virus: Historic data (1999–2023)*. Retrieved December 12, 2024, from www.cdc.gov/west-nile-virus/data-maps/historic-data.html
-4.  Hahn, M. B., Monaghan, A. J., Hayden, M. H., Eisen, R. J., Delorey, M. J., Lindsey, N. P., Nasci, R. S., & Fischer, M. (2015). Meteorological conditions associated with increased incidence of West Nile virus disease in the United States, 2004–2012. *American Journal of Tropical Medicine and Hygiene*, *92*(5), 1013–1022. https://doi.org/10.4269/ajtmh.14-0737
-5.  Rosenberg, R., Lindsey, N., Fischer, M., Gregory, C., Hinckley, A., Mead, P., Paz-Bailey, G., Waterman, S., Drexler, N., Kersh, G., Hooks, H., Partridge, S., Visser, S., Beard, C., & Petersen, L. (2018). Vital signs: Trends in reported vectorborne disease cases—United States and territories, 2004–2016. *Morbidity and Mortality Weekly Report*, *67*(17), 496–501. https://doi.org/10.15585/mmwr.mm6717e1
-6.  CDC (U.S. Centers for Disease Control and Prevention). (2024). *Guidelines for West Nile virus surveillance and control*. Retrieved December 12, 2024, from www.cdc.gov/west-nile-virus/php/surveillance-and-control-guidelines
+1.  Beard, C. B., Eisen, R. J., Barker, C. M., Garofalo, J. F., Hahn, M., Hayden, M., Monaghan, A. J., Ogden, N. H., & Schramm, P. J. (2016). Chapter 5: Vectorborne diseases. In *The impacts of climate change on human health in the United States: A scientific assessment*. U.S. Global Change Research Program. <https://health2016.globalchange.gov/vectorborne-diseases>
+2.  CDC (U.S. Centers for Disease Control and Prevention). (2024). *West Nile: Symptoms, diagnosis, & treatment*. Retrieved December 12, 2024, from [www.cdc.gov/west-nile-virus/symptoms-diagnosis-treatment](https://www.cdc.gov/west-nile-virus/symptoms-diagnosis-treatment/)
+3.  CDC (U.S. Centers for Disease Control and Prevention). (2024). *West Nile virus: Historic data (1999–2023)*. Retrieved December 12, 2024, from [www.cdc.gov/west-nile-virus/data-maps/historic-data.html](https://www.cdc.gov/west-nile-virus/data-maps/historic-data.html)
+4.  Hahn, M. B., Monaghan, A. J., Hayden, M. H., Eisen, R. J., Delorey, M. J., Lindsey, N. P., Nasci, R. S., & Fischer, M. (2015). Meteorological conditions associated with increased incidence of West Nile virus disease in the United States, 2004–2012. *American Journal of Tropical Medicine and Hygiene, 92*(5), 1013–1022. <https://doi.org/10.4269/ajtmh.14-0737>
+5.  Rosenberg, R., Lindsey, N., Fischer, M., Gregory, C., Hinckley, A., Mead, P., Paz-Bailey, G., Waterman, S., Drexler, N., Kersh, G., Hooks, H., Partridge, S., Visser, S., Beard, C., & Petersen, L. (2018). Vital signs: Trends in reported vectorborne disease cases—United States and territories, 2004–2016. *Morbidity and Mortality Weekly Report, 67*(17), 496–501. <https://doi.org/10.15585/mmwr.mm6717e1>
+6.  CDC (U.S. Centers for Disease Control and Prevention). (2024). *Guidelines for West Nile virus surveillance and control*. Retrieved December 12, 2024, from [www.cdc.gov/west-nile-virus/php/surveillance-and-control-guidelines](https://www.cdc.gov/west-nile-virus/php/surveillance-and-control-guidelines/)
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source Word document and verified paragraph by paragraph against the published page, using its raw HTML rather than a summarized read. EPA’s page differs from its December 2024 source document in three small ways, and this page follows the published page on all three: “West Nile virus neuroinvasive disease” where the document says “West Nile virus disease”, “focuses on neuroinvasive cases because” where the document says “cases, as”, and no comma after “mild or undetected”. Two bare URLs in EPA’s text are rendered here as links to the pages they name. EPA presents Figure 2 as a map; this page draws the same state-level values as a sorted bar chart. Data, chart code, and the full extraction pipeline are maintained in the [west-nile-virus](https://github.com/climateindicators/west-nile-virus) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. EPA presents Figure 2 as a map; this page draws the same state-level values as a sorted bar chart. Data, chart code, and the full extraction pipeline are maintained in the [west-nile-virus-new](https://github.com/climateindicators/west-nile-virus-new) repository, which this page reads its data from directly.
 
 Back to top

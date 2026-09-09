@@ -19,9 +19,11 @@
       "/indicators/residential-energy-use.html",
       "/indicators/river-flooding.html",
       "/indicators/seasonal-temperature.html",
+      "/indicators/streamflow.html",
       "/indicators/tropical-cyclone-activity.html",
       "/indicators/us-and-global-temperature.html",
-      "/indicators/west-nile-virus.html"
+      "/indicators/west-nile-virus.html",
+      "/indicators/wildfires.html"
     ]
   }
 ]

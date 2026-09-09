@@ -15,7 +15,7 @@ Deaths in the United States attributed to extreme heat.
 Data source: CDC, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/heat_deaths_annual.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_fig-1.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data/heat_deaths_annual.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data-raw/heat-deaths_fig-1.csv)
 
 Figure 1
 
@@ -77,7 +77,7 @@ Figure 2
 Data source: CDC, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/heat_deaths_summer_cvd.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_fig-2.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data/heat_deaths_summer_cvd.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data-raw/heat-deaths_fig-2.csv)
 
 Figure 3
 
@@ -119,7 +119,7 @@ Figure 4
 Data source: CDC, 2012; NOAA, 2012\
 Web update: May 2014
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data/chicago_1995_heat_wave.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths/main/data-raw/heat-deaths_example.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data/chicago_1995_heat_wave.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data-raw/heat-deaths_example.csv)
 
 Figure 5
 
@@ -216,6 +216,6 @@ Data for this indicator were provided by the U.S. Centers for Disease Control an
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. One correction was applied: two CDC URLs in Data Sources had changed on the live page since the archived source document was finalized. Data, chart code, and the full extraction pipeline are maintained in the [heat-related-deaths](https://github.com/climateindicators/heat-related-deaths) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [heat-related-deaths-new](https://github.com/climateindicators/heat-related-deaths-new) repository, which this page reads its data from directly.
 
 Back to top

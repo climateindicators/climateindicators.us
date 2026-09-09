@@ -2,8 +2,9 @@
 
 ## Pages
 
-- [West Nile Virus](https://climateindicators.us/indicators/west-nile-virus.llms.md)
-- [Tropical Cyclone Activity](https://climateindicators.us/indicators/tropical-cyclone-activity.llms.md)
+- [Wildfires](https://climateindicators.us/indicators/wildfires.llms.md)
+- [U.S. and Global Temperature](https://climateindicators.us/indicators/us-and-global-temperature.llms.md)
+- [Streamflow](https://climateindicators.us/indicators/streamflow.llms.md)
 - [River Flooding](https://climateindicators.us/indicators/river-flooding.llms.md)
 - [Ragweed Pollen Season](https://climateindicators.us/indicators/ragweed-pollen-season.llms.md)
 - [Length of Growing Season](https://climateindicators.us/indicators/length-of-growing-season.llms.md)
@@ -24,4 +25,5 @@
 - [Lyme Disease](https://climateindicators.us/indicators/lyme-disease.llms.md)
 - [Residential Energy Use](https://climateindicators.us/indicators/residential-energy-use.llms.md)
 - [Seasonal Temperature](https://climateindicators.us/indicators/seasonal-temperature.llms.md)
-- [U.S. and Global Temperature](https://climateindicators.us/indicators/us-and-global-temperature.llms.md)
+- [Tropical Cyclone Activity](https://climateindicators.us/indicators/tropical-cyclone-activity.llms.md)
+- [West Nile Virus](https://climateindicators.us/indicators/west-nile-virus.llms.md)
