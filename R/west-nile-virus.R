@@ -1,6 +1,6 @@
 # Figures for indicators/west-nile-virus.qmd.
 
-REPO <- "west-nile-virus"
+REPO <- "west-nile-virus-new"
 
 # ---- Figure 1: national annual incidence, 2002-2023 ---------------------------
 
