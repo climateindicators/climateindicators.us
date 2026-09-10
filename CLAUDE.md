@@ -55,6 +55,7 @@ Current indicator repositories:
 | West Nile Virus | `west-nile-virus-new` |
 | Length of Growing Season | `length-of-growing-season` |
 | Growing Degree Days | `growing-degree-days` |
+| Global Greenhouse Gas Emissions | `global-greenhouse-emissions` |
 
 Because the data is fetched over the network, rendering requires an internet
 connection, and `curl` must stay in `DESCRIPTION` — readr only *suggests* it,
