@@ -10,12 +10,12 @@ This indicator describes emissions of greenhouse gases worldwide.
 
 ## Figure 1
 
-**Figure 1. Global Greenhouse Gas Emissions by Gas, 1990–2015**
+**Figure 1. Global Greenhouse Gas Emissions by Gas, 1990-2015**
 
 Data source: Climate Watch, 2024\
 Web update: December 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-gas-emissions/main/data/ghg_by_gas.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-gas-emissions/main/data-raw/global-ghg-emissions_figure%201_11-22-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data/global_greenhouse_gas_emissions_fig1.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data-raw/global-ghg-emissions_fig-1.csv)
 
 Figure 1
 
@@ -38,12 +38,12 @@ Figure 2
 
 ## Figure 2
 
-**Figure 2. Global Greenhouse Gas Emissions by Sector, 1990–2015**
+**Figure 2. Global Greenhouse Gas Emissions by Sector, 1990-2015**
 
 Data source: Climate Watch, 2024\
 Web update: December 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-gas-emissions/main/data/ghg_by_sector.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-gas-emissions/main/data-raw/global-ghg-emissions_figure%202_11-22-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data/global_greenhouse_gas_emissions_fig2.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data-raw/global-ghg-emissions_fig-2.csv)
 
 Figure 3
 
@@ -66,12 +66,12 @@ Figure 4
 
 ## Figure 3
 
-**Figure 3. Global Carbon Dioxide Emissions by Region, 1990–2021**
+**Figure 3. Global Carbon Dioxide Emissions by Region, 1990-2021**
 
 Data source: Climate Watch, 2024\
 Web update: December 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-gas-emissions/main/data/co2_by_region.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-gas-emissions/main/data-raw/global-ghg-emissions_figure%203_11-22-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data/global_greenhouse_gas_emissions_fig3.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data-raw/global-ghg-emissions_fig-3.csv)
 
 Figure 5
 
@@ -122,15 +122,13 @@ Figure 6
 
 - Between 1990 and 2015, global emissions of all major greenhouse gases increased (see Figure 1). Net emissions of carbon dioxide increased by 50 percent, which is particularly important because carbon dioxide accounts for about three-fourths of total global emissions. Methane emissions increased the least—19 percent—while emissions of nitrous oxide increased by 26 percent. Emissions of fluorinated gases more than tripled.
 
-- Energy production and use (including fuels used by vehicles and buildings) represent the largest source of greenhouse gas emissions worldwide (about 74 percent of the total in 2015), followed by agriculture (12 percent in
-
-  2015. (see Figure 2). While land-use change and forestry represent a net sink for emissions in the United States, absorbing carbon dioxide and offsetting emissions from other sources (see the U.S. Greenhouse Gas Emissions indicator), these activities are a net source of emissions on a global scale, largely because of deforestation.^([1](#ref-1))
+- Energy production and use (including fuels used by vehicles and buildings) represent the largest source of greenhouse gas emissions worldwide (about 74 percent of the total in 2015), followed by agriculture (12 percent in 2015) (see Figure 2). While land-use change and forestry represent a net sink for emissions in the United States, absorbing carbon dioxide and offsetting emissions from other sources (see the U.S. Greenhouse Gas Emissions indicator), these activities are a net source of emissions on a global scale, largely because of deforestation.^([1](#ref-1))
 
 - Carbon dioxide emissions are increasing faster in some parts of the world (for example, East Asia and the Pacific) than in others (see Figure 3). The majority of emissions come from three regions: East Asia and Pacific, Europe and Central Asia, and the United States, which together accounted for 75 percent of total global emissions in 2021. The apparent downturn in 2020 likely reflects the worldwide reduction in travel and economic activity during the COVID-19 pandemic, as reported in the U.S. Greenhouse Gas Emissions indicator.
 
 ## Background
 
-Increasing emissions of greenhouse gases due to human activities worldwide, especially burning of fossil fuels, have led to a substantial increase in atmospheric concentrations of long-lived and other greenhouse gases. Every country around the world emits greenhouse gases into the atmosphere, meaning the root cause of climate change is truly global in scope. Some countries produce far more greenhouse gases than others, and several factors—such as economic activity (including the composition and efficiency of the economy), population, income level, land use, and climatic conditions—can influence a country’s emissions levels. Tracking greenhouse gas emissions worldwide provides a global context for understanding the United States’ and other nations’ roles in climate change.
+Increasing emissions of greenhouse gases due to human activities worldwide, especially burning of fossil fuels, have led to a substantial increase in atmospheric concentrations of long-lived and other greenhouse gases (see the Atmospheric Concentrations of Greenhouse Gases indicator). Every country around the world emits greenhouse gases into the atmosphere, meaning the root cause of climate change is truly global in scope. Some countries produce far more greenhouse gases than others, and several factors—such as economic activity (including the composition and efficiency of the economy), population, income level, land use, and climatic conditions—can influence a country’s emissions levels. Tracking greenhouse gas emissions worldwide provides a global context for understanding the United States’ and other nations’ roles in climate change.
 
 ## About the Indicator
 
@@ -150,7 +148,7 @@ Global emissions inventories for gases other than carbon dioxide are limited to 
 
 ### Data Sources
 
-Data for this indicator came from the World Resources Institute’s Climate Watch database, which is accessible online at: [www.climatewatchdata.org/ghg-emissions](http://www.climatewatchdata.org/ghg-emissions). The Climate Watch dataset consists of data that were originally collected by organizations including the International Energy Agency, the Food and Agriculture Organization of the United Nations, EPA, and the Global Carbon Project, as well as Robbie M. Andrew (CICERO Center for International Climate Research). Other global emissions estimates—such as the estimates published by the Intergovernmental Panel on Climate Change^([1](#ref-1))—are based on many of the same sources.
+Data for this indicator came from the World Resources Institute’s Climate Watch database, which is accessible online at: [www.climatewatchdata.org/ghg-emissions](https://www.climatewatchdata.org/ghg-emissions). The Climate Watch dataset consists of data that were originally collected by organizations including the International Energy Agency, the Food and Agriculture Organization of the United Nations, EPA, and the Global Carbon Project, as well as Robbie M. Andrew (CICERO Center for International Climate Research). Other global emissions estimates—such as the estimates published by the Intergovernmental Panel on Climate Change^([1](#ref-1))—are based on many of the same sources.
 
 ## Technical Documentation
 
@@ -159,10 +157,10 @@ Data for this indicator came from the World Resources Institute’s Climate Watc
 ## References
 
 1.  IPCC (Intergovernmental Panel on Climate Change). (2023). *Climate change 2022—Mitigation of climate change: Working Group III contribution to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change* (P. R. Shukla, J. Skea, R. Slade, R. Fradera, M. Pathak, A. A. Khourdajie, M. Belkacemi, R. van Diemen, A. Hasija, G. Lisboa, S. Luz, J. Malley, D. McCollum, S. Some, & P. Vyas, Eds.). Cambridge University Press. <https://doi.org/10.1017/9781009157926>
-2.  Climate Watch. (2024). *Historical GHG emissions*. Retrieved November 22, 2024, from [www.climatewatchdata.org/ghg-emissions](http://www.climatewatchdata.org/ghg-emissions)
+2.  Climate Watch. (2024). *Historical GHG emissions*. Retrieved November 22, 2024, from [www.climatewatchdata.org/ghg-emissions](https://www.climatewatchdata.org/ghg-emissions?end_year=2021&start_year=1990)
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the [global-greenhouse-gas-emissions](https://github.com/climateindicators/global-greenhouse-gas-emissions) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [global-greenhouse-emissions](https://github.com/climateindicators/global-greenhouse-emissions) repository, which this page reads its data from directly.
 
 Back to top

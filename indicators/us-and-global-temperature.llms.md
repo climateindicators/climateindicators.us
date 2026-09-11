@@ -12,287 +12,287 @@ This indicator describes trends in average surface temperature for the United St
 
 ## Figure 1
 
-**Figure 1. Temperatures in the Contiguous 48 States, 1901–2023**
+**Figure 1. Temperature Changes in the Contiguous 48 States**
 
-Data source: NOAA, 2024\
+Data source: NOAA, 2024; ERG workbook “1-2 US and Global Temperature 04-21-24.xlsx”\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/temp_conus.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig1.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx)
 
 Figure 1
 
-The dark blue line shows the surface temperature record, the fullest series and the one satellite data are calibrated against. The orange and teal lines show two independent satellite analyses (UAH and RSS) of the same lower atmosphere, available since 1979. The dashed grey line is the long-term linear trend fit to the surface record. Hover any point for its exact value.
+The dark blue line shows the annual surface temperature anomaly, and the orange line smooths it into a 5-year average. The teal and maroon lines show two independent satellite analyses (UAH and RSS) of the lower atmosphere, available since 1979. The dashed grey line is the long-term linear trend fit to the surface record. Hover any point for its exact value.
 
 Show the data behind this figure
 
-| year | Surface (NOAA) | Long-term trend (OLS regression) | Satellite, UAH method | Satellite, RSS method |
-|---:|---:|---:|---:|---:|
-| 1901 | -0.15 | -0.74 | NA | NA |
-| 1902 | -0.43 | -0.73 | NA | NA |
-| 1903 | -1.40 | -0.71 | NA | NA |
-| 1904 | -0.86 | -0.69 | NA | NA |
-| 1905 | -1.02 | -0.68 | NA | NA |
-| 1906 | -0.29 | -0.66 | NA | NA |
-| 1907 | -0.54 | -0.64 | NA | NA |
-| 1908 | 0.06 | -0.63 | NA | NA |
-| 1909 | -0.59 | -0.61 | NA | NA |
-| 1910 | 0.40 | -0.59 | NA | NA |
-| 1911 | 0.01 | -0.57 | NA | NA |
-| 1912 | -1.79 | -0.56 | NA | NA |
-| 1913 | -0.48 | -0.54 | NA | NA |
-| 1914 | -0.18 | -0.52 | NA | NA |
-| 1915 | -0.57 | -0.51 | NA | NA |
-| 1916 | -1.17 | -0.49 | NA | NA |
-| 1917 | -1.96 | -0.47 | NA | NA |
-| 1918 | -0.15 | -0.46 | NA | NA |
-| 1919 | -0.47 | -0.44 | NA | NA |
-| 1920 | -0.95 | -0.42 | NA | NA |
-| 1921 | 1.78 | -0.40 | NA | NA |
-| 1922 | 0.01 | -0.39 | NA | NA |
-| 1923 | -0.38 | -0.37 | NA | NA |
-| 1924 | -1.43 | -0.35 | NA | NA |
-| 1925 | 0.50 | -0.34 | NA | NA |
-| 1926 | -0.07 | -0.32 | NA | NA |
-| 1927 | 0.13 | -0.30 | NA | NA |
-| 1928 | -0.10 | -0.28 | NA | NA |
-| 1929 | -1.17 | -0.27 | NA | NA |
-| 1930 | -0.04 | -0.25 | NA | NA |
-| 1931 | 1.52 | -0.23 | NA | NA |
-| 1932 | -0.29 | -0.22 | NA | NA |
-| 1933 | 0.97 | -0.20 | NA | NA |
-| 1934 | 2.08 | -0.18 | NA | NA |
-| 1935 | -0.12 | -0.17 | NA | NA |
-| 1936 | 0.13 | -0.15 | NA | NA |
-| 1937 | -0.47 | -0.13 | NA | NA |
-| 1938 | 1.16 | -0.11 | NA | NA |
-| 1939 | 1.24 | -0.10 | NA | NA |
-| 1940 | -0.13 | -0.08 | NA | NA |
-| 1941 | 0.64 | -0.06 | NA | NA |
-| 1942 | -0.18 | -0.05 | NA | NA |
-| 1943 | 0.05 | -0.03 | NA | NA |
-| 1944 | -0.19 | -0.01 | NA | NA |
-| 1945 | -0.27 | 0.00 | NA | NA |
-| 1946 | 0.93 | 0.02 | NA | NA |
-| 1947 | -0.10 | 0.04 | NA | NA |
-| 1948 | -0.41 | 0.06 | NA | NA |
-| 1949 | 0.00 | 0.07 | NA | NA |
-| 1950 | -0.63 | 0.09 | NA | NA |
-| 1951 | -0.90 | 0.11 | NA | NA |
-| 1952 | 0.25 | 0.12 | NA | NA |
-| 1953 | 1.35 | 0.14 | NA | NA |
-| 1954 | 1.31 | 0.16 | NA | NA |
-| 1955 | -0.33 | 0.18 | NA | NA |
-| 1956 | 0.32 | 0.19 | NA | NA |
-| 1957 | 0.02 | 0.21 | NA | NA |
-| 1958 | -0.09 | 0.23 | NA | NA |
-| 1959 | 0.09 | 0.24 | NA | NA |
-| 1960 | -0.58 | 0.26 | NA | NA |
-| 1961 | -0.15 | 0.28 | NA | NA |
-| 1962 | -0.12 | 0.29 | NA | NA |
-| 1963 | 0.24 | 0.31 | NA | NA |
-| 1964 | -0.35 | 0.33 | NA | NA |
-| 1965 | -0.33 | 0.35 | NA | NA |
-| 1966 | -0.53 | 0.36 | NA | NA |
-| 1967 | -0.26 | 0.38 | NA | NA |
-| 1968 | -0.70 | 0.40 | NA | NA |
-| 1969 | -0.52 | 0.41 | NA | NA |
-| 1970 | -0.41 | 0.43 | NA | NA |
-| 1971 | -0.36 | 0.45 | NA | NA |
-| 1972 | -0.65 | 0.46 | NA | NA |
-| 1973 | 0.27 | 0.48 | NA | NA |
-| 1974 | 0.24 | 0.50 | NA | NA |
-| 1975 | -0.52 | 0.52 | NA | NA |
-| 1976 | -0.55 | 0.53 | NA | NA |
-| 1977 | 0.53 | 0.55 | NA | NA |
-| 1978 | -0.97 | 0.57 | NA | NA |
-| 1979 | -1.14 | 0.58 | 0.05 | -0.81 |
-| 1980 | 0.37 | 0.60 | 0.73 | 0.18 |
-| 1981 | 1.10 | 0.62 | 1.10 | 0.66 |
-| 1982 | -0.67 | 0.64 | 0.01 | -0.58 |
-| 1983 | -0.14 | 0.65 | 0.03 | -0.38 |
-| 1984 | -0.04 | 0.67 | 0.29 | -0.22 |
-| 1985 | -0.72 | 0.69 | 0.11 | -1.05 |
-| 1986 | 1.30 | 0.70 | 1.22 | 0.74 |
-| 1987 | 1.31 | 0.72 | 1.05 | 1.11 |
-| 1988 | 0.61 | 0.74 | 0.70 | 0.56 |
-| 1989 | -0.18 | 0.75 | 0.55 | 0.22 |
-| 1990 | 1.49 | 0.77 | 1.45 | 1.28 |
-| 1991 | 1.14 | 0.79 | 1.03 | 1.04 |
-| 1992 | 0.58 | 0.81 | 0.48 | 0.59 |
-| 1993 | -0.76 | 0.82 | -0.17 | -0.26 |
-| 1994 | 0.85 | 0.84 | 1.04 | 1.08 |
-| 1995 | 0.63 | 0.86 | 0.80 | 0.77 |
-| 1996 | -0.13 | 0.87 | 0.50 | 0.28 |
-| 1997 | 0.18 | 0.89 | 0.46 | 0.42 |
-| 1998 | 2.21 | 0.91 | 1.69 | 1.91 |
-| 1999 | 1.86 | 0.92 | 1.80 | 1.88 |
-| 2000 | 1.25 | 0.94 | 1.35 | 1.47 |
-| 2001 | 1.68 | 0.96 | 1.26 | 1.54 |
-| 2002 | 1.19 | 0.98 | 0.99 | 1.14 |
-| 2003 | 1.24 | 0.99 | 1.22 | 1.47 |
-| 2004 | 1.08 | 1.01 | 0.77 | 1.06 |
-| 2005 | 1.62 | 1.03 | 1.30 | 1.58 |
-| 2006 | 2.23 | 1.04 | 1.44 | 1.75 |
-| 2007 | 1.63 | 1.06 | 1.77 | 1.86 |
-| 2008 | 0.27 | 1.08 | 0.47 | 0.50 |
-| 2009 | 0.37 | 1.10 | 0.52 | 0.60 |
-| 2010 | 0.96 | 1.11 | 0.93 | 1.00 |
-| 2011 | 1.16 | 1.13 | 1.01 | 1.11 |
-| 2012 | 3.26 | 1.15 | 1.96 | 2.68 |
-| 2013 | 0.41 | 1.16 | 0.66 | 0.70 |
-| 2014 | 0.52 | 1.18 | 0.76 | 0.78 |
-| 2015 | 2.38 | 1.20 | 2.23 | 2.55 |
-| 2016 | 2.90 | 1.21 | 2.03 | 2.48 |
-| 2017 | 2.53 | 1.23 | 2.25 | 2.35 |
-| 2018 | 1.50 | 1.25 | 1.65 | 1.79 |
-| 2019 | 0.66 | 1.27 | 1.13 | 1.22 |
-| 2020 | 2.35 | 1.28 | 1.97 | 2.29 |
-| 2021 | 2.49 | 1.30 | 2.06 | 2.49 |
-| 2022 | 1.37 | 1.32 | 1.57 | 1.60 |
-| 2023 | 2.39 | 1.33 | NA | 1.89 |
+| year | Annual average | 5-year average | Satellite (UAH), adjusted | Satellite (RSS), adjusted | Linear trend, 1901-2023 |
+|---:|---:|---:|---:|---:|---:|
+| 1901 | -0.15 | NA | NA | NA | -0.74 |
+| 1902 | -0.43 | NA | NA | NA | -0.73 |
+| 1903 | -1.40 | -0.77 | NA | NA | -0.71 |
+| 1904 | -0.86 | -0.80 | NA | NA | -0.69 |
+| 1905 | -1.02 | -0.82 | NA | NA | -0.68 |
+| 1906 | -0.29 | -0.53 | NA | NA | -0.66 |
+| 1907 | -0.54 | -0.48 | NA | NA | -0.64 |
+| 1908 | 0.06 | -0.19 | NA | NA | -0.63 |
+| 1909 | -0.59 | -0.13 | NA | NA | -0.61 |
+| 1910 | 0.40 | -0.38 | NA | NA | -0.59 |
+| 1911 | 0.01 | -0.49 | NA | NA | -0.57 |
+| 1912 | -1.79 | -0.41 | NA | NA | -0.56 |
+| 1913 | -0.48 | -0.60 | NA | NA | -0.54 |
+| 1914 | -0.18 | -0.84 | NA | NA | -0.52 |
+| 1915 | -0.57 | -0.87 | NA | NA | -0.51 |
+| 1916 | -1.17 | -0.81 | NA | NA | -0.49 |
+| 1917 | -1.96 | -0.86 | NA | NA | -0.47 |
+| 1918 | -0.15 | -0.94 | NA | NA | -0.46 |
+| 1919 | -0.47 | -0.35 | NA | NA | -0.44 |
+| 1920 | -0.95 | 0.04 | NA | NA | -0.42 |
+| 1921 | 1.78 | 0.00 | NA | NA | -0.40 |
+| 1922 | 0.01 | -0.19 | NA | NA | -0.39 |
+| 1923 | -0.38 | 0.10 | NA | NA | -0.37 |
+| 1924 | -1.43 | -0.27 | NA | NA | -0.35 |
+| 1925 | 0.50 | -0.25 | NA | NA | -0.34 |
+| 1926 | -0.07 | -0.19 | NA | NA | -0.32 |
+| 1927 | 0.13 | -0.14 | NA | NA | -0.30 |
+| 1928 | -0.10 | -0.25 | NA | NA | -0.28 |
+| 1929 | -1.17 | 0.07 | NA | NA | -0.27 |
+| 1930 | -0.04 | -0.02 | NA | NA | -0.25 |
+| 1931 | 1.52 | 0.20 | NA | NA | -0.23 |
+| 1932 | -0.29 | 0.85 | NA | NA | -0.22 |
+| 1933 | 0.97 | 0.83 | NA | NA | -0.20 |
+| 1934 | 2.08 | 0.55 | NA | NA | -0.18 |
+| 1935 | -0.12 | 0.52 | NA | NA | -0.17 |
+| 1936 | 0.13 | 0.56 | NA | NA | -0.15 |
+| 1937 | -0.47 | 0.39 | NA | NA | -0.13 |
+| 1938 | 1.16 | 0.39 | NA | NA | -0.11 |
+| 1939 | 1.24 | 0.49 | NA | NA | -0.10 |
+| 1940 | -0.13 | 0.55 | NA | NA | -0.08 |
+| 1941 | 0.64 | 0.32 | NA | NA | -0.06 |
+| 1942 | -0.18 | 0.04 | NA | NA | -0.05 |
+| 1943 | 0.05 | 0.01 | NA | NA | -0.03 |
+| 1944 | -0.19 | 0.07 | NA | NA | -0.01 |
+| 1945 | -0.27 | 0.08 | NA | NA | 0.00 |
+| 1946 | 0.93 | -0.01 | NA | NA | 0.02 |
+| 1947 | -0.10 | 0.03 | NA | NA | 0.04 |
+| 1948 | -0.41 | -0.04 | NA | NA | 0.06 |
+| 1949 | 0.00 | -0.41 | NA | NA | 0.07 |
+| 1950 | -0.63 | -0.34 | NA | NA | 0.09 |
+| 1951 | -0.90 | 0.01 | NA | NA | 0.11 |
+| 1952 | 0.25 | 0.28 | NA | NA | 0.12 |
+| 1953 | 1.35 | 0.34 | NA | NA | 0.14 |
+| 1954 | 1.31 | 0.58 | NA | NA | 0.16 |
+| 1955 | -0.33 | 0.53 | NA | NA | 0.18 |
+| 1956 | 0.32 | 0.25 | NA | NA | 0.19 |
+| 1957 | 0.02 | 0.00 | NA | NA | 0.21 |
+| 1958 | -0.09 | -0.05 | NA | NA | 0.23 |
+| 1959 | 0.09 | -0.14 | NA | NA | 0.24 |
+| 1960 | -0.58 | -0.17 | NA | NA | 0.26 |
+| 1961 | -0.15 | -0.10 | NA | NA | 0.28 |
+| 1962 | -0.12 | -0.19 | NA | NA | 0.29 |
+| 1963 | 0.24 | -0.14 | NA | NA | 0.31 |
+| 1964 | -0.35 | -0.22 | NA | NA | 0.33 |
+| 1965 | -0.33 | -0.25 | NA | NA | 0.35 |
+| 1966 | -0.53 | -0.43 | NA | NA | 0.36 |
+| 1967 | -0.26 | -0.47 | NA | NA | 0.38 |
+| 1968 | -0.70 | -0.48 | NA | NA | 0.40 |
+| 1969 | -0.52 | -0.45 | NA | NA | 0.41 |
+| 1970 | -0.41 | -0.53 | NA | NA | 0.43 |
+| 1971 | -0.36 | -0.33 | NA | NA | 0.45 |
+| 1972 | -0.65 | -0.18 | NA | NA | 0.46 |
+| 1973 | 0.27 | -0.20 | NA | NA | 0.48 |
+| 1974 | 0.24 | -0.24 | NA | NA | 0.50 |
+| 1975 | -0.52 | -0.01 | NA | NA | 0.52 |
+| 1976 | -0.55 | -0.25 | NA | NA | 0.53 |
+| 1977 | 0.53 | -0.53 | NA | NA | 0.55 |
+| 1978 | -0.97 | -0.35 | NA | NA | 0.57 |
+| 1979 | -1.14 | -0.02 | 0.05 | -0.81 | 0.58 |
+| 1980 | 0.37 | -0.26 | 0.73 | 0.18 | 0.60 |
+| 1981 | 1.10 | -0.10 | 1.10 | 0.66 | 0.62 |
+| 1982 | -0.67 | 0.12 | 0.01 | -0.58 | 0.64 |
+| 1983 | -0.14 | -0.09 | 0.03 | -0.38 | 0.65 |
+| 1984 | -0.04 | -0.05 | 0.29 | -0.22 | 0.67 |
+| 1985 | -0.72 | 0.34 | 0.11 | -1.05 | 0.69 |
+| 1986 | 1.30 | 0.49 | 1.22 | 0.74 | 0.70 |
+| 1987 | 1.31 | 0.46 | 1.05 | 1.11 | 0.72 |
+| 1988 | 0.61 | 0.91 | 0.70 | 0.56 | 0.74 |
+| 1989 | -0.18 | 0.87 | 0.55 | 0.22 | 0.75 |
+| 1990 | 1.49 | 0.73 | 1.45 | 1.28 | 0.77 |
+| 1991 | 1.14 | 0.45 | 1.03 | 1.04 | 0.79 |
+| 1992 | 0.58 | 0.66 | 0.48 | 0.59 | 0.81 |
+| 1993 | -0.76 | 0.49 | -0.17 | -0.26 | 0.82 |
+| 1994 | 0.85 | 0.23 | 1.04 | 1.08 | 0.84 |
+| 1995 | 0.63 | 0.15 | 0.80 | 0.77 | 0.86 |
+| 1996 | -0.13 | 0.75 | 0.50 | 0.28 | 0.87 |
+| 1997 | 0.18 | 0.95 | 0.46 | 0.42 | 0.89 |
+| 1998 | 2.21 | 1.07 | 1.69 | 1.91 | 0.91 |
+| 1999 | 1.86 | 1.44 | 1.80 | 1.88 | 0.92 |
+| 2000 | 1.25 | 1.64 | 1.35 | 1.47 | 0.94 |
+| 2001 | 1.68 | 1.44 | 1.26 | 1.54 | 0.96 |
+| 2002 | 1.19 | 1.29 | 0.99 | 1.14 | 0.98 |
+| 2003 | 1.24 | 1.36 | 1.22 | 1.47 | 0.99 |
+| 2004 | 1.08 | 1.47 | 0.77 | 1.06 | 1.01 |
+| 2005 | 1.62 | 1.56 | 1.30 | 1.58 | 1.03 |
+| 2006 | 2.23 | 1.37 | 1.44 | 1.75 | 1.04 |
+| 2007 | 1.63 | 1.22 | 1.77 | 1.86 | 1.06 |
+| 2008 | 0.27 | 1.09 | 0.47 | 0.50 | 1.08 |
+| 2009 | 0.37 | 0.88 | 0.52 | 0.60 | 1.10 |
+| 2010 | 0.96 | 1.20 | 0.93 | 1.00 | 1.11 |
+| 2011 | 1.16 | 1.23 | 1.01 | 1.11 | 1.13 |
+| 2012 | 3.26 | 1.26 | 1.96 | 2.68 | 1.15 |
+| 2013 | 0.41 | 1.55 | 0.66 | 0.70 | 1.16 |
+| 2014 | 0.52 | 1.89 | 0.76 | 0.78 | 1.18 |
+| 2015 | 2.38 | 1.75 | 2.23 | 2.55 | 1.20 |
+| 2016 | 2.90 | 1.97 | 2.03 | 2.48 | 1.21 |
+| 2017 | 2.53 | 1.99 | 2.25 | 2.35 | 1.23 |
+| 2018 | 1.50 | 1.99 | 1.65 | 1.79 | 1.25 |
+| 2019 | 0.66 | 1.91 | 1.13 | 1.22 | 1.27 |
+| 2020 | 2.35 | 1.67 | 1.97 | 2.29 | 1.28 |
+| 2021 | 2.49 | 1.85 | 2.06 | 2.49 | 1.30 |
+| 2022 | 1.37 | NA | 1.57 | 1.60 | 1.32 |
+| 2023 | 2.39 | NA | NA | 1.89 | 1.33 |
 
 Figure 2
 
 ## Figure 2
 
-**Figure 2. Temperatures Worldwide, 1901–2023**
+**Figure 2. Temperature Changes Worldwide**
 
-Data source: NOAA, 2024\
+Data source: NOAA, 2024; ERG workbook “1-2 US and Global Temperature 04-21-24.xlsx”\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/temp_global.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig2.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx)
 
 Figure 3
 
-Same shape as Figure 1, at the global scale: surface, UAH, RSS, and the long-term trend. Hovering the surface line also shows that year’s rank among all years on record, where 1 is the warmest.
+Same shape as Figure 1, at the global scale, except the source data has no separate 5-year average series: the annual surface anomaly, the two satellite records (UAH and RSS), and the long-term trend. Hover any point for its exact value.
 
 Show the data behind this figure
 
-| year | Surface (NOAA) | Long-term trend (OLS regression) | Rank (1 = warmest year on record) | Satellite, UAH method | Satellite, RSS method |
-|---:|---:|---:|---:|---:|---:|
-| 1901 | -0.20 | -0.81 | 88 | NA | NA |
-| 1902 | -0.40 | -0.79 | 103 | NA | NA |
-| 1903 | -0.65 | -0.77 | 117 | NA | NA |
-| 1904 | -0.77 | -0.76 | 122 | NA | NA |
-| 1905 | -0.45 | -0.74 | 109 | NA | NA |
-| 1906 | -0.29 | -0.72 | 96 | NA | NA |
-| 1907 | -0.61 | -0.70 | 116 | NA | NA |
-| 1908 | -0.74 | -0.69 | 120 | NA | NA |
-| 1909 | -0.76 | -0.67 | 121 | NA | NA |
-| 1910 | -0.67 | -0.65 | 118 | NA | NA |
-| 1911 | -0.72 | -0.63 | 119 | NA | NA |
-| 1912 | -0.59 | -0.62 | 115 | NA | NA |
-| 1913 | -0.58 | -0.60 | 113 | NA | NA |
-| 1914 | -0.25 | -0.58 | 94 | NA | NA |
-| 1915 | -0.14 | -0.56 | 84 | NA | NA |
-| 1916 | -0.54 | -0.55 | 111 | NA | NA |
-| 1917 | -0.77 | -0.53 | 122 | NA | NA |
-| 1918 | -0.54 | -0.51 | 111 | NA | NA |
-| 1919 | -0.41 | -0.49 | 104 | NA | NA |
-| 1920 | -0.41 | -0.48 | 104 | NA | NA |
-| 1921 | -0.29 | -0.46 | 96 | NA | NA |
-| 1922 | -0.41 | -0.44 | 104 | NA | NA |
-| 1923 | -0.45 | -0.42 | 109 | NA | NA |
-| 1924 | -0.41 | -0.41 | 104 | NA | NA |
-| 1925 | -0.36 | -0.39 | 102 | NA | NA |
-| 1926 | -0.13 | -0.37 | 82 | NA | NA |
-| 1927 | -0.31 | -0.35 | 100 | NA | NA |
-| 1928 | -0.29 | -0.34 | 96 | NA | NA |
-| 1929 | -0.58 | -0.32 | 113 | NA | NA |
-| 1930 | -0.20 | -0.30 | 88 | NA | NA |
-| 1931 | -0.09 | -0.28 | 76 | NA | NA |
-| 1932 | -0.22 | -0.27 | 91 | NA | NA |
-| 1933 | -0.43 | -0.25 | 108 | NA | NA |
-| 1934 | -0.18 | -0.23 | 87 | NA | NA |
-| 1935 | -0.27 | -0.21 | 95 | NA | NA |
-| 1936 | -0.20 | -0.20 | 88 | NA | NA |
-| 1937 | -0.02 | -0.18 | 72 | NA | NA |
-| 1938 | 0.02 | -0.16 | 67 | NA | NA |
-| 1939 | 0.04 | -0.14 | 66 | NA | NA |
-| 1940 | 0.27 | -0.13 | 50 | NA | NA |
-| 1941 | 0.41 | -0.11 | 42 | NA | NA |
-| 1942 | 0.16 | -0.09 | 55 | NA | NA |
-| 1943 | 0.14 | -0.07 | 57 | NA | NA |
-| 1944 | 0.43 | -0.06 | 40 | NA | NA |
-| 1945 | 0.27 | -0.04 | 50 | NA | NA |
-| 1946 | -0.07 | -0.02 | 75 | NA | NA |
-| 1947 | 0.00 | 0.00 | 71 | NA | NA |
-| 1948 | -0.13 | 0.01 | 82 | NA | NA |
-| 1949 | -0.11 | 0.03 | 80 | NA | NA |
-| 1950 | -0.23 | 0.05 | 93 | NA | NA |
-| 1951 | -0.05 | 0.07 | 73 | NA | NA |
-| 1952 | 0.09 | 0.08 | 63 | NA | NA |
-| 1953 | 0.18 | 0.10 | 52 | NA | NA |
-| 1954 | -0.16 | 0.12 | 86 | NA | NA |
-| 1955 | -0.22 | 0.14 | 91 | NA | NA |
-| 1956 | -0.29 | 0.15 | 96 | NA | NA |
-| 1957 | 0.11 | 0.17 | 61 | NA | NA |
-| 1958 | 0.16 | 0.19 | 55 | NA | NA |
-| 1959 | 0.13 | 0.21 | 59 | NA | NA |
-| 1960 | 0.02 | 0.22 | 67 | NA | NA |
-| 1961 | 0.14 | 0.24 | 57 | NA | NA |
-| 1962 | 0.09 | 0.26 | 63 | NA | NA |
-| 1963 | 0.13 | 0.28 | 59 | NA | NA |
-| 1964 | -0.31 | 0.29 | 100 | NA | NA |
-| 1965 | -0.14 | 0.31 | 84 | NA | NA |
-| 1966 | -0.05 | 0.33 | 73 | NA | NA |
-| 1967 | 0.02 | 0.35 | 67 | NA | NA |
-| 1968 | -0.09 | 0.36 | 76 | NA | NA |
-| 1969 | 0.18 | 0.38 | 52 | NA | NA |
-| 1970 | 0.09 | 0.40 | 63 | NA | NA |
-| 1971 | -0.11 | 0.42 | 80 | NA | NA |
-| 1972 | 0.11 | 0.43 | 61 | NA | NA |
-| 1973 | 0.34 | 0.45 | 46 | NA | NA |
-| 1974 | -0.09 | 0.47 | 76 | NA | NA |
-| 1975 | 0.02 | 0.49 | 67 | NA | NA |
-| 1976 | -0.09 | 0.50 | 76 | NA | NA |
-| 1977 | 0.36 | 0.52 | 44 | NA | NA |
-| 1978 | 0.18 | 0.54 | 52 | NA | NA |
-| 1979 | 0.36 | 0.56 | 44 | 0.50 | 0.30 |
-| 1980 | 0.56 | 0.57 | 37 | 0.80 | 0.57 |
-| 1981 | 0.63 | 0.59 | 32 | 0.68 | 0.54 |
-| 1982 | 0.31 | 0.61 | 48 | 0.35 | 0.20 |
-| 1983 | 0.63 | 0.63 | 32 | 0.80 | 0.59 |
-| 1984 | 0.34 | 0.64 | 46 | 0.45 | 0.14 |
-| 1985 | 0.29 | 0.66 | 49 | 0.23 | 0.05 |
-| 1986 | 0.40 | 0.68 | 43 | 0.49 | 0.25 |
-| 1987 | 0.61 | 0.70 | 35 | 0.97 | 0.76 |
-| 1988 | 0.72 | 0.71 | 31 | 0.95 | 0.70 |
-| 1989 | 0.50 | 0.73 | 38 | 0.50 | 0.35 |
-| 1990 | 0.81 | 0.75 | 27 | 0.90 | 0.66 |
-| 1991 | 0.76 | 0.77 | 28 | 0.92 | 0.74 |
-| 1992 | 0.43 | 0.78 | 40 | 0.38 | 0.27 |
-| 1993 | 0.49 | 0.80 | 39 | 0.51 | 0.38 |
-| 1994 | 0.59 | 0.82 | 36 | 0.76 | 0.61 |
-| 1995 | 0.86 | 0.84 | 26 | 1.01 | 0.85 |
-| 1996 | 0.63 | 0.85 | 32 | 0.86 | 0.68 |
-| 1997 | 0.88 | 0.87 | 25 | 0.87 | 0.74 |
-| 1998 | 1.13 | 0.89 | 18 | 1.75 | 1.55 |
-| 1999 | 0.74 | 0.91 | 29 | 0.85 | 0.74 |
-| 2000 | 0.74 | 0.92 | 29 | 0.84 | 0.73 |
-| 2001 | 0.99 | 0.94 | 23 | 1.09 | 1.02 |
-| 2002 | 1.12 | 0.96 | 20 | 1.27 | 1.22 |
-| 2003 | 1.13 | 0.98 | 18 | 1.22 | 1.24 |
-| 2004 | 1.01 | 0.99 | 22 | 1.02 | 1.12 |
-| 2005 | 1.26 | 1.01 | 12 | 1.24 | 1.35 |
-| 2006 | 1.19 | 1.03 | 15 | 1.08 | 1.20 |
-| 2007 | 1.17 | 1.05 | 16 | 1.17 | 1.26 |
-| 2008 | 0.97 | 1.06 | 24 | 0.70 | 0.90 |
-| 2009 | 1.21 | 1.08 | 14 | 1.05 | 1.18 |
-| 2010 | 1.33 | 1.10 | 11 | 1.47 | 1.60 |
-| 2011 | 1.10 | 1.12 | 21 | 0.91 | 1.04 |
-| 2012 | 1.17 | 1.13 | 16 | 0.97 | 1.15 |
-| 2013 | 1.22 | 1.15 | 13 | 1.13 | 1.28 |
-| 2014 | 1.35 | 1.17 | 10 | 1.21 | 1.38 |
-| 2015 | 1.64 | 1.19 | 6 | 1.38 | 1.61 |
-| 2016 | 1.85 | 1.20 | 2 | 1.83 | 1.95 |
-| 2017 | 1.69 | 1.22 | 5 | 1.61 | 1.73 |
-| 2018 | 1.57 | 1.24 | 8 | 1.29 | 1.49 |
-| 2019 | 1.76 | 1.26 | 4 | 1.68 | 1.85 |
-| 2020 | 1.82 | 1.27 | 3 | 1.77 | 1.96 |
-| 2021 | 1.55 | 1.29 | 9 | 1.38 | 1.62 |
-| 2022 | 1.62 | 1.31 | 7 | 1.44 | 1.59 |
-| 2023 | 2.14 | 1.33 | 1 | NA | 2.10 |
+| year | Annual average | Satellite (UAH), adjusted | Satellite (RSS), adjusted | Linear trend, 1901-2023 |
+|---:|---:|---:|---:|---:|
+| 1901 | -0.20 | NA | NA | -0.81 |
+| 1902 | -0.40 | NA | NA | -0.79 |
+| 1903 | -0.65 | NA | NA | -0.77 |
+| 1904 | -0.77 | NA | NA | -0.76 |
+| 1905 | -0.45 | NA | NA | -0.74 |
+| 1906 | -0.29 | NA | NA | -0.72 |
+| 1907 | -0.61 | NA | NA | -0.70 |
+| 1908 | -0.74 | NA | NA | -0.69 |
+| 1909 | -0.76 | NA | NA | -0.67 |
+| 1910 | -0.67 | NA | NA | -0.65 |
+| 1911 | -0.72 | NA | NA | -0.63 |
+| 1912 | -0.59 | NA | NA | -0.62 |
+| 1913 | -0.58 | NA | NA | -0.60 |
+| 1914 | -0.25 | NA | NA | -0.58 |
+| 1915 | -0.14 | NA | NA | -0.56 |
+| 1916 | -0.54 | NA | NA | -0.55 |
+| 1917 | -0.77 | NA | NA | -0.53 |
+| 1918 | -0.54 | NA | NA | -0.51 |
+| 1919 | -0.41 | NA | NA | -0.49 |
+| 1920 | -0.41 | NA | NA | -0.48 |
+| 1921 | -0.29 | NA | NA | -0.46 |
+| 1922 | -0.41 | NA | NA | -0.44 |
+| 1923 | -0.45 | NA | NA | -0.42 |
+| 1924 | -0.41 | NA | NA | -0.41 |
+| 1925 | -0.36 | NA | NA | -0.39 |
+| 1926 | -0.13 | NA | NA | -0.37 |
+| 1927 | -0.31 | NA | NA | -0.35 |
+| 1928 | -0.29 | NA | NA | -0.34 |
+| 1929 | -0.58 | NA | NA | -0.32 |
+| 1930 | -0.20 | NA | NA | -0.30 |
+| 1931 | -0.09 | NA | NA | -0.28 |
+| 1932 | -0.22 | NA | NA | -0.27 |
+| 1933 | -0.43 | NA | NA | -0.25 |
+| 1934 | -0.18 | NA | NA | -0.23 |
+| 1935 | -0.27 | NA | NA | -0.21 |
+| 1936 | -0.20 | NA | NA | -0.20 |
+| 1937 | -0.02 | NA | NA | -0.18 |
+| 1938 | 0.02 | NA | NA | -0.16 |
+| 1939 | 0.04 | NA | NA | -0.14 |
+| 1940 | 0.27 | NA | NA | -0.13 |
+| 1941 | 0.41 | NA | NA | -0.11 |
+| 1942 | 0.16 | NA | NA | -0.09 |
+| 1943 | 0.14 | NA | NA | -0.07 |
+| 1944 | 0.43 | NA | NA | -0.06 |
+| 1945 | 0.27 | NA | NA | -0.04 |
+| 1946 | -0.07 | NA | NA | -0.02 |
+| 1947 | 0.00 | NA | NA | 0.00 |
+| 1948 | -0.13 | NA | NA | 0.01 |
+| 1949 | -0.11 | NA | NA | 0.03 |
+| 1950 | -0.23 | NA | NA | 0.05 |
+| 1951 | -0.05 | NA | NA | 0.07 |
+| 1952 | 0.09 | NA | NA | 0.08 |
+| 1953 | 0.18 | NA | NA | 0.10 |
+| 1954 | -0.16 | NA | NA | 0.12 |
+| 1955 | -0.22 | NA | NA | 0.14 |
+| 1956 | -0.29 | NA | NA | 0.15 |
+| 1957 | 0.11 | NA | NA | 0.17 |
+| 1958 | 0.16 | NA | NA | 0.19 |
+| 1959 | 0.13 | NA | NA | 0.21 |
+| 1960 | 0.02 | NA | NA | 0.22 |
+| 1961 | 0.14 | NA | NA | 0.24 |
+| 1962 | 0.09 | NA | NA | 0.26 |
+| 1963 | 0.13 | NA | NA | 0.28 |
+| 1964 | -0.31 | NA | NA | 0.29 |
+| 1965 | -0.14 | NA | NA | 0.31 |
+| 1966 | -0.05 | NA | NA | 0.33 |
+| 1967 | 0.02 | NA | NA | 0.35 |
+| 1968 | -0.09 | NA | NA | 0.36 |
+| 1969 | 0.18 | NA | NA | 0.38 |
+| 1970 | 0.09 | NA | NA | 0.40 |
+| 1971 | -0.11 | NA | NA | 0.42 |
+| 1972 | 0.11 | NA | NA | 0.43 |
+| 1973 | 0.34 | NA | NA | 0.45 |
+| 1974 | -0.09 | NA | NA | 0.47 |
+| 1975 | 0.02 | NA | NA | 0.49 |
+| 1976 | -0.09 | NA | NA | 0.50 |
+| 1977 | 0.36 | NA | NA | 0.52 |
+| 1978 | 0.18 | NA | NA | 0.54 |
+| 1979 | 0.36 | 0.50 | 0.30 | 0.56 |
+| 1980 | 0.56 | 0.80 | 0.57 | 0.57 |
+| 1981 | 0.63 | 0.68 | 0.54 | 0.59 |
+| 1982 | 0.31 | 0.35 | 0.20 | 0.61 |
+| 1983 | 0.63 | 0.80 | 0.59 | 0.63 |
+| 1984 | 0.34 | 0.45 | 0.14 | 0.64 |
+| 1985 | 0.29 | 0.23 | 0.05 | 0.66 |
+| 1986 | 0.40 | 0.49 | 0.25 | 0.68 |
+| 1987 | 0.61 | 0.97 | 0.76 | 0.70 |
+| 1988 | 0.72 | 0.95 | 0.70 | 0.71 |
+| 1989 | 0.50 | 0.50 | 0.35 | 0.73 |
+| 1990 | 0.81 | 0.90 | 0.66 | 0.75 |
+| 1991 | 0.76 | 0.92 | 0.74 | 0.77 |
+| 1992 | 0.43 | 0.38 | 0.27 | 0.78 |
+| 1993 | 0.49 | 0.51 | 0.38 | 0.80 |
+| 1994 | 0.59 | 0.76 | 0.61 | 0.82 |
+| 1995 | 0.86 | 1.01 | 0.85 | 0.84 |
+| 1996 | 0.63 | 0.86 | 0.68 | 0.85 |
+| 1997 | 0.88 | 0.87 | 0.74 | 0.87 |
+| 1998 | 1.13 | 1.75 | 1.55 | 0.89 |
+| 1999 | 0.74 | 0.85 | 0.74 | 0.91 |
+| 2000 | 0.74 | 0.84 | 0.73 | 0.92 |
+| 2001 | 0.99 | 1.09 | 1.02 | 0.94 |
+| 2002 | 1.12 | 1.27 | 1.22 | 0.96 |
+| 2003 | 1.13 | 1.22 | 1.24 | 0.98 |
+| 2004 | 1.01 | 1.02 | 1.12 | 0.99 |
+| 2005 | 1.26 | 1.24 | 1.35 | 1.01 |
+| 2006 | 1.19 | 1.08 | 1.20 | 1.03 |
+| 2007 | 1.17 | 1.17 | 1.26 | 1.05 |
+| 2008 | 0.97 | 0.70 | 0.90 | 1.06 |
+| 2009 | 1.21 | 1.05 | 1.18 | 1.08 |
+| 2010 | 1.33 | 1.47 | 1.60 | 1.10 |
+| 2011 | 1.10 | 0.91 | 1.04 | 1.12 |
+| 2012 | 1.17 | 0.97 | 1.15 | 1.13 |
+| 2013 | 1.22 | 1.13 | 1.28 | 1.15 |
+| 2014 | 1.35 | 1.21 | 1.38 | 1.17 |
+| 2015 | 1.64 | 1.38 | 1.61 | 1.19 |
+| 2016 | 1.85 | 1.83 | 1.95 | 1.20 |
+| 2017 | 1.69 | 1.61 | 1.73 | 1.22 |
+| 2018 | 1.57 | 1.29 | 1.49 | 1.24 |
+| 2019 | 1.76 | 1.68 | 1.85 | 1.26 |
+| 2020 | 1.82 | 1.77 | 1.96 | 1.27 |
+| 2021 | 1.55 | 1.38 | 1.62 | 1.29 |
+| 2022 | 1.62 | 1.44 | 1.59 | 1.31 |
+| 2023 | 2.14 | NA | 2.10 | 1.33 |
 
 Figure 4
 
@@ -303,375 +303,375 @@ Figure 4
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/temp_climate_division.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/temperature_fig-3.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig3.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/temperature_fig-3.csv)
 
-![Map of the rate of temperature change by NOAA climate division across the contiguous United States and Alaska, 1901-2023](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/images/fig-3.png)
+Figure 5
 
-This map shows EPA’s own published image rather than a version redrawn on this site: the underlying data is one rate of change per climate division, not station points or division boundaries, so there is no geometry here to place on a map the way other indicators on this site do. The tidy per-division rates behind the map are available for download above and in the table below. EPA also publishes an [interactive version of this map](https://arcg.is/L1iKu).
+EPA’s own published figure is a map; the underlying data is one rate of change per climate division, not station points or division boundaries, so there is no geometry here to place on a map the way other indicators on this site do. Instead, this chart shows every climate division’s own rate, split by which baseline period it uses: the contiguous 48 states are measured against 1901-2000, and Alaska’s 12 divisions against 1925-2000. Hover any point for its climate division and rate. EPA also publishes an [interactive version of the original map](https://arcg.is/L1iKu).
 
 Show the data behind this figure
 
-| Climate division | Region               | Baseline period | Rate (°F per century) |
-|:-----------------|:---------------------|:----------------|:----------------------|
-| 5001             | Alaska               | 1925-2000       | +4.171                |
-| 5003             | Alaska               | 1925-2000       | +3.820                |
-| 5002             | Alaska               | 1925-2000       | +3.561                |
-| 5007             | Alaska               | 1925-2000       | +3.483                |
-| 5004             | Alaska               | 1925-2000       | +2.840                |
-| 5008             | Alaska               | 1925-2000       | +2.677                |
-| 5006             | Alaska               | 1925-2000       | +2.621                |
-| 5005             | Alaska               | 1925-2000       | +2.284                |
-| 5009             | Alaska               | 1925-2000       | +2.011                |
-| 5013             | Alaska               | 1925-2000       | +1.913                |
-| 5012             | Alaska               | 1925-2000       | +1.567                |
-| 5011             | Alaska               | 1925-2000       | +1.408                |
-| 5010             | Alaska               | 1925-2000       | +0.104                |
-| 3004             | Contiguous 48 states | 1901-2000       | +3.663                |
-| 2803             | Contiguous 48 states | 1901-2000       | +3.580                |
-| 3701             | Contiguous 48 states | 1901-2000       | +3.454                |
-| 406              | Contiguous 48 states | 1901-2000       | +3.436                |
-| 2801             | Contiguous 48 states | 1901-2000       | +3.398                |
-| 603              | Contiguous 48 states | 1901-2000       | +3.260                |
-| 1903             | Contiguous 48 states | 1901-2000       | +3.258                |
-| 2003             | Contiguous 48 states | 1901-2000       | +3.241                |
-| 3008             | Contiguous 48 states | 1901-2000       | +3.217                |
-| 2802             | Contiguous 48 states | 1901-2000       | +3.165                |
-| 1703             | Contiguous 48 states | 1901-2000       | +3.139                |
-| 1702             | Contiguous 48 states | 1901-2000       | +3.040                |
-| 2102             | Contiguous 48 states | 1901-2000       | +3.015                |
-| 205              | Contiguous 48 states | 1901-2000       | +3.003                |
-| 602              | Contiguous 48 states | 1901-2000       | +2.978                |
-| 4206             | Contiguous 48 states | 1901-2000       | +2.951                |
-| 4207             | Contiguous 48 states | 1901-2000       | +2.950                |
-| 807              | Contiguous 48 states | 1901-2000       | +2.948                |
-| 806              | Contiguous 48 states | 1901-2000       | +2.931                |
-| 2004             | Contiguous 48 states | 1901-2000       | +2.928                |
-| 206              | Contiguous 48 states | 1901-2000       | +2.910                |
-| 1902             | Contiguous 48 states | 1901-2000       | +2.888                |
-| 4303             | Contiguous 48 states | 1901-2000       | +2.869                |
-| 407              | Contiguous 48 states | 1901-2000       | +2.865                |
-| 2702             | Contiguous 48 states | 1901-2000       | +2.863                |
-| 601              | Contiguous 48 states | 1901-2000       | +2.857                |
-| 702              | Contiguous 48 states | 1901-2000       | +2.854                |
-| 1701             | Contiguous 48 states | 1901-2000       | +2.848                |
-| 2106             | Contiguous 48 states | 1901-2000       | +2.824                |
-| 4302             | Contiguous 48 states | 1901-2000       | +2.808                |
-| 2103             | Contiguous 48 states | 1901-2000       | +2.806                |
-| 2603             | Contiguous 48 states | 1901-2000       | +2.787                |
-| 3005             | Contiguous 48 states | 1901-2000       | +2.779                |
-| 502              | Contiguous 48 states | 1901-2000       | +2.771                |
-| 3603             | Contiguous 48 states | 1901-2000       | +2.756                |
-| 2701             | Contiguous 48 states | 1901-2000       | +2.742                |
-| 701              | Contiguous 48 states | 1901-2000       | +2.742                |
-| 2007             | Contiguous 48 states | 1901-2000       | +2.718                |
-| 2907             | Contiguous 48 states | 1901-2000       | +2.712                |
-| 404              | Contiguous 48 states | 1901-2000       | +2.698                |
-| 1901             | Contiguous 48 states | 1901-2000       | +2.690                |
-| 4810             | Contiguous 48 states | 1901-2000       | +2.679                |
-| 2101             | Contiguous 48 states | 1901-2000       | +2.677                |
-| 4301             | Contiguous 48 states | 1901-2000       | +2.656                |
-| 4808             | Contiguous 48 states | 1901-2000       | +2.647                |
-| 1801             | Contiguous 48 states | 1901-2000       | +2.632                |
-| 2001             | Contiguous 48 states | 1901-2000       | +2.593                |
-| 203              | Contiguous 48 states | 1901-2000       | +2.581                |
-| 805              | Contiguous 48 states | 1901-2000       | +2.574                |
-| 2010             | Contiguous 48 states | 1901-2000       | +2.573                |
-| 3007             | Contiguous 48 states | 1901-2000       | +2.569                |
-| 1806             | Contiguous 48 states | 1901-2000       | +2.567                |
-| 2906             | Contiguous 48 states | 1901-2000       | +2.551                |
-| 2006             | Contiguous 48 states | 1901-2000       | +2.550                |
-| 3201             | Contiguous 48 states | 1901-2000       | +2.550                |
-| 2406             | Contiguous 48 states | 1901-2000       | +2.545                |
-| 3507             | Contiguous 48 states | 1901-2000       | +2.539                |
-| 2002             | Contiguous 48 states | 1901-2000       | +2.521                |
-| 3202             | Contiguous 48 states | 1901-2000       | +2.517                |
-| 4703             | Contiguous 48 states | 1901-2000       | +2.516                |
-| 2403             | Contiguous 48 states | 1901-2000       | +2.513                |
-| 1802             | Contiguous 48 states | 1901-2000       | +2.479                |
-| 3303             | Contiguous 48 states | 1901-2000       | +2.478                |
-| 1804             | Contiguous 48 states | 1901-2000       | +2.469                |
-| 3602             | Contiguous 48 states | 1901-2000       | +2.451                |
-| 3203             | Contiguous 48 states | 1901-2000       | +2.439                |
-| 2105             | Contiguous 48 states | 1901-2000       | +2.406                |
-| 4706             | Contiguous 48 states | 1901-2000       | +2.400                |
-| 3601             | Contiguous 48 states | 1901-2000       | +2.396                |
-| 3505             | Contiguous 48 states | 1901-2000       | +2.384                |
-| 3204             | Contiguous 48 states | 1901-2000       | +2.377                |
-| 804              | Contiguous 48 states | 1901-2000       | +2.373                |
-| 3604             | Contiguous 48 states | 1901-2000       | +2.367                |
-| 503              | Contiguous 48 states | 1901-2000       | +2.363                |
-| 1805             | Contiguous 48 states | 1901-2000       | +2.352                |
-| 2604             | Contiguous 48 states | 1901-2000       | +2.350                |
-| 204              | Contiguous 48 states | 1901-2000       | +2.346                |
-| 201              | Contiguous 48 states | 1901-2000       | +2.333                |
-| 2905             | Contiguous 48 states | 1901-2000       | +2.333                |
-| 3003             | Contiguous 48 states | 1901-2000       | +2.327                |
-| 2005             | Contiguous 48 states | 1901-2000       | +2.323                |
-| 2501             | Contiguous 48 states | 1901-2000       | +2.293                |
-| 4105             | Contiguous 48 states | 1901-2000       | +2.291                |
-| 3205             | Contiguous 48 states | 1901-2000       | +2.286                |
-| 3009             | Contiguous 48 states | 1901-2000       | +2.268                |
-| 3207             | Contiguous 48 states | 1901-2000       | +2.259                |
-| 3509             | Contiguous 48 states | 1901-2000       | +2.250                |
-| 2104             | Contiguous 48 states | 1901-2000       | +2.247                |
-| 803              | Contiguous 48 states | 1901-2000       | +2.239                |
-| 1803             | Contiguous 48 states | 1901-2000       | +2.236                |
-| 504              | Contiguous 48 states | 1901-2000       | +2.233                |
-| 3503             | Contiguous 48 states | 1901-2000       | +2.231                |
-| 4204             | Contiguous 48 states | 1901-2000       | +2.213                |
-| 3506             | Contiguous 48 states | 1901-2000       | +2.201                |
-| 2009             | Contiguous 48 states | 1901-2000       | +2.195                |
-| 4701             | Contiguous 48 states | 1901-2000       | +2.189                |
-| 4404             | Contiguous 48 states | 1901-2000       | +2.172                |
-| 3905             | Contiguous 48 states | 1901-2000       | +2.152                |
-| 4205             | Contiguous 48 states | 1901-2000       | +2.145                |
-| 4806             | Contiguous 48 states | 1901-2000       | +2.143                |
-| 3901             | Contiguous 48 states | 1901-2000       | +2.140                |
-| 3610             | Contiguous 48 states | 1901-2000       | +2.135                |
-| 3208             | Contiguous 48 states | 1901-2000       | +2.132                |
-| 3206             | Contiguous 48 states | 1901-2000       | +2.130                |
-| 4202             | Contiguous 48 states | 1901-2000       | +2.130                |
-| 4804             | Contiguous 48 states | 1901-2000       | +2.125                |
-| 4510             | Contiguous 48 states | 1901-2000       | +2.122                |
-| 3508             | Contiguous 48 states | 1901-2000       | +2.118                |
-| 4705             | Contiguous 48 states | 1901-2000       | +2.110                |
-| 4803             | Contiguous 48 states | 1901-2000       | +2.093                |
-| 4807             | Contiguous 48 states | 1901-2000       | +2.083                |
-| 4702             | Contiguous 48 states | 1901-2000       | +2.073                |
-| 2008             | Contiguous 48 states | 1901-2000       | +2.059                |
-| 4809             | Contiguous 48 states | 1901-2000       | +2.056                |
-| 405              | Contiguous 48 states | 1901-2000       | +2.045                |
-| 3904             | Contiguous 48 states | 1901-2000       | +2.021                |
-| 2401             | Contiguous 48 states | 1901-2000       | +1.994                |
-| 4805             | Contiguous 48 states | 1901-2000       | +1.991                |
-| 401              | Contiguous 48 states | 1901-2000       | +1.986                |
-| 403              | Contiguous 48 states | 1901-2000       | +1.981                |
-| 3209             | Contiguous 48 states | 1901-2000       | +1.979                |
-| 1007             | Contiguous 48 states | 1901-2000       | +1.959                |
-| 1203             | Contiguous 48 states | 1901-2000       | +1.956                |
-| 2407             | Contiguous 48 states | 1901-2000       | +1.955                |
-| 2402             | Contiguous 48 states | 1901-2000       | +1.955                |
-| 3908             | Contiguous 48 states | 1901-2000       | +1.954                |
-| 3301             | Contiguous 48 states | 1901-2000       | +1.936                |
-| 1008             | Contiguous 48 states | 1901-2000       | +1.921                |
-| 2908             | Contiguous 48 states | 1901-2000       | +1.921                |
-| 1003             | Contiguous 48 states | 1901-2000       | +1.919                |
-| 2601             | Contiguous 48 states | 1901-2000       | +1.917                |
-| 4201             | Contiguous 48 states | 1901-2000       | +1.909                |
-| 3501             | Contiguous 48 states | 1901-2000       | +1.904                |
-| 4704             | Contiguous 48 states | 1901-2000       | +1.903                |
-| 1004             | Contiguous 48 states | 1901-2000       | +1.895                |
-| 4203             | Contiguous 48 states | 1901-2000       | +1.889                |
-| 1002             | Contiguous 48 states | 1901-2000       | +1.878                |
-| 3002             | Contiguous 48 states | 1901-2000       | +1.877                |
-| 1201             | Contiguous 48 states | 1901-2000       | +1.871                |
-| 207              | Contiguous 48 states | 1901-2000       | +1.868                |
-| 1202             | Contiguous 48 states | 1901-2000       | +1.862                |
-| 1404             | Contiguous 48 states | 1901-2000       | +1.840                |
-| 1401             | Contiguous 48 states | 1901-2000       | +1.833                |
-| 4801             | Contiguous 48 states | 1901-2000       | +1.817                |
-| 4506             | Contiguous 48 states | 1901-2000       | +1.816                |
-| 202              | Contiguous 48 states | 1901-2000       | +1.811                |
-| 3504             | Contiguous 48 states | 1901-2000       | +1.806                |
-| 3307             | Contiguous 48 states | 1901-2000       | +1.805                |
-| 1807             | Contiguous 48 states | 1901-2000       | +1.801                |
-| 2405             | Contiguous 48 states | 1901-2000       | +1.789                |
-| 1102             | Contiguous 48 states | 1901-2000       | +1.783                |
-| 4508             | Contiguous 48 states | 1901-2000       | +1.778                |
-| 1105             | Contiguous 48 states | 1901-2000       | +1.776                |
-| 3502             | Contiguous 48 states | 1901-2000       | +1.756                |
-| 3906             | Contiguous 48 states | 1901-2000       | +1.755                |
-| 402              | Contiguous 48 states | 1901-2000       | +1.750                |
-| 2404             | Contiguous 48 states | 1901-2000       | +1.739                |
-| 3903             | Contiguous 48 states | 1901-2000       | +1.737                |
-| 2109             | Contiguous 48 states | 1901-2000       | +1.728                |
-| 3010             | Contiguous 48 states | 1901-2000       | +1.727                |
-| 1104             | Contiguous 48 states | 1901-2000       | +1.717                |
-| 4708             | Contiguous 48 states | 1901-2000       | +1.711                |
-| 1001             | Contiguous 48 states | 1901-2000       | +1.706                |
-| 4101             | Contiguous 48 states | 1901-2000       | +1.703                |
-| 3308             | Contiguous 48 states | 1901-2000       | +1.693                |
-| 2901             | Contiguous 48 states | 1901-2000       | +1.692                |
-| 4505             | Contiguous 48 states | 1901-2000       | +1.672                |
-| 3907             | Contiguous 48 states | 1901-2000       | +1.669                |
-| 2903             | Contiguous 48 states | 1901-2000       | +1.655                |
-| 505              | Contiguous 48 states | 1901-2000       | +1.650                |
-| 4709             | Contiguous 48 states | 1901-2000       | +1.640                |
-| 2902             | Contiguous 48 states | 1901-2000       | +1.626                |
-| 4401             | Contiguous 48 states | 1901-2000       | +1.624                |
-| 4108             | Contiguous 48 states | 1901-2000       | +1.621                |
-| 1101             | Contiguous 48 states | 1901-2000       | +1.608                |
-| 3306             | Contiguous 48 states | 1901-2000       | +1.607                |
-| 2107             | Contiguous 48 states | 1901-2000       | +1.599                |
-| 3605             | Contiguous 48 states | 1901-2000       | +1.583                |
-| 4509             | Contiguous 48 states | 1901-2000       | +1.575                |
-| 3006             | Contiguous 48 states | 1901-2000       | +1.571                |
-| 2506             | Contiguous 48 states | 1901-2000       | +1.568                |
-| 1405             | Contiguous 48 states | 1901-2000       | +1.568                |
-| 4504             | Contiguous 48 states | 1901-2000       | +1.566                |
-| 1010             | Contiguous 48 states | 1901-2000       | +1.563                |
-| 2507             | Contiguous 48 states | 1901-2000       | +1.559                |
-| 4402             | Contiguous 48 states | 1901-2000       | +1.557                |
-| 3304             | Contiguous 48 states | 1901-2000       | +1.535                |
-| 4507             | Contiguous 48 states | 1901-2000       | +1.535                |
-| 3902             | Contiguous 48 states | 1901-2000       | +1.534                |
-| 501              | Contiguous 48 states | 1901-2000       | +1.528                |
-| 2602             | Contiguous 48 states | 1901-2000       | +1.520                |
-| 2502             | Contiguous 48 states | 1901-2000       | +1.488                |
-| 3001             | Contiguous 48 states | 1901-2000       | +1.483                |
-| 4501             | Contiguous 48 states | 1901-2000       | +1.480                |
-| 4502             | Contiguous 48 states | 1901-2000       | +1.471                |
-| 802              | Contiguous 48 states | 1901-2000       | +1.469                |
-| 4403             | Contiguous 48 states | 1901-2000       | +1.464                |
-| 4606             | Contiguous 48 states | 1901-2000       | +1.461                |
-| 1009             | Contiguous 48 states | 1901-2000       | +1.452                |
-| 3909             | Contiguous 48 states | 1901-2000       | +1.451                |
-| 1407             | Contiguous 48 states | 1901-2000       | +1.445                |
-| 3606             | Contiguous 48 states | 1901-2000       | +1.441                |
-| 3103             | Contiguous 48 states | 1901-2000       | +1.440                |
-| 3608             | Contiguous 48 states | 1901-2000       | +1.438                |
-| 1301             | Contiguous 48 states | 1901-2000       | +1.434                |
-| 2904             | Contiguous 48 states | 1901-2000       | +1.415                |
-| 4503             | Contiguous 48 states | 1901-2000       | +1.415                |
-| 2108             | Contiguous 48 states | 1901-2000       | +1.403                |
-| 3302             | Contiguous 48 states | 1901-2000       | +1.388                |
-| 1005             | Contiguous 48 states | 1901-2000       | +1.386                |
-| 4802             | Contiguous 48 states | 1901-2000       | +1.386                |
-| 3102             | Contiguous 48 states | 1901-2000       | +1.383                |
-| 4107             | Contiguous 48 states | 1901-2000       | +1.367                |
-| 4602             | Contiguous 48 states | 1901-2000       | +1.366                |
-| 1006             | Contiguous 48 states | 1901-2000       | +1.365                |
-| 3305             | Contiguous 48 states | 1901-2000       | +1.348                |
-| 4109             | Contiguous 48 states | 1901-2000       | +1.341                |
-| 4707             | Contiguous 48 states | 1901-2000       | +1.337                |
-| 4405             | Contiguous 48 states | 1901-2000       | +1.335                |
-| 1206             | Contiguous 48 states | 1901-2000       | +1.328                |
-| 1402             | Contiguous 48 states | 1901-2000       | +1.307                |
-| 1107             | Contiguous 48 states | 1901-2000       | +1.274                |
-| 3108             | Contiguous 48 states | 1901-2000       | +1.260                |
-| 3107             | Contiguous 48 states | 1901-2000       | +1.257                |
-| 2509             | Contiguous 48 states | 1901-2000       | +1.257                |
-| 4601             | Contiguous 48 states | 1901-2000       | +1.255                |
-| 1304             | Contiguous 48 states | 1901-2000       | +1.247                |
-| 1302             | Contiguous 48 states | 1901-2000       | +1.247                |
-| 1808             | Contiguous 48 states | 1901-2000       | +1.238                |
-| 1204             | Contiguous 48 states | 1901-2000       | +1.238                |
-| 1406             | Contiguous 48 states | 1901-2000       | +1.235                |
-| 3310             | Contiguous 48 states | 1901-2000       | +1.235                |
-| 2503             | Contiguous 48 states | 1901-2000       | +1.226                |
-| 3106             | Contiguous 48 states | 1901-2000       | +1.218                |
-| 3807             | Contiguous 48 states | 1901-2000       | +1.216                |
-| 3105             | Contiguous 48 states | 1901-2000       | +1.200                |
-| 3104             | Contiguous 48 states | 1901-2000       | +1.196                |
-| 3404             | Contiguous 48 states | 1901-2000       | +1.195                |
-| 1403             | Contiguous 48 states | 1901-2000       | +1.194                |
-| 1408             | Contiguous 48 states | 1901-2000       | +1.194                |
-| 3802             | Contiguous 48 states | 1901-2000       | +1.192                |
-| 909              | Contiguous 48 states | 1901-2000       | +1.190                |
-| 3607             | Contiguous 48 states | 1901-2000       | +1.184                |
-| 4110             | Contiguous 48 states | 1901-2000       | +1.180                |
-| 4604             | Contiguous 48 states | 1901-2000       | +1.178                |
-| 1306             | Contiguous 48 states | 1901-2000       | +1.174                |
-| 1106             | Contiguous 48 states | 1901-2000       | +1.173                |
-| 1108             | Contiguous 48 states | 1901-2000       | +1.167                |
-| 3609             | Contiguous 48 states | 1901-2000       | +1.159                |
-| 3309             | Contiguous 48 states | 1901-2000       | +1.156                |
-| 2505             | Contiguous 48 states | 1901-2000       | +1.155                |
-| 1209             | Contiguous 48 states | 1901-2000       | +1.154                |
-| 4102             | Contiguous 48 states | 1901-2000       | +1.153                |
-| 1503             | Contiguous 48 states | 1901-2000       | +1.136                |
-| 1303             | Contiguous 48 states | 1901-2000       | +1.118                |
-| 906              | Contiguous 48 states | 1901-2000       | +1.108                |
-| 3804             | Contiguous 48 states | 1901-2000       | +1.099                |
-| 1207             | Contiguous 48 states | 1901-2000       | +1.093                |
-| 2303             | Contiguous 48 states | 1901-2000       | +1.065                |
-| 3401             | Contiguous 48 states | 1901-2000       | +1.058                |
-| 2302             | Contiguous 48 states | 1901-2000       | +1.043                |
-| 2301             | Contiguous 48 states | 1901-2000       | +1.023                |
-| 1205             | Contiguous 48 states | 1901-2000       | +1.012                |
-| 2508             | Contiguous 48 states | 1901-2000       | +1.007                |
-| 3407             | Contiguous 48 states | 1901-2000       | +0.997                |
-| 3805             | Contiguous 48 states | 1901-2000       | +0.980                |
-| 3402             | Contiguous 48 states | 1901-2000       | +0.973                |
-| 4406             | Contiguous 48 states | 1901-2000       | +0.946                |
-| 3803             | Contiguous 48 states | 1901-2000       | +0.942                |
-| 905              | Contiguous 48 states | 1901-2000       | +0.938                |
-| 3801             | Contiguous 48 states | 1901-2000       | +0.921                |
-| 1609             | Contiguous 48 states | 1901-2000       | +0.906                |
-| 3806             | Contiguous 48 states | 1901-2000       | +0.891                |
-| 908              | Contiguous 48 states | 1901-2000       | +0.890                |
-| 1307             | Contiguous 48 states | 1901-2000       | +0.889                |
-| 1208             | Contiguous 48 states | 1901-2000       | +0.889                |
-| 1305             | Contiguous 48 states | 1901-2000       | +0.889                |
-| 302              | Contiguous 48 states | 1901-2000       | +0.878                |
-| 4106             | Contiguous 48 states | 1901-2000       | +0.873                |
-| 1502             | Contiguous 48 states | 1901-2000       | +0.865                |
-| 1103             | Contiguous 48 states | 1901-2000       | +0.849                |
-| 1603             | Contiguous 48 states | 1901-2000       | +0.848                |
-| 907              | Contiguous 48 states | 1901-2000       | +0.841                |
-| 1109             | Contiguous 48 states | 1901-2000       | +0.799                |
-| 303              | Contiguous 48 states | 1901-2000       | +0.792                |
-| 1602             | Contiguous 48 states | 1901-2000       | +0.782                |
-| 2210             | Contiguous 48 states | 1901-2000       | +0.779                |
-| 2304             | Contiguous 48 states | 1901-2000       | +0.759                |
-| 4103             | Contiguous 48 states | 1901-2000       | +0.750                |
-| 1309             | Contiguous 48 states | 1901-2000       | +0.740                |
-| 4004             | Contiguous 48 states | 1901-2000       | +0.715                |
-| 2305             | Contiguous 48 states | 1901-2000       | +0.715                |
-| 904              | Contiguous 48 states | 1901-2000       | +0.710                |
-| 1409             | Contiguous 48 states | 1901-2000       | +0.697                |
-| 3101             | Contiguous 48 states | 1901-2000       | +0.697                |
-| 4603             | Contiguous 48 states | 1901-2000       | +0.683                |
-| 4605             | Contiguous 48 states | 1901-2000       | +0.675                |
-| 903              | Contiguous 48 states | 1901-2000       | +0.663                |
-| 801              | Contiguous 48 states | 1901-2000       | +0.657                |
-| 4003             | Contiguous 48 states | 1901-2000       | +0.646                |
-| 108              | Contiguous 48 states | 1901-2000       | +0.643                |
-| 1308             | Contiguous 48 states | 1901-2000       | +0.640                |
-| 1608             | Contiguous 48 states | 1901-2000       | +0.636                |
-| 4104             | Contiguous 48 states | 1901-2000       | +0.633                |
-| 309              | Contiguous 48 states | 1901-2000       | +0.632                |
-| 301              | Contiguous 48 states | 1901-2000       | +0.626                |
-| 1604             | Contiguous 48 states | 1901-2000       | +0.617                |
-| 2204             | Contiguous 48 states | 1901-2000       | +0.605                |
-| 1601             | Contiguous 48 states | 1901-2000       | +0.594                |
-| 4002             | Contiguous 48 states | 1901-2000       | +0.562                |
-| 1606             | Contiguous 48 states | 1901-2000       | +0.549                |
-| 306              | Contiguous 48 states | 1901-2000       | +0.515                |
-| 304              | Contiguous 48 states | 1901-2000       | +0.513                |
-| 4001             | Contiguous 48 states | 1901-2000       | +0.504                |
-| 2306             | Contiguous 48 states | 1901-2000       | +0.497                |
-| 1501             | Contiguous 48 states | 1901-2000       | +0.466                |
-| 902              | Contiguous 48 states | 1901-2000       | +0.462                |
-| 1504             | Contiguous 48 states | 1901-2000       | +0.460                |
-| 3405             | Contiguous 48 states | 1901-2000       | +0.433                |
-| 2207             | Contiguous 48 states | 1901-2000       | +0.418                |
-| 3409             | Contiguous 48 states | 1901-2000       | +0.403                |
-| 104              | Contiguous 48 states | 1901-2000       | +0.391                |
-| 3408             | Contiguous 48 states | 1901-2000       | +0.358                |
-| 2208             | Contiguous 48 states | 1901-2000       | +0.353                |
-| 102              | Contiguous 48 states | 1901-2000       | +0.346                |
-| 901              | Contiguous 48 states | 1901-2000       | +0.337                |
-| 307              | Contiguous 48 states | 1901-2000       | +0.330                |
-| 2201             | Contiguous 48 states | 1901-2000       | +0.329                |
-| 3403             | Contiguous 48 states | 1901-2000       | +0.328                |
-| 305              | Contiguous 48 states | 1901-2000       | +0.324                |
-| 105              | Contiguous 48 states | 1901-2000       | +0.324                |
-| 1605             | Contiguous 48 states | 1901-2000       | +0.285                |
-| 101              | Contiguous 48 states | 1901-2000       | +0.275                |
-| 2205             | Contiguous 48 states | 1901-2000       | +0.245                |
-| 2209             | Contiguous 48 states | 1901-2000       | +0.213                |
-| 1607             | Contiguous 48 states | 1901-2000       | +0.175                |
-| 106              | Contiguous 48 states | 1901-2000       | +0.131                |
-| 107              | Contiguous 48 states | 1901-2000       | +0.081                |
-| 2203             | Contiguous 48 states | 1901-2000       | +0.067                |
-| 3406             | Contiguous 48 states | 1901-2000       | +0.023                |
-| 308              | Contiguous 48 states | 1901-2000       | +0.015                |
-| 2202             | Contiguous 48 states | 1901-2000       | +0.009                |
-| 2206             | Contiguous 48 states | 1901-2000       | -0.031                |
-| 103              | Contiguous 48 states | 1901-2000       | -0.086                |
+| Climate division | Baseline period | Rate (°F per century) |
+|:-----------------|:----------------|:----------------------|
+| 3004             | 1901-2000       | +3.663                |
+| 2803             | 1901-2000       | +3.580                |
+| 3701             | 1901-2000       | +3.454                |
+| 406              | 1901-2000       | +3.436                |
+| 2801             | 1901-2000       | +3.398                |
+| 603              | 1901-2000       | +3.260                |
+| 1903             | 1901-2000       | +3.258                |
+| 2003             | 1901-2000       | +3.241                |
+| 3008             | 1901-2000       | +3.217                |
+| 2802             | 1901-2000       | +3.165                |
+| 1703             | 1901-2000       | +3.139                |
+| 1702             | 1901-2000       | +3.040                |
+| 2102             | 1901-2000       | +3.015                |
+| 205              | 1901-2000       | +3.003                |
+| 602              | 1901-2000       | +2.978                |
+| 4206             | 1901-2000       | +2.951                |
+| 4207             | 1901-2000       | +2.950                |
+| 807              | 1901-2000       | +2.948                |
+| 806              | 1901-2000       | +2.931                |
+| 2004             | 1901-2000       | +2.928                |
+| 206              | 1901-2000       | +2.910                |
+| 1902             | 1901-2000       | +2.888                |
+| 4303             | 1901-2000       | +2.869                |
+| 407              | 1901-2000       | +2.865                |
+| 2702             | 1901-2000       | +2.863                |
+| 601              | 1901-2000       | +2.857                |
+| 702              | 1901-2000       | +2.854                |
+| 1701             | 1901-2000       | +2.848                |
+| 2106             | 1901-2000       | +2.824                |
+| 4302             | 1901-2000       | +2.808                |
+| 2103             | 1901-2000       | +2.806                |
+| 2603             | 1901-2000       | +2.787                |
+| 3005             | 1901-2000       | +2.779                |
+| 502              | 1901-2000       | +2.771                |
+| 3603             | 1901-2000       | +2.756                |
+| 2701             | 1901-2000       | +2.742                |
+| 701              | 1901-2000       | +2.742                |
+| 2007             | 1901-2000       | +2.718                |
+| 2907             | 1901-2000       | +2.712                |
+| 404              | 1901-2000       | +2.698                |
+| 1901             | 1901-2000       | +2.690                |
+| 4810             | 1901-2000       | +2.679                |
+| 2101             | 1901-2000       | +2.677                |
+| 4301             | 1901-2000       | +2.656                |
+| 4808             | 1901-2000       | +2.647                |
+| 1801             | 1901-2000       | +2.632                |
+| 2001             | 1901-2000       | +2.593                |
+| 203              | 1901-2000       | +2.581                |
+| 805              | 1901-2000       | +2.574                |
+| 2010             | 1901-2000       | +2.573                |
+| 3007             | 1901-2000       | +2.569                |
+| 1806             | 1901-2000       | +2.567                |
+| 2906             | 1901-2000       | +2.551                |
+| 2006             | 1901-2000       | +2.550                |
+| 3201             | 1901-2000       | +2.550                |
+| 2406             | 1901-2000       | +2.545                |
+| 3507             | 1901-2000       | +2.539                |
+| 2002             | 1901-2000       | +2.521                |
+| 3202             | 1901-2000       | +2.517                |
+| 4703             | 1901-2000       | +2.516                |
+| 2403             | 1901-2000       | +2.513                |
+| 1802             | 1901-2000       | +2.479                |
+| 3303             | 1901-2000       | +2.478                |
+| 1804             | 1901-2000       | +2.469                |
+| 3602             | 1901-2000       | +2.451                |
+| 3203             | 1901-2000       | +2.439                |
+| 2105             | 1901-2000       | +2.406                |
+| 4706             | 1901-2000       | +2.400                |
+| 3601             | 1901-2000       | +2.396                |
+| 3505             | 1901-2000       | +2.384                |
+| 3204             | 1901-2000       | +2.377                |
+| 804              | 1901-2000       | +2.373                |
+| 3604             | 1901-2000       | +2.367                |
+| 503              | 1901-2000       | +2.363                |
+| 1805             | 1901-2000       | +2.352                |
+| 2604             | 1901-2000       | +2.350                |
+| 204              | 1901-2000       | +2.346                |
+| 201              | 1901-2000       | +2.333                |
+| 2905             | 1901-2000       | +2.333                |
+| 3003             | 1901-2000       | +2.327                |
+| 2005             | 1901-2000       | +2.323                |
+| 2501             | 1901-2000       | +2.293                |
+| 4105             | 1901-2000       | +2.291                |
+| 3205             | 1901-2000       | +2.286                |
+| 3009             | 1901-2000       | +2.268                |
+| 3207             | 1901-2000       | +2.259                |
+| 3509             | 1901-2000       | +2.250                |
+| 2104             | 1901-2000       | +2.247                |
+| 803              | 1901-2000       | +2.239                |
+| 1803             | 1901-2000       | +2.236                |
+| 504              | 1901-2000       | +2.233                |
+| 3503             | 1901-2000       | +2.231                |
+| 4204             | 1901-2000       | +2.213                |
+| 3506             | 1901-2000       | +2.201                |
+| 2009             | 1901-2000       | +2.195                |
+| 4701             | 1901-2000       | +2.189                |
+| 4404             | 1901-2000       | +2.172                |
+| 3905             | 1901-2000       | +2.152                |
+| 4205             | 1901-2000       | +2.145                |
+| 4806             | 1901-2000       | +2.143                |
+| 3901             | 1901-2000       | +2.140                |
+| 3610             | 1901-2000       | +2.135                |
+| 3208             | 1901-2000       | +2.132                |
+| 3206             | 1901-2000       | +2.130                |
+| 4202             | 1901-2000       | +2.130                |
+| 4804             | 1901-2000       | +2.125                |
+| 4510             | 1901-2000       | +2.122                |
+| 3508             | 1901-2000       | +2.118                |
+| 4705             | 1901-2000       | +2.110                |
+| 4803             | 1901-2000       | +2.093                |
+| 4807             | 1901-2000       | +2.083                |
+| 4702             | 1901-2000       | +2.073                |
+| 2008             | 1901-2000       | +2.059                |
+| 4809             | 1901-2000       | +2.056                |
+| 405              | 1901-2000       | +2.045                |
+| 3904             | 1901-2000       | +2.021                |
+| 2401             | 1901-2000       | +1.994                |
+| 4805             | 1901-2000       | +1.991                |
+| 401              | 1901-2000       | +1.986                |
+| 403              | 1901-2000       | +1.981                |
+| 3209             | 1901-2000       | +1.979                |
+| 1007             | 1901-2000       | +1.959                |
+| 1203             | 1901-2000       | +1.956                |
+| 2407             | 1901-2000       | +1.955                |
+| 2402             | 1901-2000       | +1.955                |
+| 3908             | 1901-2000       | +1.954                |
+| 3301             | 1901-2000       | +1.936                |
+| 1008             | 1901-2000       | +1.921                |
+| 2908             | 1901-2000       | +1.921                |
+| 1003             | 1901-2000       | +1.919                |
+| 2601             | 1901-2000       | +1.917                |
+| 4201             | 1901-2000       | +1.909                |
+| 3501             | 1901-2000       | +1.904                |
+| 4704             | 1901-2000       | +1.903                |
+| 1004             | 1901-2000       | +1.895                |
+| 4203             | 1901-2000       | +1.889                |
+| 1002             | 1901-2000       | +1.878                |
+| 3002             | 1901-2000       | +1.877                |
+| 1201             | 1901-2000       | +1.871                |
+| 207              | 1901-2000       | +1.868                |
+| 1202             | 1901-2000       | +1.862                |
+| 1404             | 1901-2000       | +1.840                |
+| 1401             | 1901-2000       | +1.833                |
+| 4801             | 1901-2000       | +1.817                |
+| 4506             | 1901-2000       | +1.816                |
+| 202              | 1901-2000       | +1.811                |
+| 3504             | 1901-2000       | +1.806                |
+| 3307             | 1901-2000       | +1.805                |
+| 1807             | 1901-2000       | +1.801                |
+| 2405             | 1901-2000       | +1.789                |
+| 1102             | 1901-2000       | +1.783                |
+| 4508             | 1901-2000       | +1.778                |
+| 1105             | 1901-2000       | +1.776                |
+| 3502             | 1901-2000       | +1.756                |
+| 3906             | 1901-2000       | +1.755                |
+| 402              | 1901-2000       | +1.750                |
+| 2404             | 1901-2000       | +1.739                |
+| 3903             | 1901-2000       | +1.737                |
+| 2109             | 1901-2000       | +1.728                |
+| 3010             | 1901-2000       | +1.727                |
+| 1104             | 1901-2000       | +1.717                |
+| 4708             | 1901-2000       | +1.711                |
+| 1001             | 1901-2000       | +1.706                |
+| 4101             | 1901-2000       | +1.703                |
+| 3308             | 1901-2000       | +1.693                |
+| 2901             | 1901-2000       | +1.692                |
+| 4505             | 1901-2000       | +1.672                |
+| 3907             | 1901-2000       | +1.669                |
+| 2903             | 1901-2000       | +1.655                |
+| 505              | 1901-2000       | +1.650                |
+| 4709             | 1901-2000       | +1.640                |
+| 2902             | 1901-2000       | +1.626                |
+| 4401             | 1901-2000       | +1.624                |
+| 4108             | 1901-2000       | +1.621                |
+| 1101             | 1901-2000       | +1.608                |
+| 3306             | 1901-2000       | +1.607                |
+| 2107             | 1901-2000       | +1.599                |
+| 3605             | 1901-2000       | +1.583                |
+| 4509             | 1901-2000       | +1.575                |
+| 3006             | 1901-2000       | +1.571                |
+| 2506             | 1901-2000       | +1.568                |
+| 1405             | 1901-2000       | +1.568                |
+| 4504             | 1901-2000       | +1.566                |
+| 1010             | 1901-2000       | +1.563                |
+| 2507             | 1901-2000       | +1.559                |
+| 4402             | 1901-2000       | +1.557                |
+| 3304             | 1901-2000       | +1.535                |
+| 4507             | 1901-2000       | +1.535                |
+| 3902             | 1901-2000       | +1.534                |
+| 501              | 1901-2000       | +1.528                |
+| 2602             | 1901-2000       | +1.520                |
+| 2502             | 1901-2000       | +1.488                |
+| 3001             | 1901-2000       | +1.483                |
+| 4501             | 1901-2000       | +1.480                |
+| 4502             | 1901-2000       | +1.471                |
+| 802              | 1901-2000       | +1.469                |
+| 4403             | 1901-2000       | +1.464                |
+| 4606             | 1901-2000       | +1.461                |
+| 1009             | 1901-2000       | +1.452                |
+| 3909             | 1901-2000       | +1.451                |
+| 1407             | 1901-2000       | +1.445                |
+| 3606             | 1901-2000       | +1.441                |
+| 3103             | 1901-2000       | +1.440                |
+| 3608             | 1901-2000       | +1.438                |
+| 1301             | 1901-2000       | +1.434                |
+| 2904             | 1901-2000       | +1.415                |
+| 4503             | 1901-2000       | +1.415                |
+| 2108             | 1901-2000       | +1.403                |
+| 3302             | 1901-2000       | +1.388                |
+| 1005             | 1901-2000       | +1.386                |
+| 4802             | 1901-2000       | +1.386                |
+| 3102             | 1901-2000       | +1.383                |
+| 4107             | 1901-2000       | +1.367                |
+| 4602             | 1901-2000       | +1.366                |
+| 1006             | 1901-2000       | +1.365                |
+| 3305             | 1901-2000       | +1.348                |
+| 4109             | 1901-2000       | +1.341                |
+| 4707             | 1901-2000       | +1.337                |
+| 4405             | 1901-2000       | +1.335                |
+| 1206             | 1901-2000       | +1.328                |
+| 1402             | 1901-2000       | +1.307                |
+| 1107             | 1901-2000       | +1.274                |
+| 3108             | 1901-2000       | +1.260                |
+| 3107             | 1901-2000       | +1.257                |
+| 2509             | 1901-2000       | +1.257                |
+| 4601             | 1901-2000       | +1.255                |
+| 1304             | 1901-2000       | +1.247                |
+| 1302             | 1901-2000       | +1.247                |
+| 1808             | 1901-2000       | +1.238                |
+| 1204             | 1901-2000       | +1.238                |
+| 1406             | 1901-2000       | +1.235                |
+| 3310             | 1901-2000       | +1.235                |
+| 2503             | 1901-2000       | +1.226                |
+| 3106             | 1901-2000       | +1.218                |
+| 3807             | 1901-2000       | +1.216                |
+| 3105             | 1901-2000       | +1.200                |
+| 3104             | 1901-2000       | +1.196                |
+| 3404             | 1901-2000       | +1.195                |
+| 1403             | 1901-2000       | +1.194                |
+| 1408             | 1901-2000       | +1.194                |
+| 3802             | 1901-2000       | +1.192                |
+| 909              | 1901-2000       | +1.190                |
+| 3607             | 1901-2000       | +1.184                |
+| 4110             | 1901-2000       | +1.180                |
+| 4604             | 1901-2000       | +1.178                |
+| 1306             | 1901-2000       | +1.174                |
+| 1106             | 1901-2000       | +1.173                |
+| 1108             | 1901-2000       | +1.167                |
+| 3609             | 1901-2000       | +1.159                |
+| 3309             | 1901-2000       | +1.156                |
+| 2505             | 1901-2000       | +1.155                |
+| 1209             | 1901-2000       | +1.154                |
+| 4102             | 1901-2000       | +1.153                |
+| 1503             | 1901-2000       | +1.136                |
+| 1303             | 1901-2000       | +1.118                |
+| 906              | 1901-2000       | +1.108                |
+| 3804             | 1901-2000       | +1.099                |
+| 1207             | 1901-2000       | +1.093                |
+| 2303             | 1901-2000       | +1.065                |
+| 3401             | 1901-2000       | +1.058                |
+| 2302             | 1901-2000       | +1.043                |
+| 2301             | 1901-2000       | +1.023                |
+| 1205             | 1901-2000       | +1.012                |
+| 2508             | 1901-2000       | +1.007                |
+| 3407             | 1901-2000       | +0.997                |
+| 3805             | 1901-2000       | +0.980                |
+| 3402             | 1901-2000       | +0.973                |
+| 4406             | 1901-2000       | +0.946                |
+| 3803             | 1901-2000       | +0.942                |
+| 905              | 1901-2000       | +0.938                |
+| 3801             | 1901-2000       | +0.921                |
+| 1609             | 1901-2000       | +0.906                |
+| 3806             | 1901-2000       | +0.891                |
+| 908              | 1901-2000       | +0.890                |
+| 1307             | 1901-2000       | +0.889                |
+| 1208             | 1901-2000       | +0.889                |
+| 1305             | 1901-2000       | +0.889                |
+| 302              | 1901-2000       | +0.878                |
+| 4106             | 1901-2000       | +0.873                |
+| 1502             | 1901-2000       | +0.865                |
+| 1103             | 1901-2000       | +0.849                |
+| 1603             | 1901-2000       | +0.848                |
+| 907              | 1901-2000       | +0.841                |
+| 1109             | 1901-2000       | +0.799                |
+| 303              | 1901-2000       | +0.792                |
+| 1602             | 1901-2000       | +0.782                |
+| 2210             | 1901-2000       | +0.779                |
+| 2304             | 1901-2000       | +0.759                |
+| 4103             | 1901-2000       | +0.750                |
+| 1309             | 1901-2000       | +0.740                |
+| 4004             | 1901-2000       | +0.715                |
+| 2305             | 1901-2000       | +0.715                |
+| 904              | 1901-2000       | +0.710                |
+| 1409             | 1901-2000       | +0.697                |
+| 3101             | 1901-2000       | +0.697                |
+| 4603             | 1901-2000       | +0.683                |
+| 4605             | 1901-2000       | +0.675                |
+| 903              | 1901-2000       | +0.663                |
+| 801              | 1901-2000       | +0.657                |
+| 4003             | 1901-2000       | +0.646                |
+| 108              | 1901-2000       | +0.643                |
+| 1308             | 1901-2000       | +0.640                |
+| 1608             | 1901-2000       | +0.636                |
+| 4104             | 1901-2000       | +0.633                |
+| 309              | 1901-2000       | +0.632                |
+| 301              | 1901-2000       | +0.626                |
+| 1604             | 1901-2000       | +0.617                |
+| 2204             | 1901-2000       | +0.605                |
+| 1601             | 1901-2000       | +0.594                |
+| 4002             | 1901-2000       | +0.562                |
+| 1606             | 1901-2000       | +0.549                |
+| 306              | 1901-2000       | +0.515                |
+| 304              | 1901-2000       | +0.513                |
+| 4001             | 1901-2000       | +0.504                |
+| 2306             | 1901-2000       | +0.497                |
+| 1501             | 1901-2000       | +0.466                |
+| 902              | 1901-2000       | +0.462                |
+| 1504             | 1901-2000       | +0.460                |
+| 3405             | 1901-2000       | +0.433                |
+| 2207             | 1901-2000       | +0.418                |
+| 3409             | 1901-2000       | +0.403                |
+| 104              | 1901-2000       | +0.391                |
+| 3408             | 1901-2000       | +0.358                |
+| 2208             | 1901-2000       | +0.353                |
+| 102              | 1901-2000       | +0.346                |
+| 901              | 1901-2000       | +0.337                |
+| 307              | 1901-2000       | +0.330                |
+| 2201             | 1901-2000       | +0.329                |
+| 3403             | 1901-2000       | +0.328                |
+| 305              | 1901-2000       | +0.324                |
+| 105              | 1901-2000       | +0.324                |
+| 1605             | 1901-2000       | +0.285                |
+| 101              | 1901-2000       | +0.275                |
+| 2205             | 1901-2000       | +0.245                |
+| 2209             | 1901-2000       | +0.213                |
+| 1607             | 1901-2000       | +0.175                |
+| 106              | 1901-2000       | +0.131                |
+| 107              | 1901-2000       | +0.081                |
+| 2203             | 1901-2000       | +0.067                |
+| 3406             | 1901-2000       | +0.023                |
+| 308              | 1901-2000       | +0.015                |
+| 2202             | 1901-2000       | +0.009                |
+| 2206             | 1901-2000       | -0.031                |
+| 103              | 1901-2000       | -0.086                |
+| 5001             | 1925-2000       | +4.171                |
+| 5003             | 1925-2000       | +3.820                |
+| 5002             | 1925-2000       | +3.561                |
+| 5007             | 1925-2000       | +3.483                |
+| 5004             | 1925-2000       | +2.840                |
+| 5008             | 1925-2000       | +2.677                |
+| 5006             | 1925-2000       | +2.621                |
+| 5005             | 1925-2000       | +2.284                |
+| 5009             | 1925-2000       | +2.011                |
+| 5013             | 1925-2000       | +1.913                |
+| 5012             | 1925-2000       | +1.567                |
+| 5011             | 1925-2000       | +1.408                |
+| 5010             | 1925-2000       | +0.104                |
 
-Figure 5
+Figure 6
 
 ## Key Points
 
