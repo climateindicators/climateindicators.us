@@ -15,9 +15,9 @@ source(here::here("R", "common.R"))
 source(here::here("R", "us-and-global-temperature.R"))
 
 meta   <- read_meta(REPO)
-conus  <- read_indicator(REPO, "temp_conus.csv")
-global <- read_indicator(REPO, "temp_global.csv")
-divisions <- read_indicator(REPO, "temp_climate_division.csv")
+conus  <- read_indicator(REPO, "us_and_global_temperature_fig1.csv")
+global <- read_indicator(REPO, "us_and_global_temperature_fig2.csv")
+divisions <- read_indicator(REPO, "us_and_global_temperature_fig3.csv")
 ```
 
 ## Figures
@@ -30,11 +30,11 @@ divisions <- read_indicator(REPO, "temp_climate_division.csv")
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "temp_conus.csv")
+figure_caption(meta, "us_and_global_temperature_fig1.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/temp_conus.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig1.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
 <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx" download><i class="bi bi-file-earmark-excel"></i> EPA source workbook (XLSX)</a>
 </div>
 
@@ -44,7 +44,7 @@ figure_caption(meta, "temp_conus.csv")
 fig_1(conus)
 ```
 
-The dark blue line shows the surface temperature record, the fullest series and the one satellite data are calibrated against. The orange and teal lines show two independent satellite analyses (UAH and RSS) of the same lower atmosphere, available since 1979. The dashed grey line is the long-term linear trend fit to the surface record. Hover any point for its exact value.
+The dark blue line shows the annual surface temperature anomaly, and the orange line smooths it into a 5-year average. The teal and maroon lines show two independent satellite analyses (UAH and RSS) of the lower atmosphere, available since 1979. The dashed grey line is the long-term linear trend fit to the surface record. Hover any point for its exact value.
 
 <details><summary>Show the data behind this figure</summary>
 
@@ -62,11 +62,11 @@ knitr::kable(fig_1_table(conus), digits = 2)
 #| label: fig-2-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "temp_global.csv")
+figure_caption(meta, "us_and_global_temperature_fig2.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/temp_global.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig2.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
 <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx" download><i class="bi bi-file-earmark-excel"></i> EPA source workbook (XLSX)</a>
 </div>
 
@@ -76,7 +76,7 @@ figure_caption(meta, "temp_global.csv")
 fig_2(global)
 ```
 
-Same shape as Figure 1, at the global scale: surface, UAH, RSS, and the long-term trend. Hovering the surface line also shows that year's rank among all years on record, where 1 is the warmest.
+Same shape as Figure 1, at the global scale, except the source data has no separate 5-year average series: the annual surface anomaly, the two satellite records (UAH and RSS), and the long-term trend. Hover any point for its exact value.
 
 <details><summary>Show the data behind this figure</summary>
 
@@ -94,17 +94,21 @@ knitr::kable(fig_2_table(global), digits = 2)
 #| label: fig-3-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "temp_climate_division.csv")
+figure_caption(meta, "us_and_global_temperature_fig3.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/temp_climate_division.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig3.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
 <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/temperature_fig-3.csv" download><i class="bi bi-filetype-csv"></i> EPA source data (CSV)</a>
 </div>
 
-![](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/images/fig-3.png){fig-alt="Map of the rate of temperature change by NOAA climate division across the contiguous United States and Alaska, 1901-2023"}
+```{r}
+#| label: fig-3
+#| echo: false
+fig_3(divisions)
+```
 
-This map shows EPA's own published image rather than a version redrawn on this site: the underlying data is one rate of change per climate division, not station points or division boundaries, so there is no geometry here to place on a map the way other indicators on this site do. The tidy per-division rates behind the map are available for download above and in the table below. EPA also publishes an [interactive version of this map](https://arcg.is/L1iKu).
+EPA's own published figure is a map; the underlying data is one rate of change per climate division, not station points or division boundaries, so there is no geometry here to place on a map the way other indicators on this site do. Instead, this chart shows every climate division's own rate, split by which baseline period it uses: the contiguous 48 states are measured against 1901-2000, and Alaska's 12 divisions against 1925-2000. Hover any point for its climate division and rate. EPA also publishes an [interactive version of the original map](https://arcg.is/L1iKu).
 
 <details><summary>Show the data behind this figure</summary>
 
