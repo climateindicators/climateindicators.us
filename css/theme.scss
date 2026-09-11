@@ -17,6 +17,49 @@ $rule:         #dcdcdc;  // neutral border, one step darker than $panel
 $muted:        #757575;
 $btn-hover:    #708C69;  // download button hover fill
 
+// Sidebar section colours, one per top-level grouping in the "Indicators"
+// sidebar (website.sidebar.contents in _quarto.yml). Order here must track
+// that file's section order, since the CSS below addresses each section by
+// its rendered position (#quarto-sidebar-section-N), not by name. Sourced
+// from ltc's `hat` palette (`ltc::ltc("hat")`) rather than invented hex, to
+// stay on the same categorical set the R charts are built from.
+$cat-health-society:    #eb990c;  // 1. Health and Society — hat[2], orange
+$cat-greenhouse-gasses: #852f88;  // 2. Greenhouse Gasses — hat[5], purple
+$cat-environment:       #17a769;  // 3. Environment — hat[9], emerald
+$cat-weather-climate:   #0f8096;  // 4. Weather and Climate — hat[7], teal
+
+// Each indicator slug mapped to its sidebar section colour, so a card's
+// border matches its category in the sidebar. Keep this in sync with the
+// sidebar contents in _quarto.yml — an indicator added there needs an entry
+// here too, or its card falls back to the neutral $rule border below.
+$card-category-map: (
+  $cat-health-society: (
+    "heat-related-deaths", "cold-related-deaths", "heat-related-workplace-deaths",
+    "lyme-disease", "heat-related-illnesses", "heating-and-cooling-degree-days",
+    "residential-energy-use", "west-nile-virus", "length-of-growing-season",
+    "growing-degree-days", "ragweed-pollen-season"
+  ),
+  $cat-greenhouse-gasses: ("global-greenhouse-gas-emissions"),
+  $cat-environment: ("wildfires"),
+  $cat-weather-climate: (
+    "us-and-global-temperature", "seasonal-temperature", "high-and-low-temperatures",
+    "heat-waves", "heavy-precipitation", "drought", "river-flooding",
+    "streamflow", "tropical-cyclone-activity"
+  ),
+);
+
+// One Bootstrap Icon glyph per category, keyed the same as $card-category-map
+// above — a stand-in for eventual per-indicator icons. Values are icon-font
+// codepoints (see .bi-<name>::before in bootstrap-icons.css) rather than
+// class names, since these apply via a ::before pseudo-element that has no
+// element to hang a `bi bi-<name>` class on.
+$card-category-icon: (
+  $cat-health-society:    "\f66b",  // bi-activity
+  $cat-greenhouse-gasses: "\f2a7",  // bi-cloud-haze
+  $cat-environment:       "\f5e2",  // bi-tree
+  $cat-weather-climate:   "\f2be",  // bi-cloud-sun
+);
+
 // Bootstrap picks up $link-color from $primary, so setting this alone recolors
 // links, active states, and focus rings site-wide.
 $primary:    $accent;
@@ -200,6 +243,18 @@ nav.navbar {
   color: $accent !important;
 }
 
+// Section subtitles ("Health and Society", "Greenhouse Gasses", ...) each get
+// their own colour, both on the label and its collapse chevron. Quarto gives
+// every section's toggle links a shared data-bs-target rather than a class
+// naming the section, so that attribute is what's addressed here, in the
+// order sections appear in _quarto.yml (see the $cat-* variables above).
+#quarto-sidebar {
+  [data-bs-target="#quarto-sidebar-section-1"] { color: $cat-health-society; }
+  [data-bs-target="#quarto-sidebar-section-2"] { color: $cat-greenhouse-gasses; }
+  [data-bs-target="#quarto-sidebar-section-3"] { color: $cat-environment; }
+  [data-bs-target="#quarto-sidebar-section-4"] { color: $cat-weather-climate; }
+}
+
 // Tinted panel in the shape of climate.us's .usa-sidenav-list. Needs the id to
 // outrank Quarto's own `#quarto-sidebar` background rule.
 #quarto-sidebar.sidebar-navigation {
@@ -318,7 +373,7 @@ main.content {
 .quarto-post {
   border: 1px solid $rule;
   border-radius: 4px;
-  background: $panel;
+  background: $body-bg;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.12s ease;
 
   &:hover {
@@ -329,6 +384,25 @@ main.content {
     border-color: $accent-dark !important;
     box-shadow: 0 0 0 1px $accent-dark;
     transform: scale(0.995);
+  }
+}
+
+// Colour each indicator's card border to match its sidebar section (see
+// $card-category-map above). Selector specificity — not source order — is
+// what makes this win over the plain .quarto-grid-item.card rule above.
+@each $colour, $slugs in $card-category-map {
+  $icon: map-get($card-category-icon, $colour);
+
+  @each $slug in $slugs {
+    a[href$="#{$slug}.html"] .quarto-grid-item.card {
+      .card-title::before {
+        font-family: "bootstrap-icons" !important;
+        font-weight: 400;
+        content: $icon;
+        color: $colour;
+        margin-right: 0.45rem;
+      }
+    }
   }
 }
 
