@@ -147,14 +147,11 @@ knitr::kable(fig_3_table(region), digits = 2)
   increased the least—19 percent—while emissions of nitrous oxide increased
   by 26 percent. Emissions of fluorinated gases more than tripled.
 
-- Energy production and use (including fuels used by vehicles and buildings)
-  represent the largest source of greenhouse gas emissions worldwide (about
-  74 percent of the total in 2015), followed by agriculture (12 percent in
-  2015) (see Figure 2). While land-use change and forestry represent a net
-  sink for emissions in the United States, absorbing carbon dioxide and
-  offsetting emissions from other sources (see the U.S. Greenhouse Gas
-  Emissions indicator), these activities are a net source of emissions on a
-  global scale, largely because of deforestation.^[1](#ref-1)^
+- Energy production and use (including fuels used by vehicles and buildings) 
+represent the largest source of greenhouse gas emissions worldwide (about 74 percent of the total in 2015), followed by agriculture (12 percent in 2015) (see Figure 2). While land-use change and forestry represent a net
+sink for emissions in the United States, absorbing carbon dioxide and offsetting emissions from other sources (see the U.S. Greenhouse Gas
+Emissions indicator), these activities are a net source of emissions on a
+global scale, largely because of deforestation.^[1](#ref-1)^
 
 - Carbon dioxide emissions are increasing faster in some parts of the world
   (for example, East Asia and the Pacific) than in others (see Figure 3). The
