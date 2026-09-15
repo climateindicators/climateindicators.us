@@ -10,12 +10,12 @@ Trends in average seasonal air temperature across the contiguous United States s
 
 ## Figure 1
 
-**Figure 1. Average Seasonal Temperatures in the Contiguous 48 States, 1896–2023**
+**Figure 1**
 
-Data source: NOAA, 2024\
-Web update: June 2024
+Data source: NOAA National Centers for Environmental Information (nClimDiv, CONUS averages), via EPA source workbook; downloaded by ERG from noaa.gov/cag on 2024-02-13\
+Web update: February 13, 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temp_annual.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figures%201%20and%203%20-%2001-29-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temperature_annual_anomaly.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figures%201%20and%203%20-%2001-29-24.xlsx)
 
 Figure 1
 
@@ -163,7 +163,7 @@ Figure 2
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temp_by_state.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figure%202%20-%2002-13-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temperature_change_by_state.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figure%202%20-%2002-13-24.xlsx)
 
 Figure 3
 
@@ -226,12 +226,12 @@ Figure 4
 
 ## Figure 3
 
-**Figure 3. Temperature Change by Season in the Contiguous 48 States, 1896–2023**
+**Figure 3**
 
-Data source: NOAA, 2024\
-Web update: June 2024
+Data source: NOAA National Centers for Environmental Information (nClimDiv, CONUS averages), via EPA source workbook; downloaded by ERG from noaa.gov/cag on 2024-02-13\
+Web update: February 13, 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temp_by_season.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figures%201%20and%203%20-%2001-29-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temperature_total_change_by_season.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figures%201%20and%203%20-%2001-29-24.xlsx)
 
 Figure 5
 
