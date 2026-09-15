@@ -10,35 +10,36 @@ BASELINE <- 0
 SEASON_KEYS   <- c("winter", "spring", "summer", "fall")
 SEASON_LABELS <- c("Winter", "Spring", "Summer", "Fall")
 
-# Colour role order deliberately differs from legend/reading order. EPA's own
-# Key Points leads with winter ("increased by about 3 F"), the largest and
-# most-discussed change, so winter takes the `focus` slot (second) rather than
-# reading in calendar order. Spring gets its own called-out number too
+# EPA's own Key Points lead with winter ("increased by about 3 F", the largest
+# and most-discussed change; see data/seasonal_temperature_total_change_by_season.csv),
+# so winter takes the `focus` slot. Spring gets its own called-out number
 # ("about 2 F") and takes `compare`, the peer read alongside it. Summer and
 # fall are grouped together in the same sentence ("about 1.6 F") and take the
-# two more subdued roles. The legend itself still reads in calendar order.
+# two remaining roles. The legend itself still reads in calendar order.
 FIG_COLOUR_KEYS <- c("summer", "winter", "spring", "fall")
 FIG_LEGEND_KEYS <- SEASON_KEYS
 
-# ---- Figure 1: average seasonal temperatures, 1896-2023 ----------------------
+# ---- Figure 1: average seasonal temperature anomaly, 1896-2023 ---------------
 
 # *_plot() builds the plain ggplot object; fig_*() wraps it for the page. The
 # split exists so a plot can be ggsave()'d for a static check without pulling
 # in the htmlwidget machinery.
 fig_1_plot <- function(d) {
-  ggplot(d, aes(x = year, y = value, colour = series_label, group = series_key)) +
+  d$series_key <- tolower(d$season)
+
+  ggplot(d, aes(x = year, y = value, colour = season, group = series_key)) +
     geom_hline(yintercept = BASELINE, colour = CHART_GREY[["rule"]], linewidth = 0.4) +
     geom_line_interactive(linewidth = 0.8) +
     geom_point_interactive(
       aes(
         data_id = series_key,
-        tooltip = sprintf("%d — %s\n%+.2f°F anomaly", year, series_label, value)
+        tooltip = sprintf("%d — %s\n%+.2f°F anomaly", year, season, value)
       ),
       size = 0.9
     ) +
     scale_colour_manual(
-      values = label_colours(d, "series_key", "series_label", FIG_COLOUR_KEYS),
-      breaks = label_order(d, "series_key", "series_label", FIG_LEGEND_KEYS)
+      values = label_colours(d, "series_key", "season", FIG_COLOUR_KEYS),
+      breaks = label_order(d, "series_key", "season", FIG_LEGEND_KEYS)
     ) +
     scale_x_continuous(breaks = seq(1900, 2020, 20)) +
     labs(x = NULL, y = "Temperature anomaly (°F, vs. 1901-2000 average)") +
@@ -49,7 +50,7 @@ fig_1_plot <- function(d) {
 fig_1 <- function(d) girafe_indicator(fig_1_plot(d))
 
 fig_1_table <- function(d) {
-  tidyr::pivot_wider(d, id_cols = year, names_from = series_label, values_from = value)
+  tidyr::pivot_wider(d, id_cols = year, names_from = season, values_from = value)
 }
 
 # ---- Figure 2: change in seasonal temperature by state, 1896-2023 ------------
@@ -65,7 +66,7 @@ fig_1_table <- function(d) {
 # reader can follow one state's row down through all four seasons.
 
 fig_2_state_order <- function(d) {
-  winter <- d[d$series_key == "winter", ]
+  winter <- d[d$season == "Winter", ]
   winter$state[order(winter$value, decreasing = TRUE)]
 }
 
@@ -73,20 +74,20 @@ SIGN_KEYS <- c("negative", "positive")
 
 fig_2_plot <- function(d) {
   d$state <- factor(d$state, levels = rev(fig_2_state_order(d)))
-  d$series_label <- factor(d$series_label, levels = SEASON_LABELS)
+  d$season <- factor(d$season, levels = SEASON_LABELS)
   d$sign_key <- ifelse(d$value < BASELINE, "negative", "positive")
 
   ggplot(d, aes(y = state, x = value, fill = sign_key)) +
     geom_vline(xintercept = BASELINE, colour = CHART_GREY[["rule"]], linewidth = 0.4) +
     geom_col_interactive(
       aes(
-        data_id = paste(state, series_key),
-        tooltip = sprintf("%s — %s\n%+.2f°F total change, 1896-2023", state, series_label, value)
+        data_id = paste(state, season),
+        tooltip = sprintf("%s — %s\n%+.2f°F total change, 1896-2023", state, season, value)
       ),
       width = 0.72
     ) +
     scale_fill_manual(values = series_colours(SIGN_KEYS), guide = "none") +
-    facet_wrap(~series_label, ncol = 1) +
+    facet_wrap(~season, ncol = 1) +
     scale_x_continuous(expand = expansion(mult = 0.06), position = "top") +
     labs(x = "Total change in temperature, 1896–2023 (°F)", y = NULL) +
     theme_indicator() +
@@ -107,7 +108,7 @@ fig_2_plot <- function(d) {
 fig_2 <- function(d) girafe_indicator(fig_2_plot(d), height = 34)
 
 fig_2_table <- function(d) {
-  wide <- tidyr::pivot_wider(d, id_cols = state, names_from = series_label, values_from = value)
+  wide <- tidyr::pivot_wider(d, id_cols = state, names_from = season, values_from = value)
   wide <- wide[order(wide$state), ]
   data.frame(
     State  = wide$state,
@@ -119,21 +120,22 @@ fig_2_table <- function(d) {
   )
 }
 
-# ---- Figure 3: temperature change by season, 1896-2023 -----------------------
+# ---- Figure 3: total change in temperature by season, 1896-2023 --------------
 
 fig_3_plot <- function(d) {
-  d$series_label <- factor(d$series_label, levels = SEASON_LABELS)
+  d$series_key <- tolower(d$season)
+  d$season <- factor(d$season, levels = SEASON_LABELS)
 
-  ggplot(d, aes(x = series_label, y = value, fill = series_label)) +
+  ggplot(d, aes(x = season, y = value, fill = season)) +
     geom_col_interactive(
       aes(
         data_id = series_key,
-        tooltip = sprintf("%s\n%+.2f°F total change, 1896-2023", series_label, value)
+        tooltip = sprintf("%s\n%+.2f°F total change, 1896-2023", season, value)
       ),
       width = 0.6
     ) +
     scale_fill_manual(
-      values = label_colours(d, "series_key", "series_label", FIG_COLOUR_KEYS),
+      values = label_colours(d, "series_key", "season", FIG_COLOUR_KEYS),
       guide  = "none"
     ) +
     scale_y_continuous(limits = c(0, NA), expand = expansion(mult = c(0, 0.08))) +
@@ -145,7 +147,7 @@ fig_3 <- function(d) girafe_indicator(fig_3_plot(d))
 
 fig_3_table <- function(d) {
   data.frame(
-    Season = d$series_label,
+    Season = d$season,
     "Total change (°F)" = sprintf("%+.3f", d$value),
     check.names = FALSE, stringsAsFactors = FALSE
   )

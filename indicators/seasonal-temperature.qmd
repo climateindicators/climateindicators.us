@@ -14,9 +14,9 @@ source(here::here("R", "common.R"))
 source(here::here("R", "seasonal-temperature.R"))
 
 meta      <- read_meta(REPO)
-annual    <- read_indicator(REPO, "seasonal_temp_annual.csv")
-by_state  <- read_indicator(REPO, "seasonal_temp_by_state.csv")
-by_season <- read_indicator(REPO, "seasonal_temp_by_season.csv")
+annual    <- read_indicator(REPO, "seasonal_temperature_annual_anomaly.csv")
+by_state  <- read_indicator(REPO, "seasonal_temperature_change_by_state.csv")
+by_season <- read_indicator(REPO, "seasonal_temperature_total_change_by_season.csv")
 ```
 
 ## Figures
@@ -29,11 +29,11 @@ by_season <- read_indicator(REPO, "seasonal_temp_by_season.csv")
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "seasonal_temp_annual.csv")
+figure_caption(meta, "seasonal_temperature_annual_anomaly.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temp_annual.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temperature_annual_anomaly.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
 <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figures%201%20and%203%20-%2001-29-24.xlsx" download><i class="bi bi-file-earmark-excel"></i> EPA source workbook (XLSX)</a>
 </div>
 
@@ -63,11 +63,11 @@ knitr::kable(fig_1_table(annual), digits = 2)
 #| label: fig-2-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "seasonal_temp_by_state.csv")
+figure_caption(meta, "seasonal_temperature_change_by_state.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temp_by_state.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temperature_change_by_state.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
 <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figure%202%20-%2002-13-24.xlsx" download><i class="bi bi-file-earmark-excel"></i> EPA source workbook (XLSX)</a>
 </div>
 
@@ -95,11 +95,11 @@ knitr::kable(fig_2_table(by_state))
 #| label: fig-3-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "seasonal_temp_by_season.csv")
+figure_caption(meta, "seasonal_temperature_total_change_by_season.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temp_by_season.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temperature_total_change_by_season.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
 <a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figures%201%20and%203%20-%2001-29-24.xlsx" download><i class="bi bi-file-earmark-excel"></i> EPA source workbook (XLSX)</a>
 </div>
 
