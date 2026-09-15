@@ -6,293 +6,289 @@ Temperature
 
 Trends in unusually hot and cold temperatures across the United States.
 
+This indicator describes trends in unusually hot and cold temperatures across the United States.
+
 ## Figures
 
 ## Figure 1
 
-> **WARNING:**
+> **NOTE:**
 >
-> This is **not** EPA’s published Figure 1. The source workbook holds two vintages of this series: the one EPA published, covering 1910 to 2023, and a later NCEI re-download covering 1910 to 2024. This page draws the later vintage, which disagrees with EPA’s published figure in almost every year. The figure title below is EPA’s own wording and its stated range describes EPA’s version, not this one. See the [high-and-low-temperatures](https://github.com/climateindicators/high-and-low-temperatures/blob/main/data-raw/PROVENANCE.md) repository’s `PROVENANCE.md` for the full account.
+> EPA’s own published Figure 1 covers 1910 to 2023. This chart instead uses a later NCEI re-download (through 2024) found in the indicator repository’s source workbook, which revises the values for most prior years as well as adding one. See the [high-and-low-temperatures](https://github.com/climateindicators/high-and-low-temperatures/blob/main/data-raw/PROVENANCE.md) repository’s `PROVENANCE.md` for the full account.
 
-**Figure 1. Area of the Contiguous 48 States with Unusually Hot Summer Temperatures, 1910–2023**
+**Figure 1. Area of the Contiguous 48 States with Unusually Hot Summer Temperatures, 1910-2023**
 
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/unusually_hot_summer_area.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figure-1_04-28-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/high_and_low_temperatures_hot_area.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figure-1_04-28-24.xlsx)
 
-Figure 1
-
-This graph shows the percentage of the land area of the contiguous 48 states with unusually hot daily high and low temperatures during the months of June, July, and August. The thin lines represent individual years, while the thick lines show a nine-year weighted average. Red lines represent daily highs, while orange lines represent daily lows. The term “unusual” in this case is based on the long-term average conditions at each location.
+This graph shows the percentage of the land area of the contiguous 48 states with unusually hot daily high and low temperatures during the months of June, July, and August. The thin lines represent individual years, while the thick lines show a nine-year weighted average. The term “unusual” in this case is based on the long-term average conditions at each location.
 
 Show the data behind this figure
 
-| Year | Unusually hot daily highs | Unusually hot daily lows | Unusually hot daily highs (nine-year average) | Unusually hot daily lows (nine-year average) |
+| Year | Hot daily highs | Hot daily highs (smoothed) | Hot daily lows | Hot daily lows (smoothed) |
 |---:|:---|:---|:---|:---|
-| 1910 | 6.4% | 1.5% | 6.3% | 1.5% |
-| 1911 | 7.8% | 2.0% | 6.6% | 1.7% |
-| 1912 | 0.3% | 0.0% | 7.5% | 2.2% |
-| 1913 | 15.2% | 2.5% | 8.4% | 3.0% |
-| 1914 | 13.5% | 9.2% | 7.8% | 3.3% |
-| 1915 | 1.0% | 0.2% | 6.1% | 2.7% |
-| 1916 | 0.4% | 0.3% | 5.5% | 2.0% |
-| 1917 | 5.6% | 0.9% | 6.9% | 2.2% |
-| 1918 | 14.5% | 4.3% | 8.8% | 3.1% |
-| 1919 | 13.8% | 5.0% | 9.2% | 4.5% |
-| 1920 | 0.0% | 0.1% | 8.3% | 5.9% |
-| 1921 | 13.7% | 17.5% | 7.0% | 6.6% |
-| 1922 | 4.1% | 3.9% | 5.9% | 5.7% |
-| 1923 | 0.4% | 2.0% | 5.8% | 3.9% |
-| 1924 | 7.5% | 0.9% | 6.5% | 2.6% |
-| 1925 | 13.3% | 3.2% | 6.6% | 2.0% |
-| 1926 | 4.6% | 2.1% | 5.4% | 1.6% |
-| 1927 | 0.9% | 0.0% | 3.9% | 1.3% |
-| 1928 | 0.3% | 1.3% | 4.5% | 1.5% |
-| 1929 | 1.6% | 0.6% | 8.0% | 2.4% |
-| 1930 | 20.4% | 2.7% | 12.6% | 4.1% |
-| 1931 | 22.8% | 10.2% | 16.4% | 6.4% |
-| 1932 | 5.7% | 4.1% | 19.4% | 9.4% |
-| 1933 | 27.4% | 10.1% | 22.1% | 12.7% |
-| 1934 | 39.4% | 30.2% | 23.9% | 15.4% |
-| 1935 | 1.2% | 1.4% | 23.8% | 16.6% |
-| 1936 | 46.4% | 31.9% | 21.4% | 15.5% |
-| 1937 | 11.5% | 11.5% | 16.8% | 12.1% |
-| 1938 | 5.2% | 2.9% | 11.8% | 7.7% |
-| 1939 | 3.6% | 1.0% | 8.5% | 4.6% |
-| 1940 | 16.0% | 2.3% | 7.1% | 3.9% |
-| 1941 | 0.6% | 7.4% | 6.7% | 4.9% |
-| 1942 | 0.7% | 1.3% | 7.2% | 5.9% |
-| 1943 | 18.1% | 16.6% | 7.8% | 5.7% |
-| 1944 | 9.5% | 0.0% | 6.9% | 4.1% |
-| 1945 | 0.4% | 0.1% | 4.5% | 2.0% |
-| 1946 | 0.4% | 0.1% | 2.6% | 1.0% |
-| 1947 | 0.6% | 0.4% | 2.6% | 1.5% |
-| 1948 | 3.1% | 0.3% | 3.9% | 2.7% |
-| 1949 | 11.1% | 11.0% | 5.7% | 3.6% |
-| 1950 | 0.1% | 0.0% | 8.5% | 4.1% |
-| 1951 | 7.5% | 1.4% | 13.0% | 5.0% |
-| 1952 | 31.0% | 10.6% | 17.7% | 6.6% |
-| 1953 | 17.0% | 5.2% | 19.9% | 8.1% |
-| 1954 | 29.2% | 14.9% | 18.2% | 8.3% |
-| 1955 | 8.7% | 7.8% | 13.8% | 6.9% |
-| 1956 | 8.9% | 1.3% | 9.0% | 4.9% |
-| 1957 | 0.3% | 0.5% | 6.1% | 3.7% |
-| 1958 | 4.6% | 7.3% | 5.8% | 3.7% |
-| 1959 | 7.2% | 2.9% | 7.4% | 4.2% |
-| 1960 | 8.3% | 0.3% | 9.0% | 4.9% |
-| 1961 | 20.4% | 14.5% | 8.7% | 5.3% |
-| 1962 | 0.9% | 0.0% | 6.2% | 4.8% |
-| 1963 | 1.3% | 6.9% | 3.2% | 3.5% |
-| 1964 | 0.2% | 0.1% | 1.5% | 2.1% |
-| 1965 | 0.0% | 0.0% | 1.3% | 1.1% |
-| 1966 | 1.8% | 0.2% | 1.8% | 0.7% |
-| 1967 | 5.5% | 1.9% | 2.2% | 0.7% |
-| 1968 | 0.0% | 0.0% | 2.2% | 0.7% |
-| 1969 | 0.7% | 0.5% | 2.2% | 0.6% |
-| 1970 | 6.2% | 1.1% | 2.1% | 0.7% |
-| 1971 | 0.0% | 0.2% | 1.6% | 1.0% |
-| 1972 | 0.2% | 0.3% | 1.1% | 1.4% |
-| 1973 | 1.3% | 5.4% | 0.8% | 1.7% |
-| 1974 | 0.1% | 0.0% | 1.2% | 1.5% |
-| 1975 | 0.2% | 0.2% | 1.9% | 1.5% |
-| 1976 | 6.5% | 0.1% | 2.5% | 1.9% |
-| 1977 | 1.7% | 7.1% | 3.2% | 2.5% |
-| 1978 | 1.4% | 0.2% | 5.0% | 3.3% |
-| 1979 | 0.2% | 0.0% | 8.0% | 4.5% |
-| 1980 | 29.8% | 14.1% | 10.2% | 5.7% |
-| 1981 | 6.1% | 4.8% | 10.0% | 6.3% |
-| 1982 | 0.1% | 0.2% | 8.2% | 6.3% |
-| 1983 | 15.1% | 15.9% | 6.3% | 5.9% |
-| 1984 | 1.4% | 1.9% | 4.9% | 4.7% |
-| 1985 | 1.7% | 0.2% | 4.5% | 3.7% |
-| 1986 | 2.4% | 1.2% | 6.4% | 4.2% |
-| 1987 | 4.3% | 6.5% | 9.6% | 5.8% |
-| 1988 | 34.2% | 15.6% | 11.0% | 6.6% |
-| 1989 | 0.6% | 1.0% | 9.0% | 6.0% |
-| 1990 | 1.7% | 2.2% | 5.5% | 5.3% |
-| 1991 | 3.1% | 9.2% | 3.8% | 5.2% |
-| 1992 | 0.9% | 2.6% | 4.9% | 6.0% |
-| 1993 | 5.3% | 5.8% | 7.5% | 7.5% |
-| 1994 | 20.3% | 10.1% | 9.4% | 9.1% |
-| 1995 | 6.3% | 16.8% | 9.4% | 9.9% |
-| 1996 | 9.6% | 6.6% | 8.3% | 9.7% |
-| 1997 | 0.3% | 0.5% | 7.8% | 9.8% |
-| 1998 | 15.4% | 25.2% | 8.3% | 9.8% |
-| 1999 | 4.6% | 2.9% | 9.5% | 9.5% |
-| 2000 | 12.5% | 4.2% | 11.6% | 10.1% |
-| 2001 | 8.1% | 9.8% | 14.4% | 12.7% |
-| 2002 | 26.6% | 24.8% | 16.3% | 15.6% |
-| 2003 | 23.8% | 20.9% | 15.7% | 17.2% |
-| 2004 | 1.3% | 4.7% | 14.3% | 18.5% |
-| 2005 | 8.4% | 26.7% | 14.8% | 20.3% |
-| 2006 | 25.9% | 26.1% | 16.4% | 20.9% |
-| 2007 | 27.4% | 27.9% | 15.8% | 19.2% |
-| 2008 | 2.9% | 2.1% | 13.5% | 18.8% |
-| 2009 | 3.4% | 4.2% | 13.8% | 23.6% |
-| 2010 | 14.4% | 52.2% | 18.9% | 31.4% |
-| 2011 | 35.1% | 52.8% | 24.5% | 35.2% |
-| 2012 | 45.0% | 23.4% | 24.8% | 32.4% |
-| 2013 | 11.0% | 27.5% | 19.6% | 27.9% |
-| 2014 | 2.4% | 13.2% | 14.7% | 27.1% |
-| 2015 | 10.4% | 31.0% | 14.3% | 30.7% |
-| 2016 | 22.4% | 47.7% | 17.0% | 35.1% |
-| 2017 | 23.1% | 28.6% | 19.4% | 37.4% |
-| 2018 | 22.1% | 55.3% | 20.5% | 37.8% |
-| 2019 | 8.4% | 13.8% | 22.7% | 39.8% |
-| 2020 | 31.4% | 44.2% | 26.5% | 45.3% |
-| 2021 | 40.9% | 68.1% | 29.6% | 51.0% |
-| 2022 | 28.3% | 63.9% | 30.6% | 52.7% |
-| 2023 | 21.5% | 32.1% | 31.1% | 51.3% |
-| 2024 | 37.3% | 54.2% | 32.9% | 50.8% |
-
-Figure 2
+| 1910 | 6.4% | 6.3% | 1.5% | 1.5% |
+| 1911 | 7.8% | 6.6% | 2.0% | 1.7% |
+| 1912 | 0.3% | 7.5% | 0.0% | 2.2% |
+| 1913 | 15.2% | 8.4% | 2.5% | 3.0% |
+| 1914 | 13.5% | 7.8% | 9.2% | 3.3% |
+| 1915 | 1.0% | 6.1% | 0.2% | 2.7% |
+| 1916 | 0.4% | 5.5% | 0.3% | 2.0% |
+| 1917 | 5.6% | 6.9% | 0.9% | 2.2% |
+| 1918 | 14.5% | 8.8% | 4.3% | 3.1% |
+| 1919 | 13.8% | 9.2% | 5.0% | 4.5% |
+| 1920 | 0.0% | 8.3% | 0.1% | 5.9% |
+| 1921 | 13.7% | 7.0% | 17.5% | 6.6% |
+| 1922 | 4.1% | 5.9% | 3.9% | 5.7% |
+| 1923 | 0.4% | 5.8% | 2.0% | 3.9% |
+| 1924 | 7.5% | 6.5% | 0.9% | 2.6% |
+| 1925 | 13.3% | 6.6% | 3.2% | 2.0% |
+| 1926 | 4.6% | 5.4% | 2.1% | 1.6% |
+| 1927 | 0.9% | 3.9% | 0.0% | 1.3% |
+| 1928 | 0.3% | 4.5% | 1.3% | 1.4% |
+| 1929 | 1.6% | 8.0% | 0.6% | 2.4% |
+| 1930 | 20.4% | 12.6% | 2.7% | 4.1% |
+| 1931 | 22.8% | 16.4% | 10.2% | 6.4% |
+| 1932 | 5.7% | 19.4% | 4.1% | 9.4% |
+| 1933 | 27.4% | 22.1% | 10.1% | 12.7% |
+| 1934 | 39.4% | 23.9% | 30.2% | 15.4% |
+| 1935 | 1.2% | 23.8% | 1.4% | 16.6% |
+| 1936 | 46.4% | 21.4% | 31.9% | 15.5% |
+| 1937 | 11.5% | 16.8% | 11.5% | 12.1% |
+| 1938 | 5.2% | 11.8% | 2.9% | 7.7% |
+| 1939 | 3.6% | 8.5% | 1.0% | 4.6% |
+| 1940 | 16.0% | 7.1% | 2.3% | 3.9% |
+| 1941 | 0.6% | 6.7% | 7.4% | 4.9% |
+| 1942 | 0.7% | 7.2% | 1.3% | 5.9% |
+| 1943 | 18.1% | 7.8% | 16.6% | 5.7% |
+| 1944 | 9.5% | 6.9% | 0.0% | 4.1% |
+| 1945 | 0.4% | 4.5% | 0.1% | 2.0% |
+| 1946 | 0.4% | 2.6% | 0.1% | 1.0% |
+| 1947 | 0.6% | 2.6% | 0.4% | 1.5% |
+| 1948 | 3.1% | 3.9% | 0.3% | 2.7% |
+| 1949 | 11.1% | 5.7% | 11.0% | 3.6% |
+| 1950 | 0.1% | 8.5% | 0.0% | 4.1% |
+| 1951 | 7.5% | 13.0% | 1.4% | 5.0% |
+| 1952 | 31.0% | 17.7% | 10.6% | 6.6% |
+| 1953 | 17.0% | 19.9% | 5.2% | 8.1% |
+| 1954 | 29.2% | 18.2% | 14.9% | 8.3% |
+| 1955 | 8.7% | 13.8% | 7.8% | 6.9% |
+| 1956 | 8.9% | 9.0% | 1.3% | 4.9% |
+| 1957 | 0.3% | 6.1% | 0.5% | 3.7% |
+| 1958 | 4.6% | 5.8% | 7.3% | 3.7% |
+| 1959 | 7.2% | 7.4% | 2.9% | 4.2% |
+| 1960 | 8.3% | 9.0% | 0.3% | 4.9% |
+| 1961 | 20.4% | 8.7% | 14.5% | 5.3% |
+| 1962 | 0.9% | 6.2% | 0.0% | 4.8% |
+| 1963 | 1.3% | 3.2% | 6.9% | 3.5% |
+| 1964 | 0.2% | 1.5% | 0.1% | 2.1% |
+| 1965 | 0.0% | 1.3% | 0.0% | 1.1% |
+| 1966 | 1.8% | 1.8% | 0.2% | 0.7% |
+| 1967 | 5.5% | 2.2% | 1.9% | 0.7% |
+| 1968 | 0.0% | 2.2% | 0.0% | 0.7% |
+| 1969 | 0.7% | 2.2% | 0.5% | 0.6% |
+| 1970 | 6.2% | 2.1% | 1.1% | 0.7% |
+| 1971 | 0.0% | 1.6% | 0.2% | 1.0% |
+| 1972 | 0.2% | 1.1% | 0.3% | 1.4% |
+| 1973 | 1.3% | 0.8% | 5.4% | 1.7% |
+| 1974 | 0.1% | 1.2% | 0.0% | 1.5% |
+| 1975 | 0.2% | 1.9% | 0.2% | 1.5% |
+| 1976 | 6.5% | 2.5% | 0.1% | 1.9% |
+| 1977 | 1.7% | 3.2% | 7.1% | 2.5% |
+| 1978 | 1.4% | 5.0% | 0.2% | 3.3% |
+| 1979 | 0.2% | 8.0% | 0.0% | 4.5% |
+| 1980 | 29.8% | 10.2% | 14.1% | 5.7% |
+| 1981 | 6.1% | 10.0% | 4.8% | 6.3% |
+| 1982 | 0.1% | 8.2% | 0.2% | 6.3% |
+| 1983 | 15.1% | 6.3% | 15.9% | 5.9% |
+| 1984 | 1.4% | 4.9% | 1.9% | 4.7% |
+| 1985 | 1.7% | 4.5% | 0.2% | 3.7% |
+| 1986 | 2.4% | 6.4% | 1.2% | 4.2% |
+| 1987 | 4.3% | 9.6% | 6.5% | 5.8% |
+| 1988 | 34.2% | 11.0% | 15.6% | 6.6% |
+| 1989 | 0.6% | 9.0% | 1.0% | 6.0% |
+| 1990 | 1.7% | 5.5% | 2.2% | 5.3% |
+| 1991 | 3.1% | 3.8% | 9.2% | 5.2% |
+| 1992 | 0.9% | 4.9% | 2.6% | 6.0% |
+| 1993 | 5.3% | 7.5% | 5.8% | 7.5% |
+| 1994 | 20.3% | 9.4% | 10.1% | 9.1% |
+| 1995 | 6.3% | 9.4% | 16.8% | 9.9% |
+| 1996 | 9.6% | 8.3% | 6.6% | 9.7% |
+| 1997 | 0.3% | 7.8% | 0.5% | 9.8% |
+| 1998 | 15.4% | 8.3% | 25.2% | 9.8% |
+| 1999 | 4.6% | 9.5% | 2.9% | 9.5% |
+| 2000 | 12.5% | 11.6% | 4.2% | 10.1% |
+| 2001 | 8.1% | 14.4% | 9.8% | 12.7% |
+| 2002 | 26.6% | 16.3% | 24.8% | 15.6% |
+| 2003 | 23.8% | 15.7% | 20.9% | 17.2% |
+| 2004 | 1.3% | 14.3% | 4.7% | 18.5% |
+| 2005 | 8.4% | 14.8% | 26.7% | 20.3% |
+| 2006 | 25.9% | 16.4% | 26.1% | 20.9% |
+| 2007 | 27.4% | 15.8% | 27.9% | 19.2% |
+| 2008 | 2.9% | 13.5% | 2.1% | 18.8% |
+| 2009 | 3.4% | 13.8% | 4.2% | 23.6% |
+| 2010 | 14.4% | 18.9% | 52.2% | 31.4% |
+| 2011 | 35.1% | 24.5% | 52.8% | 35.2% |
+| 2012 | 45.0% | 24.8% | 23.4% | 32.4% |
+| 2013 | 11.0% | 19.6% | 27.5% | 27.9% |
+| 2014 | 2.4% | 14.7% | 13.2% | 27.1% |
+| 2015 | 10.4% | 14.3% | 31.0% | 30.7% |
+| 2016 | 22.4% | 17.0% | 47.7% | 35.1% |
+| 2017 | 23.1% | 19.4% | 28.6% | 37.4% |
+| 2018 | 22.1% | 20.5% | 55.3% | 37.8% |
+| 2019 | 8.4% | 22.7% | 13.8% | 39.8% |
+| 2020 | 31.4% | 26.5% | 44.2% | 45.3% |
+| 2021 | 40.9% | 29.6% | 68.1% | 51.0% |
+| 2022 | 28.3% | 30.6% | 63.9% | 52.7% |
+| 2023 | 21.5% | 31.1% | 32.1% | 51.3% |
+| 2024 | 37.3% | 32.9% | 54.2% | 50.8% |
 
 ## Figure 2
 
-**Figure 2. Area of the Contiguous 48 States with Unusually Cold Winter Temperatures, 1911–2024**
+**Figure 2. Area of the Contiguous 48 States with Unusually Cold Winter Temperatures, 1911-2024**
 
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/unusually_cold_winter_area.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figure-2_04-03-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/high_and_low_temperatures_cold_area.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figure-2_04-03-24.xlsx)
 
-Figure 3
-
-This graph shows the percentage of the land area of the contiguous 48 states with unusually cold daily high and low temperatures during the months of December, January, and February. The thin lines represent individual years, while the thick lines show a nine-year weighted average. Blue lines represent daily highs, while purple lines represent daily lows. The term “unusual” in this case is based on the long-term average conditions at each location.
+This graph shows the percentage of the land area of the contiguous 48 states with unusually cold daily high and low temperatures during the months of December, January, and February. The thin lines represent individual years, while the thick lines show a nine-year weighted average. The term “unusual” in this case is based on the long-term average conditions at each location.
 
 Show the data behind this figure
 
-| Year | Unusually cold daily highs | Unusually cold daily lows | Unusually cold daily highs (nine-year average) | Unusually cold daily lows (nine-year average) |
-|---:|:---|:---|:---|:---|
-| 1911 | 3.5% | 4.0% | 12.7% | 14.5% |
-| 1912 | 37.4% | 40.2% | 17.0% | 19.0% |
-| 1913 | 18.4% | 28.6% | 18.6% | 18.4% |
-| 1914 | 3.8% | 1.5% | 18.9% | 14.9% |
-| 1915 | 32.3% | 3.7% | 20.8% | 15.0% |
-| 1916 | 10.8% | 10.2% | 24.8% | 22.0% |
-| 1917 | 38.3% | 47.9% | 28.1% | 30.2% |
-| 1918 | 43.4% | 57.5% | 27.5% | 31.9% |
-| 1919 | 13.1% | 10.6% | 22.6% | 25.8% |
-| 1920 | 19.4% | 18.4% | 16.4% | 17.5% |
-| 1921 | 0.2% | 1.0% | 11.9% | 11.9% |
-| 1922 | 18.3% | 18.0% | 9.3% | 9.1% |
-| 1923 | 4.3% | 4.4% | 7.2% | 7.3% |
-| 1924 | 4.9% | 1.4% | 5.0% | 5.7% |
-| 1925 | 2.6% | 9.8% | 3.2% | 4.5% |
-| 1926 | 0.8% | 0.7% | 3.0% | 4.6% |
-| 1927 | 0.2% | 0.2% | 5.3% | 7.5% |
-| 1928 | 1.9% | 1.9% | 9.4% | 12.6% |
-| 1929 | 38.0% | 51.4% | 12.3% | 16.0% |
-| 1930 | 0.4% | 2.4% | 12.9% | 15.3% |
-| 1931 | 5.6% | 3.1% | 13.4% | 13.9% |
-| 1932 | 19.5% | 12.6% | 14.9% | 14.7% |
-| 1933 | 29.5% | 35.9% | 16.0% | 16.6% |
-| 1934 | 3.1% | 5.2% | 17.8% | 19.0% |
-| 1935 | 1.5% | 2.2% | 22.5% | 23.6% |
-| 1936 | 60.8% | 59.0% | 27.1% | 27.8% |
-| 1937 | 39.2% | 42.3% | 25.6% | 26.0% |
-| 1938 | 0.0% | 0.0% | 18.9% | 18.9% |
-| 1939 | 3.7% | 3.0% | 12.8% | 12.2% |
-| 1940 | 25.4% | 21.9% | 9.4% | 8.5% |
-| 1941 | 0.0% | 0.0% | 6.6% | 5.9% |
-| 1942 | 1.5% | 2.6% | 3.9% | 3.5% |
-| 1943 | 0.3% | 0.3% | 2.5% | 2.0% |
-| 1944 | 3.4% | 1.1% | 2.3% | 1.9% |
-| 1945 | 4.5% | 1.7% | 2.7% | 2.9% |
-| 1946 | 0.4% | 6.9% | 4.0% | 5.1% |
-| 1947 | 0.5% | 0.6% | 8.0% | 9.2% |
-| 1948 | 9.0% | 11.9% | 13.8% | 14.6% |
-| 1949 | 44.5% | 38.6% | 17.1% | 17.6% |
-| 1950 | 11.7% | 16.5% | 15.1% | 15.6% |
-| 1951 | 0.1% | 3.6% | 10.1% | 10.3% |
-| 1952 | 10.7% | 4.5% | 6.0% | 5.7% |
-| 1953 | 0.0% | 0.1% | 4.1% | 4.2% |
-| 1954 | 0.0% | 0.4% | 3.9% | 5.1% |
-| 1955 | 9.9% | 17.7% | 4.4% | 6.5% |
-| 1956 | 4.0% | 3.2% | 4.9% | 7.0% |
-| 1957 | 0.7% | 2.6% | 5.6% | 7.5% |
-| 1958 | 10.4% | 10.1% | 6.6% | 8.4% |
-| 1959 | 8.2% | 16.7% | 7.3% | 9.0% |
-| 1960 | 7.4% | 1.8% | 7.9% | 9.4% |
-| 1961 | 5.8% | 10.3% | 9.5% | 11.9% |
-| 1962 | 6.6% | 2.4% | 12.7% | 17.9% |
-| 1963 | 27.0% | 42.4% | 15.4% | 23.7% |
-| 1964 | 22.6% | 43.4% | 14.9% | 23.7% |
-| 1965 | 3.8% | 6.6% | 11.6% | 17.4% |
-| 1966 | 9.7% | 3.4% | 8.5% | 10.1% |
-| 1967 | 0.1% | 3.6% | 8.1% | 6.6% |
-| 1968 | 8.1% | 4.6% | 10.4% | 7.0% |
-| 1969 | 22.3% | 8.6% | 12.4% | 8.7% |
-| 1970 | 17.5% | 20.8% | 12.1% | 9.2% |
-| 1971 | 1.8% | 1.4% | 10.3% | 7.9% |
-| 1972 | 2.7% | 3.9% | 9.3% | 6.2% |
-| 1973 | 24.6% | 8.6% | 8.6% | 5.2% |
-| 1974 | 0.7% | 3.3% | 7.6% | 5.6% |
-| 1975 | 1.3% | 2.0% | 9.2% | 9.8% |
-| 1976 | 0.0% | 0.5% | 17.6% | 19.9% |
-| 1977 | 34.3% | 49.6% | 31.4% | 32.9% |
-| 1978 | 58.5% | 52.9% | 41.5% | 40.3% |
-| 1979 | 81.6% | 66.5% | 39.3% | 36.6% |
-| 1980 | 0.0% | 0.0% | 26.9% | 25.4% |
-| 1981 | 0.5% | 10.0% | 14.5% | 15.0% |
-| 1982 | 11.9% | 10.9% | 9.3% | 10.3% |
-| 1983 | 1.0% | 0.0% | 9.7% | 10.1% |
-| 1984 | 24.4% | 22.9% | 10.3% | 10.5% |
-| 1985 | 9.7% | 12.4% | 8.5% | 8.8% |
-| 1986 | 0.1% | 0.1% | 5.1% | 5.6% |
-| 1987 | 0.2% | 0.0% | 2.4% | 3.1% |
-| 1988 | 0.4% | 0.4% | 1.3% | 2.7% |
-| 1989 | 3.3% | 8.0% | 1.2% | 3.1% |
-| 1990 | 0.0% | 2.6% | 1.6% | 3.1% |
-| 1991 | 0.2% | 1.2% | 3.2% | 3.0% |
-| 1992 | 1.6% | 0.1% | 5.8% | 3.4% |
-| 1993 | 20.2% | 9.5% | 7.4% | 3.9% |
-| 1994 | 6.9% | 4.8% | 6.5% | 3.5% |
-| 1995 | 0.0% | 0.0% | 3.9% | 2.1% |
-| 1996 | 0.0% | 0.1% | 1.7% | 0.8% |
-| 1997 | 1.0% | 0.0% | 0.7% | 0.2% |
-| 1998 | 0.6% | 0.0% | 0.8% | 0.1% |
-| 1999 | 0.0% | 0.0% | 1.6% | 0.2% |
-| 2000 | 0.0% | 0.0% | 2.9% | 0.4% |
-| 2001 | 12.0% | 1.8% | 4.0% | 0.5% |
-| 2002 | 0.1% | 0.1% | 4.0% | 0.5% |
-| 2003 | 5.9% | 0.2% | 3.0% | 0.3% |
-| 2004 | 0.1% | 0.1% | 1.8% | 0.2% |
-| 2005 | 0.2% | 0.0% | 1.0% | 0.1% |
-| 2006 | 0.0% | 0.0% | 0.9% | 0.1% |
-| 2007 | 1.7% | 0.4% | 2.0% | 0.3% |
-| 2008 | 0.9% | 0.1% | 5.1% | 0.9% |
-| 2009 | 0.0% | 0.1% | 9.5% | 1.8% |
-| 2010 | 40.3% | 6.0% | 11.8% | 2.7% |
-| 2011 | 2.4% | 3.8% | 9.9% | 3.3% |
-| 2012 | 0.0% | 0.2% | 6.4% | 4.5% |
-| 2013 | 0.4% | 1.3% | 4.5% | 6.5% |
-| 2014 | 12.3% | 24.6% | 4.0% | 7.4% |
-| 2015 | 1.4% | 0.7% | 3.3% | 5.8% |
-| 2016 | 0.0% | 0.0% | 2.0% | 3.1% |
-| 2017 | 1.4% | 1.0% | 0.9% | 1.1% |
-| 2018 | 0.0% | 0.0% | 0.4% | 0.3% |
-| 2019 | 0.1% | 0.0% | 0.2% | 0.1% |
-| 2020 | 0.0% | 0.0% | 0.1% | 0.0% |
-| 2021 | 0.0% | 0.0% | 0.0% | 0.0% |
-| 2022 | 0.0% | 0.0% | 0.0% | 0.0% |
-| 2023 | 0.0% | 0.0% | 0.0% | 0.0% |
-| 2024 | 0.0% | 0.0% | 0.0% | 0.0% |
-
-Figure 4
+| Year | Cold Highs | 9-pt High | Cold Lows | 9-pt Low |
+|-----:|:-----------|:----------|:----------|:---------|
+| 1911 | 3.5%       | 12.7%     | 4.0%      | 14.5%    |
+| 1912 | 37.4%      | 17.0%     | 40.2%     | 19.0%    |
+| 1913 | 18.4%      | 18.6%     | 28.6%     | 18.4%    |
+| 1914 | 3.8%       | 18.9%     | 1.5%      | 14.9%    |
+| 1915 | 32.3%      | 20.8%     | 3.7%      | 15.0%    |
+| 1916 | 10.8%      | 24.8%     | 10.2%     | 22.0%    |
+| 1917 | 38.3%      | 28.1%     | 47.9%     | 30.2%    |
+| 1918 | 43.4%      | 27.5%     | 57.5%     | 31.9%    |
+| 1919 | 13.1%      | 22.6%     | 10.6%     | 25.8%    |
+| 1920 | 19.4%      | 16.4%     | 18.4%     | 17.5%    |
+| 1921 | 0.2%       | 11.9%     | 1.0%      | 11.9%    |
+| 1922 | 18.3%      | 9.3%      | 18.0%     | 9.1%     |
+| 1923 | 4.3%       | 7.2%      | 4.4%      | 7.3%     |
+| 1924 | 4.9%       | 5.0%      | 1.4%      | 5.7%     |
+| 1925 | 2.6%       | 3.2%      | 9.8%      | 4.5%     |
+| 1926 | 0.8%       | 3.0%      | 0.7%      | 4.6%     |
+| 1927 | 0.2%       | 5.3%      | 0.2%      | 7.5%     |
+| 1928 | 1.9%       | 9.4%      | 1.9%      | 12.6%    |
+| 1929 | 38.0%      | 12.3%     | 51.4%     | 16.0%    |
+| 1930 | 0.4%       | 12.9%     | 2.4%      | 15.3%    |
+| 1931 | 5.6%       | 13.4%     | 3.1%      | 13.9%    |
+| 1932 | 19.5%      | 14.9%     | 12.6%     | 14.7%    |
+| 1933 | 29.5%      | 16.0%     | 35.9%     | 16.6%    |
+| 1934 | 3.1%       | 17.8%     | 5.2%      | 19.0%    |
+| 1935 | 1.5%       | 22.5%     | 2.2%      | 23.6%    |
+| 1936 | 60.8%      | 27.1%     | 59.0%     | 27.8%    |
+| 1937 | 39.2%      | 25.6%     | 42.3%     | 26.0%    |
+| 1938 | 0.0%       | 18.9%     | 0.0%      | 18.9%    |
+| 1939 | 3.7%       | 12.8%     | 3.0%      | 12.2%    |
+| 1940 | 25.4%      | 9.4%      | 21.9%     | 8.5%     |
+| 1941 | 0.0%       | 6.6%      | 0.0%      | 5.9%     |
+| 1942 | 1.5%       | 3.9%      | 2.6%      | 3.5%     |
+| 1943 | 0.3%       | 2.5%      | 0.3%      | 2.0%     |
+| 1944 | 3.4%       | 2.3%      | 1.1%      | 1.9%     |
+| 1945 | 4.5%       | 2.7%      | 1.7%      | 2.9%     |
+| 1946 | 0.4%       | 4.0%      | 6.9%      | 5.1%     |
+| 1947 | 0.5%       | 8.0%      | 0.6%      | 9.2%     |
+| 1948 | 9.0%       | 13.8%     | 11.9%     | 14.6%    |
+| 1949 | 44.5%      | 17.1%     | 38.6%     | 17.6%    |
+| 1950 | 11.7%      | 15.1%     | 16.5%     | 15.6%    |
+| 1951 | 0.1%       | 10.1%     | 3.6%      | 10.3%    |
+| 1952 | 10.7%      | 6.0%      | 4.5%      | 5.7%     |
+| 1953 | 0.0%       | 4.1%      | 0.1%      | 4.2%     |
+| 1954 | 0.0%       | 3.9%      | 0.4%      | 5.1%     |
+| 1955 | 9.9%       | 4.4%      | 17.7%     | 6.5%     |
+| 1956 | 4.0%       | 4.9%      | 3.2%      | 7.0%     |
+| 1957 | 0.7%       | 5.6%      | 2.6%      | 7.5%     |
+| 1958 | 10.4%      | 6.6%      | 10.1%     | 8.4%     |
+| 1959 | 8.2%       | 7.3%      | 16.7%     | 9.0%     |
+| 1960 | 7.4%       | 7.9%      | 1.8%      | 9.4%     |
+| 1961 | 5.8%       | 9.5%      | 10.3%     | 11.9%    |
+| 1962 | 6.6%       | 12.7%     | 2.4%      | 17.9%    |
+| 1963 | 27.0%      | 15.4%     | 42.4%     | 23.7%    |
+| 1964 | 22.6%      | 14.9%     | 43.4%     | 23.7%    |
+| 1965 | 3.8%       | 11.6%     | 6.6%      | 17.4%    |
+| 1966 | 9.7%       | 8.5%      | 3.4%      | 10.1%    |
+| 1967 | 0.1%       | 8.1%      | 3.6%      | 6.6%     |
+| 1968 | 8.1%       | 10.4%     | 4.6%      | 7.0%     |
+| 1969 | 22.3%      | 12.4%     | 8.6%      | 8.7%     |
+| 1970 | 17.5%      | 12.1%     | 20.8%     | 9.2%     |
+| 1971 | 1.8%       | 10.3%     | 1.4%      | 7.9%     |
+| 1972 | 2.7%       | 9.3%      | 3.9%      | 6.2%     |
+| 1973 | 24.6%      | 8.6%      | 8.6%      | 5.2%     |
+| 1974 | 0.7%       | 7.6%      | 3.3%      | 5.6%     |
+| 1975 | 1.3%       | 9.2%      | 2.0%      | 9.8%     |
+| 1976 | 0.0%       | 17.6%     | 0.5%      | 19.9%    |
+| 1977 | 34.3%      | 31.4%     | 49.6%     | 32.9%    |
+| 1978 | 58.5%      | 41.5%     | 52.9%     | 40.3%    |
+| 1979 | 81.6%      | 39.3%     | 66.5%     | 36.6%    |
+| 1980 | 0.0%       | 26.9%     | 0.0%      | 25.4%    |
+| 1981 | 0.5%       | 14.5%     | 10.0%     | 15.0%    |
+| 1982 | 11.9%      | 9.3%      | 10.9%     | 10.3%    |
+| 1983 | 1.0%       | 9.7%      | 0.0%      | 10.1%    |
+| 1984 | 24.4%      | 10.3%     | 22.9%     | 10.5%    |
+| 1985 | 9.7%       | 8.5%      | 12.4%     | 8.8%     |
+| 1986 | 0.1%       | 5.1%      | 0.1%      | 5.6%     |
+| 1987 | 0.2%       | 2.4%      | 0.0%      | 3.1%     |
+| 1988 | 0.4%       | 1.3%      | 0.4%      | 2.7%     |
+| 1989 | 3.3%       | 1.2%      | 8.0%      | 3.1%     |
+| 1990 | 0.0%       | 1.6%      | 2.6%      | 3.1%     |
+| 1991 | 0.2%       | 3.2%      | 1.2%      | 3.0%     |
+| 1992 | 1.6%       | 5.8%      | 0.1%      | 3.4%     |
+| 1993 | 20.2%      | 7.4%      | 9.5%      | 3.9%     |
+| 1994 | 6.9%       | 6.5%      | 4.8%      | 3.5%     |
+| 1995 | 0.0%       | 3.9%      | 0.0%      | 2.1%     |
+| 1996 | 0.0%       | 1.7%      | 0.1%      | 0.8%     |
+| 1997 | 1.0%       | 0.7%      | 0.0%      | 0.2%     |
+| 1998 | 0.6%       | 0.8%      | 0.0%      | 0.1%     |
+| 1999 | 0.0%       | 1.6%      | 0.0%      | 0.2%     |
+| 2000 | 0.0%       | 2.9%      | 0.0%      | 0.4%     |
+| 2001 | 12.0%      | 4.0%      | 1.8%      | 0.5%     |
+| 2002 | 0.1%       | 4.0%      | 0.1%      | 0.5%     |
+| 2003 | 5.9%       | 3.0%      | 0.2%      | 0.3%     |
+| 2004 | 0.1%       | 1.8%      | 0.1%      | 0.2%     |
+| 2005 | 0.2%       | 1.0%      | 0.0%      | 0.1%     |
+| 2006 | 0.0%       | 0.9%      | 0.0%      | 0.1%     |
+| 2007 | 1.7%       | 2.0%      | 0.4%      | 0.3%     |
+| 2008 | 0.9%       | 5.1%      | 0.1%      | 0.9%     |
+| 2009 | 0.0%       | 9.5%      | 0.1%      | 1.8%     |
+| 2010 | 40.3%      | 11.8%     | 6.0%      | 2.7%     |
+| 2011 | 2.4%       | 9.9%      | 3.8%      | 3.3%     |
+| 2012 | 0.0%       | 6.4%      | 0.2%      | 4.5%     |
+| 2013 | 0.4%       | 4.5%      | 1.3%      | 6.5%     |
+| 2014 | 12.3%      | 4.0%      | 24.6%     | 7.4%     |
+| 2015 | 1.4%       | 3.3%      | 0.7%      | 5.8%     |
+| 2016 | 0.0%       | 2.0%      | 0.0%      | 3.1%     |
+| 2017 | 1.4%       | 0.9%      | 1.0%      | 1.1%     |
+| 2018 | 0.0%       | 0.4%      | 0.0%      | 0.3%     |
+| 2019 | 0.1%       | 0.2%      | 0.0%      | 0.1%     |
+| 2020 | 0.0%       | 0.1%      | 0.0%      | 0.0%     |
+| 2021 | 0.0%       | 0.0%      | 0.0%      | 0.0%     |
+| 2022 | 0.0%       | 0.0%      | 0.0%      | 0.0%     |
+| 2023 | 0.0%       | 0.0%      | 0.0%      | 0.0%     |
+| 2024 | 0.0%       | 0.0%      | 0.0%      | 0.0%     |
 
 ## Figure 3
 
-**Figure 3. Change in Unusually Hot Temperatures in the Contiguous 48 States, 1948–2023**
+> **NOTE:**
+>
+> Grey circles mark a station with no trend distinguishable from year-to-year noise (p ≥ 0.10, EPA’s own 90%-confidence convention). Grey “x” markers are 18 stations with a change value but no significance figure available at all: 13 sit outside the smaller network EPA’s regression analysis covers, and 5 more have a coordinate that matches another station in EPA’s own published data, so which station a given p-value belongs to could not be told apart.
+
+**Figure 3. Change in Unusually Hot Temperatures in the Contiguous 48 States, 1948-2023**
 
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/unusually_hot_days_by_station.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figures-3%20and%204_04-15-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/high_and_low_temperatures_hot_days_change.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figures-3%20and%204_04-15-24.xlsx)
 
-Figure 5
-
-This map shows trends in unusually hot temperatures at individual weather stations that have operated consistently since 1948. In this case, the term “unusually hot” refers to a daily maximum temperature that is hotter than the 95th percentile temperature during the 1948–2023 period. Thus, the maximum temperature on a particular day at a particular station would be considered “unusually hot” if it falls within the warmest 5 percent of measurements at that station during the 1948–2023 period. The map shows changes in the total number of days per year that were hotter than the 95th percentile. Red upward-pointing symbols show where these unusually hot days are becoming more common. Blue downward-pointing symbols show where unusually hot days are becoming less common.
+This map shows trends in unusually hot temperatures at individual weather stations that have operated consistently since 1948. In this case, the term “unusually hot” refers to a daily maximum temperature that is hotter than the 95th percentile temperature during the 1948–2023 period. Thus, the maximum temperature on a particular day at a particular station would be considered “unusually hot” if it falls within the warmest 5 percent of measurements at that station during the 1948–2023 period. The map shows changes in the total number of days per year that were hotter than the 95th percentile.
 
 Show the data behind this figure
 
@@ -310,7 +306,8 @@ Show the data behind this figure
 | USC00042319 | CA | 36.4625°N | 116.8672°W | +33.05 | More unusually hot days |
 | USC00103732 | ID | 42.5631°N | 111.7594°W | +31.95 | More unusually hot days |
 | USW00024119 | NV | 40.6117°N | 116.8917°W | +31.56 | More unusually hot days |
-| USW00093805 | FL | 30.3975°N | 84.3289°W | +31.05 | More unusually hot days |
+| NA | FL | 30.3975°N | 84.3289°W | +31.32 | Significance not available |
+| NA | FL | 30.3975°N | 84.3289°W | +31.05 | Significance not available |
 | USC00381944 | SC | 33.9917°N | 81.0247°W | +30.75 | More unusually hot days |
 | USW00012924 | TX | 27.7839°N | 97.5114°W | +29.59 | More unusually hot days |
 | USC00427909 | UT | 40.5453°N | 111.5042°W | +29.04 | More unusually hot days |
@@ -336,6 +333,7 @@ Show the data behind this figure
 | USC00103631 | ID | 42.9403°N | 115.3231°W | +23.48 | More unusually hot days |
 | USW00024144 | MT | 46.6044°N | 111.9892°W | +23.42 | More unusually hot days |
 | USW00023044 | TX | 31.8122°N | 106.3775°W | +23.20 | More unusually hot days |
+| NA | NC | 35.2325°N | 75.6219°W | +23.03 | Significance not available |
 | USC00291469 | NM | 32.3478°N | 104.2225°W | +22.86 | More unusually hot days |
 | USC00420086 | UT | 37.4403°N | 112.4819°W | +22.85 | More unusually hot days |
 | USC00380074 | SC | 33.4925°N | 81.6958°W | +22.80 | More unusually hot days |
@@ -399,7 +397,8 @@ Show the data behind this figure
 | USC00456789 | WA | 46.7603°N | 117.1861°W | +15.15 | More unusually hot days |
 | USC00042941 | CA | 34.7050°N | 118.4297°W | +15.12 | More unusually hot days |
 | USC00317202 | NC | 36.3797°N | 79.6944°W | +15.10 | More unusually hot days |
-| USW00024284 | OR | 43.4133°N | 124.2436°W | +15.09 | More unusually hot days |
+| NA | OR | 43.4133°N | 124.2436°W | +15.09 | Significance not available |
+| NA | OR | 43.4133°N | 124.2436°W | +15.07 | Significance not available |
 | USC00099186 | GA | 31.2514°N | 82.3128°W | +15.03 | More unusually hot days |
 | USC00028619 | AZ | 31.7119°N | 110.0686°W | +14.98 | More unusually hot days |
 | USC00108137 | ID | 48.2942°N | 116.5628°W | +14.75 | More unusually hot days |
@@ -433,6 +432,7 @@ Show the data behind this figure
 | USC00486660 | WY | 43.8497°N | 104.1886°W | +12.72 | More unusually hot days |
 | USC00104140 | ID | 42.5972°N | 114.1378°W | +12.68 | More unusually hot days |
 | USC00294369 | NM | 35.7783°N | 106.6872°W | +12.67 | More unusually hot days |
+| NA | CA | 36.7800°N | 119.7194°W | +12.65 | Significance not available |
 | USC00172426 | ME | 44.9067°N | 66.9919°W | +12.58 | More unusually hot days |
 | USW00024143 | MT | 47.4733°N | 111.3828°W | +12.38 | More unusually hot days |
 | USC00047851 | CA | 35.3056°N | 120.6619°W | +12.23 | More unusually hot days |
@@ -1032,13 +1032,22 @@ Show the data behind this figure
 | USW00024151 | ID | 42.1492°N | 112.2872°W | +0.00 | No significant trend |
 | USW00024160 | WA | 46.0944°N | 118.2858°W | +0.00 | No significant trend |
 | USW00024193 | UT | 40.7206°N | 114.0358°W | +0.00 | No significant trend |
-| USW00024285 | OR | 44.6431°N | 124.0556°W | +0.00 | No significant trend |
+| NA | OR | 44.6431°N | 124.0556°W | +0.00 | Significance not available |
 | USW00093806 | AL | 33.2122°N | 87.6156°W | +0.00 | No significant trend |
-| USW00093808 | KY | 36.9647°N | 86.4239°W | +0.00 | No significant trend |
+| NA | KY | 36.9647°N | 86.4239°W | +0.00 | Significance not available |
 | USW00093986 | OK | 34.9892°N | 99.0528°W | +0.00 | No significant trend |
 | USW00094008 | MT | 48.2064°N | 106.6247°W | +0.00 | No significant trend |
-| USW00094728 | NY | 40.7789°N | 73.9692°W | +0.00 | No significant trend |
+| NA | NY | 40.7789°N | 73.9692°W | +0.00 | Significance not available |
 | USW00094967 | MN | 46.8997°N | 95.0669°W | +0.00 | No significant trend |
+| NA | OR | 44.6431°N | 124.0556°W | +0.00 | Significance not available |
+| NA | AL | 33.2119°N | 87.6161°W | +0.00 | Significance not available |
+| NA | KY | 36.9647°N | 86.4239°W | +0.00 | Significance not available |
+| NA | OK | 34.9894°N | 99.0525°W | +0.00 | Significance not available |
+| NA | MT | 48.2138°N | 106.6213°W | +0.00 | Significance not available |
+| NA | OR | 46.1569°N | 123.8825°W | +0.00 | Significance not available |
+| NA | NY | 40.7789°N | 73.9692°W | +0.00 | Significance not available |
+| NA | NY | 43.1450°N | 75.3839°W | +0.00 | Significance not available |
+| NA | MN | 46.9006°N | 95.0678°W | +0.00 | Significance not available |
 | USC00046506 | CA | 39.7458°N | 122.1997°W | -6.60 | Fewer unusually hot days |
 | USC00214106 | MN | 47.2256°N | 95.1919°W | -6.92 | Fewer unusually hot days |
 | USC00328792 | ND | 48.3706°N | 100.3908°W | -7.12 | Fewer unusually hot days |
@@ -1351,20 +1360,20 @@ Show the data behind this figure
 | USC00162534 | LA | 30.0719°N | 91.0278°W | -42.88 | Fewer unusually hot days |
 | USC00091500 | GA | 31.1903°N | 84.2036°W | -45.37 | Fewer unusually hot days |
 
-Figure 6
-
 ## Figure 4
 
-**Figure 4. Change in Unusually Cold Temperatures in the Contiguous 48 States, 1948–2023**
+> **NOTE:**
+>
+> Grey circles mark a station with no trend distinguishable from year-to-year noise (p ≥ 0.10, EPA’s own 90%-confidence convention). Every station here has a significance figure available, unlike Figure 3.
+
+**Figure 4. Change in Unusually Cold Temperatures in the Contiguous 48 States, 1948-2023**
 
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/unusually_cold_days_by_station.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figures-3%20and%204_04-15-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/high_and_low_temperatures_cold_days_change.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figures-3%20and%204_04-15-24.xlsx)
 
-Figure 7
-
-This map shows trends in unusually cold temperatures at individual weather stations that have operated consistently since 1948. In this case, the term “unusually cold” refers to a daily minimum temperature that is colder than the 5th percentile temperature during the 1948–2023 period. Thus, the minimum temperature on a particular day at a particular station would be considered “unusually cold” if it falls within the coldest 5 percent of measurements at that station during the 1948–2023 period. The map shows changes in the total number of days per year that were colder than the 5th percentile. Blue upward-pointing symbols show where these unusually cold days are becoming more common. Red downward-pointing symbols show where unusually cold days are becoming less common.
+This map shows trends in unusually cold temperatures at individual weather stations that have operated consistently since 1948. In this case, the term “unusually cold” refers to a daily minimum temperature that is colder than the 5th percentile temperature during the 1948–2023 period. Thus, the minimum temperature on a particular day at a particular station would be considered “unusually cold” if it falls within the coldest 5 percent of measurements at that station during the 1948–2023 period. The map shows changes in the total number of days per year that were colder than the 5th percentile.
 
 Show the data behind this figure
 
@@ -2077,7 +2086,7 @@ Show the data behind this figure
 | USC00281582 | NJ | 41.0300°N | 74.4247°W | -10.91 | Fewer unusually cold days |
 | USC00207690 | MI | 42.4014°N | 86.2825°W | -10.91 | Fewer unusually cold days |
 | USC00332791 | OH | 41.0461°N | 83.6622°W | -10.91 | Fewer unusually cold days |
-| USC00322188 | ND | 46.8914°N | 102.7792°W | -10.93 | Fewer unusually cold days |
+| USC00322188 | ND | 46.8914°N | 102.7792°W | -10.92 | Fewer unusually cold days |
 | USW00024284 | OR | 43.4133°N | 124.2436°W | -10.99 | Fewer unusually cold days |
 | USC00218618 | MN | 47.0997°N | 94.5725°W | -10.99 | Fewer unusually cold days |
 | USC00082944 | FL | 30.6669°N | 81.4525°W | -11.02 | Fewer unusually cold days |
@@ -2423,33 +2432,27 @@ Show the data behind this figure
 | USC00028815 | AZ | 32.2292°N | 110.9536°W | -51.02 | Fewer unusually cold days |
 | USC00047902 | CA | 34.4167°N | 119.6844°W | -51.29 | Fewer unusually cold days |
 
-Figure 8
-
 ## Figure 5
 
-**Figure 5. Record Daily High and Low Temperatures in the Contiguous 48 States, 1950–2009**
+**Figure 5. Record Daily High and Low Temperatures in the Contiguous 48 States, 1950-2009**
 
 Data source: Meehl et al., 2009\
 Web update: April 2021
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/record_highs_lows_by_decade.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figure-5_04-15-24.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data/high_and_low_temperatures_record_highs_lows.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/high-and-low-temperatures/main/data-raw/high-low-temps_figure-5_04-15-24.xlsx)
 
-Figure 9
-
-This figure shows the percentage of daily temperature records set at weather stations across the contiguous 48 states by decade. Record highs (red) are compared with record lows (blue).
+This figure shows the percentage of daily temperature records set at weather stations across the contiguous 48 states by decade. Record highs are compared with record lows.
 
 Show the data behind this figure
 
-| Decade | Record daily highs | Record daily lows |
-|:-------|:-------------------|:------------------|
-| 1950s  | 52.07%             | 47.93%            |
-| 1960s  | 43.55%             | 56.45%            |
-| 1970s  | 43.92%             | 56.08%            |
-| 1980s  | 53.17%             | 46.83%            |
-| 1990s  | 57.55%             | 42.45%            |
-| 2000s  | 67.16%             | 32.84%            |
-
-Figure 10
+| Decade | High   | Low     |
+|:-------|:-------|:--------|
+| 1950s  | 52.07% | -47.93% |
+| 1960s  | 43.55% | -56.45% |
+| 1970s  | 43.92% | -56.08% |
+| 1980s  | 53.17% | -46.83% |
+| 1990s  | 57.55% | -42.45% |
+| 2000s  | 67.16% | -32.84% |
 
 ## Key Points
 
@@ -2463,7 +2466,7 @@ Figure 10
 
 ## Background
 
-Unusually hot or cold temperatures can result in prolonged extreme weather events like summer heat waves (see the Heat Waves indicator) or winter cold spells. Heat waves can lead to illness and death, particularly among older adults, the very young, and other vulnerable populations (see the Heat-Related Deaths and Heat-Related Illnesses indicators).^([1](#ref-1)) People can also die from exposure to extreme cold (hypothermia) (see the Cold-Related Deaths indicator). In addition, prolonged exposure to excessive heat and cold can damage crops and injure or kill livestock. Extreme heat can lead to power outages as heavy demands for air conditioning strain the power grid, while extremely cold weather increases the need for heating fuel.
+Unusually hot or cold temperatures can result in prolonged extreme weather events like summer heat waves (see the [Heat Waves](../indicators/heat-waves.llms.md) indicator) or winter cold spells. Heat waves can lead to illness and death, particularly among older adults, the very young, and other vulnerable populations (see the [Heat-Related Deaths](../indicators/heat-related-deaths.llms.md) and [Heat-Related Illnesses](../indicators/heat-related-illnesses.llms.md) indicators).^([1](#ref-1)) People can also die from exposure to extreme cold (hypothermia) (see the [Cold-Related Deaths](../indicators/cold-related-deaths.llms.md) indicator). In addition, prolonged exposure to excessive heat and cold can damage crops and injure or kill livestock. Extreme heat can lead to power outages as heavy demands for air conditioning strain the power grid, while extremely cold weather increases the need for heating fuel.
 
 Record-setting daily temperatures, heat waves, and cold spells are a natural part of day-to-day variation in weather. As the Earth’s climate warms overall, however, temperatures that are unusually hot for a given location are expected to increase.^([2](#ref-2)) Higher values of the heat index (which combines temperature and humidity to describe perceived temperature) are expected to increase discomfort and aggravate health issues. Conversely, cold spells are expected to decrease. In most locations, scientists expect the number of warm days and warm nights to increase.^([3](#ref-3)) This change will provide less opportunity to cool off and recover from daytime heat.
 
@@ -2479,19 +2482,17 @@ The data come from thousands of weather stations across the United States. Natio
 
 Figures 1 and 2 show trends in the percentage of the country’s area experiencing unusually hot temperatures in the summer and unusually cold temperatures in the winter. These graphs are based on daily maximum temperatures, which usually occur during the day, and daily minimum temperatures, which usually occur at night. At each station, the recorded highs and lows are compared with the full set of historical records. After averaging over a particular month or season of interest, the coldest 10 percent of years are considered “unusually cold” and the warmest 10 percent are “unusually hot.” For example, if last year’s summer highs were the 10th warmest on record for a particular location with more than 100 years of data, that year’s summer highs would be considered unusually warm. Data are available from 1910 to 2023 for summer (June through August) and from 1911 to 2024 for winter (December of the previous year through February).
 
-Figures 3 and 4 show how trends in unusually hot and cold daily temperatures throughout the year vary by location. These maps cover about 1,050 weather stations that have operated since 1948. Figure 3 was created by reviewing all daily maximum temperatures from 1948 to 2023 and identifying the 95th percentile temperature (a temperature that one would only expect to exceed in five days out of every 100) at each station. Next, for each year, the total number of days with maximum temperatures higher than the 95th percentile (that is, unusually hot days) was determined. The map shows how the total number of unusually hot days per year at each station has changed over time. Figure 4 is similar except that it looks at unusually cold days, based on the 5th percentile of daily minimum temperatures.
+Figures 3 and 4 show how trends in unusually hot and cold daily temperatures throughout the year vary by location. These maps cover about 1,050 weather stations that have operated since 1948. Figure 3 was created by reviewing all daily maximum temperatures from 1948 to 2023 and identifying the 95th percentile temperature (a temperature that one would only expect to exceed in five days out of every 100) at each station. Next, for each year, the total number of days with maximum temperatures higher than the 95th percentile (that is, unusually hot days) was determined. The map shows how the total number of unusually hot days per year at each station has changed over time. Figure 4 is similar except that it looks at unusually cold days, based on the 5th percentile of daily minimum temperatures and reviews daily minimum winter temperatures from 1911 to 2023.
 
 Many people are familiar with record daily high and low temperatures, which are frequently mentioned in weather reports. Figure 5 depicts trends in these records by comparing the number of record-setting highs with the number of record-setting lows by decade. These data come from a set of weather stations that have collected data consistently since 1950.
 
-## About the Data
-
-### Indicator Notes
+## Indicator Notes
 
 Temperature data are less certain for the early part of the 20th century because fewer stations were operating at that time. In addition, measuring devices and methods have changed over time, and some stations have moved. The data have been adjusted to the extent possible to account for some of these influences and biases, however, and these uncertainties are not sufficient to change the fundamental trends shown in the figures.
 
-### Data Sources
+## Data Sources
 
-The data for this indicator are based on measurements from weather stations managed by the National Oceanic and Atmospheric Administration. Figures 1 and 2 come from the U.S. Climate Extremes Index, which is based on a smaller group of long-term weather stations that are tracked by the National Centers for Environmental Information and referred to as the U.S. Historical Climatology Network. Figures 3 and 4 use data from a somewhat larger set of stations tracked by the National Centers for Environmental Information, known as the Global Historical Climatology Network. Figure 5 uses National Weather Service data processed by Meehl et al. (2009).^([6](#ref-6)) All of these weather station records are available online at: [www.ncei.noaa.gov](https://www.ncei.noaa.gov), and information about the Climate Extremes Index can be found at: [www.ncei.noaa.gov/access/monitoring/cei](https://www.ncei.noaa.gov/access/monitoring/cei).
+The data for this indicator are based on measurements from weather stations managed by the National Oceanic and Atmospheric Administration. Figures 1 and 2 come from the U.S. Climate Extremes Index, which is based on a smaller group of long-term weather stations that are tracked by the National Centers for Environmental Information and referred to as the U.S. Historical Climatology Network. Figures 3 and 4 use data from a somewhat larger set of stations tracked by the National Centers for Environmental Information, known as the Global Historical Climatology Network. Figure 5 uses National Weather Service data processed by Meehl et al. (2009).^([6](#ref-6)) All of these weather station records are available online at: [www.ncdc.noaa.gov](https://www.ncdc.noaa.gov/), and information about the Climate Extremes Index can be found at: [www.ncdc.noaa.gov/extremes/cei](https://www.ncdc.noaa.gov/extremes/cei).
 
 ## Technical Documentation
 
