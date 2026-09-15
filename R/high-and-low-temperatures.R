@@ -192,7 +192,10 @@ fig_5_plot <- function(d) {
       aes(data_id = paste(decade, series), tooltip = tooltip),
       width = 0.7
     ) +
-    scale_fill_manual(values = series_colours(c("high", "low")), breaks = FIG5_KEYS, labels = FIG5_KEYS) +
+    scale_fill_manual(
+      values = stats::setNames(unname(series_colours(c("high", "low"))), FIG5_KEYS),
+      breaks = FIG5_KEYS, labels = FIG5_KEYS
+    ) +
     scale_y_continuous(
       limits = c(-100, 100), breaks = seq(-100, 100, 25),
       labels = function(x) scales::label_percent(scale = 1)(abs(x))
