@@ -1,6 +1,6 @@
 ---
 title: "Heavy Precipitation"
-description: "Trends in extreme one-day precipitation events and unusually high annual precipitation across the contiguous 48 states, 1895-2023."
+description: "This indicator tracks the frequency of heavy precipitation events in the United States."
 categories: [Weather and Climate, Precipitation]
 execute:
   eval: true
@@ -17,7 +17,7 @@ oneday      <- read_indicator(REPO, "extreme_oneday_precipitation.csv")
 annual_high <- read_indicator(REPO, "unusually_high_annual_precipitation.csv")
 ```
 
-This indicator tracks the frequency of heavy precipitation events in the United States.
+Trends in extreme one-day precipitation events and unusually high annual precipitation across the contiguous 48 states, 1895-2023.
 
 ## Figures
 
