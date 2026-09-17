@@ -30,7 +30,7 @@ How the number of growing degree days has changed at 280 long-term weather stati
 
 ##### Heat Waves
 
-How the frequency, duration, season length, and intensity of heat waves have changed in 50 large U.S. cities since 1961, and how the U.S. Annual Heat Wave Index has varied…
+Trends in the frequency, duration, season length, and intensity of heat waves in 50 large U.S. cities since 1961, and in the U.S. Annual Heat Wave Index since 1895.
 
 ##### Heat-Related Deaths
 
@@ -46,7 +46,7 @@ Trends in the energy demand implied by outdoor temperatures, nationally and by s
 
 ##### Heavy Precipitation
 
-This indicator tracks how the frequency and intensity of heavy precipitation events have changed across the United States.
+This indicator tracks the frequency of heavy precipitation events in the United States.
 
 ##### High and Low Temperatures
 
