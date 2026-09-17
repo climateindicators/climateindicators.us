@@ -15,8 +15,8 @@ REPO <- "heavy-precipitation"
 # overlaid line ("The bars represent individual years, while the line is a
 # nine-year weighted average").
 fig_1_plot <- function(d) {
-  order <- c("index_value", "moving_average")
-  bars  <- d[d$series_key == "index_value", ]
+  order <- c("annual", "moving_average")
+  bars  <- d[d$series_key == "annual", ]
   line  <- d[d$series_key == "moving_average", ]
   cols  <- label_colours(d, "series_key", "series_label", order)
   brks  <- label_order(d, "series_key", "series_label", order)
@@ -59,8 +59,8 @@ fig_1_table <- function(d) {
 # ("The thicker line shows a nine-year weighted average that smooths out some
 # of the year-to-year fluctuations").
 fig_2_plot <- function(d) {
-  order <- c("fraction_area", "moving_average")
-  raw   <- d[d$series_key == "fraction_area", ]
+  order <- c("annual", "moving_average")
+  raw   <- d[d$series_key == "annual", ]
   ma    <- d[d$series_key == "moving_average", ]
   cols  <- label_colours(d, "series_key", "series_label", order)
 
