@@ -16,7 +16,11 @@ FIG1_LABELS <- c(
 )
 
 fig_1_plot <- function(d) {
-  d$series_label <- FIG1_LABELS[d$series]
+  # unname() matters: d is a tibble, and a tibble column keeps the stray
+  # `names` attribute a named-vector lookup like this leaves behind (a base
+  # data.frame column would drop it on assignment). Left in, that attribute
+  # is what scale_colour_manual()'s legend prints instead of the label text.
+  d$series_label <- unname(FIG1_LABELS[d$series])
 
   # group is explicit because the tooltip string below is unique per row; left
   # implicit, ggplot infers grouping from every discrete aesthetic in a layer,
@@ -102,7 +106,7 @@ FIG3_PANEL_LABELS <- c(
 
 fig_3_plot <- function(d) {
   d$panel <- factor(FIG3_PANEL_LABELS[d$series], levels = unname(FIG3_PANEL_LABELS))
-  d$series_label <- FIG3_PANEL_LABELS[d$series]
+  d$series_label <- unname(FIG3_PANEL_LABELS[d$series])
 
   ggplot(d, aes(x = year, y = value, colour = series_label, group = series)) +
     geom_line_interactive(
