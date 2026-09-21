@@ -57,6 +57,7 @@ Current indicator repositories:
 | Growing Degree Days | `growing-degree-days` |
 | Global Greenhouse Gas Emissions | `global-greenhouse-emissions` |
 | U.S. and Global Temperature | `us-and-global-temperature` |
+| A Closer Look: Temperature and Drought in the Southwest | `temperature-and-drought-in-the-southwest` |
 
 Because the data is fetched over the network, rendering requires an internet
 connection, and `curl` must stay in `DESCRIPTION` — readr only *suggests* it,
