@@ -12,6 +12,10 @@ Each indicator below tracks one measurable signal of a changing climate in the U
 
 Deaths of U.S. workers attributed to heat exposure on the job.
 
+##### A Closer Look: Temperature and Drought in the Southwest
+
+A closer look at trends in temperature and drought in the southwestern United States.
+
 ##### Cold-Related Deaths
 
 Deaths in the United States attributed to extreme cold.
@@ -82,7 +86,7 @@ How the amount and timing of streamflow in rivers and streams across the United 
 
 ##### Tropical Cyclone Activity
 
-Frequency and intensity of hurricanes and other tropical storms in the North Atlantic.
+Frequency, intensity, and duration of hurricanes and other tropical storms in the Atlantic Ocean, Caribbean, and Gulf of Mexico.
 
 ##### U.S. and Global Temperature
 

@@ -1973,7 +1973,7 @@ Data
 - Large and consistent decreases in the SPEI have been observed throughout the western United States. Decreases have been especially prominent in southwestern states such as California, Arizona, and New Mexico. The eastern United States—in particular the Midwest and Northeast—has experienced generally wetter conditions (see Figure 3).
 - In terms of scale and duration, the droughts of the 1930s Dust Bowl era remain the most extreme in the historical record (see Figures 1 and 2).
 - Over the period from 2000 through 2023, roughly 10 to 70 percent of the U.S. land area experienced conditions that were at least abnormally dry at any given time (see Figure 4). The years 2002–2003 and 2012–2013 had a relatively large area with at least abnormally dry conditions, while 2009–2011, 2016–2017, and 2019 had substantially less area experiencing drought.
-- During the latter half of 2012, more than half of the U.S. land area was covered by moderate or greater drought (see Figure 4). In several states, 2012 was among the driest years on record.⁶ See Temperature and Drought in the Southwest for a closer look at recent drought conditions in one of the hardest-hit regions.
+- During the latter half of 2012, more than half of the U.S. land area was covered by moderate or greater drought (see Figure 4). In several states, 2012 was among the driest years on record.⁶ See [Temperature and Drought in the Southwest](../indicators/temperature-and-drought-in-the-southwest.llms.md) for a closer look at recent drought conditions in one of the hardest-hit regions.
 
 ## Background
 
