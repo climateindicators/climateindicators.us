@@ -1,12 +1,11 @@
 # Figures for indicators/heat-related-illnesses.qmd.
 
-REPO <- "heat-related-illnesses"
+REPO <- "heat-related-illness-new"
 
 # ---- Figure 1: annual hospitalization rate, 20 states -------------------------
 
-# *_plot() builds the plain ggplot object; fig_*() wraps it for the page. The
-# split exists so a plot can be ggsave()'d for a static check without pulling
-# in the htmlwidget machinery. A single series, so no colour legend.
+# *_plot() builds the plain ggplot object; fig_*() wraps it for the page. A
+# single series, so no colour legend.
 fig_1_plot <- function(d) {
   ggplot(d, aes(x = year, y = value)) +
     geom_line_interactive(colour = INDICATOR_PALETTE[["base"]], linewidth = 0.9) +
@@ -36,7 +35,8 @@ fig_1_table <- function(d) {
 # ---- Figure 2: average rate by state, 23 states --------------------------------
 
 # Sorted ascending so the highest rate lands at the top of a horizontal bar
-# chart, matching Lyme's Figure 2.
+# chart. EPA published this figure as a map; the state-level values are the
+# same, only the presentation differs.
 fig_2_sorted <- function(d) {
   d[order(d$value, decreasing = FALSE), ]
 }
@@ -87,12 +87,11 @@ fig_2_table <- function(d) {
 
 # ---- Figure 3: hospitalizations by sex and by age, 20 states ------------------
 
-# group_type distinguishes EPA's two independent breakdowns of the same
-# 20-state total (see the indicator repository's build_data.R and
-# data-raw/PROVENANCE.md: the sex total and the age total differ by 14
-# hospitalizations in EPA's own published figures). Two small panels, not one
-# axis of seven unrelated bars, so a reader cannot read "Male" and "0-4" as
-# peers of each other.
+# group_type (from the indicator repository's build_data.R) distinguishes
+# EPA's two independent breakdowns of the same 20-state total: the sex total
+# and the age total differ by 14 hospitalizations in EPA's own published
+# figures. Two small panels, not one axis of seven unrelated bars, so a reader
+# cannot read "Male" and "0-4" as peers of each other.
 FIG3_GROUP_ORDER  <- c("Male", "Female", "0-4", "5-14", "15-34", "35-64", "65+")
 FIG3_PANEL_LABELS <- c(sex = "By sex", age = "By age group")
 
@@ -112,8 +111,8 @@ fig_3_plot <- function(d) {
       fill = INDICATOR_PALETTE[["base"]], width = 0.6
     ) +
     # free_x, not free_y: sex has two categories and age has five, but the
-    # counts are directly comparable across panels (no single age group
-    # reaches the male total), so the count axis stays shared.
+    # counts are directly comparable across panels, so the count axis stays
+    # shared.
     facet_wrap(~panel, scales = "free_x") +
     scale_y_continuous(
       limits = c(0, NA), expand = expansion(mult = c(0, 0.08)),
