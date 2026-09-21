@@ -95,6 +95,8 @@ website:
               href: indicators/heavy-precipitation.qmd
             - text: "Drought"
               href: indicators/drought.qmd
+            - text: "A Closer Look: Temperature and Drought in the Southwest"
+              href: indicators/temperature-and-drought-in-the-southwest.qmd
             - text: "River Flooding"
               href: indicators/river-flooding.qmd
             - text: "Streamflow"
