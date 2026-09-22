@@ -44,38 +44,3 @@ fig_1 <- function(d) girafe_indicator(fig_1_plot(d))
 fig_1_table <- function(d) {
   tidyr::pivot_wider(d, id_cols = year, names_from = series_label, values_from = value)
 }
-
-# ---- Figure TD-1: cold-related deaths by month, 1999-2015 --------------------
-
-MONTH_LEVELS <- c(
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-)
-
-fig_td1_plot <- function(d) {
-  # Fixed calendar order, not the alphabetical order a bare factor on month
-  # names would give.
-  d$month <- factor(d$month, levels = MONTH_LEVELS)
-
-  ggplot(d, aes(x = month, y = value)) +
-    geom_col_interactive(
-      aes(
-        data_id = month,
-        tooltip = sprintf("%s\n%d deaths (1999–2015 total)", month, value)
-      ),
-      fill = INDICATOR_PALETTE[["focus"]],
-      width = 0.7
-    ) +
-    scale_x_discrete(labels = substr(MONTH_LEVELS, 1, 3)) +
-    scale_y_continuous(limits = c(0, NA), expand = expansion(mult = c(0, 0.06))) +
-    labs(x = NULL, y = "Total deaths, 1999–2015") +
-    theme_indicator()
-}
-
-fig_td1 <- function(d) girafe_indicator(fig_td1_plot(d))
-
-fig_td1_table <- function(d) {
-  d$month <- factor(d$month, levels = MONTH_LEVELS)
-  d <- d[order(d$month), ]
-  data.frame(Month = as.character(d$month), `Total deaths` = d$value, check.names = FALSE)
-}
