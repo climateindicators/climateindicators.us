@@ -390,11 +390,16 @@ main.content {
 // Colour each indicator's card border to match its sidebar section (see
 // $card-category-map above). Selector specificity — not source order — is
 // what makes this win over the plain .quarto-grid-item.card rule above.
+//
+// Two href forms are matched because GitHub Pages links end in ".html"
+// while climateindicators.us (served through Netlify's default "pretty
+// URLs" rewriting) strips that suffix from the same generated markup.
 @each $colour, $slugs in $card-category-map {
   $icon: map-get($card-category-icon, $colour);
 
   @each $slug in $slugs {
-    a[href$="#{$slug}.html"] .quarto-grid-item.card {
+    a[href$="/#{$slug}"] .quarto-grid-item.card,
+    a[href$="/#{$slug}.html"] .quarto-grid-item.card {
       .card-title::before {
         font-family: "bootstrap-icons" !important;
         font-weight: 400;
