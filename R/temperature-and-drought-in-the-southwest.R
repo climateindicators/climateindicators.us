@@ -9,26 +9,40 @@ fmt <- function(x, digits = 2) sprintf(paste0("%.", digits, "f"), x)
 # EPA draws this as a map of the region's NOAA climate divisions. No
 # climate-division geometry ships with any package this site depends on (see
 # drought.R's Figure 3 for the same constraint), so divisions are drawn as
-# points on a value axis and grouped by state instead. Every division stays
-# visible and nothing is averaged away. Unlike drought's Figure 3, every value
-# here is a positive departure, so there is only one role and no legend.
+# bars instead, one per division, grouped and coloured by state so a reader
+# can compare states at a glance without losing the within-state spread EPA's
+# map shows. Six states, six INDICATOR_PALETTE slots, none spare; states are
+# ordered alphabetically since nothing in the narrative singles one out.
+FIG1_STATE_ORDER <- c("Arizona", "California", "Colorado", "Nevada", "New Mexico", "Utah")
+
 fig_1_plot <- function(d) {
-  d$state <- factor(d$state, levels = names(sort(tapply(d$value, d$state, stats::median))))
+  d$state <- factor(d$state, levels = FIG1_STATE_ORDER)
   d$tooltip <- sprintf("%s, division %s\n+%s°F versus 1895-2023 average", d$state, d$division, fmt(d$value))
 
-  ggplot(d, aes(x = value, y = state)) +
+  # Group divisions by state, warmest division first within each group (the
+  # same order fig_1_table already uses for the whole table, applied one
+  # state at a time). A discrete y axis draws its first factor level at the
+  # bottom, so the levels are built in reverse row order to read top to
+  # bottom in the same state order as the legend.
+  d <- d[order(d$state, -d$value), ]
+  d$division_key <- factor(seq_len(nrow(d)), levels = rev(seq_len(nrow(d))))
+  division_labels <- stats::setNames(d$division, as.character(d$division_key))
+
+  ggplot(d, aes(x = value, y = division_key, fill = state)) +
     geom_vline(xintercept = 0, colour = CHART_GREY[["rule"]], linewidth = 0.4) +
-    geom_point_interactive(
-      aes(data_id = climate_division_id, tooltip = tooltip),
-      shape = 21, size = 2.3, stroke = 0.35,
-      fill = INDICATOR_PALETTE[["base"]], colour = CHART_GREY[["surface"]], alpha = 0.9
+    geom_col_interactive(
+      aes(data_id = climate_division_id, tooltip = tooltip)
     ) +
+    scale_y_discrete(labels = division_labels) +
+    scale_fill_manual(values = series_colours(FIG1_STATE_ORDER), breaks = FIG1_STATE_ORDER) +
+    guides(fill = guide_legend(nrow = 2, byrow = TRUE)) +
     labs(x = "Departure from 1895-2023 average temperature (°F)", y = NULL) +
     theme_indicator() +
-    theme(panel.grid.major.x = element_line(colour = CHART_GREY[["grid"]], linewidth = 0.4))
+    theme(panel.grid.major.x = element_line(colour = CHART_GREY[["grid"]], linewidth = 0.4)) +
+    legend_top()
 }
 
-fig_1 <- function(d) girafe_indicator(fig_1_plot(d), height = 3.2)
+fig_1 <- function(d) girafe_indicator(fig_1_plot(d), height = 8.5)
 
 # Warmest division first, which is the order the chart reads top to bottom.
 fig_1_table <- function(d) {
