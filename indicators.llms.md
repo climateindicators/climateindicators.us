@@ -46,7 +46,7 @@ Hospitalizations in the United States attributed to extreme heat.
 
 ##### Heating and Cooling Degree Days
 
-Trends in the energy demand implied by outdoor temperatures, nationally and by state.
+This indicator examines changing temperatures from the perspective of heating and cooling needs for buildings.
 
 ##### Heavy Precipitation
 

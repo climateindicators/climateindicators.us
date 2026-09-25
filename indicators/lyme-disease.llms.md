@@ -21,45 +21,45 @@ Figure 1
 
 This graph shows the annual incidence of Lyme disease, which is calculated as the number of cases per 100,000 people. The graph is based on cases that local and state health departments report to CDC’s national disease tracking system. Due to the COVID-19 pandemic, 2019 and 2020 data from some jurisdictions are incomplete.
 
-The line breaks at each of the three points where the surveillance case definition changed, in 1996, 2008 and 2022, dividing the record into four segments. Values are not comparable across a break: the apparent jump in 2022 is largely the result of the new definition letting high-incidence jurisdictions report on laboratory evidence alone, rather than a change in disease risk. Hover any point for that year’s value and for the caveat CDC or EPA attaches to it.
+The line breaks at each of the three points where CDC’s surveillance case definition changed, in 1996, 2008 and 2022: values are not directly comparable across a break. Hover any point for that year’s value.
 
 Data source: CDC, 2024^([8](#ref-8))
 
 Show the data behind this figure
 
-| Year | Case definition | Cases per 100,000 people | Note (EPA / CDC) |
-|---:|:---|---:|:---|
-| 1992 | 1990 case definition | 3.863 |  |
-| 1993 | 1990 case definition | 3.177 |  |
-| 1994 | 1990 case definition | 4.957 |  |
-| 1995 | 1990 case definition | 4.394 |  |
-| 1996 | 1996 case definition | 6.108 |  |
-| 1997 | 1996 case definition | 4.695 |  |
-| 1998 | 1996 case definition | 6.091 |  |
-| 1999 | 1996 case definition | 5.832 |  |
-| 2000 | 1996 case definition | 6.284 |  |
-| 2001 | 1996 case definition | 5.976 |  |
-| 2002 | 1996 case definition | 8.262 |  |
-| 2003 | 1996 case definition | 7.333 |  |
-| 2004 | 1996 case definition | 6.764 |  |
-| 2005 | 1996 case definition | 7.886 |  |
-| 2006 | 1996 case definition | 6.680 |  |
-| 2007 | 1996 case definition | 9.111 |  |
-| 2008 | 2008 case definition | 11.575 |  |
-| 2009 | 2008 case definition | 12.540 |  |
-| 2010 | 2008 case definition | 9.750 |  |
-| 2011 | 2008 case definition | 10.623 |  |
-| 2012 | 2008 case definition | 9.824 |  |
-| 2013 | 2008 case definition | 11.490 |  |
-| 2014 | 2008 case definition | 10.512 |  |
-| 2015 | 2008 case definition | 11.873 |  |
-| 2016 | 2008 case definition | 11.280 |  |
-| 2017 | 2008 case definition | 13.152 |  |
-| 2018 | 2008 case definition | 10.305 |  |
-| 2019 | 2008 case definition | 10.646 | Data from some jurisdictions are incomplete for this year because of the COVID-19 pandemic. |
-| 2020 | 2008 case definition | 5.429 | Data from some jurisdictions are incomplete for this year because of the COVID-19 pandemic. |
-| 2021 | 2008 case definition | 7.412 | State and local health departments reported fewer cases of Lyme disease in 2020 and 2021, which likely reflects the impacts of the COVID-19 pandemic rather than a true change in disease risk. |
-| 2022 | 2022 case definition | 18.769 |  |
+| Year | Case definition      | Cases per 100,000 people |
+|-----:|:---------------------|-------------------------:|
+| 1992 | 1990 case definition |                      3.9 |
+| 1993 | 1990 case definition |                      3.2 |
+| 1994 | 1990 case definition |                      5.0 |
+| 1995 | 1990 case definition |                      4.4 |
+| 1996 | 1996 case definition |                      6.1 |
+| 1997 | 1996 case definition |                      4.7 |
+| 1998 | 1996 case definition |                      6.1 |
+| 1999 | 1996 case definition |                      5.8 |
+| 2000 | 1996 case definition |                      6.3 |
+| 2001 | 1996 case definition |                      6.0 |
+| 2002 | 1996 case definition |                      8.3 |
+| 2003 | 1996 case definition |                      7.3 |
+| 2004 | 1996 case definition |                      6.8 |
+| 2005 | 1996 case definition |                      7.9 |
+| 2006 | 1996 case definition |                      6.7 |
+| 2007 | 1996 case definition |                      9.1 |
+| 2008 | 2008 case definition |                     11.6 |
+| 2009 | 2008 case definition |                     12.5 |
+| 2010 | 2008 case definition |                      9.7 |
+| 2011 | 2008 case definition |                     10.6 |
+| 2012 | 2008 case definition |                      9.8 |
+| 2013 | 2008 case definition |                     11.5 |
+| 2014 | 2008 case definition |                     10.5 |
+| 2015 | 2008 case definition |                     11.9 |
+| 2016 | 2008 case definition |                     11.3 |
+| 2017 | 2008 case definition |                     13.2 |
+| 2018 | 2008 case definition |                     10.3 |
+| 2019 | 2008 case definition |                     10.6 |
+| 2020 | 2008 case definition |                      5.4 |
+| 2021 | 2008 case definition |                      7.4 |
+| 2022 | 2022 case definition |                     18.8 |
 
 Figure 2
 
@@ -74,9 +74,9 @@ Web update: December 2024
 
 Figure 3
 
-This chart shows reported Lyme disease incidence by jurisdiction in 2022, based on the number of total cases per 100,000 people, ranked from highest to lowest. The dotted rule marks 10 cases per 100,000 people: the jurisdictions above it are the 15 states and the District of Columbia that CDC designates “high-incidence.”
+This chart shows reported Lyme disease incidence by jurisdiction in 2022, based on the number of total cases per 100,000 people, ranked from highest to lowest. The dotted rule marks 10 cases per 100,000 people, the incidence CDC uses to define a “high-incidence jurisdiction.”
 
-EPA presents this figure as a map, shading only the part of the country where Lyme disease is common — every state below 10 cases per 100,000 people is left uncoloured, and the shaded ones are read off an 11-step colour scale. All 51 jurisdictions are charted here instead, with their actual values, which also keeps apart two things the map cannot: Oklahoma reported a genuine zero, while Hawaii filed no report at all. EPA’s own map is available as a download above.
+EPA presents this figure as a map, shading only the part of the country where Lyme disease is common: every state below 10 cases per 100,000 people is left uncoloured. All 51 jurisdictions are charted here instead, with their actual values, which also keeps apart two things a map cannot: Oklahoma reported a genuine zero, while Hawaii filed no report at all.
 
 Data source: CDC, 2024^([8](#ref-8))
 
@@ -84,6 +84,7 @@ Show the data behind this figure
 
 | Jurisdiction         | Cases per 100,000 people |
 |:---------------------|:-------------------------|
+| Hawaii               | not reported             |
 | Rhode Island         | 212.6                    |
 | Vermont              | 202.7                    |
 | Maine                | 191.0                    |
@@ -134,25 +135,24 @@ Show the data behind this figure
 | Texas                | 0.1                      |
 | Arkansas             | 0.1                      |
 | Oklahoma             | 0.0                      |
-| Hawaii               | not reported             |
 
 Figure 4
 
 ## Figure 3
 
-**Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022**
+**Figure 3.** Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022
 
-Data source: CDC, 2024^([9](#ref-9))
+[ Figure image (PNG)](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/lyme_incidence_dot_maps_1996_2022.png)
 
-[ Figure image (PNG)](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-3.png)
-
-![Two dot maps of the 50 states and the District of Columbia, one for 1996 and one for 2022, with each dot representing one reported Lyme disease case. Dots in 1996 cluster tightly in the Northeast and around Wisconsin and Minnesota; in 2022 they fill those areas far more densely and spread outward through the mid-Atlantic, New England and the upper Midwest.](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-3.png)
+![Two dot maps of the 50 states and the District of Columbia, one for 1996 and one for 2022, with each dot representing one reported Lyme disease case. Dots in 1996 cluster tightly in the Northeast and around Wisconsin and Minnesota; in 2022 they fill those areas far more densely and spread outward through the mid-Atlantic, New England and the upper Midwest.](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/lyme_incidence_dot_maps_1996_2022.png)
 
 Figure 3. Change in Incidence and Distribution of Reported Cases of Lyme Disease in the United States, 1996 and 2022
 
 These maps show the distribution of Lyme disease cases reported to CDC in 1996 and 2022 across the 50 states and the District of Columbia. Each dot represents an individual case. Dots are placed randomly within each patient’s county of residence, which might differ from the county where they were exposed. The year 1996 was chosen as the first year after a major case definition update that incorporated standardized testing approaches.
 
 EPA publishes these maps as images only, with no underlying data file, so there is no data table for this figure.
+
+Data source: CDC, 2024^([9](#ref-9))
 
 ## Key Points
 
@@ -176,11 +176,11 @@ Figure 1 shows the reported national incidence of Lyme disease since 1992, and F
 
 ## Indicator Notes
 
-Changes in diagnosing practices and awareness of the disease over time can affect Lyme disease trends. Cases are reported based on the patient’s county of residence, which is not necessarily the place where they were infected. Risk of infection is focused in certain regions of the country, and confirmed reports from areas with low incidence are often the result of travel to an area of higher incidence. Evidence suggests that expanding ranges of ticks in certain northern states may be more related to a warming climate than expanding ranges in southern states.^([10](#ref-10),[11](#ref-11)) Because of the many factors affecting tick populations and reporting of Lyme disease, though, this indicator does not provide sufficient information to determine what proportion of the observed changes in Lyme disease incidence is directly driven by climate change. Further study is critical to improving the usefulness of this indicator and informing decisions affecting public health. For information on prevention, symptoms, and treatment of Lyme disease, see: [www.cdc.gov/lyme](http://www.cdc.gov/lyme/).
+Changes in diagnosing practices and awareness of the disease over time can affect Lyme disease trends. Cases are reported based on the patient’s county of residence, which is not necessarily the place where they were infected. Risk of infection is focused in certain regions of the country, and confirmed reports from areas with low incidence are often the result of travel to an area of higher incidence. Evidence suggests that expanding ranges of ticks in certain northern states may be more related to a warming climate than expanding ranges in southern states.^([10](#ref-10),[11](#ref-11)) Because of the many factors affecting tick populations and reporting of Lyme disease, though, this indicator does not provide sufficient information to determine what proportion of the observed changes in Lyme disease incidence is directly driven by climate change. Further study is critical to improving the usefulness of this indicator and informing decisions affecting public health. For information on prevention, symptoms, and treatment of Lyme disease, see: [www.cdc.gov/lyme](https://www.cdc.gov/lyme/).
 
 ## Data Sources
 
-All three figures are based on publicly available Lyme disease data compiled by CDC at: [www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html](http://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html). Incidence was calculated using mid-year population estimates from the U.S. Census Bureau.^([12](#ref-12))
+All three figures are based on publicly available Lyme disease data compiled by CDC at: [www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html](https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html). Incidence was calculated using mid-year population estimates from the U.S. Census Bureau.^([12](#ref-12))
 
 ## Technical Documentation
 

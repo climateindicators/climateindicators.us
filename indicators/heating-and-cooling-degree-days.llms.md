@@ -2,9 +2,7 @@
 
 Society
 
-Temperature
-
-Trends in the energy demand implied by outdoor temperatures, nationally and by state.
+Energy
 
 This indicator examines changing temperatures from the perspective of heating and cooling needs for buildings.
 
@@ -12,12 +10,12 @@ This indicator examines changing temperatures from the perspective of heating an
 
 ## Figure 1
 
-**Figure 1. Heating and Cooling Degree Days in the Contiguous 48 States, 1895–2023**
+**Figure 1. Heating and Cooling Degree Days in the Contiguous 48 States, 1895-2023**
 
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/hdd_cdd_national_annual.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data-raw/heating-cooling-degree-days_all-figures_3-26-2024.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_annual.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data-raw/heating-cooling_fig-1.csv)
 
 Figure 1
 
@@ -25,287 +23,289 @@ This figure shows the average number of heating and cooling degree days per year
 
 Show the data behind this figure
 
-| year | Heating degree days | Cooling degree days |
-|-----:|--------------------:|--------------------:|
-| 1895 |                5092 |                1149 |
-| 1896 |                4661 |                1280 |
-| 1897 |                4711 |                1209 |
-| 1898 |                4704 |                1264 |
-| 1899 |                4842 |                1244 |
-| 1900 |                4521 |                1315 |
-| 1901 |                4937 |                1251 |
-| 1902 |                4748 |                1170 |
-| 1903 |                4852 |                1010 |
-| 1904 |                5048 |                1082 |
-| 1905 |                4942 |                1190 |
-| 1906 |                4664 |                1198 |
-| 1907 |                4800 |                1082 |
-| 1908 |                4556 |                1173 |
-| 1909 |                4745 |                1138 |
-| 1910 |                4679 |                1141 |
-| 1911 |                4596 |                1307 |
-| 1912 |                5072 |                1110 |
-| 1913 |                4515 |                1162 |
-| 1914 |                4802 |                1182 |
-| 1915 |                4694 |                1072 |
-| 1916 |                4881 |                1149 |
-| 1917 |                5268 |                1060 |
-| 1918 |                4724 |                1205 |
-| 1919 |                4661 |                1218 |
-| 1920 |                4884 |                1076 |
-| 1921 |                4122 |                1348 |
-| 1922 |                4540 |                1265 |
-| 1923 |                4662 |                1138 |
-| 1924 |                5019 |                1077 |
-| 1925 |                4634 |                1298 |
-| 1926 |                4858 |                1178 |
-| 1927 |                4421 |                1138 |
-| 1928 |                4630 |                1125 |
-| 1929 |                4789 |                1153 |
-| 1930 |                4645 |                1244 |
-| 1931 |                4213 |                1351 |
-| 1932 |                4542 |                1222 |
-| 1933 |                4438 |                1359 |
-| 1934 |                4466 |                1392 |
-| 1935 |                4747 |                1210 |
-| 1936 |                4757 |                1382 |
-| 1937 |                4774 |                1266 |
-| 1938 |                4291 |                1255 |
-| 1939 |                4393 |                1328 |
-| 1940 |                4890 |                1110 |
-| 1941 |                4449 |                1252 |
-| 1942 |                4628 |                1168 |
-| 1943 |                4768 |                1263 |
-| 1944 |                4674 |                1253 |
-| 1945 |                4635 |                1174 |
-| 1946 |                4234 |                1157 |
-| 1947 |                4729 |                1252 |
-| 1948 |                4712 |                1223 |
-| 1949 |                4403 |                1290 |
-| 1950 |                4654 |                1104 |
-| 1951 |                4692 |                1194 |
-| 1952 |                4542 |                1295 |
-| 1953 |                4232 |                1298 |
-| 1954 |                4378 |                1300 |
-| 1955 |                4675 |                1303 |
-| 1956 |                4540 |                1212 |
-| 1957 |                4487 |                1211 |
-| 1958 |                4835 |                1187 |
-| 1959 |                4533 |                1317 |
-| 1960 |                4850 |                1200 |
-| 1961 |                4650 |                1153 |
-| 1962 |                4781 |                1187 |
-| 1963 |                4815 |                1208 |
-| 1964 |                4633 |                1187 |
-| 1965 |                4628 |                1153 |
-| 1966 |                4785 |                1144 |
-| 1967 |                4678 |                1091 |
-| 1968 |                4766 |                1125 |
-| 1969 |                4811 |                1192 |
-| 1970 |                4736 |                1230 |
-| 1971 |                4623 |                1192 |
-| 1972 |                4750 |                1157 |
-| 1973 |                4406 |                1235 |
-| 1974 |                4464 |                1130 |
-| 1975 |                4538 |                1175 |
-| 1976 |                4764 |                1036 |
-| 1977 |                4636 |                1299 |
-| 1978 |                4976 |                1245 |
-| 1979 |                4810 |                1123 |
-| 1980 |                4718 |                1321 |
-| 1981 |                4529 |                1221 |
-| 1982 |                4637 |                1153 |
-| 1983 |                4642 |                1254 |
-| 1984 |                4518 |                1230 |
-| 1985 |                4646 |                1223 |
-| 1986 |                4274 |                1272 |
-| 1987 |                4329 |                1280 |
-| 1988 |                4612 |                1299 |
-| 1989 |                4662 |                1188 |
-| 1990 |                4008 |                1290 |
-| 1991 |                4182 |                1347 |
-| 1992 |                4392 |                1078 |
-| 1993 |                4657 |                1232 |
-| 1994 |                4428 |                1251 |
-| 1995 |                4465 |                1314 |
-| 1996 |                4629 |                1223 |
-| 1997 |                4479 |                1190 |
-| 1998 |                3949 |                1449 |
-| 1999 |                4108 |                1329 |
-| 2000 |                4376 |                1285 |
-| 2001 |                4156 |                1297 |
-| 2002 |                4266 |                1401 |
-| 2003 |                4441 |                1304 |
-| 2004 |                4260 |                1247 |
-| 2005 |                4272 |                1409 |
-| 2006 |                3979 |                1387 |
-| 2007 |                4211 |                1410 |
-| 2008 |                4436 |                1299 |
-| 2009 |                4433 |                1259 |
-| 2010 |                4429 |                1468 |
-| 2011 |                4280 |                1482 |
-| 2012 |                3739 |                1502 |
-| 2013 |                4444 |                1312 |
-| 2014 |                4535 |                1298 |
-| 2015 |                4078 |                1483 |
-| 2016 |                3879 |                1549 |
-| 2017 |                3833 |                1418 |
-| 2018 |                4292 |                1571 |
-| 2019 |                4327 |                1484 |
-| 2020 |                3920 |                1503 |
-| 2021 |                3945 |                1474 |
-| 2022 |                4268 |                1530 |
-| 2023 |                3828 |                1444 |
+| Year | Heating degree days (colder than 65°F) | Cooling degree days (warmer than 65°F) |
+|---:|:---|:---|
+| 1895 | 5,092 | 1,149 |
+| 1896 | 4,661 | 1,280 |
+| 1897 | 4,711 | 1,209 |
+| 1898 | 4,704 | 1,264 |
+| 1899 | 4,842 | 1,244 |
+| 1900 | 4,521 | 1,315 |
+| 1901 | 4,937 | 1,251 |
+| 1902 | 4,748 | 1,170 |
+| 1903 | 4,852 | 1,010 |
+| 1904 | 5,048 | 1,082 |
+| 1905 | 4,942 | 1,190 |
+| 1906 | 4,664 | 1,198 |
+| 1907 | 4,800 | 1,082 |
+| 1908 | 4,556 | 1,173 |
+| 1909 | 4,745 | 1,138 |
+| 1910 | 4,679 | 1,141 |
+| 1911 | 4,596 | 1,307 |
+| 1912 | 5,072 | 1,110 |
+| 1913 | 4,515 | 1,162 |
+| 1914 | 4,802 | 1,182 |
+| 1915 | 4,694 | 1,072 |
+| 1916 | 4,881 | 1,149 |
+| 1917 | 5,268 | 1,060 |
+| 1918 | 4,724 | 1,205 |
+| 1919 | 4,661 | 1,218 |
+| 1920 | 4,884 | 1,076 |
+| 1921 | 4,122 | 1,348 |
+| 1922 | 4,540 | 1,265 |
+| 1923 | 4,662 | 1,138 |
+| 1924 | 5,019 | 1,077 |
+| 1925 | 4,634 | 1,298 |
+| 1926 | 4,858 | 1,178 |
+| 1927 | 4,421 | 1,138 |
+| 1928 | 4,630 | 1,125 |
+| 1929 | 4,789 | 1,153 |
+| 1930 | 4,645 | 1,244 |
+| 1931 | 4,213 | 1,351 |
+| 1932 | 4,542 | 1,222 |
+| 1933 | 4,438 | 1,359 |
+| 1934 | 4,466 | 1,392 |
+| 1935 | 4,747 | 1,210 |
+| 1936 | 4,757 | 1,382 |
+| 1937 | 4,774 | 1,266 |
+| 1938 | 4,291 | 1,255 |
+| 1939 | 4,393 | 1,328 |
+| 1940 | 4,890 | 1,110 |
+| 1941 | 4,449 | 1,252 |
+| 1942 | 4,628 | 1,168 |
+| 1943 | 4,768 | 1,263 |
+| 1944 | 4,674 | 1,253 |
+| 1945 | 4,635 | 1,174 |
+| 1946 | 4,234 | 1,157 |
+| 1947 | 4,729 | 1,252 |
+| 1948 | 4,712 | 1,223 |
+| 1949 | 4,403 | 1,290 |
+| 1950 | 4,654 | 1,104 |
+| 1951 | 4,692 | 1,194 |
+| 1952 | 4,542 | 1,295 |
+| 1953 | 4,232 | 1,298 |
+| 1954 | 4,378 | 1,300 |
+| 1955 | 4,675 | 1,303 |
+| 1956 | 4,540 | 1,212 |
+| 1957 | 4,487 | 1,211 |
+| 1958 | 4,835 | 1,187 |
+| 1959 | 4,533 | 1,317 |
+| 1960 | 4,850 | 1,200 |
+| 1961 | 4,650 | 1,153 |
+| 1962 | 4,781 | 1,187 |
+| 1963 | 4,815 | 1,208 |
+| 1964 | 4,633 | 1,187 |
+| 1965 | 4,628 | 1,153 |
+| 1966 | 4,785 | 1,144 |
+| 1967 | 4,678 | 1,091 |
+| 1968 | 4,766 | 1,125 |
+| 1969 | 4,811 | 1,192 |
+| 1970 | 4,736 | 1,230 |
+| 1971 | 4,623 | 1,192 |
+| 1972 | 4,750 | 1,157 |
+| 1973 | 4,406 | 1,235 |
+| 1974 | 4,464 | 1,130 |
+| 1975 | 4,538 | 1,175 |
+| 1976 | 4,764 | 1,036 |
+| 1977 | 4,636 | 1,299 |
+| 1978 | 4,976 | 1,245 |
+| 1979 | 4,810 | 1,123 |
+| 1980 | 4,718 | 1,321 |
+| 1981 | 4,529 | 1,221 |
+| 1982 | 4,637 | 1,153 |
+| 1983 | 4,642 | 1,254 |
+| 1984 | 4,518 | 1,230 |
+| 1985 | 4,646 | 1,223 |
+| 1986 | 4,274 | 1,272 |
+| 1987 | 4,329 | 1,280 |
+| 1988 | 4,612 | 1,299 |
+| 1989 | 4,662 | 1,188 |
+| 1990 | 4,008 | 1,290 |
+| 1991 | 4,182 | 1,347 |
+| 1992 | 4,392 | 1,078 |
+| 1993 | 4,657 | 1,232 |
+| 1994 | 4,428 | 1,251 |
+| 1995 | 4,465 | 1,314 |
+| 1996 | 4,629 | 1,223 |
+| 1997 | 4,479 | 1,190 |
+| 1998 | 3,949 | 1,449 |
+| 1999 | 4,108 | 1,329 |
+| 2000 | 4,376 | 1,285 |
+| 2001 | 4,156 | 1,297 |
+| 2002 | 4,266 | 1,401 |
+| 2003 | 4,441 | 1,304 |
+| 2004 | 4,260 | 1,247 |
+| 2005 | 4,272 | 1,409 |
+| 2006 | 3,979 | 1,387 |
+| 2007 | 4,211 | 1,410 |
+| 2008 | 4,436 | 1,299 |
+| 2009 | 4,433 | 1,259 |
+| 2010 | 4,429 | 1,468 |
+| 2011 | 4,280 | 1,482 |
+| 2012 | 3,739 | 1,502 |
+| 2013 | 4,444 | 1,312 |
+| 2014 | 4,535 | 1,298 |
+| 2015 | 4,078 | 1,483 |
+| 2016 | 3,879 | 1,549 |
+| 2017 | 3,833 | 1,418 |
+| 2018 | 4,292 | 1,571 |
+| 2019 | 4,327 | 1,484 |
+| 2020 | 3,920 | 1,503 |
+| 2021 | 3,945 | 1,474 |
+| 2022 | 4,268 | 1,530 |
+| 2023 | 3,828 | 1,444 |
 
 Figure 2
 
 ## Figure 2
 
-**Figure 2. Change in Annual Heating Degree Days by State, 1960–2023 Versus 1895–1959**
+**Figure 2. Change in Annual Heating Degree Days by State, 1960-2023 Versus 1895-1959**
 
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/hdd_state_change.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data-raw/heating-cooling-degree-days_all-figures_3-26-2024.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_heating_change_by_state.csv) [ Annual heating degree days by state (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_heating_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data-raw/heating-cooling_fig-2.csv)
 
 Figure 3
 
-This map shows how the average number of heating degree days per year has changed in each state over time. The map was created by comparing the first 65 years of available data (1895–1959) with the most recent 64 years (1960–2023). “Warmer” colors indicate an increase in temperatures between the two periods, leading to less of a need to turn on the heat—that is, fewer heating degree days. “Cooler” colors indicate a decrease in temperatures, leading to more of a need to turn on the heat—that is, more heating degree days. Click on a state to reveal the trend in a line graph.
+This map shows how the average number of heating degree days per year has changed in each state over time. The map was created by comparing the first 65 years of available data (1895–1959) with the most recent 64 years (1960–2023). “Warmer” colors indicate an increase in temperatures between the two periods, leading to less of a need to turn on the heat—that is, fewer heating degree days. “Cooler” colors indicate a decrease in temperatures, leading to more of a need to turn on the heat—that is, more heating degree days.
+
+Hover over a state to see its change in heating degree days. The annual heating degree days for each state and year are available in the downloadable dataset above.
 
 Show the data behind this figure
 
-| State          | Change in heating degree days |
-|:---------------|:------------------------------|
-| Mississippi    | 33.14                         |
-| Alabama        | 15.85                         |
-| Louisiana      | 8.82                          |
-| Tennessee      | -17.73                        |
-| Arkansas       | -18.68                        |
-| Oklahoma       | -49.84                        |
-| Georgia        | -62.48                        |
-| Kentucky       | -64.54                        |
-| West Virginia  | -73.83                        |
-| Florida        | -86.42                        |
-| South Carolina | -90.69                        |
-| North Carolina | -93.79                        |
-| Texas          | -104.24                       |
-| Missouri       | -127.00                       |
-| Iowa           | -152.55                       |
-| Indiana        | -159.55                       |
-| Virginia       | -162.93                       |
-| Kansas         | -164.45                       |
-| Ohio           | -220.79                       |
-| Arizona        | -221.47                       |
-| Illinois       | -228.57                       |
-| Idaho          | -233.43                       |
-| Nebraska       | -241.18                       |
-| Nevada         | -248.64                       |
-| New Mexico     | -252.50                       |
-| Washington     | -264.62                       |
-| Pennsylvania   | -267.26                       |
-| Maryland       | -275.01                       |
-| Utah           | -297.59                       |
-| South Dakota   | -299.27                       |
-| Wisconsin      | -303.11                       |
-| Delaware       | -321.50                       |
-| Oregon         | -331.46                       |
-| Colorado       | -359.59                       |
-| Montana        | -377.67                       |
-| Michigan       | -383.28                       |
-| California     | -386.79                       |
-| New York       | -407.87                       |
-| Wyoming        | -413.60                       |
-| Massachusetts  | -419.09                       |
-| Vermont        | -428.64                       |
-| Connecticut    | -433.81                       |
-| New Hampshire  | -438.01                       |
-| Minnesota      | -440.72                       |
-| New Jersey     | -448.68                       |
-| North Dakota   | -456.97                       |
-| Rhode Island   | -483.14                       |
-| Maine          | -508.20                       |
+| State          | Change  |
+|:---------------|:--------|
+| Maine          | -508.20 |
+| Rhode Island   | -483.14 |
+| North Dakota   | -456.97 |
+| New Jersey     | -448.68 |
+| Minnesota      | -440.72 |
+| New Hampshire  | -438.01 |
+| Connecticut    | -433.81 |
+| Vermont        | -428.64 |
+| Massachusetts  | -419.09 |
+| Wyoming        | -413.60 |
+| New York       | -407.87 |
+| California     | -386.79 |
+| Michigan       | -383.28 |
+| Montana        | -377.67 |
+| Colorado       | -359.59 |
+| Oregon         | -331.46 |
+| Delaware       | -321.50 |
+| Wisconsin      | -303.11 |
+| South Dakota   | -299.27 |
+| Utah           | -297.59 |
+| Maryland       | -275.01 |
+| Pennsylvania   | -267.26 |
+| Washington     | -264.62 |
+| New Mexico     | -252.50 |
+| Nevada         | -248.64 |
+| Nebraska       | -241.18 |
+| Idaho          | -233.43 |
+| Illinois       | -228.57 |
+| Arizona        | -221.47 |
+| Ohio           | -220.79 |
+| Kansas         | -164.45 |
+| Virginia       | -162.93 |
+| Indiana        | -159.55 |
+| Iowa           | -152.55 |
+| Missouri       | -127.00 |
+| Texas          | -104.24 |
+| North Carolina | -93.79  |
+| South Carolina | -90.69  |
+| Florida        | -86.42  |
+| West Virginia  | -73.83  |
+| Kentucky       | -64.54  |
+| Georgia        | -62.48  |
+| Oklahoma       | -49.84  |
+| Arkansas       | -18.68  |
+| Tennessee      | -17.73  |
+| Louisiana      | +8.82   |
+| Alabama        | +15.85  |
+| Mississippi    | +33.14  |
 
 Figure 4
 
 ## Figure 3
 
-**Figure 3. Change in Annual Cooling Degree Days by State, 1960–2023 Versus 1895–1959**
+**Figure 3. Change in Annual Cooling Degree Days by State, 1960-2023 Versus 1895-1959**
 
 Data source: NOAA, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/cdd_state_change.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data-raw/heating-cooling-degree-days_all-figures_3-26-2024.xlsx)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_cooling_change_by_state.csv) [ Annual cooling degree days by state (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_cooling_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data-raw/heating-cooling_fig-3.csv)
 
 Figure 5
 
-This map shows how the average number of cooling degree days per year has changed in each state over time. The map was created by comparing the first 65 years of available data (1895–1959) with the most recent 64 years (1960–2023). “Warmer” colors indicate an increase in temperatures between the two periods, leading to more demand for air conditioning—that is, more cooling degree days. “Cooler” colors indicate a decrease in temperatures, leading to less demand for air conditioning—that is, fewer cooling degree days. Click on a state to reveal the trend in a line graph.
+This map shows how the average number of cooling degree days per year has changed in each state over time. The map was created by comparing the first 65 years of available data (1895–1959) with the most recent 64 years (1960–2023). “Warmer” colors indicate an increase in temperatures between the two periods, leading to more demand for air conditioning—that is, more cooling degree days. “Cooler” colors indicate a decrease in temperatures, leading to less demand for air conditioning—that is, fewer cooling degree days.
+
+Hover over a state to see its change in cooling degree days. The annual cooling degree days for each state and year are available in the downloadable dataset above.
 
 Show the data behind this figure
 
-| State          | Change in cooling degree days |
-|:---------------|:------------------------------|
-| Florida        | 329.35                        |
-| Arizona        | 294.59                        |
-| California     | 211.08                        |
-| Nevada         | 207.34                        |
-| New Jersey     | 149.20                        |
-| Rhode Island   | 143.46                        |
-| Delaware       | 135.22                        |
-| Connecticut    | 114.53                        |
-| Maryland       | 113.93                        |
-| Massachusetts  | 111.60                        |
-| New York       | 105.82                        |
-| New Mexico     | 103.02                        |
-| Utah           | 89.33                         |
-| Oregon         | 67.20                         |
-| New Hampshire  | 62.51                         |
-| Idaho          | 60.29                         |
-| Maine          | 59.99                         |
-| Colorado       | 57.33                         |
-| Pennsylvania   | 56.39                         |
-| Wyoming        | 52.43                         |
-| Washington     | 45.50                         |
-| North Dakota   | 45.04                         |
-| Texas          | 42.40                         |
-| Minnesota      | 40.16                         |
-| Virginia       | 35.92                         |
-| Michigan       | 35.72                         |
-| Vermont        | 35.12                         |
-| Montana        | 33.79                         |
-| South Dakota   | 28.15                         |
-| Louisiana      | 15.24                         |
-| Illinois       | 12.25                         |
-| Wisconsin      | 9.98                          |
-| Ohio           | 4.16                          |
-| Nebraska       | -0.88                         |
-| Kansas         | -9.07                         |
-| North Carolina | -11.79                        |
-| West Virginia  | -24.48                        |
-| South Carolina | -25.28                        |
-| Iowa           | -28.51                        |
-| Indiana        | -32.00                        |
-| Missouri       | -43.62                        |
-| Arkansas       | -54.51                        |
-| Tennessee      | -64.71                        |
-| Mississippi    | -66.66                        |
-| Kentucky       | -70.45                        |
-| Oklahoma       | -79.65                        |
-| Georgia        | -93.73                        |
-| Alabama        | -100.10                       |
+| State          | Change  |
+|:---------------|:--------|
+| Alabama        | -100.10 |
+| Georgia        | -93.73  |
+| Oklahoma       | -79.65  |
+| Kentucky       | -70.45  |
+| Mississippi    | -66.66  |
+| Tennessee      | -64.71  |
+| Arkansas       | -54.51  |
+| Missouri       | -43.62  |
+| Indiana        | -32.00  |
+| Iowa           | -28.51  |
+| South Carolina | -25.28  |
+| West Virginia  | -24.48  |
+| North Carolina | -11.79  |
+| Kansas         | -9.07   |
+| Nebraska       | -0.88   |
+| Ohio           | +4.16   |
+| Wisconsin      | +9.98   |
+| Illinois       | +12.25  |
+| Louisiana      | +15.24  |
+| South Dakota   | +28.15  |
+| Montana        | +33.79  |
+| Vermont        | +35.12  |
+| Michigan       | +35.72  |
+| Virginia       | +35.92  |
+| Minnesota      | +40.16  |
+| Texas          | +42.40  |
+| North Dakota   | +45.04  |
+| Washington     | +45.50  |
+| Wyoming        | +52.43  |
+| Pennsylvania   | +56.39  |
+| Colorado       | +57.33  |
+| Maine          | +59.99  |
+| Idaho          | +60.29  |
+| New Hampshire  | +62.51  |
+| Oregon         | +67.20  |
+| Utah           | +89.33  |
+| New Mexico     | +103.02 |
+| New York       | +105.82 |
+| Massachusetts  | +111.60 |
+| Maryland       | +113.93 |
+| Connecticut    | +114.53 |
+| Delaware       | +135.22 |
+| Rhode Island   | +143.46 |
+| New Jersey     | +149.20 |
+| Nevada         | +207.34 |
+| California     | +211.08 |
+| Arizona        | +294.59 |
+| Florida        | +329.35 |
 
 Figure 6
 
 ## Key Points
 
 - Heating degree days have declined in the contiguous United States, particularly in recent years, as the climate has warmed (see Figure 1). This change suggests that heating needs have decreased overall.
-
 - Overall, cooling degree days have increased over the past 100 years. The increase is most noticeable over the past few decades, suggesting that air conditioning energy demand has also been increasing recently (see Figure 1).
-
 - Heating degree days have generally decreased and cooling degree days have generally increased throughout the North and West. The Southeast, with the exception of Florida, has seen the opposite: little change in heating degree days and fewer cooling degree days (see Figures 2 and 3).
 
 ## Background
 
-Outdoor temperatures can affect daily life in many ways. In particular, temperature affects our health, comfort level, and demand for heating and air conditioning. Collectively, heating and cooling the spaces in which we live accounts for 52 percent of the energy that American households use every year.^([1](#ref-1)) As climate change contributes to an increase in average temperatures, an increase in unusually hot days, and a decrease in unusually cold days (see the U.S. and Global Temperature and High and Low Temperatures indicators), the overall demand for heating is expected to decline and the demand for cooling is expected to increase.
+Outdoor temperatures can affect daily life in many ways. In particular, temperature affects our health, comfort level, and demand for heating and air conditioning. Collectively, heating and cooling the spaces in which we live accounts for 52 percent of the energy that American households use every year.^([1](#ref-1)) As climate change contributes to an increase in average temperatures, an increase in unusually hot days, and a decrease in unusually cold days (see the [U.S. and Global Temperature](../indicators/us-and-global-temperature.llms.md) and [High and Low Temperatures](../indicators/high-and-low-temperatures.llms.md) indicators), the overall demand for heating is expected to decline and the demand for cooling is expected to increase.
 
 One way to measure the influence of temperature change on energy demand is using heating and cooling degree days, which measure the difference between outdoor temperatures and a temperature that people generally find comfortable indoors. These measurements suggest how much energy people might need to use to heat and cool their homes and workplaces, thus providing a sense of how climate change could affect people’s daily lives and finances.
 
@@ -331,9 +331,9 @@ The data for this indicator were provided by the National Oceanic and Atmospheri
 
 ## References
 
-1.  EIA (U.S. Energy Information Administration). (2023). *Residential Energy Consumption Survey (RECS)*. [www.eia.gov/consumption/residential/index.cfm](https://www.eia.gov/consumption/residential/index.cfm)
-2.  NOAA (National Oceanic and Atmospheric Administration). (2024). *U.S. climate normals 2020: U.S. annual/seasonal climate normals (1991–2020)*. [www.ncei.noaa.gov/access/search/data-search/normals-annualseasonal-1991-2020](https://www.ncei.noaa.gov/access/search/data-search/normals-annualseasonal-1991-2020)
-3.  NOAA (National Oceanic and Atmospheric Administration). (2024). *NOAA Monthly U.S. Climate Divisional Database (nClimDiv)*. [www1.ncdc.noaa.gov/pub/data/cirs/climdiv](https://www1.ncdc.noaa.gov/pub/data/cirs/climdiv)
+1.  EIA (U.S. Energy Information Administration). (2023). *Residential Energy Consumption Survey (RECS)*. [www.eia.gov/consumption/residential/index.cfm](https://www.eia.gov/consumption/residential/index.php)
+2.  NOAA (National Oceanic and Atmospheric Administration). (2024). *U.S. climate normals 2020: U.S. annual/seasonal climate normals* (1991–2020). [www.ncei.noaa.gov/access/search/data-search/normals-annualseasonal-1991-2020](https://www.ncei.noaa.gov/access/search/data-search/normals-annualseasonal-1991-2020)
+3.  NOAA (National Oceanic and Atmospheric Administration). (2024). *NOAA Monthly U.S. Climate Divisional Database (nClimDiv)*. [www1.ncdc.noaa.gov/pub/data/cirs/climdiv](https://www1.ncdc.noaa.gov/pub/data/cirs/climdiv/)
 
 > **NOTE:**
 >
