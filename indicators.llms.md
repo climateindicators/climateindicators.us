@@ -30,7 +30,7 @@ This indicator describes emissions of greenhouse gases worldwide.
 
 ##### Growing Degree Days
 
-How the number of growing degree days has changed at 280 long-term weather stations across the contiguous 48 states since 1948, and what that suggests about pollen seasons.
+How growing degree days have changed at 280 long-term weather stations across the contiguous 48 states since 1948, and what that suggests about pollen seasons.
 
 ##### Heat Waves
 
@@ -58,7 +58,7 @@ Trends in unusually hot and cold temperatures across the United States.
 
 ##### Length of Growing Season
 
-How the frost-free season in the contiguous 48 states has lengthened since 1895, nationally, by region, and by state.
+How the length of the growing season, and the timing of spring and fall frosts, has changed across the contiguous 48 states since 1895.
 
 ##### Lyme Disease
 
@@ -66,7 +66,7 @@ This indicator tracks the rate of reported Lyme disease cases across the United 
 
 ##### Ragweed Pollen Season
 
-This indicator presents data on changes in the length of ragweed pollen season in the United States and Canada.
+How the length of ragweed pollen season has changed at 11 locations across the central United States and Canada since 1995.
 
 ##### Residential Energy Use
 

@@ -6,7 +6,7 @@ Temperature
 
 Ecosystems
 
-How the frost-free season in the contiguous 48 states has lengthened since 1895, nationally, by region, and by state.
+How the length of the growing season, and the timing of spring and fall frosts, has changed across the contiguous 48 states since 1895.
 
 This indicator measures the length of the growing season in the contiguous 48 states.
 
@@ -19,11 +19,11 @@ This indicator measures the length of the growing season in the contiguous 48 st
 Data source: Kunkel, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/growing_season_national.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-1.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/length_of_growing_season_national.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-1.csv)
 
 Figure 1
 
-This figure shows the length of the growing season in the contiguous 48 states compared with a long-term average. For each year, the line represents the number of days shorter or longer than average. The line was smoothed using an 11-year moving average. Choosing a different long-term average for comparison would not change the shape of the data over time.
+This figure shows the length of the growing season in the contiguous 48 states compared with a long-term average. For each year, the line represents the number of days shorter or longer than average. The line was smoothed using an 11-year moving average. Choosing a different long-term average for comparison would not change the shape of the data over time.^([2](#ref-2))
 
 Show the data behind this figure
 
@@ -168,147 +168,145 @@ Figure 2
 Data source: Kunkel, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/growing_season_by_region.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-2.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/length_of_growing_season_east_west.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-2.csv)
 
 Figure 3
 
-This figure shows the length of the growing season in the western and eastern United States compared with a long-term average. For each year, the line represents the number of days shorter or longer than average. The lines were smoothed using an 11-year moving average. Choosing a different long-term average for comparison would not change the shape of the data over time.
-
-The dividing line between the two halves is 100°W longitude. Each half is measured against its own long-term average, so the two lines show relative change and are not a comparison of absolute growing season lengths.
+This figure shows the length of the growing season in the western and eastern United States compared with a long-term average. For each year, the line represents the number of days shorter or longer than average. The lines were smoothed using an 11-year moving average. Choosing a different long-term average for comparison would not change the shape of the data over time.^([2](#ref-2))
 
 Show the data behind this figure
 
-| year | Western United States | Eastern United States |
-|-----:|----------------------:|----------------------:|
-| 1895 |           -10.5433333 |            -1.3816667 |
-| 1896 |           -10.5539394 |            -1.9387879 |
-| 1897 |           -11.3918182 |            -1.9486364 |
-| 1898 |           -12.1569697 |            -2.3448485 |
-| 1899 |           -12.3975758 |            -2.4901515 |
-| 1900 |           -12.0754546 |            -1.9245455 |
-| 1901 |           -11.2590909 |            -1.5909091 |
-| 1902 |           -11.1572727 |            -3.4418182 |
-| 1903 |           -12.6190909 |            -4.0936364 |
-| 1904 |           -12.2072727 |            -4.8381818 |
-| 1905 |           -11.5181818 |            -4.9818182 |
-| 1906 |           -13.2518182 |            -5.0590909 |
-| 1907 |           -13.5736364 |            -4.5045455 |
-| 1908 |           -13.0254545 |            -5.2627273 |
-| 1909 |           -11.8872727 |            -4.6654545 |
-| 1910 |           -11.6563636 |            -4.9527273 |
-| 1911 |           -13.3300000 |            -6.1209091 |
-| 1912 |           -14.2581818 |            -6.7681818 |
-| 1913 |           -14.3327273 |            -5.4845455 |
-| 1914 |           -13.6363636 |            -4.2881818 |
-| 1915 |           -13.8609091 |            -4.0072727 |
-| 1916 |           -14.1872727 |            -3.3590909 |
-| 1917 |           -12.5427273 |            -2.5218182 |
-| 1918 |           -11.3481818 |            -3.2445455 |
-| 1919 |           -11.4781818 |            -2.7936364 |
-| 1920 |           -10.7363636 |            -3.7700000 |
-| 1921 |            -9.3745455 |            -4.0572727 |
-| 1922 |            -7.5363636 |            -3.0209091 |
-| 1923 |            -6.1509091 |            -2.2454545 |
-| 1924 |            -6.5627273 |            -2.1354545 |
-| 1925 |            -5.9963636 |            -3.0854545 |
-| 1926 |            -4.8381818 |            -1.9400000 |
-| 1927 |            -4.1663636 |            -2.2836364 |
-| 1928 |            -4.1363636 |            -2.4827273 |
-| 1929 |            -3.4827273 |            -1.7927273 |
-| 1930 |            -2.7427273 |            -1.6200000 |
-| 1931 |            -2.3872727 |            -0.5590909 |
-| 1932 |            -2.0509091 |            -0.1790909 |
-| 1933 |            -1.2127273 |            -0.2745455 |
-| 1934 |            -0.8254545 |             0.4400000 |
-| 1935 |             2.3181818 |            -0.0954545 |
-| 1936 |             3.4990909 |             1.0727273 |
-| 1937 |             3.0581818 |            -0.2300000 |
-| 1938 |             3.0827273 |            -0.8372727 |
-| 1939 |             3.4872727 |            -1.6009091 |
-| 1940 |             1.6227273 |            -1.7281818 |
-| 1941 |             1.5345455 |            -1.0245455 |
-| 1942 |             1.1881818 |            -1.6863636 |
-| 1943 |             0.1572727 |            -0.5900000 |
-| 1944 |            -0.7418182 |            -0.6181818 |
-| 1945 |            -1.8863636 |            -0.8990909 |
-| 1946 |            -4.4436364 |            -0.5972727 |
-| 1947 |            -5.3209091 |            -1.7381818 |
-| 1948 |            -5.4581818 |            -1.3400000 |
-| 1949 |            -5.6154545 |            -0.8936364 |
-| 1950 |            -6.3872727 |            -0.6981818 |
-| 1951 |            -5.1036364 |            -1.0290909 |
-| 1952 |            -4.0009091 |            -1.7045455 |
-| 1953 |            -3.5245455 |            -1.2018182 |
-| 1954 |            -3.2963636 |            -2.0163636 |
-| 1955 |            -3.1800000 |            -2.1690909 |
-| 1956 |            -2.3400000 |            -2.3081818 |
-| 1957 |            -1.5854545 |            -1.9136364 |
-| 1958 |             0.0400000 |            -1.9336364 |
-| 1959 |            -0.2981818 |            -2.3509091 |
-| 1960 |            -0.5063636 |            -2.1409091 |
-| 1961 |             0.0727273 |            -3.6463636 |
-| 1962 |             0.3681818 |            -3.5527273 |
-| 1963 |            -0.4418182 |            -3.7581818 |
-| 1964 |            -1.2054545 |            -3.8663636 |
-| 1965 |            -1.8190909 |            -3.6936364 |
-| 1966 |            -2.5936364 |            -3.4472727 |
-| 1967 |            -2.6890909 |            -3.0290909 |
-| 1968 |            -2.9936364 |            -2.7609091 |
-| 1969 |            -4.7854545 |            -3.5827273 |
-| 1970 |            -4.5563636 |            -2.9409091 |
-| 1971 |            -4.2427273 |            -3.5718182 |
-| 1972 |            -3.8045455 |            -2.0009091 |
-| 1973 |            -4.4145455 |            -1.3136364 |
-| 1974 |            -3.2936364 |            -1.1954545 |
-| 1975 |            -2.4427273 |            -1.5663636 |
-| 1976 |            -1.0818182 |            -1.8045455 |
-| 1977 |             0.0118182 |            -2.1036364 |
-| 1978 |             0.3700000 |            -2.8545455 |
-| 1979 |             0.8327273 |            -3.3390909 |
-| 1980 |             0.6518182 |            -1.3363636 |
-| 1981 |             1.8127273 |            -1.2190909 |
-| 1982 |             3.0954545 |            -0.3727273 |
-| 1983 |             3.7345455 |            -0.9190909 |
-| 1984 |             4.6418182 |            -2.2863636 |
-| 1985 |             4.8372727 |            -1.4818182 |
-| 1986 |             4.7345455 |            -0.7854545 |
-| 1987 |             4.7754545 |            -0.6972727 |
-| 1988 |             5.5236364 |            -1.2009091 |
-| 1989 |             6.6554545 |             0.5890909 |
-| 1990 |             6.9509091 |             0.8427273 |
-| 1991 |             7.9927273 |            -0.1845455 |
-| 1992 |             8.9645455 |            -0.2645455 |
-| 1993 |             9.4509091 |             1.5763636 |
-| 1994 |             8.4454545 |             2.5709091 |
-| 1995 |             8.1636364 |             3.7954545 |
-| 1996 |             8.2636364 |             3.7536364 |
-| 1997 |             8.2609091 |             3.6372727 |
-| 1998 |             8.3309091 |             4.4227273 |
-| 1999 |             9.0681818 |             5.8463636 |
-| 2000 |             9.3209091 |             5.6563636 |
-| 2001 |             9.6445455 |             5.9545455 |
-| 2002 |             9.8318182 |             7.1763636 |
-| 2003 |             8.7672727 |             7.3700000 |
-| 2004 |             8.3009091 |             6.2590909 |
-| 2005 |             9.1854545 |             6.5300000 |
-| 2006 |             9.3954545 |             7.2318182 |
-| 2007 |             9.5809091 |             8.0363636 |
-| 2008 |             9.9509091 |             8.0463636 |
-| 2009 |            10.8145455 |             7.6872727 |
-| 2010 |            12.1418182 |             8.1181818 |
-| 2011 |            13.0827273 |             9.1954545 |
-| 2012 |            13.5963636 |            10.5590909 |
-| 2013 |            14.6854545 |            10.0472727 |
-| 2014 |            14.9709091 |            10.5436364 |
-| 2015 |            15.0072727 |             9.7136364 |
-| 2016 |            15.4954546 |             9.8254545 |
-| 2017 |            16.2181818 |             9.2327273 |
-| 2018 |            17.1090909 |             9.0054545 |
-| 2019 |            17.4654546 |             9.5134848 |
-| 2020 |            17.1663636 |             9.8678788 |
-| 2021 |            15.8009091 |             9.1577273 |
-| 2022 |            14.6690909 |             7.9566667 |
-| 2023 |            14.8500000 |             6.8183333 |
+| year |       East |        West |
+|-----:|-----------:|------------:|
+| 1895 | -1.3816667 | -10.5433333 |
+| 1896 | -1.9387879 | -10.5539394 |
+| 1897 | -1.9486364 | -11.3918182 |
+| 1898 | -2.3448485 | -12.1569697 |
+| 1899 | -2.4901515 | -12.3975758 |
+| 1900 | -1.9245455 | -12.0754546 |
+| 1901 | -1.5909091 | -11.2590909 |
+| 1902 | -3.4418182 | -11.1572727 |
+| 1903 | -4.0936364 | -12.6190909 |
+| 1904 | -4.8381818 | -12.2072727 |
+| 1905 | -4.9818182 | -11.5181818 |
+| 1906 | -5.0590909 | -13.2518182 |
+| 1907 | -4.5045455 | -13.5736364 |
+| 1908 | -5.2627273 | -13.0254545 |
+| 1909 | -4.6654545 | -11.8872727 |
+| 1910 | -4.9527273 | -11.6563636 |
+| 1911 | -6.1209091 | -13.3300000 |
+| 1912 | -6.7681818 | -14.2581818 |
+| 1913 | -5.4845455 | -14.3327273 |
+| 1914 | -4.2881818 | -13.6363636 |
+| 1915 | -4.0072727 | -13.8609091 |
+| 1916 | -3.3590909 | -14.1872727 |
+| 1917 | -2.5218182 | -12.5427273 |
+| 1918 | -3.2445455 | -11.3481818 |
+| 1919 | -2.7936364 | -11.4781818 |
+| 1920 | -3.7700000 | -10.7363636 |
+| 1921 | -4.0572727 |  -9.3745455 |
+| 1922 | -3.0209091 |  -7.5363636 |
+| 1923 | -2.2454545 |  -6.1509091 |
+| 1924 | -2.1354545 |  -6.5627273 |
+| 1925 | -3.0854545 |  -5.9963636 |
+| 1926 | -1.9400000 |  -4.8381818 |
+| 1927 | -2.2836364 |  -4.1663636 |
+| 1928 | -2.4827273 |  -4.1363636 |
+| 1929 | -1.7927273 |  -3.4827273 |
+| 1930 | -1.6200000 |  -2.7427273 |
+| 1931 | -0.5590909 |  -2.3872727 |
+| 1932 | -0.1790909 |  -2.0509091 |
+| 1933 | -0.2745455 |  -1.2127273 |
+| 1934 |  0.4400000 |  -0.8254545 |
+| 1935 | -0.0954545 |   2.3181818 |
+| 1936 |  1.0727273 |   3.4990909 |
+| 1937 | -0.2300000 |   3.0581818 |
+| 1938 | -0.8372727 |   3.0827273 |
+| 1939 | -1.6009091 |   3.4872727 |
+| 1940 | -1.7281818 |   1.6227273 |
+| 1941 | -1.0245455 |   1.5345455 |
+| 1942 | -1.6863636 |   1.1881818 |
+| 1943 | -0.5900000 |   0.1572727 |
+| 1944 | -0.6181818 |  -0.7418182 |
+| 1945 | -0.8990909 |  -1.8863636 |
+| 1946 | -0.5972727 |  -4.4436364 |
+| 1947 | -1.7381818 |  -5.3209091 |
+| 1948 | -1.3400000 |  -5.4581818 |
+| 1949 | -0.8936364 |  -5.6154545 |
+| 1950 | -0.6981818 |  -6.3872727 |
+| 1951 | -1.0290909 |  -5.1036364 |
+| 1952 | -1.7045455 |  -4.0009091 |
+| 1953 | -1.2018182 |  -3.5245455 |
+| 1954 | -2.0163636 |  -3.2963636 |
+| 1955 | -2.1690909 |  -3.1800000 |
+| 1956 | -2.3081818 |  -2.3400000 |
+| 1957 | -1.9136364 |  -1.5854545 |
+| 1958 | -1.9336364 |   0.0400000 |
+| 1959 | -2.3509091 |  -0.2981818 |
+| 1960 | -2.1409091 |  -0.5063636 |
+| 1961 | -3.6463636 |   0.0727273 |
+| 1962 | -3.5527273 |   0.3681818 |
+| 1963 | -3.7581818 |  -0.4418182 |
+| 1964 | -3.8663636 |  -1.2054545 |
+| 1965 | -3.6936364 |  -1.8190909 |
+| 1966 | -3.4472727 |  -2.5936364 |
+| 1967 | -3.0290909 |  -2.6890909 |
+| 1968 | -2.7609091 |  -2.9936364 |
+| 1969 | -3.5827273 |  -4.7854545 |
+| 1970 | -2.9409091 |  -4.5563636 |
+| 1971 | -3.5718182 |  -4.2427273 |
+| 1972 | -2.0009091 |  -3.8045455 |
+| 1973 | -1.3136364 |  -4.4145455 |
+| 1974 | -1.1954545 |  -3.2936364 |
+| 1975 | -1.5663636 |  -2.4427273 |
+| 1976 | -1.8045455 |  -1.0818182 |
+| 1977 | -2.1036364 |   0.0118182 |
+| 1978 | -2.8545455 |   0.3700000 |
+| 1979 | -3.3390909 |   0.8327273 |
+| 1980 | -1.3363636 |   0.6518182 |
+| 1981 | -1.2190909 |   1.8127273 |
+| 1982 | -0.3727273 |   3.0954545 |
+| 1983 | -0.9190909 |   3.7345455 |
+| 1984 | -2.2863636 |   4.6418182 |
+| 1985 | -1.4818182 |   4.8372727 |
+| 1986 | -0.7854545 |   4.7345455 |
+| 1987 | -0.6972727 |   4.7754545 |
+| 1988 | -1.2009091 |   5.5236364 |
+| 1989 |  0.5890909 |   6.6554545 |
+| 1990 |  0.8427273 |   6.9509091 |
+| 1991 | -0.1845455 |   7.9927273 |
+| 1992 | -0.2645455 |   8.9645455 |
+| 1993 |  1.5763636 |   9.4509091 |
+| 1994 |  2.5709091 |   8.4454545 |
+| 1995 |  3.7954545 |   8.1636364 |
+| 1996 |  3.7536364 |   8.2636364 |
+| 1997 |  3.6372727 |   8.2609091 |
+| 1998 |  4.4227273 |   8.3309091 |
+| 1999 |  5.8463636 |   9.0681818 |
+| 2000 |  5.6563636 |   9.3209091 |
+| 2001 |  5.9545455 |   9.6445455 |
+| 2002 |  7.1763636 |   9.8318182 |
+| 2003 |  7.3700000 |   8.7672727 |
+| 2004 |  6.2590909 |   8.3009091 |
+| 2005 |  6.5300000 |   9.1854545 |
+| 2006 |  7.2318182 |   9.3954545 |
+| 2007 |  8.0363636 |   9.5809091 |
+| 2008 |  8.0463636 |   9.9509091 |
+| 2009 |  7.6872727 |  10.8145455 |
+| 2010 |  8.1181818 |  12.1418182 |
+| 2011 |  9.1954545 |  13.0827273 |
+| 2012 | 10.5590909 |  13.5963636 |
+| 2013 | 10.0472727 |  14.6854545 |
+| 2014 | 10.5436364 |  14.9709091 |
+| 2015 |  9.7136364 |  15.0072727 |
+| 2016 |  9.8254545 |  15.4954546 |
+| 2017 |  9.2327273 |  16.2181818 |
+| 2018 |  9.0054545 |  17.1090909 |
+| 2019 |  9.5134848 |  17.4654546 |
+| 2020 |  9.8678788 |  17.1663636 |
+| 2021 |  9.1577273 |  15.8009091 |
+| 2022 |  7.9566667 |  14.6690909 |
+| 2023 |  6.8183333 |  14.8500000 |
 
 Figure 4
 
@@ -319,13 +317,11 @@ Figure 4
 Data source: Kunkel, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/growing_season_state_change.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-3.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/length_of_growing_season_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-3.csv)
 
 Figure 5
 
-This map shows the total change in length of the growing season from 1895 to 2023 for each of the contiguous 48 states.
-
-EPA published this as a map; it is drawn here as a ranked bar chart of the same values. Delaware is absent because none of the weather stations in the underlying data set were located there, so EPA calculated no trend for it.
+This map shows the total change in length of the growing season from 1895 to 2023 for each of the contiguous 48 states.^([3](#ref-3)) It is rendered here as a ranked bar chart rather than EPA’s choropleth map, carrying the same state-level values with the ranking made explicit.
 
 Show the data behind this figure
 
@@ -372,11 +368,11 @@ Show the data behind this figure
 | Texas          | +8.12                           |
 | North Carolina | +7.98                           |
 | South Carolina | +4.25                           |
-| Tennessee      | +3.95                           |
+| Tennesee       | +3.95                           |
 | Mississippi    | +0.42                           |
-| Rhode Island   | +0.00                           |
-| Oklahoma       | +0.00                           |
 | Alabama        | +0.00                           |
+| Oklahoma       | +0.00                           |
+| Rhode Island   | +0.00                           |
 | Georgia        | -11.34                          |
 
 Figure 6
@@ -388,11 +384,11 @@ Figure 6
 Data source: Kunkel, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/frost_timing_national.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-4.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/length_of_growing_season_frost_timing.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-4.csv)
 
 Figure 7
 
-This figure shows the timing of the last spring frost and the first fall frost in the contiguous 48 states compared with a long-term average. Positive values indicate that the frost occurred later in the year, and negative values indicate that the frost occurred earlier in the year. The lines were smoothed using an 11-year moving average. Choosing a different long-term average for comparison would not change the shape of the data over time.
+This figure shows the timing of the last spring frost and the first fall frost in the contiguous 48 states compared with a long-term average. Positive values indicate that the frost occurred later in the year, and negative values indicate that the frost occurred earlier in the year. The lines were smoothed using an 11-year moving average. Choosing a different long-term average for comparison would not change the shape of the data over time.^([2](#ref-2))
 
 Show the data behind this figure
 
@@ -537,65 +533,63 @@ Figure 8
 Data source: Kunkel, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/spring_frost_state_change.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-5.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/last_spring_frost_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-5.csv)
 
 Figure 9
 
-This map shows the total change in last spring frost date from 1895 to 2023 for each of the contiguous 48 states.
-
-EPA published this as a map; it is drawn here as a ranked bar chart of the same values, ordered so that the states where the last spring frost has moved earliest appear at the top. A negative value means the last spring frost now arrives earlier in the year, which lengthens the growing season.
+This map shows the total change in last spring frost date from 1895 to 2023 for each of the contiguous 48 states.^([3](#ref-3)) It is rendered here as a ranked bar chart rather than EPA’s choropleth map, carrying the same state-level values with the ranking made explicit.
 
 Show the data behind this figure
 
 | State          | Change in last spring frost (days) |
 |:---------------|:-----------------------------------|
-| California     | -28.22                             |
-| Washington     | -24.25                             |
-| Arizona        | -21.48                             |
-| Utah           | -19.12                             |
-| Oregon         | -17.94                             |
-| Wyoming        | -17.37                             |
-| North Dakota   | -15.07                             |
-| Connecticut    | -13.34                             |
-| Maryland       | -11.73                             |
-| Minnesota      | -11.24                             |
-| Florida        | -10.86                             |
-| New Mexico     | -10.74                             |
-| New Hampshire  | -9.51                              |
-| South Dakota   | -8.77                              |
-| Louisiana      | -7.98                              |
-| Wisconsin      | -7.85                              |
-| New York       | -7.35                              |
-| Ohio           | -7.06                              |
-| Indiana        | -6.68                              |
-| Montana        | -6.63                              |
-| New Jersey     | -6.45                              |
-| Illinois       | -6.37                              |
-| Iowa           | -6.20                              |
-| Virginia       | -6.05                              |
-| Pennsylvania   | -5.99                              |
-| Colorado       | -5.84                              |
-| Missouri       | -5.81                              |
-| Michigan       | -5.69                              |
-| Texas          | -5.52                              |
-| Massachusetts  | -4.73                              |
-| Kentucky       | -4.36                              |
-| North Carolina | -3.77                              |
-| Arkansas       | -3.74                              |
-| Maine          | -3.72                              |
-| Nebraska       | -3.30                              |
-| Idaho          | -3.21                              |
-| Nevada         | -2.69                              |
-| Vermont        | -2.54                              |
-| South Carolina | -2.28                              |
-| Kansas         | -2.03                              |
-| Alabama        | -0.67                              |
-| Tennessee      | -0.46                              |
-| Oklahoma       | +0.00                              |
-| Mississippi    | +0.69                              |
-| West Virginia  | +0.78                              |
-| Rhode Island   | +5.38                              |
 | Georgia        | +7.70                              |
+| Rhode Island   | +5.38                              |
+| West Virginia  | +0.78                              |
+| Mississippi    | +0.69                              |
+| Oklahoma       | +0.00                              |
+| Tennesee       | -0.46                              |
+| Alabama        | -0.67                              |
+| Kansas         | -2.03                              |
+| South Carolina | -2.28                              |
+| Vermont        | -2.54                              |
+| Nevada         | -2.69                              |
+| Idaho          | -3.21                              |
+| Nebraska       | -3.30                              |
+| Maine          | -3.72                              |
+| Arkansas       | -3.74                              |
+| North Carolina | -3.77                              |
+| Kentucky       | -4.36                              |
+| Massachusetts  | -4.73                              |
+| Texas          | -5.52                              |
+| Michigan       | -5.69                              |
+| Missouri       | -5.81                              |
+| Colorado       | -5.84                              |
+| Pennsylvania   | -5.99                              |
+| Virginia       | -6.05                              |
+| Iowa           | -6.20                              |
+| Illinois       | -6.37                              |
+| New Jersey     | -6.45                              |
+| Montana        | -6.63                              |
+| Indiana        | -6.68                              |
+| Ohio           | -7.06                              |
+| New York       | -7.35                              |
+| Wisconsin      | -7.85                              |
+| Louisiana      | -7.98                              |
+| South Dakota   | -8.77                              |
+| New Hampshire  | -9.51                              |
+| New Mexico     | -10.74                             |
+| Florida        | -10.86                             |
+| Minnesota      | -11.24                             |
+| Maryland       | -11.73                             |
+| Connecticut    | -13.34                             |
+| North Dakota   | -15.07                             |
+| Wyoming        | -17.37                             |
+| Oregon         | -17.94                             |
+| Utah           | -19.12                             |
+| Arizona        | -21.48                             |
+| Washington     | -24.25                             |
+| California     | -28.22                             |
 
 Figure 10
 
@@ -606,13 +600,11 @@ Figure 10
 Data source: Kunkel, 2024\
 Web update: June 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/fall_frost_state_change.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-6.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/first_fall_frost_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-6.csv)
 
 Figure 11
 
-This map shows the total change in first fall frost date from 1895 to 2023 for each of the contiguous 48 states.
-
-EPA published this as a map; it is drawn here as a ranked bar chart of the same values. A positive value means the first fall frost now arrives later in the year, which also lengthens the growing season.
+This map shows the total change in first fall frost date from 1895 to 2023 for each of the contiguous 48 states.^([3](#ref-3)) It is rendered here as a ranked bar chart rather than EPA’s choropleth map, carrying the same state-level values with the ranking made explicit.
 
 Show the data behind this figure
 
@@ -654,7 +646,7 @@ Show the data behind this figure
 | Missouri       | +5.29                             |
 | Iowa           | +4.99                             |
 | Nebraska       | +4.90                             |
-| Tennessee      | +4.79                             |
+| Tennesee       | +4.79                             |
 | North Carolina | +4.51                             |
 | Indiana        | +3.70                             |
 | Illinois       | +3.37                             |
@@ -671,13 +663,9 @@ Figure 12
 ## Key Points
 
 - The average length of the growing season in the contiguous 48 states has increased by more than two weeks since the beginning of the 20^(th) century. A particularly large and steady increase has occurred since the 1970s (Figure 1).
-
 - The length of the growing season has increased more rapidly in the West than in the East. In the West, the length of the growing season has increased at an average rate of about 2.2 days per decade since 1895, compared with a rate of nearly one day per decade in the East (Figure 2).
-
 - The length of the growing season has increased in almost every state. States in the West (e.g., California and Washington) have seen the most dramatic increase. In contrast, the growing season has become slightly shorter in Georgia (Figure 3).
-
 - In recent years, the final spring frost has been occurring earlier than at any point since 1895, and the first fall frost has been arriving later. Since 1980, the last spring frost has occurred an average of more than three days earlier than the long-term average, and the first fall frost has occurred about three days later (Figure 4).
-
 - Patterns in the timing of spring and fall frost (Figures 5 and 6) largely mirror the overall patterns in the length of growing season (Figure 3). States that saw an increased length of growing season had comparable changes in frost-free days for both the spring and fall.
 
 ## Background
@@ -688,7 +676,7 @@ Changes in the length of the growing season can have both positive and negative 
 
 ## About the Indicator
 
-This indicator looks at the impact of temperature on the length of the growing season in the contiguous 48 states, as well as trends in the timing of spring and fall frosts. For this indicator, the length of the growing season is defined as the period of time between the last frost of spring and the first frost of fall, when the air temperature drops below the freezing point of 32°F. This is referred to as the frost-free season. This indicator complements the Growing Degree Days indicator, which is also based on specific temperature thresholds, as well as the Freeze-Thaw Conditions indicator, which focuses on changes in the number of days the ground is frozen or unfrozen. Changes in growing season have been calculated using temperature data from 597 weather stations throughout the contiguous 48 states. These data were compiled by the National Oceanic and Atmospheric Administration’s National Centers for Environmental Information. Growing season length and the timing of spring and fall frosts were averaged across the nation, then compared with long-term average numbers (1895–2023) to determine how each year differed from the long-term average.
+This indicator looks at the impact of temperature on the length of the growing season in the contiguous 48 states, as well as trends in the timing of spring and fall frosts. For this indicator, the length of the growing season is defined as the period of time between the last frost of spring and the first frost of fall, when the air temperature drops below the freezing point of 32°F. This is referred to as the frost-free season. This indicator complements the [Growing Degree Days indicator](../indicators/growing-degree-days.llms.md), which is also based on specific temperature thresholds, as well as the Freeze-Thaw Conditions indicator, which focuses on changes in the number of days the ground is frozen or unfrozen. Changes in growing season have been calculated using temperature data from 597 weather stations throughout the contiguous 48 states. These data were compiled by the National Oceanic and Atmospheric Administration’s National Centers for Environmental Information. Growing season length and the timing of spring and fall frosts were averaged across the nation, then compared with long-term average numbers (1895–2023) to determine how each year differed from the long-term average.
 
 ## About the Data
 
@@ -698,7 +686,7 @@ Changes in measurement techniques and instruments over time can affect trends. T
 
 ### Data Sources
 
-All six figures are based on temperature data compiled by the National Oceanic and Atmospheric Administration’s National Centers for Environmental Information, and these data are available online at: [www.ncei.noaa.gov](https://www.ncei.noaa.gov/). Analysis of frost timing and growing season length was provided by Kunkel (2024).^([2](#ref-2))
+All six figures are based on temperature data compiled by the National Oceanic and Atmospheric Administration’s National Centers for Environmental Information, and these data are available online at: [www.ncei.noaa.gov](https://www.ncei.noaa.gov). Analysis of frost timing and growing season length was provided by Kunkel (2024).^([2](#ref-2))
 
 ## Technical Documentation
 
@@ -706,9 +694,9 @@ All six figures are based on temperature data compiled by the National Oceanic a
 
 ## References
 
-1.  IPCC (Intergovernmental Panel on Climate Change). (2022). *Climate change 2022—Impacts, adaptation and vulnerability: Working Group II contribution to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change* (H.-O. Pörtner, D. C. Roberts, M. Tignor, E. S. Poloczanska, K. Mintenbeck, A. Alegría, M. Craig, S. Langsdorf, S. Löschke, V. Möller, A. Okem, & B. Rama, Eds.). Cambridge University Press. [doi.org/10.1017/9781009325844](https://doi.org/10.1017/9781009325844)
+1.  
 2.  Kunkel, K. E. (2024). Update to data originally published in: Kunkel, K. E., Easterling, D. R., Hubbard, K., & Redmond, K. (2004). Temporal variations in frost‐free season in the United States: 1895–2000. *Geophysical Research Letters*, *31*(3), L03201. [doi.org/10.1029/2003GL018624](https://doi.org/10.1029/2003GL018624)
-3.  Kunkel, K. E. (2024). Expanded analysis of data originally published in: Kunkel, K. E., Easterling, D. R., Hubbard, K., & Redmond, K. (2004). Temporal variations in frost‐free season in the United States: 1895–2000. *Geophysical Research Letters*, *31*(3), L03201. [doi.org/10.1029/2003GL018624](https://doi.org/10.1029/2003GL018624)
+3.  Kunkel, K. E. (2024). Expanded analysis of data originally published in: Kunkel, K. E., Easterling, D. R., Hubbard, K., & Redmond, K. (2004). Temporal variations in frost‐free season in the United States: 1895–2000. *Geophysical Research Letters, 31*(3), L03201. [doi.org/10.1029/2003GL018624](https://doi.org/10.1029/2003GL018624)
 
 > **NOTE:**
 >
