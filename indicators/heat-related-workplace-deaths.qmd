@@ -122,7 +122,7 @@ Extreme heat is the leading weather-related killer in the United States
 Over the last few decades, unusually hot summer days and nights have become
 more common across the contiguous 48 states (see the [High and Low
 Temperatures
-indicator](https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-high-and-low-temperatures))
+indicator](high-and-low-temperatures.qmd))
 and it is expected that extreme heat events will occur with greater
 frequency and intensity in the future.^[2](#ref-2)^ Thus, heat-related
 deaths are also expected to increase,^[3](#ref-3)^ although these increases

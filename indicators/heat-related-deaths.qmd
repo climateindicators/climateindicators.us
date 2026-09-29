@@ -122,7 +122,7 @@ knitr::kable(utils::head(fig_example_table(chicago), 10), digits = 1,
 
 - For years in which the two records overlap (1999–2021), accounting for those additional deaths in which heat was listed as a _contributing_ factor results in a higher death rate—nearly double for some years—compared with the estimate that only includes deaths where heat was listed as the _underlying_ cause (see Figure 1).
 
-- The indicator shows heat-related deaths reaching new highs in 2021 and 2022, which were two of the hottest years on record in the contiguous 48 states (see the [U.S. and Global Temperature](https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-us-and-global-temperature) indicator) and featured several notable heat waves.
+- The indicator shows heat-related deaths reaching new highs in 2021 and 2022, which were two of the hottest years on record in the contiguous 48 states (see the [U.S. and Global Temperature](us-and-global-temperature.qmd) indicator) and featured several notable heat waves.
 
 - The death rate from heat-related cardiovascular disease ranged from 0.08 deaths per million people in 2004 to 1.08 deaths per million people in 1999 (see Figure 2). Overall, the interaction of heat and cardiovascular disease caused about one-fifth of the heat-related deaths recorded in the "underlying and contributing causes" analysis since 1999 (see Figures 1 and 2).
 
