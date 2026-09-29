@@ -1,12 +1,10 @@
 ---
 title: "Stream Temperature"
-description: "How stream water temperatures have changed at 129 stream gauges across the Chesapeake Bay region from 1960 to 2014."
+description: "This indicator shows how stream water temperatures have changed at 129 stream gauges across the Chesapeake Bay region from 1960 to 2014."
 categories: [Weather and Climate, Stream Temperature]
 execute:
   eval: true
 ---
-
-This indicator shows changes in stream water temperature across the Chesapeake Bay region.
 
 ```{r}
 #| label: setup
