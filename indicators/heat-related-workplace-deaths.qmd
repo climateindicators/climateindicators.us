@@ -122,7 +122,7 @@ Extreme heat is the leading weather-related killer in the United States
 Over the last few decades, unusually hot summer days and nights have become
 more common across the contiguous 48 states (see the [High and Low
 Temperatures
-indicator](https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-high-and-low-temperatures))
+indicator](high-and-low-temperatures.qmd))
 and it is expected that extreme heat events will occur with greater
 frequency and intensity in the future.^[2](#ref-2)^ Thus, heat-related
 deaths are also expected to increase,^[3](#ref-3)^ although these increases
@@ -198,7 +198,7 @@ number of occupational heat-related deaths. As discussed in the
 [Heat-Related Deaths indicator](heat-related-deaths.qmd),
 deaths classified as heat-related may have other important contributing
 causes. Conversely, deaths associated with extreme heat are not always
-reported as such. Unlike the Heat-Related Deaths indicator, though, this
+reported as such. Unlike the [Heat-Related Deaths indicator](heat-related-deaths.qmd), though, this
 feature is based on many types of corroborating evidence in addition to
 death certificates. A fraction of deaths may go unreported by employers,
 may not be properly categorized as heat-related, or may not be attributed
