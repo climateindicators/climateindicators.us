@@ -80,6 +80,10 @@ How the magnitude and frequency of river flooding have changed at stream gauge s
 
 Trends in average seasonal air temperature across the contiguous United States since 1896, and how the change varies by season and by state.
 
+##### Stream Temperature
+
+This indicator shows how stream water temperatures have changed at 129 stream gauges across the Chesapeake Bay region from 1960 to 2014.
+
 ##### Streamflow
 
 How the amount and timing of streamflow in rivers and streams across the United States have changed since 1940.
