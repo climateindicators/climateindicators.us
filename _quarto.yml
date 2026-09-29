@@ -101,6 +101,8 @@ website:
               href: indicators/river-flooding.qmd
             - text: "Streamflow"
               href: indicators/streamflow.qmd
+            - text: "Stream Temperature"
+              href: indicators/stream-temperature.qmd
             - text: "Tropical Cyclone Activity"
               href: indicators/tropical-cyclone-activity.qmd
 
