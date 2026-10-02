@@ -88,6 +88,10 @@ This indicator shows how stream water temperatures have changed at 129 stream ga
 
 How the amount and timing of streamflow in rivers and streams across the United States have changed since 1940.
 
+##### Tribal Connection: Trends in Stream Temperature in the Snake River
+
+This feature tracks the summer water temperature of the Snake River.
+
 ##### Tropical Cyclone Activity
 
 Frequency, intensity, and duration of hurricanes and other tropical storms in the Atlantic Ocean, Caribbean, and Gulf of Mexico.
