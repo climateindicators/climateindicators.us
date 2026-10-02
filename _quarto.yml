@@ -103,6 +103,8 @@ website:
               href: indicators/streamflow.qmd
             - text: "Stream Temperature"
               href: indicators/stream-temperature.qmd
+            - text: "Tribal Connection: Trends in Stream Temperature in the Snake River"
+              href: indicators/snake-river.qmd
             - text: "Tropical Cyclone Activity"
               href: indicators/tropical-cyclone-activity.qmd
 
