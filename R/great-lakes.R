@@ -99,7 +99,7 @@ fig_2_daily_plot <- function(d) {
       linewidth = 0.7
     ) +
     scale_colour_manual(values = series_colours(PERIOD_KEYS), breaks = PERIOD_KEYS) +
-    scale_x_continuous(breaks = MONTH_STARTS, labels = month.abb) +
+    scale_x_continuous(breaks = MONTH_STARTS[c(TRUE, FALSE)], labels = month.abb[c(TRUE, FALSE)]) +
     facet_wrap(~lake, ncol = 2) +
     labs(x = NULL, y = "Average daily surface water temperature (°F)") +
     theme_indicator() +

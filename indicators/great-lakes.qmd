@@ -28,7 +28,7 @@ daily        <- read_indicator(REPO, "great_lakes_temp_daily.csv")
 #| label: fig-1-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "great_lakes_water_levels.csv")
+figure_caption(meta, "great_lakes_water_levels.csv", ref = 8)
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
@@ -62,7 +62,7 @@ knitr::kable(fig_1_table(water_levels), digits = 2)
 #| label: fig-2-caption
 #| echo: false
 #| output: asis
-figure_caption(meta, "great_lakes_temp_annual.csv")
+figure_caption(meta, "great_lakes_temp_annual.csv", ref = 9)
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
@@ -84,6 +84,8 @@ fig_2_daily(daily)
 ```
 
 This figure shows the average surface water temperatures in each of the Great Lakes, as measured by satellites. The graphs on the left show annual averages for the full time period, while the graphs on the right show how average daily temperatures have changed between two time periods for comparison: 2014–2023 versus 1995–2004.
+
+*Note: on this page, the annual averages are in the first chart and the daily comparison is in the second, below it.*
 
 <details><summary>Show the data behind this figure</summary>
 
