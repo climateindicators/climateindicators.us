@@ -28,6 +28,10 @@ This indicator measures drought conditions of U.S. lands.
 
 This indicator describes emissions of greenhouse gases worldwide.
 
+##### Great Lakes Water Levels and Temperatures
+
+This indicator measures water levels and surface water temperatures in the Great Lakes.
+
 ##### Growing Degree Days
 
 How growing degree days have changed at 280 long-term weather stations across the contiguous 48 states since 1948, and what that suggests about pollen seasons.
@@ -55,6 +59,10 @@ This indicator tracks the frequency of heavy precipitation events in the United 
 ##### High and Low Temperatures
 
 Trends in unusually hot and cold temperatures across the United States.
+
+##### Lake Temperature
+
+This indicator shows changes in surface water temperatures in North American lakes.
 
 ##### Length of Growing Season
 
