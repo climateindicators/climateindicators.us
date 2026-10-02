@@ -48,11 +48,14 @@ meta_for <- function(meta, file) {
 }
 
 #' The bold title and source line printed above a figure, from meta.yml.
-figure_caption <- function(meta, file) {
+#' `ref` is the reference number EPA attaches to the data source, if any; it is
+#' rendered as the same anchor-linked marker the page prose uses.
+figure_caption <- function(meta, file, ref = NULL) {
   m <- meta_for(meta, file)
+  marker <- if (is.null(ref)) "" else sprintf("^[%d](#ref-%d)^", ref, ref)
   knitr::asis_output(sprintf(
-    "**%s**\n\nData source: %s <br> Web update: %s\n",
-    m$figure_title, m$data_source, m$web_update
+    "**%s**\n\nData source: %s%s <br> Web update: %s\n",
+    m$figure_title, m$data_source, marker, m$web_update
   ))
 }
 

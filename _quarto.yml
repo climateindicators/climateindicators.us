@@ -101,6 +101,10 @@ website:
               href: indicators/river-flooding.qmd
             - text: "Streamflow"
               href: indicators/streamflow.qmd
+            - text: "Great Lakes Water Levels and Temperatures"
+              href: indicators/great-lakes.qmd
+            - text: "Lake Temperature"
+              href: indicators/lake-temperature.qmd
             - text: "Stream Temperature"
               href: indicators/stream-temperature.qmd
             - text: "Tribal Connection: Trends in Stream Temperature in the Snake River"
