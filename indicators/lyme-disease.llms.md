@@ -203,6 +203,6 @@ All three figures are based on publicly available Lyme disease data compiled by 
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to copyright), extracted from EPA’s source document. Data, chart code, and the full extraction pipeline are maintained in the [lyme-disease](https://github.com/climateindicators/lyme-disease) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [lyme-disease](https://github.com/climateindicators/lyme-disease) repository, which this page reads its data from directly.
 
 Back to top

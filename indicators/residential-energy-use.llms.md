@@ -213,6 +213,6 @@ The data for this indicator were provided by EIA, which maintains a large collec
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the [residential-energy-use](https://github.com/climateindicators/residential-energy-use) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [residential-energy-use](https://github.com/climateindicators/residential-energy-use) repository, which this page reads its data from directly.
 
 Back to top

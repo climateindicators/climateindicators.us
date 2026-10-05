@@ -202,6 +202,6 @@ This indicator is based on an analysis developed by the U.S. Geological Survey (
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from [EPA’s published indicator page](https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-stream-temperature/index.html) by the `build-indicator` skill. Data, chart code, and the full extraction pipeline are maintained in the [stream-temperature](https://github.com/climateindicators/stream-temperature) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [stream-temperature](https://github.com/climateindicators/stream-temperature) repository, which this page reads its data from directly.
 
 Back to top

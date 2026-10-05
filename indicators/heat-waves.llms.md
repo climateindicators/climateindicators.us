@@ -336,6 +336,6 @@ Figure 3 is based on measurements from weather stations in the National Weather 
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the [heat-waves](https://github.com/climateindicators/heat-waves) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [heat-waves](https://github.com/climateindicators/heat-waves) repository, which this page reads its data from directly.
 
 Back to top

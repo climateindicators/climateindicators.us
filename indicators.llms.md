@@ -16,6 +16,10 @@ Deaths of U.S. workers attributed to heat exposure on the job.
 
 A closer look at trends in temperature and drought in the southwestern United States.
 
+##### Bird Wintering Ranges
+
+This indicator examines changes in the winter ranges of North American birds.
+
 ##### Cold-Related Deaths
 
 Deaths in the United States attributed to extreme cold.

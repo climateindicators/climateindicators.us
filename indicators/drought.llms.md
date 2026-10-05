@@ -2025,4 +2025,8 @@ Data for Figure 4 were provided by the National Drought Mitigation Center. Histo
 10. Daly, C., Halbleib, M., Smith, J. I., Gibson, W. P., Doggett, M. K., Taylor, G. H., Curtis, J., & Pasteris, P. P. (2008). Physiographically sensitive mapping of climatological temperature and precipitation across the conterminous United States. *International Journal of Climatology, 28*(15), 2031–2064. <https://doi.org/10.1002/joc.1688>
 11. Vicente-Serrano, S. M., Beguería, S., & López-Moreno, J. I. (2010). A multiscalar drought index sensitive to global warming: The standardized precipitation evapotranspiration index. *Journal of Climate, 23*(7), 1696–1718. <https://doi.org/10.1175/2009JCLI2909.1>
 
+> **NOTE:**
+>
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [drought-new](https://github.com/climateindicators/drought-new) repository, which this page reads its data from directly.
+
 Back to top

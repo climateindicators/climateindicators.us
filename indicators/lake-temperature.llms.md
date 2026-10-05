@@ -104,6 +104,6 @@ Satellite data were collected by the National Oceanic and Atmospheric Administra
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from [EPA’s published indicator page](https://19january2025snapshot.epa.gov/climate-indicators/climate-change-indicators-lake-temperature/index.html) by the `build-indicator` skill. Data, chart code, and the full extraction pipeline are maintained in the [lake-temperature](https://github.com/climateindicators/lake-temperature) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [lake-temperature](https://github.com/climateindicators/lake-temperature) repository, which this page reads its data from directly.
 
 Back to top

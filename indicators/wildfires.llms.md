@@ -469,6 +469,6 @@ The full set of wildfire frequency and burned acreage data in Figures 1 and 2 co
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s source document and verified paragraph by paragraph against the published page. Data, chart code, and the full extraction pipeline are maintained in the [wildfires](https://github.com/climateindicators/wildfires) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [wildfires](https://github.com/climateindicators/wildfires) repository, which this page reads its data from directly.
 
 Back to top
