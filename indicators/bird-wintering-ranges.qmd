@@ -134,12 +134,10 @@ technical_documentation_link(meta)
 
 ## References
 
-<!-- The build script extracted only one empty reference from EPA's page (narrative.qmd carries "1. <sup></sup>"), but the prose cites 1, 2 and 3. The texts below must be filled in from EPA's page before this page is final. -->
-
 <ol class="references">
-  <li id="ref-1">TODO: reference 1 text not extracted.</li>
-  <li id="ref-2">TODO: reference 2 text not extracted.</li>
-  <li id="ref-3">TODO: reference 3 text not extracted.</li>
+  <li id="ref-1">La Sorte, F. A., &amp; Thompson III, F. R. (2007). Poleward shifts in winter ranges of North American birds. <em>Ecology, 88</em>(7), 1803–1812. <a href="https://doi.org/10.1890/06-1072.1">https://doi.org/10.1890/06-1072.1</a></li>
+  <li id="ref-2">Niven, D. K., Butcher, G. S., &amp; Bancroft, G. T. (2009). Christmas Bird Counts and climate change: Northward shifts in early winter abundance. <em>American Birds, 63</em>, 10–15. <a href="https://hogisland.audubon.org/sites/default/files/documents/AB_109_CBC_and_Climate_Change.pdf">https://hogisland.audubon.org/sites/default/files/documents/AB_109_CBC_and_Climate_Change.pdf</a></li>
+  <li id="ref-3">National Audubon Society. (2014). Update to data originally published in a supplement to Niven, D. K., Butcher, G. S., &amp; Bancroft, G. T. (2009). Christmas Bird Counts and climate change: Northward shifts in early winter abundance. <em>American Birds, 63</em>, 10–15. <a href="https://hogisland.audubon.org/sites/default/files/documents/AB_109_CBC_and_Climate_Change.pdf">https://hogisland.audubon.org/sites/default/files/documents/AB_109_CBC_and_Climate_Change.pdf</a></li>
 </ol>
 
 ::: {.callout-note appearance="simple" icon=false}
