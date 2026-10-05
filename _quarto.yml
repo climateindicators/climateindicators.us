@@ -81,6 +81,8 @@ website:
           contents:
             - text: "Wildfires"
               href: indicators/wildfires.qmd
+            - text: "Bird Wintering Ranges"
+              href: indicators/bird-wintering-ranges.qmd
         - section: "Weather and Climate"
           contents:
             - text: "U.S. and Global Temperature"
