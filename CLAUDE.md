@@ -285,9 +285,12 @@ Two navbar details that are easy to break:
    and `categories` feed the listing grid on `indicators.qmd`, so they are not
    optional
 4. Add a sidebar entry under the appropriate section in `_quarto.yml`
-5. Add any new package dependency to `DESCRIPTION`, or the GitHub Action will
+5. Add the slug to the matching section in `$card-category-map` in
+   `css/theme.scss`. That map is what gives the indicator's listing card its
+   section icon and border colour; a slug missing from it gets neither
+6. Add any new package dependency to `DESCRIPTION`, or the GitHub Action will
    not install it
-6. While the page is a stub, include `{{< include /chunks/coming-soon.qmd >}}`
+7. While the page is a stub, include `{{< include /chunks/coming-soon.qmd >}}`
    rather than writing a one-off placeholder
 
 ### Placeholder Content
