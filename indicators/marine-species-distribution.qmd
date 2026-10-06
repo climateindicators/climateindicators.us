@@ -75,7 +75,7 @@ figure_caption(meta, "marine_species_northeast.csv", ref = 3)
 fig_2(northeast)
 ```
 
-This map shows the annual centers of biomass for three species in the northeastern United States from 1974 to 2022. Dots are shaded from light to dark to show change over time.
+This chart shows the annual centers of biomass for three species in the northeastern United States from 1974 to 2022. Dots are shaded from light to dark to show change over time.
 
 <details><summary>Show the data behind this figure</summary>
 
@@ -108,7 +108,7 @@ figure_caption(meta, "marine_species_bering_sea.csv", ref = 3)
 fig_3(bering)
 ```
 
-This map shows the annual centers of biomass for three species in the eastern Bering Sea from 1985 to 2022. Dots are shaded from light to dark to show change over time.
+This chart shows the annual centers of biomass for three species in the eastern Bering Sea from 1985 to 2022. Dots are shaded from light to dark to show change over time.
 
 <details><summary>Show the data behind this figure</summary>
 
@@ -141,7 +141,7 @@ figure_caption(meta, "marine_species_southeast.csv", ref = 3)
 fig_4(southeast)
 ```
 
-This map shows the annual centers of biomass for three species in the southeastern United States from 1989 to 2019. Dots are shaded from light to dark to show change over time.
+This chart shows the annual centers of biomass for three species in the southeastern United States from 1989 to 2019. Dots are shaded from light to dark to show change over time.
 
 <details><summary>Show the data behind this figure</summary>
 
@@ -214,4 +214,11 @@ and verified paragraph by paragraph against the archived HTML. Data, chart
 code, and the full extraction pipeline are maintained in the
 [marine-species-distribution](https://github.com/climateindicators/marine-species-distribution)
 repository, which this page reads its data from directly.
+
+Two changes were made to EPA's wording. EPA's published heading for Figure 4
+gives the period as 1984–2019, but the data and EPA's own description of the
+figure run from 1989 to 2019, so the period is given as 1989–2019 here. And
+EPA's descriptions of Figures 2, 3, and 4 say "This map shows", but the figures
+on this page plot latitude against longitude without a base map, so they say
+"This chart shows".
 :::
