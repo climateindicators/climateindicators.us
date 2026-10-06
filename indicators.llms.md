@@ -24,6 +24,10 @@ This indicator examines changes in the winter ranges of North American birds.
 
 Deaths in the United States attributed to extreme cold.
 
+##### Community Connection: Cherry Blossom Bloom Dates in Washington, D.C.
+
+How the peak bloom date of Washington, D.C.’s Yoshino cherry trees has changed since 1921, alongside the dates of the National Cherry Blossom Festival.
+
 ##### Drought
 
 This indicator measures drought conditions of U.S. lands.
@@ -68,6 +72,10 @@ Trends in unusually hot and cold temperatures across the United States.
 
 This indicator shows changes in surface water temperatures in North American lakes.
 
+##### Leaf and Bloom Dates
+
+How the timing of first leaf and first bloom dates in lilacs and honeysuckles has changed across the contiguous 48 states and Alaska.
+
 ##### Length of Growing Season
 
 How the length of the growing season, and the timing of spring and fall frosts, has changed across the contiguous 48 states since 1895.
@@ -75,6 +83,10 @@ How the length of the growing season, and the timing of spring and fall frosts, 
 ##### Lyme Disease
 
 This indicator tracks the rate of reported Lyme disease cases across the United States.
+
+##### Marine Species Distribution
+
+This indicator examines changes in the location of fish, shellfish, and other marine species along U.S. coasts.
 
 ##### Ragweed Pollen Season
 
