@@ -81,6 +81,8 @@ website:
           contents:
             - text: "Leaf and Bloom Dates"
               href: indicators/leaf-and-bloom-dates.qmd
+            - text: "Community Connection: Cherry Blossom Bloom Dates in Washington, D.C."
+              href: indicators/cherry-blossom-bloom.qmd
             - text: "Wildfires"
               href: indicators/wildfires.qmd
             - text: "Bird Wintering Ranges"
