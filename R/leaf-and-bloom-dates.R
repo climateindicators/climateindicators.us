@@ -121,7 +121,8 @@ fig_change_plot <- function(d, event_label) {
       values = label_colours(d, "direction_key", "direction_label", DIRECTION_ROLE_ORDER),
       breaks = label_order(d, "direction_key", "direction_label", DIRECTION_LEGEND_ORDER)
     ) +
-    scale_size(range = c(1.2, 4.5), guide = "none") +
+    # About 1,300 stations overlap heavily in the East, so the circles stay small.
+    scale_size(range = c(0.6, 2.6), guide = "none") +
     # default_crs tells coord_sf() that geom_point's raw longitude/latitude
     # columns are unprojected WGS84, so the basemap and the station points get
     # projected into MAP_CRS together.

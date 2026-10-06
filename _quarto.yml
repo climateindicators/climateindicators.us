@@ -79,6 +79,8 @@ website:
               href: indicators/global-greenhouse-gas-emissions.qmd
         - section: "Environment"
           contents:
+            - text: "Leaf and Bloom Dates"
+              href: indicators/leaf-and-bloom-dates.qmd
             - text: "Wildfires"
               href: indicators/wildfires.qmd
             - text: "Bird Wintering Ranges"
