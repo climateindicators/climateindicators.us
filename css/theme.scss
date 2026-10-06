@@ -40,11 +40,15 @@ $card-category-map: (
     "growing-degree-days", "ragweed-pollen-season"
   ),
   $cat-greenhouse-gasses: ("global-greenhouse-gas-emissions"),
-  $cat-environment: ("wildfires"),
+  $cat-environment: (
+    "leaf-and-bloom-dates", "cherry-blossom-bloom", "wildfires",
+    "bird-wintering-ranges", "marine-species-distribution"
+  ),
   $cat-weather-climate: (
     "us-and-global-temperature", "seasonal-temperature", "high-and-low-temperatures",
     "heat-waves", "heavy-precipitation", "drought", "temperature-and-drought-in-the-southwest",
-    "river-flooding", "streamflow", "tropical-cyclone-activity"
+    "river-flooding", "streamflow", "great-lakes", "lake-temperature", "stream-temperature",
+    "snake-river", "tropical-cyclone-activity"
   ),
 );
 

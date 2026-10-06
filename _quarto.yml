@@ -79,10 +79,16 @@ website:
               href: indicators/global-greenhouse-gas-emissions.qmd
         - section: "Environment"
           contents:
+            - text: "Leaf and Bloom Dates"
+              href: indicators/leaf-and-bloom-dates.qmd
+            - text: "Community Connection: Cherry Blossom Bloom Dates in Washington, D.C."
+              href: indicators/cherry-blossom-bloom.qmd
             - text: "Wildfires"
               href: indicators/wildfires.qmd
             - text: "Bird Wintering Ranges"
               href: indicators/bird-wintering-ranges.qmd
+            - text: "Marine Species Distribution"
+              href: indicators/marine-species-distribution.qmd
         - section: "Weather and Climate"
           contents:
             - text: "U.S. and Global Temperature"
