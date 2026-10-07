@@ -1,7 +1,7 @@
 ---
 title: "Sea Surface Temperature"
 description: "This indicator describes global trends in sea surface temperature."
-categories: [Weather and Climate, Oceans]
+categories: [Oceans]
 execute:
   eval: true
 ---
@@ -24,7 +24,7 @@ change  <- read_indicator(REPO, "sea_surface_temperature_change.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "sea_surface_temperature_anomaly.csv", ref = 7)
@@ -36,7 +36,7 @@ figure_caption(meta, "sea_surface_temperature_anomaly.csv", ref = 7)
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(anomaly)
 ```
@@ -47,7 +47,7 @@ This graph shows how the average surface temperature of the world’s oceans has
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(anomaly), digits = 3)
 ```
@@ -58,7 +58,7 @@ knitr::kable(fig_1_table(anomaly), digits = 3)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "sea_surface_temperature_change.csv", ref = 8)
@@ -70,7 +70,7 @@ figure_caption(meta, "sea_surface_temperature_change.csv", ref = 8)
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(change)
 ```
@@ -83,7 +83,7 @@ This map shows how average sea surface temperature around the world changed betw
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(change))
 ```

@@ -28,7 +28,7 @@ bloom_sites <- read_indicator(REPO, "first_bloom_change_by_site.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "first_leaf_bloom_deviation_contiguous_48.csv", ref = 3)
@@ -40,7 +40,7 @@ figure_caption(meta, "first_leaf_bloom_deviation_contiguous_48.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(contiguous)
 ```
@@ -50,7 +50,7 @@ This figure shows modeled trends in lilac and honeysuckle first leaf dates and f
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(contiguous))
 ```
@@ -60,7 +60,7 @@ knitr::kable(fig_1_table(contiguous))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "first_leaf_bloom_deviation_alaska.csv", ref = 3)
@@ -72,7 +72,7 @@ figure_caption(meta, "first_leaf_bloom_deviation_alaska.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(alaska)
 ```
@@ -82,7 +82,7 @@ This figure shows modeled trends in lilac and honeysuckle first leaf dates and f
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(alaska))
 ```
@@ -92,7 +92,7 @@ knitr::kable(fig_2_table(alaska))
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "first_leaf_change_by_site.csv", ref = 3)
@@ -104,7 +104,7 @@ figure_caption(meta, "first_leaf_change_by_site.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(leaf_sites)
 ```
@@ -114,7 +114,7 @@ This figure shows modeled trends in lilac and honeysuckle first leaf dates at we
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(leaf_sites))
 ```
@@ -124,7 +124,7 @@ knitr::kable(fig_3_table(leaf_sites))
 ### Figure 4
 
 ```{r}
-#| label: fig-4-caption
+#| label: caption-4
 #| echo: false
 #| output: asis
 figure_caption(meta, "first_bloom_change_by_site.csv", ref = 3)
@@ -136,7 +136,7 @@ figure_caption(meta, "first_bloom_change_by_site.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-4
+#| label: chart-4
 #| echo: false
 fig_4(bloom_sites)
 ```
@@ -146,7 +146,7 @@ This figure shows modeled trends in lilac and honeysuckle first bloom dates at w
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-4-table
+#| label: table-4
 #| echo: false
 knitr::kable(fig_4_table(bloom_sites))
 ```

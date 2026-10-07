@@ -27,7 +27,7 @@ This indicator examines the frequency, intensity, and duration of hurricanes and
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "hurricane_counts.csv")
@@ -39,7 +39,7 @@ figure_caption(meta, "hurricane_counts.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(hurricanes)
 ```
@@ -49,7 +49,7 @@ This graph shows the number of hurricanes that formed in the North Atlantic Ocea
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(hurricanes), digits = 2)
 ```
@@ -59,7 +59,7 @@ knitr::kable(fig_1_table(hurricanes), digits = 2)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "accumulated_cyclone_energy_index.csv")
@@ -71,7 +71,7 @@ figure_caption(meta, "accumulated_cyclone_energy_index.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(ace)
 ```
@@ -81,7 +81,7 @@ This figure shows total annual Accumulated Cyclone Energy (ACE) Index values, wh
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(ace), digits = 1)
 ```
@@ -91,7 +91,7 @@ knitr::kable(fig_2_table(ace), digits = 1)
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "power_dissipation_index_and_sst.csv")
@@ -103,7 +103,7 @@ figure_caption(meta, "power_dissipation_index_and_sst.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(pdi_sst)
 ```
@@ -113,7 +113,7 @@ This figure presents annual values of the Power Dissipation Index (PDI), which a
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(pdi_sst), digits = 2)
 ```

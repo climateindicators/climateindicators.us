@@ -23,7 +23,7 @@ annual <- read_indicator(REPO, "heat_related_workplace_deaths.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "heat_related_workplace_deaths.csv")
@@ -35,7 +35,7 @@ figure_caption(meta, "heat_related_workplace_deaths.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(annual)
 ```
@@ -52,7 +52,7 @@ collection for 2020 fell below reporting thresholds (no bar that year).
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(annual), digits = 0)
 ```

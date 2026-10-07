@@ -24,7 +24,7 @@ coast    <- read_indicator(REPO, "bird_center_coast_distance_change.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "bird_center_latitude_change.csv", ref = 3)
@@ -36,7 +36,7 @@ figure_caption(meta, "bird_center_latitude_change.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(latitude)
 ```
@@ -47,7 +47,7 @@ This figure shows annual change in latitude of bird center of abundance for 305 
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(latitude), digits = 2)
 ```
@@ -58,7 +58,7 @@ knitr::kable(fig_1_table(latitude), digits = 2)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "bird_center_coast_distance_change.csv", ref = 3)
@@ -70,7 +70,7 @@ figure_caption(meta, "bird_center_coast_distance_change.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(coast)
 ```
@@ -81,7 +81,7 @@ This figure shows annual change in distance to the coast of bird center of abund
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(coast), digits = 2)
 ```

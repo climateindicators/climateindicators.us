@@ -25,7 +25,7 @@ stations <- read_indicator(REPO, "growing_degree_days_change_by_station.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "growing_degree_days_change_by_station.csv")
@@ -37,7 +37,7 @@ figure_caption(meta, "growing_degree_days_change_by_station.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(stations)
 ```
@@ -49,7 +49,7 @@ This map is rendered here from the same 280 station records behind EPA's Figure 
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(stations))
 ```

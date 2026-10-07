@@ -26,7 +26,7 @@ by_sex_age <- read_indicator(REPO, "heat_illness_by_sex_and_age.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "heat_illness_annual_rate.csv")
@@ -38,7 +38,7 @@ figure_caption(meta, "heat_illness_annual_rate.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(annual)
 ```
@@ -48,7 +48,7 @@ This graph shows the annual rate of hospitalizations classified as "heat-related
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(annual))
 ```
@@ -58,7 +58,7 @@ knitr::kable(fig_1_table(annual))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "heat_illness_rate_by_state.csv")
@@ -70,7 +70,7 @@ figure_caption(meta, "heat_illness_rate_by_state.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(by_state)
 ```
@@ -82,7 +82,7 @@ EPA published this figure as a map; it is drawn here as a ranked bar chart of th
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(by_state))
 ```
@@ -92,7 +92,7 @@ knitr::kable(fig_2_table(by_state))
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "heat_illness_by_sex_and_age.csv")
@@ -104,7 +104,7 @@ figure_caption(meta, "heat_illness_by_sex_and_age.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(by_sex_age)
 ```
@@ -116,7 +116,7 @@ The sex breakdown and the age breakdown are two independent totals of the same u
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(by_sex_age))
 ```

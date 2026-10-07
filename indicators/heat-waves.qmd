@@ -27,7 +27,7 @@ This indicator describes trends in multi-day extreme heat events across the Unit
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "heat_wave_characteristics_by_decade.csv")
@@ -39,7 +39,7 @@ figure_caption(meta, "heat_wave_characteristics_by_decade.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(decade)
 ```
@@ -49,7 +49,7 @@ This figure shows changes in the number of heat waves per year (frequency); the 
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(decade))
 ```
@@ -59,7 +59,7 @@ knitr::kable(fig_1_table(decade))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "heat_wave_characteristics_by_city.csv")
@@ -71,7 +71,7 @@ figure_caption(meta, "heat_wave_characteristics_by_city.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(city)
 ```
@@ -81,7 +81,7 @@ These maps show changes in the number of heat waves per year (frequency); the av
 Two of EPA's 50 cities lie outside the map projection used above and are shown separately, on the same colour and size scale:
 
 ```{r}
-#| label: fig-2-offmap
+#| label: chart-2-offmap
 #| echo: false
 fig_2_offmap(city)
 ```
@@ -93,7 +93,7 @@ EPA's own published version of this figure additionally marks cities where the t
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(city))
 ```
@@ -103,7 +103,7 @@ knitr::kable(fig_2_table(city))
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "heat_wave_index_annual.csv")
@@ -115,7 +115,7 @@ figure_caption(meta, "heat_wave_index_annual.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(index)
 ```
@@ -125,7 +125,7 @@ This figure shows the annual values of the U.S. Heat Wave Index from 1895 to 202
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(index))
 ```

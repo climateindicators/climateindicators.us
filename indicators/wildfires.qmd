@@ -30,7 +30,7 @@ monthly_region <- read_indicator(REPO, "wildfires_monthly_burned_area_by_region.
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "wildfires_frequency.csv")
@@ -42,7 +42,7 @@ figure_caption(meta, "wildfires_frequency.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(frequency)
 ```
@@ -52,7 +52,7 @@ This figure shows the total number of wildfires per year from 1983 to 2022. Thes
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(frequency))
 ```
@@ -62,7 +62,7 @@ knitr::kable(fig_1_table(frequency))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "wildfires_extent.csv")
@@ -74,7 +74,7 @@ figure_caption(meta, "wildfires_extent.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(extent)
 ```
@@ -84,7 +84,7 @@ This figure shows annual wildfire-burned area (in millions of acres) from 1983 t
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(extent))
 ```
@@ -94,7 +94,7 @@ knitr::kable(fig_2_table(extent))
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "wildfires_burn_severity.csv")
@@ -106,7 +106,7 @@ figure_caption(meta, "wildfires_burn_severity.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(severity)
 ```
@@ -116,7 +116,7 @@ This figure shows the distribution of acreage burned by large wildfires, based o
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(severity))
 ```
@@ -126,7 +126,7 @@ knitr::kable(fig_3_table(severity))
 ### Figure 4
 
 ```{r}
-#| label: fig-4-caption
+#| label: caption-4
 #| echo: false
 #| output: asis
 figure_caption(meta, "wildfires_burned_acreage_trend_by_state.csv")
@@ -139,7 +139,7 @@ figure_caption(meta, "wildfires_burned_acreage_trend_by_state.csv")
 </div>
 
 ```{r}
-#| label: fig-4
+#| label: chart-4
 #| echo: false
 fig_4_map(trend_state)
 ```
@@ -153,7 +153,7 @@ This site's basemap does not include Alaska or Hawaii, so `r paste(fig_4_offmap_
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-4-table
+#| label: table-4
 #| echo: false
 knitr::kable(fig_4_table(trend_state))
 ```
@@ -163,7 +163,7 @@ knitr::kable(fig_4_table(trend_state))
 ### Figure 5
 
 ```{r}
-#| label: fig-5-caption
+#| label: caption-5
 #| echo: false
 #| output: asis
 figure_caption(meta, "wildfires_burned_acreage_change_by_state.csv")
@@ -175,7 +175,7 @@ figure_caption(meta, "wildfires_burned_acreage_change_by_state.csv")
 </div>
 
 ```{r}
-#| label: fig-5
+#| label: chart-5
 #| echo: false
 fig_5_map(change_state)
 ```
@@ -189,7 +189,7 @@ This site's basemap does not include Alaska or Hawaii, so `r paste(fig_5_offmap_
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-5-table
+#| label: table-5
 #| echo: false
 knitr::kable(fig_5_table(change_state))
 ```
@@ -199,7 +199,7 @@ knitr::kable(fig_5_table(change_state))
 ### Figure 6
 
 ```{r}
-#| label: fig-6-caption
+#| label: caption-6
 #| echo: false
 #| output: asis
 figure_caption(meta, "wildfires_monthly_burned_area.csv")
@@ -211,7 +211,7 @@ figure_caption(meta, "wildfires_monthly_burned_area.csv")
 </div>
 
 ```{r}
-#| label: fig-6
+#| label: chart-6
 #| echo: false
 fig_6(monthly)
 ```
@@ -221,7 +221,7 @@ This figure compares the annual distribution of burned area due to wildfires in 
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-6-table
+#| label: table-6
 #| echo: false
 knitr::kable(fig_6_table(monthly))
 ```
@@ -231,7 +231,7 @@ knitr::kable(fig_6_table(monthly))
 ### Figure 7
 
 ```{r}
-#| label: fig-7-caption
+#| label: caption-7
 #| echo: false
 #| output: asis
 figure_caption(meta, "wildfires_monthly_burned_area_by_region.csv")
@@ -243,7 +243,7 @@ figure_caption(meta, "wildfires_monthly_burned_area_by_region.csv")
 </div>
 
 ```{r}
-#| label: fig-7
+#| label: chart-7
 #| echo: false
 fig_7(monthly_region)
 ```
@@ -253,7 +253,7 @@ This figure compares the annual distribution of burned area due to wildfires in 
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-7-table
+#| label: table-7
 #| echo: false
 knitr::kable(fig_7_table(monthly_region))
 ```

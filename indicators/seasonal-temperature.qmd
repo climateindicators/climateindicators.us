@@ -26,7 +26,7 @@ by_season <- read_indicator(REPO, "seasonal_temperature_total_change_by_season.c
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "seasonal_temperature_annual_anomaly.csv")
@@ -38,7 +38,7 @@ figure_caption(meta, "seasonal_temperature_annual_anomaly.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(annual)
 ```
@@ -49,7 +49,7 @@ This figure shows the average temperature for each season across the contiguous 
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(annual), digits = 2)
 ```
@@ -60,7 +60,7 @@ knitr::kable(fig_1_table(annual), digits = 2)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "seasonal_temperature_change_by_state.csv")
@@ -72,7 +72,7 @@ figure_caption(meta, "seasonal_temperature_change_by_state.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(by_state)
 ```
@@ -82,7 +82,7 @@ These panels show the total change in average seasonal temperature for each of t
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(by_state))
 ```
@@ -92,7 +92,7 @@ knitr::kable(fig_2_table(by_state))
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "seasonal_temperature_total_change_by_season.csv")
@@ -104,7 +104,7 @@ figure_caption(meta, "seasonal_temperature_total_change_by_season.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(by_season)
 ```
@@ -114,7 +114,7 @@ This figure compares the total long-term change in each season for the contiguou
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(by_season))
 ```

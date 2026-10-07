@@ -25,7 +25,7 @@ region <- read_indicator(REPO, "global_greenhouse_gas_emissions_fig3.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "global_greenhouse_gas_emissions_fig1.csv")
@@ -37,7 +37,7 @@ figure_caption(meta, "global_greenhouse_gas_emissions_fig1.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(gas)
 ```
@@ -53,7 +53,7 @@ hexafluoride._
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(gas), digits = 2)
 ```
@@ -63,7 +63,7 @@ knitr::kable(fig_1_table(gas), digits = 2)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "global_greenhouse_gas_emissions_fig2.csv")
@@ -75,7 +75,7 @@ figure_caption(meta, "global_greenhouse_gas_emissions_fig2.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(sector)
 ```
@@ -87,7 +87,7 @@ Note that the sectors shown here are different from the economic sectors used in
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(sector), digits = 2)
 ```
@@ -97,7 +97,7 @@ knitr::kable(fig_2_table(sector), digits = 2)
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "global_greenhouse_gas_emissions_fig3.csv")
@@ -109,7 +109,7 @@ figure_caption(meta, "global_greenhouse_gas_emissions_fig3.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(region)
 ```
@@ -123,7 +123,7 @@ emissions from others.
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(region), digits = 2)
 ```
