@@ -28,18 +28,27 @@ website:
     search: true
     left:
       - icon: house-door
-        text: "climateindicators.us"
+        text: "Home"
         href: index.qmd
+      
+    right:
       - icon: info-circle
         text: "About"
         href: about.qmd
       - icon: graph-up
         text: "Indicators"
         href: indicators.qmd
+      - icon: book
+        text: "The Whole Story"
+        href: tracking-the-whole-climate-change-story.qmd
+      - icon: folder2-open
+        text: "Methodology"
+        href: methodology.qmd
+      - icon: leaf
+        text: "Applying and Advancing Climate Indicators"
+        href: applying-and-advancing-climate-indicators.qmd
 
-    right:
-      - icon: github
-        href: https://github.com/climateindicators/climateindicators.us
+
 
   sidebar:
     - title: "Indicators"
