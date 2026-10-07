@@ -48,8 +48,17 @@ fig_1_table <- function(d) {
 
 # Land polygons for the basemap. Not indicator data, but bundled geometry
 # shipped with the maps package and not fetched over the network, so it is
-# built here rather than threaded in from the page's setup chunk.
-world_land <- function() ggplot2::map_data("world")
+# built here rather than threaded in from the page's setup chunk. Simplified to
+# a quarter degree: at full resolution the coastline alone makes the SVG ~2 MB,
+# and a 5-degree grid gains nothing from finer detail. The cleanup runs planar
+# (no CRS): on the sphere, s2 joins the +/-180 edges of the polygons that wrap
+# splits at the dateline (Russia, the USA, Fiji) into a band across the map.
+world_land <- function() {
+  land <- sf::st_as_sf(maps::map("world", fill = TRUE, plot = FALSE, wrap = c(-180, 180)))
+  land <- sf::st_set_crs(land, NA)
+  land <- sf::st_simplify(sf::st_make_valid(land), dTolerance = 0.25)
+  sf::st_set_crs(land, 4326)
+}
 
 fmt_lat <- function(x) sprintf("%.1f°%s", abs(x), ifelse(x < 0, "S", "N"))
 fmt_lon <- function(x) sprintf("%.1f°%s", abs(x), ifelse(x < 0, "W", "E"))
@@ -57,8 +66,11 @@ fmt_lon <- function(x) sprintf("%.1f°%s", abs(x), ifelse(x < 0, "W", "E"))
 # Grid cells EPA leaves white (too little data for a trend) are simply absent
 # upstream, so the ocean background shows through them the same way. Land is
 # drawn over the cells, as on EPA's map, so coastal cells read as ocean only.
-# The colour midpoint is pinned at zero rather than centred on the range: most
-# cells warmed, and the few that cooled should still read as cooling.
+# Stepped one-degree classes, as on EPA's map, with the diverging midpoint
+# pinned at zero rather than centred on the range: most cells warmed by 0-3°F,
+# and the few that cooled should still read as cooling.
+FIG_2_BREAKS <- -1:5
+
 fig_2_plot <- function(d) {
   d$lat <- as.numeric(d$lat)
   d$lon <- as.numeric(d$lon)
@@ -72,21 +84,24 @@ fig_2_plot <- function(d) {
       ),
       width = 5, height = 5
     ) +
-    geom_polygon(
-      data = world_land(), aes(x = long, y = lat, group = group),
+    geom_sf(
+      data = world_land(),
       fill = CHART_GREY[["grid"]], colour = CHART_GREY[["rule"]], linewidth = 0.1
     ) +
-    scale_fill_gradient2(
+    scale_fill_steps2(
       low = INDICATOR_PALETTE[["base"]], mid = CHART_GREY[["surface"]],
       high = INDICATOR_PALETTE[["focus"]], midpoint = 0,
+      breaks = FIG_2_BREAKS, limits = range(FIG_2_BREAKS, d$value),
       labels = function(x) sprintf("%+g°F", x),
-      guide = guide_colourbar(barwidth = unit(10, "lines"), barheight = unit(0.5, "lines"))
+      guide = guide_coloursteps(barwidth = unit(12, "lines"), barheight = unit(0.5, "lines"))
     ) +
-    coord_fixed(xlim = c(-180, 180), ylim = c(-90, 90), expand = FALSE) +
+    coord_sf(xlim = c(-180, 180), ylim = c(-90, 90), expand = FALSE,
+             crs = 4326, default_crs = 4326, datum = NA) +
     labs(fill = "Change in temperature, 1901-2022") +
     theme_void() +
     theme(
-      legend.position = "top",
+      legend.position       = "top",
+      legend.title.position = "top",
       legend.title    = element_text(size = rel(0.8), colour = CHART_GREY[["text"]]),
       legend.text     = element_text(size = rel(0.7), colour = CHART_GREY[["text"]]),
       panel.border    = element_rect(fill = NA, colour = CHART_GREY[["rule"]], linewidth = 0.3)
