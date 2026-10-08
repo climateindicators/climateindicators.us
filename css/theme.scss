@@ -51,7 +51,7 @@ $card-category-map: (
     "river-flooding", "streamflow", "great-lakes", "lake-temperature", "stream-temperature",
     "snake-river", "tropical-cyclone-activity"
   ),
-  $cat-oceans: ("sea-surface-temperature", "atlantic-coast"),
+  $cat-oceans: ("sea-surface-temperature", "atlantic-coast", "ocean-acidity"),
 );
 
 // One Bootstrap Icon glyph per category, keyed the same as $card-category-map
