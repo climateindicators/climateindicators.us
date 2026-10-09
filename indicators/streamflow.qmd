@@ -27,7 +27,7 @@ low_flow_days <- read_indicator(REPO, "streamflow_low_flow_days.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "streamflow_seven_day_low.csv")
@@ -39,7 +39,7 @@ figure_caption(meta, "streamflow_seven_day_low.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(low_flow)
 ```
@@ -47,7 +47,7 @@ fig_1(low_flow)
 This map shows percentage changes in the minimum annual streamflow for rivers and streams across the country, based on the long-term rate of change from 1940 to 2022. Minimum streamflow is based on the consecutive seven-day period with the lowest average flow during a given year.
 
 ```{r}
-#| label: fig-1-offmap-intro
+#| label: chart-1-offmap-intro
 #| echo: false
 #| output: asis
 cat(sprintf(
@@ -57,7 +57,7 @@ cat(sprintf(
 ```
 
 ```{r}
-#| label: fig-1-offmap
+#| label: chart-1-offmap
 #| echo: false
 fig_1_offmap(low_flow)
 ```
@@ -65,7 +65,7 @@ fig_1_offmap(low_flow)
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(low_flow))
 ```
@@ -75,7 +75,7 @@ knitr::kable(fig_1_table(low_flow))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "streamflow_three_day_high.csv")
@@ -87,7 +87,7 @@ figure_caption(meta, "streamflow_three_day_high.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(high_flow)
 ```
@@ -95,7 +95,7 @@ fig_2(high_flow)
 This map shows percentage changes in the maximum annual streamflow for rivers and streams across the country, based on the long-term rate of change from 1940 to 2022. Maximum streamflow is based on the consecutive three-day period with the highest average flow during a given year.
 
 ```{r}
-#| label: fig-2-offmap-intro
+#| label: chart-2-offmap-intro
 #| echo: false
 #| output: asis
 cat(sprintf(
@@ -105,7 +105,7 @@ cat(sprintf(
 ```
 
 ```{r}
-#| label: fig-2-offmap
+#| label: chart-2-offmap
 #| echo: false
 fig_2_offmap(high_flow)
 ```
@@ -113,7 +113,7 @@ fig_2_offmap(high_flow)
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(high_flow))
 ```
@@ -123,7 +123,7 @@ knitr::kable(fig_2_table(high_flow))
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "streamflow_annual_average.csv")
@@ -135,7 +135,7 @@ figure_caption(meta, "streamflow_annual_average.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(avg_flow)
 ```
@@ -143,7 +143,7 @@ fig_3(avg_flow)
 This map shows percentage changes in the annual average streamflow for rivers and streams across the country, based on the long-term rate of change from 1940 to 2022. This map is based on daily streamflow measurements, averaged over the entire year.
 
 ```{r}
-#| label: fig-3-offmap-intro
+#| label: chart-3-offmap-intro
 #| echo: false
 #| output: asis
 cat(sprintf(
@@ -153,7 +153,7 @@ cat(sprintf(
 ```
 
 ```{r}
-#| label: fig-3-offmap
+#| label: chart-3-offmap
 #| echo: false
 fig_3_offmap(avg_flow)
 ```
@@ -161,7 +161,7 @@ fig_3_offmap(avg_flow)
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(avg_flow))
 ```
@@ -171,7 +171,7 @@ knitr::kable(fig_3_table(avg_flow))
 ### Figure 4
 
 ```{r}
-#| label: fig-4-caption
+#| label: caption-4
 #| echo: false
 #| output: asis
 figure_caption(meta, "streamflow_runoff_timing.csv")
@@ -183,7 +183,7 @@ figure_caption(meta, "streamflow_runoff_timing.csv")
 </div>
 
 ```{r}
-#| label: fig-4
+#| label: chart-4
 #| echo: false
 fig_4(runoff_timing)
 ```
@@ -193,7 +193,7 @@ This map shows changes in the timing of annual high winter-spring flow carried b
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-4-table
+#| label: table-4
 #| echo: false
 knitr::kable(fig_4_table(runoff_timing))
 ```
@@ -203,7 +203,7 @@ knitr::kable(fig_4_table(runoff_timing))
 ### Figure 5
 
 ```{r}
-#| label: fig-5-caption
+#| label: caption-5
 #| echo: false
 #| output: asis
 figure_caption(meta, "streamflow_low_flow_days.csv")
@@ -215,7 +215,7 @@ figure_caption(meta, "streamflow_low_flow_days.csv")
 </div>
 
 ```{r}
-#| label: fig-5
+#| label: chart-5
 #| echo: false
 fig_5(low_flow_days)
 ```
@@ -223,7 +223,7 @@ fig_5(low_flow_days)
 This map shows changes in the number of days with very low streamflow for rivers and streams across the country, from 1940 to 2022. This map is based on the number of daily flow values below the 2-percentile flow (Q2) threshold. Positive trends (upward brown triangles) indicate an increase in the number of days per year at or below the Q2 threshold (drier conditions); negative trends (downward blue triangles) indicate a trend toward fewer very low flow days (wetter conditions).
 
 ```{r}
-#| label: fig-5-offmap-intro
+#| label: chart-5-offmap-intro
 #| echo: false
 #| output: asis
 cat(sprintf(
@@ -233,7 +233,7 @@ cat(sprintf(
 ```
 
 ```{r}
-#| label: fig-5-offmap
+#| label: chart-5-offmap
 #| echo: false
 fig_5_offmap(low_flow_days)
 ```
@@ -241,7 +241,7 @@ fig_5_offmap(low_flow_days)
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-5-table
+#| label: table-5
 #| echo: false
 knitr::kable(fig_5_table(low_flow_days))
 ```

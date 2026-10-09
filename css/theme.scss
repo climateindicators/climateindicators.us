@@ -27,6 +27,7 @@ $cat-health-society:    #eb990c;  // 1. Health and Society — hat[2], orange
 $cat-greenhouse-gasses: #852f88;  // 2. Greenhouse Gasses — hat[5], purple
 $cat-environment:       #17a769;  // 3. Environment — hat[9], emerald
 $cat-weather-climate:   #0f8096;  // 4. Weather and Climate — hat[7], teal
+$cat-oceans:            #4e54ac;  // 5. Oceans — hat[6], indigo
 
 // Each indicator slug mapped to its sidebar section colour, so a card's
 // border matches its category in the sidebar. Keep this in sync with the
@@ -50,6 +51,7 @@ $card-category-map: (
     "river-flooding", "streamflow", "great-lakes", "lake-temperature", "stream-temperature",
     "snake-river", "tropical-cyclone-activity"
   ),
+  $cat-oceans: ("sea-surface-temperature", "atlantic-coast", "ocean-acidity", "antarctic-sea-ice", "ice-sheets"),
 );
 
 // One Bootstrap Icon glyph per category, keyed the same as $card-category-map
@@ -62,6 +64,7 @@ $card-category-icon: (
   $cat-greenhouse-gasses: "\f2a7",  // bi-cloud-haze
   $cat-environment:       "\f5e2",  // bi-tree
   $cat-weather-climate:   "\f2be",  // bi-cloud-sun
+  $cat-oceans:            "\f5eb",  // bi-tsunami
 );
 
 // Bootstrap picks up $link-color from $primary, so setting this alone recolors
@@ -191,6 +194,8 @@ nav.navbar {
 
 .navbar-nav .nav-link {
   padding: 0.2rem 0.55rem !important;
+  font-size: 0.9rem;
+  line-height: 1.2;
 }
 
 .quarto-navbar-tools > a,
@@ -211,12 +216,22 @@ nav.navbar {
 .navbar-nav {
   @media (min-width: 768px) {
     flex-wrap: nowrap !important;
-    white-space: nowrap;
+    // Long section names wrap onto a second line inside their own item
+    // instead of pushing the row past the viewport.
     .nav-item { flex-shrink: 1; }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      height: 100%;
+      .bi { flex: none; }
+    }
+    .nav-link .menu-text { white-space: normal; text-wrap: balance; }
 
-    // Spacing + dividers between left-nav items (skip right-side .ms-auto group)
-    &:not(.ms-auto) {
-      gap: 1rem;
+    // Spacing + dividers between items, in both the left and right groups
+    & {
+      gap: 1.75rem;
+      &.ms-auto { padding-left: 1.75rem; }
 
       .nav-item + .nav-item {
         position: relative;
@@ -224,7 +239,7 @@ nav.navbar {
         &::before {
           content: '';
           position: absolute;
-          left: -0.5rem;
+          left: -0.875rem;
           top: 50%;
           transform: translateY(-50%);
           width: 1px;
@@ -257,6 +272,7 @@ nav.navbar {
   [data-bs-target="#quarto-sidebar-section-2"] { color: $cat-greenhouse-gasses; }
   [data-bs-target="#quarto-sidebar-section-3"] { color: $cat-environment; }
   [data-bs-target="#quarto-sidebar-section-4"] { color: $cat-weather-climate; }
+  [data-bs-target="#quarto-sidebar-section-5"] { color: $cat-oceans; }
 }
 
 // Tinted panel in the shape of climate.us's .usa-sidenav-list. Needs the id to

@@ -26,7 +26,7 @@ chicago <- read_indicator(REPO, "chicago_1995_heat_wave.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "heat_deaths_annual.csv")
@@ -38,7 +38,7 @@ figure_caption(meta, "heat_deaths_annual.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(annual)
 ```
@@ -46,7 +46,7 @@ fig_1(annual)
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(annual), digits = 3)
 ```
@@ -56,7 +56,7 @@ knitr::kable(fig_1_table(annual), digits = 3)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "heat_deaths_summer_cvd.csv")
@@ -68,7 +68,7 @@ figure_caption(meta, "heat_deaths_summer_cvd.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(cvd)
 ```
@@ -76,7 +76,7 @@ fig_2(cvd)
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(cvd), digits = 3)
 ```
@@ -86,7 +86,7 @@ knitr::kable(fig_2_table(cvd), digits = 3)
 ### Example: The 1995 Chicago Heat Wave
 
 ```{r}
-#| label: fig-example-caption
+#| label: caption-example
 #| echo: false
 #| output: asis
 figure_caption(meta, "chicago_1995_heat_wave.csv")
@@ -98,7 +98,7 @@ figure_caption(meta, "chicago_1995_heat_wave.csv")
 </div>
 
 ```{r}
-#| label: fig-example
+#| label: chart-example
 #| echo: false
 fig_example(chicago)
 ```
@@ -106,7 +106,7 @@ fig_example(chicago)
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-example-table
+#| label: table-example
 #| echo: false
 knitr::kable(utils::head(fig_example_table(chicago), 10), digits = 1,
             caption = "First 10 of 92 days.")

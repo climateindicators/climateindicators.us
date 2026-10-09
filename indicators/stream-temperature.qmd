@@ -23,7 +23,7 @@ sites <- read_indicator(REPO, "stream_temperature_chesapeake_sites.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "stream_temperature_chesapeake_sites.csv")
@@ -35,7 +35,7 @@ figure_caption(meta, "stream_temperature_chesapeake_sites.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(sites)
 ```
@@ -45,7 +45,7 @@ This map shows the change in water temperature at 129 stream gauges across the C
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(sites))
 ```

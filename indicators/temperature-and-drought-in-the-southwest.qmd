@@ -27,7 +27,7 @@ This feature provides a closer look at trends in temperature and drought in the 
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "southwest_temperature_anomaly.csv")
@@ -39,7 +39,7 @@ figure_caption(meta, "southwest_temperature_anomaly.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(anomaly)
 ```
@@ -53,7 +53,7 @@ EPA draws this figure as a map of the region's NOAA climate divisions. Climate-d
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(anomaly))
 ```
@@ -63,7 +63,7 @@ knitr::kable(fig_1_table(anomaly))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "southwest_drought_monitor_area.csv")
@@ -75,7 +75,7 @@ figure_caption(meta, "southwest_drought_monitor_area.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(monitor)
 ```
@@ -85,7 +85,7 @@ This chart shows the percentage of land area in six southwestern states (Arizona
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(monitor))
 ```
@@ -95,7 +95,7 @@ knitr::kable(fig_2_table(monitor))
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "southwest_palmer_index.csv")
@@ -107,7 +107,7 @@ figure_caption(meta, "southwest_palmer_index.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(palmer)
 ```
@@ -117,7 +117,7 @@ This chart shows annual values of the Palmer Drought Severity Index, averaged ov
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(palmer), digits = 3)
 ```

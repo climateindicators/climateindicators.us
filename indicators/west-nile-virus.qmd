@@ -24,7 +24,7 @@ by_state <- read_indicator(REPO, "west_nile_virus_incidence_by_state.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "west_nile_virus_incidence_by_year.csv")
@@ -36,7 +36,7 @@ figure_caption(meta, "west_nile_virus_incidence_by_year.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(national)
 ```
@@ -46,7 +46,7 @@ This figure shows the annual incidence of West Nile neuroinvasive disease, which
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(national))
 ```
@@ -56,7 +56,7 @@ knitr::kable(fig_1_table(national))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "west_nile_virus_incidence_by_state.csv")
@@ -68,7 +68,7 @@ figure_caption(meta, "west_nile_virus_incidence_by_state.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(by_state)
 ```
@@ -78,7 +78,7 @@ This map shows the average annual incidence of West Nile neuroinvasive disease i
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(by_state))
 ```

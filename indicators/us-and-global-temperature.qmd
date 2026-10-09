@@ -27,7 +27,7 @@ divisions <- read_indicator(REPO, "us_and_global_temperature_fig3.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "us_and_global_temperature_fig1.csv")
@@ -39,7 +39,7 @@ figure_caption(meta, "us_and_global_temperature_fig1.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(conus)
 ```
@@ -49,7 +49,7 @@ The dark blue line shows the annual surface temperature anomaly, and the orange 
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(conus), digits = 2)
 ```
@@ -59,7 +59,7 @@ knitr::kable(fig_1_table(conus), digits = 2)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "us_and_global_temperature_fig2.csv")
@@ -71,7 +71,7 @@ figure_caption(meta, "us_and_global_temperature_fig2.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(global)
 ```
@@ -81,7 +81,7 @@ Same shape as Figure 1, at the global scale, except the source data has no separ
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(global), digits = 2)
 ```
@@ -91,7 +91,7 @@ knitr::kable(fig_2_table(global), digits = 2)
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "us_and_global_temperature_fig3.csv")
@@ -103,7 +103,7 @@ figure_caption(meta, "us_and_global_temperature_fig3.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(divisions)
 ```
@@ -113,7 +113,7 @@ EPA's own published figure is a map; the underlying data is one rate of change p
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(divisions))
 ```

@@ -30,7 +30,7 @@ first_frost   <- read_indicator(REPO, "first_fall_frost_by_state.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "length_of_growing_season_national.csv")
@@ -42,7 +42,7 @@ figure_caption(meta, "length_of_growing_season_national.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(national)
 ```
@@ -52,7 +52,7 @@ This figure shows the length of the growing season in the contiguous 48 states c
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(national))
 ```
@@ -62,7 +62,7 @@ knitr::kable(fig_1_table(national))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "length_of_growing_season_east_west.csv")
@@ -74,7 +74,7 @@ figure_caption(meta, "length_of_growing_season_east_west.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(east_west)
 ```
@@ -84,7 +84,7 @@ This figure shows the length of the growing season in the western and eastern Un
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(east_west))
 ```
@@ -94,7 +94,7 @@ knitr::kable(fig_2_table(east_west))
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "length_of_growing_season_by_state.csv")
@@ -106,7 +106,7 @@ figure_caption(meta, "length_of_growing_season_by_state.csv")
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(by_state)
 ```
@@ -116,7 +116,7 @@ This map shows the total change in length of the growing season from 1895 to 202
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(by_state))
 ```
@@ -126,7 +126,7 @@ knitr::kable(fig_3_table(by_state))
 ### Figure 4
 
 ```{r}
-#| label: fig-4-caption
+#| label: caption-4
 #| echo: false
 #| output: asis
 figure_caption(meta, "length_of_growing_season_frost_timing.csv")
@@ -138,7 +138,7 @@ figure_caption(meta, "length_of_growing_season_frost_timing.csv")
 </div>
 
 ```{r}
-#| label: fig-4
+#| label: chart-4
 #| echo: false
 fig_4(frost_timing)
 ```
@@ -148,7 +148,7 @@ This figure shows the timing of the last spring frost and the first fall frost i
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-4-table
+#| label: table-4
 #| echo: false
 knitr::kable(fig_4_table(frost_timing))
 ```
@@ -158,7 +158,7 @@ knitr::kable(fig_4_table(frost_timing))
 ### Figure 5
 
 ```{r}
-#| label: fig-5-caption
+#| label: caption-5
 #| echo: false
 #| output: asis
 figure_caption(meta, "last_spring_frost_by_state.csv")
@@ -170,7 +170,7 @@ figure_caption(meta, "last_spring_frost_by_state.csv")
 </div>
 
 ```{r}
-#| label: fig-5
+#| label: chart-5
 #| echo: false
 fig_5(last_frost)
 ```
@@ -180,7 +180,7 @@ This map shows the total change in last spring frost date from 1895 to 2023 for 
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-5-table
+#| label: table-5
 #| echo: false
 knitr::kable(fig_5_table(last_frost))
 ```
@@ -190,7 +190,7 @@ knitr::kable(fig_5_table(last_frost))
 ### Figure 6
 
 ```{r}
-#| label: fig-6-caption
+#| label: caption-6
 #| echo: false
 #| output: asis
 figure_caption(meta, "first_fall_frost_by_state.csv")
@@ -202,7 +202,7 @@ figure_caption(meta, "first_fall_frost_by_state.csv")
 </div>
 
 ```{r}
-#| label: fig-6
+#| label: chart-6
 #| echo: false
 fig_6(first_frost)
 ```
@@ -212,7 +212,7 @@ This map shows the total change in first fall frost date from 1895 to 2023 for e
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-6-table
+#| label: table-6
 #| echo: false
 knitr::kable(fig_6_table(first_frost))
 ```

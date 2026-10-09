@@ -24,7 +24,7 @@ frequency <- read_indicator(REPO, "river_flooding_frequency.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "river_flooding_magnitude.csv")
@@ -36,7 +36,7 @@ figure_caption(meta, "river_flooding_magnitude.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(magnitude)
 ```
@@ -44,7 +44,7 @@ fig_1(magnitude)
 This figure shows changes in the size of flooding events in rivers and streams in the United States between 1965 and 2015. Blue upward-pointing symbols show locations where floods have become larger; brown downward-pointing symbols show locations where floods have become smaller. The larger, solid-color symbols represent stations where the change was statistically significant.
 
 ```{r}
-#| label: fig-1-offmap-intro
+#| label: chart-1-offmap-intro
 #| echo: false
 #| output: asis
 cat(sprintf(
@@ -54,13 +54,13 @@ cat(sprintf(
 ```
 
 ```{r}
-#| label: fig-1-offmap
+#| label: chart-1-offmap
 #| echo: false
 fig_1_offmap(magnitude)
 ```
 
 ```{r}
-#| label: fig-1-note
+#| label: chart-1-note
 #| echo: false
 #| output: asis
 significance_note(meta, "river_flooding_magnitude.csv")
@@ -69,7 +69,7 @@ significance_note(meta, "river_flooding_magnitude.csv")
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(magnitude))
 ```
@@ -79,7 +79,7 @@ knitr::kable(fig_1_table(magnitude))
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "river_flooding_frequency.csv")
@@ -91,7 +91,7 @@ figure_caption(meta, "river_flooding_frequency.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(frequency)
 ```
@@ -99,7 +99,7 @@ fig_2(frequency)
 This figure shows changes in the frequency of flooding events in rivers and streams in the United States between 1965 and 2015. Blue upward-pointing symbols show locations where floods have become more frequent; brown downward-pointing symbols show locations where floods have become less frequent. The larger, solid-color symbols represent stations where the change was statistically significant.
 
 ```{r}
-#| label: fig-2-offmap-intro
+#| label: chart-2-offmap-intro
 #| echo: false
 #| output: asis
 cat(sprintf(
@@ -109,13 +109,13 @@ cat(sprintf(
 ```
 
 ```{r}
-#| label: fig-2-offmap
+#| label: chart-2-offmap
 #| echo: false
 fig_2_offmap(frequency)
 ```
 
 ```{r}
-#| label: fig-2-note
+#| label: chart-2-note
 #| echo: false
 #| output: asis
 significance_note(meta, "river_flooding_frequency.csv")
@@ -124,7 +124,7 @@ significance_note(meta, "river_flooding_frequency.csv")
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(frequency))
 ```

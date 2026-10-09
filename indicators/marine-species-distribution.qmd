@@ -25,7 +25,7 @@ southeast <- read_indicator(REPO, "marine_species_southeast.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "marine_species_latitude_depth.csv", ref = 3)
@@ -37,7 +37,7 @@ figure_caption(meta, "marine_species_latitude_depth.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(overall)
 ```
@@ -48,7 +48,7 @@ These graphs show the annual change in latitude (movement in miles) and depth (f
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(overall), digits = 2)
 ```
@@ -58,7 +58,7 @@ knitr::kable(fig_1_table(overall), digits = 2)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "marine_species_northeast.csv", ref = 3)
@@ -70,7 +70,7 @@ figure_caption(meta, "marine_species_northeast.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(northeast)
 ```
@@ -81,7 +81,7 @@ This chart shows the annual centers of biomass for three species in the northeas
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(northeast), digits = 2)
 ```
@@ -91,7 +91,7 @@ knitr::kable(fig_2_table(northeast), digits = 2)
 ### Figure 3
 
 ```{r}
-#| label: fig-3-caption
+#| label: caption-3
 #| echo: false
 #| output: asis
 figure_caption(meta, "marine_species_bering_sea.csv", ref = 3)
@@ -103,7 +103,7 @@ figure_caption(meta, "marine_species_bering_sea.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-3
+#| label: chart-3
 #| echo: false
 fig_3(bering)
 ```
@@ -114,7 +114,7 @@ This chart shows the annual centers of biomass for three species in the eastern 
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-3-table
+#| label: table-3
 #| echo: false
 knitr::kable(fig_3_table(bering), digits = 2)
 ```
@@ -124,7 +124,7 @@ knitr::kable(fig_3_table(bering), digits = 2)
 ### Figure 4
 
 ```{r}
-#| label: fig-4-caption
+#| label: caption-4
 #| echo: false
 #| output: asis
 figure_caption(meta, "marine_species_southeast.csv", ref = 3)
@@ -136,7 +136,7 @@ figure_caption(meta, "marine_species_southeast.csv", ref = 3)
 </div>
 
 ```{r}
-#| label: fig-4
+#| label: chart-4
 #| echo: false
 fig_4(southeast)
 ```
@@ -147,7 +147,7 @@ This chart shows the annual centers of biomass for three species in the southeas
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-4-table
+#| label: table-4
 #| echo: false
 knitr::kable(fig_4_table(southeast), digits = 2)
 ```
@@ -165,7 +165,7 @@ knitr::kable(fig_4_table(southeast), digits = 2)
 
 ## Background
 
-Changes in water temperature can affect the environments where fish, shellfish, and other marine species live. Certain fish species naturally migrate in response to seasonal temperature changes, moving northward or to deeper, cooler waters in the summer and migrating back during the winter. As climate change causes the oceans to become warmer year-round (see the Ocean Heat and Sea Surface Temperature indicators), however, populations of some species may adapt by shifting away from areas that have become too warm and toward areas that were previously cooler. Along U.S. coasts, this means a shift northward or to deeper waters that may have a more suitable temperature. As smaller prey species shift their habitats, larger predator species may follow them.
+Changes in water temperature can affect the environments where fish, shellfish, and other marine species live. Certain fish species naturally migrate in response to seasonal temperature changes, moving northward or to deeper, cooler waters in the summer and migrating back during the winter. As climate change causes the oceans to become warmer year-round (see the Ocean Heat and [Sea Surface Temperature](sea-surface-temperature.qmd) indicators), however, populations of some species may adapt by shifting away from areas that have become too warm and toward areas that were previously cooler. Along U.S. coasts, this means a shift northward or to deeper waters that may have a more suitable temperature. As smaller prey species shift their habitats, larger predator species may follow them.
 
 Marine species represent a particularly good indicator of warming oceans because they are sensitive to climate and because they have been studied and tracked for many years. Fish are especially mobile, and they may shift their location more easily than species on land because they face fewer physical barriers.^[1](#ref-1)^ Also, many marine species, especially fish, do not have fixed nesting places or dwellings that might otherwise compel them to stay in one place. Populations of many marine species have been measured consistently for several decades across various types of ocean habitats. Tracking data from many species is useful because if a change in behavior or distribution occurs across a large range of species, it is more likely the result of a more systematic or common cause.
 

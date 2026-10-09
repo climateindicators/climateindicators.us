@@ -24,7 +24,7 @@ jurisdiction <- read_indicator(REPO, "lyme_incidence_by_jurisdiction.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "lyme_incidence_national.csv")
@@ -37,7 +37,7 @@ figure_caption(meta, "lyme_incidence_national.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(national)
 ```
@@ -57,7 +57,7 @@ Data source: CDC, 2024^[8](#ref-8)^
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(national), digits = 1)
 ```
@@ -67,7 +67,7 @@ knitr::kable(fig_1_table(national), digits = 1)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "lyme_incidence_by_jurisdiction.csv")
@@ -80,7 +80,7 @@ figure_caption(meta, "lyme_incidence_by_jurisdiction.csv")
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(jurisdiction)
 ```
@@ -101,7 +101,7 @@ Data source: CDC, 2024^[8](#ref-8)^
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(jurisdiction), row.names = FALSE)
 ```

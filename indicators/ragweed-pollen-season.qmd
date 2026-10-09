@@ -25,7 +25,7 @@ stations <- read_indicator(REPO, "ragweed_pollen_season_change_by_location.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "ragweed_pollen_season_change_by_location.csv")
@@ -37,7 +37,7 @@ figure_caption(meta, "ragweed_pollen_season_change_by_location.csv")
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(stations)
 ```
@@ -47,7 +47,7 @@ This figure shows how the length of ragweed pollen season changed at 11 location
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(stations))
 ```

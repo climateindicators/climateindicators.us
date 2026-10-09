@@ -26,7 +26,7 @@ winter <- read_indicator(REPO, "residential_energy_use_winter_natural_gas_and_he
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "residential_energy_use_summer_electricity_and_cooling.csv")
@@ -38,7 +38,7 @@ figure_caption(meta, "residential_energy_use_summer_electricity_and_cooling.csv"
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(summer)
 ```
@@ -48,7 +48,7 @@ This graph shows the amount of electricity used by the average American during t
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(summer), digits = 1)
 ```
@@ -58,7 +58,7 @@ knitr::kable(fig_1_table(summer), digits = 1)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "residential_energy_use_winter_natural_gas_and_heating.csv")
@@ -70,7 +70,7 @@ figure_caption(meta, "residential_energy_use_winter_natural_gas_and_heating.csv"
 </div>
 
 ```{r}
-#| label: fig-2
+#| label: chart-2
 #| echo: false
 fig_2(winter)
 ```
@@ -80,7 +80,7 @@ This graph shows the amount of natural gas used by the average American during t
 <details><summary>Show the data behind this figure</summary>
 
 ```{r}
-#| label: fig-2-table
+#| label: table-2
 #| echo: false
 knitr::kable(fig_2_table(winter), digits = 1)
 ```

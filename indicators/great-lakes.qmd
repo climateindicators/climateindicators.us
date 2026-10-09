@@ -25,7 +25,7 @@ daily        <- read_indicator(REPO, "great_lakes_temp_daily.csv")
 ### Figure 1
 
 ```{r}
-#| label: fig-1-caption
+#| label: caption-1
 #| echo: false
 #| output: asis
 figure_caption(meta, "great_lakes_water_levels.csv", ref = 8)
@@ -37,7 +37,7 @@ figure_caption(meta, "great_lakes_water_levels.csv", ref = 8)
 </div>
 
 ```{r}
-#| label: fig-1
+#| label: chart-1
 #| echo: false
 fig_1(water_levels)
 ```
@@ -48,7 +48,7 @@ This figure displays how water levels in each of the Great Lakes have changed si
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-1-table
+#| label: table-1
 #| echo: false
 knitr::kable(fig_1_table(water_levels), digits = 2)
 ```
@@ -59,7 +59,7 @@ knitr::kable(fig_1_table(water_levels), digits = 2)
 ### Figure 2
 
 ```{r}
-#| label: fig-2-caption
+#| label: caption-2
 #| echo: false
 #| output: asis
 figure_caption(meta, "great_lakes_temp_annual.csv", ref = 9)
@@ -72,13 +72,13 @@ figure_caption(meta, "great_lakes_temp_annual.csv", ref = 9)
 </div>
 
 ```{r}
-#| label: fig-2-annual
+#| label: chart-2-annual
 #| echo: false
 fig_2_annual(annual)
 ```
 
 ```{r}
-#| label: fig-2-daily
+#| label: chart-2-daily
 #| echo: false
 fig_2_daily(daily)
 ```
@@ -93,7 +93,7 @@ Annual averages:
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-2-annual-table
+#| label: table-2-annual
 #| echo: false
 knitr::kable(fig_2_annual_table(annual), digits = 2)
 ```
@@ -103,7 +103,7 @@ Daily averages by period:
 
 ::: {.table-scroll}
 ```{r}
-#| label: fig-2-daily-table
+#| label: table-2-daily
 #| echo: false
 knitr::kable(fig_2_daily_table(daily), digits = 2)
 ```

@@ -1,0 +1,161 @@
+---
+title: "Ocean Acidity"
+description: "This indicator describes changes in the chemistry of the ocean that relate to the amount of carbon dioxide dissolved in the water."
+categories: [Oceans]
+execute:
+  eval: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+source(here::here("R", "common.R"))
+source(here::here("R", "ocean-acidity.R"))
+
+meta    <- read_meta(REPO)
+acidity <- read_indicator(REPO, "ocean_carbon_dioxide_acidity.csv")
+```
+
+This indicator describes changes in the chemistry of the ocean that relate to the amount of carbon dioxide dissolved in the water.
+
+## Figures
+
+::::: {.panel-tabset}
+
+### Figure 1
+
+```{r}
+#| label: caption-1
+#| echo: false
+#| output: asis
+figure_caption(meta, "ocean_carbon_dioxide_acidity.csv")
+```
+
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/ocean-acidity/main/data/ocean_carbon_dioxide_acidity.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/ocean-acidity/main/data-raw/ocean-acidity_fig-1.csv" download><i class="bi bi-filetype-csv"></i> EPA source data (CSV)</a>
+</div>
+
+```{r}
+#| label: chart-1
+#| echo: false
+fig_1(acidity)
+```
+
+This figure shows the relationship between changes in ocean carbon dioxide levels (measured in the left column as a partial pressure—a common way of measuring the amount of a gas) and acidity (measured as pH in the right column). The data come from two observation stations in the North Atlantic Ocean (Bermuda and Canary Islands), one in the Caribbean Sea (Cariaco), and one in the Pacific (Hawaii). The up-and-down pattern shows the influence of seasonal variations.
+
+As in EPA's figure, carbon dioxide is in the left column and pH in the right, with one station per row. Every panel in a column shares the same vertical scale, so stations can be compared directly.
+
+Data sources: Bates, 2016;^[6](#ref-6)^ González-Dávila, 2012;^[7](#ref-7)^ University of South Florida, 2021;^[8](#ref-8)^ University of Hawaii, 2023^[9](#ref-9)^
+
+<details><summary>Show the data behind this figure</summary>
+
+::: {.table-scroll}
+```{r}
+#| label: table-1
+#| echo: false
+knitr::kable(fig_1_table(acidity), row.names = FALSE)
+```
+:::
+
+</details>
+
+### Figure 2
+
+**Figure 2. Changes in Aragonite Saturation of the World’s Oceans, 1880–2015**
+
+Data source: Woods Hole Oceanographic Institution, 2016^[10](#ref-10)^ <br> Web update: August 2016
+
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/ocean-acidity/main/images/acidity_download2_2024.png" download><i class="bi bi-filetype-png"></i> Figure image (PNG)</a>
+</div>
+
+![Figure 2. Changes in Aragonite Saturation of the World’s Oceans, 1880–2015](https://raw.githubusercontent.com/climateindicators/ocean-acidity/main/images/acidity_download2_2024.png){fig-alt="World map of the change in aragonite saturation at the ocean surface between the 1880s and 2006–2015, on a scale from about −0.75 (dark red) to 0 (dark blue). Saturation has fallen almost everywhere. The largest decreases, shown in red and orange, are in tropical and subtropical waters, especially the western Pacific, the waters around Indonesia and northern Australia, and parts of the central Pacific and North Atlantic. Smaller decreases, in green and blue, are in polar and subpolar waters." fig-align="center"}
+
+This map shows changes in the aragonite saturation level of ocean surface waters between the 1880s and the most recent decade (2006–2015). Aragonite is a form of calcium carbonate that many marine animals use to build their skeletons and shells. The lower the saturation level, the more difficult it is for organisms to build and maintain their skeletons and shells. A negative change represents a decrease in saturation.
+
+EPA publishes this map as an image only, with no underlying data file, so there is no data table for this figure.
+
+### pH Scale
+
+**pH Scale**
+
+Image recreated from: Environment Canada, 2008,^[4](#ref-4)^ with additional data from IPCC, 2014^[5](#ref-5)^ <br> Web update: August 2016
+
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/ocean-acidity/main/images/acidity_download-ph-scale_2021.png" download><i class="bi bi-filetype-png"></i> Figure image (PNG)</a>
+</div>
+
+![pH Scale](https://raw.githubusercontent.com/climateindicators/ocean-acidity/main/images/acidity_download-ph-scale_2021.png){fig-alt="Vertical pH scale from 1 (most acidic, red) to 14 (most alkaline, dark blue), with 7 marked neutral. Common substances are placed along it: battery acid at 1, lemon juice at 2, vinegar at 3, milk near 6.5, sea water and baking soda near 8 to 9, milk of magnesia at 10.5, ammonia at 12, and lye at 13. Bands mark the range of acid rain, the pH at which adult fish die and fish reproduction is affected, the normal ranges of precipitation and stream pH, and the range around pH 8 below which corals and ocean shellfish are less able to produce skeletons and shells." fig-align="center"}
+
+Acidity is commonly measured using the pH scale. Pure water has a pH of about 7, which is considered neutral. A substance with a pH less than 7 is considered to be acidic, while a substance with a pH greater than 7 is considered to be basic or alkaline. The lower the pH, the more acidic the substance. Like the well-known Richter scale for measuring earthquakes, the pH scale is based on powers of 10, which means a substance with a pH of 3 is 10 times more acidic than a substance with a pH of 4. For more information about pH, visit: [www.epa.gov/acidrain/what-acid-rain](https://19january2025snapshot.epa.gov/acidrain/what-acid-rain).
+
+EPA publishes this graphic as an image only, with no underlying data file, so there is no data table for it.
+
+:::::
+
+## Key Points
+
+- Measurements made over the last few decades have demonstrated that ocean carbon dioxide levels have risen in response to increased carbon dioxide in the atmosphere, leading to an increase in acidity (that is, a decrease in pH) (Figure 1).
+- Historical modeling suggests that since the 1880s, increased carbon dioxide has led to lower aragonite saturation levels in the oceans around the world, which makes it more difficult for certain organisms to build and maintain their skeletons and shells (Figure 2).
+- The largest decreases in aragonite saturation have occurred in tropical waters (Figure 2); however, decreases in cold areas may be of greater concern because colder waters typically have lower aragonite saturation levels to begin with.^[3](#ref-3)^
+
+## Background
+
+The ocean plays an important role in regulating the amount of carbon dioxide in the atmosphere. As atmospheric concentrations of carbon dioxide rise (see the Atmospheric Concentrations of Greenhouse Gases indicator), the ocean absorbs more carbon dioxide. Because of the slow mixing time between surface waters and deeper waters, it can take hundreds to thousands of years to establish this balance. From 1750 to 2019, oceans absorbed about 25 percent of the carbon dioxide emitted into the atmosphere by human activities, according to data in the IPCC Sixth Assessment Report (total human emissions of 685 ± 75 PgC and ocean uptake of 170 ± 20 PgC).^[1](#ref-1)^
+
+Although the ocean’s ability to take up carbon dioxide prevents atmospheric levels from climbing even higher, rising levels of carbon dioxide dissolved in the ocean can have a negative effect on some marine life. Carbon dioxide reacts with sea water to produce carbonic acid. The resulting increase in acidity (measured by lower pH values) changes the balance of minerals in the water. This makes it more difficult for corals, some types of plankton, and other creatures to produce a mineral called calcium carbonate, which is the main ingredient in their hard skeletons or shells. Thus, declining pH can make it more difficult for these animals to thrive. This can lead to broader changes in the overall structure of ocean and coastal ecosystems, and can ultimately affect fish and shellfish populations and the people, communities, or Tribes who depend on them for jobs or subsistence.^[2](#ref-2)^
+
+While changes in ocean pH and mineral saturation caused by the uptake of atmospheric carbon dioxide generally occur over many decades, these properties can fluctuate over shorter periods, especially in coastal and surface waters. For example, increased photosynthesis during the day and during the summer leads to natural fluctuations in pH. Acidity also varies with water temperature.
+
+## About the Indicator
+
+This indicator describes trends in pH and related properties of ocean water, based on a combination of direct observations, calculations, and modeling.
+
+Figure 1 shows pH values and levels of dissolved carbon dioxide at four locations that have collected measurements consistently over the last few decades. These data have been either measured directly or calculated from related measurements, such as dissolved inorganic carbon and alkalinity. Data come from two stations in the Atlantic Ocean (Bermuda and the Canary Islands), one in the Caribbean Sea (Cariaco Basin), and one in the Pacific (Hawaii).
+
+The global map in Figure 2 shows changes over time in aragonite saturation level. Aragonite is a specific form of calcium carbonate that many organisms produce and use to build their skeletons and shells, and the saturation state is a measure of how easily aragonite can dissolve in the water. The lower the saturation level, the more difficult it is for organisms to build and maintain their protective skeletons and shells. This map was created by comparing average conditions during the 1880s with average conditions during the most recent 10 years of available data (2006–2015). Aragonite saturation has only been measured at selected locations during the last few decades, but it can be calculated reliably for different times and locations based on the relationships scientists have observed among aragonite saturation, pH, dissolved carbon, water temperature, concentrations of carbon dioxide in the atmosphere, and other factors that can be measured. Thus, while Figure 2 was created using a computer model, it is based on measurements.
+
+## Indicator Notes
+
+This indicator focuses on surface waters, which can absorb carbon dioxide from the atmosphere within a few months.^[3](#ref-3)^ It can take much longer for changes in pH and mineral saturation to spread to deeper waters, so the full effect of increased atmospheric carbon dioxide concentrations on ocean acidity may not be seen for many decades, if not centuries. Studies suggest that the impacts of ocean acidification may be greater at depth, because the aragonite saturation level is naturally lower in deeper waters.^[3](#ref-3)^
+
+Ocean chemistry is not uniform around the world, so local conditions can cause pH or aragonite saturation measurements to differ from the global average. For example, carbon dioxide dissolves more readily in cold water than in warm water, so colder regions could experience greater impacts from acidity than warmer regions. Air and water pollution also lead to increased acidity in some areas.
+
+## Data Sources
+
+Data for Figure 1 came from four studies: the Bermuda Atlantic Time-Series Study, the European Station for Time-Series in the Ocean (Canary Islands), the Carbon Retention in a Colored Ocean (CARIACO) program (Cariaco Basin), and the Hawaii Ocean Time-Series. Bermuda data are available at: <https://bats.bios.asu.edu>. Canary Islands data are available at: <https://plocan.eu/en/installations/ocean-observatory>, and Cariaco Basin data are available at: <https://erddap.bco-dmo.org/erddap/tabledap/bcodmo_dataset_3093.htmlTable>. Hawaii data are available at: <https://hahana.soest.hawaii.edu/hot/hotco2/HOT_surface_CO2.txt>.
+
+The map in Figure 2 was created by the National Oceanic and Atmospheric Administration and the Woods Hole Oceanographic Institution using Community Earth System Model data. Related information can be found at: [www.cesm.ucar.edu/models](https://www.cesm.ucar.edu/models).
+
+## Technical Documentation
+
+```{r}
+#| label: td-link
+#| echo: false
+#| output: asis
+technical_documentation_link(meta)
+```
+
+## References
+
+<ol class="references">
+  <li id="ref-1">Canadell, J. G., Monteiro, P. M. S., Costa, M. H., Cotrim da Cunha, L., Cox, P. M., Eliseev, A. V., Henson, S., Ishii, M., Jaccard, S., Koven, C., Lohila, A., Patra, P. K., Piao, S., Rogelj, J., Syampungani, S., Zaehle, S., & Zickfeld, K. (2021). Chapter 5: Global carbon and other biogeochemical cycles and feedbacks. In IPCC (Intergovernmental Panel on Climate Change), <em>Climate change 2021—The physical science basis: Working Group I contribution to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change</em>. Cambridge University Press. https://doi.org/10.1017/9781009157896.007</li>
+  <li id="ref-2">Bednaršek, N., Tarling, G. A., Bakker, D. C. E., Fielding, S., Jones, E. M., Venables, H. J., Ward, P., Kuzirian, A., Lézé, B., Feely, R. A., & Murphy, E. J. (2012). Extensive dissolution of live pteropods in the Southern Ocean. <em>Nature Geoscience</em>, <em>5</em>(12), 881–885. https://doi.org/10.1038/ngeo1635</li>
+  <li id="ref-3">Feely, R., Doney, S., & Cooley, S. (2009). Ocean acidification: Present conditions and future changes in a high-CO<sub>2</sub> world. <em>Oceanography</em>, <em>22</em>(4), 36–47. https://doi.org/10.5670/oceanog.2009.95</li>
+  <li id="ref-4">Environment Canada. (2008). <em>Acid rain</em>. Retrieved April 16, 2024, from https://web.archive.org/web/20130312025534/http://www.ec.gc.ca/eau-water/default.asp?lang=En&n=FDF30C16-1</li>
+  <li id="ref-5">IPCC (Intergovernmental Panel on Climate Change). (2014). <em>Climate change 2014—Impacts, adaptation, and vulnerability: Working Group II contribution to the IPCC Fifth Assessment Report of the Intergovernmental Panel on Climate Change</em> (R. K. Pachauri & L. A. Meyer, Eds.). Cambridge University Press. www.ipcc.ch/report/ar5/syr</li>
+  <li id="ref-6">Bates, N. R. (2016). Update to data originally published in Bates, N. R., Best, M. H. P., Neely, K., Garley, R., Dickson, A. G., & Johnson, R. J. (2012). Detecting anthropogenic carbon dioxide uptake and ocean acidification in the North Atlantic Ocean. <em>Biogeosciences</em>, <em>9</em>(7), 2509–2522. https://doi.org/10.5194/bg-9-2509-2012</li>
+  <li id="ref-7">González-Dávila, M. (2012). Update to data originally published in González-Dávila, M., Santana-Casiano, J. M., Rueda, M. J., & Llinás, O. (2010). The water column distribution of carbonate system variables at the ESTOC site from 1995 to 2004. <em>Biogeosciences</em>, <em>7</em>(10), 3067–3081. https://doi.org/10.5194/bg-7-3067-2010</li>
+  <li id="ref-8">University of South Florida. (2021). <em>Carbon Retention in a Colored Ocean (CARIACO) Ocean Time-Series Program</em> [Data set]. Retrieved March 1, 2021, from https://erddap.bco-dmo.org/erddap/tabledap/bcodmo_dataset_3093.htmlTable</li>
+  <li id="ref-9">University of Hawai'i. (2023). <em>Hawaii Ocean Time-Series (HOT)</em> [Data set]. Retrieved March 12, 2024, from https://hahana.soest.hawaii.edu/hot/hotco2/HOT_surface_CO2.txt</li>
+  <li id="ref-10">Woods Hole Oceanographic Institution. (2016). Update to data originally published in Feely, R., Doney, S., & Cooley, S. (2009). Ocean acidification: Present conditions and future changes in a high-CO2 world. <em>Oceanography</em>, <em>22</em>(4), 36–47. https://doi.org/10.5670/oceanog.2009.95</li>
+</ol>
+
+::: {.callout-note appearance="simple" icon=false}
+Text on this page is EPA's own published wording (a U.S. Government work, not
+subject to domestic copyright), extracted from EPA's published indicator page.
+Data, figure images, and the full extraction pipeline are maintained in the
+[ocean-acidity](https://github.com/climateindicators/ocean-acidity)
+repository, which this page reads its data from directly.
+:::
