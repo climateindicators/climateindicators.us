@@ -59,6 +59,28 @@ Current indicator repositories:
 | U.S. and Global Temperature | `us-and-global-temperature` |
 | A Closer Look: Temperature and Drought in the Southwest | `temperature-and-drought-in-the-southwest` |
 | Stream Temperature | `stream-temperature` |
+| Antarctic Sea Ice | `antarctic-sea-ice` |
+| A Closer Look: Land Loss Along the Atlantic Coast | `atlantic-coast` |
+| Bird Wintering Ranges | `bird-wintering-ranges` |
+| Community Connection: Cherry Blossom Bloom Dates in Washington, D.C. | `cherry-blossom-bloom` |
+| Drought | `drought-new` |
+| Great Lakes Water Levels and Temperatures | `great-lakes` |
+| Heat Waves | `heat-waves` |
+| Heavy Precipitation | `heavy-precipitation` |
+| High and Low Temperatures | `high-and-low-temperatures` |
+| Ice Sheets | `ice-sheets` |
+| Lake Temperature | `lake-temperature` |
+| Leaf and Bloom Dates | `leaf-and-bloom-dates` |
+| Marine Species Distribution | `marine-species-distribution` |
+| Ocean Acidity | `ocean-acidity` |
+| Ragweed Pollen Season | `ragweed-pollen-season` |
+| River Flooding | `river-flooding` |
+| Sea Surface Temperature | `sea-surface-temperature` |
+| Seasonal Temperature | `seasonal-temperature` |
+| Tribal Connection: Trends in Stream Temperature in the Snake River | `snake-river` |
+| Streamflow | `streamflow` |
+| Tropical Cyclone Activity | `tropical-cyclone-activity` |
+| Wildfires | `wildfires` |
 
 Because the data is fetched over the network, rendering requires an internet
 connection, and `curl` must stay in `DESCRIPTION` — readr only *suggests* it,
