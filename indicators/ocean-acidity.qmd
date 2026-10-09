@@ -44,7 +44,7 @@ fig_1(acidity)
 
 This figure shows the relationship between changes in ocean carbon dioxide levels (measured in the left column as a partial pressure—a common way of measuring the amount of a gas) and acidity (measured as pH in the right column). The data come from two observation stations in the North Atlantic Ocean (Bermuda and Canary Islands), one in the Caribbean Sea (Cariaco), and one in the Pacific (Hawaii). The up-and-down pattern shows the influence of seasonal variations.
 
-EPA's figure puts carbon dioxide in a left column and pH in a right column. Here carbon dioxide is the top panel and pH the bottom panel, with all four stations on shared axes. Hover a line to pick out one station.
+As in EPA's figure, carbon dioxide is in the left column and pH in the right, with one station per row. Every panel in a column shares the same vertical scale, so stations can be compared directly.
 
 Data sources: Bates, 2016;^[6](#ref-6)^ González-Dávila, 2012;^[7](#ref-7)^ University of South Florida, 2021;^[8](#ref-8)^ University of Hawaii, 2023^[9](#ref-9)^
 

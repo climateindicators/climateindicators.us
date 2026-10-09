@@ -45,8 +45,7 @@ website:
         text: "Methodology"
         href: methodology.qmd
       - icon: leaf
-        text: "Applying and Advancing Climate Indicators"
-        href: applying-and-advancing-climate-indicators.qmd
+
 
 
 
