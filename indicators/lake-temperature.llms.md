@@ -17,8 +17,6 @@ Web update: April 2021
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/lake-temperature/main/data/lake_temperature_fig1.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/lake-temperature/main/data-raw/lake-temp_fig-1_data.csv)
 
-Figure 1
-
 This map shows the total change in the average July–September surface water temperatures in 34 North American lakes from 1985 to 2009, as measured by satellites. Red circles represent warming; blue circles represent cooling. Larger circles indicate larger changes. Circles with black borders represent lakes where the trend was statistically significant.
 
 Show the data behind this figure
@@ -59,8 +57,6 @@ Show the data behind this figure
 | 3   | Lago de Chapala   | 20.23°N  | 102.90°W  | 0.05              | No          |
 | 8   | Great Bear Lake   | 66.00°N  | 120.32°W  | -0.43             | No          |
 | 13  | Kasba Lake        | 60.32°N  | 102.11°W  | -0.81             | No          |
-
-Figure 2
 
 ## Key Points
 

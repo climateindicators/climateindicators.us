@@ -17,8 +17,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/marine-species-distribution/main/data/marine_species_latitude_depth.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/marine-species-distribution/main/data-raw/marine-species_fig-1.csv)
 
-Figure 1
-
 These graphs show the annual change in latitude (movement in miles) and depth (feet) of 41 marine species along the Northeast coast, 58 in the eastern Bering Sea, and 58 along the Southeast coast. The multi-region average consists of 157 unique species. Changes in the centers of biomass have been aggregated across all species and by region. For each region, the change in latitude and change in depth are set at zero for a base year, 1989.
 
 Show the data behind this figure
@@ -73,8 +71,6 @@ Show the data behind this figure
 | 2021 | 45.89 | 32.33 | 15.84 | -6.62 | NA | NA | NA | NA |
 | 2022 | 50.42 | 34.57 | 17.67 | -4.39 | NA | NA | NA | NA |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Average Location of Three Fish and Shellfish Species in the Northeast, 1974–2022**
@@ -83,8 +79,6 @@ Data source: NOAA, 2024^([3](#ref-3))\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/marine-species-distribution/main/data/marine_species_northeast.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/marine-species-distribution/main/data-raw/marine-species_fig-2.csv)
-
-Figure 3
 
 This chart shows the annual centers of biomass for three species in the northeastern United States from 1974 to 2022. Dots are shaded from light to dark to show change over time.
 
@@ -231,8 +225,6 @@ Show the data behind this figure
 | Red hake | 2021 | 42.56 | -68.57 | 102.12 |
 | Red hake | 2022 | 42.60 | -68.52 | 105.11 |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. Average Location of Three Fish and Shellfish Species in the Bering Sea, 1985–2022**
@@ -241,8 +233,6 @@ Data source: NOAA, 2024^([3](#ref-3))\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/marine-species-distribution/main/data/marine_species_bering_sea.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/marine-species-distribution/main/data-raw/marine-species_fig-3.csv)
-
-Figure 5
 
 This chart shows the annual centers of biomass for three species in the eastern Bering Sea from 1985 to 2022. Dots are shaded from light to dark to show change over time.
 
@@ -359,8 +349,6 @@ Show the data behind this figure
 | Pacific halibut | 2021 | 58.04 | -166.17 | 48.79 |
 | Pacific halibut | 2022 | 58.10 | -166.11 | 53.11 |
 
-Figure 6
-
 ## Figure 4
 
 **Figure 4. Average Location of Three Fish and Shellfish Species in the Southeast, 1989–2019**
@@ -369,8 +357,6 @@ Data source: NOAA, 2024^([3](#ref-3))\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/marine-species-distribution/main/data/marine_species_southeast.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/marine-species-distribution/main/data-raw/marine-species_fig-4.csv)
-
-Figure 7
 
 This chart shows the annual centers of biomass for three species in the southeastern United States from 1989 to 2019. Dots are shaded from light to dark to show change over time.
 
@@ -472,8 +458,6 @@ Show the data behind this figure
 | Atlantic croaker | 2018 | 33.69 | -78.22 | 143.34 |
 | Atlantic croaker | 2019 | 33.28 | -78.56 | 114.85 |
 
-Figure 8
-
 ## Key Points
 
 - The average center of biomass for 157 marine fish and invertebrate species shifted northward by nearly 17 miles between 1989 and 2019 (see Figure 1). These species also moved an average of 0.6 feet deeper.
@@ -483,7 +467,7 @@ Figure 8
 
 ## Background
 
-Changes in water temperature can affect the environments where fish, shellfish, and other marine species live. Certain fish species naturally migrate in response to seasonal temperature changes, moving northward or to deeper, cooler waters in the summer and migrating back during the winter. As climate change causes the oceans to become warmer year-round (see the Ocean Heat and Sea Surface Temperature indicators), however, populations of some species may adapt by shifting away from areas that have become too warm and toward areas that were previously cooler. Along U.S. coasts, this means a shift northward or to deeper waters that may have a more suitable temperature. As smaller prey species shift their habitats, larger predator species may follow them.
+Changes in water temperature can affect the environments where fish, shellfish, and other marine species live. Certain fish species naturally migrate in response to seasonal temperature changes, moving northward or to deeper, cooler waters in the summer and migrating back during the winter. As climate change causes the oceans to become warmer year-round (see the Ocean Heat and [Sea Surface Temperature](../indicators/sea-surface-temperature.llms.md) indicators), however, populations of some species may adapt by shifting away from areas that have become too warm and toward areas that were previously cooler. Along U.S. coasts, this means a shift northward or to deeper waters that may have a more suitable temperature. As smaller prey species shift their habitats, larger predator species may follow them.
 
 Marine species represent a particularly good indicator of warming oceans because they are sensitive to climate and because they have been studied and tracked for many years. Fish are especially mobile, and they may shift their location more easily than species on land because they face fewer physical barriers.^([1](#ref-1)) Also, many marine species, especially fish, do not have fixed nesting places or dwellings that might otherwise compel them to stay in one place. Populations of many marine species have been measured consistently for several decades across various types of ocean habitats. Tracking data from many species is useful because if a change in behavior or distribution occurs across a large range of species, it is more likely the result of a more systematic or common cause.
 

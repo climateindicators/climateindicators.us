@@ -12,9 +12,17 @@ Each indicator below tracks one measurable signal of a changing climate in the U
 
 Deaths of U.S. workers attributed to heat exposure on the job.
 
+##### A Closer Look: Land Loss Along the Atlantic Coast
+
+This feature provides a closer look at one consequence of sea level rise along the Atlantic coast: the conversion of land to open water.
+
 ##### A Closer Look: Temperature and Drought in the Southwest
 
 A closer look at trends in temperature and drought in the southwestern United States.
+
+##### Antarctic Sea Ice
+
+This indicator tracks the extent of sea ice around Antarctica.
 
 ##### Bird Wintering Ranges
 
@@ -68,6 +76,10 @@ This indicator tracks the frequency of heavy precipitation events in the United 
 
 Trends in unusually hot and cold temperatures across the United States.
 
+##### Ice Sheets
+
+This indicator examines the balance between snow accumulation and melting in the ice sheets that cover Greenland and Antarctica.
+
 ##### Lake Temperature
 
 This indicator shows changes in surface water temperatures in North American lakes.
@@ -88,6 +100,10 @@ This indicator tracks the rate of reported Lyme disease cases across the United 
 
 This indicator examines changes in the location of fish, shellfish, and other marine species along U.S. coasts.
 
+##### Ocean Acidity
+
+This indicator describes changes in the chemistry of the ocean that relate to the amount of carbon dioxide dissolved in the water.
+
 ##### Ragweed Pollen Season
 
 How the length of ragweed pollen season has changed at 11 locations across the central United States and Canada since 1995.
@@ -99,6 +115,10 @@ How much electricity and natural gas U.S. homes use for summer cooling and winte
 ##### River Flooding
 
 How the magnitude and frequency of river flooding have changed at stream gauge stations across the United States since 1965.
+
+##### Sea Surface Temperature
+
+This indicator describes global trends in sea surface temperature.
 
 ##### Seasonal Temperature
 

@@ -19,8 +19,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data/hurricane_counts.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data-raw/cyclones_fig-1.csv)
 
-Figure 1
-
 This graph shows the number of hurricanes that formed in the North Atlantic Ocean each year from 1878 to 2022, along with the number that made landfall in the United States. The orange curve shows how the total count in the green curve can be adjusted to attempt to account for the lack of aircraft and satellite observations in early years. All three curves have been smoothed using a five-year average, plotted at the middle year. The most recent average (2018–2022) is plotted at 2020.
 
 Show the data behind this figure
@@ -169,8 +167,6 @@ Show the data behind this figure
 | 2019 | 9.0 | 9.00 | 3.0 |
 | 2020 | 8.6 | 8.60 | 2.6 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. North Atlantic Tropical Cyclone Activity According to the Accumulated Cyclone Energy Index, 1950–2022**
@@ -179,8 +175,6 @@ Data source: NOAA, 2023\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data/accumulated_cyclone_energy_index.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data-raw/cyclones_fig-2.csv)
-
-Figure 3
 
 This figure shows total annual Accumulated Cyclone Energy (ACE) Index values, which account for cyclone strength, duration, and frequency, from 1950 through 2022. The National Oceanic and Atmospheric Administration has defined “near normal,” “above normal,” and “below normal” ranges based on the distribution of ACE Index values over the 70 years from 1951 to 2020.
 
@@ -262,8 +256,6 @@ Show the data behind this figure
 | 2021 |                             151.6 |
 | 2022 |                              97.9 |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. North Atlantic Tropical Cyclone Activity According to the Power Dissipation Index, 1949–2022**
@@ -272,8 +264,6 @@ Data source: Emanuel, 2023\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data/power_dissipation_index_and_sst.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data-raw/cyclones_fig-3.csv)
-
-Figure 5
 
 This figure presents annual values of the Power Dissipation Index (PDI), which accounts for cyclone strength, duration, and frequency. Tropical North Atlantic sea surface temperature trends are provided for reference. Note that sea surface temperature is measured in different units, but the values have been plotted alongside the PDI to show how they compare. The lines have been smoothed using a five-year weighted average, plotted at the middle year. The most recent average (2018–2022) is plotted at 2020.
 
@@ -351,8 +341,6 @@ Show the data behind this figure
 | 2018 |                        82.69 |                    4.48 |
 | 2019 |                        82.72 |                    4.16 |
 | 2020 |                        82.79 |                    4.01 |
-
-Figure 6
 
 ## Key Points
 

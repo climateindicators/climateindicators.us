@@ -17,8 +17,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data/heat_related_workplace_deaths.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/heat-related-workplace-deaths/main/data-raw/heat-related%20workplace%20deaths%20figure%201%2004-30-24.xlsx)
 
-Figure 1
-
 This graph shows the number of reported occupational heat-related deaths in the United States each year. The orange portions of the bars show deaths in the construction sector and the blue portions show deaths in all other sectors of the economy. Total construction sector deaths in 2019 fell below the Bureau of Labor Statistics’ reporting threshold; for that year, BLS combined construction into a single “all-industry” total rather than reporting a sector total (shown in green above). BLS has indicated that data collection for 2020 fell below reporting thresholds (no bar that year).
 
 Show the data behind this figure
@@ -55,8 +53,6 @@ Show the data behind this figure
 | 2019 |           NA |                         NA |             43 |
 | 2021 |           12 |                         24 |             NA |
 | 2022 |           17 |                         26 |             NA |
-
-Figure 2
 
 ## Example 1
 

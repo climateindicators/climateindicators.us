@@ -21,8 +21,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/data/growing_degree_days_change_by_station.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/growing-degree-days/main/data-raw/growing-degree-fig-1.csv)
 
-Figure 1
-
 This map shows trends in the total number of growing degree days per year at 280 weather stations. The color and size of the symbols represent percent change between 1948 and 2023, based on the long-term average rate of change. Hover any station for its exact value.^([9](#ref-9))
 
 This map is rendered here from the same 280 station records behind EPA’s Figure 1, each carrying a latitude, a longitude, and a percent change, with a station’s change encoded continuously by color and size rather than EPA’s discrete legend classes. Those records are maintained in the [growing-degree-days](https://github.com/climateindicators/growing-degree-days) repository and are available for download above and in the table below.
@@ -311,8 +309,6 @@ Show the data behind this figure
 | 39.4408°N | 90.3789°W  | -8.32          |
 | 41.2825°N | 91.7078°W  | -10.20         |
 | 40.4517°N | 99.3803°W  | -10.91         |
-
-Figure 2
 
 ## Key Points
 

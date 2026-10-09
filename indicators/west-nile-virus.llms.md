@@ -17,8 +17,6 @@ Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus-new/main/data/west_nile_virus_incidence_by_year.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus-new/main/data-raw/west-nile_fig-1.csv)
 
-Figure 1
-
 This figure shows the annual incidence of West Nile neuroinvasive disease, which is calculated as the number of new cases per 100,000 people. The graph is based on cases that local and state health departments report to CDC’s national disease tracking system. Neuroinvasive cases, which account for less than 1 percent of people infected with West Nile virus, are those that affect the brain or cause neurologic dysfunction.
 
 Show the data behind this figure
@@ -48,8 +46,6 @@ Show the data behind this figure
 | 2022 | 0.248                    |
 | 2023 | 0.519                    |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Reported West Nile Neuroinvasive Disease Cases by State, 2002-2023**
@@ -58,8 +54,6 @@ Data source: Centers for Disease Control and Prevention, 2024\
 Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus-new/main/data/west_nile_virus_incidence_by_state.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/west-nile-virus-new/main/data-raw/west-nile_fig-2.csv)
-
-Figure 3
 
 This map shows the average annual incidence of West Nile neuroinvasive disease in each state, which is calculated as the average number of new cases per 100,000 people per year from 2002 to 2023. The map is based on cases that local and state health departments report to CDC’s national disease tracking system. Neuroinvasive cases, which account for less than 1 percent of people infected with West Nile virus, are those that affect the brain or cause neurologic dysfunction. EPA published this figure as a map; this page draws it as a sorted bar chart of the same state-level values instead.
 
@@ -118,8 +112,6 @@ Show the data behind this figure
 | Maine            | 0.014                                   |
 | Alaska           | 0.012                                   |
 | Hawaii           | 0.000                                   |
-
-Figure 4
 
 ## Key Points
 

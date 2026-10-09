@@ -19,8 +19,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/leaf-and-bloom-dates/main/data/first_leaf_bloom_deviation_contiguous_48.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/leaf-and-bloom-dates/main/data-raw/leaf-bloom_fig-1.csv)
 
-Figure 1
-
 This figure shows modeled trends in lilac and honeysuckle first leaf dates and first bloom dates across the contiguous 48 states, using the 1981 to 2010 average as a baseline. Positive values indicate that leaf growth and blooming began later in the year, and negative values indicate that leafing and blooming occurred earlier. The thicker lines were smoothed using a nine-year weighted average. Choosing a different long-term average for comparison would not change the shape of the data over time.
 
 Show the data behind this figure
@@ -152,8 +150,6 @@ Show the data behind this figure
 | 2022 | 1.6687764 | 0.3199034 | 2.7515823 | 0.6552812 |
 | 2023 | 0.0202559 | 0.4302384 | -1.4045842 | 0.5380444 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. First Leaf and Bloom Dates in Alaska, 1950-2023**
@@ -162,8 +158,6 @@ Data source: Schwartz, 2024^([3](#ref-3))\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/leaf-and-bloom-dates/main/data/first_leaf_bloom_deviation_alaska.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/leaf-and-bloom-dates/main/data-raw/leaf-bloom_fig-2.csv)
-
-Figure 3
 
 This figure shows modeled trends in lilac and honeysuckle first leaf dates and first bloom dates across Alaska, using the 1981 to 2010 average as a baseline. Positive values indicate that leaf growth and blooming began later in the year, and negative values indicate that leafing and blooming occurred earlier. The thicker lines were smoothed using a nine-year weighted average. Choosing a different long-term average for comparison would not change the shape of the data over time.
 
@@ -246,8 +240,6 @@ Show the data behind this figure
 | 2022 | 1.0909091 | -0.4620005 | -3.6060606 | -2.5144294 |
 | 2023 | 4.0000000 | 0.0992164 | 1.6666667 | -2.1157744 |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. Change in First Leaf Date Between 1951-1960 and 2014-2023**
@@ -256,8 +248,6 @@ Data source: Schwartz, 2024^([3](#ref-3))\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/leaf-and-bloom-dates/main/data/first_leaf_change_by_site.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/leaf-and-bloom-dates/main/data-raw/leaf-bloom_fig-3.csv)
-
-Figure 5
 
 This figure shows modeled trends in lilac and honeysuckle first leaf dates at weather stations across the contiguous 48 states and Alaska. This map compares the average first leaf date for two 10-year periods.
 
@@ -1544,8 +1534,6 @@ Show the data behind this figure
 | 35.92°N  | 86.37°W   | +10.80                           |
 | 32.81°N  | 93.06°W   | +12.83                           |
 
-Figure 6
-
 ## Figure 4
 
 **Figure 4. Change in First Bloom Date Between 1951-1960 and 2014-2023**
@@ -1554,8 +1542,6 @@ Data source: Schwartz, 2024^([3](#ref-3))\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/leaf-and-bloom-dates/main/data/first_bloom_change_by_site.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/leaf-and-bloom-dates/main/data-raw/leaf-bloom_fig-4.csv)
-
-Figure 7
 
 This figure shows modeled trends in lilac and honeysuckle first bloom dates at weather stations across the contiguous 48 states and Alaska. This map compares the average first bloom date for two 10-year periods.
 
@@ -2841,8 +2827,6 @@ Show the data behind this figure
 | 30.94°N  | 95.92°W   | +11.01                            |
 | 33.21°N  | 98.17°W   | +12.17                            |
 | 32.81°N  | 93.06°W   | +14.37                            |
-
-Figure 8
 
 ## Key Points
 

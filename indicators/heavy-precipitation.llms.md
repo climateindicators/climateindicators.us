@@ -19,8 +19,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heavy-precipitation/main/data/extreme_oneday_precipitation.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heavy-precipitation/main/data-raw/heavy-precip_fig-1.csv)
 
-Figure 1
-
 This figure shows the percentage of the land area of the contiguous 48 states where a much greater than normal portion of total annual precipitation has come from extreme single-day precipitation events. The bars represent individual years, while the line is a nine-year weighted average.
 
 Show the data behind this figure
@@ -142,8 +140,6 @@ Show the data behind this figure
 | 2022 |        0.138 |                 0.119 |
 | 2023 |        0.095 |                 0.111 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Unusually High Annual Precipitation in the Contiguous 48 States, 1895-2023**
@@ -152,8 +148,6 @@ Data source: NOAA, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heavy-precipitation/main/data/unusually_high_annual_precipitation.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heavy-precipitation/main/data-raw/heavy-precip_fig-2.csv)
-
-Figure 3
 
 This figure shows the percentage of the land area of the contiguous 48 states that experienced much greater than normal precipitation in any given year, which means it scored 2.0 or above on the annual Standardized Precipitation Index. The thicker line shows a nine-year weighted average that smooths out some of the year-to-year fluctuations.
 
@@ -290,8 +284,6 @@ Show the data behind this figure
 | 2021 |        0.006 |                 0.030 |
 | 2022 |        0.000 |                 0.012 |
 | 2023 |        0.001 |                 0.004 |
-
-Figure 4
 
 ## Key Points
 

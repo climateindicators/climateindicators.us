@@ -19,8 +19,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig1.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx)
 
-Figure 1
-
 The dark blue line shows the annual surface temperature anomaly, and the orange line smooths it into a 5-year average. The teal and maroon lines show two independent satellite analyses (UAH and RSS) of the lower atmosphere, available since 1979. The dashed grey line is the long-term linear trend fit to the surface record. Hover any point for its exact value.
 
 Show the data behind this figure
@@ -151,8 +149,6 @@ Show the data behind this figure
 | 2022 | 1.37 | NA | 1.57 | 1.60 | 1.32 |
 | 2023 | 2.39 | NA | NA | 1.89 | 1.33 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Temperature Changes Worldwide**
@@ -161,8 +157,6 @@ Data source: NOAA, 2024; ERG workbook “1-2 US and Global Temperature 04-21-24.
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig2.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx)
-
-Figure 3
 
 Same shape as Figure 1, at the global scale, except the source data has no separate 5-year average series: the annual surface anomaly, the two satellite records (UAH and RSS), and the long-term trend. Hover any point for its exact value.
 
@@ -294,8 +288,6 @@ Show the data behind this figure
 | 2022 | 1.62 | 1.44 | 1.59 | 1.31 |
 | 2023 | 2.14 | NA | 2.10 | 1.33 |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. Rate of Temperature Change in the United States, 1901-2023**
@@ -304,8 +296,6 @@ Data source: NOAA, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig3.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/temperature_fig-3.csv)
-
-Figure 5
 
 EPA’s own published figure is a map; the underlying data is one rate of change per climate division, not station points or division boundaries, so there is no geometry here to place on a map the way other indicators on this site do. Instead, this chart shows every climate division’s own rate, split by which baseline period it uses: the contiguous 48 states are measured against 1901-2000, and Alaska’s 12 divisions against 1925-2000. Hover any point for its climate division and rate. EPA also publishes an [interactive version of the original map](https://arcg.is/L1iKu).
 
@@ -670,8 +660,6 @@ Show the data behind this figure
 | 5012             | 1925-2000       | +1.567                |
 | 5011             | 1925-2000       | +1.408                |
 | 5010             | 1925-2000       | +0.104                |
-
-Figure 6
 
 ## Key Points
 

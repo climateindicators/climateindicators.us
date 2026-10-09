@@ -17,8 +17,6 @@ Web update: April 2021
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/cold-related-deaths/main/data/cold_deaths_annual.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/cold-related-deaths/main/data-raw/cold-deaths_fig-1.csv)
 
-Figure 1
-
 Show the data behind this figure
 
 | year | Underlying cause of death | Underlying and contributing causes of death |
@@ -61,8 +59,6 @@ Show the data behind this figure
 | 2014 |                     2.917 |                                       5.934 |
 | 2015 |                     2.536 |                                       5.441 |
 | 2016 |                     2.262 |                                          NA |
-
-Figure 2
 
 ## Key Points
 

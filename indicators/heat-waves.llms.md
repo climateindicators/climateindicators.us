@@ -19,8 +19,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-waves/main/data/heat_wave_characteristics_by_decade.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-waves/main/data-raw/heat_waves_fig-1.csv)
 
-Figure 1
-
 This figure shows changes in the number of heat waves per year (frequency); the average length of heat waves in days (duration); the number of days between the first and last heat wave of the year (season length); and how hot the heat waves were, compared with the local temperature threshold for defining a heat wave (intensity). These data were analyzed from 1961 to 2023 for 50 large metropolitan areas. The graphs show averages across all 50 metropolitan areas by decade.
 
 Show the data behind this figure
@@ -35,8 +33,6 @@ Show the data behind this figure
 | 2010s  | 5.96      | 4.04     | 68.52         | 2.36      |
 | 2020s  | 6.29      | 4.30     | 69.94         | 2.53      |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Heat Wave Characteristics in 50 Large U.S. Cities, 1961–2023**
@@ -46,13 +42,9 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-waves/main/data/heat_wave_characteristics_by_city.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-waves/main/data-raw/heat_waves_fig-2.csv)
 
-Figure 3
-
 These maps show changes in the number of heat waves per year (frequency); the average length of heat waves in days (duration); the number of days between the first and last heat wave of the year (season length); and how hot the heat waves were, compared with the local temperature threshold for defining a heat wave (intensity). These data were analyzed from 1961 to 2023 for 50 large metropolitan areas. The size of each circle indicates the total change over the period measured.
 
 Two of EPA’s 50 cities lie outside the map projection used above and are shown separately, on the same colour and size scale:
-
-Figure 4
 
 > **NOTE:**
 >
@@ -113,8 +105,6 @@ Show the data behind this figure
 | Jacksonville | FL | 30.50°N | 81.70°W | +1.09 | +0.31 | +18.29 | -0.14 |
 | Rochester | NY | 43.12°N | 77.67°W | +0.89 | -0.35 | +9.92 | -0.19 |
 
-Figure 5
-
 ## Figure 3
 
 **Figure 3. U.S. Annual Heat Wave Index, 1895–2021**
@@ -123,8 +113,6 @@ Data source: Kunkel, 2022\
 Web update: July 2022
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-waves/main/data/heat_wave_index_annual.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-waves/main/data-raw/heat_waves_fig-3.csv)
-
-Figure 6
 
 This figure shows the annual values of the U.S. Heat Wave Index from 1895 to 2021. These data cover the contiguous 48 states. An index value of 0.2 (for example) could mean that 20 percent of the country experienced one heat wave, 10 percent of the country experienced two heat waves, or some other combination of frequency and area resulted in this value.
 
@@ -259,8 +247,6 @@ Show the data behind this figure
 | 2019 | 0.05            |
 | 2020 | 0.12            |
 | 2021 | 0.23            |
-
-Figure 7
 
 ## Key Points
 

@@ -17,8 +17,6 @@ Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data/global_greenhouse_gas_emissions_fig1.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data-raw/global-ghg-emissions_fig-1.csv)
 
-Figure 1
-
 This figure shows worldwide emissions of carbon dioxide, methane, nitrous oxide, and several fluorinated gases from 1990 to 2015. For consistency, emissions are expressed in million metric tons of carbon dioxide equivalents. These totals include emissions and sinks due to land-use change and forestry.
 
 *HFCs are hydrofluorocarbons, PFCs are perfluorocarbons, and SF6 is sulfur hexafluoride.*
@@ -34,8 +32,6 @@ Show the data behind this figure
 | 2010 |       33521.99 | 7930.31 |       2855.38 |              762.28 |
 | 2015 |       34686.31 | 8314.76 |       2991.77 |             1000.64 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Global Greenhouse Gas Emissions by Sector, 1990-2015**
@@ -44,8 +40,6 @@ Data source: Climate Watch, 2024\
 Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data/global_greenhouse_gas_emissions_fig2.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data-raw/global-ghg-emissions_fig-2.csv)
-
-Figure 3
 
 This figure shows worldwide greenhouse gas emissions by sector from 1990 to 2015. For consistency, emissions are expressed in million metric tons of carbon dioxide equivalents. These totals include emissions and sinks due to land-use change and forestry.
 
@@ -62,8 +56,6 @@ Show the data behind this figure
 | 2010 | 33090.90 | 1139.42 | 5487.85 | 2237.26 | 1465.13 | 1649.40 |
 | 2015 | 34962.50 | 1210.10 | 5657.04 | 2699.83 | 1543.59 | 920.42 |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. Global Carbon Dioxide Emissions by Region, 1990-2021**
@@ -72,8 +64,6 @@ Data source: Climate Watch, 2024\
 Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data/global_greenhouse_gas_emissions_fig3.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/global-greenhouse-emissions/main/data-raw/global-ghg-emissions_fig-3.csv)
-
-Figure 5
 
 This figure shows carbon dioxide emissions from 1990 to 2021 for different regions of the world. These totals do not include emissions or sinks related to land-use change or forestry. Inclusion of land-use change and forestry would increase the apparent emissions from some regions while decreasing the emissions from others.
 
@@ -113,8 +103,6 @@ Show the data behind this figure
 | 2019 | 15117.02 | 6409.67 | 4966.23 | 2777.28 | 2713.79 | 1707.35 | 873.03 | 576.76 | 434.48 |
 | 2020 | 14999.59 | 5887.38 | 4416.15 | 2562.92 | 2597.78 | 1481.01 | 787.04 | 514.11 | 400.44 |
 | 2021 | 15603.66 | 6303.91 | 4722.23 | 2822.56 | 2716.32 | 1617.49 | 824.81 | 522.26 | 407.19 |
-
-Figure 6
 
 ## Key Points
 

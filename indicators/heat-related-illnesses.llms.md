@@ -17,8 +17,6 @@ Web update: August 2016
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-illness-new/main/data/heat_illness_annual_rate.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-illness-new/main/data-raw/heat-illnesses_fig-1.csv)
 
-Figure 1
-
 This graph shows the annual rate of hospitalizations classified as “heat-related” by medical professionals in 20 states that participate in CDC’s hospitalization tracking program, from 2001 to 2010. The rate is based on hospital discharge records for May 1 to September 30 of every year. The rate has been age-adjusted to account for the effects of population change over time—for example, if the proportion of older adults has increased.
 
 Show the data behind this figure
@@ -36,8 +34,6 @@ Show the data behind this figure
 | 2009 |                                 1.4 |
 | 2010 |                                 2.3 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Average Rate of Heat-Related Hospitalizations in 23 States, 2001-2010**
@@ -46,8 +42,6 @@ Data source: CDC, 2016\
 Web update: August 2016
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-illness-new/main/data/heat_illness_rate_by_state.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-illness-new/main/data-raw/heat-illnesses_fig-2.csv)
-
-Figure 3
 
 This map shows the 2001–2010 average rate of hospitalizations classified as “heat-related” by medical professionals in 23 states that participate in CDC’s hospitalization tracking program. Rates are based on hospital discharge records for May 1 to September 30 of every year. Rates have been age-adjusted to account for differences in the population distribution over time and between states—for example, if one state has a higher proportion of older adults than another.
 
@@ -81,8 +75,6 @@ Show the data behind this figure
 | Utah           | 0.74                              |
 | Vermont        | 0.56                              |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. Heat-Related Hospitalizations in 20 States by Sex and Age, 2001–2010**
@@ -91,8 +83,6 @@ Data source: Choudhary and Vaidyanathan, 2014\
 Web update: August 2016
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-illness-new/main/data/heat_illness_by_sex_and_age.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-illness-new/main/data-raw/heat-illnesses_fig-3.csv)
-
-Figure 5
 
 This graph shows the total number of hospitalizations classified as “heat-related” by medical professionals in 20 states that participate in CDC’s hospitalization tracking program, from 2001 to 2010. Totals are broken out by sex and by age group. The graph shows 10-year totals based on hospital discharge records for May 1 to September 30 of every year.
 
@@ -109,8 +99,6 @@ Show the data behind this figure
 | By age group | 15-34  |                   4070 |
 | By age group | 35-64  |                  11486 |
 | By age group | 65+    |                  11889 |
-
-Figure 6
 
 ## Key Points
 

@@ -17,8 +17,6 @@ Web update: February 13, 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temperature_annual_anomaly.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figures%201%20and%203%20-%2001-29-24.xlsx)
 
-Figure 1
-
 This figure shows the average temperature for each season across the contiguous 48 states, as an anomaly from the 1901–2000 average. Winter (orange) swings the widest from year to year and has warmed the most since 1896; spring, summer, and fall have warmed more steadily (see “Show the data behind this figure” for a clearer view of the data).
 
 Show the data behind this figure
@@ -154,8 +152,6 @@ Show the data behind this figure
 | 2022 |   2.49 |   1.31 |   2.55 |  1.18 |
 | 2023 |   2.67 |   0.54 |   1.60 |  2.50 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Change in Seasonal Temperatures by State, 1896–2023**
@@ -164,8 +160,6 @@ Data source: NOAA, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temperature_change_by_state.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figure%202%20-%2002-13-24.xlsx)
-
-Figure 3
 
 These panels show the total change in average seasonal temperature for each of the contiguous 48 states from 1896 to 2023, in degrees Fahrenheit. EPA published this as four maps, one per season; they are drawn here as four ranked bar charts of the same values instead, stacked one above another with every panel ordered by winter’s ranking, so a state’s row can be followed from season to season. All 48 states warmed in winter; a handful of states in the South cooled slightly in summer or fall, shown as the shorter blue bars.
 
@@ -222,8 +216,6 @@ Show the data behind this figure
 | WV    | +2.077 | +1.048 | +0.338 | +0.795 |
 | WY    | +3.595 | +2.718 | +2.444 | +2.174 |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3**
@@ -232,8 +224,6 @@ Data source: NOAA National Centers for Environmental Information (nClimDiv, CONU
 Web update: February 13, 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data/seasonal_temperature_total_change_by_season.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/seasonal-temperature/main/data-raw/seasonal%20temperature%20-%20Figures%201%20and%203%20-%2001-29-24.xlsx)
-
-Figure 5
 
 This figure compares the total long-term change in each season for the contiguous 48 states, derived from an ordinary-least-squares regression trend multiplied by the 127 years of record. Winter’s bar is the tallest by a clear margin.
 
@@ -245,8 +235,6 @@ Show the data behind this figure
 | Spring | +1.941            |
 | Summer | +1.623            |
 | Fall   | +1.589            |
-
-Figure 6
 
 ## Key Points
 

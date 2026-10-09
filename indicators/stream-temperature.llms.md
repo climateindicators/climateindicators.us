@@ -17,8 +17,6 @@ Web update: August 2016
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/stream-temperature/main/data/stream_temperature_chesapeake_sites.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/stream-temperature/main/data-raw/stream-temperature_fig-1.csv)
 
-Figure 1
-
 This map shows the change in water temperature at 129 stream gauges across the Chesapeake Bay region from 1960 to 2014. Red circles show locations where temperatures have increased; blue circles show locations where temperatures have decreased. Filled circles represent sites where the change was statistically significant.
 
 Show the data behind this figure
@@ -154,8 +152,6 @@ Show the data behind this figure
 | 82  | 36.770°N | 77.166°W  | 0.1044              | 5.6376            |
 | 7   | 39.366°N | 75.669°W  | 0.1224              | 6.6096            |
 | 81  | 37.436°N | 77.061°W  | 0.1458              | 7.8732            |
-
-Figure 2
 
 ## Key Points
 

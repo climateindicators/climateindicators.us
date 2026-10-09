@@ -21,8 +21,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/length_of_growing_season_national.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-1.csv)
 
-Figure 1
-
 This figure shows the length of the growing season in the contiguous 48 states compared with a long-term average. For each year, the line represents the number of days shorter or longer than average. The line was smoothed using an 11-year moving average. Choosing a different long-term average for comparison would not change the shape of the data over time.^([2](#ref-2))
 
 Show the data behind this figure
@@ -159,8 +157,6 @@ Show the data behind this figure
 | 2022 | +9.67                               |
 | 2023 | +8.86                               |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Length of Growing Season in the Contiguous 48 States, 1895-2023: West Versus East**
@@ -169,8 +165,6 @@ Data source: Kunkel, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/length_of_growing_season_east_west.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-2.csv)
-
-Figure 3
 
 This figure shows the length of the growing season in the western and eastern United States compared with a long-term average. For each year, the line represents the number of days shorter or longer than average. The lines were smoothed using an 11-year moving average. Choosing a different long-term average for comparison would not change the shape of the data over time.^([2](#ref-2))
 
@@ -308,8 +302,6 @@ Show the data behind this figure
 | 2022 |  7.9566667 |  14.6690909 |
 | 2023 |  6.8183333 |  14.8500000 |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. Change in Length of Growing Season by State, 1895-2023**
@@ -318,8 +310,6 @@ Data source: Kunkel, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/length_of_growing_season_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-3.csv)
-
-Figure 5
 
 This map shows the total change in length of the growing season from 1895 to 2023 for each of the contiguous 48 states.^([3](#ref-3)) It is rendered here as a ranked bar chart rather than EPA’s choropleth map, carrying the same state-level values with the ranking made explicit.
 
@@ -375,8 +365,6 @@ Show the data behind this figure
 | Rhode Island   | +0.00                           |
 | Georgia        | -11.34                          |
 
-Figure 6
-
 ## Figure 4
 
 **Figure 4. Timing of the Last Spring Frost and First Fall Frost in the Contiguous 48 States, 1895-2023**
@@ -385,8 +373,6 @@ Data source: Kunkel, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/length_of_growing_season_frost_timing.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-4.csv)
-
-Figure 7
 
 This figure shows the timing of the last spring frost and the first fall frost in the contiguous 48 states compared with a long-term average. Positive values indicate that the frost occurred later in the year, and negative values indicate that the frost occurred earlier in the year. The lines were smoothed using an 11-year moving average. Choosing a different long-term average for comparison would not change the shape of the data over time.^([2](#ref-2))
 
@@ -524,8 +510,6 @@ Show the data behind this figure
 | 2022 |        -3.4321212 |        6.2330303 |
 | 2023 |        -2.7433333 |        6.1183333 |
 
-Figure 8
-
 ## Figure 5
 
 **Figure 5. Change in Timing of Last Spring Frost by State, 1895-2023**
@@ -534,8 +518,6 @@ Data source: Kunkel, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/last_spring_frost_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-5.csv)
-
-Figure 9
 
 This map shows the total change in last spring frost date from 1895 to 2023 for each of the contiguous 48 states.^([3](#ref-3)) It is rendered here as a ranked bar chart rather than EPA’s choropleth map, carrying the same state-level values with the ranking made explicit.
 
@@ -591,8 +573,6 @@ Show the data behind this figure
 | Washington     | -24.25                             |
 | California     | -28.22                             |
 
-Figure 10
-
 ## Figure 6
 
 **Figure 6. Change in Timing of First Fall Frost by State, 1895-2023**
@@ -601,8 +581,6 @@ Data source: Kunkel, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data/first_fall_frost_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/length-of-growing-season/main/data-raw/growing-season_fig-6.csv)
-
-Figure 11
 
 This map shows the total change in first fall frost date from 1895 to 2023 for each of the contiguous 48 states.^([3](#ref-3)) It is rendered here as a ranked bar chart rather than EPA’s choropleth map, carrying the same state-level values with the ranking made explicit.
 
@@ -657,8 +635,6 @@ Show the data behind this figure
 | Alabama        | -0.17                             |
 | Oklahoma       | -1.68                             |
 | Georgia        | -2.78                             |
-
-Figure 12
 
 ## Key Points
 

@@ -17,8 +17,6 @@ Web update: May 2014
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/bird-wintering-ranges/main/data/bird_center_latitude_change.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/bird-wintering-ranges/main/data-raw/bird-ranges_fig-1.csv)
 
-Figure 1
-
 This figure shows annual change in latitude of bird center of abundance for 305 widespread bird species in North America from 1966 to 2013. Each winter is represented by the year in which it began (for example, winter 2013–2014 is shown as 2013). The shaded band shows the likely range for the average, based on how all the individual species have moved over time.
 
 Show the data behind this figure
@@ -74,8 +72,6 @@ Show the data behind this figure
 | 2012 | 44.05 | 21.46 | 66.64 |
 | 2013 | 40.73 | 18.67 | 62.79 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Change in Distance to Coast of Bird Center of Abundance, 1966-2013**
@@ -84,8 +80,6 @@ Data source: National Audubon Society, 2014^([3](#ref-3))\
 Web update: May 2014
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/bird-wintering-ranges/main/data/bird_center_coast_distance_change.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/bird-wintering-ranges/main/data-raw/bird-ranges_fig-2.csv)
-
-Figure 3
 
 This figure shows annual change in distance to the coast of bird center of abundance for 272 widespread bird species in North America from 1966 to 2013. This figure covers 272 species instead of the 305 species shown in Figure 1 because 33 of the species in Figure 1 need access to salt water, which means they cannot move inland. Each winter is represented by the year in which it began (for example, winter 2013–2014 is shown as 2013). The shaded band shows the likely range for the average, based on how all the individual species have moved over time.
 
@@ -141,8 +135,6 @@ Show the data behind this figure
 | 2011 | 10.33 | 1.44 | 19.22 |
 | 2012 | 8.91 | -0.10 | 17.92 |
 | 2013 | 13.43 | 4.11 | 22.75 |
-
-Figure 4
 
 ## Key Points
 

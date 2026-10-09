@@ -17,13 +17,9 @@ Web update: August 2016
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/river-flooding/main/data/river_flooding_magnitude.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/river-flooding/main/data-raw/river-flooding_fig-1.csv)
 
-Figure 1
-
 This figure shows changes in the size of flooding events in rivers and streams in the United States between 1965 and 2015. Blue upward-pointing symbols show locations where floods have become larger; brown downward-pointing symbols show locations where floods have become smaller. The larger, solid-color symbols represent stations where the change was statistically significant.
 
 8 Alaska, 15 Hawaii, and 1 Puerto Rico stations fall outside the map above and are shown here on the same scale, by trend value:
-
-Figure 2
 
 > **NOTE:**
 >
@@ -560,8 +556,6 @@ Show the data behind this figure
 | 38.99719°N | 75.78581°W  | 0.283  | tau value |
 | 55.39519°N | 132.40863°W | 0.325  | tau value |
 
-Figure 3
-
 ## Figure 2
 
 **Figure 2. Change in the Frequency of River Flooding in the United States, 1965–2015**
@@ -571,13 +565,9 @@ Web update: August 2016
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/river-flooding/main/data/river_flooding_frequency.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/river-flooding/main/data-raw/river-flooding_fig-2.csv)
 
-Figure 4
-
 This figure shows changes in the frequency of flooding events in rivers and streams in the United States between 1965 and 2015. Blue upward-pointing symbols show locations where floods have become more frequent; brown downward-pointing symbols show locations where floods have become less frequent. The larger, solid-color symbols represent stations where the change was statistically significant.
 
 7 Alaska, 11 Hawaii, and 1 Puerto Rico stations fall outside the map above and are shown here on the same scale, by trend value:
-
-Figure 5
 
 > **NOTE:**
 >
@@ -1068,8 +1058,6 @@ Show the data behind this figure
 | 47.55805°N | 98.86289°W  | 0.034  | slope value |
 | 40.95189°N | 93.25985°W  | 0.034  | slope value |
 | 47.80555°N | 98.71622°W  | 0.040  | slope value |
-
-Figure 6
 
 ## Key Points
 

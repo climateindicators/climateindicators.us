@@ -19,8 +19,6 @@ Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/residential-energy-use/main/data/residential_energy_use_summer_electricity_and_cooling.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/residential-energy-use/main/data-raw/residential-energy_fig-1.csv)
 
-Figure 1
-
 This graph shows the amount of electricity used by the average American during the summer months (June, July, and August) of each year from 1973 to 2024. The top panel shows average summer electricity use per capita, representing all 50 states plus D.C. For reference, the bottom panel shows the average number of cooling degree days for the same months across the contiguous 48 states plus D.C.
 
 Show the data behind this figure
@@ -80,8 +78,6 @@ Show the data behind this figure
 | 2023 |                            1319.8 |                        939 |
 | 2024 |                            1377.6 |                       1013 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Residential Winter Natural Gas Use Per Capita and Winter Heating Degree Days in the United States, 1974-2024**
@@ -90,8 +86,6 @@ Data source: EIA, 2024; BEA, 2024; NOAA, 2024\
 Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/residential-energy-use/main/data/residential_energy_use_winter_natural_gas_and_heating.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/residential-energy-use/main/data-raw/residential-energy_fig-2.csv)
-
-Figure 3
 
 This graph shows the amount of natural gas used by the average American during the winter months (December, January, and February) of each year from 1974 to 2024 (winter “1974” covers December 1973 through February 1974, and so on). The top panel shows average winter natural gas use per capita, representing all 50 states plus D.C. For reference, the bottom panel shows the average number of heating degree days for the same months across the contiguous 48 states plus D.C.
 
@@ -150,8 +144,6 @@ Show the data behind this figure
 | 2022 |                            7263.9 |                       2255 |
 | 2023 |                            6970.3 |                       2133 |
 | 2024 |                            6622.9 |                       2054 |
-
-Figure 4
 
 ## Key Points
 

@@ -17,8 +17,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_annual.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data-raw/heating-cooling_fig-1.csv)
 
-Figure 1
-
 This figure shows the average number of heating and cooling degree days per year across the contiguous 48 states.
 
 Show the data behind this figure
@@ -155,8 +153,6 @@ Show the data behind this figure
 | 2022 | 4,268 | 1,530 |
 | 2023 | 3,828 | 1,444 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Change in Annual Heating Degree Days by State, 1960-2023 Versus 1895-1959**
@@ -165,8 +161,6 @@ Data source: NOAA, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_heating_change_by_state.csv) [ Annual heating degree days by state (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_heating_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data-raw/heating-cooling_fig-2.csv)
-
-Figure 3
 
 This map shows how the average number of heating degree days per year has changed in each state over time. The map was created by comparing the first 65 years of available data (1895–1959) with the most recent 64 years (1960–2023). “Warmer” colors indicate an increase in temperatures between the two periods, leading to less of a need to turn on the heat—that is, fewer heating degree days. “Cooler” colors indicate a decrease in temperatures, leading to more of a need to turn on the heat—that is, more heating degree days.
 
@@ -225,8 +219,6 @@ Show the data behind this figure
 | Alabama        | +15.85  |
 | Mississippi    | +33.14  |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. Change in Annual Cooling Degree Days by State, 1960-2023 Versus 1895-1959**
@@ -235,8 +227,6 @@ Data source: NOAA, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_cooling_change_by_state.csv) [ Annual cooling degree days by state (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data/heating_and_cooling_degree_days_cooling_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/heating-and-cooling-degree-days/main/data-raw/heating-cooling_fig-3.csv)
-
-Figure 5
 
 This map shows how the average number of cooling degree days per year has changed in each state over time. The map was created by comparing the first 65 years of available data (1895–1959) with the most recent 64 years (1960–2023). “Warmer” colors indicate an increase in temperatures between the two periods, leading to more demand for air conditioning—that is, more cooling degree days. “Cooler” colors indicate a decrease in temperatures, leading to less demand for air conditioning—that is, fewer cooling degree days.
 
@@ -294,8 +284,6 @@ Show the data behind this figure
 | California     | +211.08 |
 | Arizona        | +294.59 |
 | Florida        | +329.35 |
-
-Figure 6
 
 ## Key Points
 

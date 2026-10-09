@@ -17,13 +17,9 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data/streamflow_seven_day_low.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data-raw/streamflow_fig-1.csv)
 
-Figure 1
-
 This map shows percentage changes in the minimum annual streamflow for rivers and streams across the country, based on the long-term rate of change from 1940 to 2022. Minimum streamflow is based on the consecutive seven-day period with the lowest average flow during a given year.
 
 1 Alaska, and 7 Hawaii stations fall outside the map above and are shown here on the same scale, by trend value:
-
-Figure 2
 
 Show the data behind this figure
 
@@ -216,8 +212,6 @@ Show the data behind this figure
 | WHITE R NEAR OACOMA SD | 43.74833°N | 99.55649°W | 842.87 | percent change |
 | CANNONBALL RIVER AT BREIEN, ND | 46.37611°N | 100.93444°W | 2277.76 | percent change |
 
-Figure 3
-
 ## Figure 2
 
 **Figure 2. Three-Day High Streamflows in the United States, 1940-2022**
@@ -227,13 +221,9 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data/streamflow_three_day_high.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data-raw/streamflow_fig-2.csv)
 
-Figure 4
-
 This map shows percentage changes in the maximum annual streamflow for rivers and streams across the country, based on the long-term rate of change from 1940 to 2022. Maximum streamflow is based on the consecutive three-day period with the highest average flow during a given year.
 
 1 Alaska, and 7 Hawaii stations fall outside the map above and are shown here on the same scale, by trend value:
-
-Figure 5
 
 Show the data behind this figure
 
@@ -429,8 +419,6 @@ Show the data behind this figure
 | NORTH FORK EMBARRAS RIVER NEAR OBLONG, IL | 39.01004°N | 87.94559°W | 84.08 | percent change |
 | Honopou Stream near Huelo, Maui, HI | 20.88568°N | 156.25274°W | 94.92 | percent change |
 
-Figure 6
-
 ## Figure 3
 
 **Figure 3. Annual Average Streamflow in the United States, 1940-2022**
@@ -440,13 +428,9 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data/streamflow_annual_average.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data-raw/streamflow_fig-3.csv)
 
-Figure 7
-
 This map shows percentage changes in the annual average streamflow for rivers and streams across the country, based on the long-term rate of change from 1940 to 2022. This map is based on daily streamflow measurements, averaged over the entire year.
 
 1 Alaska, and 7 Hawaii stations fall outside the map above and are shown here on the same scale, by trend value:
-
-Figure 8
 
 Show the data behind this figure
 
@@ -642,8 +626,6 @@ Show the data behind this figure
 | Turkey River at Garber, IA | 42.73999°N | 91.26180°W | 105.29 | percent change |
 | WHETSTONE RIVER NEAR BIG STONE CITY, SD | 45.29163°N | 96.48756°W | 167.61 | percent change |
 
-Figure 9
-
 ## Figure 4
 
 **Figure 4. Timing of Winter-Spring Runoff in the United States, 1940-2022**
@@ -652,8 +634,6 @@ Data source: USGS, 2023\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data/streamflow_runoff_timing.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data-raw/streamflow_fig-4.csv)
-
-Figure 10
 
 This map shows changes in the timing of annual high winter-spring flow carried by rivers and streams from 1940 to 2022. This analysis focuses on parts of the country where streamflow is strongly influenced by snowmelt. Trends are based on the winter-spring center of volume, which is the date when half of the total January 1–July 31 streamflow (in the West) or half of the total January 1–May 31 streamflow (in the East) has passed by each streamflow gauge, reflecting the timing of spring snowmelt.
 
@@ -718,8 +698,6 @@ Show the data behind this figure
 | RIO HONDO NEAR VALDEZ, NM | 36.54169°N | 105.55640°W | 0.00 | days |
 | Middle Fork Flathead River nr West Glacier MT | 48.49524°N | 114.01012°W | 0.00 | days |
 
-Figure 11
-
 ## Figure 5
 
 **Figure 5. Number of Days with Very Low Streamflow, 1940-2022**
@@ -729,13 +707,9 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data/streamflow_low_flow_days.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/streamflow/main/data-raw/streamflow_fig-5.csv)
 
-Figure 12
-
 This map shows changes in the number of days with very low streamflow for rivers and streams across the country, from 1940 to 2022. This map is based on the number of daily flow values below the 2-percentile flow (Q2) threshold. Positive trends (upward brown triangles) indicate an increase in the number of days per year at or below the Q2 threshold (drier conditions); negative trends (downward blue triangles) indicate a trend toward fewer very low flow days (wetter conditions).
 
 1 Alaska, and 7 Hawaii stations fall outside the map above and are shown here on the same scale, by trend value:
-
-Figure 13
 
 Show the data behind this figure
 
@@ -930,8 +904,6 @@ Show the data behind this figure
 | SOUTH FORK BLACK CREEK NEAR PENNEY FARMS, FL | 29.97941°N | 81.85204°W | 31.30 | days |
 | Mission Rv at Refugio, TX | 28.29195°N | 97.27916°W | 47.50 | days |
 | SANTA CRUZ C NR SANTA YNEZ CA | 34.59666°N | 119.90875°W | 85.50 | days |
-
-Figure 14
 
 ## Key Points
 

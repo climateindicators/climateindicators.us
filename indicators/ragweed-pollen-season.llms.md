@@ -21,8 +21,6 @@ Web update: August 2016
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/ragweed-pollen-season/main/data/ragweed_pollen_season_change_by_location.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/ragweed-pollen-season/main/data-raw/ragweed_fig-1.csv)
 
-Figure 1
-
 This figure shows how the length of ragweed pollen season changed at 11 locations in the central United States and Canada between 1995 and 2015. Red circles represent a longer pollen season; the blue circle represents a shorter season. Larger circles indicate larger changes.^([7](#ref-7))
 
 Show the data behind this figure
@@ -40,8 +38,6 @@ Show the data behind this figure
 | Rogers             | AR             | 36.3320°N | 94.1185°W  | +11.2         |
 | Oklahoma City      | OK             | 35.4676°N | 97.5165°W  | +5.8          |
 | Austin/Georgetown  | TX             | 30.6327°N | 97.6773°W  | -1.1          |
-
-Figure 2
 
 ## Key Points
 

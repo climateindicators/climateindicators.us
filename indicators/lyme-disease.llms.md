@@ -17,8 +17,6 @@ Web update: December 2024
 
 [ Figure image (PNG)](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-1.png) [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/data/lyme_incidence_national.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/data-raw/lyme_fig-1.csv)
 
-Figure 1
-
 This graph shows the annual incidence of Lyme disease, which is calculated as the number of cases per 100,000 people. The graph is based on cases that local and state health departments report to CDC’s national disease tracking system. Due to the COVID-19 pandemic, 2019 and 2020 data from some jurisdictions are incomplete.
 
 The line breaks at each of the three points where CDC’s surveillance case definition changed, in 1996, 2008 and 2022: values are not directly comparable across a break. Hover any point for that year’s value.
@@ -61,8 +59,6 @@ Show the data behind this figure
 | 2021 | 2008 case definition |                      7.4 |
 | 2022 | 2022 case definition |                     18.8 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Reported Annual Lyme Disease Incidence in the United States, 2022**
@@ -71,8 +67,6 @@ Data source: Centers for Disease Control and Prevention, 2024\
 Web update: December 2024
 
 [ Figure image (PNG)](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/images/fig-2.png) [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/data/lyme_incidence_by_jurisdiction.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/lyme-disease/main/data-raw/lyme_fig-2.csv)
-
-Figure 3
 
 This chart shows reported Lyme disease incidence by jurisdiction in 2022, based on the number of total cases per 100,000 people, ranked from highest to lowest. The dotted rule marks 10 cases per 100,000 people, the incidence CDC uses to define a “high-incidence jurisdiction.”
 
@@ -135,8 +129,6 @@ Show the data behind this figure
 | Texas                | 0.1                      |
 | Arkansas             | 0.1                      |
 | Oklahoma             | 0.0                      |
-
-Figure 4
 
 ## Figure 3
 

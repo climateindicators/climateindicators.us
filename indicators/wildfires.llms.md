@@ -17,8 +17,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data/wildfires_frequency.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data-raw/wildfires_fig-1.csv)
 
-Figure 1
-
 This figure shows the total number of wildfires per year from 1983 to 2022. These totals include all reported wildfires, which can be as small as just a few acres. The two lines represent two different reporting systems; though the Forest Service stopped collecting statistics (orange line) in 1997 and will not update them, those statistics are shown here for comparison.
 
 Show the data behind this figure
@@ -66,8 +64,6 @@ Show the data behind this figure
 | 2021 | 58,985                           |                                    |
 | 2022 | 68,988                           |                                    |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Wildfire Extent in the United States, 1983-2022**
@@ -76,8 +72,6 @@ Data source: NIFC, 2024; Short, 2015\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data/wildfires_extent.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data-raw/wildfires_fig-2.csv)
-
-Figure 3
 
 This figure shows annual wildfire-burned area (in millions of acres) from 1983 to 2022. The two lines represent two different reporting systems though the Forest Service stopped collecting statistics (orange line) in 1997 and is not planning to update them, those statistics are shown here for comparison.
 
@@ -126,8 +120,6 @@ Show the data behind this figure
 | 2021 | 7,125,643                        |                                    |
 | 2022 | 7,577,183                        |                                    |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. Damage Caused by Wildfires in the United States, 1984-2021**
@@ -136,8 +128,6 @@ Data source: MTBS, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data/wildfires_burn_severity.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data-raw/wildfires_fig-3.csv)
-
-Figure 5
 
 This figure shows the distribution of acreage burned by large wildfires, based on the level of damage caused to the landscape—a measure of wildfire severity. Large wildfires are defined as fires with an area larger than 1,000 acres in the western United States and 500 acres in the eastern United States. The total acreage shown in Figure 3 is slightly less than the total in Figure 2 because Figure 3 is limited to large fires and because a few areas did not have sufficient satellite imagery to allow damage to be assessed.
 
@@ -184,8 +174,6 @@ Show the data behind this figure
 | 2020 | 4,476,422 | 2,252,328 | 1,602,475 | 1,247,574 | 40,062              |
 | 2021 | 3,143,222 | 1,449,091 | 1,005,343 | 1,106,933 | 29,434              |
 
-Figure 6
-
 ## Figure 4
 
 **Figure 4. Average Annual Burned Acreage by State, 1984-2021**
@@ -194,8 +182,6 @@ Data source: MTBS, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data/wildfires_burned_acreage_trend_by_state.csv) [ Annual burned acreage by state (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data/wildfires_burned_acreage_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data-raw/wildfires_fig-4.csv)
-
-Figure 7
 
 This map shows the average number of acres burned in each state per year as a proportion of that state’s total land area. Darker-shaded states have the largest proportion of acreage burned. For reference, there are 640 acres in a square mile; therefore, an average burned area of 6.4 acres per square mile would mean that fires burned 1 percent of a state’s total land area. States that did not have any fires that were large enough to be included in this analysis are shaded gray.
 
@@ -253,8 +239,6 @@ Show the data behind this figure
 | Wisconsin      | 0.008                         |
 | Wyoming        | 1.216                         |
 
-Figure 8
-
 ## Figure 5
 
 **Figure 5. Change in Annual Burned Acreage by State Between 1984-2002 and 2003-2021**
@@ -263,8 +247,6 @@ Data source: MTBS, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data/wildfires_burned_acreage_change_by_state.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data-raw/wildfires_fig-5.csv)
-
-Figure 9
 
 This map shows how the number of acres burned in each state as a proportion of that state’s total land area has changed over time, based on a simple comparison between the first half of the available years (1984–2002) and the second half (2003–2021). For reference, there are 640 acres in a square mile; therefore, a change of 6.4 acres per square mile would mean that burned area increased by 1 percent of a state’s total land area. States that did not have any fires that were large enough to be included in this analysis are shaded gray.
 
@@ -322,8 +304,6 @@ Show the data behind this figure
 | Washington     | +3.522 |
 | California     | +4.166 |
 
-Figure 10
-
 ## Figure 6
 
 **Figure 6. Comparison of Monthly Burned Area Due to Wildfires in the United States Between 1984–2002 and 2003–2021**
@@ -332,8 +312,6 @@ Data source: MTBS, 2023\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data/wildfires_monthly_burned_area.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data-raw/wildfires_fig-6.csv)
-
-Figure 11
 
 This figure compares the annual distribution of burned area due to wildfires in the United States between the first half of the period of measurement (1984–2002) and the second half (2003–2021).
 
@@ -354,8 +332,6 @@ Show the data behind this figure
 | November  | 0.057     | 0.050     |
 | December  | 0.006     | 0.041     |
 
-Figure 12
-
 ## Figure 7
 
 **Figure 7. Comparison of Monthly Burned Area Due to Wildfires in the Eastern and Western United States Between 1984-2002 and 2003-2021**
@@ -364,8 +340,6 @@ Data source: MTBS, 2023\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data/wildfires_monthly_burned_area_by_region.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/wildfires/main/data-raw/wildfires_fig-7.csv)
-
-Figure 13
 
 This figure compares the annual distribution of burned area due to wildfires in the eastern and western United States between the first half of the period of measurement (1984–2002) and the second half (2003–2021).
 
@@ -397,8 +371,6 @@ Show the data behind this figure
 | West   | October   | 0.069     | 0.134     |
 | West   | November  | 0.014     | 0.037     |
 | West   | December  | 0.004     | 0.039     |
-
-Figure 14
 
 ## Key Points
 

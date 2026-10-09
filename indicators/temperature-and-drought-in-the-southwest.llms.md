@@ -21,8 +21,6 @@ Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/temperature-and-drought-in-the-southwest/main/data/southwest_temperature_anomaly.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/temperature-and-drought-in-the-southwest/main/data-raw/southwest_fig-1.csv)
 
-Figure 1
-
 This map shows how the average air temperature from 2000 to 2023 has differed from the long-term average (1895–2023). To provide more detailed information, each state has been divided into climate divisions, which are zones that share similar climate features.
 
 > **NOTE:**
@@ -72,8 +70,6 @@ Show the data behind this figure
 | Nevada     | 02       | 1.302                      |
 | California | 02       | 1.280                      |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Southwestern U.S. Lands Under Drought Conditions, 2000-2023**
@@ -82,8 +78,6 @@ Data source: National Drought Mitigation Center, 2024\
 Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/temperature-and-drought-in-the-southwest/main/data/southwest_drought_monitor_area.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/temperature-and-drought-in-the-southwest/main/data-raw/southwest_fig-2.csv)
-
-Figure 3
 
 This chart shows the percentage of land area in six southwestern states (Arizona, California, Colorado, Nevada, New Mexico, and Utah) classified under drought conditions from 2000 through 2023. This figure uses the U.S. Drought Monitor classification system, which is described in the table in the [Drought](../indicators/drought.llms.md) indicator.
 
@@ -1344,8 +1338,6 @@ Show the data behind this figure
 | 2023-12-19 | 16.26 | 9.64 | 12.84 | 7.48 | 1.13 |
 | 2023-12-26 | 16.23 | 9.28 | 12.66 | 7.28 | 1.13 |
 
-Figure 4
-
 ## Figure 3
 
 **Figure 3. Drought Severity in the Southwestern United States, 1895-2023**
@@ -1354,8 +1346,6 @@ Data source: NOAA, 2024\
 Web update: December 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/temperature-and-drought-in-the-southwest/main/data/southwest_palmer_index.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/temperature-and-drought-in-the-southwest/main/data-raw/southwest_fig-3.csv)
-
-Figure 5
 
 This chart shows annual values of the Palmer Drought Severity Index, averaged over six states in the Southwest (Arizona, California, Colorado, Nevada, New Mexico, and Utah). Positive values represent wetter-than-average conditions, while negative values represent drier-than-average conditions. A value between -2 and -3 indicates moderate drought, -3 to -4 is severe drought, and -4 or below indicates extreme drought. The thicker line is a nine-year weighted average.
 
@@ -1492,8 +1482,6 @@ Show the data behind this figure
 | 2021 | -4.672     | -2.554   |
 | 2022 | -3.430     | -2.042   |
 | 2023 | 0.534      | -0.999   |
-
-Figure 6
 
 ## Key Points
 

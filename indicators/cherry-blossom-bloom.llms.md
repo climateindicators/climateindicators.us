@@ -19,8 +19,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/cherry-blossom-bloom/main/data/cherry_blossom_bloom.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/cherry-blossom-bloom/main/data-raw/cherry-blossoms_fig-1.csv)
 
-Figure 1
-
 This figure shows the timing of peak bloom each year for the main type of cherry tree around the Tidal Basin in Washington, D.C. The peak bloom date occurs when 70 percent of the blossoms are in full bloom. The shaded band shows the timing of the annual National Cherry Blossom Festival. The festival began in 1934 but was not held during World War II.
 
 Show the data behind this figure
@@ -131,8 +129,6 @@ Show the data behind this figure
 | 2022 | 80 | 79 | 28 |
 | 2023 | 82 | 77 | 29 |
 | 2024 | 77 | 80 | 25 |
-
-Figure 2
 
 ## Key Points
 

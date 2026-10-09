@@ -17,8 +17,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/great-lakes/main/data/great_lakes_water_levels.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/great-lakes/main/data-raw/great-lakes_fig-1.csv)
 
-Figure 1
-
 This figure displays how water levels in each of the Great Lakes have changed since 1860. For each year, the shaded band shows the range of monthly average water levels, and the line in the middle shows the annual average. The graph uses the 1981 to 2010 average as a baseline for depicting change. Choosing a different baseline period would not change the shape of the data over time. Lakes Michigan and Huron are shown together because they are connected at the same water level.
 
 Show the data behind this figure
@@ -190,8 +188,6 @@ Show the data behind this figure
 | 2022 | 0.54 | -0.38 | 1.19 | 0.64 | 0.05 | 1.16 | -0.03 | -1.37 | 1.15 | 0.31 | -0.64 | 0.96 |
 | 2023 | 0.54 | -0.18 | 1.09 | 0.34 | -0.15 | 0.80 | 0.27 | -1.08 | 1.81 | 0.64 | 0.04 | 1.06 |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Surface Water Temperatures of the Great Lakes, 1995-2023**
@@ -200,10 +196,6 @@ Data source: NOAA, 2024^([9](#ref-9))\
 Web update: June 2024
 
 [ Annual averages (CSV)](https://raw.githubusercontent.com/climateindicators/great-lakes/main/data/great_lakes_temp_annual.csv) [ Daily averages (CSV)](https://raw.githubusercontent.com/climateindicators/great-lakes/main/data/great_lakes_temp_daily.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/great-lakes/main/data-raw/great-lakes_fig-2.csv)
-
-Figure 3
-
-Figure 4
 
 This figure shows the average surface water temperatures in each of the Great Lakes, as measured by satellites. The graphs on the left show annual averages for the full time period, while the graphs on the right show how average daily temperatures have changed between two time periods for comparison: 2014–2023 versus 1995–2004.
 
@@ -244,8 +236,6 @@ Annual averages:
 | 2021 |     54.41 |      50.29 |         51.80 |        53.02 |         46.65 |
 | 2022 |     52.92 |      48.24 |         49.60 |        51.81 |         42.30 |
 | 2023 |     53.63 |      49.61 |         50.96 |        52.55 |         44.55 |
-
-Figure 5
 
 Daily averages by period:
 
@@ -617,8 +607,6 @@ Daily averages by period:
 | 364 | 36.87 | 39.08 | 37.48 | 39.43 | 38.76 | 40.15 | 39.20 | 40.99 | 36.77 | 38.50 |
 | 365 | 36.71 | 38.91 | 37.41 | 39.23 | 38.67 | 40.00 | 39.09 | 40.88 | 36.66 | 38.40 |
 | 366 | 35.31 | 38.35 | 35.71 | 39.34 | 36.62 | 40.24 | 37.95 | 41.17 | 35.05 | 38.84 |
-
-Figure 6
 
 ## Key Points
 

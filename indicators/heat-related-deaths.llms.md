@@ -17,8 +17,6 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data/heat_deaths_annual.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data-raw/heat-deaths_fig-1.csv)
 
-Figure 1
-
 Show the data behind this figure
 
 | year | Underlying cause of death (all year) | Underlying and contributing causes of death (May-Sept) |
@@ -68,8 +66,6 @@ Show the data behind this figure
 | 2021 | 2.823 | 4.821 |
 | 2022 | 2.931 | NA |
 
-Figure 2
-
 ## Figure 2
 
 **Figure 2. Summer Deaths Due to Heat and Cardiovascular Disease in the United States, 1999–2022**
@@ -78,8 +74,6 @@ Data source: CDC, 2024\
 Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data/heat_deaths_summer_cvd.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data-raw/heat-deaths_fig-2.csv)
-
-Figure 3
 
 Show the data behind this figure
 
@@ -110,8 +104,6 @@ Show the data behind this figure
 | 2021 |   2.507 |                     0.860 |              0.687 |
 | 2022 |   2.803 |                     0.737 |              0.741 |
 
-Figure 4
-
 ## Example: The 1995 Chicago Heat Wave
 
 **Example: Examining Heat-Related Deaths During the 1995 Chicago Heat Wave**
@@ -120,8 +112,6 @@ Data source: CDC, 2012; NOAA, 2012\
 Web update: May 2014
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data/chicago_1995_heat_wave.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/heat-related-deaths-new/main/data-raw/heat-deaths_example.csv)
-
-Figure 5
 
 Show the data behind this figure
 
@@ -138,7 +128,7 @@ Show the data behind this figure
 | 1995-06-09 | 163 | 165.0 | 69.1 |
 | 1995-06-10 | 157 | 163.7 | 82.9 |
 
-Figure 6: First 10 of 92 days.
+First 10 of 92 days. {.caption-top .table .table-sm .table-striped .small}
 
 ## Key Points
 

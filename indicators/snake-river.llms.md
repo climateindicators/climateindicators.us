@@ -19,8 +19,6 @@ Web update: September 2023
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/snake-river/main/data/snake_river_august_temperature.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/snake-river/main/data-raw/snake-river_fig-1.csv)
 
-Figure 1
-
 This graph shows average August water temperatures at a site along the Snake River in eastern Washington.
 
 Show the data behind this figure
@@ -87,8 +85,6 @@ Show the data behind this figure
 | 2020 | 72.81                        |
 | 2021 | 72.83                        |
 | 2022 | 73.51                        |
-
-Figure 2
 
 ## Background
 

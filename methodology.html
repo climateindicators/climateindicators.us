@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Tracking the indicators that show how a changing climate is affecting people and places across the United States.">
 
-<title>Climate Indicators – climateindicators.us</title>
+<title>Methodology and Technical Documentation – climateindicators.us</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -77,8 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<meta property="og:title" content="Climate Indicators">
-<meta property="og:description" content="Tracking the indicators that show how a changing climate is affecting people and places across the United States.">
+<meta property="og:title" content="Methodology and Technical Documentation – climateindicators.us">
 <meta property="og:site_name" content="climateindicators.us">
 </head>
 
@@ -100,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> <i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="./index.html"> <i class="bi bi-house-door" role="img">
 </i> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -122,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">The Whole Story</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./methodology.html"> <i class="bi bi-folder2-open" role="img">
+    <a class="nav-link active" href="./methodology.html" aria-current="page"> <i class="bi bi-folder2-open" role="img">
 </i> 
 <span class="menu-text">Methodology</span></a>
   </li>  
@@ -134,21 +132,34 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Methodology and Technical Documentation</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="welcome-to-climateindicators.us" class="level1">
-<h1>Welcome to climateindicators.us!</h1>
-<p><strong>climateindicators.us</strong> is an open, reproducible collection of climate indicators for the United States — the measurable signals that show how a changing climate is affecting people, health, infrastructure, and the environment. Every indicator is built from public data, with the code and sources published alongside it.</p>
-<p>The project began as a replication of the EPA’s <em>Climate Change Indicators</em>, preserved in the <a href="https://19january2025snapshot.epa.gov/climate-indicators/view-indicators/index.html">January 19, 2025 snapshot</a> of the agency’s website.</p>
-<p><br></p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -162,16 +173,10 @@ ul.task-list li input[type="checkbox"] {
 <p>This site is under construction. Content is being added indicator by indicator — check back soon.</p>
 </div>
 </div>
-<p><br></p>
-<div class="home-pills">
-  <a class="home-pill" href="about.html"><span class="home-pill-label"><i class="bi bi-info-circle"></i>About</span><span class="home-pill-desc">About the project, the data sources, and the people behind it.</span></a>
-  <a class="home-pill" href="indicators.html"><span class="home-pill-label"><i class="bi bi-graph-up"></i>Indicators</span><span class="home-pill-desc">Browse the full set of climate indicators we track.</span></a>
-</div>
 
 
-</section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -259,6 +264,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
