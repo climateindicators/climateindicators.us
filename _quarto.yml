@@ -135,6 +135,8 @@ website:
               href: indicators/atlantic-coast.qmd
             - text: "Ocean Acidity"
               href: indicators/ocean-acidity.qmd
+            - text: "Antarctic Sea Ice"
+              href: indicators/antarctic-sea-ice.qmd
 
 
 format:
