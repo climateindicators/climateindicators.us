@@ -53,7 +53,7 @@ $card-category-map: (
     "snake-river", "tropical-cyclone-activity"
   ),
   $cat-oceans: ("sea-surface-temperature", "atlantic-coast", "ocean-acidity", "antarctic-sea-ice", "ice-sheets"),
-  $cat-cryosphere: ("glaciers-in-glacier-park", "lake-ice", "great-lakes-ice-cover", "snowpack"),
+  $cat-cryosphere: ("glaciers-in-glacier-park", "lake-ice", "great-lakes-ice-cover", "snowpack", "permafrost"),
 );
 
 // One Bootstrap Icon glyph per category, keyed the same as $card-category-map

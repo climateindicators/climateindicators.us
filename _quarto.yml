@@ -149,6 +149,8 @@ website:
               href: indicators/great-lakes-ice-cover.qmd
             - text: "Snowpack"
               href: indicators/snowpack.qmd
+            - text: "Permafrost"
+              href: indicators/permafrost.qmd
 
 
 format:
