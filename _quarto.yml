@@ -151,6 +151,8 @@ website:
               href: indicators/snowpack.qmd
             - text: "Permafrost"
               href: indicators/permafrost.qmd
+            - text: "Community Connection: Ice Breakup in Three Alaskan Rivers"
+              href: indicators/alaskan-rivers.qmd
 
 
 format:
