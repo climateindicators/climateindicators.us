@@ -69,7 +69,7 @@ lake_states <- function() {
 MAP_CRS <- "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=37.5 +lon_0=-82 +datum=WGS84"
 
 # EPA's caption: red circles for the twelve lakes thawing earlier, larger circles
-# for larger changes. The two lakes with no change draw as small grey points.
+# for larger changes. The two lakes with no change draw as the smallest, grey.
 fig_3_plot <- function(d) {
   d$latitude  <- as.numeric(d$latitude)
   d$longitude <- as.numeric(d$longitude)
@@ -89,15 +89,16 @@ fig_3_plot <- function(d) {
       shape = 21, colour = CHART_GREY[["surface"]], stroke = 0.6, alpha = 0.9
     ) +
     scale_fill_manual(values = cols, labels = CHANGE_LABELS) +
-    scale_size_area(max_size = 10, guide = "none") +
+    # A floor on the size range keeps the zero-change lakes visible.
+    scale_size(range = c(2.5, 10), guide = "none") +
     coord_sf(crs = MAP_CRS, default_crs = 4326, datum = NA,
-             xlim = c(-97, -67), ylim = c(41, 49)) +
+             xlim = c(-99, -67), ylim = c(41, 49)) +
     guides(fill = guide_legend(nrow = 1, override.aes = list(size = 4, alpha = 1))) +
     theme_void() +
     legend_top()
 }
 
-fig_3 <- function(d) girafe_indicator(fig_3_plot(d), height = 4.5)
+fig_3 <- function(d) girafe_indicator(fig_3_plot(d), height = 4)
 
 # One row per lake, earliest-thaw change first.
 fig_3_table <- function(d) {

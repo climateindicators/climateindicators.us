@@ -143,6 +143,8 @@ website:
           contents:
             - text: "A Closer Look: Glaciers in Glacier National Park"
               href: indicators/glaciers-in-glacier-park.qmd
+            - text: "Lake Ice"
+              href: indicators/lake-ice.qmd
 
 
 format:

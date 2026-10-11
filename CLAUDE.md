@@ -82,6 +82,7 @@ Current indicator repositories:
 | Tropical Cyclone Activity | `tropical-cyclone-activity` |
 | Wildfires | `wildfires` |
 | A Closer Look: Glaciers in Glacier National Park | `glaciers-in-glacier-park` |
+| Lake Ice | `lake-ice` |
 
 Because the data is fetched over the network, rendering requires an internet
 connection, and `curl` must stay in `DESCRIPTION` — readr only *suggests* it,
