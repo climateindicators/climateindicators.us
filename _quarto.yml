@@ -145,6 +145,8 @@ website:
               href: indicators/glaciers-in-glacier-park.qmd
             - text: "Lake Ice"
               href: indicators/lake-ice.qmd
+            - text: "Great Lakes Ice Cover"
+              href: indicators/great-lakes-ice-cover.qmd
 
 
 format:
