@@ -28,6 +28,7 @@ $cat-greenhouse-gasses: #852f88;  // 2. Greenhouse Gasses — hat[5], purple
 $cat-environment:       #17a769;  // 3. Environment — hat[9], emerald
 $cat-weather-climate:   #0f8096;  // 4. Weather and Climate — hat[7], teal
 $cat-oceans:            #4e54ac;  // 5. Oceans — hat[6], indigo
+$cat-cryosphere:        #cd023d;  // 6. Cryosphere — hat[4], crimson
 
 // Each indicator slug mapped to its sidebar section colour, so a card's
 // border matches its category in the sidebar. Keep this in sync with the
@@ -52,6 +53,7 @@ $card-category-map: (
     "snake-river", "tropical-cyclone-activity"
   ),
   $cat-oceans: ("sea-surface-temperature", "atlantic-coast", "ocean-acidity", "antarctic-sea-ice", "ice-sheets"),
+  $cat-cryosphere: ("glaciers-in-glacier-park"),
 );
 
 // One Bootstrap Icon glyph per category, keyed the same as $card-category-map
@@ -65,6 +67,7 @@ $card-category-icon: (
   $cat-environment:       "\f5e2",  // bi-tree
   $cat-weather-climate:   "\f2be",  // bi-cloud-sun
   $cat-oceans:            "\f5eb",  // bi-tsunami
+  $cat-cryosphere:        "\f56d",  // bi-snow
 );
 
 // Bootstrap picks up $link-color from $primary, so setting this alone recolors
@@ -273,6 +276,7 @@ nav.navbar {
   [data-bs-target="#quarto-sidebar-section-3"] { color: $cat-environment; }
   [data-bs-target="#quarto-sidebar-section-4"] { color: $cat-weather-climate; }
   [data-bs-target="#quarto-sidebar-section-5"] { color: $cat-oceans; }
+  [data-bs-target="#quarto-sidebar-section-6"] { color: $cat-cryosphere; }
 }
 
 // Tinted panel in the shape of climate.us's .usa-sidenav-list. Needs the id to

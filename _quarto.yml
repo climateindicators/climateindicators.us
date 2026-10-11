@@ -139,6 +139,10 @@ website:
               href: indicators/antarctic-sea-ice.qmd
             - text: "Ice Sheets"
               href: indicators/ice-sheets.qmd
+        - section: "Cryosphere"
+          contents:
+            - text: "A Closer Look: Glaciers in Glacier National Park"
+              href: indicators/glaciers-in-glacier-park.qmd
 
 
 format:
