@@ -24,13 +24,13 @@ This feature provides a closer look at one consequence of sea level rise along t
 
 A closer look at trends in temperature and drought in the southwestern United States.
 
-##### Antarctic Sea Ice
-
-This indicator tracks the extent of sea ice around Antarctica.
-
 ##### Bird Wintering Ranges
 
 This indicator examines changes in the winter ranges of North American birds.
+
+##### Coastal Flooding
+
+This indicator shows how the frequency of coastal flooding has changed over time.
 
 ##### Cold-Related Deaths
 
@@ -51,10 +51,6 @@ This indicator measures drought conditions of U.S. lands.
 ##### Freeze-Thaw Conditions
 
 This indicator tracks the number of days the U.S. and North American landscape is not frozen.
-
-##### Global Greenhouse Gas Emissions
-
-This indicator describes emissions of greenhouse gases worldwide.
 
 ##### Great Lakes Ice Cover
 
@@ -92,10 +88,6 @@ This indicator tracks the frequency of heavy precipitation events in the United 
 
 Trends in unusually hot and cold temperatures across the United States.
 
-##### Ice Sheets
-
-This indicator examines the balance between snow accumulation and melting in the ice sheets that cover Greenland and Antarctica.
-
 ##### Lake Ice
 
 This indicator measures the amount of time that ice is present on lakes in the United States.
@@ -119,10 +111,6 @@ This indicator tracks the rate of reported Lyme disease cases across the United 
 ##### Marine Species Distribution
 
 This indicator examines changes in the location of fish, shellfish, and other marine species along U.S. coasts.
-
-##### Ocean Acidity
-
-This indicator describes changes in the chemistry of the ocean that relate to the amount of carbon dioxide dissolved in the water.
 
 ##### Permafrost
 
