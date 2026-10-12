@@ -6,7 +6,52 @@ execute:
   message: false
 ---
 
-## Overview
+## Welcome to climateindicators.us!
+**climateindicators.us** is an open, reproducible collection of climate change impact indicators for the United States. Built entirely from public data--with code and sources published alongside them—these indicators track observed trends in climate-related metrics that matter to people, public health, and the environment. They offer clear, trustworthy information to support evidence-based action and help state, local and public health practitioners plan for climate impacts, while ensuring students and researchers have access to critical data.
+
+Our mission, at GW’s Climate and Health Institute, is to maintain and expand these climate change indicators as a durable and transparent resource and to strengthen collaboration among data providers, developers, and users across academia and state, local, and community partners. 
+
+
+## About the Project
+This effort began by replicating the U.S. EPA’s Climate Change Indicators, a climate communications resource originally launched in 2010. The former website is now only accessible as a snapshot, digitally preserved on January 19, 2025. This replication phase ensures continued access to the scientifically rigorous, peer‑reviewed datasets and narratives that have long supported understanding and communicating the impacts of climate change in the United States. While the site design has changed, the underlying indicators, data, narratives, and documentation remain intact and continue to adhere to established standards for transparency, reproducibility, and data integrity.
+
+[text] (waiting on offical language)
+
+We are working towards updating these indicators to reflect emerging data, and, in particular, expanding and contextualizing impact indicators to reach new audiences and applications. The next phase will leverage growing research, support the development of new climate‑health expertise, and connect students, scientists, and practitioners to ensure indicators remain robust, accessible, and relevant.
+
+Engagement is central to this work. GW’s CHI plans to coordinate with a wide range of stakeholders and data providers to ensure indicators reflect real‑world needs and support decision‑making across communities.
+
+
+## Collaborating Across the Climate Data Landscape
+This **climateindicators.us** project is part of a broader ecosystem of organizations dedicated to maintaining trusted, publicly accessible climate information. Two organizations, in particular, provide foundational climate data that have long supported national indicator efforts.
+
+**climate.us**, the nonprofit successor to **Climate.gov**, offers authoritative long‑term climate data, information on climate drivers and variability, and many other resources that advance public climate literacy. It also hosts the U.S. Global Change Research Program’s Fifth National Climate Assessment, the most recent and comprehensive assessment of climate change in the United States.
+
+University of Maryland’s Center for Global Sustainability (CGS) has developed a new annual non-governmental Greenhouse Gas Inventory and Analysis (GHGIA), a transparent and analytically rigorous resource that supports continued understanding of U.S. emissions and sinks. While not an official national inventory nor a submission to the United Nations Framework Convention on Climate Change, the GHGIA aligns with international best practices and builds on EPA’s long‑standing Inventory of U.S. Greenhouse Gas Emissions and Sinks.
+
+These resources are linked at [The Whole Story](tracking-the-whole-climate-change-story.qmd). Together, these efforts help ensure that the public, policymakers, researchers, and communities have access to reliable, science‑based information. Future phases of our work will focus on deepening integration across these efforts.
+
+
+## What You'll Find Here
+**climateindicators.us** provides a range of climate impacts and focuses on indicators that connect scientific observation to human and societal consequences. Technical documentation is provided for each indicator. Indicators of global and U.S. emissions as well as changes in Earth and climatic systems are included for context.
+
+In [The Whole Story](tracking-the-whole-climate-change-story.qmd), we refer to GHGIA for data and figures pertaining to U.S. greenhouse gas emissions. We refer to climate.us for many climate change drivers, variability and other global climate change data. The Whole Story also provides easy access to additional climate change resources. 
+
+
+Future additions to this website (see Where We’re Heading) will include student-driven products, experiences and opportunities for engagement. We aim to reflect input from data providers and users in future updates. 
+
+
+**climateindicators.us** is committed to:
+
+- Maintaining a durable, open, reproducible climate impact indicator resource
+
+- Supporting collaboration across data providers, researchers, and communities
+
+- Ensuring indicators remain transparent, trusted, and scientifically rigorous
+
+- Building the next generation of climate‑impact indicators through applied research and engagement
+
+\
 
 {{< include chunks/description.qmd >}}
 

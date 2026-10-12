@@ -1,21 +1,28 @@
-@import "https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap";
-
 /*-- scss:defaults --*/
 
 // ---------------------------------------------------------------------------
-// Palette, lifted from climate.us. Every tinted rule below derives from these,
+// Brand palette for the site. Every tinted rule below derives from these,
 // so re-theming the site means editing this block and nothing else.
 // ---------------------------------------------------------------------------
-$accent:       #2882e6;  // link / brand blue
-$accent-light: #5aa3f0;  // lightened for legibility on the dark footer bar
-$accent-dark:  #1b66bd;  // pressed states
-$ink:          #1e1e1e;  // near-black — navbar and footer
-$ink-soft:     #333333;  // header bar on climate.us proper
-$body-text:    #464646;
-$panel:        #f4f4f5;  // light grey for cards, sidebar, callouts
-$rule:         #dcdcdc;  // neutral border, one step darker than $panel
-$muted:        #757575;
-$btn-hover:    #708C69;  // download button hover fill
+$primary:       #0075C8;  // primary brand blue
+$accent:        #0075C8;  // link / brand blue
+$accent-light:  #CCE3F4;  // light blue for soft backgrounds and callout fills
+$pale-yellow:   #FFEFAE;  // pale yellow accent
+$accent-dark:   #005fa8;  // pressed / darker brand state
+$ink:           #00223E;  // dark navy for text on light backgrounds and footer
+$ink-soft:      #1d3a55;  // slightly lighter navy for subtle dark surfaces
+$body-text:     #00223E;  // default body text
+$body-bg:       #fff;     // page background
+$panel:         #f4f4f5;  // light grey for cards, sidebar, callouts
+$rule:          #dcdcdc;  // neutral border, one step darker than $panel
+$muted:         #5a6f82;  // muted supporting text on light backgrounds
+$btn-hover:     #005fa8;  // hover fill for branded UI elements
+$white:         #FFFFFF;  // white
+$cyan:          #52C9E8;  // cyan accent for borders, icons, and backgrounds behind navy text
+$sage:          #ADCAB8;  // sage accent for soft supporting backgrounds / borders
+$mauve:         #D1A0B9;  // mauve accent for soft supporting backgrounds / borders
+$alert-red:     #EF4343;  // alert/red accent for warning states
+$nav-underline: $white;   // visible on the blue navbar bar
 
 // Sidebar section colours, one per top-level grouping in the "Indicators"
 // sidebar (website.sidebar.contents in _quarto.yml). Order here must track
@@ -82,17 +89,23 @@ $card-category-icon: (
   $cat-whole-story:        "\f882",  // bi-globe-americas
 );
 
-// Bootstrap picks up $link-color from $primary, so setting this alone recolors
-// links, active states, and focus rings site-wide.
-$primary:    $accent;
-$body-bg:    #fff;
-$body-color: $body-text;
+$indicator-section-style-map: (
+  "weather-and-extreme-events": ($primary, "\f2be"),
+  "cryosphere": ($primary, "\f56d"),
+  "coastal-and-marine": ($cyan, "\f5eb"),
+  "freshwater-systems": ($cyan, "\f30d"),
+  "ecosystems": ($sage, "\f5e2"),
+  "vector-related-health": ($sage, "\f1dc"),
+  "temperature-related-health": ($mauve, "\f5cd"),
+  "societal-systems": ($pale-yellow, "\f425"),
+);
 
-// Font families — climate.us sets Source Serif 4 on headings, then overrides
-// h1–h3 back to Source Sans 3, so the whole site is effectively one sans face.
-$font-family-sans-serif: "Source Sans 3", "Source Sans Pro", Helvetica, Arial, sans-serif;
+// Font families — base text and smaller headings use Avenir Next with system
+// sans-serif fallbacks, while h1 gets Gazetta with Georgia/serif fallback.
+$font-family-sans-serif: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 $font-family-base:       $font-family-sans-serif;
-$headings-font-family:   $font-family-sans-serif;
+$headings-font-family:   "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family-h1: "Gazetta", Georgia, serif;
 $navbar-font-family:     $font-family-sans-serif;
 $headings-font-weight:   700;
 
@@ -109,9 +122,16 @@ $navbar-padding-y: 1.15rem;
 /* Typography */
 body {
   font-family: $font-family-base;
+  color: $ink;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+h1, .h1 {
+  font-family: $headings-font-family-h1;
+  font-weight: 700;
+  color: $ink;
+}
+
+h2, .h2, h3, .h3, h4, .h4 {
   font-family: $headings-font-family;
   font-weight: 700;
   color: $ink;
@@ -119,13 +139,59 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 p {
   margin-bottom: 8px;
+  color: $ink;
 }
 
-// climate.us underlines in-content links. Scoped to prose only so the navbar,
-// sidebar, TOC, listing cards, anchor glyphs, and figure tabs keep their own
-// treatment.
+/* Indicator landing page */
+.indicators-intro {
+  background: $panel;
+  border: 1px solid $rule;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+  max-width: 72ch;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.quarto-listing-grid {
+  gap: 1.25rem;
+}
+
+.quarto-listing-grid .quarto-post {
+  background: #fff;
+  border: 1px solid $rule;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.9rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.quarto-listing-grid .quarto-post:hover {
+  border-color: $primary;
+  box-shadow: 0 4px 12px rgba(0, 34, 62, 0.08);
+  transform: translateY(-1px);
+}
+
+.quarto-listing-grid .quarto-post .listing-title {
+  color: $ink;
+  font-weight: 700;
+}
+
+.quarto-listing-grid .quarto-post .listing-description,
+.quarto-listing-grid .quarto-post .listing-categories {
+  color: $body-text;
+}
+
+// Links use the primary brand color, with a darker hover shade derived from
+// the same brand using a Sass color function rather than introducing a new hex.
 main.content a:not(.anchorjs-link):not(.quarto-title-meta-heading):not(.btn):not(.nav-link) {
+  color: $primary;
   text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: darken($primary, 12%);
+  }
 }
 
 // ...but listing cards are whole-tile links, not prose — the underline reads as
@@ -137,17 +203,39 @@ a.quarto-grid-link * {
   text-decoration: none !important;
 }
 
-/* Navbar — the black header bar. `background: dark` in _quarto.yml gets Quarto
-   to emit the light-on-dark variant; this pins the exact shade. */
+/* Navbar — use the primary brand blue with white text. */
 .navbar {
-  background-color: $ink !important;
+  background-color: $primary !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 nav.navbar {
+  position: relative;
   padding-top: $navbar-padding-y !important;
   padding-bottom: $navbar-padding-y !important;
   min-height: 0;
+}
+
+/* Four-color navbar stripe */
+nav.navbar::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    $mauve 0%,
+    $mauve 25%,
+    $pale-yellow 25%,
+    $pale-yellow 50%,
+    $sage 50%,
+    $sage 75%,
+    $accent-light 75%,
+    $accent-light 100%
+  );
+  pointer-events: none;
 }
 
 // Shared hover/active "block" effect for left-side nav items and right-side
@@ -189,7 +277,7 @@ nav.navbar {
       right: 0.55rem;  // tracks the label, not the wider hover block
       bottom: 0;
       height: 2px;
-      background-color: $accent;
+      background-color: $nav-underline;
     }
   }
 
@@ -209,8 +297,17 @@ nav.navbar {
 
 .navbar-nav .nav-link {
   padding: 0.2rem 0.55rem !important;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   line-height: 1.2;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav:first-of-type .nav-item:first-child .nav-link {
+  font-family: $headings-font-family-h1;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: none !important;
 }
 
 .quarto-navbar-tools > a,
@@ -275,6 +372,18 @@ nav.navbar {
 .sidebar-item-container .active {
   font-weight: 700 !important;
   color: $accent !important;
+}
+
+/* Category sidebar width and line layout */
+#quarto-sidebar:has(.quarto-listing-category),
+#quarto-sidebar:has(.quarto-listing-category) .sidebar-menu-container,
+#quarto-sidebar .quarto-listing-category {
+  width: max-content;
+}
+
+#quarto-sidebar:has(.quarto-listing-category) .quarto-listing-category .category {
+  display: block;
+  white-space: nowrap;
 }
 
 // Section subtitles ("Weather and Extreme Events", "Cryosphere", ...) each get
@@ -402,6 +511,157 @@ main.content {
 .home-pill-desc {
   color: $body-text;
   line-height: 1.5;
+}
+
+/* Indicator section accordions */
+.indicator-section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.indicator-section {
+  border: 1px solid $rule;
+  border-radius: 4px;
+  background: $body-bg;
+
+  > summary {
+    padding: 1rem 1.25rem;
+    background: $accent-light;
+    color: $ink;
+    cursor: pointer;
+  }
+
+  &[open] > summary {
+    border-bottom: 1px solid $rule;
+  }
+}
+
+.indicator-section-summary-content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: calc(100% - 1rem);
+  vertical-align: middle;
+}
+
+.indicator-section-title {
+  color: $ink;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.indicator-section-placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid $sage;
+  border-radius: 50%;
+  background: $body-bg;
+  color: $ink;
+  font-size: 0;
+  font-weight: 600;
+}
+
+.indicator-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+
+  > a {
+    color: inherit;
+    text-decoration: none !important;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .listing-description {
+    margin: 0;
+  }
+}
+
+$section-order: 0;
+@each $section, $style in $indicator-section-style-map {
+  $section-order: $section-order + 1;
+  $accent: nth($style, 1);
+  $icon: nth($style, 2);
+  $icon-color: if($accent == $primary, $white, $ink);
+
+  .indicator-section[data-section="#{$section}"] {
+    order: $section-order;
+    border-left: 8px solid $accent;
+
+    > summary {
+      background-color: mix($white, $accent, 92%);
+      color: $ink;
+    }
+
+    .indicator-section-placeholder {
+      border-color: $accent;
+      background-color: $accent;
+      color: $icon-color;
+
+      &::before {
+        content: $icon;
+        font-family: "bootstrap-icons" !important;
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+    }
+
+    .indicator-card-grid .quarto-grid-item.card {
+      border-top: 3px solid $accent;
+
+      &:hover {
+        border-color: $alert-red !important;
+        border-top-color: $alert-red !important;
+        box-shadow: 0 0 0 1px $alert-red;
+
+        .card-title::before {
+          color: $alert-red !important;
+        }
+      }
+    }
+
+    .indicator-card-grid a.quarto-grid-link {
+      color: $ink !important;
+      text-decoration: none !important;
+    }
+
+    .indicator-card-grid .listing-title {
+      color: $ink !important;
+      text-decoration: underline !important;
+    }
+
+    .indicator-card-grid .listing-description {
+      color: $ink;
+    }
+
+    .indicator-card-grid .card-title::before {
+      color: $accent !important;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .indicator-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .indicator-card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---- Listing cards: Indicators grid (.quarto-grid-item) + any post list

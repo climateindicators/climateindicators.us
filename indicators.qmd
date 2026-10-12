@@ -1,27 +1,152 @@
 ---
-title: "Indicators"
-listing:
-  contents:
-    - "indicators/*.qmd"
-    - "!indicators/global-greenhouse-gas-emissions.qmd"
-    - "!indicators/ice-sheets.qmd"
-    - "!indicators/ocean-acidity.qmd"
-    - "!indicators/antarctic-sea-ice.qmd"
-  sort: "title"
-  type: grid
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  fields: [title, description, categories]
-  image-height: auto
+title: "Climate, Health, and Environment Indicators"
 page-layout: full
+toc: false
 ---
 
-Each indicator below tracks one measurable signal of a changing climate in the
-United States, built from public data with the code and sources published
-alongside it.
+[text]
 
-{{< include /chunks/coming-soon.qmd >}}
+[text]
 
-<br>
+[text]
+
+[text]
+
+[text]
+
+[text]
+
+[text]
+
+## References
+
+[text]
+
+[text]
+
+[text]
+
+<div id="indicator-section-grid" class="home-pills indicator-section-grid"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const sectionList = document.querySelector("#indicator-section-grid");
+  const sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container > ul");
+  if (!sectionList || !sidebar) return;
+
+  const response = await fetch("all-indicators.html");
+  if (!response.ok) return;
+
+  const sourceDocument = new DOMParser().parseFromString(await response.text(), "text/html");
+  const sourceUrl = new URL("all-indicators.html", window.location.href);
+  const sectionItems = Array.from(sourceDocument.querySelectorAll("#quarto-sidebar .sidebar-item-section"));
+
+  sectionItems.forEach((section) => {
+    const title = section.querySelector(".sidebar-item-container .menu-text")?.textContent.trim();
+    if (!title) return;
+
+    const accordion = document.createElement("details");
+    accordion.className = "indicator-section";
+    accordion.name = "indicator-sections";
+    accordion.dataset.section = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+    const summary = document.createElement("summary");
+    summary.className = "indicator-section-summary";
+    const summaryContent = document.createElement("span");
+    summaryContent.className = "indicator-section-summary-content";
+
+    const label = document.createElement("span");
+    label.className = "indicator-section-title";
+    label.textContent = title;
+
+    const placeholder = document.createElement("span");
+    placeholder.className = "indicator-section-placeholder";
+    placeholder.setAttribute("aria-hidden", "true");
+    placeholder.textContent = "Icon";
+
+    summaryContent.append(label, placeholder);
+    summary.append(summaryContent);
+
+    const cards = document.createElement("div");
+    cards.className = "indicator-card-grid";
+
+    section.querySelectorAll(".sidebar-section a.sidebar-link").forEach((item) => {
+      const cardLink = document.createElement("a");
+      cardLink.className = "quarto-grid-link";
+      cardLink.href = new URL(item.getAttribute("href"), sourceUrl).href;
+
+      const card = document.createElement("div");
+      card.className = "quarto-grid-item card h-100";
+      const body = document.createElement("div");
+      body.className = "card-body post-contents";
+
+      const cardTitle = document.createElement("h5");
+      cardTitle.className = "card-title listing-title";
+      cardTitle.textContent = item.querySelector(".menu-text")?.textContent.trim() || "";
+
+      const description = document.createElement("p");
+      description.className = "card-text listing-description";
+
+      body.append(cardTitle, description);
+      card.append(body);
+      cardLink.append(card);
+      cards.append(cardLink);
+    });
+
+    accordion.append(summary, cards);
+    sectionList.append(accordion);
+  });
+
+  const sortedSections = Array.from(sectionList.children).sort(
+    (first, second) => Number(getComputedStyle(first).order) - Number(getComputedStyle(second).order)
+  );
+  sectionList.replaceChildren(...sortedSections);
+
+  const listingDocument = sourceDocument;
+  const listingUrl = new URL("all-indicators.html", window.location.href);
+  const listingCards = new Map();
+
+  listingDocument.querySelectorAll(".quarto-listing-container-grid a.quarto-grid-link").forEach((item) => {
+    const path = new URL(item.getAttribute("href"), listingUrl).pathname;
+    listingCards.set(path, {
+      title: item.querySelector(".listing-title")?.textContent.trim(),
+      description: item.querySelector(".listing-description")?.textContent.trim()
+    });
+  });
+
+  document.querySelectorAll(".indicator-card-grid a.quarto-grid-link").forEach((item) => {
+    const card = listingCards.get(new URL(item.getAttribute("href"), window.location.href).pathname);
+    if (!card) return;
+
+    const title = item.querySelector(".listing-title");
+    const description = item.querySelector(".listing-description");
+    if (card.title) title.textContent = card.title;
+    if (card.description) description.textContent = card.description;
+  });
+
+  const categories = sourceDocument.querySelector(".quarto-listing-category");
+  if (!categories) return;
+
+  const categoryList = categories.cloneNode(true);
+  categoryList.querySelectorAll(".category").forEach((category) => {
+    const name = decodeURIComponent(atob(category.dataset.category));
+    const link = document.createElement("a");
+    link.className = "category";
+    link.innerHTML = category.innerHTML;
+    link.href = name
+      ? `all-indicators.html#category=${encodeURIComponent(name)}`
+      : "all-indicators.html";
+    category.replaceWith(link);
+  });
+
+  const categoryItem = document.createElement("li");
+  categoryItem.className = "sidebar-item";
+  categoryItem.append(categoryList);
+  sidebar.querySelectorAll(":scope > .sidebar-item-section").forEach((section) => {
+    section.remove();
+  });
+  sidebar.append(categoryItem);
+
+});
+</script>
 
