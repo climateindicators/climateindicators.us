@@ -130,6 +130,46 @@ p {
   color: $ink;
 }
 
+/* Indicator landing page */
+.indicators-intro {
+  background: $panel;
+  border: 1px solid $rule;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+  max-width: 72ch;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.quarto-listing-grid {
+  gap: 1.25rem;
+}
+
+.quarto-listing-grid .quarto-post {
+  background: #fff;
+  border: 1px solid $rule;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.9rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.quarto-listing-grid .quarto-post:hover {
+  border-color: $primary;
+  box-shadow: 0 4px 12px rgba(0, 34, 62, 0.08);
+  transform: translateY(-1px);
+}
+
+.quarto-listing-grid .quarto-post .listing-title {
+  color: $ink;
+  font-weight: 700;
+}
+
+.quarto-listing-grid .quarto-post .listing-description,
+.quarto-listing-grid .quarto-post .listing-categories {
+  color: $body-text;
+}
+
 // Links use the primary brand color, with a darker hover shade derived from
 // the same brand using a Sass color function rather than introducing a new hex.
 main.content a:not(.anchorjs-link):not(.quarto-title-meta-heading):not(.btn):not(.nav-link) {
@@ -222,8 +262,17 @@ nav.navbar {
 
 .navbar-nav .nav-link {
   padding: 0.2rem 0.55rem !important;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   line-height: 1.2;
+  font-weight: 600;
+}
+
+.navbar .navbar-nav:first-of-type .nav-item:first-child .nav-link {
+  font-family: $headings-font-family-h1;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: none !important;
 }
 
 .quarto-navbar-tools > a,
@@ -288,6 +337,18 @@ nav.navbar {
 .sidebar-item-container .active {
   font-weight: 700 !important;
   color: $accent !important;
+}
+
+/* Category sidebar width and line layout */
+#quarto-sidebar:has(.quarto-listing-category),
+#quarto-sidebar:has(.quarto-listing-category) .sidebar-menu-container,
+#quarto-sidebar .quarto-listing-category {
+  width: max-content;
+}
+
+#quarto-sidebar:has(.quarto-listing-category) .quarto-listing-category .category {
+  display: block;
+  white-space: nowrap;
 }
 
 // Section subtitles ("Weather and Extreme Events", "Cryosphere", ...) each get
@@ -415,6 +476,95 @@ main.content {
 .home-pill-desc {
   color: $body-text;
   line-height: 1.5;
+}
+
+/* Indicator section accordions */
+.indicator-section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.indicator-section {
+  border: 1px solid $rule;
+  border-radius: 4px;
+  background: $body-bg;
+
+  > summary {
+    padding: 1rem 1.25rem;
+    background: $accent-light;
+    color: $ink;
+    cursor: pointer;
+  }
+
+  &[open] > summary {
+    border-bottom: 1px solid $rule;
+  }
+}
+
+.indicator-section-summary-content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: calc(100% - 1rem);
+  vertical-align: middle;
+}
+
+.indicator-section-title {
+  color: $ink;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.indicator-section-placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.5rem;
+  min-height: 2.5rem;
+  border: 1px solid $sage;
+  border-radius: 4px;
+  background: $body-bg;
+  color: $ink;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.indicator-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+
+  > a {
+    color: inherit;
+    text-decoration: none !important;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .listing-description {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .indicator-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .indicator-card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---- Listing cards: Indicators grid (.quarto-grid-item) + any post list

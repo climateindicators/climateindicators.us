@@ -2,4 +2,76 @@
 title: "Methodology and Technical Documentation"
 ---
 
+[text]
+
+## EPA's Indicator Development Process (through January 2025)
+[text]
+
+
+#### Identification
+[text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+#### Evaluation
+[text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+#### Screening
+[text]
+
+
+#### Development
+[text]
+
+#### Review
+[text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+#### Revision
+[text]
+
+## Our Approach Moving Forward
+[text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
+- [text]
+
 {{< include /chunks/coming-soon.qmd >}}

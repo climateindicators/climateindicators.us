@@ -27,35 +27,29 @@ website:
     background: primary
     search: true
     left:
-      - icon: house-door
-        text: "Home"
+      - text: "Climate indicators"
         href: index.qmd
       
     right:
-      - icon: info-circle
-        text: "About"
+      - text: "About"
         href: about.qmd
-      - icon: book
-        text: "The Whole Story"
+      - text: "The Whole Story"
         href: tracking-the-whole-climate-change-story.qmd
-      - icon: graph-up
-        text: "Climate, Health and Environment"
+      - text: "Indicators"
         href: indicators.qmd
-      - icon: folder2-open
-        text: "Methodology"
+      - text: "Methodology"
         href: methodology.qmd
-      - icon: leaf
-
-
-
 
   sidebar:
     - title: "Indicators"
       style: "docked"
       background: light
       contents:
-        - text: "All Indicators"
+        - text: "Sections"
           href: indicators.qmd
+
+        - text: "All Indicators"
+          href: all-indicators.qmd
 
         - section: "Weather and Extreme Events"
           contents:

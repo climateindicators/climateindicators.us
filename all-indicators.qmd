@@ -1,0 +1,51 @@
+---
+title: "Climate, Health, and Environment Indicators"
+listing:
+  contents:
+    - "indicators/*.qmd"
+    - "!indicators/global-greenhouse-gas-emissions.qmd"
+    - "!indicators/ice-sheets.qmd"
+    - "!indicators/ocean-acidity.qmd"
+    - "!indicators/antarctic-sea-ice.qmd"
+  sort: "title"
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [title, description, categories]
+  image-height: auto
+page-layout: full
+---
+
+[text]
+[text]
+[text]
+[text]
+[text]
+[text]
+[text]
+
+## References
+[text]
+[text]
+[text]
+
+{{< include /chunks/coming-soon.qmd >}}
+
+<br>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sidebar = document.querySelector("#quarto-sidebar .sidebar-menu-container > ul");
+  const categories = document.querySelector("#quarto-margin-sidebar .quarto-listing-category");
+
+  if (!sidebar || !categories) return;
+
+  const categoryItem = document.createElement("li");
+  categoryItem.className = "sidebar-item";
+  categoryItem.append(categories);
+  sidebar.replaceChildren(categoryItem);
+
+  document.querySelector(".quarto-listing-category-title")?.remove();
+});
+</script>
