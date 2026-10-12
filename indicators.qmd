@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const accordion = document.createElement("details");
     accordion.className = "indicator-section";
     accordion.name = "indicator-sections";
+    accordion.dataset.section = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
     const summary = document.createElement("summary");
     summary.className = "indicator-section-summary";
@@ -95,6 +96,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     accordion.append(summary, cards);
     sectionList.append(accordion);
   });
+
+  const sortedSections = Array.from(sectionList.children).sort(
+    (first, second) => Number(getComputedStyle(first).order) - Number(getComputedStyle(second).order)
+  );
+  sectionList.replaceChildren(...sortedSections);
 
   const listingDocument = sourceDocument;
   const listingUrl = new URL("all-indicators.html", window.location.href);

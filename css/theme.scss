@@ -7,6 +7,7 @@
 $primary:       #0075C8;  // primary brand blue
 $accent:        #0075C8;  // link / brand blue
 $accent-light:  #CCE3F4;  // light blue for soft backgrounds and callout fills
+$pale-yellow:   #FFEFAE;  // pale yellow accent
 $accent-dark:   #005fa8;  // pressed / darker brand state
 $ink:           #00223E;  // dark navy for text on light backgrounds and footer
 $ink-soft:      #1d3a55;  // slightly lighter navy for subtle dark surfaces
@@ -86,6 +87,17 @@ $card-category-icon: (
   $cat-societal:           "\f425",  // bi-house
   $cat-freshwater:         "\f30d",  // bi-droplet
   $cat-whole-story:        "\f882",  // bi-globe-americas
+);
+
+$indicator-section-style-map: (
+  "weather-and-extreme-events": ($primary, "\f2be"),
+  "cryosphere": ($primary, "\f56d"),
+  "coastal-and-marine": ($cyan, "\f5eb"),
+  "freshwater-systems": ($cyan, "\f30d"),
+  "ecosystems": ($sage, "\f5e2"),
+  "vector-related-health": ($sage, "\f1dc"),
+  "temperature-related-health": ($mauve, "\f5cd"),
+  "societal-systems": ($pale-yellow, "\f425"),
 );
 
 // Font families — base text and smaller headings use Avenir Next with system
@@ -198,9 +210,32 @@ a.quarto-grid-link * {
 }
 
 nav.navbar {
+  position: relative;
   padding-top: $navbar-padding-y !important;
   padding-bottom: $navbar-padding-y !important;
   min-height: 0;
+}
+
+/* Four-color navbar stripe */
+nav.navbar::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    $mauve 0%,
+    $mauve 25%,
+    $pale-yellow 25%,
+    $pale-yellow 50%,
+    $sage 50%,
+    $sage 75%,
+    $accent-light 75%,
+    $accent-light 100%
+  );
+  pointer-events: none;
 }
 
 // Shared hover/active "block" effect for left-side nav items and right-side
@@ -522,15 +557,14 @@ main.content {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 3.5rem;
-  min-height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   border: 1px solid $sage;
-  border-radius: 4px;
+  border-radius: 50%;
   background: $body-bg;
   color: $ink;
-  font-size: 0.75rem;
+  font-size: 0;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 .indicator-card-grid {
@@ -550,6 +584,69 @@ main.content {
 
   .listing-description {
     margin: 0;
+  }
+}
+
+$section-order: 0;
+@each $section, $style in $indicator-section-style-map {
+  $section-order: $section-order + 1;
+  $accent: nth($style, 1);
+  $icon: nth($style, 2);
+  $icon-color: if($accent == $primary, $white, $ink);
+
+  .indicator-section[data-section="#{$section}"] {
+    order: $section-order;
+    border-left: 8px solid $accent;
+
+    > summary {
+      background-color: mix($white, $accent, 92%);
+      color: $ink;
+    }
+
+    .indicator-section-placeholder {
+      border-color: $accent;
+      background-color: $accent;
+      color: $icon-color;
+
+      &::before {
+        content: $icon;
+        font-family: "bootstrap-icons" !important;
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+    }
+
+    .indicator-card-grid .quarto-grid-item.card {
+      border-top: 3px solid $accent;
+
+      &:hover {
+        border-color: $alert-red !important;
+        border-top-color: $alert-red !important;
+        box-shadow: 0 0 0 1px $alert-red;
+
+        .card-title::before {
+          color: $alert-red !important;
+        }
+      }
+    }
+
+    .indicator-card-grid a.quarto-grid-link {
+      color: $ink !important;
+      text-decoration: none !important;
+    }
+
+    .indicator-card-grid .listing-title {
+      color: $ink !important;
+      text-decoration: underline !important;
+    }
+
+    .indicator-card-grid .listing-description {
+      color: $ink;
+    }
+
+    .indicator-card-grid .card-title::before {
+      color: $accent !important;
+    }
   }
 }
 
