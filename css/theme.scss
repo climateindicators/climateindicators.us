@@ -23,37 +23,46 @@ $btn-hover:    #708C69;  // download button hover fill
 // its rendered position (#quarto-sidebar-section-N), not by name. Sourced
 // from ltc's `hat` palette (`ltc::ltc("hat")`) rather than invented hex, to
 // stay on the same categorical set the R charts are built from.
-$cat-health-society:    #eb990c;  // 1. Health and Society — hat[2], orange
-$cat-greenhouse-gasses: #852f88;  // 2. Greenhouse Gasses — hat[5], purple
-$cat-environment:       #17a769;  // 3. Environment — hat[9], emerald
-$cat-weather-climate:   #0f8096;  // 4. Weather and Climate — hat[7], teal
-$cat-oceans:            #4e54ac;  // 5. Oceans — hat[6], indigo
-$cat-cryosphere:        #cd023d;  // 6. Cryosphere — hat[4], crimson
+$cat-weather-extremes:   #0f8096;  // 1. Weather and Extreme Events — hat[7], teal
+$cat-coastal-marine:     #4e54ac;  // 2. Coastal and Marine — hat[6], indigo
+$cat-cryosphere:         #cd023d;  // 3. Cryosphere — hat[4], crimson
+$cat-temperature-health: #eb990c;  // 4. Temperature-Related Health — hat[2], orange
+$cat-vector-health:      #e8351e;  // 5. Vector-Related Health — hat[3], red
+$cat-ecosystems:         #17a769;  // 6. Ecosystems — hat[9], emerald
+$cat-societal:           #852f88;  // 7. Societal Systems — hat[5], purple
+$cat-freshwater:         #7db954;  // 8. Freshwater Systems — hat[8], green
+$cat-whole-story:        #efb306;  // Whole Story cards (not a sidebar section) — hat[1], gold
 
 // Each indicator slug mapped to its sidebar section colour, so a card's
 // border matches its category in the sidebar. Keep this in sync with the
 // sidebar contents in _quarto.yml — an indicator added there needs an entry
 // here too, or its card falls back to the neutral $rule border below.
 $card-category-map: (
-  $cat-health-society: (
-    "heat-related-deaths", "cold-related-deaths", "heat-related-workplace-deaths",
-    "lyme-disease", "heat-related-illnesses", "heating-and-cooling-degree-days",
-    "residential-energy-use", "west-nile-virus", "length-of-growing-season",
-    "growing-degree-days", "ragweed-pollen-season"
-  ),
-  $cat-greenhouse-gasses: ("global-greenhouse-gas-emissions"),
-  $cat-environment: (
-    "leaf-and-bloom-dates", "cherry-blossom-bloom", "wildfires",
-    "bird-wintering-ranges", "marine-species-distribution"
-  ),
-  $cat-weather-climate: (
+  $cat-weather-extremes: (
     "us-and-global-temperature", "seasonal-temperature", "high-and-low-temperatures",
-    "heat-waves", "heavy-precipitation", "drought", "temperature-and-drought-in-the-southwest",
-    "river-flooding", "streamflow", "great-lakes", "lake-temperature", "stream-temperature",
-    "snake-river", "tropical-cyclone-activity"
+    "heat-waves", "heavy-precipitation", "tropical-cyclone-activity", "river-flooding",
+    "drought", "temperature-and-drought-in-the-southwest", "wildfires"
   ),
-  $cat-oceans: ("sea-surface-temperature", "atlantic-coast", "ocean-acidity", "antarctic-sea-ice", "ice-sheets"),
-  $cat-cryosphere: ("glaciers-in-glacier-park", "lake-ice", "great-lakes-ice-cover", "snowpack", "permafrost", "alaskan-rivers", "freeze-thaw-conditions"),
+  $cat-coastal-marine: ("sea-surface-temperature", "atlantic-coast"),
+  $cat-cryosphere: (
+    "glaciers-in-glacier-park", "lake-ice", "great-lakes-ice-cover", "snowpack",
+    "permafrost", "freeze-thaw-conditions", "alaskan-rivers"
+  ),
+  $cat-temperature-health: (
+    "heat-related-deaths", "heat-related-workplace-deaths", "heat-related-illnesses",
+    "cold-related-deaths"
+  ),
+  $cat-vector-health: ("lyme-disease", "west-nile-virus"),
+  $cat-ecosystems: (
+    "length-of-growing-season", "growing-degree-days", "ragweed-pollen-season",
+    "leaf-and-bloom-dates", "cherry-blossom-bloom", "marine-species-distribution",
+    "bird-wintering-ranges"
+  ),
+  $cat-societal: ("heating-and-cooling-degree-days", "residential-energy-use"),
+  $cat-freshwater: (
+    "streamflow", "stream-temperature", "snake-river", "lake-temperature", "great-lakes"
+  ),
+  $cat-whole-story: ("global-greenhouse-gas-emissions", "ice-sheets", "ocean-acidity"),
 );
 
 // One Bootstrap Icon glyph per category, keyed the same as $card-category-map
@@ -62,12 +71,15 @@ $card-category-map: (
 // class names, since these apply via a ::before pseudo-element that has no
 // element to hang a `bi bi-<name>` class on.
 $card-category-icon: (
-  $cat-health-society:    "\f66b",  // bi-activity
-  $cat-greenhouse-gasses: "\f2a7",  // bi-cloud-haze
-  $cat-environment:       "\f5e2",  // bi-tree
-  $cat-weather-climate:   "\f2be",  // bi-cloud-sun
-  $cat-oceans:            "\f5eb",  // bi-tsunami
-  $cat-cryosphere:        "\f56d",  // bi-snow
+  $cat-weather-extremes:   "\f2be",  // bi-cloud-sun
+  $cat-coastal-marine:     "\f5eb",  // bi-tsunami
+  $cat-cryosphere:         "\f56d",  // bi-snow
+  $cat-temperature-health: "\f5cd",  // bi-thermometer-half
+  $cat-vector-health:      "\f1dc",  // bi-bug
+  $cat-ecosystems:         "\f5e2",  // bi-tree
+  $cat-societal:           "\f425",  // bi-house
+  $cat-freshwater:         "\f30d",  // bi-droplet
+  $cat-whole-story:        "\f882",  // bi-globe-americas
 );
 
 // Bootstrap picks up $link-color from $primary, so setting this alone recolors
@@ -265,18 +277,20 @@ nav.navbar {
   color: $accent !important;
 }
 
-// Section subtitles ("Health and Society", "Greenhouse Gasses", ...) each get
+// Section subtitles ("Weather and Extreme Events", "Cryosphere", ...) each get
 // their own colour, both on the label and its collapse chevron. Quarto gives
 // every section's toggle links a shared data-bs-target rather than a class
 // naming the section, so that attribute is what's addressed here, in the
 // order sections appear in _quarto.yml (see the $cat-* variables above).
 #quarto-sidebar {
-  [data-bs-target="#quarto-sidebar-section-1"] { color: $cat-health-society; }
-  [data-bs-target="#quarto-sidebar-section-2"] { color: $cat-greenhouse-gasses; }
-  [data-bs-target="#quarto-sidebar-section-3"] { color: $cat-environment; }
-  [data-bs-target="#quarto-sidebar-section-4"] { color: $cat-weather-climate; }
-  [data-bs-target="#quarto-sidebar-section-5"] { color: $cat-oceans; }
-  [data-bs-target="#quarto-sidebar-section-6"] { color: $cat-cryosphere; }
+  [data-bs-target="#quarto-sidebar-section-1"] { color: $cat-weather-extremes; }
+  [data-bs-target="#quarto-sidebar-section-2"] { color: $cat-coastal-marine; }
+  [data-bs-target="#quarto-sidebar-section-3"] { color: $cat-cryosphere; }
+  [data-bs-target="#quarto-sidebar-section-4"] { color: $cat-temperature-health; }
+  [data-bs-target="#quarto-sidebar-section-5"] { color: $cat-vector-health; }
+  [data-bs-target="#quarto-sidebar-section-6"] { color: $cat-ecosystems; }
+  [data-bs-target="#quarto-sidebar-section-7"] { color: $cat-societal; }
+  [data-bs-target="#quarto-sidebar-section-8"] { color: $cat-freshwater; }
 }
 
 // Tinted panel in the shape of climate.us's .usa-sidenav-list. Needs the id to
