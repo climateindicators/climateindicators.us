@@ -83,6 +83,8 @@ website:
           contents:
             - text: "Sea Surface Temperature"
               href: indicators/sea-surface-temperature.qmd
+            - text: "Coastal Flooding"
+              href: indicators/coastal-flooding.qmd
             - text: "A Closer Look: Land Loss Along the Atlantic Coast"
               href: indicators/atlantic-coast.qmd
         - section: "Cryosphere"
