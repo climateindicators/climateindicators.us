@@ -1,21 +1,27 @@
-@import "https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap";
-
 /*-- scss:defaults --*/
 
 // ---------------------------------------------------------------------------
-// Palette, lifted from climate.us. Every tinted rule below derives from these,
+// Brand palette for the site. Every tinted rule below derives from these,
 // so re-theming the site means editing this block and nothing else.
 // ---------------------------------------------------------------------------
-$accent:       #2882e6;  // link / brand blue
-$accent-light: #5aa3f0;  // lightened for legibility on the dark footer bar
-$accent-dark:  #1b66bd;  // pressed states
-$ink:          #1e1e1e;  // near-black — navbar and footer
-$ink-soft:     #333333;  // header bar on climate.us proper
-$body-text:    #464646;
-$panel:        #f4f4f5;  // light grey for cards, sidebar, callouts
-$rule:         #dcdcdc;  // neutral border, one step darker than $panel
-$muted:        #757575;
-$btn-hover:    #708C69;  // download button hover fill
+$primary:       #0075C8;  // primary brand blue
+$accent:        #0075C8;  // link / brand blue
+$accent-light:  #CCE3F4;  // light blue for soft backgrounds and callout fills
+$accent-dark:   #005fa8;  // pressed / darker brand state
+$ink:           #00223E;  // dark navy for text on light backgrounds and footer
+$ink-soft:      #1d3a55;  // slightly lighter navy for subtle dark surfaces
+$body-text:     #00223E;  // default body text
+$body-bg:       #fff;     // page background
+$panel:         #f4f4f5;  // light grey for cards, sidebar, callouts
+$rule:          #dcdcdc;  // neutral border, one step darker than $panel
+$muted:         #5a6f82;  // muted supporting text on light backgrounds
+$btn-hover:     #005fa8;  // hover fill for branded UI elements
+$white:         #FFFFFF;  // white
+$cyan:          #52C9E8;  // cyan accent for borders, icons, and backgrounds behind navy text
+$sage:          #ADCAB8;  // sage accent for soft supporting backgrounds / borders
+$mauve:         #D1A0B9;  // mauve accent for soft supporting backgrounds / borders
+$alert-red:     #EF4343;  // alert/red accent for warning states
+$nav-underline: $white;   // visible on the blue navbar bar
 
 // Sidebar section colours, one per top-level grouping in the "Indicators"
 // sidebar (website.sidebar.contents in _quarto.yml). Order here must track
@@ -82,17 +88,12 @@ $card-category-icon: (
   $cat-whole-story:        "\f882",  // bi-globe-americas
 );
 
-// Bootstrap picks up $link-color from $primary, so setting this alone recolors
-// links, active states, and focus rings site-wide.
-$primary:    $accent;
-$body-bg:    #fff;
-$body-color: $body-text;
-
-// Font families — climate.us sets Source Serif 4 on headings, then overrides
-// h1–h3 back to Source Sans 3, so the whole site is effectively one sans face.
-$font-family-sans-serif: "Source Sans 3", "Source Sans Pro", Helvetica, Arial, sans-serif;
+// Font families — base text and smaller headings use Avenir Next with system
+// sans-serif fallbacks, while h1 gets Gazetta with Georgia/serif fallback.
+$font-family-sans-serif: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 $font-family-base:       $font-family-sans-serif;
-$headings-font-family:   $font-family-sans-serif;
+$headings-font-family:   "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family-h1: "Gazetta", Georgia, serif;
 $navbar-font-family:     $font-family-sans-serif;
 $headings-font-weight:   700;
 
@@ -109,9 +110,16 @@ $navbar-padding-y: 1.15rem;
 /* Typography */
 body {
   font-family: $font-family-base;
+  color: $ink;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+h1, .h1 {
+  font-family: $headings-font-family-h1;
+  font-weight: 700;
+  color: $ink;
+}
+
+h2, .h2, h3, .h3, h4, .h4 {
   font-family: $headings-font-family;
   font-weight: 700;
   color: $ink;
@@ -119,13 +127,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 p {
   margin-bottom: 8px;
+  color: $ink;
 }
 
-// climate.us underlines in-content links. Scoped to prose only so the navbar,
-// sidebar, TOC, listing cards, anchor glyphs, and figure tabs keep their own
-// treatment.
+// Links use the primary brand color, with a darker hover shade derived from
+// the same brand using a Sass color function rather than introducing a new hex.
 main.content a:not(.anchorjs-link):not(.quarto-title-meta-heading):not(.btn):not(.nav-link) {
+  color: $primary;
   text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: darken($primary, 12%);
+  }
 }
 
 // ...but listing cards are whole-tile links, not prose — the underline reads as
@@ -137,10 +151,9 @@ a.quarto-grid-link * {
   text-decoration: none !important;
 }
 
-/* Navbar — the black header bar. `background: dark` in _quarto.yml gets Quarto
-   to emit the light-on-dark variant; this pins the exact shade. */
+/* Navbar — use the primary brand blue with white text. */
 .navbar {
-  background-color: $ink !important;
+  background-color: $primary !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -189,7 +202,7 @@ nav.navbar {
       right: 0.55rem;  // tracks the label, not the wider hover block
       bottom: 0;
       height: 2px;
-      background-color: $accent;
+      background-color: $nav-underline;
     }
   }
 
