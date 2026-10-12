@@ -8,6 +8,10 @@ Each indicator below tracks one measurable signal of a changing climate in the U
 
 \
 
+##### A Closer Look: Glaciers in Glacier National Park
+
+This regional feature examines how the surface area of glaciers in Glacier National Park in Montana has changed since 1966.
+
 ##### A Closer Look: Heat-Related Workplace Deaths
 
 Deaths of U.S. workers attributed to heat exposure on the job.
@@ -36,13 +40,25 @@ Deaths in the United States attributed to extreme cold.
 
 How the peak bloom date of Washington, D.C.’s Yoshino cherry trees has changed since 1921, alongside the dates of the National Cherry Blossom Festival.
 
+##### Community Connection: Ice Breakup in Three Alaskan Rivers
+
+This feature examines the timing of spring river ice breakup in three communities that have kept detailed records for more than 100 years.
+
 ##### Drought
 
 This indicator measures drought conditions of U.S. lands.
 
+##### Freeze-Thaw Conditions
+
+This indicator tracks the number of days the U.S. and North American landscape is not frozen.
+
 ##### Global Greenhouse Gas Emissions
 
 This indicator describes emissions of greenhouse gases worldwide.
+
+##### Great Lakes Ice Cover
+
+This indicator measures the area and duration of ice cover in the Great Lakes.
 
 ##### Great Lakes Water Levels and Temperatures
 
@@ -80,6 +96,10 @@ Trends in unusually hot and cold temperatures across the United States.
 
 This indicator examines the balance between snow accumulation and melting in the ice sheets that cover Greenland and Antarctica.
 
+##### Lake Ice
+
+This indicator measures the amount of time that ice is present on lakes in the United States.
+
 ##### Lake Temperature
 
 This indicator shows changes in surface water temperatures in North American lakes.
@@ -104,6 +124,10 @@ This indicator examines changes in the location of fish, shellfish, and other ma
 
 This indicator describes changes in the chemistry of the ocean that relate to the amount of carbon dioxide dissolved in the water.
 
+##### Permafrost
+
+This indicator shows trends in permafrost temperature at select sites in Alaska.
+
 ##### Ragweed Pollen Season
 
 How the length of ragweed pollen season has changed at 11 locations across the central United States and Canada since 1995.
@@ -123,6 +147,10 @@ This indicator describes global trends in sea surface temperature.
 ##### Seasonal Temperature
 
 Trends in average seasonal air temperature across the contiguous United States since 1896, and how the change varies by season and by state.
+
+##### Snowpack
+
+This indicator measures trends in the amount and timing of snowpack in the western United States.
 
 ##### Stream Temperature
 
