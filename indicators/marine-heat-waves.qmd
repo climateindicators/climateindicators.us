@@ -144,6 +144,10 @@ The five areas selected for Figure 4 are not meant to be representative of condi
 
 This indicator is based on daily sea surface temperature data provided by the National Oceanic and Atmospheric Administration’s National Centers for Environmental Information. These data are available online at: [www.ncei.noaa.gov/products/optimum-interpolation-sst](https://www.ncei.noaa.gov/products/optimum-interpolation-sst).
 
+## Technical Documentation
+
+The technical documentation for this indicator is published only on EPA's website, so it is not available on this site.
+
 ## References
 
 <ol class="references">
