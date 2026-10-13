@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/tracking-the-whole-climate-change-story.html",
+    "listing": "/the-whole-story-indicators.html",
     "items": [
       "/indicators/global-greenhouse-gas-emissions.html",
       "/indicators/ice-sheets.html",
@@ -14,6 +14,7 @@
       "/indicators/heat-related-workplace-deaths.html",
       "/indicators/atlantic-coast.html",
       "/indicators/temperature-and-drought-in-the-southwest.html",
+      "/indicators/black-guillemots-cooper-island.html",
       "/indicators/bird-wintering-ranges.html",
       "/indicators/coastal-flooding.html",
       "/indicators/cold-related-deaths.html",
@@ -35,13 +36,16 @@
       "/indicators/leaf-and-bloom-dates.html",
       "/indicators/length-of-growing-season.html",
       "/indicators/lyme-disease.html",
+      "/indicators/marine-heat-waves.html",
       "/indicators/marine-species-distribution.html",
       "/indicators/permafrost.html",
       "/indicators/ragweed-pollen-season.html",
       "/indicators/residential-energy-use.html",
       "/indicators/river-flooding.html",
+      "/indicators/sea-level.html",
       "/indicators/sea-surface-temperature.html",
       "/indicators/seasonal-temperature.html",
+      "/indicators/snowfall.html",
       "/indicators/snowpack.html",
       "/indicators/stream-temperature.html",
       "/indicators/streamflow.html",

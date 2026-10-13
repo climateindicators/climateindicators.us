@@ -15,7 +15,7 @@ This indicator shows how the frequency of coastal flooding has changed over time
 Data source: NOAA, 2024^([4](#ref-4),[5](#ref-5))\
 Web update: September 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/costal-flooding/main/data/coastal_flood_days_by_site.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/costal-flooding/main/data-raw/coastal-flooding_fig-1.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/coastal-flooding/main/data/coastal_flood_days_by_site.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/coastal-flooding/main/data-raw/coastal-flooding_fig-1.csv)
 
 This chart shows the average number of days per year in which coastal waters rose above a local threshold for flooding at 42 sites along U.S. coasts. Each row compares the first decade of widespread measurements (1950–1959 in orange) with the most recent decade (2014–2023 in purple).
 
@@ -73,7 +73,7 @@ Show the data behind this figure
 Data source: NOAA, 2024\
 Web update: September 2024
 
-[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/costal-flooding/main/data/coastal_flood_events_by_site.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/costal-flooding/main/data-raw/coastal-flooding_fig-2.csv)
+[ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/coastal-flooding/main/data/coastal_flood_events_by_site.csv) [ EPA source data (CSV)](https://raw.githubusercontent.com/climateindicators/coastal-flooding/main/data-raw/coastal-flooding_fig-2.csv)
 
 This graph shows the average number of days per year in which coastal waters rose above a local threshold for flooding at 42 sites along U.S. coasts. The data have been averaged over multi-year periods for comparison.
 
@@ -169,7 +169,7 @@ This indicator is based on hourly water level data that are publicly available f
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [costal-flooding](https://github.com/climateindicators/costal-flooding) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [coastal-flooding](https://github.com/climateindicators/coastal-flooding) repository, which this page reads its data from directly.
 >
 > One change was made to EPA’s wording. EPA draws Figure 1 as a map of small bar graphs; this page draws the same data as one row per site, because the 42 sites cluster too tightly along the Mid-Atlantic coast to read on a map at this size. The figure description says “This chart” and “Each row” where EPA’s says “This map” and “Each small bar graph.”
 

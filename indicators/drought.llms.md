@@ -157,8 +157,8 @@ Data
 | 2022 | -3.006         | -1.991       |
 | 2023 | -2.284         | -2.341       |
 
-- [Clean data (CSV)](https://github.com/climateindicators/drought-new/blob/main/data/drought_palmer_index.csv)
-- [EPA’s published file (CSV)](https://github.com/climateindicators/drought-new/blob/main/data-raw/drought_fig-1.csv)
+- [Clean data (CSV)](https://github.com/climateindicators/drought/blob/main/data/drought_palmer_index.csv)
+- [EPA’s published file (CSV)](https://github.com/climateindicators/drought/blob/main/data-raw/drought_fig-1.csv)
 
 ## Figure 2
 
@@ -304,8 +304,8 @@ Data
 | 2022 | 0.303                |
 | 2023 | 0.398                |
 
-- [Clean data (CSV)](https://github.com/climateindicators/drought-new/blob/main/data/drought_spei_national.csv)
-- [EPA’s published file (CSV)](https://github.com/climateindicators/drought-new/blob/main/data-raw/drought_fig-2.csv)
+- [Clean data (CSV)](https://github.com/climateindicators/drought/blob/main/data/drought_spei_national.csv)
+- [EPA’s published file (CSV)](https://github.com/climateindicators/drought/blob/main/data-raw/drought_fig-2.csv)
 
 ## Figure 3
 
@@ -675,8 +675,8 @@ Data
 | NORTHERN                       | NH    | 2.346                          |
 | WEST CENTRAL LOWER             | MI    | 2.582                          |
 
-- [Clean data (CSV)](https://github.com/climateindicators/drought-new/blob/main/data/drought_spei_change.csv)
-- [EPA’s published file (CSV)](https://github.com/climateindicators/drought-new/blob/main/data-raw/drought_fig-3.csv)
+- [Clean data (CSV)](https://github.com/climateindicators/drought/blob/main/data/drought_spei_change.csv)
+- [EPA’s published file (CSV)](https://github.com/climateindicators/drought/blob/main/data-raw/drought_fig-3.csv)
 
 ## Figure 4
 
@@ -1964,8 +1964,8 @@ Data
 | 2023-12-19 | 18.54 | 12.64 | 9.76 | 4.55 | 0.93 |
 | 2023-12-26 | 18.43 | 13.08 | 8.61 | 4.41 | 0.97 |
 
-- [Clean data (CSV)](https://github.com/climateindicators/drought-new/blob/main/data/drought_monitor_area.csv)
-- [EPA’s published file (CSV)](https://github.com/climateindicators/drought-new/blob/main/data-raw/drought_fig-4.csv)
+- [Clean data (CSV)](https://github.com/climateindicators/drought/blob/main/data/drought_monitor_area.csv)
+- [EPA’s published file (CSV)](https://github.com/climateindicators/drought/blob/main/data-raw/drought_fig-4.csv)
 
 ## Key Points
 
@@ -2027,6 +2027,6 @@ Data for Figure 4 were provided by the National Drought Mitigation Center. Histo
 
 > **NOTE:**
 >
-> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [drought-new](https://github.com/climateindicators/drought-new) repository, which this page reads its data from directly.
+> Text on this page is EPA’s own published wording (a U.S. Government work, not subject to domestic copyright), extracted from EPA’s published indicator page and verified paragraph by paragraph against the archived HTML. Data, chart code, and the full extraction pipeline are maintained in the [drought](https://github.com/climateindicators/drought) repository, which this page reads its data from directly.
 
 Back to top

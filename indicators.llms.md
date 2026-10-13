@@ -24,6 +24,10 @@ This feature provides a closer look at one consequence of sea level rise along t
 
 A closer look at trends in temperature and drought in the southwestern United States.
 
+##### A Closer Look: The Black Guillemots of Cooper Island
+
+This feature explores changes in bird populations on an island along Alaska’s Arctic northern coast.
+
 ##### Bird Wintering Ranges
 
 This indicator examines changes in the winter ranges of North American birds.
@@ -108,6 +112,10 @@ How the length of the growing season, and the timing of spring and fall frosts, 
 
 This indicator tracks the rate of reported Lyme disease cases across the United States.
 
+##### Marine Heat Waves
+
+This indicator tracks the occurrence of unusually high temperatures in U.S. coastal waters.
+
 ##### Marine Species Distribution
 
 This indicator examines changes in the location of fish, shellfish, and other marine species along U.S. coasts.
@@ -128,6 +136,10 @@ How much electricity and natural gas U.S. homes use for summer cooling and winte
 
 How the magnitude and frequency of river flooding have changed at stream gauge stations across the United States since 1965.
 
+##### Sea Level
+
+This indicator describes how sea level has changed over time.
+
 ##### Sea Surface Temperature
 
 This indicator describes global trends in sea surface temperature.
@@ -135,6 +147,10 @@ This indicator describes global trends in sea surface temperature.
 ##### Seasonal Temperature
 
 Trends in average seasonal air temperature across the contiguous United States since 1896, and how the change varies by season and by state.
+
+##### Snowfall
+
+This indicator uses two different measures to show how snowfall has changed in the contiguous 48 states.
 
 ##### Snowpack
 
