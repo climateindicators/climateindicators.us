@@ -85,6 +85,7 @@ Current indicator repositories:
 | Lake Ice | `lake-ice` |
 | Great Lakes Ice Cover | `great-lakes-ice-cover` |
 | Community Connection: Ice Breakup in Three Alaskan Rivers | `alaskan-rivers` |
+| Sea Level | `sea-level` |
 
 Because the data is fetched over the network, rendering requires an internet
 connection, and `curl` must stay in `DESCRIPTION` — readr only *suggests* it,
