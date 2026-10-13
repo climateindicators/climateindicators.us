@@ -38,10 +38,11 @@ fig_2_plot <- function(d) {
       size = 2.2
     ) +
     scale_colour_manual(
-      values = series_colours(FIG2_KEYS),
+      values = series_colours(FIG2_KEYS), breaks = rev(FIG2_KEYS),
       labels = c(Fell = "Sea level fell relative to land",
                  Rose = "Sea level rose relative to land")
     ) +
+    scale_x_continuous(breaks = seq(-40, 20, by = 10)) +
     labs(x = "Relative sea level change, 1960–2023 (inches)", y = NULL) +
     theme_indicator() +
     theme(
