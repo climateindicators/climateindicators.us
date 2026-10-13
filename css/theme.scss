@@ -24,13 +24,13 @@ $btn-hover:    #708C69;  // download button hover fill
 // from ltc's `hat` palette (`ltc::ltc("hat")`) rather than invented hex, to
 // stay on the same categorical set the R charts are built from.
 $cat-weather-extremes:   #0f8096;  // 1. Weather and Extreme Events — hat[7], teal
-$cat-coastal-marine:     #4e54ac;  // 2. Coastal and Marine — hat[6], indigo
-$cat-cryosphere:         #cd023d;  // 3. Cryosphere — hat[4], crimson
-$cat-temperature-health: #eb990c;  // 4. Temperature-Related Health — hat[2], orange
-$cat-vector-health:      #e8351e;  // 5. Vector-Related Health — hat[3], red
-$cat-ecosystems:         #17a769;  // 6. Ecosystems — hat[9], emerald
-$cat-societal:           #852f88;  // 7. Societal Systems — hat[5], purple
-$cat-freshwater:         #7db954;  // 8. Freshwater Systems — hat[8], green
+$cat-cryosphere:         #cd023d;  // 2. Cryosphere — hat[4], crimson
+$cat-coastal-marine:     #4e54ac;  // 3. Coastal and Marine — hat[6], indigo
+$cat-freshwater:         #7db954;  // 4. Freshwater Systems — hat[8], green
+$cat-ecosystems:         #17a769;  // 5. Ecosystems — hat[9], emerald
+$cat-temperature-health: #eb990c;  // 6. Temperature-Related Health — hat[2], orange
+$cat-vector-health:      #e8351e;  // 7. Vector-Related Health — hat[3], red
+$cat-societal:           #852f88;  // 8. Societal Systems — hat[5], purple
 $cat-whole-story:        #efb306;  // Whole Story cards (not a sidebar section) — hat[1], gold
 
 // Each indicator slug mapped to its sidebar section colour, so a card's
@@ -267,6 +267,34 @@ nav.navbar {
   }
 }
 
+// Navbar dropdowns open on hover on desktop; Bootstrap's click toggle still
+// works on touch and in the collapsed mobile menu. margin-top is zeroed so
+// there is no gap between label and menu for the pointer to fall through.
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.navbar .dropdown-menu {
+  background-color: $ink;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+
+  .dropdown-item {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+
+    &:hover,
+    &:focus,
+    &.active {
+      background-color: $ink-soft;
+      color: #ffffff;
+    }
+  }
+}
+
 /* Sidebar */
 .sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
   font-weight: 700;
@@ -284,13 +312,13 @@ nav.navbar {
 // order sections appear in _quarto.yml (see the $cat-* variables above).
 #quarto-sidebar {
   [data-bs-target="#quarto-sidebar-section-1"] { color: $cat-weather-extremes; }
-  [data-bs-target="#quarto-sidebar-section-2"] { color: $cat-coastal-marine; }
-  [data-bs-target="#quarto-sidebar-section-3"] { color: $cat-cryosphere; }
-  [data-bs-target="#quarto-sidebar-section-4"] { color: $cat-temperature-health; }
-  [data-bs-target="#quarto-sidebar-section-5"] { color: $cat-vector-health; }
-  [data-bs-target="#quarto-sidebar-section-6"] { color: $cat-ecosystems; }
-  [data-bs-target="#quarto-sidebar-section-7"] { color: $cat-societal; }
-  [data-bs-target="#quarto-sidebar-section-8"] { color: $cat-freshwater; }
+  [data-bs-target="#quarto-sidebar-section-2"] { color: $cat-cryosphere; }
+  [data-bs-target="#quarto-sidebar-section-3"] { color: $cat-coastal-marine; }
+  [data-bs-target="#quarto-sidebar-section-4"] { color: $cat-freshwater; }
+  [data-bs-target="#quarto-sidebar-section-5"] { color: $cat-ecosystems; }
+  [data-bs-target="#quarto-sidebar-section-6"] { color: $cat-temperature-health; }
+  [data-bs-target="#quarto-sidebar-section-7"] { color: $cat-vector-health; }
+  [data-bs-target="#quarto-sidebar-section-8"] { color: $cat-societal; }
 }
 
 // Tinted panel in the shape of climate.us's .usa-sidenav-list. Needs the id to

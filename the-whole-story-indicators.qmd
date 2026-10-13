@@ -9,7 +9,7 @@ listing:
   type: grid
   sort-ui: false
   filter-ui: false
-  fields: [title, description, categories]
+  fields: [title, description]
   image-height: auto
 page-layout: full
 ---

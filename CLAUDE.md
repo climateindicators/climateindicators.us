@@ -312,8 +312,8 @@ Two navbar details that are easy to break:
 2. Create `R/<slug>.R` following the shape described above
 3. Create `indicators/<slug>.qmd` with front matter carrying `title`,
    `description`, `categories`, and `execute: eval: true` — the `description`
-   and `categories` feed the listing grid on `indicators.qmd`, so they are not
-   optional
+   feeds the listing grid on `indicators.qmd`, so it is not optional (the grid
+   deliberately shows no categories, neither on cards nor as a filter panel)
 4. Add a sidebar entry under the appropriate section in `_quarto.yml`
 5. Add the slug to the matching section in `$card-category-map` in
    `css/theme.scss`. That map is what gives the indicator's listing card its
