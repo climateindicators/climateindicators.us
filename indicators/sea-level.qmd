@@ -13,6 +13,7 @@ source(here::here("R", "common.R"))
 source(here::here("R", "sea-level.R"))
 
 meta     <- read_meta(REPO)
+global   <- read_indicator(REPO, "sea_level_global_absolute_change.csv")
 stations <- read_indicator(REPO, "sea_level_relative_change_by_station.csv")
 ```
 
@@ -24,15 +25,37 @@ This indicator describes how sea level has changed over time. The indicator desc
 
 ### Figure 1
 
-**Figure 1. Global Average Absolute Sea Level Change, 1880-2023**
+```{r}
+#| label: caption-1
+#| echo: false
+#| output: asis
+figure_caption(meta, "sea_level_global_absolute_change.csv", ref = c(4, 5))
+```
 
-Data source: CSIRO, 2017^[4](#ref-4)^; NOAA, 2024^[5](#ref-5)^ <br> Web update: June 2024
+<div class="d-flex flex-wrap gap-2 mb-3">
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/sea-level/main/data/sea_level_global_absolute_change.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/sea-level/main/data-raw/sea-level_fig-1.csv" download><i class="bi bi-filetype-csv"></i> EPA source data (CSV)</a>
+</div>
+
+```{r}
+#| label: chart-1
+#| echo: false
+fig_1(global)
+```
 
 This graph shows cumulative changes in sea level for the world’s oceans since 1880, based on a combination of long-term tide gauge measurements and recent satellite measurements. This figure shows average absolute sea level change, which refers to the height of the ocean surface, regardless of whether nearby land is rising or falling. Satellite data are based solely on measured sea level, while the long-term tide gauge data include a small correction factor because the size and shape of the oceans are changing slowly over time. (On average, the ocean floor has been gradually sinking since the last Ice Age peak, 20,000 years ago.) The shaded band shows the likely range of values, based on the number of measurements collected and the precision of the methods used.
 
-::: {.callout-note appearance="simple" icon=false}
-This graph is not yet reproduced on this page, and there is no data table for it.
+<details><summary>Show the data behind this figure</summary>
+
+::: {.table-scroll}
+```{r}
+#| label: table-1
+#| echo: false
+knitr::kable(fig_1_table(global), digits = 2)
+```
 :::
+
+</details>
 
 ### Figure 2
 

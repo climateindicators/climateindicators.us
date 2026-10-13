@@ -13,6 +13,69 @@ with_label <- function(d) {
   d
 }
 
+# ---- Figure 1: global average absolute sea level change, 1880-2023 -----------
+
+FIG1_KEYS   <- c("CSIRO", "NOAA")
+FIG1_LABELS <- c(
+  CSIRO = "CSIRO: long-term tide gauge record, adjusted with satellite data",
+  NOAA  = "NOAA: satellite measurements"
+)
+
+# The bounds arrive as text: read_indicator() only types `value`. NOAA rows have
+# no band, so they come through as NA and geom_ribbon() skips them.
+fig_1_plot <- function(d) {
+  stopifnot(setequal(unique(d$series), FIG1_KEYS))
+  d$lower  <- suppressWarnings(as.numeric(d$lower))
+  d$upper  <- suppressWarnings(as.numeric(d$upper))
+  d$series <- factor(d$series, levels = FIG1_KEYS)
+  cols  <- series_colours(FIG1_KEYS)
+  csiro <- d[d$series == "CSIRO", ]
+
+  ggplot(d, aes(x = year, y = value, colour = series)) +
+    geom_hline(yintercept = 0, colour = CHART_GREY[["rule"]], linewidth = 0.4) +
+    geom_ribbon(
+      data = csiro, aes(ymin = lower, ymax = upper),
+      fill = cols[["CSIRO"]], colour = NA, alpha = 0.25
+    ) +
+    geom_line(linewidth = 0.7) +
+    geom_point_interactive(
+      aes(
+        data_id = paste(series, year),
+        tooltip = ifelse(
+          is.na(lower),
+          sprintf("%d, %s\n%+.2f inches", year, series, value),
+          sprintf("%d, %s\n%+.2f inches\nLikely range: %+.2f to %+.2f inches",
+                  year, series, value, lower, upper)
+        )
+      ),
+      size = 0.9
+    ) +
+    scale_colour_manual(values = cols, labels = FIG1_LABELS) +
+    scale_x_continuous(breaks = seq(1880, 2020, by = 20)) +
+    labs(x = NULL, y = "Cumulative sea level change (inches)") +
+    theme_indicator() +
+    legend_top() +
+    theme(legend.direction = "vertical")
+}
+
+fig_1 <- function(d) girafe_indicator(fig_1_plot(d), height = 4.8)
+
+# One row per year, both series side by side, oldest first like the source.
+fig_1_table <- function(d) {
+  csiro <- d[d$series == "CSIRO", ]
+  noaa  <- d[d$series == "NOAA", ]
+  years <- sort(unique(d$year))
+  i <- match(years, csiro$year)
+  data.frame(
+    Year = years,
+    `CSIRO (inches)`             = csiro$value[i],
+    `CSIRO lower bound (inches)` = as.numeric(csiro$lower[i]),
+    `CSIRO upper bound (inches)` = as.numeric(csiro$upper[i]),
+    `NOAA (inches)`              = noaa$value[match(years, noaa$year)],
+    check.names = FALSE
+  )
+}
+
 # ---- Figure 2: relative sea level change at 72 tide gauges, 1960-2023 --------
 
 FIG2_KEYS <- c("Fell", "Rose")
