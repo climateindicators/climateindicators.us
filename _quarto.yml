@@ -145,6 +145,8 @@ website:
               href: indicators/marine-species-distribution.qmd
             - text: "Bird Wintering Ranges"
               href: indicators/bird-wintering-ranges.qmd
+            - text: "A Closer Look: The Black Guillemots of Cooper Island"
+              href: indicators/black-guillemots-cooper-island.qmd
         - section: "Temperature-Related Health"
           contents:
             - text: "Heat-Related Deaths"
