@@ -1,7 +1,6 @@
 # Figures for indicators/coastal-flooding.qmd.
 
-# The GitHub repository name is spelled "costal", unlike the page slug.
-REPO <- "costal-flooding"
+REPO <- "coastal-flooding"
 
 # Upstream periods use a hyphen; EPA's captions print an en dash.
 period_label <- function(x) sub("-", "–", x, fixed = TRUE)

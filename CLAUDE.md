@@ -52,7 +52,7 @@ Current indicator repositories:
 | Heat-Related Illnesses | `heat-related-illness-new` |
 | Heating and Cooling Degree Days | `heating-and-cooling-degree-days` |
 | Residential Energy Use | `residential-energy-use` |
-| West Nile Virus | `west-nile-virus-new` |
+| West Nile Virus | `west-nile-virus` |
 | Length of Growing Season | `length-of-growing-season` |
 | Growing Degree Days | `growing-degree-days` |
 | Global Greenhouse Gas Emissions | `global-greenhouse-emissions` |
@@ -63,7 +63,7 @@ Current indicator repositories:
 | A Closer Look: Land Loss Along the Atlantic Coast | `atlantic-coast` |
 | Bird Wintering Ranges | `bird-wintering-ranges` |
 | Community Connection: Cherry Blossom Bloom Dates in Washington, D.C. | `cherry-blossom-bloom` |
-| Drought | `drought-new` |
+| Drought | `drought` |
 | Great Lakes Water Levels and Temperatures | `great-lakes` |
 | Heat Waves | `heat-waves` |
 | Heavy Precipitation | `heavy-precipitation` |

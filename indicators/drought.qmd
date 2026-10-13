@@ -47,8 +47,8 @@ This chart shows annual values of the Palmer Drought Severity Index, averaged ov
 knitr::kable(fig_1_table(palmer))
 ```
 
-- [Clean data (CSV)](https://github.com/climateindicators/drought-new/blob/main/data/drought_palmer_index.csv)
-- [EPA's published file (CSV)](https://github.com/climateindicators/drought-new/blob/main/data-raw/drought_fig-1.csv)
+- [Clean data (CSV)](https://github.com/climateindicators/drought/blob/main/data/drought_palmer_index.csv)
+- [EPA's published file (CSV)](https://github.com/climateindicators/drought/blob/main/data-raw/drought_fig-1.csv)
 
 </details>
 
@@ -76,8 +76,8 @@ This graph shows annual values of the SPEI, averaged over the entire area of the
 knitr::kable(fig_2_table(spei))
 ```
 
-- [Clean data (CSV)](https://github.com/climateindicators/drought-new/blob/main/data/drought_spei_national.csv)
-- [EPA's published file (CSV)](https://github.com/climateindicators/drought-new/blob/main/data-raw/drought_fig-2.csv)
+- [Clean data (CSV)](https://github.com/climateindicators/drought/blob/main/data/drought_spei_national.csv)
+- [EPA's published file (CSV)](https://github.com/climateindicators/drought/blob/main/data-raw/drought_fig-2.csv)
 
 </details>
 
@@ -109,8 +109,8 @@ EPA draws this figure as a map of the 344 NOAA climate divisions. Climate-divisi
 knitr::kable(fig_3_table(change))
 ```
 
-- [Clean data (CSV)](https://github.com/climateindicators/drought-new/blob/main/data/drought_spei_change.csv)
-- [EPA's published file (CSV)](https://github.com/climateindicators/drought-new/blob/main/data-raw/drought_fig-3.csv)
+- [Clean data (CSV)](https://github.com/climateindicators/drought/blob/main/data/drought_spei_change.csv)
+- [EPA's published file (CSV)](https://github.com/climateindicators/drought/blob/main/data-raw/drought_fig-3.csv)
 
 </details>
 
@@ -152,8 +152,8 @@ Experts update the U.S. Drought Monitor weekly and produce maps that illustrate 
 knitr::kable(fig_4_table(monitor))
 ```
 
-- [Clean data (CSV)](https://github.com/climateindicators/drought-new/blob/main/data/drought_monitor_area.csv)
-- [EPA's published file (CSV)](https://github.com/climateindicators/drought-new/blob/main/data-raw/drought_fig-4.csv)
+- [Clean data (CSV)](https://github.com/climateindicators/drought/blob/main/data/drought_monitor_area.csv)
+- [EPA's published file (CSV)](https://github.com/climateindicators/drought/blob/main/data-raw/drought_fig-4.csv)
 
 </details>
 
@@ -226,6 +226,6 @@ Text on this page is EPA's own published wording (a U.S. Government work, not
 subject to domestic copyright), extracted from EPA's published indicator page
 and verified paragraph by paragraph against the archived HTML. Data, chart
 code, and the full extraction pipeline are maintained in the
-[drought-new](https://github.com/climateindicators/drought-new)
+[drought](https://github.com/climateindicators/drought)
 repository, which this page reads its data from directly.
 :::

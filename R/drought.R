@@ -1,6 +1,6 @@
 # Figures for indicators/drought.qmd.
 
-REPO <- "drought-new"
+REPO <- "drought"
 
 fmt <- function(x, digits = 2) sprintf(paste0("%.", digits, "f"), x)
 
