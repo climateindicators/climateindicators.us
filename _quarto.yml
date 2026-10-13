@@ -37,10 +37,18 @@ website:
         href: about.qmd
       - icon: graph-up
         text: "Climate, Health and Environment"
-        href: indicators.qmd
+        menu:
+          - text: "About"
+            href: climate-health-and-environment.qmd
+          - text: "Indicators"
+            href: indicators.qmd
       - icon: book
         text: "The Whole Story"
-        href: tracking-the-whole-climate-change-story.qmd
+        menu:
+          - text: "About"
+            href: the-whole-story-about.qmd
+          - text: "Indicators"
+            href: the-whole-story-indicators.qmd
       - icon: folder2-open
         text: "Methodology"
         href: methodology.qmd
@@ -79,14 +87,6 @@ website:
               href: indicators/temperature-and-drought-in-the-southwest.qmd
             - text: "Wildfires"
               href: indicators/wildfires.qmd
-        - section: "Coastal and Marine"
-          contents:
-            - text: "Sea Surface Temperature"
-              href: indicators/sea-surface-temperature.qmd
-            - text: "Coastal Flooding"
-              href: indicators/coastal-flooding.qmd
-            - text: "A Closer Look: Land Loss Along the Atlantic Coast"
-              href: indicators/atlantic-coast.qmd
         - section: "Cryosphere"
           contents:
             - text: "A Closer Look: Glaciers in Glacier National Park"
@@ -95,6 +95,8 @@ website:
               href: indicators/lake-ice.qmd
             - text: "Great Lakes Ice Cover"
               href: indicators/great-lakes-ice-cover.qmd
+            - text: "Snowfall"
+              href: indicators/snowfall.qmd
             - text: "Snowpack"
               href: indicators/snowpack.qmd
             - text: "Permafrost"
@@ -103,22 +105,30 @@ website:
               href: indicators/freeze-thaw-conditions.qmd
             - text: "Community Connection: Ice Breakup in Three Alaskan Rivers"
               href: indicators/alaskan-rivers.qmd
-        - section: "Temperature-Related Health"
+        - section: "Coastal and Marine"
           contents:
-            - text: "Heat-Related Deaths"
-              href: indicators/heat-related-deaths.qmd
-            - text: "Heat-Related Workplace Deaths"
-              href: indicators/heat-related-workplace-deaths.qmd
-            - text: "Heat-Related Illnesses"
-              href: indicators/heat-related-illnesses.qmd
-            - text: "Cold-Related Deaths"
-              href: indicators/cold-related-deaths.qmd
-        - section: "Vector-Related Health"
+            - text: "Sea Surface Temperature"
+              href: indicators/sea-surface-temperature.qmd
+            - text: "Sea Level"
+              href: indicators/sea-level.qmd
+            - text: "Coastal Flooding"
+              href: indicators/coastal-flooding.qmd
+            - text: "Marine Heat Waves"
+              href: indicators/marine-heat-waves.qmd
+            - text: "A Closer Look: Land Loss Along the Atlantic Coast"
+              href: indicators/atlantic-coast.qmd
+        - section: "Freshwater Systems"
           contents:
-            - text: "Lyme Disease"
-              href: indicators/lyme-disease.qmd
-            - text: "West Nile Virus"
-              href: indicators/west-nile-virus.qmd
+            - text: "Streamflow"
+              href: indicators/streamflow.qmd
+            - text: "Stream Temperature"
+              href: indicators/stream-temperature.qmd
+            - text: "Tribal Connection: Trends in Stream Temperature in the Snake River"
+              href: indicators/snake-river.qmd
+            - text: "Lake Temperature"
+              href: indicators/lake-temperature.qmd
+            - text: "Great Lakes Water Levels and Temperatures"
+              href: indicators/great-lakes.qmd
         - section: "Ecosystems"
           contents:
             - text: "Length of Growing Season"
@@ -135,24 +145,30 @@ website:
               href: indicators/marine-species-distribution.qmd
             - text: "Bird Wintering Ranges"
               href: indicators/bird-wintering-ranges.qmd
+            - text: "A Closer Look: The Black Guillemots of Cooper Island"
+              href: indicators/black-guillemots-cooper-island.qmd
+        - section: "Temperature-Related Health"
+          contents:
+            - text: "Heat-Related Deaths"
+              href: indicators/heat-related-deaths.qmd
+            - text: "Heat-Related Workplace Deaths"
+              href: indicators/heat-related-workplace-deaths.qmd
+            - text: "Heat-Related Illnesses"
+              href: indicators/heat-related-illnesses.qmd
+            - text: "Cold-Related Deaths"
+              href: indicators/cold-related-deaths.qmd
+        - section: "Vector-Related Health"
+          contents:
+            - text: "Lyme Disease"
+              href: indicators/lyme-disease.qmd
+            - text: "West Nile Virus"
+              href: indicators/west-nile-virus.qmd
         - section: "Societal Systems"
           contents:
             - text: "Heating and Cooling Degree Days"
               href: indicators/heating-and-cooling-degree-days.qmd
             - text: "Residential Energy Use"
               href: indicators/residential-energy-use.qmd
-        - section: "Freshwater Systems"
-          contents:
-            - text: "Streamflow"
-              href: indicators/streamflow.qmd
-            - text: "Stream Temperature"
-              href: indicators/stream-temperature.qmd
-            - text: "Tribal Connection: Trends in Stream Temperature in the Snake River"
-              href: indicators/snake-river.qmd
-            - text: "Lake Temperature"
-              href: indicators/lake-temperature.qmd
-            - text: "Great Lakes Water Levels and Temperatures"
-              href: indicators/great-lakes.qmd
 
 
 format:

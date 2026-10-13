@@ -52,7 +52,7 @@ Current indicator repositories:
 | Heat-Related Illnesses | `heat-related-illness-new` |
 | Heating and Cooling Degree Days | `heating-and-cooling-degree-days` |
 | Residential Energy Use | `residential-energy-use` |
-| West Nile Virus | `west-nile-virus-new` |
+| West Nile Virus | `west-nile-virus` |
 | Length of Growing Season | `length-of-growing-season` |
 | Growing Degree Days | `growing-degree-days` |
 | Global Greenhouse Gas Emissions | `global-greenhouse-emissions` |
@@ -63,7 +63,7 @@ Current indicator repositories:
 | A Closer Look: Land Loss Along the Atlantic Coast | `atlantic-coast` |
 | Bird Wintering Ranges | `bird-wintering-ranges` |
 | Community Connection: Cherry Blossom Bloom Dates in Washington, D.C. | `cherry-blossom-bloom` |
-| Drought | `drought-new` |
+| Drought | `drought` |
 | Great Lakes Water Levels and Temperatures | `great-lakes` |
 | Heat Waves | `heat-waves` |
 | Heavy Precipitation | `heavy-precipitation` |
@@ -85,6 +85,7 @@ Current indicator repositories:
 | Lake Ice | `lake-ice` |
 | Great Lakes Ice Cover | `great-lakes-ice-cover` |
 | Community Connection: Ice Breakup in Three Alaskan Rivers | `alaskan-rivers` |
+| Sea Level | `sea-level` |
 
 Because the data is fetched over the network, rendering requires an internet
 connection, and `curl` must stay in `DESCRIPTION` — readr only *suggests* it,
@@ -312,8 +313,8 @@ Two navbar details that are easy to break:
 2. Create `R/<slug>.R` following the shape described above
 3. Create `indicators/<slug>.qmd` with front matter carrying `title`,
    `description`, `categories`, and `execute: eval: true` — the `description`
-   and `categories` feed the listing grid on `indicators.qmd`, so they are not
-   optional
+   feeds the listing grid on `indicators.qmd`, so it is not optional (the grid
+   deliberately shows no categories, neither on cards nor as a filter panel)
 4. Add a sidebar entry under the appropriate section in `_quarto.yml`
 5. Add the slug to the matching section in `$card-category-map` in
    `css/theme.scss`. That map is what gives the indicator's listing card its

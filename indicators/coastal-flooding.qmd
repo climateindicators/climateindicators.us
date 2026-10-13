@@ -33,8 +33,8 @@ figure_caption(meta, "coastal_flood_days_by_site.csv", ref = c(4, 5))
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/costal-flooding/main/data/coastal_flood_days_by_site.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/costal-flooding/main/data-raw/coastal-flooding_fig-1.csv" download><i class="bi bi-filetype-csv"></i> EPA source data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/coastal-flooding/main/data/coastal_flood_days_by_site.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/coastal-flooding/main/data-raw/coastal-flooding_fig-1.csv" download><i class="bi bi-filetype-csv"></i> EPA source data (CSV)</a>
 </div>
 
 ```{r}
@@ -67,8 +67,8 @@ figure_caption(meta, "coastal_flood_events_by_site.csv")
 ```
 
 <div class="d-flex flex-wrap gap-2 mb-3">
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/costal-flooding/main/data/coastal_flood_events_by_site.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
-<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/costal-flooding/main/data-raw/coastal-flooding_fig-2.csv" download><i class="bi bi-filetype-csv"></i> EPA source data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/coastal-flooding/main/data/coastal_flood_events_by_site.csv" download><i class="bi bi-filetype-csv"></i> Figure data (CSV)</a>
+<a class="btn btn-sm btn-outline-secondary" href="https://raw.githubusercontent.com/climateindicators/coastal-flooding/main/data-raw/coastal-flooding_fig-2.csv" download><i class="bi bi-filetype-csv"></i> EPA source data (CSV)</a>
 </div>
 
 ```{r}
@@ -148,7 +148,7 @@ Text on this page is EPA's own published wording (a U.S. Government work, not
 subject to domestic copyright), extracted from EPA's published indicator page
 and verified paragraph by paragraph against the archived HTML. Data, chart
 code, and the full extraction pipeline are maintained in the
-[costal-flooding](https://github.com/climateindicators/costal-flooding)
+[coastal-flooding](https://github.com/climateindicators/coastal-flooding)
 repository, which this page reads its data from directly.
 
 One change was made to EPA's wording. EPA draws Figure 1 as a map of small
