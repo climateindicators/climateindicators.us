@@ -36,12 +36,10 @@ website:
         text: "About"
         href: about.qmd
       - icon: graph-up
-        text: "Climate, Health and Environment"
-        menu:
-          - text: "About"
-            href: climate-health-and-environment.qmd
-          - text: "Indicators"
-            href: indicators.qmd
+        text: "Climate, Health, and Environment"
+        href: climate-health-and-environment.qmd
+      - text: "Indicators"
+        href: indicators.qmd
       - icon: book
         text: "The Whole Story"
         menu:
@@ -53,9 +51,6 @@ website:
         text: "Methodology"
         href: methodology.qmd
       - icon: leaf
-
-
-
 
   sidebar:
     - title: "Indicators"
@@ -169,7 +164,6 @@ website:
               href: indicators/heating-and-cooling-degree-days.qmd
             - text: "Residential Energy Use"
               href: indicators/residential-energy-use.qmd
-
 
 format:
   html:
