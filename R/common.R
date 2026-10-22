@@ -177,7 +177,7 @@ GIRAFE_OPTS <- list(
     "background:", CHART_GREY[["ink"]], ";color:#fff;padding:6px 10px;",
     "border-radius:4px;font-family:sans-serif;font-size:12px;max-width:320px;"
   )),
-  opts_toolbar(saveaspng = FALSE),
+  opts_toolbar(position = "topright", saveaspng = TRUE, fixed = TRUE, pngname = "climate-indicator"),
   opts_sizing(rescale = TRUE, width = 1)
 )
 

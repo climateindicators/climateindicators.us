@@ -358,6 +358,7 @@ footer.footer .nav-footer {
 
 .nav-footer-center a {
   color: #fff;
+  stroke: #fff;
   text-decoration: underline;
   &:hover { color: $accent-light; }
 }
@@ -636,5 +637,37 @@ table thead th {
   .nav-footer-right {
     margin-top: -1em;
     margin-bottom: 0em;
+  }
+}
+
+/* ggiraph PNG button: a labelled, always-visible button instead of a bare icon */
+.ggiraph-toolbar-icon.ggiraph-toolbar-icon-saveaspng.neutral {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  width: auto;
+  height: auto;
+  padding: 0.3em 0.8em;
+  background: $accent;
+  color: #fff;
+  stroke: #fff;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  svg {
+    width: 1.1em;
+    height: 1.1em;
+    fill: #fff;
+    stroke: #fff;
+  }
+
+  &::after {
+    content: "Download image";
+  }
+
+  &:hover {
+    background: $accent-dark;
   }
 }
