@@ -87,7 +87,7 @@ website:
               href: indicators/temperature-and-drought-in-the-southwest.qmd
             - text: "Wildfires"
               href: indicators/wildfires.qmd
-        - section: "Cryosphere"
+        - section: "Snow and Ice"
           contents:
             - text: "A Closer Look: Glaciers in Glacier National Park"
               href: indicators/glaciers-in-glacier-park.qmd
