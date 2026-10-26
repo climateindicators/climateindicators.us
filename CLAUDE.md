@@ -136,6 +136,10 @@ in the indicator's own repository.
   `label_order()` — chart colour
 - `theme_indicator()`, `legend_top()` — chart styling
 - `girafe_indicator()` — wrap a ggplot as a ggiraph htmlwidget
+- `echarts_legend_chart()` — a multi-line echarts4r chart whose legend hides and
+  shows lines on click, for figures with too many series to read at once. Pages
+  that use it also include `/chunks/echarts-tabs.qmd`, which redraws an echarts
+  chart that started in a hidden tab (unlike ggiraph, it is sized in JavaScript)
 
 **`read_indicator()` and `read_meta()` are the only functions that touch the
 network, and only the page's setup chunk calls them.** Everything downstream

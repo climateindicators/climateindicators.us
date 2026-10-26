@@ -49,9 +49,14 @@ meta_for <- function(meta, file) {
 
 #' The bold title and source line printed above a figure, from meta.yml.
 #' `ref` is the reference number(s) EPA attaches to the data source, if any; it
-#' is rendered as the same anchor-linked marker the page prose uses.
-figure_caption <- function(meta, file, ref = NULL) {
+#' is rendered as the same anchor-linked marker the page prose uses. `number`
+#' replaces the figure number in meta.yml's title, for a page that orders its
+#' figures differently from EPA's.
+figure_caption <- function(meta, file, ref = NULL, number = NULL) {
   m <- meta_for(meta, file)
+  if (!is.null(number)) {
+    m$figure_title <- sub("^Figure [0-9]+[.]", sprintf("Figure %d.", number), m$figure_title)
+  }
   marker <- if (is.null(ref)) "" else
     sprintf("^%s^", paste(sprintf("[%d](#ref-%d)", ref, ref), collapse = ","))
   knitr::asis_output(sprintf(
@@ -188,6 +193,65 @@ girafe_indicator <- function(p, height = 4.2) {
     ggobj = p, width_svg = 8, height_svg = height,
     options = GIRAFE_OPTS
   )
+}
+
+#' A multi-line chart whose legend is the series selector.
+#'
+#' Clicking a legend entry (marker and name together) hides or shows that line,
+#' which is how a reader strips a busy figure down to the series they want to
+#' compare; every series starts visible. This is an echarts4r chart rather than
+#' a ggiraph one because ggiraph's legend keys are 1-6px glyphs whose labels
+#' cannot be linked to the plotted lines.
+#'
+#' `wide` has a `year` column plus one column per series, named by the label the
+#' legend shows. `colours` is a named vector, labels to colours, in legend
+#' order. `styles` overrides the default marker, width and dash for a label:
+#' `list("Label" = list(symbol = "none", width = 3.5, type = "dashed"))`.
+#' `value_format` is a JavaScript function body for the tooltip, taking `v`.
+echarts_legend_chart <- function(wide, colours, y_title, value_format,
+                                 x_min, x_max, x_interval = 20, y_min = NULL,
+                                 styles = list()) {
+  e <- echarts4r::e_charts_(wide, "year", width = "100%", height = "440px")
+  for (label in names(colours)) {
+    st <- utils::modifyList(
+      list(symbol = "circle", width = 2, type = "solid"), as.list(styles[[label]])
+    )
+    e <- echarts4r::e_line_(
+      e, label, name = label,
+      symbol = st$symbol, symbolSize = 5,
+      lineStyle = list(color = colours[[label]], width = st$width, type = st$type),
+      itemStyle = list(color = colours[[label]])
+    )
+  }
+
+  axis_text <- list(color = CHART_GREY[["text"]], fontSize = 13)
+  e |>
+    echarts4r::e_x_axis(
+      type = "value", min = x_min, max = x_max, interval = x_interval,
+      splitLine = list(show = FALSE),
+      axisLine = list(lineStyle = list(color = CHART_GREY[["text"]])),
+      # A plain function: ECharts' number formatting would print 1,900.
+      axisLabel = c(axis_text, list(formatter = htmlwidgets::JS("function (v) { return String(v); }")))
+    ) |>
+    echarts4r::e_y_axis(
+      name = y_title, nameLocation = "middle", nameGap = 40,
+      min = y_min, nameTextStyle = axis_text, axisLabel = axis_text,
+      splitLine = list(lineStyle = list(color = CHART_GREY[["grid"]]))
+    ) |>
+    echarts4r::e_legend(
+      top = 0, left = 0, itemWidth = 28, itemHeight = 12, itemGap = 18,
+      textStyle = list(color = CHART_GREY[["ink"]], fontSize = 14)
+    ) |>
+    echarts4r::e_tooltip(
+      trigger = "axis",
+      backgroundColor = CHART_GREY[["ink"]], borderWidth = 0,
+      textStyle = list(color = CHART_GREY[["surface"]], fontSize = 12),
+      valueFormatter = htmlwidgets::JS(
+        paste0("function (v) { return v == null ? '' : ", value_format, "; }")
+      )
+    ) |>
+    echarts4r::e_grid(top = 80, left = 56, right = 24, bottom = 36) |>
+    echarts4r::e_toolbox_feature("saveAsImage", title = "Download image", pixelRatio = 2)
 }
 
 # ---- Misc --------------------------------------------------------------------

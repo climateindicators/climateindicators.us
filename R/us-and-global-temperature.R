@@ -36,56 +36,39 @@ temp_series_colours <- function(d) {
   cols
 }
 
-temp_plot <- function(d) {
-  main  <- d[d$series_key != "linear_trend", ]
-  trend <- d[d$series_key == "linear_trend", ]
-  cols  <- temp_series_colours(d)
-  order <- names(cols)
-
-  # The smoothed multi-year average (Figure 1 only) is the headline curve, so
-  # it draws bold with no point markers; every other measured series draws
-  # thinner, with points a reader can hover for the exact annual value.
-  main$is_smoothed <- main$series_key == "five_yr_avg"
-  main$tooltip <- sprintf(
-    "%d — %s\n%+.2f°F anomaly (1901-2000 baseline)",
-    main$year, main$series_label, main$value
-  )
-
-  ggplot(main, aes(x = year, y = value, colour = series_label, group = series_label)) +
-    geom_line_interactive(aes(linewidth = is_smoothed), show.legend = FALSE) +
-    geom_point_interactive(
-      data = main[!main$is_smoothed, ],
-      aes(data_id = paste(series_key, year), tooltip = tooltip),
-      size = 1.4
-    ) +
-    geom_line(
-      data = trend,
-      aes(x = year, y = value, colour = series_label, group = series_label),
-      linewidth = 0.7, linetype = "dashed"
-    ) +
-    scale_linewidth_manual(values = c(`FALSE` = 0.7, `TRUE` = 1.1)) +
-    scale_colour_manual(values = cols, breaks = order) +
-    scale_x_continuous(breaks = seq(1900, 2020, 20)) +
-    labs(x = NULL, y = "Temperature anomaly (°F, vs. 1901-2000 average)", colour = NULL) +
-    guides(colour = guide_legend(nrow = 2, byrow = TRUE, override.aes = list(linewidth = 1))) +
-    theme_indicator() +
-    legend_top()
-}
-
 temp_table <- function(d) {
   tidyr::pivot_wider(d, id_cols = year, names_from = series_label, values_from = value)
 }
 
+temp_chart <- function(d) {
+  cols <- temp_series_colours(d)
+  keys <- stats::setNames(
+    vapply(names(cols), function(l) unique(d$series_key[d$series_label == l]), ""),
+    names(cols)
+  )
+  # The smoothed average is the headline curve, so it draws bold with no
+  # markers; the fitted trend is dashed with none either.
+  styles <- lapply(keys, function(k) switch(
+    k,
+    five_yr_avg  = list(symbol = "none", width = 3.5),
+    linear_trend = list(symbol = "none", type = "dashed")
+  ))
+  echarts_legend_chart(
+    temp_table(d), cols,
+    y_title = "Temperature anomaly (°F, vs. 1901-2000 average)",
+    value_format = "(v > 0 ? '+' : '') + v.toFixed(2) + '°F'",
+    x_min = 1900, x_max = max(d$year), styles = styles
+  )
+}
+
 # Figure 1: CONUS -------------------------------------------------------------
 
-fig_1_plot  <- function(d) temp_plot(d)
-fig_1       <- function(d) girafe_indicator(fig_1_plot(d))
+fig_1       <- function(d) temp_chart(d)
 fig_1_table <- function(d) temp_table(d)
 
 # Figure 2: global -------------------------------------------------------------
 
-fig_2_plot  <- function(d) temp_plot(d)
-fig_2       <- function(d) girafe_indicator(fig_2_plot(d))
+fig_2       <- function(d) temp_chart(d)
 fig_2_table <- function(d) temp_table(d)
 
 # ---- Figure 3: climate-division rate of temperature change -------------------

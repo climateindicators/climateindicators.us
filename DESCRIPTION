@@ -6,9 +6,11 @@ Encoding: UTF-8
 Imports:
     curl,
     dplyr,
+    echarts4r,
     ggiraph,
     ggplot2,
     here,
+    htmlwidgets,
     knitr,
     ltc,
     maps,
