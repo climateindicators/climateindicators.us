@@ -3,7 +3,6 @@
     "listing": "/the-whole-story-indicators.html",
     "items": [
       "/indicators/global-greenhouse-gas-emissions.html",
-      "/indicators/ice-sheets.html",
       "/indicators/ocean-acidity.html"
     ]
   },
@@ -31,6 +30,7 @@
       "/indicators/heating-and-cooling-degree-days.html",
       "/indicators/heavy-precipitation.html",
       "/indicators/high-and-low-temperatures.html",
+      "/indicators/ice-sheets.html",
       "/indicators/lake-ice.html",
       "/indicators/lake-temperature.html",
       "/indicators/leaf-and-bloom-dates.html",

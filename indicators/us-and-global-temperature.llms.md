@@ -19,7 +19,7 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig1.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx)
 
-The dark blue line shows the annual surface temperature anomaly, and the orange line smooths it into a 5-year average. The teal and maroon lines show two independent satellite analyses (UAH and RSS) of the lower atmosphere, available since 1979. The dashed grey line is the long-term linear trend fit to the surface record. Hover any point for its exact value.
+The dark blue line shows the annual surface temperature anomaly, and the orange line smooths it into a 5-year average. The teal and maroon lines show two independent satellite analyses (UAH and RSS) of the lower atmosphere, available since 1979. The dashed grey line is the long-term linear trend fit to the surface record. Click any name in the legend to hide or show that line, and hover the chart for the exact values in a year.
 
 Show the data behind this figure
 
@@ -158,7 +158,7 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data/us_and_global_temperature_fig2.csv) [ EPA source workbook (XLSX)](https://raw.githubusercontent.com/climateindicators/us-and-global-temperature/main/data-raw/1-2%20US%20and%20Global%20Temperature%2004-21-24.xlsx)
 
-Same shape as Figure 1, at the global scale, except the source data has no separate 5-year average series: the annual surface anomaly, the two satellite records (UAH and RSS), and the long-term trend. Hover any point for its exact value.
+Same shape as Figure 1, at the global scale, except the source data has no separate 5-year average series: the annual surface anomaly, the two satellite records (UAH and RSS), and the long-term trend. Click any name in the legend to hide or show that line, and hover the chart for the exact values in a year.
 
 Show the data behind this figure
 

@@ -92,6 +92,10 @@ This indicator tracks the frequency of heavy precipitation events in the United 
 
 Trends in unusually hot and cold temperatures across the United States.
 
+##### Ice Sheets
+
+This indicator examines the balance between snow accumulation and melting in the ice sheets that cover Greenland and Antarctica.
+
 ##### Lake Ice
 
 This indicator measures the amount of time that ice is present on lakes in the United States.

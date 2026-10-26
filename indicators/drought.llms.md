@@ -15,12 +15,6 @@ This indicator measures drought conditions of U.S. lands.
 Data source: NOAA, 2024\
 Web update: June 2024
 
-Show code
-
-``` r
-fig_1(palmer)
-```
-
 This chart shows annual values of the Palmer Drought Severity Index, averaged over the entire area of the contiguous 48 states. Positive values represent wetter-than-average conditions, while negative values represent drier-than-average conditions. A value between -2 and -3 indicates moderate drought, -3 to -4 is severe drought, and -4 or below indicates extreme drought. The thicker line is a nine-year weighted average.
 
 Data
@@ -167,12 +161,6 @@ Data
 Data source: WestWide Drought Tracker, 2024\
 Web update: June 2024
 
-Show code
-
-``` r
-fig_2(spei)
-```
-
 This graph shows annual values of the SPEI, averaged over the entire area of the contiguous 48 states. The line in this graph represents an average SPEI value for each year, based on conditions over the preceding five years (five-year SPEI). Positive values represent wetter-than-average conditions, while negative values represent drier-than-average conditions.
 
 Data
@@ -313,12 +301,6 @@ Data
 
 Data source: WestWide Drought Tracker, 2024\
 Web update: June 2024
-
-Show code
-
-``` r
-fig_3(change)
-```
 
 This map shows the total change in drought conditions across the contiguous 48 states, based on the long-term average rate of change in the five-year SPEI from 1900 to 2023. Data are displayed for small regions called climate divisions. Blue areas represent increased moisture; brown areas represent decreased moisture or drier conditions.
 
@@ -684,12 +666,6 @@ Data
 
 Data source: National Drought Mitigation Center, 2024\
 Web update: June 2024
-
-Show code
-
-``` r
-fig_4(monitor)
-```
 
 This chart shows the percentage of U.S. lands classified under drought conditions from 2000 through 2023. This figure uses the U.S. Drought Monitor classification system, which is described in the table below. The data cover all 50 states plus Puerto Rico.
 

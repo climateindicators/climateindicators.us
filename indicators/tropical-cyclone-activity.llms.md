@@ -19,7 +19,7 @@ Web update: June 2024
 
 [ Figure data (CSV)](https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data/hurricane_counts.csv) [ EPA source file (CSV)](https://raw.githubusercontent.com/climateindicators/tropical-cyclone-activity/main/data-raw/cyclones_fig-1.csv)
 
-This graph shows the number of hurricanes that formed in the North Atlantic Ocean each year from 1878 to 2022, along with the number that made landfall in the United States. The orange curve shows how the total count in the green curve can be adjusted to attempt to account for the lack of aircraft and satellite observations in early years. All three curves have been smoothed using a five-year average, plotted at the middle year. The most recent average (2018–2022) is plotted at 2020.
+This graph shows the number of hurricanes that formed in the North Atlantic Ocean each year from 1878 to 2022, along with the number that made landfall in the United States. The orange curve shows how the total count in the green curve can be adjusted to attempt to account for the lack of aircraft and satellite observations in early years. All three curves have been smoothed using a five-year average, plotted at the middle year. The most recent average (2018–2022) is plotted at 2020. Click any name in the legend to hide or show that line, and hover the chart for the exact values in a year.
 
 Show the data behind this figure
 
