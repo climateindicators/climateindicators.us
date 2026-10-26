@@ -18,6 +18,8 @@ ace        <- read_indicator(REPO, "accumulated_cyclone_energy_index.csv")
 pdi_sst    <- read_indicator(REPO, "power_dissipation_index_and_sst.csv")
 ```
 
+{{< include /chunks/echarts-tabs.qmd >}}
+
 This indicator examines the frequency, intensity, and duration of hurricanes and other tropical storms in the Atlantic Ocean, Caribbean, and Gulf of Mexico.
 
 ## Figures
@@ -44,7 +46,7 @@ figure_caption(meta, "hurricane_counts.csv")
 fig_1(hurricanes)
 ```
 
-This graph shows the number of hurricanes that formed in the North Atlantic Ocean each year from 1878 to 2022, along with the number that made landfall in the United States. The orange curve shows how the total count in the green curve can be adjusted to attempt to account for the lack of aircraft and satellite observations in early years. All three curves have been smoothed using a five-year average, plotted at the middle year. The most recent average (2018–2022) is plotted at 2020.
+This graph shows the number of hurricanes that formed in the North Atlantic Ocean each year from 1878 to 2022, along with the number that made landfall in the United States. The orange curve shows how the total count in the green curve can be adjusted to attempt to account for the lack of aircraft and satellite observations in early years. All three curves have been smoothed using a five-year average, plotted at the middle year. The most recent average (2018–2022) is plotted at 2020. Click any name in the legend to hide or show that line, and hover the chart for the exact values in a year.
 
 <details><summary>Show the data behind this figure</summary>
 

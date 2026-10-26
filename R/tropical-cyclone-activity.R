@@ -15,39 +15,15 @@ FIG1_LABELS <- c(
   reaching_us = "Reaching the United States"
 )
 
-fig_1_plot <- function(d) {
-  # unname() matters: d is a tibble, and a tibble column keeps the stray
-  # `names` attribute a named-vector lookup like this leaves behind (a base
-  # data.frame column would drop it on assignment). Left in, that attribute
-  # is what scale_colour_manual()'s legend prints instead of the label text.
-  d$series_label <- unname(FIG1_LABELS[d$series])
-
-  # group is explicit because the tooltip string below is unique per row; left
-  # implicit, ggplot infers grouping from every discrete aesthetic in a layer,
-  # including tooltip, which would put each point in its own group of one and
-  # silently break every line into isolated dots.
-  ggplot(d, aes(x = year, y = value, colour = series_label, group = series)) +
-    geom_line_interactive(linewidth = 0.9) +
-    geom_point_interactive(
-      aes(
-        data_id = series,
-        tooltip = sprintf("%d — %s\n%.1f hurricanes (5-yr smoothed)", year, series_label, value)
-      ),
-      size = 1.6
-    ) +
-    scale_colour_manual(
-      values = label_colours(d, "series", "series_label", FIG1_KEYS),
-      breaks = label_order(d, "series", "series_label", FIG1_KEYS)
-    ) +
-    guides(colour = guide_legend(nrow = 2, byrow = TRUE)) +
-    scale_x_continuous(breaks = seq(1880, 2020, 20)) +
-    scale_y_continuous(limits = c(0, NA), expand = expansion(mult = c(0, 0.06))) +
-    labs(x = NULL, y = "Number of hurricanes (5-year smoothed average)") +
-    theme_indicator() +
-    legend_top()
+fig_1 <- function(d) {
+  wide <- stats::setNames(fig_1_table(d), c("year", unname(FIG1_LABELS[FIG1_KEYS])))
+  echarts_legend_chart(
+    wide, series_colours(FIG1_LABELS[FIG1_KEYS]),
+    y_title = "Number of hurricanes (5-year smoothed average)",
+    value_format = "v.toFixed(1) + ' hurricanes'",
+    x_min = 1880, x_max = max(d$year), y_min = 0
+  )
 }
-
-fig_1 <- function(d) girafe_indicator(fig_1_plot(d))
 
 fig_1_table <- function(d) {
   w <- tidyr::pivot_wider(

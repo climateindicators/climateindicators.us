@@ -82,7 +82,7 @@ website:
               href: indicators/temperature-and-drought-in-the-southwest.qmd
             - text: "Wildfires"
               href: indicators/wildfires.qmd
-        - section: "Cryosphere"
+        - section: "Snow and Ice"
           contents:
             - text: "A Closer Look: Glaciers in Glacier National Park"
               href: indicators/glaciers-in-glacier-park.qmd
@@ -98,6 +98,8 @@ website:
               href: indicators/permafrost.qmd
             - text: "Freeze-Thaw Conditions"
               href: indicators/freeze-thaw-conditions.qmd
+            - text: "Ice Sheets"
+              href: indicators/ice-sheets.qmd
             - text: "Community Connection: Ice Breakup in Three Alaskan Rivers"
               href: indicators/alaskan-rivers.qmd
         - section: "Coastal and Marine"

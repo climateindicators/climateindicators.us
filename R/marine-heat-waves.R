@@ -1,9 +1,10 @@
-# Figures for indicators/marine-heat-waves.qmd. Figures 1 and 2 are maps EPA
-# published without data, so the page carries their captions only.
+# Figures for indicators/marine-heat-waves.qmd. Figures 1 and 2 are drawn here
+# from EPA's published data. Figures 3 and 4 are maps EPA published without
+# data, so the page shows EPA's images and has no code for them.
 
 REPO <- "marine-heat-waves"
 
-# ---- Severity categories, shared by Figures 3 and 4 --------------------------
+# ---- Severity categories, shared by Figures 1 and 2 --------------------------
 
 SEVERITY_KEYS <- c("Moderate", "Strong", "Severe", "Extreme")
 
@@ -18,16 +19,16 @@ severity_colours <- function() {
   )
 }
 
-# ---- Figure 3: area affected by marine heat waves, by region -----------------
+# ---- Figure 1: area affected by marine heat waves, by region -----------------
 
 # Regions in EPA's column order: west to east along the contiguous coast, then
 # Alaska and Hawaii.
-FIG3_REGIONS <- c("West Coast", "Gulf of Mexico", "Southeast", "Northeast", "Alaska", "Hawaii")
+FIG1_REGIONS <- c("West Coast", "Gulf of Mexico", "Southeast", "Northeast", "Alaska", "Hawaii")
 
 # Each location counts once, under its most severe event of the year, so the
 # categories are disjoint and the stack height is the area with any heat wave.
-fig_3_plot <- function(d) {
-  d$region   <- factor(d$region, levels = FIG3_REGIONS)
+fig_1_plot <- function(d) {
+  d$region   <- factor(d$region, levels = FIG1_REGIONS)
   d$category <- factor(d$category, levels = SEVERITY_KEYS)
 
   ggplot(d, aes(x = year, y = value, fill = category)) +
@@ -49,12 +50,12 @@ fig_3_plot <- function(d) {
     legend_top()
 }
 
-fig_3 <- function(d) girafe_indicator(fig_3_plot(d), height = 5.4)
+fig_1 <- function(d) girafe_indicator(fig_1_plot(d), height = 5.4)
 
-fig_3_table <- function(d) {
+fig_1_table <- function(d) {
   w <- tidyr::pivot_wider(d[c("year", "region", "category", "value")],
                           names_from = "category", values_from = "value")
-  w <- w[order(w$year, match(w$region, FIG3_REGIONS)), ]
+  w <- w[order(w$year, match(w$region, FIG1_REGIONS)), ]
   data.frame(
     Year   = w$year,
     Region = w$region,
@@ -64,10 +65,10 @@ fig_3_table <- function(d) {
   )
 }
 
-# ---- Figure 4: event timelines at five marine protected areas ----------------
+# ---- Figure 2: event timelines at five marine protected areas ----------------
 
 # Upstream carries duration and intensity as two rows per event.
-fig_4_events <- function(d) {
+fig_2_events <- function(d) {
   w <- tidyr::pivot_wider(
     d[c("marine_protected_area", "event_no", "date_start", "date_end", "severity", "measure", "value")],
     names_from = "measure", values_from = "value"
@@ -75,7 +76,7 @@ fig_4_events <- function(d) {
   w$date_start <- as.Date(w$date_start)
   w$date_end   <- as.Date(w$date_end)
   # EPA writes severity as "I Moderate" ... "IV Extreme"; the class name alone
-  # keys the same colours Figure 3 uses.
+  # keys the same colours Figure 1 uses.
   w$category   <- factor(sub("^[IV]+ ", "", w$severity), levels = SEVERITY_KEYS)
   w$marine_protected_area <- factor(w$marine_protected_area, levels = unique(d$marine_protected_area))
   w
@@ -84,8 +85,8 @@ fig_4_events <- function(d) {
 # Each event is a column whose width spans its start and end dates and whose
 # height is its mean intensity. Most events last under two weeks, a sliver on
 # a 42-year axis, so each column is outlined in its own fill to stay visible.
-fig_4_plot <- function(d) {
-  w <- fig_4_events(d)
+fig_2_plot <- function(d) {
+  w <- fig_2_events(d)
 
   ggplot(w) +
     geom_rect_interactive(
@@ -111,10 +112,10 @@ fig_4_plot <- function(d) {
     legend_top()
 }
 
-fig_4 <- function(d) girafe_indicator(fig_4_plot(d), height = 7.5)
+fig_2 <- function(d) girafe_indicator(fig_2_plot(d), height = 7.5)
 
-fig_4_table <- function(d) {
-  w <- fig_4_events(d)
+fig_2_table <- function(d) {
+  w <- fig_2_events(d)
   data.frame(
     `Marine protected area` = as.character(w$marine_protected_area),
     Start                   = format(w$date_start),

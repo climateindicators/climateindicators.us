@@ -46,7 +46,7 @@ $card-category-map: (
   $cat-coastal-marine: ("sea-surface-temperature", "sea-level", "coastal-flooding", "marine-heat-waves", "atlantic-coast"),
   $cat-cryosphere: (
     "glaciers-in-glacier-park", "lake-ice", "great-lakes-ice-cover", "snowfall", "snowpack",
-    "permafrost", "freeze-thaw-conditions", "alaskan-rivers"
+    "permafrost", "freeze-thaw-conditions", "ice-sheets", "alaskan-rivers"
   ),
   $cat-temperature-health: (
     "heat-related-deaths", "heat-related-workplace-deaths", "heat-related-illnesses",
@@ -62,7 +62,7 @@ $card-category-map: (
   $cat-freshwater: (
     "streamflow", "stream-temperature", "snake-river", "lake-temperature", "great-lakes"
   ),
-  $cat-whole-story: ("global-greenhouse-gas-emissions", "ice-sheets", "ocean-acidity"),
+  $cat-whole-story: ("global-greenhouse-gas-emissions", "ocean-acidity"),
 );
 
 // One Bootstrap Icon glyph per category, keyed the same as $card-category-map

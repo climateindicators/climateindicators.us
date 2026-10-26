@@ -136,6 +136,10 @@ in the indicator's own repository.
   `label_order()` — chart colour
 - `theme_indicator()`, `legend_top()` — chart styling
 - `girafe_indicator()` — wrap a ggplot as a ggiraph htmlwidget
+- `echarts_legend_chart()` — a multi-line echarts4r chart whose legend hides and
+  shows lines on click, for figures with too many series to read at once. Pages
+  that use it also include `/chunks/echarts-tabs.qmd`, which redraws an echarts
+  chart that started in a hidden tab (unlike ggiraph, it is sized in JavaScript)
 
 **`read_indicator()` and `read_meta()` are the only functions that touch the
 network, and only the page's setup chunk calls them.** Everything downstream
@@ -299,7 +303,7 @@ Two navbar details that are easy to break:
 - One docked sidebar, titled "Indicators", that appears on `indicators.qmd` and
   all pages under `indicators/`. Indicators are grouped into sections by theme
   (e.g. "Temperature-Related Health").
-- Global Greenhouse Gas Emissions, Ice Sheets, and Ocean Acidity belong to "The
+- Global Greenhouse Gas Emissions and Ocean Acidity belong to "The
   Whole Story" rather than the sidebar: they are listed as cards on
   `tracking-the-whole-climate-change-story.qmd` and excluded from the
   `indicators.qmd` grid. Antarctic Sea Ice is left out of both.

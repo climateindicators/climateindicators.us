@@ -20,6 +20,8 @@ global <- read_indicator(REPO, "us_and_global_temperature_fig2.csv")
 divisions <- read_indicator(REPO, "us_and_global_temperature_fig3.csv")
 ```
 
+{{< include /chunks/echarts-tabs.qmd >}}
+
 ## Figures
 
 ::::: {.panel-tabset}
@@ -44,7 +46,7 @@ figure_caption(meta, "us_and_global_temperature_fig1.csv")
 fig_1(conus)
 ```
 
-The dark blue line shows the annual surface temperature anomaly, and the orange line smooths it into a 5-year average. The teal and maroon lines show two independent satellite analyses (UAH and RSS) of the lower atmosphere, available since 1979. The dashed grey line is the long-term linear trend fit to the surface record. Hover any point for its exact value.
+The dark blue line shows the annual surface temperature anomaly, and the orange line smooths it into a 5-year average. The teal and maroon lines show two independent satellite analyses (UAH and RSS) of the lower atmosphere, available since 1979. The dashed grey line is the long-term linear trend fit to the surface record. Click any name in the legend to hide or show that line, and hover the chart for the exact values in a year.
 
 <details><summary>Show the data behind this figure</summary>
 
@@ -76,7 +78,7 @@ figure_caption(meta, "us_and_global_temperature_fig2.csv")
 fig_2(global)
 ```
 
-Same shape as Figure 1, at the global scale, except the source data has no separate 5-year average series: the annual surface anomaly, the two satellite records (UAH and RSS), and the long-term trend. Hover any point for its exact value.
+Same shape as Figure 1, at the global scale, except the source data has no separate 5-year average series: the annual surface anomaly, the two satellite records (UAH and RSS), and the long-term trend. Click any name in the legend to hide or show that line, and hover the chart for the exact values in a year.
 
 <details><summary>Show the data behind this figure</summary>
 

@@ -1,0 +1,9 @@
+```{=html}
+<script>
+  // An echarts4r chart that starts in a hidden tab is sized against a
+  // zero-width container; a resize once its tab opens redraws it at full width.
+  document.addEventListener("shown.bs.tab", function () {
+    window.dispatchEvent(new Event("resize"));
+  });
+</script>
+```
