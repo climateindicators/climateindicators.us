@@ -303,7 +303,7 @@ Two navbar details that are easy to break:
 - One docked sidebar, titled "Indicators", that appears on `indicators.qmd` and
   all pages under `indicators/`. Indicators are grouped into sections by theme
   (e.g. "Temperature-Related Health").
-- Global Greenhouse Gas Emissions, Ice Sheets, and Ocean Acidity belong to "The
+- Global Greenhouse Gas Emissions and Ocean Acidity belong to "The
   Whole Story" rather than the sidebar: they are listed as cards on
   `tracking-the-whole-climate-change-story.qmd` and excluded from the
   `indicators.qmd` grid. Antarctic Sea Ice is left out of both.

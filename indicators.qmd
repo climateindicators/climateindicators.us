@@ -4,7 +4,6 @@ listing:
   contents:
     - "indicators/*.qmd"
     - "!indicators/global-greenhouse-gas-emissions.qmd"
-    - "!indicators/ice-sheets.qmd"
     - "!indicators/ocean-acidity.qmd"
     - "!indicators/antarctic-sea-ice.qmd"
   sort: "title"
