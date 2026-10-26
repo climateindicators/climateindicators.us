@@ -33,6 +33,7 @@ figure_caption(meta, "drought_palmer_index.csv")
 
 ```{r}
 #| label: chart-1
+#| echo: false
 fig_1(palmer)
 ```
 
@@ -62,6 +63,7 @@ figure_caption(meta, "drought_spei_national.csv")
 
 ```{r}
 #| label: chart-2
+#| echo: false
 fig_2(spei)
 ```
 
@@ -91,6 +93,7 @@ figure_caption(meta, "drought_spei_change.csv")
 
 ```{r}
 #| label: chart-3
+#| echo: false
 fig_3(change)
 ```
 
@@ -124,6 +127,7 @@ figure_caption(meta, "drought_monitor_area.csv")
 
 ```{r}
 #| label: chart-4
+#| echo: false
 fig_4(monitor)
 ```
 
